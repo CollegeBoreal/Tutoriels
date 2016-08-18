@@ -1,0 +1,17 @@
+button, stack-layout {
+    horizontal-align: center;   
+    padding-bottom: 20%;
+    margin-left: 5;
+    margin-right: 5;
+}
+
+button {
+    font-size: 16;
+    background-color: mediumseagreen;
+    width: 50%;
+
+}
+
+page{
+    background-color: black;
+}
