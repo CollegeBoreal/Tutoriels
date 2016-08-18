@@ -1,9 +1,28 @@
-﻿button, label, stack-layout {
+﻿@import url("~/platform.css");
+
+button, label, stack-layout {
     horizontal-align: center;    
 }
 
+
+
+Page {
+  background-color: white;
+  font-size: 15;
+}
+TextField {
+  padding: 10;
+  font-size: 13;
+}
+
+image{
+    background-color: red;
+    border: none; 
+}
+
 button {
-    font-size: 36;
+    /*originalement il etait 36*/
+    font-size: 20;
 }
 
 .title {
@@ -12,6 +31,7 @@ button {
 }
 
 .message {
+    /*originalement il etait 20*/
     font-size: 20;
     color: #284848;
     text-align: center;
