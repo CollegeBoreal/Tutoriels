@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+/*import {Component} from "@angular/core";
 
 @Component({
     selector: "my-app",
@@ -18,4 +18,11 @@ export class AppComponent {
     public onTap() {
         this.counter--;
     }
-}
+}*/
+import {Component} from "@angular/core";
+
+@Component({
+  selector: "my-app",
+  template: "<Label text='hello NativeScript'></Label>"
+})
+export class AppComponent {}
