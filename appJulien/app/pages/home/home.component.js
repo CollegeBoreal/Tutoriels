@@ -1,23 +1,19 @@
 "use strict";
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var page_1 = require("ui/page");
 var HomeComponent = (function () {
-    function HomeComponent() {
-        this.counter = 16;
+    //public router:Router;
+    function HomeComponent(_router, page) {
+        this._router = _router;
+        this.page = page;
     }
-    Object.defineProperty(HomeComponent.prototype, "message", {
-        get: function () {
-            if (this.counter > 0) {
-                return this.counter + " taps left";
-            }
-            else {
-                return "!!Hoorraaay! \nYou are ready to start building!";
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
+    HomeComponent.prototype.ngOnInit = function () {
+    };
     HomeComponent.prototype.onTap = function () {
-        this.counter--;
+        //this.router.navigate(["/"]);
+        // alert(String(this._router==null));
+        this._router.navigate(["/list"]);
     };
     HomeComponent = __decorate([
         core_1.Component({
@@ -25,7 +21,7 @@ var HomeComponent = (function () {
             templateUrl: "./pages/home/home.component.html",
             styleUrls: ["./pages/home/home.css"]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router, page_1.Page])
     ], HomeComponent);
     return HomeComponent;
 }());

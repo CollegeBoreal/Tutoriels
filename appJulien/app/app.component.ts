@@ -1,21 +1,20 @@
+import {RouterConfig} from "@angular/router";
+import {nsProvideRouter} from "nativescript-angular/router"
 import {Component} from "@angular/core";
+import {NS_ROUTER_DIRECTIVES} from "nativescript-angular/router";
+import {HomeComponent} from "./pages/home/home.component";
 
 @Component({
-    selector: "my-app",
-    templateUrl: "app.component.html",
+  selector: "main",
+  directives: [NS_ROUTER_DIRECTIVES],
+  template: "<page-router-outlet></page-router-outlet>"
 })
-export class AppComponent {
-    public counter: number = 16;
+export class AppComponent {}
 
-    public get message(): string {
-        if (this.counter > 0) {
-            return this.counter + " taps left";
-        } else {
-            return "Hoorraaay! \nYou are ready to start building!";
-        }
-    }
-    
-    public onTap() {
-        this.counter--;
-    }
-}
+export const routes: RouterConfig = [
+    {path: "", component: HomeComponent}
+];
+
+export const APP_ROUTER_PROVIDERS = [
+    nsProvideRouter(routes,{})
+];
