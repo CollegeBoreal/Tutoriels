@@ -4,20 +4,21 @@ button, label, stack-layout {
     horizontal-align: center;    
 }
 
-
-
 Page {
+  /*originally was white*/  
   background-color: white;
   font-size: 15;
 }
 TextField {
+    /*was 10*/
   padding: 10;
-  font-size: 13;
+  /*was 13*/
+  font-size: 20;
 }
-
+/*added to try and fix the image issue*/
 image{
-    background-color: red;
-    border: none; 
+
+    background-color:transparent;
 }
 
 button {
