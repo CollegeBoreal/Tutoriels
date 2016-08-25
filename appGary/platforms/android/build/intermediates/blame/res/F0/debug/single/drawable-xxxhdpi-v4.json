@@ -12,20 +12,16 @@
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\pear.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\pear.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
@@ -40,24 +36,112 @@
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\unchecked.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\unchecked.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\apple.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\apple.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\unchecked_white.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\unchecked_white.png"
+    },
+    {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_checked_white.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_checked_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\banana.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\banana.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_checked.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_checked.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\add.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\add.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\checked_white.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\checked_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\menu.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\checked.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\checked.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\logo_signup.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\logo_signup.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_delete.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\selected.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\selected.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_unchecked_white.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_unchecked_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\recent.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\recent.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\background.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\background.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_add.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_recent.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_recent.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\nonselected.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\nonselected.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
@@ -66,6 +150,10 @@
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_menu.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_menu.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
@@ -84,8 +172,12 @@
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_nonselected.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_nonselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_unchecked.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_unchecked.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\icon.png",
@@ -96,16 +188,24 @@
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\logo_login.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\logo_login.png"
     },
     {
-        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\ic_selected.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\ic_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\delete.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\src\\main\\res\\drawable-xxxhdpi\\delete.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\Gary\\Developer\\Tutoriel\\appGary\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",

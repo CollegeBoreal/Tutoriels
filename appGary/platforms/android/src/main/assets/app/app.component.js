@@ -1,38 +1,16 @@
 "use strict";
 var core_1 = require("@angular/core");
-var user_1 = require("./shared/user/user");
-var user_service_1 = require("./shared/user/user.service");
+var router_1 = require("nativescript-angular/router");
 var AppComponent = (function () {
-    function AppComponent(_userService) {
-        this._userService = _userService;
-        this.isLoggingIn = true;
-        this.user = new user_1.User();
+    function AppComponent() {
     }
-    AppComponent.prototype.submit = function () {
-        if (this.isLoggingIn) {
-            this.login();
-        }
-        else {
-            this.signUp();
-        }
-    };
-    AppComponent.prototype.login = function () {
-        // TODO: Define
-    };
-    AppComponent.prototype.signUp = function () {
-        this._userService.register(this.user);
-    };
-    AppComponent.prototype.toggleDisplay = function () {
-        this.isLoggingIn = !this.isLoggingIn;
-    };
     AppComponent = __decorate([
         core_1.Component({
-            selector: "my-app",
-            providers: [user_service_1.UserService],
-            templateUrl: "pages/login/login.html",
-            styleUrls: ["pages/login/login-common.css", "pages/login/login.css"],
+            selector: "main",
+            directives: [router_1.NS_ROUTER_DIRECTIVES],
+            template: "<page-router-outlet></page-router-outlet>"
         }), 
-        __metadata('design:paramtypes', [user_service_1.UserService])
+        __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());

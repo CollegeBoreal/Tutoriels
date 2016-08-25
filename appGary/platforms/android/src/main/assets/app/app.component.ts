@@ -1,34 +1,9 @@
 import {Component} from "@angular/core";
-import {User} from "./shared/user/user";
-import {UserService} from "./shared/user/user.service";
+import {NS_ROUTER_DIRECTIVES} from "nativescript-angular/router";
 
 @Component({
-  selector: "my-app",
-  providers: [UserService],
-  templateUrl: "pages/login/login.html",
-  styleUrls: ["pages/login/login-common.css", "pages/login/login.css"],
+  selector: "main",
+  directives: [NS_ROUTER_DIRECTIVES],
+  template: "<page-router-outlet></page-router-outlet>"
 })
-export class AppComponent {
-  user: User;
-  isLoggingIn = true;
-
- constructor(private _userService: UserService) {
-  this.user = new User();
-}
-  submit() {
-  if (this.isLoggingIn) {
-    this.login();
-  } else {
-    this.signUp();
-  }
-}
-login() {
-  // TODO: Define
-}
-signUp() {
-  this._userService.register(this.user);
-}
-  toggleDisplay() {
-    this.isLoggingIn = !this.isLoggingIn;
-  }
-}
+export class AppComponent {}

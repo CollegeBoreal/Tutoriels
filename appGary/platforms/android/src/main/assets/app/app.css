@@ -1,5 +1,10 @@
 ﻿@import url("~/platform.css");
 
+ActionBar {
+  background-color: black;
+  color: white;
+}
+
 button, label, stack-layout {
     horizontal-align: center;    
 }
@@ -38,3 +43,9 @@ button {
     text-align: center;
     margin: 0 20;
 } 
+.small-spacing {
+  margin: 5;
+}
+.medium-spacing {
+  margin: 10;
+}
