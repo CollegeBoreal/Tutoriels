@@ -3,7 +3,6 @@
 ## Installation de la gestion de source
 
 * git Client : https://git-scm.com/downloads
-* Clé Personelle de github.com
 
 ## Les premiers pas avec git
 
@@ -45,7 +44,7 @@ $ git push origin master
 $ git pull 
 ```
 
-# Configurer git
+# Configurer git (Clé personnelle)
 
 ### .ssh/config
 ```
