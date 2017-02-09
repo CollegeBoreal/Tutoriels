@@ -7,4 +7,7 @@
 ## [1.Scala](1.Scala)  
   * Installation de Scala et de son environnement de développement  
   
+## [2.Docker](2.Docker)  
+  * Installation d'une machine virtuelle avec Docker
+  
   
