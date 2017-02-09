@@ -6,6 +6,11 @@
 
 ## Récupérer les clés du Nuage
 
+  https://www.canarie.ca/fr/nuage/colleges-et-ecoles-polytechniques/
+  
+  Le Collège bénéficie du support de Canarie pour une partie de son Infrastruture de test.  
+  Les étudiants de derniére année sont invités à appliquer à ATIR pour bénéficier d'un compte
+
 Établir les variables d'environnements
 
 * Cloner le projet comportant les clés
