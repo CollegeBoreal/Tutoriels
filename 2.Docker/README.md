@@ -3,19 +3,18 @@
 ## Prérequis
 
 * [Installer Docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker)   
-* 
 
 ## Récupérer les clés du Nuage
 
--- Établir les variables d'environnements
+Établir les variables d'environnements
 
-Cloner le projet comportant les clés
+* Cloner le projet comportant les clés
 ```
 $ cd ~/Developer
 $ git clone git@github.com:CollegeBoreal/canarie.ca.git
 ```
 
-Dans Git Bash, setter l'environnement
+* Dans Git Bash, setter l'environnement
 ```
 $ source ~/Developer/canarie.ca/collège-boréal-openrc-quebec.sh
 ```
