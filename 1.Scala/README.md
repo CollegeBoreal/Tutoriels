@@ -6,6 +6,10 @@
 
 * Java JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads
 
+## Installation de Scala Interface en Ligne de Commandes (CLI)
+
+* Scala CLI: https://www.scala-lang.org/download/
+
 ## Installation de l'environnement intégré de développement (IDE)
 
 * Intellij Idea : https://www.jetbrains.com/idea/download
