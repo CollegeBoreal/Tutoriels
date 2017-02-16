@@ -15,6 +15,17 @@ $ npm --version
 ```
 
 ### Angular-cli
+
+[Site](https://cli.angular.io/) 
+
+* Installation
+
+```
+npm install angular-cli --global
+```
+
+
+
 ```
 $ ng --version
 Could not start watchman; falling back to NodeWatcher for file system events.
