@@ -21,7 +21,7 @@ $ npm --version
 * Installation
 
 ```
-npm install angular-cli --global
+$ npm install angular-cli --global
 ```
 
 
