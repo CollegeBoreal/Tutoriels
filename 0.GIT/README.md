@@ -30,7 +30,7 @@ $ vi monfichier.md
 ```
 $ git add monfichier.md
 ```
-> Vérifier son status avec (doit etre vert)
+> Vérifier son status avec (doit etre vert)  
     ```
     $ git add monfichier.md
     ```
