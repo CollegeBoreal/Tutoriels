@@ -30,6 +30,11 @@ $ vi monfichier.md
 ```
 $ git add monfichier.md
 ```
+> Vérifier son status avec (doit etre vert)
+    ```
+    $ git add monfichier.md
+    ```
+
 * donner un commentaire aux fichiers a enregistrer (commit)
 ```
 $ git commit -m "Mon commentaire"
