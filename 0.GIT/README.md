@@ -32,7 +32,7 @@ $ git add monfichier.md
 ```
 > Vérifier son status avec (doit etre vert)  
     ```
-    $ git add monfichier.md
+    $ git status
     ```
 
 * donner un commentaire aux fichiers a enregistrer (commit)
