@@ -1,6 +1,6 @@
 # INSTALLER OPENSTACK - DEVSTACK 
 
-`Àutheur: Gary Uppiah`
+`Autheur: Gary Uppiah`
 
 Pour commencer, l’utilisateur a besoin de mettre à jour les ‘packages’.
 
