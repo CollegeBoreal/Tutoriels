@@ -1,12 +1,12 @@
-# Versions
+# Node.js
 
 ## Téléchargement
 
+Suivre les instructions pour installer
+
 https://nodejs.org/en/download/
 
-## Mandatory Versions to run the project
-
-### Node and npm
+## Versions minimales de Node and npm
 ```
 $ node --version
 v6.9.1
@@ -14,17 +14,19 @@ $ npm --version
 3.10.8
 ```
 
-### Angular-cli
+# Angular-cli
 
-[Site](https://cli.angular.io/) 
+## Site
 
-* Installation
+https://cli.angular.io/
+
+## Installation
 
 ```
 $ npm install @angular/cli --global
 ```
 
-
+## Version minimale de Angular CLI
 
 ```
 $ ng --version
