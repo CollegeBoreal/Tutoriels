@@ -4,6 +4,10 @@
 
 * [Installer Docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker)   
 
+## Partage de clés
+
+https://www.npmjs.com/package/machine-share
+
 ## Récupérer les clés du Nuage
 
   https://www.canarie.ca/fr/nuage/colleges-et-ecoles-polytechniques/
