@@ -6,6 +6,8 @@
 
 ## Partage de clés
 
+* Outil `temporaire` permettant de copier et sauvegarder les clés crées par `docker-machine`
+  l'outil permet également de récupérer les clés sur une autre machine (i.e. MacOS => Windows et vice-versa)   
 https://www.npmjs.com/package/machine-share
 
 ## Récupérer les clés du Nuage
