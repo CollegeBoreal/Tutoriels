@@ -40,3 +40,8 @@ $ ng --version
 node: 6.9.4
 ...
 ```
+
+## Installation de l'environnement intégré de développement (IDE) -- Webstorm
+
+* Intellij Webstorm : https://www.jetbrains.com/webstorm/download
+* Enregistrement    : https://www.jetbrains.com/student/
