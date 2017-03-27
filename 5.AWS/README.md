@@ -2,7 +2,7 @@
 
 ## Créer un compte AWS
 
-https://aws.amazon.com/fr/education/
+https://aws.amazon.com/fr/education/awseducate/
 
 * Pour étudiants, créer le compte avec @monboreal.ca
 
