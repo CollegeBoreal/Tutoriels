@@ -30,7 +30,9 @@ https://docs.docker.com/machine/install-machine/
 
 par défaut (t2.micro)
 ```
-$ docker-machine create --driver amazonec2  --amazonec2-security-group monGroupe maVM
+$ docker-machine create --driver amazonec2  \
+                        --amazonec2-security-group monGroupe \
+                        maVM
 ```
 
 Avec une instance plus large
