@@ -38,7 +38,7 @@ $ docker-machine create --driver amazonec2  \
 Avec une instance plus large
 ```
 $ docker-machine create --driver amazonec2  \ 
-                        --amazonec2-instance-type t2.small \
+                        --amazonec2-instance-type t2.micro \
                         --amazonec2-security-group monGroupe maVM
 ```
 
