@@ -35,12 +35,18 @@ $ docker-machine create --driver amazonec2  --amazonec2-security-group monGroupe
 
 Avec une instance plus large
 ```
-$ docker-machine create --driver amazonec2  --amazonec2-instance-type t2.small --amazonec2-security-group monGroupe maVM
+$ docker-machine create --driver amazonec2  \ 
+                        --amazonec2-instance-type t2.small \
+                        --amazonec2-security-group monGroupe maVM
 ```
 
 Avec un sous-réseau
 ```
-$ docker-machine create --driver amazonec2 --amazonec2-vpc-id vpc-xxxx --amazonec2-subnet-id subnet-xxxx --amazonec2-zone b maVM
+$ docker-machine create --driver amazonec2 \
+                        --amazonec2-vpc-id vpc-yyyy \
+                        --amazonec2-subnet-id subnet-yyyy \
+                        --amazonec2-zone b \
+                        maVM
 ```
 
 
