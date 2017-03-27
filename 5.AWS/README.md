@@ -41,6 +41,8 @@ $ docker-machine create --driver amazonec2  --amazonec2-instance-type t2.small -
 Avec un sous-réseau
 ```
 $ docker-machine create --driver amazonec2 --amazonec2-vpc-id vpc-xxxx --amazonec2-subnet-id subnet-xxxx --amazonec2-zone b maVM
+```
+
 
 
 
