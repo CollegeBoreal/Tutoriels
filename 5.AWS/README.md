@@ -9,7 +9,11 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ![alt tag](AWSEducateForm.png)
 
-* Pour étudiants, créer le compte avec @monboreal.ca
+* Pour étudiants, créer le compte avec @monboreal.ca  
+* Pour ID du compte:
+![alt tag](IDduCompte.png)
+
+
 
 ## Se connecter à AWS Educate
 
