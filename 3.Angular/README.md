@@ -28,18 +28,8 @@ $ npm install @angular/cli --global
 
 ## Version minimale de Angular CLI
 
-```
-$ ng --version
-    _                      _                 ____ _     ___
-   / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-  / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
- / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
-/_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-               |___/
-@angular/cli: 1.0.0-rc.4
-node: 6.9.4
-...
-```
+![alt tag](ngversion.png)
+
 
 ## Installation de l'environnement intégré de développement (IDE) -- Webstorm
 
