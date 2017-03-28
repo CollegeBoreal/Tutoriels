@@ -10,7 +10,7 @@ https://aws.amazon.com/fr/education/awseducate/
 ![alt tag](AWSEducateForm.png)
 
 * Pour étudiants, créer le compte avec @monboreal.ca  
-* Pour ID du compte:
+* Pour ID du compte:  
 ![alt tag](IDduCompte.png)
 
 
