@@ -28,6 +28,10 @@ $ npm install @angular/cli --global
 
 ## Version minimale de Angular CLI
 
+```
+$ ng --version
+```
+
 ![alt tag](ngversion.png)
 
 
