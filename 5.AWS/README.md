@@ -9,8 +9,8 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ![alt tag](AWSEducateForm.png)
 
-* Pour étudiants, créer le compte avec le courriel @monboreal.ca  
-* Pour professuers, créer le compte avec le courriel @collegeboreal.ca  
+* Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
+* Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
 * Pour ID du compte:  
 ![alt tag](IDduCompte.png)
 
