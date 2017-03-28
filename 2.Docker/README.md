@@ -4,13 +4,9 @@
 
 * [Installer Docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker)   
 
-## Partage de clés
 
-* Outil `temporaire` permettant de copier et sauvegarder les clés crées par `docker-machine`  
-  l'outil permet également de récupérer les clés sur une autre machine (i.e. MacOS => Windows et vice-versa)   
-https://www.npmjs.com/package/machine-share
 
-## Récupérer les clés du Nuage
+## Récupérer les clés du Nuage Canarie
 
   https://www.canarie.ca/fr/nuage/colleges-et-ecoles-polytechniques/
   
@@ -27,7 +23,7 @@ $ git clone git@github.com:CollegeBoreal/canarie.ca.git
 
 * Dans Git Bash, setter l'environnement
 ```
-$ source ~/Developer/canarie.ca/collège-boréal-openrc-quebec.sh
+$ source ~/Developer/canarie.ca/collège-boréal-openrc-quebec.sh
 ```
 
 ## Creer la Machine Docker dans OpenStack
@@ -56,3 +52,9 @@ $ eval $(docker-machine env CB-<numero étudiant>)
 ```
 $ docker run --name nginx -d -p 80:80 nginx
 ```
+
+# Partage de clés Docker-Machine
+
+* Outil `temporaire` permettant de copier et sauvegarder les clés crées par `docker-machine`  
+  l'outil permet également de récupérer les clés sur une autre machine (i.e. MacOS => Windows et vice-versa)   
+https://www.npmjs.com/package/machine-share
