@@ -11,7 +11,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
 * Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
-* Pour ID du compte:  
+* Pour ID du compte:  rechercher l'information dans votre compte `AWS Tableau de Bord`
 ![alt tag](IDduCompte.png)
 
 
