@@ -4,6 +4,8 @@
 
 https://aws.amazon.com/fr/education/awseducate/
 
+* Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`  
+* Remplir la forme ci-dessous selon le modèle
 
 ![alt tag](AWSEducateForm.png)
 
