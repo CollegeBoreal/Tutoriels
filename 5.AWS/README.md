@@ -61,6 +61,8 @@ $ docker-machine create --driver amazonec2 \
                         maVM
 ```
 
+# AWS CLI
 
+https://aws.amazon.com/fr/cli/
 
 
