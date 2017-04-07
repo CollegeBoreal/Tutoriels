@@ -61,6 +61,23 @@ $ docker-machine create --driver amazonec2 \
                         maVM
 ```
 
+## 
+
+```
+$ sudo -i
+
+# curl -sSL https://get.docker.com | sh
+
+# usermod -aG docker ubuntu
+
+$ sudo service docker start
+
+$ sudo service docker status
+
+```
+
+
+
 # AWS CLI
 
 https://aws.amazon.com/fr/cli/
