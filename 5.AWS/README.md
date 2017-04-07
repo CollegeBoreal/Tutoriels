@@ -34,6 +34,11 @@ https://docs.docker.com/machine/install-machine/
 [default]
     aws_access_key_id = <me remplir>
     aws_secret_access_key = <me remplir>
+
+[mon-profil]
+    aws_access_key_id = <me remplir>
+    aws_secret_access_key = <me remplir>
+
 ```
 
 #### Lancer une nouvelle machine
@@ -61,7 +66,15 @@ $ docker-machine create --driver amazonec2 \
                         maVM
 ```
 
-## 
+Avec un autre profil
+```
+$ docker-machine create --driver amazonec2 \
+                        --amazonec2-iam-instance-profile mon-profil
+                        maVM
+```
+
+
+## Installer sur Ubuntu xenial
 
 ```
 $ sudo -i
