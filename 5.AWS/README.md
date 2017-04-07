@@ -69,6 +69,7 @@ $ docker-machine create --driver amazonec2 \
 Avec un autre profil
 ```
 $ docker-machine create --driver amazonec2 \
+                        --amazonec2-security-group default \
                         --amazonec2-iam-instance-profile mon-profil
                         maVM
 ```
