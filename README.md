@@ -2,7 +2,7 @@
 
 ## [0.GIT](0.GIT)  
   * Utilisation de git
-  * [Livre git](https://git-scm.com/book/en/v2)
+  * [Livre git](https://git-scm.com/book/fr/v2)
 
 ## [1.Scala](1.Scala)  
   * Installation de Scala et de son environnement de développement  
