@@ -2,7 +2,8 @@
 
 ## Installation de la gestion de source
 
-* git Client : https://git-scm.com/downloads
+* git Client : https://git-scm.com/downloads  
+* [Livre git](https://git-scm.com/book/fr/v2)
 
 ## Les premiers pas avec git
 
