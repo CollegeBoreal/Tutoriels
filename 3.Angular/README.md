@@ -39,3 +39,6 @@ $ ng --version
 
 * Intellij Webstorm : https://www.jetbrains.com/webstorm/download
 * Enregistrement    : https://www.jetbrains.com/student/
+
+## Tutoriels en français  
+https://www.youtube.com/playlist?list=PLw5h0DiJ-9PD2b2tM3m7GQsHpuklT-fOT
