@@ -60,6 +60,11 @@ Host github.com
     IdentityFile ~/.ssh/github.com.pk
 ```
 
+# Tutoriel sur Vim (Éditeur utilisé par Unix)
+
+https://www.filesilo.co.uk/video-tutorials/introduction-to-vim/
+
+
 ### Git guidelines:
 ```
 1. git clone git@github.com:CollegeBoreal/Promotion.git
