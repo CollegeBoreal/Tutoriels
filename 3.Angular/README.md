@@ -37,7 +37,7 @@ $ ng --version
 ## Créer un nouveau projet en utilisan SCSS
 
 ```
-$ ng new My_New_Project --style=scss
+$ ng new monprojet --style=scss
 ```
 
 
