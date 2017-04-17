@@ -34,6 +34,12 @@ $ ng --version
 
 ![alt tag](ngversion.png)
 
+## Créer un nouveau projet en utilisan SCSS
+
+```
+$ ng new My_New_Project --style=scss
+```
+
 
 ## Installation de l'environnement intégré de développement (IDE) -- Webstorm
 
