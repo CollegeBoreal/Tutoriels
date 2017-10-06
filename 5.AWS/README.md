@@ -43,14 +43,15 @@ https://www.awseducate.com/SiteLogin
 
 # AWS Deploiement
 
+```
+$ mkdir -p ~/.aws
+$ vi ~/.aws/credentials
+```
+
 #### appliquer vos identifiants
-~/.aws/credentials
+
 ```
 [default]
-    aws_access_key_id = <me remplir>
-    aws_secret_access_key = <me remplir>
-
-[mon-profil]
     aws_access_key_id = <me remplir>
     aws_secret_access_key = <me remplir>
 
