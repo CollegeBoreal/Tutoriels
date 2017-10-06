@@ -1,5 +1,15 @@
 # AWS (Amazon Web Services)
 
+
+## Ouvrir un compte personnel sur AWS 
+
+Note: Si vous en avez deja un entrer dans votre compte.
+
+https://aws.amazon.com/fr/console/
+
+![alt tag](IDduCompte.png)
+
+
 ## Créer un compte AWS Educate
 
 https://aws.amazon.com/fr/education/awseducate/
@@ -12,7 +22,6 @@ https://aws.amazon.com/fr/education/awseducate/
 * Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
 * Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
 * Pour ID du compte:  rechercher l'information dans votre compte `AWS Tableau de Bord`
-![alt tag](IDduCompte.png)
 
 
 
