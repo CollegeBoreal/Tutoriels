@@ -32,6 +32,9 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ![alt tag](aws.PNG)
 
+* Pour terminer l'application appuyer sur `Submit`
+
+* Vous recevrez des courriels vous précisant que votre application a été approuvée
 
 ## Se connecter à AWS Educate
 
