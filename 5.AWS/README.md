@@ -43,11 +43,6 @@ https://www.awseducate.com/SiteLogin
 
 # AWS Deploiement
 
-### Docker Machine AWS
-
-#### Installer Docker-Machine 
-https://docs.docker.com/machine/install-machine/
-
 #### appliquer vos identifiants
 ~/.aws/credentials
 ```
@@ -61,20 +56,20 @@ https://docs.docker.com/machine/install-machine/
 
 ```
 
-#### Lancer une nouvelle machine
+#### Sous Docker, Lancer une nouvelle machine
 
 par défaut (t2.micro)
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
-                        maVM
+                        CB-DEV
 ```
 
 Avec une instance plus large
 ```
 $ docker-machine create --driver amazonec2  \ 
                         --amazonec2-instance-type t2.small \
-                        --amazonec2-security-group default maVM
+                        --amazonec2-security-group default CB-DEV
 ```
 
 Avec un sous-réseau
@@ -83,7 +78,7 @@ $ docker-machine create --driver amazonec2 \
                         --amazonec2-vpc-id vpc-yyyy \
                         --amazonec2-subnet-id subnet-yyyy \
                         --amazonec2-zone b \
-                        maVM
+                        CB-DEV
 ```
 
 Avec un autre profil
@@ -91,7 +86,7 @@ Avec un autre profil
 $ docker-machine create --driver amazonec2 \
                         --amazonec2-security-group default \
                         --amazonec2-iam-instance-profile mon-profil \  
-                        maVM
+                        CB-DEV
 ```
 
 
