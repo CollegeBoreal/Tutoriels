@@ -27,7 +27,7 @@ https://aws.amazon.com/fr/education/awseducate/
 * Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
 * Pour ID du compte:  rechercher l'information dans votre compte `AWS Tableau de Bord`
 
-![alt tag](AWS.png)
+![alt tag](aws.PNG)
 
 
 ## Se connecter à AWS Educate
