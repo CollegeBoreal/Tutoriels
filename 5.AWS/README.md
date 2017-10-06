@@ -7,6 +7,10 @@ Note: Si vous en avez deja un entrer dans votre compte.
 
 https://aws.amazon.com/fr/console/
 
+## Numéro de compte AWS
+
+Récupérer votre numéro de compte AWS dans les paramètres de votre compte.
+
 ![alt tag](IDduCompte.png)
 
 
