@@ -43,11 +43,6 @@ https://www.awseducate.com/SiteLogin
 
 # AWS Deploiement
 
-### Docker Machine AWS
-
-#### Installer Docker-Machine 
-https://docs.docker.com/machine/install-machine/
-
 #### appliquer vos identifiants
 ~/.aws/credentials
 ```
@@ -61,7 +56,7 @@ https://docs.docker.com/machine/install-machine/
 
 ```
 
-#### Lancer une nouvelle machine
+#### Sous Docker, Lancer une nouvelle machine
 
 par défaut (t2.micro)
 ```
