@@ -51,7 +51,7 @@ Faire tourner l'installation de DevStack:
 ./stack.sh
 ```
 
-## apres 42 minutes
+### apres 42 minutes
 
 ```
 =========================
