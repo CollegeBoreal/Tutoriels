@@ -98,7 +98,7 @@ OS Version: Ubuntu 17.04 zesty
 
 * telecharger le fichier `openrc`
 
-[openrc](.openrc.png)
+![alt tag](./openrc.png)
 
 * Creer un fichier .openrc
 
