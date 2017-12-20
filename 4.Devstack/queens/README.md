@@ -96,6 +96,10 @@ OS Version: Ubuntu 17.04 zesty
 
 # Tester son environmment
 
+* telecharger le fichier `openrc`
+
+[openrc](./openrc.png)
+
 * Creer un fichier .openrc
 
 ```
