@@ -117,7 +117,7 @@ $ openstack user list
 ```
 $ cd /run/shm  
 $ wget https://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64-disk1.img
-glance image-create --name "Ubuntu-14.04" --disk-format qcow2 --container-format bare --progress --file /run/shm/precise-server-cloudimg-amd64-disk1.img
+$ glance image-create --name "Ubuntu-14.04" --disk-format qcow2 --container-format bare --progress --file /run/shm/precise-server-cloudimg-amd64-disk1.img
 ```
 
 * Installer `zesty` Ubuntu 17.04 (ne marche pas)
