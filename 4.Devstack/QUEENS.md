@@ -93,3 +93,28 @@ DevStack Version: queens
 Change: d04658eb50d7e1f59625039deaef17208a0c9eb9 Stage rabbitmq and DB logs 2017-12-18 18:21:24 +0000
 OS Version: Ubuntu 17.04 zesty
 ```
+
+# Tester son environmment
+
+## Creer un fichier .openrc
+
+```
+$ vi .openrc 
+export OS_AUTH_URL=http://10.13.237.4/identity
+export OS_IDENTITY_API_VERSION=3
+export OS_PROJECT_NAME=admin
+export OS_USERNAME=admin
+export OS_PASSWORD=supersecret
+```
+
+## `sourcer` le fichier .openrc
+
+```
+$ source .openrc
+```
+
+## Tester une commande
+
+```
+$ openstack user list
+```
