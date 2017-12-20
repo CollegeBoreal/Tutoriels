@@ -128,5 +128,15 @@ $ wget https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd
 $ glance image-create --name "Ubuntu-16.04 LTS" --disk-format qcow2 --container-format bare --progress --file /run/shm/xenial-server-cloudimg-amd64-disk1.img
 ```
 
+# Install Docker
 
+```
+$ curl -fsSL get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
+```
+* add stach as docker user (to avoid sudo)
+
+```
+$ sudo usermod -aG docker your-user
+```
 
