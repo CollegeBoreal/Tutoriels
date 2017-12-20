@@ -96,11 +96,15 @@ OS Version: Ubuntu 17.04 zesty
 
 # Tester son environmment
 
-* telecharger le fichier `openrc`
+* telecharger le fichier `openrc`. Selectionner la version 3
 
 ![alt tag](./openrc.png)
 
+* `sourcer` le fichier telecharge (i.e. demo-openrc.sh)
 
+```
+$ source ~/demo-openrc.sh
+```
 
 * Tester une commande
 
@@ -108,18 +112,8 @@ OS Version: Ubuntu 17.04 zesty
 $ openstack user list
 ```
 
-```
-export OS_AUTH_URL=http://10.13.237.4/identity
-export OS_IDENTITY_API_VERSION=3
-export OS_USERNAME=demo
-export OS_PASSWORD=supersecret
-
-# creation d'image
-export OS_USER_DOMAIN_NAME="Default"
-export OS_PROJECT_ID=5be850f3348e41e896c51fcc3526429b
 
 
-```
 
 ```
 glance image-create   --name "Ubuntu-14.04"          --disk-format qcow2          --container-format bare   --progress    --file /run/shm/precise-server-cloudimg-amd64-disk1.img
