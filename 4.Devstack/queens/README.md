@@ -96,7 +96,7 @@ OS Version: Ubuntu 17.04 zesty
 
 # Tester son environmment
 
-* telecharger le fichier `openrc`. Selectionner la version 3
+* telecharger le fichier `openrc`. Selectionner la version 3 =>  `Fichier OpenStack RC v3`
 
 ![alt tag](./openrc.png)
 
