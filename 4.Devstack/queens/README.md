@@ -112,6 +112,11 @@ $ source ~/demo-openrc.sh
 $ openstack user list
 ```
 
+```
+$ cd /run/shm
+$ wget http://cloud-images.ubuntu.com/zesty/current/zesty-server-cloudimg-arm64.img
+$ glance image-create --name "Ubuntu-17.04" --disk-format qcow2 --container-format bare --progress --file /run/shm/zesty-server-cloudimg-arm64.img
+```
 
 
 
