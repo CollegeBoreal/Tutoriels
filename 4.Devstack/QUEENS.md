@@ -96,7 +96,7 @@ OS Version: Ubuntu 17.04 zesty
 
 # Tester son environmment
 
-## Creer un fichier .openrc
+* Creer un fichier .openrc
 
 ```
 $ vi .openrc 
@@ -107,13 +107,13 @@ export OS_USERNAME=admin
 export OS_PASSWORD=supersecret
 ```
 
-## `sourcer` le fichier .openrc
+* `sourcer` le fichier .openrc
 
 ```
 $ source .openrc
 ```
 
-## Tester une commande
+* Tester une commande
 
 ```
 $ openstack user list
