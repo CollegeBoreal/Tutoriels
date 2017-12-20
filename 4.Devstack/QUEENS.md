@@ -4,29 +4,25 @@ https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
 ## Installation shake and bake
 
-* Add your user
-
-We need to add a user to install DevStack. 
+* Ajouter l'utilisateur `stack`
 
 ```
 $ sudo useradd -s /bin/bash -d /opt/stack -m stack
 ```
 
-* Since this user will be making many changes to your system, it should have sudo privileges:
+* Comme l'utilisateur fera des modifications a votre systeme, il devra avoir des droits speciaux:
 
 ```
 $ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 ```
 
-* Login as user stack
+* Se Logger en tant qu'utilisateur `stack`
 
 ```
 $ sudo su - stack
 ```
 
-* Download DevStack
-
-We’ll grab the latest version of DevStack via https:
+* Telecharger la derniere version de DevStack
 
 ```
 $ sudo apt-get install git -y || sudo yum install -y git
@@ -34,8 +30,7 @@ $ git clone https://git.openstack.org/openstack-dev/devstack
 $ cd devstack
 ```
 
-
-* Edit the file local.conf
+* Editer le fichier local.conf
 
 ```
 [[local|localrc]]
@@ -50,13 +45,13 @@ RABBIT_PASSWORD=$ADMIN_PASSWORD
 SERVICE_PASSWORD=$ADMIN_PASSWORD
 ```
 
-Run DevStack:
+Faire tourner l'installation de DevStack:
 
 ```
 ./stack.sh
 ```
 
-##
+## apres 42 minutes
 
 ```
 =========================
