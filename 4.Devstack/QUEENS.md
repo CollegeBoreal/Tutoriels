@@ -118,3 +118,7 @@ $ source .openrc
 ```
 $ openstack user list
 ```
+
+```
+glance image-create   --name "Ubuntu-14.04"          --disk-format qcow2          --container-format bare   --progress    --file /run/shm/precise-server-cloudimg-amd64-disk1.img
+```
