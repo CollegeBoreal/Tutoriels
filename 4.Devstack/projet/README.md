@@ -8,9 +8,9 @@ http://blogs.igalia.com/dpino/2016/04/10/network-namespaces/
 
 ## établir son environnement (admin)
 ```
-$ sudo -i -u stack
+$ sudo su - stack
 $ cd /opt/devstack
-$ source openrc admin admin
+$ source demo-openrc.sh
 ```
 
 ## Créer son projet
@@ -23,12 +23,17 @@ Retourne:
 +-------------+----------------------------------+
 | Field       | Value                            |
 +-------------+----------------------------------+
-| description | None                             |
+| description |                                  |
+| domain_id   | default                          |
 | enabled     | True                             |
-| id          | bb39b2d8b3b2468a8fb06f5572568956 |
+| id          | 56b0747f3b0d44c9a8612463205d8bdf |
+| is_domain   | False                            |
 | name        | General                          |
+| parent_id   | default                          |
+| tags        | []                               |
 +-------------+----------------------------------+
 ```
+
 * Lister les projets
 ```
 $ openstack project list
@@ -38,12 +43,12 @@ Retourne:
 +----------------------------------+--------------------+
 | ID                               | Name               |
 +----------------------------------+--------------------+
-| 11b792e092164d98b3e12793366e503b | invisible_to_admin |
-| 266243ee745e4eb0b7549ad0daa1e5f9 | alt_demo           |
-| 26c2a062b4e84ad7bd81b7efc1974527 | admin              |
-| 468617395c9b4b0f928ccd0e30f1ae18 | demo               |
-| 84171fc996ea413388b139b6522217ac | service            |
-| bb39b2d8b3b2468a8fb06f5572568956 | General            |
+| 56b0747f3b0d44c9a8612463205d8bdf | General            |
+| 5af1da3c591643ff98ae49fb54e16389 | alt_demo           |
+| 5b25c7c2db314381aa286e423772dc4f | invisible_to_admin |
+| 5be850f3348e41e896c51fcc3526429b | demo               |
+| 73f829a4a39a4b698f76db83612664ef | service            |
+| 9f99225dd7404c28b18a84ff568bd0c0 | admin              |
 +----------------------------------+--------------------+
 ```
 
@@ -53,16 +58,18 @@ $ openstack user create --password openstack1 --project General --email=johndoe@
 ```
 Retourne:
 ```
-+------------+----------------------------------+
-| Field      | Value                            |
-+------------+----------------------------------+
-| email      | johndoe@testco.com               |
-| enabled    | True                             |
-| id         | fc6f210ea633406a978e83010af6b351 |
-| name       | johndoe                          |
-| project_id | bb39b2d8b3b2468a8fb06f5572568956 |
-| username   | johndoe                          |
-+------------+----------------------------------+
++---------------------+----------------------------------+
+| Field               | Value                            |
++---------------------+----------------------------------+
+| default_project_id  | 56b0747f3b0d44c9a8612463205d8bdf |
+| domain_id           | default                          |
+| email               | johndoe@testco.com               |
+| enabled             | True                             |
+| id                  | b206463b63ee4c65b9816d40baf36569 |
+| name                | johndoe                          |
+| options             | {}                               |
+| password_expires_at | None                             |
++---------------------+----------------------------------+
 ```
 Vérification:
 ```
@@ -104,80 +111,139 @@ Retourne:
 
 ## Créer un réseau interne
 ```
-$ neutron net-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_NETWORK
+$ openstack network create GENERAL_NETWORK
 ```
 Retourne:
 ```
-Created a new network:
 +---------------------------+--------------------------------------+
 | Field                     | Value                                |
 +---------------------------+--------------------------------------+
-| admin_state_up            | True                                 |
+| admin_state_up            | UP                                   |
 | availability_zone_hints   |                                      |
 | availability_zones        |                                      |
-| created_at                | 2016-12-01T23:03:16Z                 |
+| created_at                | 2017-12-20T23:09:00Z                 |
 | description               |                                      |
-| id                        | db8714ed-ac3e-49a7-aec8-3b7e68cf33a5 |
-| ipv4_address_scope        |                                      |
-| ipv6_address_scope        |                                      |
+| dns_domain                | None                                 |
+| id                        | cbff7b67-3607-4fb5-a96b-1f44cedb759c |
+| ipv4_address_scope        | None                                 |
+| ipv6_address_scope        | None                                 |
+| is_default                | False                                |
+| is_vlan_transparent       | None                                 |
 | mtu                       | 1450                                 |
 | name                      | GENERAL_NETWORK                      |
 | port_security_enabled     | True                                 |
-| project_id                | bb39b2d8b3b2468a8fb06f5572568956     |
+| project_id                | 5be850f3348e41e896c51fcc3526429b     |
 | provider:network_type     | vxlan                                |
-| provider:physical_network |                                      |
-| provider:segmentation_id  | 26                                   |
-| revision_number           | 3                                    |
-| router:external           | False                                |
+| provider:physical_network | None                                 |
+| provider:segmentation_id  | 30                                   |
+| qos_policy_id             | None                                 |
+| revision_number           | 2                                    |
+| router:external           | Internal                             |
+| segments                  | None                                 |
 | shared                    | False                                |
 | status                    | ACTIVE                               |
 | subnets                   |                                      |
 | tags                      |                                      |
-| tenant_id                 | bb39b2d8b3b2468a8fb06f5572568956     |
-| updated_at                | 2016-12-01T23:03:16Z                 |
+| updated_at                | 2017-12-20T23:09:00Z                 |
 +---------------------------+--------------------------------------+
 ```
 Vérification:
 ```
 $ openstack network list
 ```
+Retourne:
+```
++--------------------------------------+-----------------+----------------------------------------------------------------------------+
+| ID                                   | Name            | Subnets                                                                    |
++--------------------------------------+-----------------+----------------------------------------------------------------------------+
+| 2bc2346f-873c-4162-bce2-a41c3e5682fe | public          | 2aa41a2f-b504-436f-a324-6ea3fae76ac5, c1aba6ce-28eb-4a73-9242-04abb5ad27ad |
+| bc0016ba-cb63-411a-a801-c33b1b64816c | private         | 7667a8a7-dd1b-4138-97db-af395f36d60f, b355ff4c-8c03-4a17-881d-78a94aff7adf |
+| cbff7b67-3607-4fb5-a96b-1f44cedb759c | GENERAL_NETWORK |                                                                            |
++--------------------------------------+-----------------+----------------------------------------------------------------------------+
+```
 
 ## Créer un sous-réseau interne
 ```
-$ neutron subnet-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_NETWORK 172.24.220.0/24
+$ openstack subnet create GENERAL_SUBNETWORK --subnet-range 172.24.220.0/24 --service-type 'compute:nova' --network GENERAL_NETWORK
 ```
 Retourne:
 ```
-Created a new subnet:
-+-------------------+----------------------------------------------------+
-| Field             | Value                                              |
-+-------------------+----------------------------------------------------+
-| allocation_pools  | {"start": "172.24.220.2", "end": "172.24.220.254"} |
-| cidr              | 172.24.220.0/24                                    |
-| created_at        | 2016-12-01T23:05:02Z                               |
-| description       |                                                    |
-| dns_nameservers   |                                                    |
-| enable_dhcp       | True                                               |
-| gateway_ip        | 172.24.220.1                                       |
-| host_routes       |                                                    |
-| id                | 9e2a6697-7ddc-4f7d-8a59-b2acc0f384d1               |
-| ip_version        | 4                                                  |
-| ipv6_address_mode |                                                    |
-| ipv6_ra_mode      |                                                    |
-| name              |                                                    |
-| network_id        | db8714ed-ac3e-49a7-aec8-3b7e68cf33a5               |
-| project_id        | bb39b2d8b3b2468a8fb06f5572568956                   |
-| revision_number   | 2                                                  |
-| service_types     |                                                    |
-| subnetpool_id     |                                                    |
-| tenant_id         | bb39b2d8b3b2468a8fb06f5572568956                   |
-| updated_at        | 2016-12-01T23:05:02Z                               |
-+-------------------+----------------------------------------------------+
++-------------------+--------------------------------------+
+| Field             | Value                                |
++-------------------+--------------------------------------+
+| allocation_pools  | 172.24.220.2-172.24.220.254          |
+| cidr              | 172.24.220.0/24                      |
+| created_at        | 2017-12-20T23:09:43Z                 |
+| description       |                                      |
+| dns_nameservers   |                                      |
+| enable_dhcp       | True                                 |
+| gateway_ip        | 172.24.220.1                         |
+| host_routes       |                                      |
+| id                | 8d5682c8-2878-40b1-a433-f5abd1c27b5b |
+| ip_version        | 4                                    |
+| ipv6_address_mode | None                                 |
+| ipv6_ra_mode      | None                                 |
+| name              | GENERAL_SUBNETWORK                   |
+| network_id        | cbff7b67-3607-4fb5-a96b-1f44cedb759c |
+| project_id        | 5be850f3348e41e896c51fcc3526429b     |
+| revision_number   | 1                                    |
+| segment_id        | None                                 |
+| service_types     | compute:nova                         |
+| subnetpool_id     | None                                 |
+| tags              |                                      |
+| updated_at        | 2017-12-20T23:09:43Z                 |
++-------------------+--------------------------------------+
 ```
 Vérification:
 ```
 $ openstack subnet list
 ```
+
+## Creer une machine virtuelle
+
+```
+$openstack server create demo-instance1 --flavor m1.tiny \
+   --image cirros-0.3.5-x86_64-disk --nic net-id=cbff7b67-3607-4fb5-a96b-1f44cedb759c
+```
+Retourne:
+```
++-------------------------------------+-----------------------------------------------------------------+
+| Field                               | Value                                                           |
++-------------------------------------+-----------------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                          |
+| OS-EXT-AZ:availability_zone         |                                                                 |
+| OS-EXT-SRV-ATTR:host                | None                                                            |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                                            |
+| OS-EXT-SRV-ATTR:instance_name       |                                                                 |
+| OS-EXT-STS:power_state              | NOSTATE                                                         |
+| OS-EXT-STS:task_state               | scheduling                                                      |
+| OS-EXT-STS:vm_state                 | building                                                        |
+| OS-SRV-USG:launched_at              | None                                                            |
+| OS-SRV-USG:terminated_at            | None                                                            |
+| accessIPv4                          |                                                                 |
+| accessIPv6                          |                                                                 |
+| addresses                           |                                                                 |
+| adminPass                           | Zc6Y7jLpoFPx                                                    |
+| config_drive                        |                                                                 |
+| created                             | 2017-12-20T23:15:18Z                                            |
+| flavor                              | m1.tiny (1)                                                     |
+| hostId                              |                                                                 |
+| id                                  | e8056fe2-44db-43d5-a3cb-a7b1ad9ac6f1                            |
+| image                               | cirros-0.3.5-x86_64-disk (c0ab32d2-4043-4581-a855-cccf52f8fd4d) |
+| key_name                            | None                                                            |
+| name                                | demo-instance1                                                  |
+| progress                            | 0                                                               |
+| project_id                          | 5be850f3348e41e896c51fcc3526429b                                |
+| properties                          |                                                                 |
+| security_groups                     | name='default'                                                  |
+| status                              | BUILD                                                           |
+| updated                             | 2017-12-20T23:15:18Z                                            |
+| user_id                             | df44fd6eb9034b689951acbf50cc54be                                |
+| volumes_attached                    |                                                                 |
++-------------------------------------+-----------------------------------------------------------------+
+```
+
+<HR/>
 
 ## Créer un router
 ```
