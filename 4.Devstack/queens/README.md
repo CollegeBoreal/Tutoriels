@@ -128,7 +128,13 @@ $ wget https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd
 $ glance image-create --name "Ubuntu-16.04 LTS" --disk-format qcow2 --container-format bare --progress --file /run/shm/xenial-server-cloudimg-amd64-disk1.img
 ```
 
-# Install Docker
+# Docker
+
+
+
+## Install Docker
+
+https://docs.docker.com/engine/installation/
 
 ```
 $ curl -fsSL get.docker.com -o get-docker.sh
@@ -140,3 +146,12 @@ $ sudo sh get-docker.sh
 $ sudo usermod -aG docker your-user
 ```
 
+## Install Docker Machine
+
+https://docs.docker.com/machine/install-machine/#install-machine-directly
+
+```
+$ curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+chmod +x /tmp/docker-machine &&
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+```
