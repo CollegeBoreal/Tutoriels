@@ -202,7 +202,7 @@ $ openstack subnet list
 ## Creer une machine virtuelle
 
 ```
-$openstack server create demo-instance1 --flavor m1.tiny \
+$ openstack server create demo-instance1 --flavor m1.tiny \
    --image cirros-0.3.5-x86_64-disk --nic net-id=cbff7b67-3607-4fb5-a96b-1f44cedb759c
 ```
 Retourne:
