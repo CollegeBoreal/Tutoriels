@@ -1,4 +1,6 @@
 # INSTALLER OPENSTACK - DEVSTACK 
 
-[Newtown](./NEWTON.md) `Autheur: Gary Uppiah`
-[Queens](./QUEENS.md) `Autheur: Setra`
+| Version              | Autheur                               |
+|:---------------------|:--------------------------------------|
+|[Newtown](./NEWTON.md)| `Autheur: Gary Uppiah`                |
+|[Queens](./QUEENS.md) | `Autheur: Setra`                      |
