@@ -1,3 +1,28 @@
+# Docker
+
+## Install Docker on Linux
+
+https://docs.docker.com/engine/installation/
+
+```
+$ curl -fsSL get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
+```
+* add stach as docker user (to avoid sudo)
+
+```
+$ sudo usermod -aG docker your-user
+```
+
+## Install Docker Machine
+
+https://docs.docker.com/machine/install-machine/#install-machine-directly
+
+```
+$ curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+chmod +x /tmp/docker-machine &&
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+```
 
 
 ```
@@ -10,7 +35,7 @@ $ openstack project list
 +----------------------------------+--------------------+
 ```
 
-Le domaine et le projet (i.e. tenant) est requis en version v3
+Domain and projext (i.e. tenant) is required for OpenStack version v3
 
 ```
 $ docker-machine -D  create \
