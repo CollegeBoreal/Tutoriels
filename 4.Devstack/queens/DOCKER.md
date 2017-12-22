@@ -8,10 +8,10 @@ https://docs.docker.com/engine/installation/
 $ curl -fsSL get.docker.com -o get-docker.sh
 $ sudo sh get-docker.sh
 ```
-* add stach as docker user (to avoid sudo)
+* add `stack` as a docker user (to avoid sudo)
 
 ```
-$ sudo usermod -aG docker your-user
+$ sudo usermod -aG docker stack
 ```
 
 ## Install Docker Machine
