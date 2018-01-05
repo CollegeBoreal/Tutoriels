@@ -42,12 +42,12 @@ Retourne:
 +----------------------------------+--------------------+
 | ID                               | Name               |
 +----------------------------------+--------------------+
-| 56b0747f3b0d44c9a8612463205d8bdf | General            |
-| 5af1da3c591643ff98ae49fb54e16389 | alt_demo           |
-| 5b25c7c2db314381aa286e423772dc4f | invisible_to_admin |
-| 5be850f3348e41e896c51fcc3526429b | demo               |
-| 73f829a4a39a4b698f76db83612664ef | service            |
-| 9f99225dd7404c28b18a84ff568bd0c0 | admin              |
+| 11dbd32de6a4421b8f973e8b59699aea | demo               |
+| 3ca6ef6b89c9412494269bd70ffcf517 | admin              |
+| 5207c2752a654738a5f609f671ba8040 | invisible_to_admin |
+| 69b2b3a3e5af414ebc7ad250163e47ad | General            |
+| db6ed7e01b1d4d4b9249a30c7706a7f8 | alt_demo           |
+| f2e0004fe488461585addc3e8ce517c4 | service            |
 +----------------------------------+--------------------+
 ```
 
