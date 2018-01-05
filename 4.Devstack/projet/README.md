@@ -121,19 +121,16 @@ $ openstack user list --project General
 ## Créer un réseau interne
 ```
 $ openstack network create GENERAL_NETWORK
-```
-Retourne:
-```
 +---------------------------+--------------------------------------+
 | Field                     | Value                                |
 +---------------------------+--------------------------------------+
 | admin_state_up            | UP                                   |
 | availability_zone_hints   |                                      |
 | availability_zones        |                                      |
-| created_at                | 2017-12-20T23:09:00Z                 |
+| created_at                | 2018-01-05T18:14:24Z                 |
 | description               |                                      |
 | dns_domain                | None                                 |
-| id                        | cbff7b67-3607-4fb5-a96b-1f44cedb759c |
+| id                        | 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 |
 | ipv4_address_scope        | None                                 |
 | ipv6_address_scope        | None                                 |
 | is_default                | False                                |
@@ -141,10 +138,10 @@ Retourne:
 | mtu                       | 1450                                 |
 | name                      | GENERAL_NETWORK                      |
 | port_security_enabled     | True                                 |
-| project_id                | 5be850f3348e41e896c51fcc3526429b     |
+| project_id                | 11dbd32de6a4421b8f973e8b59699aea     |
 | provider:network_type     | vxlan                                |
 | provider:physical_network | None                                 |
-| provider:segmentation_id  | 30                                   |
+| provider:segmentation_id  | 7                                    |
 | qos_policy_id             | None                                 |
 | revision_number           | 2                                    |
 | router:external           | Internal                             |
@@ -153,21 +150,18 @@ Retourne:
 | status                    | ACTIVE                               |
 | subnets                   |                                      |
 | tags                      |                                      |
-| updated_at                | 2017-12-20T23:09:00Z                 |
+| updated_at                | 2018-01-05T18:14:24Z                 |
 +---------------------------+--------------------------------------+
 ```
 Vérification:
 ```
 $ openstack network list
-```
-Retourne:
-```
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 | ID                                   | Name            | Subnets                                                                    |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
-| 2bc2346f-873c-4162-bce2-a41c3e5682fe | public          | 2aa41a2f-b504-436f-a324-6ea3fae76ac5, c1aba6ce-28eb-4a73-9242-04abb5ad27ad |
-| bc0016ba-cb63-411a-a801-c33b1b64816c | private         | 7667a8a7-dd1b-4138-97db-af395f36d60f, b355ff4c-8c03-4a17-881d-78a94aff7adf |
-| cbff7b67-3607-4fb5-a96b-1f44cedb759c | GENERAL_NETWORK |                                                                            |
+| 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 | GENERAL_NETWORK |                                                                            |
+| 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public          | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
+| 95b8dcd1-2c90-421e-9251-acb8c57baa5f | private         | 17060c51-1dd5-41f5-bd30-af4365517388, d1af37f8-466a-47da-bf8f-bd5682fe1fe7 |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 ```
 
