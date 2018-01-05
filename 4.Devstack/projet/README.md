@@ -9,7 +9,7 @@ http://blogs.igalia.com/dpino/2016/04/10/network-namespaces/
 ## établir son environnement (admin)
 ```
 $ sudo su - stack
-$ source demo-openrc.sh
+$ source demo-openrc.sh # recuperer le fichier openrc
 ```
 
 ## Créer son projet
