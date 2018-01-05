@@ -212,52 +212,6 @@ $ openstack subnet list
 +--------------------------------------+---------------------+--------------------------------------+---------------------+
 ```
 
-## Creer une machine virtuelle
-
-```
-$ openstack server create demo-instance1 --flavor m1.tiny \
-   --image cirros-0.3.5-x86_64-disk --nic net-id=cbff7b67-3607-4fb5-a96b-1f44cedb759c
-```
-Retourne:
-```
-+-------------------------------------+-----------------------------------------------------------------+
-| Field                               | Value                                                           |
-+-------------------------------------+-----------------------------------------------------------------+
-| OS-DCF:diskConfig                   | MANUAL                                                          |
-| OS-EXT-AZ:availability_zone         |                                                                 |
-| OS-EXT-SRV-ATTR:host                | None                                                            |
-| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                                            |
-| OS-EXT-SRV-ATTR:instance_name       |                                                                 |
-| OS-EXT-STS:power_state              | NOSTATE                                                         |
-| OS-EXT-STS:task_state               | scheduling                                                      |
-| OS-EXT-STS:vm_state                 | building                                                        |
-| OS-SRV-USG:launched_at              | None                                                            |
-| OS-SRV-USG:terminated_at            | None                                                            |
-| accessIPv4                          |                                                                 |
-| accessIPv6                          |                                                                 |
-| addresses                           |                                                                 |
-| adminPass                           | Zc6Y7jLpoFPx                                                    |
-| config_drive                        |                                                                 |
-| created                             | 2017-12-20T23:15:18Z                                            |
-| flavor                              | m1.tiny (1)                                                     |
-| hostId                              |                                                                 |
-| id                                  | e8056fe2-44db-43d5-a3cb-a7b1ad9ac6f1                            |
-| image                               | cirros-0.3.5-x86_64-disk (c0ab32d2-4043-4581-a855-cccf52f8fd4d) |
-| key_name                            | None                                                            |
-| name                                | demo-instance1                                                  |
-| progress                            | 0                                                               |
-| project_id                          | 5be850f3348e41e896c51fcc3526429b                                |
-| properties                          |                                                                 |
-| security_groups                     | name='default'                                                  |
-| status                              | BUILD                                                           |
-| updated                             | 2017-12-20T23:15:18Z                                            |
-| user_id                             | df44fd6eb9034b689951acbf50cc54be                                |
-| volumes_attached                    |                                                                 |
-+-------------------------------------+-----------------------------------------------------------------+
-```
-
-<HR/>
-
 ## Créer un router
 ```
 neutron router-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_ROUTER
@@ -360,6 +314,50 @@ Retourne:
 | d4455c51-c52b-4448-9406-eebd89c14255 |      | fa:16:3e:4d:9d:e8 | {"subnet_id": "08bfa6fe-b9ff-4377-a3f6-4f044da90b8a", "ip_address": "10.13.237.92"} |
 |                                      |      |                   | {"subnet_id": "a5c01daf-1a48-4a5e-a39c-564d8a0582ff", "ip_address": "2001:db8::a"}  |
 +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------+
+```
+
+## Creer une machine virtuelle
+
+```
+$ openstack server create demo-instance1 --flavor m1.tiny \
+   --image cirros-0.3.5-x86_64-disk --nic net-id=cbff7b67-3607-4fb5-a96b-1f44cedb759c
+```
+Retourne:
+```
++-------------------------------------+-----------------------------------------------------------------+
+| Field                               | Value                                                           |
++-------------------------------------+-----------------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                          |
+| OS-EXT-AZ:availability_zone         |                                                                 |
+| OS-EXT-SRV-ATTR:host                | None                                                            |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                                            |
+| OS-EXT-SRV-ATTR:instance_name       |                                                                 |
+| OS-EXT-STS:power_state              | NOSTATE                                                         |
+| OS-EXT-STS:task_state               | scheduling                                                      |
+| OS-EXT-STS:vm_state                 | building                                                        |
+| OS-SRV-USG:launched_at              | None                                                            |
+| OS-SRV-USG:terminated_at            | None                                                            |
+| accessIPv4                          |                                                                 |
+| accessIPv6                          |                                                                 |
+| addresses                           |                                                                 |
+| adminPass                           | Zc6Y7jLpoFPx                                                    |
+| config_drive                        |                                                                 |
+| created                             | 2017-12-20T23:15:18Z                                            |
+| flavor                              | m1.tiny (1)                                                     |
+| hostId                              |                                                                 |
+| id                                  | e8056fe2-44db-43d5-a3cb-a7b1ad9ac6f1                            |
+| image                               | cirros-0.3.5-x86_64-disk (c0ab32d2-4043-4581-a855-cccf52f8fd4d) |
+| key_name                            | None                                                            |
+| name                                | demo-instance1                                                  |
+| progress                            | 0                                                               |
+| project_id                          | 5be850f3348e41e896c51fcc3526429b                                |
+| properties                          |                                                                 |
+| security_groups                     | name='default'                                                  |
+| status                              | BUILD                                                           |
+| updated                             | 2017-12-20T23:15:18Z                                            |
+| user_id                             | df44fd6eb9034b689951acbf50cc54be                                |
+| volumes_attached                    |                                                                 |
++-------------------------------------+-----------------------------------------------------------------+
 ```
 
 # Neutron
