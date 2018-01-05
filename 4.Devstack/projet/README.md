@@ -74,6 +74,22 @@ Vérification:
 ```
 $ openstack user list
 ```
+Retourne:
+```
++----------------------------------+-----------+
+| ID                               | Name      |
++----------------------------------+-----------+
+| 2080efcd64434f55b3159733792db31c | neutron   |
+| 21dfa46b9655450abb476873f450112a | alt_demo  |
+| 2c96f1467d20415794ac04017a97d512 | admin     |
+| 47f471a1eecd4cbd889c2691e0e0f8b5 | nova      |
+| 947f6a03bbfe43e2a7359ac7bc340ede | cinder    |
+| a4ec9663c99b4103953263c0745cf714 | demo      |
+| c133a333c8594657acce97cbd774a6cd | glance    |
+| c77c308c59604d37aec69edc28ad63be | placement |
+| d133d8d6242e4c098aaf9736359483f7 | johndoe   |
++----------------------------------+-----------+
+```
 
 ## Assigner un role à l'utilisateur
 ```
