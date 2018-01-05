@@ -16,9 +16,6 @@ $ source admin-openrc.sh # recuperer le fichier openrc pour l'utilisateur admin
 * Créer le projet General
 ```
 $ openstack project create General
-```
-Retourne:
-```
 +-------------+----------------------------------+
 | Field       | Value                            |
 +-------------+----------------------------------+
@@ -36,9 +33,6 @@ Retourne:
 * Lister les projets
 ```
 $ openstack project list
-```
-Retourne:
-```
 +----------------------------------+--------------------+
 | ID                               | Name               |
 +----------------------------------+--------------------+
@@ -54,9 +48,6 @@ Retourne:
 ## Créer un utilisateur
 ```
 $ openstack user create --password openstack1 --project General --email=johndoe@testco.com johndoe
-```
-Retourne:
-```
 +---------------------+----------------------------------+
 | Field               | Value                            |
 +---------------------+----------------------------------+
@@ -73,9 +64,6 @@ Retourne:
 Vérification:
 ```
 $ openstack user list
-```
-Retourne:
-```
 +----------------------------------+-----------+
 | ID                               | Name      |
 +----------------------------------+-----------+
@@ -92,11 +80,11 @@ Retourne:
 ```
 
 ## Assigner un role à l'utilisateur
+
+* Lister les roles
+
 ```
 $ openstack role list
-```
-Retourne:
-```
 +----------------------------------+---------------+
 | ID                               | Name          |
 +----------------------------------+---------------+
@@ -108,21 +96,27 @@ Retourne:
 | deb17ed230d84ec7b75c24603c336ee5 | ResellerAdmin |
 +----------------------------------+---------------+
 ```
-Retourne:
+
+* Donner un role
+
 ```
 $ openstack role add --project General --user johndoe Member
 ```
 Retourne:
 ```
-+-----------+----------------------------------+
-| Field     | Value                            |
-+-----------+----------------------------------+
-| domain_id | None                             |
-| id        | 6654acbdae4d4c24a622fe01f2a4dc0e |
-| name      | Member                           |
-+-----------+----------------------------------+
+(none)
 ```
 
+* Lister par projet
+
+```
+$ openstack user list --project General
++----------------------------------+---------+
+| ID                               | Name    |
++----------------------------------+---------+
+| d133d8d6242e4c098aaf9736359483f7 | johndoe |
++----------------------------------+---------+
+```
 
 ## Créer un réseau interne
 ```
