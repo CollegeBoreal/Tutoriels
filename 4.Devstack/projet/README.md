@@ -214,36 +214,40 @@ $ openstack subnet list
 
 ## Créer un router
 ```
-neutron router-create --tenant-id bb39b2d8b3b2468a8fb06f5572568956 GENERAL_ROUTER
-```
-Retourne:
-```
-Created a new router:
+$ openstack router create --project General GENERAL_ROUTER
 +-------------------------+--------------------------------------+
 | Field                   | Value                                |
 +-------------------------+--------------------------------------+
-| admin_state_up          | True                                 |
+| admin_state_up          | UP                                   |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2016-12-01T23:07:44Z                 |
+| created_at              | 2018-01-05T18:22:20Z                 |
 | description             |                                      |
 | distributed             | False                                |
-| external_gateway_info   |                                      |
-| flavor_id               |                                      |
+| external_gateway_info   | None                                 |
+| flavor_id               | None                                 |
 | ha                      | False                                |
-| id                      | 19fe12e6-5bfe-4136-95ad-50ca3d4167ef |
+| id                      | d8ed7d9f-0a44-47bb-8d85-d0e400c8342a |
 | name                    | GENERAL_ROUTER                       |
-| project_id              | bb39b2d8b3b2468a8fb06f5572568956     |
-| revision_number         | 2                                    |
+| project_id              | 69b2b3a3e5af414ebc7ad250163e47ad     |
+| revision_number         | None                                 |
 | routes                  |                                      |
 | status                  | ACTIVE                               |
-| tenant_id               | bb39b2d8b3b2468a8fb06f5572568956     |
-| updated_at              | 2016-12-01T23:07:44Z                 |
+| tags                    |                                      |
+| updated_at              | 2018-01-05T18:22:20Z                 |
 +-------------------------+--------------------------------------+
 ```
-Vérification:
+
+* Vérification:
+
 ```
 $ openstack router list
++--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
+| ID                                   | Name           | Status | State | Distributed | HA    | Project                          |
++--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
+| d8ed7d9f-0a44-47bb-8d85-d0e400c8342a | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
+| db7325f1-f7c4-4574-8103-a4e93d3be56b | router1        | ACTIVE | UP    | False       | False | 11dbd32de6a4421b8f973e8b59699aea |
++--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 ```
 
 ## Rajout du sous-réseau au routeur
