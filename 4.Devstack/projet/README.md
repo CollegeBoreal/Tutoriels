@@ -9,7 +9,6 @@ http://blogs.igalia.com/dpino/2016/04/10/network-namespaces/
 ## établir son environnement (admin)
 ```
 $ sudo su - stack
-$ cd /opt/devstack
 $ source demo-openrc.sh
 ```
 
