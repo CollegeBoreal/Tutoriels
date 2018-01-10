@@ -166,42 +166,42 @@ $ openstack network list
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 | ID                                   | Name            | Subnets                                                                    |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
-| 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 | GENERAL_NETWORK |                                                                            |
 | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public          | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
 | 95b8dcd1-2c90-421e-9251-acb8c57baa5f | private         | 17060c51-1dd5-41f5-bd30-af4365517388, d1af37f8-466a-47da-bf8f-bd5682fe1fe7 |
+| c9d69620-080a-4441-8a4e-2ca7857d44d0 | GENERAL_NETWORK |                                                                            |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 ```
 
 ## Créer un sous-réseau interne
 ```
 $ openstack subnet create GENERAL_SUBNETWORK \
-          --subnet-range 172.24.220.0/24 \
-          --service-type 'compute:nova' \
-          --network GENERAL_NETWORK
+>           --subnet-range 172.24.220.0/24 \
+>           --service-type 'compute:nova' \
+>           --network GENERAL_NETWORK
 +-------------------+--------------------------------------+
 | Field             | Value                                |
 +-------------------+--------------------------------------+
 | allocation_pools  | 172.24.220.2-172.24.220.254          |
 | cidr              | 172.24.220.0/24                      |
-| created_at        | 2018-01-05T18:16:31Z                 |
+| created_at        | 2018-01-10T21:38:25Z                 |
 | description       |                                      |
 | dns_nameservers   |                                      |
 | enable_dhcp       | True                                 |
 | gateway_ip        | 172.24.220.1                         |
 | host_routes       |                                      |
-| id                | 3f6a12a0-bfe3-428c-8477-dc8d227b7149 |
+| id                | 2b3af829-d7ce-4805-98d5-3ce3bfe3f8ef |
 | ip_version        | 4                                    |
 | ipv6_address_mode | None                                 |
 | ipv6_ra_mode      | None                                 |
 | name              | GENERAL_SUBNETWORK                   |
-| network_id        | 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 |
-| project_id        | 11dbd32de6a4421b8f973e8b59699aea     |
+| network_id        | c9d69620-080a-4441-8a4e-2ca7857d44d0 |
+| project_id        | 69b2b3a3e5af414ebc7ad250163e47ad     |
 | revision_number   | 1                                    |
 | segment_id        | None                                 |
 | service_types     | compute:nova                         |
 | subnetpool_id     | None                                 |
 | tags              |                                      |
-| updated_at        | 2018-01-05T18:16:31Z                 |
+| updated_at        | 2018-01-10T21:38:25Z                 |
 +-------------------+--------------------------------------+
 ```
 
@@ -212,7 +212,7 @@ $ openstack subnet list
 | ID                                   | Name                | Network                              | Subnet              |
 +--------------------------------------+---------------------+--------------------------------------+---------------------+
 | 17060c51-1dd5-41f5-bd30-af4365517388 | ipv6-private-subnet | 95b8dcd1-2c90-421e-9251-acb8c57baa5f | fd9f:e5c4:6a16::/64 |
-| 3f6a12a0-bfe3-428c-8477-dc8d227b7149 | GENERAL_SUBNETWORK  | 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 | 172.24.220.0/24     |
+| 2b3af829-d7ce-4805-98d5-3ce3bfe3f8ef | GENERAL_SUBNETWORK  | c9d69620-080a-4441-8a4e-2ca7857d44d0 | 172.24.220.0/24     |
 | 8271eec6-064e-4476-aeff-d9652d03180a | ipv6-public-subnet  | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | 2001:db8::/64       |
 | cd309e31-f191-44bf-a0b7-1cbc34071add | public-subnet       | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | 10.13.237.48/28     |
 | d1af37f8-466a-47da-bf8f-bd5682fe1fe7 | private-subnet      | 95b8dcd1-2c90-421e-9251-acb8c57baa5f | 10.0.0.0/26         |
@@ -228,30 +228,31 @@ $ openstack router create --project General GENERAL_ROUTER
 | admin_state_up          | UP                                   |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2018-01-05T18:22:20Z                 |
+| created_at              | 2018-01-10T21:40:04Z                 |
 | description             |                                      |
 | distributed             | False                                |
 | external_gateway_info   | None                                 |
 | flavor_id               | None                                 |
 | ha                      | False                                |
-| id                      | d8ed7d9f-0a44-47bb-8d85-d0e400c8342a |
+| id                      | c025ab44-7da6-4d54-8fcf-b840d9be0092 |
 | name                    | GENERAL_ROUTER                       |
 | project_id              | 69b2b3a3e5af414ebc7ad250163e47ad     |
 | revision_number         | None                                 |
 | routes                  |                                      |
 | status                  | ACTIVE                               |
 | tags                    |                                      |
-| updated_at              | 2018-01-05T18:22:20Z                 |
+| updated_at              | 2018-01-10T21:40:04Z                 |
 +-------------------------+--------------------------------------+
 ```
 
 * Vérification:
 
 ```
-$ openstack router list
+$  openstack router list
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 | ID                                   | Name           | Status | State | Distributed | HA    | Project                          |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
+| c025ab44-7da6-4d54-8fcf-b840d9be0092 | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
 | d8ed7d9f-0a44-47bb-8d85-d0e400c8342a | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
 | db7325f1-f7c4-4574-8103-a4e93d3be56b | router1        | ACTIVE | UP    | False       | False | 11dbd32de6a4421b8f973e8b59699aea |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
