@@ -330,7 +330,10 @@ $ openstack router show GENERAL_ROUTER
 ## Creer une machine virtuelle
 
 ```
-openstack server create demo-instance1 --flavor m1.tiny    --image cirros-0.3.5-x86_64-disk --network GENERAL_NETWORK
+openstack server create demo-instance1 \
+                 --flavor m1.tiny \
+                 --image cirros-0.3.5-x86_64-disk \
+                 --network GENERAL_NETWORK
 +-------------------------------------+-----------------------------------------------------------------+
 | Field                               | Value                                                           |
 +-------------------------------------+-----------------------------------------------------------------+
