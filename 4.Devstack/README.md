@@ -11,3 +11,7 @@
 |:---------------------|:-----------------------|:-------------------------------------------------------------------|
 |[Projet](./projet)    | `Autheur: Setra`       | Inspire par: [OpenStack in action](https://www.manning.com/books/openstack-in-action) |
 
+
+References:
+
+https://docs.openstack.org/ocata/networking-guide/config-service-subnets.html
