@@ -325,7 +325,10 @@ $ openstack router show GENERAL_ROUTER
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-<hr/>
+## établir son environnement (johndoe)
+```
+$ source General-openrc.sh # recuperer le fichier openrc pour l'utilisateur johndoe de Dashboard Horizon
+```
 
 ## Creer une machine virtuelle
 
@@ -334,40 +337,37 @@ openstack server create demo-instance1 \
                  --flavor m1.tiny \
                  --image cirros-0.3.5-x86_64-disk \
                  --network GENERAL_NETWORK
-+-------------------------------------+-----------------------------------------------------------------+
-| Field                               | Value                                                           |
-+-------------------------------------+-----------------------------------------------------------------+
-| OS-DCF:diskConfig                   | MANUAL                                                          |
-| OS-EXT-AZ:availability_zone         |                                                                 |
-| OS-EXT-SRV-ATTR:host                | None                                                            |
-| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                                            |
-| OS-EXT-SRV-ATTR:instance_name       |                                                                 |
-| OS-EXT-STS:power_state              | NOSTATE                                                         |
-| OS-EXT-STS:task_state               | scheduling                                                      |
-| OS-EXT-STS:vm_state                 | building                                                        |
-| OS-SRV-USG:launched_at              | None                                                            |
-| OS-SRV-USG:terminated_at            | None                                                            |
-| accessIPv4                          |                                                                 |
-| accessIPv6                          |                                                                 |
-| addresses                           |                                                                 |
-| adminPass                           | zV4npDWVrhHZ                                                    |
-| config_drive                        |                                                                 |
-| created                             | 2018-01-10T23:28:33Z                                            |
-| flavor                              | m1.tiny (1)                                                     |
-| hostId                              |                                                                 |
-| id                                  | 9ccdfd99-92ef-4c97-ad4b-e5427ff50616                            |
-| image                               | cirros-0.3.5-x86_64-disk (5fca81ba-d33c-4334-ac4a-f32bb62b4e97) |
-| key_name                            | None                                                            |
-| name                                | demo-instance1                                                  |
-| progress                            | 0                                                               |
-| project_id                          | 11dbd32de6a4421b8f973e8b59699aea                                |
-| properties                          |                                                                 |
-| security_groups                     | name='default'                                                  |
-| status                              | BUILD                                                           |
-| updated                             | 2018-01-10T23:28:32Z                                            |
-| user_id                             | 2c96f1467d20415794ac04017a97d512                                |
-| volumes_attached                    |                                                                 |
-+-------------------------------------+-----------------------------------------------------------------+
++-----------------------------+-----------------------------------------------------------------+
+| Field                       | Value                                                           |
++-----------------------------+-----------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                          |
+| OS-EXT-AZ:availability_zone |                                                                 |
+| OS-EXT-STS:power_state      | NOSTATE                                                         |
+| OS-EXT-STS:task_state       | scheduling                                                      |
+| OS-EXT-STS:vm_state         | building                                                        |
+| OS-SRV-USG:launched_at      | None                                                            |
+| OS-SRV-USG:terminated_at    | None                                                            |
+| accessIPv4                  |                                                                 |
+| accessIPv6                  |                                                                 |
+| addresses                   |                                                                 |
+| adminPass                   | gz2YiqAxqWjb                                                    |
+| config_drive                |                                                                 |
+| created                     | 2018-01-10T23:34:42Z                                            |
+| flavor                      | m1.tiny (1)                                                     |
+| hostId                      |                                                                 |
+| id                          | 2e264292-bdfe-4696-a403-3bdcf6f7b8d0                            |
+| image                       | cirros-0.3.5-x86_64-disk (5fca81ba-d33c-4334-ac4a-f32bb62b4e97) |
+| key_name                    | None                                                            |
+| name                        | demo-instance1                                                  |
+| progress                    | 0                                                               |
+| project_id                  | 69b2b3a3e5af414ebc7ad250163e47ad                                |
+| properties                  |                                                                 |
+| security_groups             | name='default'                                                  |
+| status                      | BUILD                                                           |
+| updated                     | 2018-01-10T23:34:42Z                                            |
+| user_id                     | d133d8d6242e4c098aaf9736359483f7                                |
+| volumes_attached            |                                                                 |
++-----------------------------+-----------------------------------------------------------------+
 ```
 
 # Neutron
