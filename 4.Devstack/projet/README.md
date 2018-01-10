@@ -134,10 +134,10 @@ $ openstack network create GENERAL_NETWORK
 | admin_state_up            | UP                                   |
 | availability_zone_hints   |                                      |
 | availability_zones        |                                      |
-| created_at                | 2018-01-05T18:14:24Z                 |
+| created_at                | 2018-01-10T22:08:26Z                 |
 | description               |                                      |
 | dns_domain                | None                                 |
-| id                        | 0ed93a2c-67c0-45c0-84f9-be64f9f7edd0 |
+| id                        | b17a3843-aa04-4161-b3c0-db8d1c48b79c |
 | ipv4_address_scope        | None                                 |
 | ipv6_address_scope        | None                                 |
 | is_default                | False                                |
@@ -145,10 +145,10 @@ $ openstack network create GENERAL_NETWORK
 | mtu                       | 1450                                 |
 | name                      | GENERAL_NETWORK                      |
 | port_security_enabled     | True                                 |
-| project_id                | 11dbd32de6a4421b8f973e8b59699aea     |
-| provider:network_type     | vxlan                                |
+| project_id                | 69b2b3a3e5af414ebc7ad250163e47ad     |
+| provider:network_type     | None                                 |
 | provider:physical_network | None                                 |
-| provider:segmentation_id  | 7                                    |
+| provider:segmentation_id  | None                                 |
 | qos_policy_id             | None                                 |
 | revision_number           | 2                                    |
 | router:external           | Internal                             |
@@ -157,7 +157,7 @@ $ openstack network create GENERAL_NETWORK
 | status                    | ACTIVE                               |
 | subnets                   |                                      |
 | tags                      |                                      |
-| updated_at                | 2018-01-05T18:14:24Z                 |
+| updated_at                | 2018-01-10T22:08:26Z                 |
 +---------------------------+--------------------------------------+
 ```
 Vérification:
@@ -167,8 +167,7 @@ $ openstack network list
 | ID                                   | Name            | Subnets                                                                    |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public          | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
-| 95b8dcd1-2c90-421e-9251-acb8c57baa5f | private         | 17060c51-1dd5-41f5-bd30-af4365517388, d1af37f8-466a-47da-bf8f-bd5682fe1fe7 |
-| c9d69620-080a-4441-8a4e-2ca7857d44d0 | GENERAL_NETWORK |                                                                            |
+| b17a3843-aa04-4161-b3c0-db8d1c48b79c | GENERAL_NETWORK |                                                                            |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 ```
 
@@ -228,20 +227,20 @@ $ openstack router create --project General GENERAL_ROUTER
 | admin_state_up          | UP                                   |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2018-01-10T21:40:04Z                 |
+| created_at              | 2018-01-10T21:54:49Z                 |
 | description             |                                      |
 | distributed             | False                                |
 | external_gateway_info   | None                                 |
 | flavor_id               | None                                 |
 | ha                      | False                                |
-| id                      | c025ab44-7da6-4d54-8fcf-b840d9be0092 |
+| id                      | 7bba41cf-934c-48d8-a991-dfd16ef476c2 |
 | name                    | GENERAL_ROUTER                       |
 | project_id              | 69b2b3a3e5af414ebc7ad250163e47ad     |
 | revision_number         | None                                 |
 | routes                  |                                      |
 | status                  | ACTIVE                               |
 | tags                    |                                      |
-| updated_at              | 2018-01-10T21:40:04Z                 |
+| updated_at              | 2018-01-10T21:54:49Z                 |
 +-------------------------+--------------------------------------+
 ```
 
@@ -252,8 +251,7 @@ $  openstack router list
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 | ID                                   | Name           | Status | State | Distributed | HA    | Project                          |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
-| c025ab44-7da6-4d54-8fcf-b840d9be0092 | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
-| d8ed7d9f-0a44-47bb-8d85-d0e400c8342a | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
+| 7bba41cf-934c-48d8-a991-dfd16ef476c2 | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
 | db7325f1-f7c4-4574-8103-a4e93d3be56b | router1        | ACTIVE | UP    | False       | False | 11dbd32de6a4421b8f973e8b59699aea |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 ```
