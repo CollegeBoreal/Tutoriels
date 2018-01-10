@@ -330,11 +330,7 @@ $ openstack router show GENERAL_ROUTER
 ## Creer une machine virtuelle
 
 ```
-$ openstack server create demo-instance1 --flavor m1.tiny \
-   --image cirros-0.3.5-x86_64-disk --nic net-id=cbff7b67-3607-4fb5-a96b-1f44cedb759c
-```
-Retourne:
-```
+openstack server create demo-instance1 --flavor m1.tiny    --image cirros-0.3.5-x86_64-disk --network GENERAL_NETWORK
 +-------------------------------------+-----------------------------------------------------------------+
 | Field                               | Value                                                           |
 +-------------------------------------+-----------------------------------------------------------------+
@@ -351,22 +347,22 @@ Retourne:
 | accessIPv4                          |                                                                 |
 | accessIPv6                          |                                                                 |
 | addresses                           |                                                                 |
-| adminPass                           | Zc6Y7jLpoFPx                                                    |
+| adminPass                           | zV4npDWVrhHZ                                                    |
 | config_drive                        |                                                                 |
-| created                             | 2017-12-20T23:15:18Z                                            |
+| created                             | 2018-01-10T23:28:33Z                                            |
 | flavor                              | m1.tiny (1)                                                     |
 | hostId                              |                                                                 |
-| id                                  | e8056fe2-44db-43d5-a3cb-a7b1ad9ac6f1                            |
-| image                               | cirros-0.3.5-x86_64-disk (c0ab32d2-4043-4581-a855-cccf52f8fd4d) |
+| id                                  | 9ccdfd99-92ef-4c97-ad4b-e5427ff50616                            |
+| image                               | cirros-0.3.5-x86_64-disk (5fca81ba-d33c-4334-ac4a-f32bb62b4e97) |
 | key_name                            | None                                                            |
 | name                                | demo-instance1                                                  |
 | progress                            | 0                                                               |
-| project_id                          | 5be850f3348e41e896c51fcc3526429b                                |
+| project_id                          | 11dbd32de6a4421b8f973e8b59699aea                                |
 | properties                          |                                                                 |
 | security_groups                     | name='default'                                                  |
 | status                              | BUILD                                                           |
-| updated                             | 2017-12-20T23:15:18Z                                            |
-| user_id                             | df44fd6eb9034b689951acbf50cc54be                                |
+| updated                             | 2018-01-10T23:28:32Z                                            |
+| user_id                             | 2c96f1467d20415794ac04017a97d512                                |
 | volumes_attached                    |                                                                 |
 +-------------------------------------+-----------------------------------------------------------------+
 ```
