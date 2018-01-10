@@ -119,10 +119,9 @@ $ openstack user list --project General
 | d133d8d6242e4c098aaf9736359483f7 | johndoe |
 +----------------------------------+---------+
 ```
-## établir son environnement (admin)
+## établir son environnement (General openrc)
 ```
-$ sudo su - stack
-$ source admin-openrc.sh # recuperer le fichier openrc pour l'utilisateur admin de Dashboard Horizon
+$ source General-openrc.sh # recuperer le fichier openrc pour l'utilisateur de Dashboard Horizon
 ```
 
 ## Créer un réseau interne
@@ -134,10 +133,10 @@ $ openstack network create GENERAL_NETWORK
 | admin_state_up            | UP                                   |
 | availability_zone_hints   |                                      |
 | availability_zones        |                                      |
-| created_at                | 2018-01-10T22:08:26Z                 |
+| created_at                | 2018-01-10T23:00:19Z                 |
 | description               |                                      |
 | dns_domain                | None                                 |
-| id                        | b17a3843-aa04-4161-b3c0-db8d1c48b79c |
+| id                        | 2028e5d9-ba98-4886-91b2-de5fab424468 |
 | ipv4_address_scope        | None                                 |
 | ipv6_address_scope        | None                                 |
 | is_default                | False                                |
@@ -157,7 +156,7 @@ $ openstack network create GENERAL_NETWORK
 | status                    | ACTIVE                               |
 | subnets                   |                                      |
 | tags                      |                                      |
-| updated_at                | 2018-01-10T22:08:26Z                 |
+| updated_at                | 2018-01-10T23:00:19Z                 |
 +---------------------------+--------------------------------------+
 ```
 Vérification:
@@ -166,8 +165,8 @@ $ openstack network list
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 | ID                                   | Name            | Subnets                                                                    |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
+| 2028e5d9-ba98-4886-91b2-de5fab424468 | GENERAL_NETWORK |                                                                            |
 | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public          | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
-| b17a3843-aa04-4161-b3c0-db8d1c48b79c | GENERAL_NETWORK |                                                                            |
 +--------------------------------------+-----------------+----------------------------------------------------------------------------+
 ```
 
@@ -175,32 +174,31 @@ $ openstack network list
 ```
 $ openstack subnet create GENERAL_SUBNETWORK \
             --subnet-range 172.24.220.0/24 \
-            --service-type 'compute:nova' \
             --network GENERAL_NETWORK
 +-------------------+--------------------------------------+
 | Field             | Value                                |
 +-------------------+--------------------------------------+
 | allocation_pools  | 172.24.220.2-172.24.220.254          |
 | cidr              | 172.24.220.0/24                      |
-| created_at        | 2018-01-10T22:11:13Z                 |
+| created_at        | 2018-01-10T23:00:53Z                 |
 | description       |                                      |
 | dns_nameservers   |                                      |
 | enable_dhcp       | True                                 |
 | gateway_ip        | 172.24.220.1                         |
 | host_routes       |                                      |
-| id                | 49b45802-8fbd-4860-8c74-fe6e5f1fd7ea |
+| id                | 017f72a4-3078-43ee-a527-b5698d0ee473 |
 | ip_version        | 4                                    |
 | ipv6_address_mode | None                                 |
 | ipv6_ra_mode      | None                                 |
 | name              | GENERAL_SUBNETWORK                   |
-| network_id        | b17a3843-aa04-4161-b3c0-db8d1c48b79c |
+| network_id        | 2028e5d9-ba98-4886-91b2-de5fab424468 |
 | project_id        | 69b2b3a3e5af414ebc7ad250163e47ad     |
-| revision_number   | 1                                    |
+| revision_number   | 0                                    |
 | segment_id        | None                                 |
-| service_types     | compute:nova                         |
+| service_types     |                                      |
 | subnetpool_id     | None                                 |
 | tags              |                                      |
-| updated_at        | 2018-01-10T22:11:13Z                 |
+| updated_at        | 2018-01-10T23:00:53Z                 |
 +-------------------+--------------------------------------+
 ```
 
@@ -210,7 +208,7 @@ $ openstack subnet list
 +--------------------------------------+--------------------+--------------------------------------+-----------------+
 | ID                                   | Name               | Network                              | Subnet          |
 +--------------------------------------+--------------------+--------------------------------------+-----------------+
-| 49b45802-8fbd-4860-8c74-fe6e5f1fd7ea | GENERAL_SUBNETWORK | b17a3843-aa04-4161-b3c0-db8d1c48b79c | 172.24.220.0/24 |
+| 017f72a4-3078-43ee-a527-b5698d0ee473 | GENERAL_SUBNETWORK | 2028e5d9-ba98-4886-91b2-de5fab424468 | 172.24.220.0/24 |
 +--------------------------------------+--------------------+--------------------------------------+-----------------+
 ```
 
@@ -223,42 +221,41 @@ $ openstack router create GENERAL_ROUTER
 | admin_state_up          | UP                                   |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2018-01-10T22:12:08Z                 |
+| created_at              | 2018-01-10T23:01:21Z                 |
 | description             |                                      |
 | distributed             | False                                |
 | external_gateway_info   | None                                 |
 | flavor_id               | None                                 |
 | ha                      | False                                |
-| id                      | cb699467-1fb4-4f05-8f61-f59a083d7676 |
+| id                      | e76b4749-ba7c-45de-abf8-113f826da610 |
 | name                    | GENERAL_ROUTER                       |
 | project_id              | 69b2b3a3e5af414ebc7ad250163e47ad     |
 | revision_number         | None                                 |
 | routes                  |                                      |
 | status                  | ACTIVE                               |
 | tags                    |                                      |
-| updated_at              | 2018-01-10T22:12:08Z                 |
+| updated_at              | 2018-01-10T23:01:21Z                 |
 +-------------------------+--------------------------------------+
 ```
 
 * Vérification:
 
 ```
-$ openstack router list
+$  openstack router list
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 | ID                                   | Name           | Status | State | Distributed | HA    | Project                          |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
-| cb699467-1fb4-4f05-8f61-f59a083d7676 | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
+| e76b4749-ba7c-45de-abf8-113f826da610 | GENERAL_ROUTER | ACTIVE | UP    | False       | False | 69b2b3a3e5af414ebc7ad250163e47ad |
 +--------------------------------------+----------------+--------+-------+-------------+-------+----------------------------------+
 ```
 
 ## Rajout du sous-réseau au routeur
 ```
-$ # neutron router-interface-add <router ID>  <subnet ID>
-$ neutron router-interface-add 19fe12e6-5bfe-4136-95ad-50ca3d4167ef  9e2a6697-7ddc-4f7d-8a59-b2acc0f384d1
+$ openstack router add subnet GENERAL_ROUTER GENERAL_SUBNETWORK
 ```
 Retourne:
 ```
-Added interface 6a5ca1ea-747a-4b05-b89c-90f126243bbd to router 19fe12e6-5bfe-4136-95ad-50ca3d4167ef.
+(null)
 ```
 
 ## Rattacher le routeur au réseau externe
@@ -273,6 +270,8 @@ $ openstack network list --external
 | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
 +--------------------------------------+--------+----------------------------------------------------------------------------+
 ```
+
+<hr/>
 
 * Joindre la passerelle du routeur au réseau externe
 
