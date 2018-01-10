@@ -258,9 +258,17 @@ Retourne:
 (null)
 ```
 
+<hr/>
+
+## établir son environnement (admin)
+```
+$ source admin-openrc.sh # recuperer le fichier openrc pour l'utilisateur admin de Dashboard Horizon
+```
+
+
 ## Rattacher le routeur au réseau externe
 
-* Prendre la liste des sous-réseaux externes
+* Prendre la liste des réseaux externes
 
 ```
 $ openstack network list --external
@@ -270,35 +278,51 @@ $ openstack network list --external
 | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
 +--------------------------------------+--------+----------------------------------------------------------------------------+
 ```
-
-<hr/>
-
-* Joindre la passerelle du routeur au réseau externe
+* Prendre la liste des sous-réseaux externes du reseau public
 
 ```
-$ neutron router-gateway-set <router ID>  <subnet ID>
-$ neutron router-gateway-set 19fe12e6-5bfe-4136-95ad-50ca3d4167ef 45622527-184e-4a9a-a256-cc9b638a8b05
+$ openstack subnet list --network public
++--------------------------------------+--------------------+--------------------------------------+-----------------+
+| ID                                   | Name               | Network                              | Subnet          |
++--------------------------------------+--------------------+--------------------------------------+-----------------+
+| 8271eec6-064e-4476-aeff-d9652d03180a | ipv6-public-subnet | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | 2001:db8::/64   |
+| cd309e31-f191-44bf-a0b7-1cbc34071add | public-subnet      | 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | 10.13.237.48/28 |
++--------------------------------------+--------------------+--------------------------------------+-----------------+
+```
+* Joindre la passerelle du routeur au sous-réseau externe
+
+```
+$ openstack router add subnet GENERAL_ROUTER public-subnet
 ```
 Retourne:
 ```
-Set gateway for router 19fe12e6-5bfe-4136-95ad-50ca3d4167ef
+(null)
 ```
 Vérification:
 ```
-$ neutron router-list
-```
-Retourne:
-```
-+--------------------------------------+----------------+---------------------------------------------------------------------------------------------------------------------------+-------------+-------+
-| id                                   | name           | external_gateway_info                                                                                                     | distributed | ha    |
-+--------------------------------------+----------------+---------------------------------------------------------------------------------------------------------------------------+-------------+-------+
-| 19fe12e6-5bfe-4136-95ad-50ca3d4167ef | GENERAL_ROUTER | {"network_id": "45622527-184e-4a9a-a256-cc9b638a8b05", "enable_snat": true, "external_fixed_ips": [{"subnet_id":          | False       | False |
-|                                      |                | "a5c01daf-1a48-4a5e-a39c-564d8a0582ff", "ip_address": "2001:db8::a"}, {"subnet_id": "08bfa6fe-                            |             |       |
-|                                      |                | b9ff-4377-a3f6-4f044da90b8a", "ip_address": "10.13.237.92"}]}                                                             |             |       |
-| e64e5e35-1d4a-4604-8bc7-2888bbba3c25 | router1        | {"network_id": "45622527-184e-4a9a-a256-cc9b638a8b05", "enable_snat": true, "external_fixed_ips": [{"subnet_id":          | False       | False |
-|                                      |                | "a5c01daf-1a48-4a5e-a39c-564d8a0582ff", "ip_address": "2001:db8::1"}, {"subnet_id": "08bfa6fe-                            |             |       |
-|                                      |                | b9ff-4377-a3f6-4f044da90b8a", "ip_address": "10.13.237.85"}]}                                                             |             |       |
-+--------------------------------------+----------------+---------------------------------------------------------------------------------------------------------------------------+-------------+-------+
+$ openstack router show GENERAL_ROUTER
++-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field                   | Value                                                                                                                                                                                                                                                                            |
++-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| admin_state_up          | UP                                                                                                                                                                                                                                                                               |
+| availability_zone_hints |                                                                                                                                                                                                                                                                                  |
+| availability_zones      | nova                                                                                                                                                                                                                                                                             |
+| created_at              | 2018-01-10T23:01:21Z                                                                                                                                                                                                                                                             |
+| description             |                                                                                                                                                                                                                                                                                  |
+| distributed             | False                                                                                                                                                                                                                                                                            |
+| external_gateway_info   | None                                                                                                                                                                                                                                                                             |
+| flavor_id               | None                                                                                                                                                                                                                                                                             |
+| ha                      | False                                                                                                                                                                                                                                                                            |
+| id                      | e76b4749-ba7c-45de-abf8-113f826da610                                                                                                                                                                                                                                             |
+| interfaces_info         | [{"subnet_id": "cd309e31-f191-44bf-a0b7-1cbc34071add", "ip_address": "10.13.237.49", "port_id": "025ea849-69aa-4d82-b45f-7eed384f8f12"}, {"subnet_id": "017f72a4-3078-43ee-a527-b5698d0ee473", "ip_address": "172.24.220.1", "port_id": "92c68723-b2cb-4326-858e-90ea5d2cc1b5"}] |
+| name                    | GENERAL_ROUTER                                                                                                                                                                                                                                                                   |
+| project_id              | 69b2b3a3e5af414ebc7ad250163e47ad                                                                                                                                                                                                                                                 |
+| revision_number         | 2                                                                                                                                                                                                                                                                                |
+| routes                  |                                                                                                                                                                                                                                                                                  |
+| status                  | ACTIVE                                                                                                                                                                                                                                                                           |
+| tags                    |                                                                                                                                                                                                                                                                                  |
+| updated_at              | 2018-01-10T23:18:24Z                                                                                                                                                                                                                                                             |
++-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
 Vérification:
