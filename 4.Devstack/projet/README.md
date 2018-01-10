@@ -101,6 +101,7 @@ $ openstack role list
 
 ```
 $ openstack role add --project General --user johndoe Member
+$ openstack role add --project General --user admin Admin
 ```
 Retourne:
 ```
@@ -114,8 +115,14 @@ $ openstack user list --project General
 +----------------------------------+---------+
 | ID                               | Name    |
 +----------------------------------+---------+
+| 2c96f1467d20415794ac04017a97d512 | admin   |
 | d133d8d6242e4c098aaf9736359483f7 | johndoe |
 +----------------------------------+---------+
+```
+## établir son environnement (admin)
+```
+$ sudo su - stack
+$ source admin-openrc.sh # recuperer le fichier openrc pour l'utilisateur admin de Dashboard Horizon
 ```
 
 ## Créer un réseau interne
@@ -265,16 +272,12 @@ Added interface 6a5ca1ea-747a-4b05-b89c-90f126243bbd to router 19fe12e6-5bfe-413
 * Prendre la liste des sous-réseaux externes
 
 ```
-$ neutron net-external-list
-```
-Retourne:
-```
-+--------------------------------------+--------+------------------------------------------------------+
-| id                                   | name   | subnets                                              |
-+--------------------------------------+--------+------------------------------------------------------+
-| 45622527-184e-4a9a-a256-cc9b638a8b05 | public | a5c01daf-1a48-4a5e-a39c-564d8a0582ff 2001:db8::/64   |
-|                                      |        | 08bfa6fe-b9ff-4377-a3f6-4f044da90b8a 10.13.237.80/28 |
-+--------------------------------------+--------+------------------------------------------------------+
+$ openstack network list --external
++--------------------------------------+--------+----------------------------------------------------------------------------+
+| ID                                   | Name   | Subnets                                                                    |
++--------------------------------------+--------+----------------------------------------------------------------------------+
+| 2f03bb6a-ac09-4ff3-beaa-eea56dec1d52 | public | 8271eec6-064e-4476-aeff-d9652d03180a, cd309e31-f191-44bf-a0b7-1cbc34071add |
++--------------------------------------+--------+----------------------------------------------------------------------------+
 ```
 
 * Joindre la passerelle du routeur au réseau externe
