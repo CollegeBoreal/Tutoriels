@@ -325,6 +325,10 @@ $ openstack router show GENERAL_ROUTER
 +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
+## Topologie 
+
+![alt tag](./topologie.png)
+
 ## établir son environnement (johndoe)
 ```
 $ source General-openrc.sh # recuperer le fichier openrc pour l'utilisateur johndoe de Dashboard Horizon
