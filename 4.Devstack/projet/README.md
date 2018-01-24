@@ -354,12 +354,12 @@ openstack server create demo-instance1 \
 | accessIPv4                  |                                                                 |
 | accessIPv6                  |                                                                 |
 | addresses                   |                                                                 |
-| adminPass                   | gz2YiqAxqWjb                                                    |
+| adminPass                   | 2MGKj5eKXUn3                                                    |
 | config_drive                |                                                                 |
-| created                     | 2018-01-10T23:34:42Z                                            |
+| created                     | 2018-01-24T20:39:45Z                                            |
 | flavor                      | m1.tiny (1)                                                     |
 | hostId                      |                                                                 |
-| id                          | 2e264292-bdfe-4696-a403-3bdcf6f7b8d0                            |
+| id                          | 5a71fa12-722e-4470-8764-7de154480c34                            |
 | image                       | cirros-0.3.5-x86_64-disk (5fca81ba-d33c-4334-ac4a-f32bb62b4e97) |
 | key_name                    | None                                                            |
 | name                        | demo-instance1                                                  |
@@ -368,10 +368,20 @@ openstack server create demo-instance1 \
 | properties                  |                                                                 |
 | security_groups             | name='default'                                                  |
 | status                      | BUILD                                                           |
-| updated                     | 2018-01-10T23:34:42Z                                            |
+| updated                     | 2018-01-24T20:39:45Z                                            |
 | user_id                     | d133d8d6242e4c098aaf9736359483f7                                |
 | volumes_attached            |                                                                 |
 +-----------------------------+-----------------------------------------------------------------+
 ```
 
+* Verification
+
+```
+ $ openstack server list                                                                                      
++--------------------------------------+----------------+--------+------------------------------+--------------------------+---------+
+| ID                                   | Name           | Status | Networks                     | Image                    | Flavor  |
++--------------------------------------+----------------+--------+------------------------------+--------------------------+---------+
+| 5a71fa12-722e-4470-8764-7de154480c34 | demo-instance1 | ACTIVE | GENERAL_NETWORK=172.24.220.4 | cirros-0.3.5-x86_64-disk | m1.tiny |
++--------------------------------------+----------------+--------+------------------------------+--------------------------+---------+
+```
 
