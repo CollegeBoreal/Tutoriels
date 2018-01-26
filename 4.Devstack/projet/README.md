@@ -385,3 +385,25 @@ openstack server create demo-instance1 \
 +--------------------------------------+----------------+--------+------------------------------+--------------------------+---------+
 ```
 
+```
+$ openstack security group rule create default --protocol tcp --dst-port 22:22 --remote-ip 0.0.0.0/0
++-------------------+--------------------------------------+
+| Field             | Value                                |
++-------------------+--------------------------------------+
+| created_at        | 2018-01-26T22:05:43Z                 |
+| description       |                                      |
+| direction         | ingress                              |
+| ether_type        | IPv4                                 |
+| id                | eb6e7d39-4626-4919-88ed-dd7c3f747355 |
+| name              | None                                 |
+| port_range_max    | 22                                   |
+| port_range_min    | 22                                   |
+| project_id        | 8ca187f0013f4f2286f48198208ef5e0     |
+| protocol          | tcp                                  |
+| remote_group_id   | None                                 |
+| remote_ip_prefix  | 0.0.0.0/0                            |
+| revision_number   | 0                                    |
+| security_group_id | 8756b639-981d-4b9a-abe2-b2a8cb46df4e |
+| updated_at        | 2018-01-26T22:05:43Z                 |
++-------------------+--------------------------------------+
+```
