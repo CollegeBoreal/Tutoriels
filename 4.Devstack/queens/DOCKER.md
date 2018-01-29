@@ -48,7 +48,7 @@ $ docker-machine -D  create \
        --openstack-nova-network  \
        --openstack-net-name nova \
        --openstack-domain-id default \
-       --openstack-tenant-id 11dbd32de6a4421b8f973e8b59699aea \
+       --openstack-tenant-id efc4a2df99874625804ffc1462795a89 \
        CB-TEST3
 ```
 
