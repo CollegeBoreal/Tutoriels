@@ -51,3 +51,18 @@ $ docker-machine -D  create \
        --openstack-tenant-id 11dbd32de6a4421b8f973e8b59699aea \
        CB-TEST3
 ```
+
+```
+$ docker-machine -D  create \
+       --driver openstack  \
+       --openstack-flavor-name m1.tiny  \
+       --openstack-image-name "cirros-0.3.5-x86_64-disk"  \
+       --openstack-ssh-user ubuntu \
+       --openstack-floatingip-pool PUBLIC \
+       --openstack-sec-groups default \
+       --openstack-nova-network  \
+       --openstack-net-name nova \
+       --openstack-domain-id default \
+       --openstack-tenant-name demo \
+       CB-TEST3
+```
