@@ -12,7 +12,7 @@
 
 Télécharger et extraire le fichier dans le répertoire ~/bin
 
-Ajuster son fichier de démarrage .bashrc ou variable d'environnement 
+Ajuster son fichier de démarrage .bash_profile ou variable d'environnement 
 ```
 export SCALA_HOME=~/bin/scala-2.12.1
 
