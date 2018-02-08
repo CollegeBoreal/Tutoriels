@@ -42,6 +42,8 @@ export PATH=$SCALA_HOME/bin:$PATH
 
 https://stackoverflow.com/questions/46381242/intellij-sbt-based-scala-project-does-not-build-with-java-9
 
+![alt tag](https://i.stack.imgur.com/vcBkX.png)
+
 ## Installation de l'environnement de projet SBT (Simple Build Tool)
 
 * Automatique:  
