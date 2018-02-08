@@ -40,6 +40,8 @@ export PATH=$SCALA_HOME/bin:$PATH
 * Intellij Idea : https://www.jetbrains.com/idea/download
 * Enregistrement: https://www.jetbrains.com/student/
 
+https://stackoverflow.com/questions/46381242/intellij-sbt-based-scala-project-does-not-build-with-java-9
+
 ## Installation de l'environnement de projet SBT (Simple Build Tool)
 
 * Automatique:  
