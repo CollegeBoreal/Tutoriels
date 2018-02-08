@@ -6,6 +6,21 @@
 
 * Java JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads
 
+Ajuster son fichier de démarrage .bash_profile ou variable d'environnement 
+
+MacOSX
+```
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+Windows
+```
+export JAVA_HOME="$(/c/Program Files (x86)/java/jdk.1.8.121)"
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+
 ## Installation de Scala Interface en Ligne de Commandes (CLI)
 
 * Scala CLI: https://www.scala-lang.org/download/
