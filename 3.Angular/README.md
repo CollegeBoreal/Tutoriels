@@ -60,7 +60,19 @@ http://docs.nativescript.org/angular/tutorial/ng-chapter-1
 $ tns create HelloWorld --template nativescript-template-ng-tutorial
 ```
 
+## Mise a jour de tous les packages JS
 
+* Installer npm-checkupdates
+
+```
+$ npm i -g npm-check-updates
+```
+
+* Lancer la mise a jour
+
+```
+$ ncu -u -a
+```
 ## Installation de l'environnement intégré de développement (IDE) -- Webstorm
 
 * Intellij Webstorm : https://www.jetbrains.com/webstorm/download
