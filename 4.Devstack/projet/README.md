@@ -2,7 +2,12 @@
 http://docs.openstack.org/admin-guide/networking-use.html   
 http://docs.openstack.org/user-guide/cli-create-and-manage-networks.html  
 http://blogs.igalia.com/dpino/2016/04/10/network-namespaces/  
+
+## Physical related Config
+
 https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/8/html/networking_guide/sec-physical-switch (avec CISCO Catalyst Switch)
+
+http://docwiki.cisco.com/wiki/OpenStack/ML2NexusMechanismDriver (DEVSTACK ML2 Local Config)
 
 
 # Créer son propre projet
