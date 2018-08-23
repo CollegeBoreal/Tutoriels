@@ -26,7 +26,7 @@ $ sudo su - stack
 
 ```
 $ sudo apt-get install git -y || sudo yum install -y git
-$ git clone --single-branch -b branch stable/queens https://git.openstack.org/openstack-dev/devstack
+$ git clone --single-branch -b stable/queens https://git.openstack.org/openstack-dev/devstack
 $ cd devstack
 ```
 
