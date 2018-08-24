@@ -36,7 +36,7 @@ $ cd devstack
 
 https://docs.openstack.org/devstack/latest/guides/neutron.html
 
-[!alt tag](./OS_Physical_Setup.png)
+![alt tag](./OS_Physical_Setup.png)
 
 ** Using Neutron with a Single Interface
 
