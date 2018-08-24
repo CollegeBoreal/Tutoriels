@@ -18,4 +18,5 @@ https://git.openstack.org/cgit/openstack-dev/devstack . (Branches Devstack)
 References:
 
 https://docs.openstack.org/ocata/networking-guide/config-service-subnets.html
+
 https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-18-04-bionic-beaver-linux
