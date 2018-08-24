@@ -30,11 +30,48 @@ $ git clone --single-branch -b stable/queens https://git.openstack.org/openstack
 $ cd devstack
 ```
 
+# Configuration 
+
 * Editer le fichier local.conf
+
+https://docs.openstack.org/devstack/latest/guides/neutron.html
+
+** Using Neutron with a Single Interface
 
 ```
 [[local|localrc]]
-FLOATING_RANGE=10.13.237.48/28
+HOST_IP=10.13.237.12
+SERVICE_HOST=172.18.161.6
+MYSQL_HOST=172.18.161.6
+RABBIT_HOST=172.18.161.6
+GLANCE_HOSTPORT=172.18.161.6:9292
+ADMIN_PASSWORD=secret
+DATABASE_PASSWORD=secret
+RABBIT_PASSWORD=secret
+SERVICE_PASSWORD=secret
+
+## Neutron options
+Q_USE_SECGROUP=True
+FLOATING_RANGE="172.18.161.0/24"
+IPV4_ADDRS_SAFE_TO_USE="10.0.0.0/22"
+Q_FLOATING_ALLOCATION_POOL=start=172.18.161.250,end=172.18.161.254
+PUBLIC_NETWORK_GATEWAY="172.18.161.1"
+PUBLIC_INTERFACE=eth0
+
+# Open vSwitch provider networking configuration
+Q_USE_PROVIDERNET_FOR_PUBLIC=True
+OVS_PHYSICAL_BRIDGE=br-ex
+PUBLIC_BRIDGE=br-ex
+OVS_BRIDGE_MAPPINGS=public:br-ex
+```
+
+https://docs.openstack.org/devstack/latest/guides/multinode-lab.html
+
+** Multi-Node Lab
+
+```
+[[local|localrc]]
+FLOATING_RANGE=10.13.237.16/28
 FIXED_RANGE=172.16.0.0/24
 FIXED_NETWORK_SIZE=256
 FLAT_INTERFACE=enp10s0
@@ -44,6 +81,10 @@ DATABASE_PASSWORD=$ADMIN_PASSWORD
 RABBIT_PASSWORD=$ADMIN_PASSWORD
 SERVICE_PASSWORD=$ADMIN_PASSWORD
 ```
+
+
+
+
 
 Faire tourner l'installation de DevStack:
 
