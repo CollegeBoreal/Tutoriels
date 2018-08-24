@@ -65,6 +65,8 @@ Q_USE_PROVIDERNET_FOR_PUBLIC=True
 OVS_PHYSICAL_BRIDGE=br-ex
 PUBLIC_BRIDGE=br-ex
 OVS_BRIDGE_MAPPINGS=public:br-ex
+
+FORCE=yes
 ```
 
 https://docs.openstack.org/devstack/latest/guides/multinode-lab.html
