@@ -15,9 +15,9 @@ https://docs.openstack.org/devstack/latest/guides/single-machine.html
      
      Enforce a static /etc/resolv.conf (do this as Super User)
 
-     echo nameserver 8.8.8.8 > /etc/resolv.conf
-     chattr -e /etc/resolv.conf
-     chattr +i /etc/resolv.conf
+     $ sudo sh -c ' echo nameserver 8.8.8.8 > /etc/resolv.conf '
+     $ sudo chattr -e /etc/resolv.conf
+     $ sudo chattr +i /etc/resolv.conf
 
 
 ## Installation shake and bake
@@ -60,11 +60,11 @@ https://docs.openstack.org/devstack/latest/guides/neutron.html
 
 ```
 [[local|localrc]]
-HOST_IP=10.13.237.17
-SERVICE_HOST=10.13.237.17
-MYSQL_HOST=10.13.237.17
-RABBIT_HOST=10.13.237.17
-GLANCE_HOSTPORT=10.13.237.17:9292
+HOST_IP=10.13.237.2
+SERVICE_HOST=10.13.237.2
+MYSQL_HOST=10.13.237.2
+RABBIT_HOST=10.13.237.2
+GLANCE_HOSTPORT=10.13.237.2:9292
 ADMIN_PASSWORD=secret
 DATABASE_PASSWORD=secret
 RABBIT_PASSWORD=secret
@@ -72,9 +72,9 @@ SERVICE_PASSWORD=secret
 
 ## Neutron options
 Q_USE_SECGROUP=True
-FLOATING_RANGE="10.13.237.16/28"
+FLOATING_RANGE="10.13.237.0/28"
 IPV4_ADDRS_SAFE_TO_USE="10.0.0.0/22"
-Q_FLOATING_ALLOCATION_POOL=start=10.13.237.20,end=10.13.237.30
+Q_FLOATING_ALLOCATION_POOL=start=10.13.237.7,end=10.13.237.14
 PUBLIC_NETWORK_GATEWAY="10.13.237.1"
 PUBLIC_INTERFACE=enp3s0f0
 
