@@ -12,6 +12,12 @@ https://docs.openstack.org/devstack/latest/guides/single-machine.html
      Delete the symlink /etc/resolv.conf
 
      $ rm /etc/resolv.conf
+     
+     Enforce a static /etc/resolv.conf (do this as Super User)
+
+     echo nameserver 8.8.8.8 > /etc/resolv.conf
+     chattr -e /etc/resolv.conf
+     chattr +i /etc/resolv.conf
 
 
 ## Installation shake and bake
