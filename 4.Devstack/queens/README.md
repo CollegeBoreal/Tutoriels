@@ -69,6 +69,24 @@ OVS_BRIDGE_MAPPINGS=public:br-ex
 FORCE=yes
 ```
 
+## Manipulation manuelle (non testee)
+
+* permet le kernel forwarding
+
+```
+$ sudo sysctl -w net.ipv4.ip_forward=1
+```
+
+* ajout manuel d'une interface reseau
+
+```
+sudo ip addr flush dev br-ex
+sudo ip addr add 10.13.237.10/28 dev br-ex
+sudo ip link set br-ex up
+sudo route add -net 10.0.0.0/22 gw 10.13.237.10
+```
+
+
 https://docs.openstack.org/devstack/latest/guides/multinode-lab.html
 
 ** Multi-Node Lab
@@ -224,4 +242,12 @@ $ sudo service rabbitmq-server status
            ├─12038 erl_child_setup 65536
            ├─12157 inet_gethost 4
            └─12158 inet_gethost 4
+```
+
+* redemarrer les services
+
+```
+sudo service rabbitmq-server start
+sudo service mysql start
+sudo service apache2 start
 ```
