@@ -2,7 +2,7 @@
 
 https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
-     PREREQUIS: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
+     PREREQUIS Ubuntu 18.04: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
      
      Disable the systemd-resolved service and stop it:
 
