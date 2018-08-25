@@ -3,6 +3,15 @@
 https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
      PREREQUIS: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
+     
+     Disable the systemd-resolved service and stop it:
+
+     $ sudo systemctl disable systemd-resolved.service
+     $ sudo service systemd-resolved stop
+
+     Delete the symlink /etc/resolv.conf
+
+     $ rm /etc/resolv.conf
 
 
 ## Installation shake and bake
