@@ -180,7 +180,7 @@ $ glance image-create --name "Ubuntu-16.04 LTS" --disk-format qcow2 --container-
 * Arreter et supprimer
 
 ```
-$ cd devstack
+$ cd ~devstack
 $ ./unstack.sh
 $ ./clean.sh
 ```
@@ -188,7 +188,7 @@ $ ./clean.sh
 
 ```
 $ cd ~
-$ rm -rf cinder demo-openrc.sh devstack.subunit glance horizon keystone neutron nova noVNC requirements tempest
-$ rm -rf .novaclient .cinderclient .glanceclient .cache .my.cnf
+$ rm -rf * # Enleve aussi Devstack
+$ rm -rf .* # Enleve les fichiers de configurations
 ```
 
