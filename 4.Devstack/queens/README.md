@@ -15,7 +15,7 @@ https://docs.openstack.org/devstack/latest/guides/single-machine.html
      
      Enforce a static /etc/resolv.conf (do this as Super User)
 
-     $ sudo sh -c ' echo nameserver 8.8.8.8 > /etc/resolv.conf '
+     $ echo nameserver 8.8.8.8 > sudo tee /etc/resolv.conf
      $ sudo chattr -e /etc/resolv.conf
      $ sudo chattr +i /etc/resolv.conf
 
