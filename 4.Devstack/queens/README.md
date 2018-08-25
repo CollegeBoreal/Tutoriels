@@ -2,6 +2,9 @@
 
 https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
+ PREREQUIS: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
+
+
 ## Installation shake and bake
 
 * Ajouter l'utilisateur `stack`
@@ -206,9 +209,13 @@ $ ./clean.sh
 
 ```
 $ cd ~
-$ rm -rf * # Enleve aussi Devstack
+$ sudo rm -rf * # Enleve aussi Devstack
 $ rm -rf .* # Enleve les fichiers de configurations
+$ sudo reboot
 ```
+Attendre 5 minutes de reboot
+
+
 # Utilitaires
 
 ## systemd
