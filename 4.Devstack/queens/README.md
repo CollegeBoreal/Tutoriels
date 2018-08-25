@@ -114,26 +114,26 @@ Faire tourner l'installation de DevStack:
 ./stack.sh
 ```
 
-### apres 28 minutes
+### apres 40 minutes
 
 ```
 =========================
 DevStack Component Timing
  (times are in seconds)  
 =========================
-run_process           25
+run_process           27
 test_with_retry        3
-apt-get-update         3
-osc                  210
-wait_for_service      26
-git_timed            214
-dbsync               208
-pip_install          158
-apt-get               76
+apt-get-update         2
+osc                  187
+wait_for_service      23
+git_timed            209
+dbsync               194
+pip_install          538
+apt-get              515
 -------------------------
-Unaccounted time     755
+Unaccounted time     720
 =========================
-Total runtime        1678
+Total runtime        2418
 
 
 
@@ -156,7 +156,7 @@ DevStack Version: queens
 Change: 935ae3f73ab14643b9d07722ee8262ba55e1edd8 Merge "Fix TEMPEST_AUTH_VERSION comparision condition for identity v2" into stable/queens 2018-08-14 01:28:16 +0000
 OS Version: Ubuntu 18.04 bionic
 
-2018-08-24 23:32:44.575 | stack.sh completed in 1678 seconds.
+2018-08-25 19:10:10.779 | stack.sh completed in 2418 seconds.
 ```
 
 # Tester son environmment
