@@ -2,7 +2,7 @@
 
 https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
- PREREQUIS: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
+     PREREQUIS: s'assurer que /etc/resolv.conf est protégé et que le DNS reste accéssible
 
 
 ## Installation shake and bake
