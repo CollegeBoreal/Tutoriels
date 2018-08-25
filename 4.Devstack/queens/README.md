@@ -96,35 +96,35 @@ Faire tourner l'installation de DevStack:
 ./stack.sh
 ```
 
-### apres 42 minutes
+### apres 28 minutes
 
 ```
 =========================
 DevStack Component Timing
  (times are in seconds)  
 =========================
-run_process           21
+run_process           25
 test_with_retry        3
-apt-get-update         4
-osc                  164
-wait_for_service      22
-git_timed            184
-dbsync               316
-pip_install          431
-apt-get              536
+apt-get-update         3
+osc                  210
+wait_for_service      26
+git_timed            214
+dbsync               208
+pip_install          158
+apt-get               76
 -------------------------
-Unaccounted time     843
+Unaccounted time     755
 =========================
-Total runtime        2524
+Total runtime        1678
 
 
 
-This is your host IP address: 10.13.237.4
+This is your host IP address: 10.13.237.12
 This is your host IPv6 address: ::1
-Horizon is now available at http://10.13.237.4/dashboard
-Keystone is serving at http://10.13.237.4/identity/
+Horizon is now available at http://10.13.237.12/dashboard
+Keystone is serving at http://10.13.237.12/identity/
 The default users are: admin and demo
-The password: supersecret
+The password: secret
 
 WARNING: 
 Using lib/neutron-legacy is deprecated, and it will be removed in the future
@@ -135,8 +135,10 @@ For more information see:
 https://docs.openstack.org/devstack/latest/systemd.html
 
 DevStack Version: queens
-Change: d04658eb50d7e1f59625039deaef17208a0c9eb9 Stage rabbitmq and DB logs 2017-12-18 18:21:24 +0000
-OS Version: Ubuntu 17.04 zesty
+Change: 935ae3f73ab14643b9d07722ee8262ba55e1edd8 Merge "Fix TEMPEST_AUTH_VERSION comparision condition for identity v2" into stable/queens 2018-08-14 01:28:16 +0000
+OS Version: Ubuntu 18.04 bionic
+
+2018-08-24 23:32:44.575 | stack.sh completed in 1678 seconds.
 ```
 
 # Tester son environmment
