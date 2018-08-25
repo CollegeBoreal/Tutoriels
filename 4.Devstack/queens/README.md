@@ -191,4 +191,37 @@ $ cd ~
 $ rm -rf * # Enleve aussi Devstack
 $ rm -rf .* # Enleve les fichiers de configurations
 ```
+# Utilitaires
 
+## systemd
+
+* Liste des services géré par `systemd`
+
+```
+$ sudo  service --status-all
+ [ + ]  apache-htcacheclean
+ [ + ]  apache2
+ [ + ]  apparmor
+ [ + ]  conntrackd
+ [ - ]  console-setup.sh
+ [ + ]  cron
+```
+
+* Le statut d'un service en particulier
+
+```
+$ sudo service rabbitmq-server status
+● rabbitmq-server.service - RabbitMQ Messaging Server
+   Loaded: loaded (/lib/systemd/system/rabbitmq-server.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2018-08-24 19:06:52 EDT; 14h ago
+ Main PID: 11374 (rabbitmq-server)
+    Tasks: 308 (limit: 4915)
+   CGroup: /system.slice/rabbitmq-server.service
+           ├─11374 /bin/sh /usr/sbin/rabbitmq-server
+           ├─11383 /bin/sh /usr/lib/rabbitmq/bin/rabbitmq-server
+           ├─11545 /usr/lib/erlang/erts-9.2/bin/epmd -daemon
+           ├─11710 /usr/lib/erlang/erts-9.2/bin/beam.smp -W w -A 256 -P 1048576 -t 5000000 -stbt db -zdbbl 32000 -K true -B i -- -root /usr/lib/erlang -progname erl -- -home /var/lib/rabbitmq -- -pa /usr/lib/rabbitmq/lib/rabbitmq_server-3.6.10/
+           ├─12038 erl_child_setup 65536
+           ├─12157 inet_gethost 4
+           └─12158 inet_gethost 4
+```
