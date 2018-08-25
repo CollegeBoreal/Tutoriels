@@ -11,7 +11,7 @@ https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
      Delete the symlink /etc/resolv.conf
 
-     $ rm /etc/resolv.conf
+     $ sudo rm /etc/resolv.conf
      
      Enforce a static /etc/resolv.conf (do this as Super User)
 
