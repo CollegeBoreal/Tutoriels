@@ -139,26 +139,26 @@ Faire tourner l'installation de DevStack:
 DevStack Component Timing
  (times are in seconds)  
 =========================
-run_process           27
+run_process           26
 test_with_retry        3
-apt-get-update         2
-osc                  187
+apt-get-update         3
+osc                  189
 wait_for_service      23
-git_timed            209
-dbsync               194
+git_timed            208
+dbsync               199
 pip_install          538
-apt-get              515
+apt-get              511
 -------------------------
-Unaccounted time     720
+Unaccounted time     722
 =========================
-Total runtime        2418
+Total runtime        2422
 
 
 
-This is your host IP address: 10.13.237.12
+This is your host IP address: 10.13.237.2
 This is your host IPv6 address: ::1
-Horizon is now available at http://10.13.237.12/dashboard
-Keystone is serving at http://10.13.237.12/identity/
+Horizon is now available at http://10.13.237.2/dashboard
+Keystone is serving at http://10.13.237.2/identity/
 The default users are: admin and demo
 The password: secret
 
@@ -174,7 +174,7 @@ DevStack Version: queens
 Change: 935ae3f73ab14643b9d07722ee8262ba55e1edd8 Merge "Fix TEMPEST_AUTH_VERSION comparision condition for identity v2" into stable/queens 2018-08-14 01:28:16 +0000
 OS Version: Ubuntu 18.04 bionic
 
-2018-08-25 19:10:10.779 | stack.sh completed in 2418 seconds.
+2018-08-25 22:08:39.513 | stack.sh completed in 2422 seconds
 ```
 
 # Tester son environmment
