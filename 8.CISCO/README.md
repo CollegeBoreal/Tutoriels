@@ -1,5 +1,15 @@
 # CISCO Connection
 
+# Pratique CCNA sur Internet (Proposé par Mostafa Bouchichi - CCNA: CSCO1336020)
+
+https://ccnav6.com/
+
+http://www.9tut.com/
+
+https://www.udemy.com/ccna-on-demand-video-boot-camp/
+
+https://www.cbtnuggets.com/it-training/cisco-ccna-icnd1-100-105
+
 # A.Outils
 
 ## Packet Tracer
