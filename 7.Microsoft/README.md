@@ -9,6 +9,6 @@ https://boreal.onthehub.com
 
 http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 
-# Installing Windows 10 on a mac without bootcamp
+# Windows Creation Tools (Créer une clé USB bootable)
 
-http://fgimian.github.io/blog/2016/03/12/installing-windows-10-on-a-mac-without-bootcamp/
+https://www.microsoft.com/en-ca/software-download/windows10
