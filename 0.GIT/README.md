@@ -54,6 +54,18 @@ $ git push origin master
 $ git pull 
 ```
 
+# Suppressions
+
+## Supprimer un fichier appellé `monfichier.md`
+```
+$ git rm monfichier.md 
+```
+
+## Supprimer (réccursivement) un répertoire appellé `monrepertoire`
+```
+$ git rm -rf monrepertoire 
+```
+
 # Configurer git (Clé personnelle)
 
 ### .ssh/config

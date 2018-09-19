@@ -1,5 +1,8 @@
 # INSTALLER OPENSTACK - DEVSTACK 
 
+
+https://git.openstack.org/cgit/openstack-dev/devstack . (Branches Devstack)
+
 | Version              | Autheur                | Documentation                                                      |
 |:---------------------|:-----------------------|:-------------------------------------------------------------------|
 |[Newtown](./newton)   | `Autheur: Gary Uppiah` | [Newton Projects](https://docs.openstack.org/newton/projects.html) |
@@ -15,3 +18,7 @@
 References:
 
 https://docs.openstack.org/ocata/networking-guide/config-service-subnets.html
+
+https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-18-04-bionic-beaver-linux
+
+https://askubuntu.com/questions/1031279/18-04-bionic-beaver-enforce-static-etc-resolv-conf (enforce /etc/resolv.conf)

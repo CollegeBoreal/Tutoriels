@@ -6,13 +6,28 @@
 
 * Java JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads
 
+Ajuster son fichier de démarrage .bash_profile ou variable d'environnement 
+
+MacOSX
+```
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+Windows
+```
+export JAVA_HOME="$(/c/Program Files (x86)/java/jdk.1.8.121)"
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+
 ## Installation de Scala Interface en Ligne de Commandes (CLI)
 
 * Scala CLI: https://www.scala-lang.org/download/
 
 Télécharger et extraire le fichier dans le répertoire ~/bin
 
-Ajuster son fichier de démarrage .bashrc ou variable d'environnement 
+Ajuster son fichier de démarrage .bash_profile ou variable d'environnement 
 ```
 export SCALA_HOME=~/bin/scala-2.12.1
 
@@ -24,6 +39,12 @@ export PATH=$SCALA_HOME/bin:$PATH
 
 * Intellij Idea : https://www.jetbrains.com/idea/download
 * Enregistrement: https://www.jetbrains.com/student/
+
+* Configuration Scala/Sbt/IntelliJ
+
+https://stackoverflow.com/questions/46381242/intellij-sbt-based-scala-project-does-not-build-with-java-9
+
+![alt tag](https://i.stack.imgur.com/vcBkX.png)
 
 ## Installation de l'environnement de projet SBT (Simple Build Tool)
 

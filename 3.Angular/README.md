@@ -8,10 +8,12 @@ https://nodejs.org/en/download/
 
 ## Versions minimales de Node and npm
 ```
-$ node --version
-v6.9.1
 $ npm --version
-3.10.8
+6.4.1
+
+$ node --version
+v8.12.0
+
 ```
 
 # Angular-cli
@@ -60,7 +62,19 @@ http://docs.nativescript.org/angular/tutorial/ng-chapter-1
 $ tns create HelloWorld --template nativescript-template-ng-tutorial
 ```
 
+## Mise a jour de tous les packages JS
 
+* Installer npm-checkupdates
+
+```
+$ npm i -g npm-check-updates
+```
+
+* Lancer la mise a jour
+
+```
+$ ncu -u -a
+```
 ## Installation de l'environnement intégré de développement (IDE) -- Webstorm
 
 * Intellij Webstorm : https://www.jetbrains.com/webstorm/download
