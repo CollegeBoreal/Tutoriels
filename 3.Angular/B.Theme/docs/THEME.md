@@ -2,7 +2,7 @@
 
 # Enabling the Theme System to Angular Project
 
-https://akveo.github.io/nebular/#/docs/guides/enabling-theme-system
+https://akveo.github.io/nebular/docs/guides/enable-theme-system#enable-theme-system
 
 ## Adding the Theme
 
