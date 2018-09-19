@@ -8,10 +8,12 @@ https://nodejs.org/en/download/
 
 ## Versions minimales de Node and npm
 ```
-$ node --version
-v6.9.1
 $ npm --version
-3.10.8
+6.4.1
+
+$ node --version
+v8.12.0
+
 ```
 
 # Angular-cli
