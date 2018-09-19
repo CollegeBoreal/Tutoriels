@@ -37,7 +37,7 @@ $nb-themes: nb-register-theme((
 
 ```scss
 // this is your created themes.scss file, make sure the path to the file is correct
-@import 'themes';
+@import './app/@theme/styles/themes';   // Note: This should match your newly created themes.scss
 
 // framework component styles which will use your new theme
 @import '~@nebular/theme/styles/globals';
