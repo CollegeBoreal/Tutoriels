@@ -6,7 +6,7 @@
 ### Install Nebular modules (along with dependencies [i.e. Bootstrap]:
 
 ```
-$ npm install --save @nebular/theme bootstrap@4.0.0-alpha.6
+$ npm install --save @nebular/theme bootstrap
 ```
 
 ## Configuring in themes.modules.ts
