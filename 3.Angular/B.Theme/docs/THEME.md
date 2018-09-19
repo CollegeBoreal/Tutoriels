@@ -6,11 +6,12 @@ https://akveo.github.io/nebular/docs/guides/enable-theme-system#enable-theme-sys
 
 ## Adding the Theme
 
-* Edit the .angular-cli.json file and add the theme(s)
+* Edit the `angular.json` file and add the theme(s)
 
 ```json
 "styles": [
-        "../node_modules/@nebular/theme/styles/prebuilt/default.css",
+        "src/styles.scss",
+        "../node_modules/@nebular/theme/styles/prebuilt/default.css"
       ],
 ```
 
@@ -21,11 +22,14 @@ https://akveo.github.io/nebular/docs/guides/enable-theme-system#enable-theme-sys
 @import '~@nebular/theme/styles/theming';
 @import '~@nebular/theme/styles/themes/default';
 
-// and change some variables inside of the map
+// and change the variables you need, 
+// or simply leave the map empty to use the default values
+// let's make it blue-ish instead of the default white color
 $nb-themes: nb-register-theme((
-
-  color-bg: gray,
-  color-fg: white,
+  color-bg: #4ca6ff,
+  shadow: 0 1px 2px 0 #3780c0,
+  layout-bg: #ffffff,
+  color-fg: #222222
 ), default, default); // let's leave it as default
 ```
 
@@ -33,7 +37,7 @@ $nb-themes: nb-register-theme((
 
 ```scss
 // this is your created themes.scss file, make sure the path to the file is correct
-@import './app/@theme/styles/themes';
+@import 'themes';
 
 // framework component styles which will use your new theme
 @import '~@nebular/theme/styles/globals';
