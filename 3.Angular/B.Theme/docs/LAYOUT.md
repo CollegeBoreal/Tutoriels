@@ -48,6 +48,8 @@ $ ng g component @theme/layout/LayoutOneColumn --inline-template true --spec fal
 . Final Result
 
 ```Typescript
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-layout-one-column',
   template: `
@@ -59,8 +61,7 @@ $ ng g component @theme/layout/LayoutOneColumn --inline-template true --spec fal
       <nb-layout-column>Page Content</nb-layout-column>
     </nb-layout>
   `,
-  styles: [],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./layout-one-column.component.scss']
 })
 export class LayoutOneColumnComponent implements OnInit {
 
