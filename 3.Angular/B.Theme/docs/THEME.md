@@ -11,7 +11,7 @@ https://akveo.github.io/nebular/docs/guides/enable-theme-system#enable-theme-sys
 ```json
 "styles": [
         "src/styles.scss",
-        "../node_modules/@nebular/theme/styles/prebuilt/default.css"
+        "node_modules/@nebular/theme/styles/prebuilt/default.css"
       ],
 ```
 
