@@ -22,7 +22,7 @@ $ ng --version
 
 ![alt tag](ngversion.png)
 
-## Créer un nouveau projet en utilisan SCSS
+## Créer un nouveau projet en utilisant SCSS
 
 ```
 $ ng new monprojet --style=scss
