@@ -42,4 +42,4 @@ Follow the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installatio
 
 Follow the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/configuring-a-strategy) Configuration
 
-Use the [@Nebular/Auth](https://akveo.github.io/nebular/#/docs/auth/getting-user-token) Token 
+Use the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/getting-user-token) Token 
