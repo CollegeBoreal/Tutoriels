@@ -116,7 +116,7 @@ const NB_THEME_PROVIDERS = [
 @NgModule({
   imports: [...BASE_MODULES, ...NB_MODULES],
   exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS],
-  declarations: [...COMPONENTS]
+  declarations: [LayoutOneColumnComponent]
 })
 export class ThemeModule {
   static forRoot(): ModuleWithProviders {
