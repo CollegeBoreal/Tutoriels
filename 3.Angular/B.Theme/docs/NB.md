@@ -79,4 +79,4 @@ export class ThemeModule {
 }
 ```
 
-[Next](../Theme)
+[Next](Theme.md)
