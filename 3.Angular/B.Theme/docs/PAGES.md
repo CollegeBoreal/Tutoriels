@@ -15,7 +15,7 @@ $ ng g module pages --routing true
 $ ng g component pages --inline-style true --inline-template true --spec false 
 ```
 
-## Add the ThemeModule to `pages.module.ts` and One Column Layout
+## Add the ThemeModule to the page module file `pages.module.ts` and One Column Layout
 
 ```Typescript
 @NgModule({
@@ -29,7 +29,7 @@ $ ng g component pages --inline-style true --inline-template true --spec false
 export class PagesModule { }
 ```
 
-## Add `One Column Layout` to the `pages.component.html`
+## Add `One Column Layout` to the template of the page module component file `pages.component.ts`
 
 ```Typescript
 @Component({
