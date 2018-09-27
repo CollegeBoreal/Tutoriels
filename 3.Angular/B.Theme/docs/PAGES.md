@@ -74,9 +74,22 @@ export class PagesRoutingModule { }
 --- Add the following code to the file `app-routing.module.ts` to the Constant `routes` 
 
 ```Typescript
-  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
+  { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
+```
+--- Add the Extra Options allowing the use of hash in the URL
+
+```
+const config: ExtraOptions = {
+  useHash: true,
+};
+```
+
+--- Add the new `config` constant to the `RouterModule.forRoot` function parameter 
+
+```
+  imports: [RouterModule.forRoot(routes, config)],
 ```
 
 . Final Result 
@@ -86,7 +99,7 @@ import { NgModule } from '@angular/core';
 import {Routes, RouterModule, ExtraOptions} from '@angular/router';
 
 const routes: Routes = [
-  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
+  { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ];
