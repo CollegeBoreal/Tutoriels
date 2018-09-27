@@ -84,13 +84,16 @@ Notice the `select=` in the `<nb-content>` tag, these must be provided later on 
 
 ```Typescript
 <nb-layout>
-  <nb-layout-header fixed>Organisation Name</nb-layout-header>
+  <nb-layout-header fixed>Company Name</nb-layout-header>
+  
   <nb-sidebar>
     <ng-content select="nb-menu"></ng-content>
   </nb-sidebar>
+  
   <nb-layout-column>
     <ng-content select="router-outlet"></ng-content>
   </nb-layout-column>
+  
 </nb-layout>
 ```
 
