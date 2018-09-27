@@ -52,7 +52,7 @@ export class PagesComponent implements OnInit {
 
 ```
 
-## Add the PagesComponent to the Pages Routing
+## Add the PagesComponent to the Pages Routing `pages-routing-module.ts`
 
 ```
 const routes: Routes = [{
