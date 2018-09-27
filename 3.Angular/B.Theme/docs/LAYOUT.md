@@ -2,7 +2,7 @@
 
 ## Add the Nebular Layout and SideBar Modules to the Theme Module
 
--- Add @Nebular ([Layout](https://akveo.github.io/nebular/docs/components/layout), Sidebar) Modules to the theme.module.ts
+-- Add @Nebular ([Layout](https://akveo.github.io/nebular/docs/components/layout), [Sidebar](https://akveo.github.io/nebular/docs/components/sidebar)) Modules to the theme.module.ts
 
 ```Typescript
 const NB_MODULES = [
