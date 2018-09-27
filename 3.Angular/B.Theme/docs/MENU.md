@@ -22,7 +22,13 @@ const NB_THEME_PROVIDERS = [
 
 ## Let's create a fictitious `Menu`
 
-* Add a new file called `pages-menu.ts` under `src/app/pages` with the following content:
+* generate a new interface called `pages-menu.ts` 
+
+```
+$ ng g interface pages/page-menu
+```
+
+* change its entire content with the following:
 
 ```Typescript
 import {NbMenuItem} from '@nebular/theme';
