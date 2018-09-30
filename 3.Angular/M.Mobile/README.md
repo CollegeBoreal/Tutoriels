@@ -9,13 +9,13 @@ https://www.nativescript.org/
 ### NativeScript
 
 ```
-$ npm install -g nativescript
+$ npm install nativescript --global 
 ```
 
 ### NativeScript Schematics
 
 ```
-$ npm i -g @nativescript/schematics
+$ npm install @nativescript/schematics --global 
 ```
 
 ## Creating Apps
