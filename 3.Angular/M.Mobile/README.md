@@ -18,6 +18,8 @@ $ npm install nativescript@next --global
 $ npm install @nativescript/schematics --global 
 ```
 
+Note: MacOS, Linux add `--unsafe-perm`
+
 ## Creating Apps
 
 http://docs.nativescript.org/angular/tutorial/ng-chapter-1
