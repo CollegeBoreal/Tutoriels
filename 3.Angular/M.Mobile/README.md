@@ -24,7 +24,7 @@ Note: MacOS, Linux add `--unsafe-perm`
 ### Web + Mobile Code Sharing project
 
 ```
-ng new --collection=@nativescript/schematics my-shared-app --shared
+$ ng new --collection=@nativescript/schematics my-shared-app --shared
 ```
 
 ## Creating Apps
