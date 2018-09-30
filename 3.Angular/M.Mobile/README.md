@@ -9,7 +9,7 @@ https://www.nativescript.org/
 ### NativeScript
 
 ```
-$ npm install nativescript --global 
+$ npm install nativescript@next --global 
 ```
 
 ### NativeScript Schematics
