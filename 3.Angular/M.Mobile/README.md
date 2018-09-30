@@ -6,8 +6,16 @@ https://www.nativescript.org/
 
 ## Installation
 
+### NativeScript
+
 ```
 $ npm install -g nativescript
+```
+
+### NativeScript Schematics
+
+```
+$ npm i -g @nativescript/schematics
 ```
 
 ## Creating Apps
