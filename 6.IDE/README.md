@@ -6,7 +6,7 @@
 
 ```
 Note:
-    Utiliser IMPERATIVEMENT votre courriel Boreal (i.e. .....@monboreal.ca)
+    Utiliser IMPERATIVEMENT votre courriel Boreal (i.e. .....@monboreal.ca) lors de l'enregistrement pour bénéficier de l'abonnement 
 ```
 
 ## Installation de l'environnement intégré de développement (IDE)
