@@ -4,6 +4,10 @@
 
 * Enregistrement: https://www.jetbrains.com/student/
 
+```
+Note:
+    Utiliser IMPERATIVEMENT votre courriel Boreal (i.e. .....@monboreal.ca)
+```
 
 ## Installation de l'environnement intégré de développement (IDE)
 
