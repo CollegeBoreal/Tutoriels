@@ -22,7 +22,7 @@ $ ng g component pages --inline-style true --inline-template true --spec false
   imports: [
     CommonModule,
     PagesRoutingModule,
-    ThemeModule
+    ThemeModule.forRoot()
   ],
   declarations: [PagesComponent]
 })
