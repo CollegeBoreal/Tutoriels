@@ -6,29 +6,29 @@
 
 ![alt tag](./docs/ModuleDesign.png)
 
-## Create Angular-CLI project
+# Create Angular-CLI project
 
 ```
 $ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
-# Creating the @Theme Module
+# Create the `@Theme` Module
 
 Follow the [Base](./docs/BASE.md) Documentation
 
-# Adding the @Nebular Theme Module to the @Theme Module
+## Adding the `@Nebular` theme to the `@Theme` module
 
 Follow the [NB](./docs/NB.md) Documentation
 
-# Enabling the @Nebular Theme System
+## Enabling the `@Nebular` theme system
 
 Follow the [Theme](./docs/THEME.md) Documentation
 
-# Create the application's Layout using @Nebular Layout Module
+## Create the application's Layout using `@Nebular` Layout
 
 Follow the [Layout](./docs/LAYOUT.md) Documentation
 
-# Add the pages Module
+# Create the `Pages` module
 
 Follow the [Pages](./docs/PAGES.md) Documentation
 
