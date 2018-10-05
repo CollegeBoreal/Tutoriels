@@ -1,6 +1,6 @@
 # Integration to the `app module`
 
-* Finaly, let's add the `Pages Module` to the main `App Module` by adding its route
+### Finaly, let's add the `Pages Module` to the main `App Module` by adding its route
 
 --- Add the following code to the file `app-routing.module.ts` to the Constant `routes` 
 
@@ -46,13 +46,13 @@ const config: ExtraOptions = {
 export class AppRoutingModule { }
 ```
 
-*  Replace the app.component.html code to the below
+###  Replace the app.component.html code to the below
 
 ```html
 <router-outlet></router-outlet>
 ```
 
-*  Initializing the theme module from `app.module.ts` 
+###  Initiale the theme module from `app.module.ts` 
 
 by importing the `ThemeModule.forRoot()`
 
