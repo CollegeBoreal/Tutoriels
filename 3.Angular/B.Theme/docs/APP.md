@@ -46,7 +46,7 @@ const config: ExtraOptions = {
 export class AppRoutingModule { }
 ```
 
-###  Replace the app.component.html code to the below
+###  Replace the app.component.html source code with the below
 
 ```html
 <router-outlet></router-outlet>
