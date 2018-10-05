@@ -11,7 +11,7 @@
 ```
 * Add the `ExtraOptions` allowing the use of hash in the URL
 
-```
+```Typescript
 const config: ExtraOptions = {
   useHash: true,
 };
