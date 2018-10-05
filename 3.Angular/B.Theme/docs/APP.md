@@ -52,8 +52,29 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
-*  Replace the app.component.html code to the below
+*  Initializing the theme module from `app.module.ts` 
 
+by importing the `ThemeModule.forRoot()`
+
+Final result
+
+```
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ThemeModule.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
 
 
 ## Testing
