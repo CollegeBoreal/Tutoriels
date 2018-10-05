@@ -19,7 +19,7 @@ const config: ExtraOptions = {
 
 * Add the new `config` constant to the `RouterModule.forRoot` function parameter 
 
-```
+```Typescript
   imports: [RouterModule.forRoot(routes, config)],
 ```
 
