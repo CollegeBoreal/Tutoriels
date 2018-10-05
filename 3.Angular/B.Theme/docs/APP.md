@@ -52,7 +52,7 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
-###  Initiale the theme module from `app.module.ts` 
+###  Initialize the theme module from `app.module.ts` 
 
 by importing the `ThemeModule.forRoot()`
 
