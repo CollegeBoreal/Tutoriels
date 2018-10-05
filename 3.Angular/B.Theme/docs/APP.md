@@ -9,7 +9,7 @@
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ```
-* Add the Extra Options allowing the use of hash in the URL
+* Add the `ExtraOptions` allowing the use of hash in the URL
 
 ```
 const config: ExtraOptions = {
