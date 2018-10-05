@@ -32,6 +32,10 @@ Follow the [Layout](./docs/LAYOUT.md) Documentation
 
 Follow the [Pages](./docs/PAGES.md) Documentation
 
+# Put eveverything together
+
+Follow the [App](./docs/APP.md) Documentation
+
 # Add the application's Menu
 
 Follow the [Menu](./docs/MENU.md) Documentation
