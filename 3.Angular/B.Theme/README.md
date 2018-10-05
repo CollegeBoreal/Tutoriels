@@ -32,7 +32,7 @@ Follow the [Layout](./docs/LAYOUT.md) Documentation
 
 Follow the [Pages](./docs/PAGES.md) Documentation
 
-# Put eveverything together
+# Put everything together
 
 Follow the [App](./docs/APP.md) Documentation
 
