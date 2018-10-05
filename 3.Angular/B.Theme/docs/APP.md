@@ -54,7 +54,7 @@ export class AppRoutingModule { }
 
 ###  Initialize the `@Theme` module in `app.module.ts` 
 
-by importing the `ThemeModule.forRoot()`
+by importing the `ThemeModule.forRoot()` function
 
 * Final result
 
