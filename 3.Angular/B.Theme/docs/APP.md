@@ -52,6 +52,10 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
+*  Replace the app.component.html code to the below
+
+
+
 ## Testing
 
 http://localhost:4200
