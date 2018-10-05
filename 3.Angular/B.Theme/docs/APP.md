@@ -1,8 +1,8 @@
 # Integration to the `app module`
 
-### Finaly, let's add the `Pages Module` to the main `App Module` by adding its route
+### Finaly, let's add the `Pages` module to the main `App` module by adding its route
 
-* Add the following code to the file `app-routing.module.ts` to the Constant `routes` 
+* Add the following code to the file `app-routing.module.ts` at the Constant `routes` 
 
 ```Typescript
   { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
@@ -52,7 +52,7 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
-###  Initialize the @Theme module in `app.module.ts` 
+###  Initialize the `@Theme` module in `app.module.ts` 
 
 by importing the `ThemeModule.forRoot()`
 
