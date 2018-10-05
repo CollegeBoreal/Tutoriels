@@ -36,7 +36,7 @@ Follow the [Pages](./docs/PAGES.md) Documentation
 
 Follow the [App](./docs/APP.md) Documentation
 
-# Add the application's Menu
+## Add the application's Menu
 
 Follow the [Menu](./docs/MENU.md) Documentation
 
