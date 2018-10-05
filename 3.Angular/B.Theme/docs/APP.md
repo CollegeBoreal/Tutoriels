@@ -58,7 +58,7 @@ by importing the `ThemeModule.forRoot()`
 
 * Final result
 
-```
+```typescript
 
 @NgModule({
   declarations: [
