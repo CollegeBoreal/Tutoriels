@@ -2,6 +2,8 @@
 
 `Creating a Theme Module using` [AKVEO/Nebular](https://akveo.github.io/nebular/#/docs/getting-started/what-is-nebular)
 
+`add-into-existing-project` https://akveo.github.io/nebular/docs/guides/add-into-existing-project#add-into-existing-project
+
 ## Modular Design
 
 ![alt tag](./docs/ModuleDesign.png)
