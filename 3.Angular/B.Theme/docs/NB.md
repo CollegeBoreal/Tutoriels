@@ -6,7 +6,7 @@
 ### Install Nebular modules (along with dependencies [i.e. Bootstrap]:
 
 ```
-$ npm install --save @nebular/theme bootstrap
+$ npm install --save @angular/cdk @nebular/theme bootstrap 
 ```
 
 ## Configuring in themes.modules.ts
