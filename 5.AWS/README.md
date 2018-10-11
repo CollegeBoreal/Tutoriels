@@ -11,7 +11,7 @@ https://aws.amazon.com/fr/console/
 
 Récupérer votre numéro de compte AWS dans les paramètres de votre compte.
 
-![alt tag](IDduCompte.png)
+![alt tag](images/IDduCompte.png)
 
 
 ## Créer un compte AWS Educate
@@ -21,7 +21,7 @@ https://aws.amazon.com/fr/education/awseducate/
 * Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`  
 * Remplir la forme ci-dessous selon le modèle
 
-![alt tag](AWSEducateForm.png)
+![alt tag](images/AWSEducateForm.png)
 
 * Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
 * Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
@@ -30,7 +30,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Pour ID du compte:  Rechercher l'information dans votre compte `AWS Tableau de Bord` (voir ci dessus)
 
-![alt tag](aws.PNG)
+![alt tag](images/aws.PNG)
 
 * Pour terminer l'application appuyer sur `Submit`
 
@@ -91,7 +91,7 @@ $ docker-machine create --driver amazonec2 \
 ```
 
 
-## Installer sur Ubuntu xenial
+## Installer sur Ubuntu 
 
 ```
 $ sudo -i
