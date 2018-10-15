@@ -6,13 +6,13 @@
 * Module plus Routing
 
 ```
-$ ng g module pages --routing true
+$ ng generate module pages --routing true
 ```
 
 * Component (Simplified)
 
 ```
-$ ng g component pages --inline-style true --inline-template true --spec false 
+$ ng generate component pages --inline-style true --inline-template true --spec false 
 ```
 
 ## Add the ThemeModule to the page module file `pages.module.ts`
