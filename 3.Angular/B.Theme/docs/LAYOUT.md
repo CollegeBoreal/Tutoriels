@@ -29,7 +29,7 @@ const NB_THEME_PROVIDERS = [
 ## Generate a layout with one Column
 
 ```
-$ ng g component @theme/layout/LayoutOneColumn --inline-template true --spec false 
+$ ng generate component @theme/layout/LayoutOneColumn --inline-template true --spec false 
 ```
 
 --- Add the following layout example (i.e. from AKVEO/Nebular) to the LayoutOneColumn Component Template
