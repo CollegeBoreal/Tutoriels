@@ -42,6 +42,8 @@ Follow the [App](./docs/APP.md) Documentation
 
 Follow the [Menu](./docs/MENU.md) Documentation
 
+# Create the `@Core` Module
+
 # Enabling Authentication using @Nebular/auth
 
 Follow the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Installation
