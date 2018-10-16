@@ -1,9 +1,12 @@
 # Core
 
 
-
 Créer un service pour récupérer les données
+
+```
 $ ng generate service services/pokemon
+```
+
 https://pokeapi.co/api/v2/pokemon?limit=15
 
 Representation des donnees en JSON
