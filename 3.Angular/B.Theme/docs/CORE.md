@@ -90,6 +90,7 @@ https://www.w3schools.com/js/js_json_intro.asp
 Utilisation de la platefrome reactive
 http://reactivex.io/
 
+```
 import {HttpClient} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
 import {catchError} from 'rxjs/internal/operators';
@@ -113,10 +114,15 @@ import {catchError} from 'rxjs/internal/operators';
 
     return pokemons;
   }
+ 
+```
+
 Utiliser ngfor
 
+```
   <div *ngFor="let pokemon of pokemons; let i = index">
     <span>{{i}}</span>
     <span> {{pokemon.name}}</span>
     <img src="../../assets/pokemon/{{i+1}}.png" alt="{{pokemon.name}}">
   </div>
+```
