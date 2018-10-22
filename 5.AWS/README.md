@@ -1,6 +1,10 @@
 # AWS (Amazon Web Services)
 
 
+## AWS Educate: Quoi?
+
+https://www.youtube.com/watch?v=X36oOsjyoXA
+
 ## Ouvrir un compte personnel sur AWS 
 
 Note: Si vous en avez deja un entrer dans votre compte.
