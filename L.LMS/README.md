@@ -15,7 +15,13 @@ https://www.youtube.com/watch?v=ljlR2spz4RQ
 
 ## ePortfolio:
 
-https://www.youtube.com/watch?v=qKQ5a1Sr1iM
+* Usage
+
+   https://www.youtube.com/watch?v=qKQ5a1Sr1iM
+
+* Peer Evaluation
+
+   https://www.youtube.com/watch?v=gj6QsaguX4A
 
 ## D2L Settings 
 
@@ -23,9 +29,7 @@ https://www.youtube.com/watch?v=qKQ5a1Sr1iM
 
    https://www.youtube.com/watch?v=JP0kd-HdLEQ
 
-## Peer Evaluation
 
-https://www.youtube.com/watch?v=gj6QsaguX4A
 
 
 ## [D2L API](./D2L_API.md)
