@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=qKQ5a1Sr1iM
 
 ## D2L Settings 
 
-### Change homepage
+*  Change homepage
 
 https://www.youtube.com/watch?v=JP0kd-HdLEQ
 
