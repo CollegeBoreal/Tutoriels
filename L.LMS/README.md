@@ -5,21 +5,7 @@
 
 https://github.com/topics/learning-management-system
 
-## D2L API
 
-D2L API
-
-https://docs.valence.desire2learn.com/reference.html
-
-http://ui.developers.brightspace.com/
-
-D2L Version
-
-https://collegeboreal.brightspace.com/d2l/lp/versions/main.d2l
-
-D2L KeyTool Service
-
-https://keytool.valence.desire2learn.com/Auth/LogOn
 
 
 ## Competencies :
