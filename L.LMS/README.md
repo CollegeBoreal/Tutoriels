@@ -2,8 +2,9 @@
 
 
 
+## Groups
 
-
+https://www.youtube.com/watch?v=lzOCiYbY_QY
 
 ## Competencies :
 
@@ -15,6 +16,10 @@ https://www.youtube.com/watch?v=ljlR2spz4RQ
 * Usage
 
    https://www.youtube.com/watch?v=qKQ5a1Sr1iM
+   
+* sharing Groups
+
+   https://www.youtube.com/watch?v=RUbb6djIIMQ
 
 * Peer Evaluation
 
