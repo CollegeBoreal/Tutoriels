@@ -17,7 +17,9 @@ https://www.youtube.com/watch?v=ljlR2spz4RQ
 
 https://www.youtube.com/watch?v=qKQ5a1Sr1iM
 
-## Change D2L homepage
+## D2L Settings 
+
+### Change homepage
 
 https://www.youtube.com/watch?v=JP0kd-HdLEQ
 
