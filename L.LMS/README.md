@@ -17,3 +17,10 @@ https://collegeboreal.brightspace.com/d2l/lp/versions/main.d2l
 D2L KeyTool Service
 
 https://keytool.valence.desire2learn.com/Auth/LogOn
+
+
+## Competencies :
+
+https://www.youtube.com/watch?v=ljlR2spz4RQ
+
+
