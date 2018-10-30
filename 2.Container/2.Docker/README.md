@@ -32,7 +32,7 @@ $ sudo service docker status   # or systemctl status docker
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
-* Créer votre clé privée et publique
+* Utiliser votre clé privée et publique RSA
 
 ```
 $ docker-machine create --driver generic \
