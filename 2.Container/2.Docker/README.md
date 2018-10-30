@@ -45,3 +45,8 @@ $ docker-machine create --driver generic \
 ## Ouvrir le firewall
 
 https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
+
+```
+$ ufw allow 2376/tcp
+```
+
