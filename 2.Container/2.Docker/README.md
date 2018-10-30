@@ -63,4 +63,16 @@ Reload chain
 $ ufw reload
 ```
 
+enable
+
+```
+$ ufw enable
+```
+
+restart docker
+
+```
+$ sudo systemctl restart docker
+```
+
 
