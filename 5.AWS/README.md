@@ -95,22 +95,6 @@ $ docker-machine create --driver amazonec2 \
 ```
 
 
-## Installer Docker sur une VM Ubuntu 
-
-```
-$ sudo -i
-
-# curl -sSL https://get.docker.com | sh
-
-# usermod -aG docker ubuntu
-
-$ sudo service docker start
-
-$ sudo service docker status
-
-```
-
-
 
 # AWS CLI
 
