@@ -75,4 +75,15 @@ restart docker
 $ sudo systemctl restart docker
 ```
 
+# Fix API version
 
+https://stackoverflow.com/questions/43072703/client-is-newer-than-server-client-api-version-1-24-server-api-version-1-21
+
+```
+$ docker ps
+```
+  Error response from daemon: client is newer than server (client API version: 1.24, server API version: 1.21)
+
+```
+$ export DOCKER_API_VERSION=1.21
+```
