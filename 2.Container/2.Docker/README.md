@@ -32,11 +32,13 @@ $ sudo service docker status   # or systemctl status docker
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
+* Créer votre clé privée et publique
+
 ```
 $ docker-machine create --driver generic \
                         --generic-ip-address=10.13.237.6 \
                         --generic-ssh-user=root \
-                        --generic-ssh-key ~/.ssh/10.13.237.6_rsa 
+                        --generic-ssh-key ~/.ssh/id_rsa 
                         genericVM
 ```
 
