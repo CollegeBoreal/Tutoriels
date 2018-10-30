@@ -57,3 +57,10 @@ https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-fire
 $ ufw allow 2376/tcp
 ```
 
+Reload chain
+
+```
+$ ufw reload
+```
+
+
