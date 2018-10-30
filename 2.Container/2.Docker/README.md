@@ -28,6 +28,8 @@ $ sudo service docker status   # or systemctl status docker
 
 ```
 
+## Creer la connection d'un PC distant
+
 https://docs.docker.com/v17.09/machine/drivers/generic
 
 ```
