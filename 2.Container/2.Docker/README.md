@@ -59,6 +59,22 @@ $ docker-machine create --driver generic \
 $ rm -rf ~/.docker/machine/machines/genericVM
 ```
 
+https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
+ ```
+$ ufw allow 3306/tcp
+$ sudo ufw allow 3306/tcp
+```
+ Reload chain
+ ```
+$ ufw reload
+$ sudo ufw reload
+```
+ enable
+ ```
+$ ufw enable
+$ sudo ufw enable
+```
+ restart docker
 
 # Fix API version
 
