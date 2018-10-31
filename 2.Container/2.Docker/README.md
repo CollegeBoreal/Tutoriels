@@ -41,42 +41,49 @@ $ sudo visudo   # edit sudo config file
 ubuntu ALL=(ALL) NOPASSWD: ALL
 ```
 
-## Creer la connection d'un PC distant
+## 2) Creer votre `pseudo` machine virtuelle
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
-* Utiliser votre clé privée et publique RSA
+** N'oubliez pas de copier votre clé publique RSA sur la machine hôte
 
 ```
 $ docker-machine create --driver generic \
                         --generic-ip-address=10.13.237.6 \
-                        --generic-ssh-user=root \
+                        --generic-ssh-user=ubuntu \
                         --generic-ssh-key ~/.ssh/id_rsa \
                         genericVM
 ```
 
-### enlever la cle pour recommencer l'operation
+### enlever la clé pour recommencer l'operation si erreur il y a
 
 ```
 $ rm -rf ~/.docker/machine/machines/genericVM
 ```
 
+## 3) Ouvrir le port en faisant un trou dans le pare-feu
+
 https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
+
+** Par exemple pour MySQL
+
+Put the whole
  ```
 $ ufw allow 3306/tcp
 $ sudo ufw allow 3306/tcp
 ```
- Reload chain
+ Reloading chain
  ```
 $ ufw reload
 $ sudo ufw reload
 ```
- enable
+ enabling UFW
  ```
 $ ufw enable
 $ sudo ufw enable
 ```
- restart docker
+
+### Redémarer le service Docker
 
 # Fix API version
 
