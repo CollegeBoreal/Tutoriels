@@ -9,5 +9,8 @@
   
 ## [2.Docker](2.Docker)  
   * Installation d'une machine virtuelle avec Docker
-  
-  
+
+
+# DON'T DO THIS
+
+https://bbs.archlinux.org/viewtopic.php?id=57855
