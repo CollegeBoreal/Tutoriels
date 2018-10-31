@@ -60,32 +60,6 @@ $ rm -rf ~/.docker/machine/machines/genericVM
 ```
 
 
-## Ouvrir le firewall
-
-https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
-
-```
-$ sudo ufw allow 2376/tcp
-```
-
-Reload chain
-
-```
-$ sudo ufw reload
-```
-
-enable
-
-```
-$ sudo ufw enable
-```
-
-restart docker
-
-```
-$ sudo systemctl restart docker
-```
-
 # Fix API version
 
 https://stackoverflow.com/questions/43072703/client-is-newer-than-server-client-api-version-1-24-server-api-version-1-21
