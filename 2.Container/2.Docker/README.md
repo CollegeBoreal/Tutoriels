@@ -43,21 +43,11 @@ ubuntu ALL=(ALL) NOPASSWD: ALL
 
 ## 2) Installer la clé publique de la machine utilisé comme Docker Client
 
+* Server ou est installé Docker Engine
+
 ```
-$ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  # Server ou est installé Docker Engine
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
 ```
-
-  /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/b300098957/.ssh/tsihombe_rsa.pub"
-  /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-  /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-  virl@10.13.237.6's password: 
-
-  Number of key(s) added:        1
-
-  Now try logging into the machine, with:   "ssh 'virl@10.13.237.6'"
-  and check to make sure that only the key(s) you wanted were added.
-
-
 
 ## 3) Creer votre `pseudo` machine virtuelle
 
