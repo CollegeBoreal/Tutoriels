@@ -11,6 +11,6 @@
   * Installation d'une machine virtuelle avec Docker
 
 
-# DON'T DO THIS
+# À NE PAS FAIRE (Vous perdez le temps de tout le monde)
 
 https://bbs.archlinux.org/viewtopic.php?id=57855
