@@ -28,6 +28,17 @@ $ sudo service docker status   # or systemctl status docker
 
 ```
 
+## Authoriser l'acces sans mot de passe
+
+```
+$ sudo visudo   # edit sudo config file
+```
+
+### Rajouter la ligne ci-dessous en changeant votre utilisateur (i.e. substituer ubuntu)
+```
+ubuntu ALL=(ALL) NOPASSWD: ALL
+```
+
 ## Creer la connection d'un PC distant
 
 https://docs.docker.com/v17.09/machine/drivers/generic
