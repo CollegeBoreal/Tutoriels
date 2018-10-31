@@ -9,9 +9,11 @@ https://download.docker.com/ (installer docker sans login-wall)
 
 ## Docker Engine
 
-## Installer Docker sur une VM Ubuntu 
+## 1) Installer Docker sur une machine Ubuntu 
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
+
+** dans le cas échéant, installer `curl` si non présent
 
 ```
 $ sudo -i
