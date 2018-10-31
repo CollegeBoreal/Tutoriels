@@ -61,29 +61,7 @@ $ docker-machine create --driver generic \
 $ rm -rf ~/.docker/machine/machines/genericVM
 ```
 
-## 3) Ouvrir le port en faisant un trou dans le pare-feu
-
-https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04
-
-** Par exemple pour MySQL
-
-Put the whole
- ```
-$ ufw allow 3306/tcp
-$ sudo ufw allow 3306/tcp
-```
- Reloading chain
- ```
-$ ufw reload
-$ sudo ufw reload
-```
- enabling UFW
- ```
-$ ufw enable
-$ sudo ufw enable
-```
-
-### Redémarer le service Docker
+# Références 
 
 # Fix API version
 
