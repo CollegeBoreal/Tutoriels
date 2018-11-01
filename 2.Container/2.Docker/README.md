@@ -69,7 +69,7 @@ $ rm -rf ~/.docker/machine/machines/genericVM
 
 # Références 
 
-# Fix API version
+## Fix API version
 
 https://stackoverflow.com/questions/43072703/client-is-newer-than-server-client-api-version-1-24-server-api-version-1-21
 
@@ -81,3 +81,7 @@ $ docker ps
 ```
 $ export DOCKER_API_VERSION=1.21
 ```
+
+## Docker Machine Examples
+
+http://www.macadamian.com/2017/01/24/docker-machine-basic-examples/
