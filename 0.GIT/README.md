@@ -29,11 +29,11 @@ $ cd INF1042-17H
 ## Creer son premier fichier sous git (utiliser vi)
 * Creer un fichier et l'editer 
 ```
-$ vi monfichier.md
+$ nano 300098957.md
 ```
 * mettre le fichier en scene (add to stage)
 ```
-$ git add monfichier.md
+$ git add 300098957.md
 ```
 > Vérifier son status avec (doit etre vert)  
     ```
