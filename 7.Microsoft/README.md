@@ -14,7 +14,7 @@ https://boreal.onthehub.com
 
 # Outils
 
-## Freate virtual machine on Azure
+## Create virtual machine on Azure
 
 https://docs.docker.com/machine/drivers/azure/#authentication
 
@@ -31,6 +31,12 @@ Entrer le code fournit
 Running pre-create checks...
 (MSDEV) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 and enter the code EDIEN4D2W to authenticate.
+
+## Azure CLI
+
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+
+
 
 
 ## Windows Creation Tools (Créer une clé USB bootable)
