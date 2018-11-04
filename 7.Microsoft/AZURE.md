@@ -64,7 +64,12 @@ $ az login
             }
           ]
 
+### AZ Storage
 
+
+```
+$ az storage account keys list -g MyResourceGroup -n MyStorageAccount
+```
 
 ## Azure Maven
 
