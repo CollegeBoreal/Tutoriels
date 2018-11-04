@@ -45,4 +45,6 @@ and enter the code EDIEN4D2W to authenticate.
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
 
+## Azure Maven
 
+https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage/4.0.0
