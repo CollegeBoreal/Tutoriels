@@ -8,6 +8,8 @@ https://portal.azure.com/
 
 https://docs.docker.com/machine/drivers/azure/#authentication
 
+Note: Subscription ID is not the same as Directory ID
+
 ```
 $ docker-machine create --driver azure  \
           --azure-subscription-id 0bfsdf55-3csa-4569-aasd-fsdff3sfsfb5 \
