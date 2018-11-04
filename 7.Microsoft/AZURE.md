@@ -87,13 +87,13 @@ $ az storage account keys list -g MyResourceGroup -n MyStorageAccount
 * Listing a blob in a directory (i.e. Bucket)
 
 ```
-$ az storage blob list --account-name myBlob --container-name myContainer
+$ az storage blob list --container-name myContainer
 ```
 
 * Uploading a file
 
 ```
-$ az storage blob upload --account-name myBlob --container-name myContainer --name myfile.docx -f ~/myfile.docx
+$ az storage blob upload --container-name myContainer --name myfile.docx -f ~/myfile.docx
 ```
 
 https://docs.microsoft.com/en-us/cli/azure/storage/blob
