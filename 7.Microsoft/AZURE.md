@@ -1,5 +1,9 @@
 # Azure
 
+## Azure Portal
+
+https://portal.azure.com/
+
 ## Create virtual machine on Azure
 
 https://docs.docker.com/machine/drivers/azure/#authentication
