@@ -96,6 +96,12 @@ $ az storage blob list --container-name myContainer
 $ az storage blob upload --container-name myContainer --name myfile.docx -f ~/myfile.docx
 ```
 
+* Deleting a file
+
+```
+$ az storage blob delete --container-name myContainer --name myfile.docx
+```
+
 https://docs.microsoft.com/en-us/cli/azure/storage/blob
 
 
