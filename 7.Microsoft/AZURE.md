@@ -64,6 +64,19 @@ $ az login
             }
           ]
 
+### AZ Config
+
+~/.azure/config
+
+```
+[storage]
+account = myBlob
+key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
+
+```
+
+https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
+
 ### AZ Storage
 
 
