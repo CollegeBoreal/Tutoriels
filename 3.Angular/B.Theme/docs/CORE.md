@@ -10,19 +10,21 @@ $ ng generate module @core/Core --flat
 
 Edit core.modules.ts
 
-add a new variable BASE_MODULES before the `@NgModule` Decorator 
+add a new variable BASE_MODULES and SERVICES before the `@NgModule` Decorator 
 
 ```Typescript
-const BASE_MODULES = [CommonModule];
-const SERVICES = [];
+const BASE_MODULES = [ CommonModule, HttpClientModule ];
+const SERVICES = [PokeListService];
 ```
 
-* Import and Export the base modules through `@NgModule` Decorator
-(by replacing the existing `imports:` field)
+* Import and Provider to the base modules through `@NgModule` Decorator
+(by replacing the existing `imports:` field and `providers:`)
 
 ```Typescript
   imports: [...BASE_MODULES],
-  exports: [...SERVICES],
+  providers: [
+    ...SERVICES,
+  ]})
 ```
 
 * add the forRoot method to the `class CoreModule`
@@ -31,6 +33,9 @@ const SERVICES = [];
   static forRoot(): ModuleWithProviders {
     return <ModuleWithProviders>{
       ngModule: CoreModule,
+      providers: [
+        ...SERVICES,
+      ],
     };
   }
 
@@ -41,19 +46,24 @@ const SERVICES = [];
 ```Typescript
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {PokeListService} from './services/poke-list.service';
+import {HttpClientModule} from '@angular/common/http';
 
-const BASE_MODULES = [CommonModule];
-const SERVICES = [];
+const BASE_MODULES = [ CommonModule, HttpClientModule ];
+const SERVICES = [PokeListService];
 
 @NgModule({
   imports: [...BASE_MODULES],
-  exports: [...SERVICES],
-  declarations: []
-})
+  providers: [
+    ...SERVICES,
+  ]})
 export class CoreModule {
   static forRoot(): ModuleWithProviders {
     return <ModuleWithProviders>{
       ngModule: CoreModule,
+      providers: [
+        ...SERVICES,
+      ],
     };
   }
 }
