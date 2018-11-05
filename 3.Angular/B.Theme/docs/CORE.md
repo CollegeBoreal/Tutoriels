@@ -14,6 +14,7 @@ add a new variable BASE_MODULES before the `@NgModule` Decorator
 
 ```Typescript
 const BASE_MODULES = [CommonModule];
+const SERVICES = [];
 ```
 
 * Import and Export the base modules through `@NgModule` Decorator
@@ -21,7 +22,7 @@ const BASE_MODULES = [CommonModule];
 
 ```Typescript
   imports: [...BASE_MODULES],
-  exports: [...BASE_MODULES],
+  exports: [...SERVICES],
 ```
 
 * add the forRoot method to the `class CoreModule`
@@ -42,10 +43,11 @@ import {ModuleWithProviders, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 const BASE_MODULES = [CommonModule];
+const SERVICES = [];
 
 @NgModule({
   imports: [...BASE_MODULES],
-  exports: [...BASE_MODULES],
+  exports: [...SERVICES],
   declarations: []
 })
 export class CoreModule {
