@@ -78,7 +78,7 @@ export class CoreModule {
 Créer un service pour récupérer les données
 
 ```
-$ ng generate service services/pokemon
+$ ng generate service @core/services/PokeList
 ```
 
 https://pokeapi.co/api/v2/pokemon?limit=15
