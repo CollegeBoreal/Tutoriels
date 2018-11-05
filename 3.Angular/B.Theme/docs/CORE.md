@@ -76,12 +76,25 @@ export class CoreModule {
 [Next](NB.md)
 
 
+* Create a Pokemon Class (Interface)
+
+```
+$ ng g interface @core/models/Pokemon
+```
 
 Créer un service pour récupérer les données
 
 ```
 $ ng generate service @core/services/PokeList
 ```
+
+```
+export interface Pokemon {
+  name: String;
+  url: URL;
+}
+```
+
 
 https://pokeapi.co/api/v2/pokemon?limit=15
 
@@ -90,6 +103,7 @@ https://www.w3schools.com/js/js_json_intro.asp
 
 Utilisation de la platefrome reactive
 http://reactivex.io/
+
 
 ```
 import {HttpClient} from '@angular/common/http';
