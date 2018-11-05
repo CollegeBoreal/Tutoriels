@@ -8,12 +8,12 @@ $ ng generate module @core/Core --flat
 
 # Add the core modules
 
-Edit themes.modules.ts
+Edit core.modules.ts
 
 add a new variable BASE_MODULES before the `@NgModule` Decorator 
 
 ```Typescript
-const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
+const BASE_MODULES = [CommonModule];
 ```
 
 * Import and Export the base modules through `@NgModule` Decorator
@@ -24,12 +24,12 @@ const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
   exports: [...BASE_MODULES],
 ```
 
-* add the forRoot method to the `class ThemeModule`
+* add the forRoot method to the `class CoreModule`
 
 ```Typescript
   static forRoot(): ModuleWithProviders {
     return <ModuleWithProviders>{
-      ngModule: ThemeModule,
+      ngModule: CoreModule,
     };
   }
 
@@ -40,19 +40,18 @@ const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 ```Typescript
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
-const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
+const BASE_MODULES = [CommonModule];
 
 @NgModule({
   imports: [...BASE_MODULES],
   exports: [...BASE_MODULES],
   declarations: []
 })
-export class ThemeModule {
+export class CoreModule {
   static forRoot(): ModuleWithProviders {
     return <ModuleWithProviders>{
-      ngModule: ThemeModule,
+      ngModule: CoreModule,
     };
   }
 }
@@ -63,13 +62,13 @@ export class ThemeModule {
 * Import [instantiate] the module through `@NgModule` of app.module.ts
 
 ```Typescript
-    ThemeModule.forRoot(),
+    CoreModule.forRoot(),
 ```
 
 * import the module through `@NgModule` of any subsequent modules for usage
 
 ```Typescript
-    ThemeModule,
+    CoreModule,
 ```
 
 [Next](NB.md)
