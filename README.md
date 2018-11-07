@@ -4,7 +4,7 @@
   * Utilisation de git
   * [Livre git](https://git-scm.com/book/fr/v2)
 
-## [1.Scala](1.Scala)  
+## [:one:.Scala](1.Scala)  
   * Installation de Scala et de son environnement de développement  
   
 ## [2.Docker](2.Docker)  
