@@ -1,6 +1,6 @@
 # :book: Tutoriels
 
-## :zero:.[GIT](0.GIT)  
+## [:zero:.GIT](0.GIT)  
   * Utilisation de git
   * [Livre git](https://git-scm.com/book/fr/v2)
 
