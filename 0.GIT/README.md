@@ -1,4 +1,4 @@
-# GIT 
+# :shipit: GIT 
 
 ## Decouvrir git
 
