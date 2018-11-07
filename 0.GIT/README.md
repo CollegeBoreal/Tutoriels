@@ -1,4 +1,4 @@
-# :shipit: GIT 
+# :octocat: GIT 
 
 ## Decouvrir git
 
