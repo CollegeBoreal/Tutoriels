@@ -1,4 +1,4 @@
-# Scala
+# :1: Scala
 
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/HelloWorld.png)
 
