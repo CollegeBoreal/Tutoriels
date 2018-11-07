@@ -16,6 +16,6 @@
 https://bbs.archlinux.org/viewtopic.php?id=57855
 
 
-* :smiley: Emoji
+:smiley: Emoji
 
 https://www.webpagefx.com/tools/emoji-cheat-sheet/
