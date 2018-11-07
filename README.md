@@ -14,3 +14,8 @@
 # À NE PAS FAIRE (Vous perdez le temps de tout le monde)
 
 https://bbs.archlinux.org/viewtopic.php?id=57855
+
+
+* Emoji
+
+https://www.webpagefx.com/tools/emoji-cheat-sheet/
