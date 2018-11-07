@@ -11,11 +11,11 @@
   * Installation d'une machine virtuelle avec Docker
 
 
-# :no_entry: À NE PAS FAIRE (Vous perdez le temps de tout le monde)
+# :rage: À NE PAS FAIRE (Vous perdez le temps de tout le monde)
 
 https://bbs.archlinux.org/viewtopic.php?id=57855
 
 
-* Emoji
+* :smiley: Emoji
 
 https://www.webpagefx.com/tools/emoji-cheat-sheet/
