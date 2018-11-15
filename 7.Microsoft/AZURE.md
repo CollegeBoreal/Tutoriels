@@ -25,12 +25,13 @@ Note: Subscription ID is not the same as Directory ID
 https://docs.docker.com/machine/drivers/azure/#authentication
 
 ```
-$ docker-machine create --driver azure  \
-          --azure-subscription-id <subscription ID> \
-          ms-30000000-dev
+$ docker-machine create --driver azure \
+   --azure-resource-group college-boreal \
+   --azure-location eastus \
+   --azure-size Standard_B1s \
+   --azure-subscription-id <subscription ID> \
+   azure-cb-dev
 ```
-
-
 
 Enter the given code
 
