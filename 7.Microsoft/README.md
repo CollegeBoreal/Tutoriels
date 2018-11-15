@@ -13,7 +13,7 @@ https://boreal.onthehub.com
 
 # Cloud
 
-https://azure.microsoft.com/en-us/free/students/
+https://www.microsoftazuresponsorships.com
 
 [Azure](./AZURE.md)
 
