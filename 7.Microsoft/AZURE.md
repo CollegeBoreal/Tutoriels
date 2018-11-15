@@ -30,7 +30,7 @@ $ docker-machine create --driver azure \
    --azure-location eastus \
    --azure-size Standard_B1s \
    --azure-subscription-id <subscription ID> \
-   azure-cb-dev
+   azure-cb-prod
 ```
 
 Enter the given code
