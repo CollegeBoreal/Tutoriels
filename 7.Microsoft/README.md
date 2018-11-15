@@ -13,6 +13,8 @@ https://boreal.onthehub.com
 
 # Cloud
 
+https://azure.microsoft.com/en-us/free/students/
+
 [Azure](./AZURE.md)
 
 # Outils
