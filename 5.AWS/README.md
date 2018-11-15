@@ -67,7 +67,7 @@ par défaut (t2.micro)
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
-                        CB-DEV
+                        cb-dev
 ```
 
 Avec une instance plus large
