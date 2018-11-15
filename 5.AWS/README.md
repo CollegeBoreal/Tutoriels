@@ -74,7 +74,8 @@ Avec une instance plus large
 ```
 $ docker-machine create --driver amazonec2  \ 
                         --amazonec2-instance-type t2.small \
-                        --amazonec2-security-group default CB-DEV
+                        --amazonec2-security-group default \
+                        cb-dev
 ```
 
 Avec un sous-réseau
@@ -83,7 +84,7 @@ $ docker-machine create --driver amazonec2 \
                         --amazonec2-vpc-id vpc-yyyy \
                         --amazonec2-subnet-id subnet-yyyy \
                         --amazonec2-zone b \
-                        CB-DEV
+                        cb-dev
 ```
 
 Avec un autre profil
@@ -91,7 +92,7 @@ Avec un autre profil
 $ docker-machine create --driver amazonec2 \
                         --amazonec2-security-group default \
                         --amazonec2-iam-instance-profile mon-profil \  
-                        CB-DEV
+                        cb-dev
 ```
 
 
