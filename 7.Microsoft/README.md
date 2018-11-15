@@ -11,6 +11,9 @@ On The Hub
 
 https://boreal.onthehub.com
 
+# Cloud
+
+[Azure](./AZURE.md)
 
 # Outils
 
