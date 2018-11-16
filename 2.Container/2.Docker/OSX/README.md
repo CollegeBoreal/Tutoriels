@@ -24,3 +24,9 @@ $ screen -ls
 ```
 $ screen -X -S [session # you want to qui] quit
 ```
+
+Example
+
+```
+$ screen -X -S 19352 quit
+```
