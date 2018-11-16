@@ -15,7 +15,7 @@ $ screen -ls
 ```
 
   There is a screen on:
-    `19352`.ttys003.tsihombe	(Attached)
+  `19352`.ttys003.tsihombe	(Attached)
   1 Socket in /var/folders/92/whngrwp13hbd_n84tksq9vk80000gr/T/.screen.
 
 
