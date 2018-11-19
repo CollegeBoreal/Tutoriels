@@ -19,9 +19,11 @@ http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 
 ![Alt Tag](./Free_Azure.png)
 
-
+* Véfifier ses crédits
 
 https://www.microsoftazuresponsorships.com
+
+* Installer sa première machine virtuelle
 
 [Azure](./AZURE.md)
 
