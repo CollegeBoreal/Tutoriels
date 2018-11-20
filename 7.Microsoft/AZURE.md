@@ -90,7 +90,7 @@ $ az storage account keys list -g MyResourceGroup -n MyStorageAccount
 * Listing a blob in a directory (i.e. Bucket)
 
 ```
-$ az storage blob list --container-name myContainer
+$ az storage blob list --container-name myContainer --output table
 ```
 
 * Uploading a folder
