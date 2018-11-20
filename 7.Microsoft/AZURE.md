@@ -93,6 +93,12 @@ $ az storage account keys list -g MyResourceGroup -n MyStorageAccount
 $ az storage blob list --container-name myContainer
 ```
 
+* Uploading a folder
+
+```
+$  az storage blob upload-batch --destination myContainer --source myLocalFolder
+```
+
 * Uploading a file
 
 ```
