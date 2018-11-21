@@ -30,16 +30,19 @@ $ docker-machine create --driver azure \
    --azure-location eastus \
    --azure-size Standard_B1s \
    --azure-subscription-id <subscription ID> \
-   azure-cb-prod
+   az-cb-prod
 ```
 
 Enter the given code
 
 ```
 Running pre-create checks...
-(MSDEV) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
+(az-cb-prod) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 and enter the code EDIEN4D2W to authenticate.
 ```
+
+Note: if timeout get in the way use: `$ docker-machine ssh  az-cb-prod`
+
 
 ## Azure CLI
 
