@@ -1,4 +1,4 @@
-# Docker
+# Docker :whale:
 
 ## Prérequis
 
