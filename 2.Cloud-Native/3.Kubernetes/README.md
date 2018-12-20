@@ -1,11 +1,9 @@
 # Kubernetes
 
-## In [Docker Desktop](./DockerDesktop)
+## :one: [Docker Desktop](./1.DockerDesktop)
 
 
-
-
-## Minikube
+## :two: [MiniKube](./2.minikube)
 
 
 ## Cloud Service Comparison  
