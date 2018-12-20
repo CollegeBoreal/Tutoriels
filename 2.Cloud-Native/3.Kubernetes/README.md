@@ -1,6 +1,6 @@
 # Kubernetes
 
-## In [Docker Desktop](./DockerDesktop.md)
+## In [Docker Desktop](./DockerDesktop)
 
 
 
