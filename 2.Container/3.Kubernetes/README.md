@@ -7,6 +7,18 @@ https://embed.vidyard.com/share/txhmiXXLzoQqDKKnZeo5nj?
 
 ## Minikube
 
+Starting
+
+```
+$ minikube start 
+```
+
+Accessing minikube host
+
+```
+$ ssh -t -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
+```
+
 ### minikube-with-hyperkit
 
 https://blog.arkey.fr/2018/06/18/minikube-with-hyperkit/
