@@ -10,8 +10,10 @@
 
 (when not using the above OSes)
 
-## Cloud Service Comparison  
+## Deploying through Cloud Proveders for production purposes on :
 
-## gke-vs-aks-vs-eks
+### Cloud Service Comparison  
+
+#### gke-vs-aks-vs-eks
 
 https://blog.hasura.io/gke-vs-aks-vs-eks-411f080640dc
