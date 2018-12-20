@@ -4,7 +4,11 @@
 
 ### :one: [Docker Desktop](./1.DockerDesktop)
 
-(Only for MacOS - HyperKit and Windows 10 - Entreprise Education - HyperV )
+(Only used with Type 1 Hypervisors [native - bare metal] :
+
+* for MacOS - HyperKit 
+
+* for Windows 10 Entreprise or Education - HyperV
 
 ### :two: [MiniKube](./2.minikube)
 
