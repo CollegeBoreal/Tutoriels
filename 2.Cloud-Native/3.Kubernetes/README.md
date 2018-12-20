@@ -1,10 +1,14 @@
 # Kubernetes
 
-## :one: [Docker Desktop](./1.DockerDesktop)
+## Deploying locally for development purposes on :
 
+### :one: [Docker Desktop](./1.DockerDesktop)
 
-## :two: [MiniKube](./2.minikube)
+(Only for MacOS - HyperKit and Windows 10 - Entreprise Education - HyperV )
 
+### :two: [MiniKube](./2.minikube)
+
+(when not using the above OSes)
 
 ## Cloud Service Comparison  
 
