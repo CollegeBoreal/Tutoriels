@@ -22,7 +22,7 @@ Only used with Type 2 Hypervisors [hosted] :
 https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker-desktop/
 
 
-## Deploying through Cloud Proveders for production purposes on :
+## Deploying through Cloud Providers for production purposes on :
 
 ### Cloud Service Comparison  
 
