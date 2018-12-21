@@ -10,11 +10,17 @@ Only used with Type 1 Hypervisors [native - bare metal] :
 
 * for Windows 10 Entreprise or Education - HyperV
 
+
 ### :two: [MiniKube](./2.minikube)
 
 Only used with Type 2 Hypervisors [hosted] :
 
 * choose Oracle VirtualBox
+
+### Local install Comparison  
+
+https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker-desktop/
+
 
 ## Deploying through Cloud Proveders for production purposes on :
 
