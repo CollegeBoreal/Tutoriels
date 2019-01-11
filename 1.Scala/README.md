@@ -6,7 +6,7 @@
 
 * Java JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads
 
-Ajuster son fichier de démarrage .bash_profile ou variable d'environnement 
+Ajuster son fichier de démarrage ~/.bashrc ou variable d'environnement 
 
 MacOSX
 ```
