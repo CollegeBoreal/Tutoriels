@@ -4,13 +4,13 @@
 
 ## Installation de la machine virtuelle java
 
-* Java JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads
+* Java JDK 11 : http://www.oracle.com/technetwork/java/javase/downloads
 
 Ajuster son fichier de démarrage ~/.bashrc ou variable d'environnement 
 
 MacOSX
 ```
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export JAVA_HOME="$(/usr/libexec/java_home --version 11)"
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
