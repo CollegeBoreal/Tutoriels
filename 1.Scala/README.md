@@ -20,6 +20,13 @@ export JAVA_HOME="/c/Program Files/java/jdk-11.0.1"
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
+### Pour tester l'installation
+```
+$ java -version
+java version "11.0.1" 2018-10-16 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+```
 
 ## Installation de Scala Interface en Ligne de Commandes (CLI)
 
