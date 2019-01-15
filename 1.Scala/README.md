@@ -16,7 +16,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 Windows
 ```
-export JAVA_HOME="/c/Program Files/java/jdk-11.0.1"
+export JAVA_HOME="/c/Program Files/java/jdk-11.0.2"
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
