@@ -62,5 +62,17 @@ http://www.scala-sbt.org/download.html
 
 http://www.scala-sbt.org/0.13/docs/Manual-Installation.html
 
+Windows
+```
+export SBT_HOME="/c/Program Files/sbt"
+export PATH=$SBT_HOME/bin:$PATH
+```
+
+Mac
+```
+export SBT_HOME="/Applications/sbt"
+export PATH=$SBT_HOME/bin:$PATH
+```
+
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
 
