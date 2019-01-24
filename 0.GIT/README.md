@@ -49,6 +49,21 @@ $ git commit -m "Mon commentaire"
 $ git push origin master
 ```
 
+## Pour mettre ajour ses informations personnelles
+
+```
+$ git config --global --edit
+```
+
+```
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+        name = MonNom
+        email = MonCourriel@me_remplacer.com
+```
+
+
 ## Metter a jour mon repertoire local (pull)
 ```
 $ git pull 
