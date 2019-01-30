@@ -20,13 +20,13 @@ $ sudo -i
 
 # curl -sSL https://get.docker.com | sh
 
-## use Docker as a non-root user
+## use Docker as a non-root user (i.e. substituer ubuntu)
 
 # usermod -aG docker ubuntu
 
-$ sudo service docker start    # or systemctl enable docker
+$ systemctl enable docker # or sudo service docker start 
 
-$ sudo service docker status   # or systemctl status docker
+$ systemctl status docker # or sudo service docker status
 
 ```
 
