@@ -9,7 +9,7 @@ https://download.docker.com/ (installer docker sans login-wall)
 
 ## Docker Engine
 
-## 1) Installer Docker sur une machine Ubuntu 
+## :one: Installer Docker sur une machine Ubuntu 
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
 
@@ -30,7 +30,7 @@ $ systemctl status docker # or sudo service docker status
 
 ```
 
-## Authoriser l'acces sans mot de passe
+## :two: Authoriser l'acces sans mot de passe
 
 ```
 $ sudo visudo   # edit sudo config file
@@ -41,9 +41,15 @@ $ sudo visudo   # edit sudo config file
 ubuntu ALL=(ALL) NOPASSWD: ALL
 ```
 
-## 2) Installer la clé publique de la machine utilisé comme Docker Client
+## :three: Installer la clé publique de la machine utilisé comme Docker Client
 
-* Server ou est installé Docker Engine
+* generer votre cle privee/publique (~/.ssh/id_rsa)
+
+```
+$ ssh-keygen
+```
+
+* Serveur ou est installé Docker Engine (i.e. substituer ubuntu)
 
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
@@ -55,16 +61,16 @@ https://docs.docker.com/v17.09/machine/drivers/generic
 
 ```
 $ docker-machine create --driver generic \
-                        --generic-ip-address=10.13.237.6 \
+                        --generic-ip-address=10.13.237.16 \
                         --generic-ssh-user=ubuntu \
                         --generic-ssh-key ~/.ssh/id_rsa \
-                        genericVM
+                        labo16
 ```
 
 ### enlever la clé pour recommencer l'operation si erreur il y a
 
 ```
-$ rm -rf ~/.docker/machine/machines/genericVM
+$ rm -rf ~/.docker/machine/machines/labo16
 ```
 
 # Références 
