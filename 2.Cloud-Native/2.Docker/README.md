@@ -1,6 +1,6 @@
-# Docker :whale:
+# Docker 
 
-## [Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+## :whale: [Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
 
 ## Prérequis
 
