@@ -12,13 +12,13 @@ https://download.docker.com/ (installer docker sans login-wall)
 ## Docker Engine
 
 ```
-  Ce tutoriel explique comment installer une machine Docker sur une machine physique (metal)
+  Ce tutoriel explique comment installer une machine Docker sur une machine physique (métal)
 
-  Le 'Driver' Docker a utilser est le generique `gereric`
+  Le 'Driver' Docker à utilser est le generique `gereric`
 ```
 
 
-## :one: Installer Docker sur une machine Ubuntu 
+## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
 
@@ -33,9 +33,9 @@ $ sudo -i
 
 # usermod -aG docker ubuntu
 
-$ systemctl enable docker # or sudo service docker start 
+$ sudo systemctl enable docker
 
-$ systemctl status docker # or sudo service docker status
+$ systemctl status docker # doit être actif
 
 ```
 
@@ -50,7 +50,9 @@ $ sudo visudo   # edit sudo config file
 ubuntu ALL=(ALL) NOPASSWD: ALL
 ```
 
-## :three: Installer la clé publique de la machine utilisé comme Docker Client
+## :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
+
+i.e. de `git bash` Windows ou de votre Terminal Mac
 
 * generer votre cle privee/publique (~/.ssh/id_rsa)
 
@@ -58,7 +60,7 @@ ubuntu ALL=(ALL) NOPASSWD: ALL
 $ ssh-keygen
 ```
 
-* Serveur ou est installé Docker Engine (i.e. substituer ubuntu)
+* Copier la clé publique vers le Serveur ou est installé Docker Engine (i.e. substituer ubuntu)
 
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
