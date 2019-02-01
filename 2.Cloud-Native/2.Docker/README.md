@@ -1,6 +1,9 @@
 # Docker 
 
-## :whale: [Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+## :whale: Cheat Sheets
+
+[Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
+[Cheat Sheet - Machine]http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf
 
 ## Prérequis
 
