@@ -11,6 +11,10 @@ https://download.docker.com/ (installer docker sans login-wall)
 
 ## Docker Engine
 
+Ce tutoriel explique comment installer une machine Docker sur une machine physique (metal)
+
+Le 'Driver' Docker a utilser est le generique `gereric`
+
 ## :one: Installer Docker sur une machine Ubuntu 
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
