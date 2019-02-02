@@ -29,3 +29,7 @@ https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker
 #### gke-vs-aks-vs-eks
 
 https://blog.hasura.io/gke-vs-aks-vs-eks-411f080640dc
+
+### :fire_engine: Failure Stories
+
+https://github.com/hjacobs/kubernetes-failure-stories
