@@ -1,6 +1,6 @@
 # Node 
 
-Installer [node.js](N.Node.js)
+Installer [node.js](N.Node)
 
 # Angular-cli
 
