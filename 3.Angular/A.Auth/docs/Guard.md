@@ -34,4 +34,4 @@ ng generate guard auth/auth
 
 ## References:
 
-https://angular.io/guide/router#milestone-5-route-guards
+https://angular.io/guide/router#guard-the-admin-feature
