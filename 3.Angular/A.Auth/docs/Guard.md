@@ -57,9 +57,24 @@ export class AuthGuard implements CanActivate {
 }
 ```
 
+$ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
 
 ```typescript
-   Password = {
+import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
+@Component({
+  selector: 'app-pages-dashboard',
+  template: `
+    <p>
+      pages-dashboard works! {{Password.result}}
+    </p>
+  `,
+  styles: []
+})
+export class PagesDashboardComponent implements OnInit {
+
+  Password = {
     result: String
   };
 
@@ -79,6 +94,7 @@ export class AuthGuard implements CanActivate {
   getData() {
     return this.http.get<string>('/api/badPassword');
   }
+}
 ```
 
 ## References:
