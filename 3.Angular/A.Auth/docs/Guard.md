@@ -32,6 +32,13 @@ $ ng generate component pages/pages-dashboard
 ng generate guard auth/auth
 ```
 
+```
+? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◯ CanActivate
+ ◯ CanActivateChild
+ ◯ CanLoad
+```
+
 
 ```typescript
 @Injectable()
