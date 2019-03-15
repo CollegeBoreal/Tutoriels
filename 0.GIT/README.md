@@ -1,6 +1,6 @@
 # GIT 
 
-## :octocat: [Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ## Decouvrir git
 
