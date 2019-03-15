@@ -9,17 +9,14 @@ $ ng generate module pages --routing
 ```
 
 ```bash
-$ ng generate component pages/pages
+$ ng generate component pages/pages --flat --inline-template --inline-style --skipTests
 ```
 
 
 ```html
 <h3>ADMIN</h3>
 <nav>
-  <a routerLink="./" routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-  <a routerLink="./crises" routerLinkActive="active">Manage Crises</a>
-  <a routerLink="./heroes" routerLinkActive="active">Manage Heroes</a>
+  <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
 </nav>
 <router-outlet></router-outlet>
 ```
