@@ -1,6 +1,7 @@
 # Guard
 
-https://angular.io/guide/router#milestone-5-route-guards
+
+https://github.com/akveo/nebular/blob/master/docs/articles/auth-guard.md
 
 
 ```bash
@@ -30,3 +31,7 @@ $ ng generate component pages/pages-dashboard
 ```bash
 ng generate guard auth/auth
 ```
+
+## References:
+
+https://angular.io/guide/router#milestone-5-route-guards
