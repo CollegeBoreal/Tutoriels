@@ -32,6 +32,27 @@ $ ng generate component pages/pages-dashboard
 ng generate guard auth/auth
 ```
 
+
+```typescript
+@Injectable()
+export class AuthGuard implements CanActivate {
+
+  constructor(private authService: NbAuthService, private router: Router) {
+  }
+
+  canActivate() {
+    return this.authService.isAuthenticated()
+      .pipe(
+        tap(authenticated => {
+          if (!authenticated) {
+            this.router.navigate(['auth/login']);
+          }
+        }),
+      );
+  }
+}
+```
+
 ## References:
 
 https://angular.io/guide/router#guard-the-admin-feature
