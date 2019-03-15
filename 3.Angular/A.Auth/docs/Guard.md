@@ -57,6 +57,30 @@ export class AuthGuard implements CanActivate {
 }
 ```
 
+
+```typescript
+   Password = {
+    result: String
+  };
+
+  constructor(private http: HttpClient) {
+  }
+
+  ngOnInit() {
+    console.log('populate data');
+    this.getData()
+      .subscribe(
+        (data: Password) => {
+          this.Password = data;
+        },
+        (err: any) => console.error('too bad' + err));
+  }
+
+  getData() {
+    return this.http.get<string>('/api/badPassword');
+  }
+```
+
 ## References:
 
 https://angular.io/guide/router#guard-the-admin-feature
