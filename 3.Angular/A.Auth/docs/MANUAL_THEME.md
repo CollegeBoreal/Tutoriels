@@ -7,15 +7,6 @@
 $ npm install --save @nebular/theme @angular/cdk @angular/animations
 ```
 
-```
-Installed packages for tooling via npm.
-? Which Nebular theme do you want to use: 
-❯ default 
-  cosmic 
-  corporate 
-```
-  
-
 :two: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
 
 ```typescript
