@@ -17,7 +17,7 @@ $ npm i @nebular/auth
 export class AppModule {
 ```
 
-3 - Configure a Strategy
+3 - Configure a [Strategy](https://akveo.github.io/nebular/docs/auth/configuring-a-strategy#strategy)
 
 ```typescript
 const NB_AUTH_MODULE = [
