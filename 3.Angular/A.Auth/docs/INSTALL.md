@@ -20,7 +20,7 @@ $ npm i @nebular/auth
 @NgModule({
   imports: [
     ...
-    HttpClientModule
+    HttpClientModule,
   ],
 })
 export class AppModule {
@@ -55,8 +55,7 @@ const NB_AUTH_MODULE = [
 @NgModule({
   imports: [
     ...
-    NB_AUTH_MODULE
-    ...
+    NB_AUTH_MODULE,
   ],
 })
 export class AppModule {
