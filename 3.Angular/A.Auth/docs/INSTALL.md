@@ -56,7 +56,7 @@ const NB_AUTH_MODULE = [
 export class AppModule {
 ```
 
-4 - Changing the Interceptor's Behavior
+4 - Changing the HTTP Interceptor's Behavior to use a different [Authorization Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
 
 * Configure the provider to use the [NbAuthSimpleInterceptor](https://github.com/akveo/nebular/blob/master/src/framework/auth/services/interceptors/simple-interceptor.ts)
 
