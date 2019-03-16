@@ -7,7 +7,7 @@
 $ ng generate guard @auth/auth --spec false
 ```
 
-:bangbang: if asked, pick `CanActivate` by pressing spacebar
+:heavy_exclamation_mark: if asked, pick `CanActivate` by pressing spacebar
 
 ```
 ? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -16,7 +16,7 @@ $ ng generate guard @auth/auth --spec false
  ◯ CanLoad
 ```
 
-* Replace the `auth-guard.ts` source code with the below snippet:
+:two: Replace the `auth-guard.ts` source code with the below snippet:
 
 ```typescript
 import { Injectable } from '@angular/core';
@@ -48,7 +48,7 @@ export class AuthGuard implements CanActivate {
 
 ```
 
-:two: Configure the routing with `AuthGuard`
+:three: Configure the routing by enabling the `AuthGuard`
 
 * Replace/Adapt the `app-routing.module.ts` source code with the below snippet:
 
@@ -103,29 +103,6 @@ const config: ExtraOptions = {
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-```
-
-:three: Let's simplify our main application page `app.component.html` by replacing with :
-
-```html
-<nb-layout>
-
-  <nb-layout-header fixed>
-  <!-- Insert header here -->
-  </nb-layout-header>
-
-  <nb-layout-column>
-    
-    <router-outlet></router-outlet>
-    
-  </nb-layout-column>
-
-  <nb-layout-footer fixed>
-  <!-- Insert footer here -->
-  </nb-layout-footer>
-
-</nb-layout>
-
 ```
 
 :arrow_right: [Next ACCESS](./ACCESS.md)
