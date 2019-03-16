@@ -16,3 +16,22 @@ $ npm i @nebular/auth
 })
 export class AppModule {
 ```
+
+3 - Configure a Strategy
+
+```
+const NB_AUTH_MODULE = [
+  NbAuthModule.forRoot({
+    strategies: [
+      NbPasswordAuthStrategy.setup({
+        name: 'email',
+        token: {
+          class: NbAuthJWTToken,
+          key: 'token'
+        }
+      }),
+    ],
+    forms: {},
+  }),
+];
+```
