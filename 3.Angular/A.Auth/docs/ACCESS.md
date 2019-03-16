@@ -12,7 +12,7 @@ $ ng generate module pages --routing
 $ ng generate component pages/pages --flat --inline-template --inline-style --skipTests
 ```
 
-* In `pages.component.ts` template add:
+* In `pages.component.ts` replace the inline `template` with:
 
 ```typescript
  template: `
