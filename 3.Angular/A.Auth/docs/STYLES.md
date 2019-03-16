@@ -1,5 +1,4 @@
 
-https://akveo.github.io/nebular/docs/auth/installation#enable-styles
 
 :one: Install @Nebular Theme Manually
 
@@ -52,3 +51,11 @@ $nb-themes: nb-register-theme((
   @include nb-auth-global(); // append the install mixin inside of the nb-install
 };
 ```
+
+
+---
+
+References:
+
+https://akveo.github.io/nebular/docs/auth/installation#enable-styles
+
