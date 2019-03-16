@@ -80,7 +80,7 @@ const NB_AUTH_PROVIDERS = [
 @NgModule({
    ...
    providers: [
-    NB_AUTH_PROVIDERS
+    NB_AUTH_PROVIDERS,
   ],
   ...
 })
