@@ -7,7 +7,21 @@
 $ npm install --save @nebular/theme @angular/cdk @angular/animations
 ```
 
-:two: Change the `angular.json` file by updating the `styles` Table JSON format
+:two: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
+
+```typescript
+// ...
+
+@NgModule({
+  imports: [
+    ...
+    NbThemeModule.forRoot(),
+  ],
+})
+export class AppModule {
+```
+
+:three: Change the `angular.json` file by updating the `styles` Table JSON format
 
 ```json
     "styles": [
@@ -16,7 +30,7 @@ $ npm install --save @nebular/theme @angular/cdk @angular/animations
     ],
 ```
 
-:three: Add a new `themes.scss` file under `src` folder
+:four: Add a new `themes.scss` file under `src` folder
 
 ```scss
 // import Nebular Theme System and the default theme
@@ -34,7 +48,7 @@ $nb-themes: nb-register-theme((
 ), default, default); // let's leave it as default
 ```
 
-:four: Replace/Adjust the `styles.scss` file with the below:
+:five: Replace/Adjust the `styles.scss` file with the below:
 
 ```scss
 // this is your created themes.scss file, make sure the path to the file is correct
@@ -51,20 +65,6 @@ $nb-themes: nb-register-theme((
   @include nb-theme-global();
   @include nb-auth-global(); // append the install mixin inside of the nb-install
 };
-```
-
-:five: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
-
-```typescript
-// ...
-
-@NgModule({
-  imports: [
-    ...
-    NbThemeModule.forRoot(),
-  ],
-})
-export class AppModule {
 ```
 
 :arrow_right: [Next GUARD](./GUARD.md)
