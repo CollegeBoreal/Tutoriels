@@ -22,7 +22,7 @@ $ ng generate component pages/pages --flat --inline-template --inline-style --sk
          [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
     </nav>
     <router-outlet></router-outlet>
-  `
+  `,
 ```
 
 :three: Generate the dashboard component
