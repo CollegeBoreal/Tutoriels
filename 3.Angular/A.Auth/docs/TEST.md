@@ -34,3 +34,5 @@ This is how the secured page looks like
 
 ![alt tag](images/Test.png)
 
+:arrow_right: [Next DEBUG](./DEBUG.md)
+
