@@ -7,7 +7,7 @@
 $ npm install --save @nebular/theme @angular/cdk @angular/animations
 ```
 
-:two: Mess with `angular.json` file by updating the `styles` Table in JSON format
+:two: Change the `angular.json` file by updating the `styles` Table JSON format
 
 ```json
     "styles": [
