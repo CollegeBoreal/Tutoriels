@@ -26,7 +26,9 @@ Installed packages for tooling via npm.
 ? Set up browser animations for Nebular? (Y/n) Y
 ```
 
-:two: The automated install will update the below files
+:two: The automated `tooling` install will update the below files :
+
+:o: Note : Nothing needs to be changed, Observation is still required.
 
 ```bash
 CREATE src/themes.scss (205 bytes)
@@ -76,6 +78,7 @@ export class AppModule {
 /* You can add global styles to this file, and also import other style files */
 ```
 
+* By replacing the `app.component.html` file with the below content:
 
 ```html
 <nb-layout>
