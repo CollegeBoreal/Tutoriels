@@ -1,33 +1,13 @@
 # Guard
 
 
-https://github.com/akveo/nebular/blob/master/docs/articles/auth-guard.md
-
-
-```bash
-$ ng generate module pages --routing
-```
-
-```bash
-$ ng generate component pages/pages --flat --inline-template --inline-style --skipTests
-```
-
-
-```html
-<h3>ADMIN</h3>
-<nav>
-  <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-</nav>
-<router-outlet></router-outlet>
-```
-
-```bash
-$ ng generate component pages/pages-dashboard
-```
+:one: Generate the `Auth Guard`
 
 ```bash
 $ ng generate guard @auth/auth --skipTests
 ```
+
+* pick CanActivate by pressing spacebar
 
 ```
 ? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -67,52 +47,10 @@ export class AuthGuard implements CanActivate {
 
 ```
 
-$ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
-
-```typescript
-import {Component, Injector, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-
-@Component({
-  selector: 'app-pages-dashboard',
-  template: `
-    <p>
-      pages-dashboard works! {{Password.result}}
-    </p>
-  `,
-  styles: []
-})
-export class PagesDashboardComponent implements OnInit {
-
-  // TODO this Class should go in a model
-  Password = {
-    result: String
-  };
-
-  constructor(private injector: Injector) {
-  }
-
-  ngOnInit() {
-    console.log('populate data');
-    this.getData()
-      .subscribe(
-        (data: any) => this.Password = data
-        , (err: any) => console.error('too bad' + err)
-      );
-  }
-
-  // TODO this function should go in a service
-  getData() {
-    return this.httpService.get<string>('/api/badPassword');
-  }
-
-  // TODO this function should go in a service along with the above function
-  protected get httpService(): HttpClient {
-    return this.injector.get(HttpClient);
-  }
-}
-```
 
 ## References:
 
 https://angular.io/guide/router#guard-the-admin-feature
+
+https://github.com/akveo/nebular/blob/master/docs/articles/auth-guard.md
+
