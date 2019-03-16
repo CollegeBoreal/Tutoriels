@@ -22,6 +22,8 @@ export class AppModule {
 
 3 - Configure a [Strategy](https://akveo.github.io/nebular/docs/auth/configuring-a-strategy#strategy)
 
+* Declare a constant `NB_AUTH_MODULE` for improve readability 
+
 ```typescript
 const NB_AUTH_MODULE = [
   NbAuthModule.forRoot({
@@ -37,4 +39,17 @@ const NB_AUTH_MODULE = [
     forms: {},
   }),
 ];
+```
+
+ * Add the NB_AUTH_MODULE constant to the AppModule -- `app.module.ts`
+
+```typescript
+@NgModule({
+  imports: [
+    ...
+    NB_AUTH_MODULE
+    ...
+  ],
+})
+export class AppModule {
 ```
