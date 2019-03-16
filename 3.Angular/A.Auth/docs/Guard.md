@@ -91,12 +91,12 @@ export class PagesDashboardComponent implements OnInit {
       );
   }
 
-  // TODO this functions should go in a service
+  // TODO this function should go in a service
   getData() {
     return this.httpService.get<string>('/api/badPassword');
   }
 
-  // TODO this functions should go in a service along with the above function
+  // TODO this function should go in a service along with the above function
   protected get httpService(): HttpClient {
     return this.injector.get(HttpClient);
   }
