@@ -1,10 +1,10 @@
 # Nebular Theme
 
 
-:one: [Install @Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#install-nebular) Theme Manually
+:one: [Install @Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#install-nebular) Theme
 
 ```
-$ npm install --save @nebular/theme @angular/cdk @angular/animations
+$ ng add @nebular/theme
 ```
 
 ```
