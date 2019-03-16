@@ -94,14 +94,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import {
-  NB_AUTH_INTERCEPTOR_HEADER,
-  NbAuthJWTToken,
-  NbAuthModule, NbAuthSimpleInterceptor,
-  NbPasswordAuthStrategy
-} from '@nebular/auth';
-import { NbThemeModule } from '@nebular/theme';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { NB_AUTH_INTERCEPTOR_HEADER, NbAuthJWTToken, NbAuthModule, NbAuthSimpleInterceptor, NbPasswordAuthStrategy } from '@nebular/auth';
 
 const NB_AUTH_MODULE = [
   NbAuthModule.forRoot({
@@ -120,7 +114,7 @@ const NB_AUTH_MODULE = [
 
 const NB_AUTH_PROVIDERS = [
   { provide: HTTP_INTERCEPTORS, useClass: NbAuthSimpleInterceptor, multi: true },
-  { provide: NB_AUTH_INTERCEPTOR_HEADER, useValue: 'X-Auth-Token' }
+  { provide: NB_AUTH_INTERCEPTOR_HEADER, useValue: 'X-Auth-Token' }
 ];
 
 @NgModule({
@@ -131,7 +125,7 @@ const NB_AUTH_PROVIDERS = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NB_AUTH_MODULE,
+    NB_AUTH_MODULE
   ],
   providers: [
     NB_AUTH_PROVIDERS,
@@ -139,7 +133,6 @@ const NB_AUTH_PROVIDERS = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 ```
 
 :arrow_right: [Next Styles](./STYLES.md)
