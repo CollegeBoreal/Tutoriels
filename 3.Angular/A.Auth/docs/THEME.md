@@ -126,6 +126,10 @@ export class AppModule {
 
 ---
 
+Alternate Route [MANUAL THEME INSTALL](MANUAL_THEME.md)
+
+---
+
 References:
 
 https://akveo.github.io/nebular/docs/auth/installation#enable-styles
