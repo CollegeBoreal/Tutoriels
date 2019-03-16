@@ -22,7 +22,7 @@ Follow the [Access](./docs/ACCESS.md) Documentation
 Follow the [Test](./docs/TEST.md) Documentation
 
 
-# Version
+# :o: Version
 
 ```
 $ ng --version
