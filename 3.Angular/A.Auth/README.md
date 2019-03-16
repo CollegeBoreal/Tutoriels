@@ -17,6 +17,11 @@ Follow the [Guard](./docs/GUARD.md) Documentation
 
 Follow the [Access](./docs/ACCESS.md) Documentation
 
+## Test your secured pages
+
+Follow the [Test](./docs/TEST.md) Documentation
+
+
 -------
 
 References:
