@@ -33,3 +33,22 @@ $nb-themes: nb-register-theme((
   color-fg: #222222
 ), default, default); // let's leave it as default
 ```
+
+:four: Replace/Adjust the `styles.scss` file with the below:
+
+```scss
+// this is your created themes.scss file, make sure the path to the file is correct
+@import 'themes';
+
+// framework component styles which will use your new theme
+@import '~@nebular/theme/styles/prebuilt/default';
+@import '~@nebular/theme/styles/globals';
+
+@import '~@nebular/auth/styles/all'; // or @import '~@nebular/auth/styles/{theme-name}';
+
+// install the framework
+@include nb-install() {
+  @include nb-theme-global();
+  @include nb-auth-global(); // append the install mixin inside of the nb-install
+};
+```
