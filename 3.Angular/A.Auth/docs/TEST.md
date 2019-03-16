@@ -8,7 +8,7 @@ https://github.com/CollegeBoreal/play-silhouette-reactive-mongo.g8
 $ sbt new CollegeBoreal/play-silhouette-reactive-mongo.g8 --name=backend
 ```
 
-:two: Create a config file called `proxy-config.json`
+:two: Configuring the [backend](https://angular.io/guide/build#proxying-to-a-backend-server) by creating a config file called `proxy-config.json`
 
 ```json
 {
