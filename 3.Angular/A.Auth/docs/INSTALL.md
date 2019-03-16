@@ -1,4 +1,4 @@
-# nbAuth Installation
+# @Nebular/Auth Installation
 
 :o: This tutorial assumes that you have already created your Angular App (if not, run the below command) 
 
