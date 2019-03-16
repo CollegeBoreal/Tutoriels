@@ -30,11 +30,11 @@ Follow the [Theme](./docs/THEME.md) Documentation
 
 Follow the [Layout](./docs/LAYOUT.md) Documentation
 
-# Create the `Pages` module
+## Create the `Pages` module
 
 Follow the [Pages](./docs/PAGES.md) Documentation
 
-# Putting everything together
+## Putting everything together
 
 Follow the [App](./docs/APP.md) Documentation
 
@@ -42,7 +42,7 @@ Follow the [App](./docs/APP.md) Documentation
 
 Follow the [Menu](./docs/MENU.md) Documentation
 
-# Create the `@Core` Module
+## Create the `@Core` Module
 
 Follow the [Core](./docs/CORE.md) Documentation
 
