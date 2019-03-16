@@ -141,4 +141,4 @@ const NB_AUTH_PROVIDERS = [
 export class AppModule { }
 ```
 
-:arrow_right: [Next Styles](./STYLES.md)
+:arrow_right: [Next Theme](./THEME.md)
