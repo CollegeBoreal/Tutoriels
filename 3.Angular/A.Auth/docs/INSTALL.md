@@ -30,7 +30,7 @@ export class AppModule {
 
 * Declare a constant `NB_AUTH_MODULE` to improve readability 
 
-* Configure the [token extraction](https://akveo.github.io/nebular/docs/auth/getting-user-token#configure-token-extraction)
+* Configure the [token extraction](https://akveo.github.io/nebular/docs/auth/getting-user-token#configure-token-extraction) in the AppModule -- `app.module.ts`
 
 ```typescript
 const NB_AUTH_MODULE = [
@@ -49,7 +49,7 @@ const NB_AUTH_MODULE = [
 ];
 ```
 
- * Import the NB_AUTH_MODULE constant in the AppModule -- `app.module.ts`
+ * Import the NB_AUTH_MODULE constant in the same AppModule -- `app.module.ts`
 
 ```typescript
 @NgModule({
