@@ -6,7 +6,7 @@
 $ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
-:one: - [Install Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Module
+:one: - [Install @Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Module
 
 ```
 $ npm install @nebular/auth
