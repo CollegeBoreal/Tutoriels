@@ -1,5 +1,17 @@
 # Enabling Authentication using @Nebular/auth
 
+
+# Create the `@Nebular/Auth` Module
+
+Follow the [Install](./docs/INSTALL.md) Documentation
+
+## Adding the `@Guard` 
+
+Follow the [NB](./docs/GUARD.md) Documentation
+
+
+References:
+
 Follow the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Installation
 
 Follow the [@Nebular/Auth](https://akveo.github.io/nebular/docs/auth/configuring-a-strategy) Configuration
