@@ -65,7 +65,7 @@ export class AppModule {
 
 * Configure the provider to use the [NbAuthSimpleInterceptor](https://github.com/akveo/nebular/blob/master/src/framework/auth/services/interceptors/simple-interceptor.ts)
 
-* Configure it's header to use [X-Auth-Token](https://stackoverflow.com/questions/39017297/what-is-difference-between-x-auth-token-vs-authorisation-headers-which-is-prefer) as Authorization Header
+* Configure it's header to use [X-Auth-Token](https://stackoverflow.com/questions/39017297/what-is-difference-between-x-auth-token-vs-authorisation-headers-which-is-prefer) as Authorization Header still in the same AppModule -- `app.module.ts`
 
 ```typescript
 const NB_AUTH_PROVIDERS = [
@@ -131,10 +131,10 @@ const NB_AUTH_PROVIDERS = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NB_AUTH_MODULE
+    NB_AUTH_MODULE,
   ],
   providers: [
-    NB_AUTH_PROVIDERS
+    NB_AUTH_PROVIDERS,
   ],
   bootstrap: [AppComponent]
 })
