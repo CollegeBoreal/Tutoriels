@@ -38,23 +38,33 @@ ng generate guard auth/auth --skipTests
 
 
 ```typescript
-@Injectable()
+import { Injectable } from '@angular/core';
+import {CanActivate, Router} from '@angular/router';
+import {NbAuthService} from '@nebular/auth';
+import {tap} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
 export class AuthGuard implements CanActivate {
 
   constructor(private authService: NbAuthService, private router: Router) {
   }
 
-  canActivate() {
+  canActivate(): Observable<boolean> {
     return this.authService.isAuthenticated()
       .pipe(
         tap(authenticated => {
           if (!authenticated) {
             this.router.navigate(['auth/login']);
+          } else {
+            return true;
           }
         }),
       );
-  }
-}
+  }}
+
 ```
 
 $ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
