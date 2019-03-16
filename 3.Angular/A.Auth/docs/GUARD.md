@@ -7,7 +7,7 @@
 $ ng generate guard @auth/auth --skipTests
 ```
 
-* pick CanActivate by pressing spacebar
+* When asked, pick `CanActivate` by pressing spacebar
 
 ```
 ? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -16,6 +16,7 @@ $ ng generate guard @auth/auth --skipTests
  ◯ CanLoad
 ```
 
+* Replace the `auth-guard.ts` source code with the below snippet:
 
 ```typescript
 import { Injectable } from '@angular/core';
