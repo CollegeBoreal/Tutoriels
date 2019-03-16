@@ -1,5 +1,10 @@
 # nbAuth Installation
 
+:zero: This tutorial assumes that you have already created your Angular App (if not, runn the below command) 
+
+```
+ng new 
+```
 
 :one: - Install the Auth Module
 
