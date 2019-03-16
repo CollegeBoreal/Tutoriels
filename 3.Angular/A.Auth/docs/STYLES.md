@@ -7,7 +7,11 @@ https://akveo.github.io/nebular/docs/auth/installation#enable-styles
 $ npm install --save @nebular/theme @angular/cdk @angular/animations
 ```
 
-:two: Mess with `angular.json` styles
+:two: Mess with `angular.json` by updating the `styles` Table in JSON format
 
 ```json
+    "styles": [
+      "src/styles.scss",
+      "node_modules/@nebular/theme/styles/prebuilt/default.css"
+    ],
 ```
