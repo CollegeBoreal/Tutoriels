@@ -1,17 +1,35 @@
 # Access
 
+:one: Generate a new module `pages`
 
-In Pages Component.html
-
-```html
-<h3>ADMIN</h3>
-<nav>
-  <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-</nav>
-<router-outlet></router-outlet>
+```bash
+$ ng generate module pages --routing
 ```
 
-In Pages Dashboard 
+:two: Generate the main pages component
+
+```bash
+$ ng generate component pages/pages --flat --inline-template --inline-style --skipTests
+```
+
+* In `pages.component.html` template add:
+
+```html
+    <h3>Pages Module:</h3>
+    <nav>
+      <a routerLink="./dashboard" routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+    </nav>
+    <router-outlet></router-outlet>
+```
+
+:three: Generate the dashboard component
+
+```bash
+$ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
+```
+
+* In `pages.component.ts` replace with the below source code:
 
 ```typescript
 import {Component, Injector, OnInit} from '@angular/core';
