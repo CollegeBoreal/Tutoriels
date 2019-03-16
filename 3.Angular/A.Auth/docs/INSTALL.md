@@ -6,14 +6,6 @@
 $ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
-Note: You can run the application throughout the installation
-
-```
-ng serve
-```
-
-:o2: On a separate `Terminal`
-
 :one: - [Install @Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Module
 
 ```
