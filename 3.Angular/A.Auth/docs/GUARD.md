@@ -4,7 +4,7 @@
 :one: Generate the `Auth Guard`
 
 ```bash
-$ ng generate guard @auth/auth --skipTests
+$ ng generate guard @auth/auth --spec false
 ```
 
 * if asked, pick `CanActivate` by pressing spacebar
