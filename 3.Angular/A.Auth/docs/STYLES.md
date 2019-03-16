@@ -53,7 +53,7 @@ $nb-themes: nb-register-theme((
 };
 ```
 
-:arrow_right: [Next](./GUARD.md)
+:arrow_right: [Next GUARD](./GUARD.md)
 
 ---
 
