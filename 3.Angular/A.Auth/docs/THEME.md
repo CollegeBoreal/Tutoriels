@@ -89,7 +89,9 @@ export class AppModule {
 
   <nb-layout-column>
   
-    <!-- Note: OLD CONTENT HERE -->
+    <!--The content below is only a placeholder and can be replaced.-->
+    ...
+    ...
 
     <router-outlet></router-outlet>
     
@@ -102,7 +104,11 @@ export class AppModule {
 </nb-layout>
 ```
 
-:three: Remove the `OLD CONTENT` in `app.component.html` (Optional)
+:three: In `app.component.html`
+
+  * Remove the the section below `<!--The content below is only a placeholder and can be replaced.-->` 
+  
+  * But keep the  `<router-outlet></router-outlet>`
 
 :four: add the @Nebular/Auth Theme to `styles.scss` file by replacing with the below snippet:
 
