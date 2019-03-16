@@ -26,7 +26,7 @@ Installed packages for tooling via npm.
 ? Set up browser animations for Nebular? (Y/n) Y
 ```
 
-:two: The automated install will update the below pages
+:two: The automated install will update the below files
 
 ```bash
 CREATE src/themes.scss (205 bytes)
