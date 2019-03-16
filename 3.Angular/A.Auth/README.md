@@ -5,6 +5,10 @@
 
 Follow the [Install](./docs/INSTALL.md) Documentation
 
+## Adding the `@Nebular/Theme` 
+
+Follow the [Theme](./docs/STYLES.md) Documentation
+
 ## Adding the `@Guard` 
 
 Follow the [Guard](./docs/GUARD.md) Documentation
