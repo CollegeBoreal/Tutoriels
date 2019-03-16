@@ -7,7 +7,7 @@
 $ npm i @nebular/auth
 ```
 
-2 - Add the HttpClientModule to the AppModule -- `app.module.ts`
+2 - Add the [HttpClientModule](https://akveo.github.io/nebular/docs/auth/installation#httpclientmodule) to the AppModule -- `app.module.ts`
 
 ```typescript
 // ...
