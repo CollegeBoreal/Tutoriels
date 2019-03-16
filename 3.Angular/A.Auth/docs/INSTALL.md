@@ -48,7 +48,7 @@ const NB_AUTH_MODULE = [
 ];
 ```
 
- * Add the NB_AUTH_MODULE constant to the AppModule -- `app.module.ts`
+ * Import the NB_AUTH_MODULE constant in the AppModule -- `app.module.ts`
 
 ```typescript
 @NgModule({
@@ -74,7 +74,7 @@ const NB_AUTH_PROVIDERS = [
 ];
 ```
 
- * Add the NB_AUTH_PROVIDERS constant to the AppModule -- `app.module.ts`
+ * Add the NB_AUTH_PROVIDERS constant to the AppModule providers -- `app.module.ts`
 
 ```typescript
 @NgModule({
