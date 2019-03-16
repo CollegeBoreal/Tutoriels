@@ -26,7 +26,7 @@ $ ng generate component pages/pages-dashboard
 ```
 
 ```bash
-ng generate guard auth/auth --skipTests
+$ ng generate guard @auth/auth --skipTests
 ```
 
 ```
