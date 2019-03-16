@@ -61,6 +61,17 @@ typescript                        3.3.3333
 webpack                           4.29.0
 ```
 
+## Know Issue
+
+```
+ERROR in The Angular Compiler requires TypeScript >=3.1.1 and <3.3.0 but 3.3.3333 was found instead.
+```
+
+* Fix
+
+```
+$ npm i typescript@3.1.6 --save-dev --save-exact
+```
 
 -------
 
