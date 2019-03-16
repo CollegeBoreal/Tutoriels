@@ -131,7 +131,6 @@ const NB_AUTH_PROVIDERS = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NbThemeModule.forRoot(),
     NB_AUTH_MODULE
   ],
   providers: [
