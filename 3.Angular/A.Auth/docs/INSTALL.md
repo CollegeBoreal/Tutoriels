@@ -131,7 +131,7 @@ const NB_AUTH_PROVIDERS = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NB_AUTH_MODULE
+    NB_AUTH_MODULE,
   ],
   providers: [
     NB_AUTH_PROVIDERS,
