@@ -22,7 +22,7 @@ export class AppModule {
 
 3 - Configure an Authentication [Strategy](https://akveo.github.io/nebular/docs/auth/configuring-a-strategy#strategy)
 
-* Declare a constant `NB_AUTH_MODULE` for improve readability 
+* Declare a constant `NB_AUTH_MODULE` to improve readability 
 
 * Configure the [token extraction](https://akveo.github.io/nebular/docs/auth/getting-user-token#configure-token-extraction)
 
