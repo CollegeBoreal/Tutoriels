@@ -1,11 +1,13 @@
 # @Nebular/Theme Installation
 
 
-:one: [Install @Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#install-nebular) Theme
+:one: [Install @Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#install-nebular) Theme (Via Tooling)
 
 ```
 $ ng add @nebular/theme
 ```
+
+* When asked, select default
 
 ```
 Installed packages for tooling via npm.
@@ -15,12 +17,16 @@ Installed packages for tooling via npm.
   corporate 
 ```
 
+* When asked, answer Y to `customizable scss` and Y to `browser animations`
+
 ```
 Installed packages for tooling via npm.
 ? Which Nebular theme do you want to use: default
 ? Use customizable scss themes? Yes
 ? Set up browser animations for Nebular? (Y/n) Y
 ```
+
+:two: The automated install will update the below pages
 
 ```bash
 CREATE src/themes.scss (205 bytes)
@@ -29,7 +35,7 @@ UPDATE src/styles.scss (199 bytes)
 UPDATE src/app/app.component.html (1493 bytes)
 ```
 
-:two: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
+* By Configuring [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
 
 ```typescript
 // ...
@@ -45,16 +51,7 @@ UPDATE src/app/app.component.html (1493 bytes)
 export class AppModule {
 ```
 
-:three: Change the `angular.json` file by updating the `styles` Table JSON format
-
-```json
-    "styles": [
-      "src/styles.scss",
-      "node_modules/@nebular/theme/styles/prebuilt/default.css" 
-    ],
-```
-
-:four: Add a new `themes.scss` file under `src` folder
+* Adding a new `themes.scss` file under `src` folder
 
 ```scss
 @import '~@nebular/theme/styles/theming';
@@ -66,7 +63,7 @@ $nb-themes: nb-register-theme((
 ), default, default);
 ```
 
-:five: Replace/Adjust the `styles.scss` file with the below:
+* Replacing the `styles.scss` file with the below:
 
 ```scss
 @import 'themes';
@@ -79,7 +76,7 @@ $nb-themes: nb-register-theme((
 /* You can add global styles to this file, and also import other style files */
 ```
 
-:six: add the 
+:three: add the @Nebular/Auth Theme to `styles.scss` file by replacing with the below snippet:
 
 ```scss
 @import 'themes';
