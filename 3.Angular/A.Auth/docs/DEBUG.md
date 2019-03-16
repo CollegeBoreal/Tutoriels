@@ -7,15 +7,15 @@ http://localhost:4200
 
 :link: Debug through the console (if under Google Chrome hit key `F12` on Windows, `Option/Command J` on MacOS) 
 
-* Header (In Network/XHR/Header Tab)
+:one: Header (In Network/XHR/Header Tab)
 
 ![alt tag](./images/Header.png)
 
-* Response (In Network/XHR/Response Tab)
+:two: Response (In Network/XHR/Response Tab)
 
 ![alt tag](./images/Response.png)
 
-* Local Storage (In Application Tab)
+:three: Local Storage (In Application Tab)
 
 ![alt tag](./images/Application.png)
 
