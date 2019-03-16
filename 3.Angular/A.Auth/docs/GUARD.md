@@ -103,6 +103,8 @@ const config: ExtraOptions = {
 export class AppRoutingModule { }
 ```
 
+:arrow_right: [Next](./ACCESS.md)
+
 ## References:
 
 https://angular.io/guide/router#guard-the-admin-feature
