@@ -7,7 +7,7 @@
 $ ng generate guard @auth/auth --spec false
 ```
 
-* if asked, pick `CanActivate` by pressing spacebar
+:bangbang: if asked, pick `CanActivate` by pressing spacebar
 
 ```
 ? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <i> to invert selection)
