@@ -35,6 +35,18 @@ UPDATE src/styles.scss (199 bytes)
 UPDATE src/app/app.component.html (1493 bytes)
 ```
 
+* By adding a new `themes.scss` file under `src` folder
+
+```scss
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+$nb-themes: nb-register-theme((
+  // add your variables here like:
+  // color-bg: #4ca6ff,
+), default, default);
+```
+
 * By Configuring [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
 
 ```typescript
@@ -51,19 +63,7 @@ UPDATE src/app/app.component.html (1493 bytes)
 export class AppModule {
 ```
 
-* Adding a new `themes.scss` file under `src` folder
-
-```scss
-@import '~@nebular/theme/styles/theming';
-@import '~@nebular/theme/styles/themes/default';
-
-$nb-themes: nb-register-theme((
-  // add your variables here like:
-  // color-bg: #4ca6ff,
-), default, default);
-```
-
-* Replacing the `styles.scss` file with the below:
+* By replacing the `styles.scss` file with the below content:
 
 ```scss
 @import 'themes';
@@ -74,6 +74,29 @@ $nb-themes: nb-register-theme((
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+```
+
+
+```html
+<nb-layout>
+
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+  
+    <!-- Note: OLD CONTENT HERE -->
+
+    <router-outlet></router-outlet>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
 ```
 
 :three: add the @Nebular/Auth Theme to `styles.scss` file by replacing with the below snippet:
