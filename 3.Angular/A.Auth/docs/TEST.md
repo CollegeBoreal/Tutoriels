@@ -32,8 +32,16 @@ http://localhost:4200
 
 :five: Debug through the console (if under Google Chrome hit key F12 Windows, Option/Command J MacOS) 
 
+* Header (In Network/Header Tab)
+
 ![alt tag](./images/Header.png)
+
+* Response (In Network/Response Tab)
+
 ![alt tag](./images/Response.png)
+
+* Local Storage (In Application Tab)
+
 ![alt tag](./images/Application.png)
 
 ---
