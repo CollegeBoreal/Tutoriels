@@ -70,6 +70,7 @@ $nb-themes: nb-register-theme((
 @include nb-install() {
   @include nb-theme-global();
 };
+/* You can add global styles to this file, and also import other style files */
 ```
 
 :six: add the 
@@ -85,6 +86,7 @@ $nb-themes: nb-register-theme((
   @include nb-theme-global();
   @include nb-auth-global(); // *** append the install mixin inside of the nb-install ***
 };
+/* You can add global styles to this file, and also import other style files */
 ```
 
 :arrow_right: [Next GUARD](./GUARD.md)
