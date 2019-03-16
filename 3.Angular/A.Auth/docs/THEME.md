@@ -1,4 +1,4 @@
-# Nebular Theme
+# @Nebular/Theme Installation
 
 
 :one: [Install @Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#install-nebular) Theme
