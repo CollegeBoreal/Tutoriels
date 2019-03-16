@@ -60,7 +60,7 @@ export class AuthGuard implements CanActivate {
 $ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import {Component, Injector, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
@@ -74,25 +74,31 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PagesDashboardComponent implements OnInit {
 
+  // TODO this Class should go in a model
   Password = {
     result: String
   };
 
-  constructor(private http: HttpClient) {
+  constructor(private injector: Injector) {
   }
 
   ngOnInit() {
     console.log('populate data');
     this.getData()
       .subscribe(
-        (data: Password) => {
-          this.Password = data;
-        },
-        (err: any) => console.error('too bad' + err));
+        (data: any) => this.Password = data
+        , (err: any) => console.error('too bad' + err)
+      );
   }
 
+  // TODO this functions should go in a service
   getData() {
-    return this.http.get<string>('/api/badPassword');
+    return this.httpService.get<string>('/api/badPassword');
+  }
+
+  // TODO this functions should go in a service along with the above function
+  protected get httpService(): HttpClient {
+    return this.injector.get(HttpClient);
   }
 }
 ```
