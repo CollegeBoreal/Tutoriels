@@ -7,7 +7,7 @@ Follow the [Install](./docs/INSTALL.md) Documentation
 
 ## Adding the `@Guard` 
 
-Follow the [NB](./docs/GUARD.md) Documentation
+Follow the [Guard](./docs/GUARD.md) Documentation
 
 ## Accessing the `Main Page` 
 
