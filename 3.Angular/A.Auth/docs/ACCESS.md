@@ -1,4 +1,4 @@
-# Access
+# Access the Pages Module
 
 :one: Generate a new module `pages`
 
