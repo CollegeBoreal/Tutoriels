@@ -95,7 +95,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { NB_AUTH_INTERCEPTOR_HEADER, NbAuthJWTToken, NbAuthModule, NbAuthSimpleInterceptor, NbPasswordAuthStrategy } from '@nebular/auth';
+import {
+  NB_AUTH_INTERCEPTOR_HEADER,
+  NbAuthJWTToken,
+  NbAuthModule,
+  NbAuthSimpleInterceptor,
+  NbPasswordAuthStrategy
+} from '@nebular/auth';
 
 const NB_AUTH_MODULE = [
   NbAuthModule.forRoot({
