@@ -69,7 +69,7 @@ const NB_AUTH_PROVIDERS = [
 ];
 ```
 
-:100: Final Result should look like this
+:recycle: Final Result should look like this
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
