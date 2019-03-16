@@ -103,7 +103,7 @@ const config: ExtraOptions = {
 export class AppRoutingModule { }
 ```
 
-:arrow_right: [Next](./ACCESS.md)
+:arrow_right: [Next ACCESS](./ACCESS.md)
 
 ## References:
 
