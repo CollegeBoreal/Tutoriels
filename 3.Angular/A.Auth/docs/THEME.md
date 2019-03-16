@@ -102,7 +102,9 @@ export class AppModule {
 </nb-layout>
 ```
 
-:three: add the @Nebular/Auth Theme to `styles.scss` file by replacing with the below snippet:
+:three: Remove the `OLD CONTENT` in `app.component.html` (Optional)
+
+:four: add the @Nebular/Auth Theme to `styles.scss` file by replacing with the below snippet:
 
 ```scss
 @import 'themes';
