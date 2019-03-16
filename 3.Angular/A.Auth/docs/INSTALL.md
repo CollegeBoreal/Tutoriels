@@ -19,7 +19,7 @@ export class AppModule {
 
 3 - Configure a Strategy
 
-```
+```typescript
 const NB_AUTH_MODULE = [
   NbAuthModule.forRoot({
     strategies: [
