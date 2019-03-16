@@ -1,7 +1,7 @@
 # Debug the Application
 
 
-:O: After launching your browser (you should hit the login page, register first)
+:o2: After launching your browser (you should hit the login page, register first)
 
 http://localhost:4200
 
