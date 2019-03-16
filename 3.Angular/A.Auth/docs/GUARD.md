@@ -105,10 +105,27 @@ const config: ExtraOptions = {
 export class AppRoutingModule { }
 ```
 
-:three: Let's simplify our main application page `app.component.html` by replacing with 
+:three: Let's simplify our main application page `app.component.html` by replacing with :
 
-```
-<router-outlet></router-outlet>
+```html
+<nb-layout>
+
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+    
+    <router-outlet></router-outlet>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
+
 ```
 
 :arrow_right: [Next ACCESS](./ACCESS.md)
