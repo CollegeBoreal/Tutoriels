@@ -80,6 +80,8 @@ $nb-themes: nb-register-theme((
 
 @import '~@nebular/theme/styles/globals';
 
+// framework component styles which will use your new theme
+@import '~@nebular/theme/styles/prebuilt/default';
 @import '~@nebular/auth/styles/all'; // *** or @import '~@nebular/auth/styles/{theme-name}'; ***
 
 @include nb-install() {
