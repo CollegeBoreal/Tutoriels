@@ -14,6 +14,13 @@ Installed packages for tooling via npm.
   cosmic 
   corporate 
 ```
+
+```
+Installed packages for tooling via npm.
+? Which Nebular theme do you want to use: default
+? Use customizable scss themes? Yes
+? Set up browser animations for Nebular? (Y/n) Y
+```
   
 
 :two: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
@@ -24,7 +31,9 @@ Installed packages for tooling via npm.
 @NgModule({
   imports: [
     ...
-    NbThemeModule.forRoot(),
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
   ],
 })
 export class AppModule {
@@ -42,37 +51,39 @@ export class AppModule {
 :four: Add a new `themes.scss` file under `src` folder
 
 ```scss
-// import Nebular Theme System and the default theme
 @import '~@nebular/theme/styles/theming';
 @import '~@nebular/theme/styles/themes/default';
 
-// and change the variables you need,
-// or simply leave the map empty to use the default values
-// let's make it blue-ish instead of the default white color
 $nb-themes: nb-register-theme((
-  color-bg: #4ca6ff,
-  shadow: 0 1px 2px 0 #3780c0,
-  layout-bg: #ffffff,
-  color-fg: #222222
-), default, default); // let's leave it as default
+  // add your variables here like:
+  // color-bg: #4ca6ff,
+), default, default);
 ```
 
 :five: Replace/Adjust the `styles.scss` file with the below:
 
 ```scss
-// this is your created themes.scss file, make sure the path to the file is correct
 @import 'themes';
 
-// framework component styles which will use your new theme
-@import '~@nebular/theme/styles/prebuilt/default';
 @import '~@nebular/theme/styles/globals';
 
-@import '~@nebular/auth/styles/all'; // or @import '~@nebular/auth/styles/{theme-name}';
-
-// install the framework
 @include nb-install() {
   @include nb-theme-global();
-  @include nb-auth-global(); // append the install mixin inside of the nb-install
+};
+```
+
+:six: add the 
+
+```scss
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@import '~@nebular/auth/styles/all'; // *** or @import '~@nebular/auth/styles/{theme-name}'; ***
+
+@include nb-install() {
+  @include nb-theme-global();
+  @include nb-auth-global(); // *** append the install mixin inside of the nb-install ***
 };
 ```
 
