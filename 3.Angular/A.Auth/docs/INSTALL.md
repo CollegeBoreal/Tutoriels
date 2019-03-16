@@ -125,4 +125,4 @@ export class AppModule { }
 
 ```
 
-:arrow_right: [Next](./GUARD.md)
+:arrow_right: [Next Styles](./STYLES.md)
