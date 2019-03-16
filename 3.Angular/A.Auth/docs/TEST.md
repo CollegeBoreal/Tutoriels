@@ -44,6 +44,10 @@ http://localhost:4200
 
 ![alt tag](./images/Application.png)
 
+:bangbang: Force Login
+
+Clear the `LocalSorage` in Application  to reset the `token`
+
 ---
 
 References:
