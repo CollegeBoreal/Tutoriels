@@ -30,5 +30,7 @@ $ ng serve --proxy-config proxy-config.json
 
 http://localhost:4200
 
+This is how the secured page looks like
+
 ![alt tag](images/Test.png)
 
