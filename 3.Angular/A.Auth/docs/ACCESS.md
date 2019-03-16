@@ -75,3 +75,6 @@ export class PagesDashboardComponent implements OnInit {
 }
 ```
 
+:four: Test
+
+http://localhost:4200
