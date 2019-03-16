@@ -32,7 +32,7 @@ Node: 8.12.0
 Angular: 7.2.9
 ```
 
-## Know Issue
+## :bangbang: Know Issue
 
 ```red
 ERROR in The Angular Compiler requires TypeScript >=3.1.1 and <3.3.0 but 3.3.3333 was found instead.
