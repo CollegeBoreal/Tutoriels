@@ -74,7 +74,7 @@ const NB_AUTH_PROVIDERS = [
 ];
 ```
 
-:recycle: Final Result should look like this
+:recycle: Final `app.module.ts` Result should look like this
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
