@@ -52,7 +52,7 @@ export class AuthGuard implements CanActivate {
 
 * Replace/Adapt the `app-routing.module.ts` source code with the below snippet:
 
-* Note: The PagesModule will be add in the next step
+* Note: The PagesModule will be added in the next step
 
 ```typescript
 import { NgModule } from '@angular/core';
