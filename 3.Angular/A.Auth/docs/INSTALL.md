@@ -24,6 +24,8 @@ export class AppModule {
 
 * Declare a constant `NB_AUTH_MODULE` for improve readability 
 
+* Configure the [token extraction](https://akveo.github.io/nebular/docs/auth/getting-user-token#configure-token-extraction)
+
 ```typescript
 const NB_AUTH_MODULE = [
   NbAuthModule.forRoot({
