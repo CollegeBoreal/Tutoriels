@@ -9,7 +9,7 @@ $ ng generate module pages --routing
 :two: Generate the main pages component
 
 ```bash
-$ ng generate component pages/pages --flat --inline-template --inline-style --skipTests
+$ ng generate component pages/pages --flat --inline-template --inline-style --spec false
 ```
 
 * In `pages.component.ts` replace the inline `template` with:
@@ -28,7 +28,7 @@ $ ng generate component pages/pages --flat --inline-template --inline-style --sk
 :three: Generate the dashboard component
 
 ```bash
-$ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
+$ ng generate component pages/pages-dashboard --inline-template --inline-style --spec false
 ```
 
 * Replace the `pages-dashboard.component.ts` with the below source code:
