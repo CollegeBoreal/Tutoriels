@@ -10,6 +10,9 @@ $ npm i @nebular/auth
 2 - Add the HttpClientModule to the AppModule -- `app.module.ts`
 
 ```typescript
+// ...
+
+@NgModule({
   imports: [
     HttpClientModule
   ],
