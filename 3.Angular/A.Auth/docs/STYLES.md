@@ -53,6 +53,20 @@ $nb-themes: nb-register-theme((
 };
 ```
 
+:five: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
+
+```typescript
+// ...
+
+@NgModule({
+  imports: [
+    ...
+    NbThemeModule.forRoot(),
+  ],
+})
+export class AppModule {
+```
+
 :arrow_right: [Next GUARD](./GUARD.md)
 
 ---
