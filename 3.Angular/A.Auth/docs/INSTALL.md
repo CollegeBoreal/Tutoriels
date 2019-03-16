@@ -56,6 +56,12 @@ const NB_AUTH_MODULE = [
 export class AppModule {
 ```
 
-4 - Changing the Interceptor's Behavior 
+4 - Changing the Interceptor's Behavior -- Use the [NbAuthSimpleInterceptor](https://github.com/akveo/nebular/blob/master/src/framework/auth/services/interceptors/simple-interceptor.ts)
 
-https://github.com/akveo/nebular/blob/master/src/framework/auth/services/interceptors/simple-interceptor.ts
+
+
+const NB_AUTH_PROVIDERS = [
+  { provide: HTTP_INTERCEPTORS, useClass: NbAuthSimpleInterceptor, multi: true },
+  { provide: NB_AUTH_INTERCEPTOR_HEADER, useValue: 'X-Auth-Token' }
+];
+
