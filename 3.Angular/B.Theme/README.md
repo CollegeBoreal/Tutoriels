@@ -34,11 +34,11 @@ Follow the [Layout](./docs/LAYOUT.md) Documentation
 
 Follow the [Pages](./docs/PAGES.md) Documentation
 
-# Put everything together
+# Putting everything together
 
 Follow the [App](./docs/APP.md) Documentation
 
-## Add the application's Menu
+## Adding the application's Menu
 
 Follow the [Menu](./docs/MENU.md) Documentation
 
