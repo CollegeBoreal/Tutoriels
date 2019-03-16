@@ -8,13 +8,13 @@
 
 ![alt tag](./docs/ModuleDesign.png)
 
-# Create Angular-CLI project
+## Create Angular-CLI project
 
 ```
 $ ng new MyProject --style=scss --routing=true && cd $_
 ```
 
-# Create the `@Theme` Module
+## Create the `@Theme` Module
 
 Follow the [Base](./docs/BASE.md) Documentation
 
