@@ -80,6 +80,11 @@ export class PagesDashboardComponent implements OnInit {
 :four: Lets advertise the new components by adding a new route to the `pages-routing.module.ts`
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import {PagesDashboardComponent} from './pages-dashboard/pages-dashboard.component';
+import {PagesComponent} from './pages.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -94,6 +99,13 @@ const routes: Routes = [
     ]
   }
 ];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class PagesRoutingModule { }
+
 ```
 
 
