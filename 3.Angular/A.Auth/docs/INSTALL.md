@@ -53,3 +53,7 @@ const NB_AUTH_MODULE = [
 })
 export class AppModule {
 ```
+
+4 - Changing the Interceptor's Behavior 
+
+https://github.com/akveo/nebular/blob/master/src/framework/auth/services/interceptors/simple-interceptor.ts
