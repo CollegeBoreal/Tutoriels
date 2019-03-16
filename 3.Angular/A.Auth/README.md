@@ -21,6 +21,10 @@ Follow the [Access](./docs/ACCESS.md) Documentation
 
 Follow the [Test](./docs/TEST.md) Documentation
 
+## Debugging the secured pages
+
+Follow the [Debug](./docs/DEBUG.md) Documentation
+
 
 # :o: Version
 
