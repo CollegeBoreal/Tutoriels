@@ -21,5 +21,5 @@ http://localhost:4200
 
 :bangbang: Force Login
 
-Clear the `LocalSorage` in Application Tab to reset the `token`
+Clear the `LocalSorage` in `Application` Tab to reset the `token`
 
