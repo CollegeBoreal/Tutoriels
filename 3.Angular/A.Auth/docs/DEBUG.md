@@ -5,7 +5,7 @@
 
 http://localhost:4200
 
-:one: Debug through the console (if under Google Chrome hit key `F12` on Windows, `Option/Command J` on MacOS) 
+:link: Debug through the console (if under Google Chrome hit key `F12` on Windows, `Option/Command J` on MacOS) 
 
 * Header (In Network/XHR/Header Tab)
 
