@@ -74,6 +74,19 @@ const NB_AUTH_PROVIDERS = [
 ];
 ```
 
+ * Add the NB_AUTH_PROVIDERS constant to the AppModule -- `app.module.ts`
+
+```typescript
+@NgModule({
+   ...
+   providers: [
+    NB_AUTH_PROVIDERS
+  ],
+  ...
+})
+export class AppModule {
+```
+
 :recycle: Final `app.module.ts` Result should look like this
 
 ```typescript
