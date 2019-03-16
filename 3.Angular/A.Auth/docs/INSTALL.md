@@ -3,7 +3,7 @@
 :zero: This tutorial assumes that you have already created your Angular App (if not, runn the below command) 
 
 ```
-ng new 
+$ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
 :one: - Install the Auth Module
