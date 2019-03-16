@@ -12,7 +12,7 @@ $ npm install --save @nebular/theme @angular/cdk @angular/animations
 ```json
     "styles": [
       "src/styles.scss",
-      "node_modules/@nebular/theme/styles/prebuilt/default.css" // = add this line
+      "node_modules/@nebular/theme/styles/prebuilt/default.css" 
     ],
 ```
 
