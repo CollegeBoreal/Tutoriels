@@ -77,4 +77,24 @@ export class PagesDashboardComponent implements OnInit {
 }
 ```
 
+:four: Lets advertise the new components by adding a new route to the `pages-routing.module.ts`
+
+```typescript
+const routes: Routes = [
+  {
+    path: '',
+    component: PagesComponent,
+    children: [
+      {
+        path: 'dashboard',
+        children: [
+          { path: '', component: PagesDashboardComponent }
+        ],
+      }
+    ]
+  }
+];
+```
+
+
 :arrow_right: [Next TEST](./TEST.md)
