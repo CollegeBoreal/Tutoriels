@@ -77,7 +77,7 @@ export class PagesDashboardComponent implements OnInit {
 }
 ```
 
-:four: Lets advertise the new components by adding a new route to the `pages-routing.module.ts`
+:four: Let's advertise the new components by adding a new route to the `pages-routing.module.ts`
 
 ```typescript
 import { NgModule } from '@angular/core';
