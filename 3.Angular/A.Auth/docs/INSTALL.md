@@ -19,6 +19,7 @@ $ npm i @nebular/auth
 
 @NgModule({
   imports: [
+    ...
     HttpClientModule
   ],
 })
