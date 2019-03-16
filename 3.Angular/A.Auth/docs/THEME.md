@@ -21,7 +21,13 @@ Installed packages for tooling via npm.
 ? Use customizable scss themes? Yes
 ? Set up browser animations for Nebular? (Y/n) Y
 ```
-  
+
+```bash
+CREATE src/themes.scss (205 bytes)
+UPDATE src/app/app.module.ts (1362 bytes)
+UPDATE src/styles.scss (199 bytes)
+UPDATE src/app/app.component.html (1493 bytes)
+```
 
 :two: - Configure [Nebular](https://akveo.github.io/nebular/docs/guides/add-into-existing-project#configure-nebular) in the AppModule -- `app.module.ts`
 
