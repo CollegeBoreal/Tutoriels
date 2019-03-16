@@ -1,11 +1,11 @@
 # Enabling Authentication using @Nebular/auth
 
 
-# Create the `@Nebular/Auth` Module
+## Adding the `@Nebular/Auth` Module
 
 Follow the [Install](./docs/INSTALL.md) Documentation
 
-## Adding the `@Nebular/Theme` 
+## Adding the `@Nebular/Theme` Module
 
 Follow the [Theme](./docs/STYLES.md) Documentation
 
@@ -17,7 +17,7 @@ Follow the [Guard](./docs/GUARD.md) Documentation
 
 Follow the [Access](./docs/ACCESS.md) Documentation
 
-## Test your secured pages
+## Testing the secured pages
 
 Follow the [Test](./docs/TEST.md) Documentation
 
