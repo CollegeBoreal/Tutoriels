@@ -29,7 +29,7 @@ $ ng generate component pages/pages --flat --inline-template --inline-style --sk
 $ ng generate component pages/pages-dashboard --inline-template --inline-style --skipTests
 ```
 
-* In `pages.component.ts` replace with the below source code:
+* Replace the `pages.component.ts` with the below source code:
 
 ```typescript
 import {Component, Injector, OnInit} from '@angular/core';
