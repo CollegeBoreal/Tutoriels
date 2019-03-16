@@ -6,10 +6,10 @@
 $ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
-:one: - Install the Auth Module
+:one: - [Install Nebular/Auth](https://akveo.github.io/nebular/docs/auth/installation#installation) Module
 
 ```
-$ npm i @nebular/auth
+$ npm install @nebular/auth
 ```
 
 :two: - Add the [HttpClientModule](https://akveo.github.io/nebular/docs/auth/installation#httpclientmodule) to the AppModule -- `app.module.ts`
