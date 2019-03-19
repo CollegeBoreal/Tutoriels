@@ -58,12 +58,6 @@ export PATH=$SBT_HOME/bin:$PATH
 * Intellij Idea : https://www.jetbrains.com/idea/download
 * Enregistrement: https://www.jetbrains.com/student/
 
-* Configuration Scala/Sbt/IntelliJ
-
-https://stackoverflow.com/questions/46381242/intellij-sbt-based-scala-project-does-not-build-with-java-9
-
-![alt tag](https://i.stack.imgur.com/vcBkX.png)
-
 ## Installation de Scala Interface en Ligne de Commandes (CLI)
 
 * Scala CLI: https://www.scala-lang.org/download/
@@ -75,5 +69,7 @@ Ajuster son fichier de démarrage ~/.bashrc ou variable d'environnement
 export SCALA_HOME=~/bin/scala-2.12.1
 export PATH=$SCALA_HOME/bin:$PATH
 ```
+
+
 
 
