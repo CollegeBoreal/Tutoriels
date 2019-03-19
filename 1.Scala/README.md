@@ -71,5 +71,18 @@ export PATH=$SCALA_HOME/bin:$PATH
 ```
 
 
+### Debug Application:
+```
+1. $ sbt -jvm-debug 5005 or ./sbt
+2. $ set SBT_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005" && sbt
+3. ~ run
+```
+
+### Backend Test:
+```
+1. ./sbt test
+```
+
+
 
 
