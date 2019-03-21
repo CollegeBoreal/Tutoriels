@@ -83,6 +83,10 @@ export PATH=$SCALA_HOME/bin:$PATH
 1. ./sbt test
 ```
 
+# References:
 
-:bangbang! https://www.toptal.com/scala/scala-bytecode-and-the-jvm
+:bangbang: https://www.toptal.com/scala/scala-bytecode-and-the-jvm
+
+
+:bangbang: https://typesafe.co1.qualtrics.com/results/public/dHlwZXNhZmUtVVJfNlB4cWNSMXdub0liVExmLTVhZjMwZDc4MjAzMGVkMDAxNDhkOTc4OA
 
