@@ -27,9 +27,11 @@ Note: MacOS, Linux add `--unsafe-perm`
 $ ng new --collection=@nativescript/schematics my-shared-app --shared
 ```
 
-## Creating Apps
+## Creating Apps with Templates
 
-http://docs.nativescript.org/angular/tutorial/ng-chapter-1
+https://docs.nativescript.org/angular/start/quick-setup
+
+https://github.com/NativeScript/nativescript-app-templates
 
 ```
 $ tns create HelloWorld --template nativescript-template-ng-tutorial
