@@ -13,7 +13,7 @@ $ npm --version
 6.4.1
 
 $ node --version
-v8.12.0
+v10.15.3
 
 ```
 
