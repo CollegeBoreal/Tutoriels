@@ -34,6 +34,6 @@ https://docs.nativescript.org/angular/start/quick-setup
 https://github.com/NativeScript/nativescript-app-templates
 
 ```
-$ tns create HelloWorld --template nativescript-template-ng-tutorial
+$ tns create my-tab-ng --template tns-template-tab-navigation-ng
 ```
 
