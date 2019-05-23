@@ -11,7 +11,7 @@
 ## Create Angular-CLI project
 
 ```
-$ ng new MyProject --style=scss --routing=true && cd $_
+$ ng new MyProject --style=scss --routing=true && cd MyProject
 ```
 
 ## Create the `@Theme` Module
