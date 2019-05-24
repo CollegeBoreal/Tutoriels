@@ -75,7 +75,7 @@ export class LayoutOneColumnComponent implements OnInit {
 
 ## Advertize the newly created Layout
 
---- Add the new created Layout to the theme.module.ts 
+--- Add the new created Layout to the `theme.module.ts` 
 
 ```Typescript
 const COMPONENTS = [
