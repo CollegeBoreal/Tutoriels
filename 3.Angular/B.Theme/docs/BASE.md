@@ -8,9 +8,9 @@ $ ng generate module @theme/Theme --flat
 
 # Add the base modules
 
-Edit themes.modules.ts
+Edit `themes.modules.ts`
 
-add a new variable BASE_MODULES before the `@NgModule` Decorator 
+add a new variable `BASE_MODULES` before the `@NgModule` Decorator 
 
 ```Typescript
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
