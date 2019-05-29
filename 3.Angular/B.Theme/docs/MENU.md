@@ -97,4 +97,5 @@ Notice the `select=` in the `<nb-content>` tag, these must be provided later on 
 </nb-layout>
 ```
 
+![image](menu-LO.png)
 
