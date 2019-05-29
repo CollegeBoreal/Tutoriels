@@ -9,7 +9,7 @@
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ```
-* Add the `ExtraOptions` allowing the use of hash in the URL
+* Add the `ExtraOptions` named `config` allowing the use of hash in the URL
 
 ```Typescript
 const config: ExtraOptions = {
@@ -17,7 +17,7 @@ const config: ExtraOptions = {
 };
 ```
 
-* Add the new `config` constant to the `RouterModule.forRoot` function parameter 
+* Add the new `config` constant to the `RouterModule.forRoot` function parameter at the decorator `@NgModule` `imports` value  
 
 ```Typescript
   imports: [RouterModule.forRoot(routes, config)],
