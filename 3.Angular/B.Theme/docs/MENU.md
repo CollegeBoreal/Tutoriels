@@ -2,7 +2,7 @@
 
 ## Add @Nebular Menu Module to the @Theme Module
 
-* Edit the theme.module.ts by adding `NbMenuModule`
+* Edit the `theme.module.ts` by adding `NbMenuModule`
 
 ```Typescript
 const NB_MODULES = [
