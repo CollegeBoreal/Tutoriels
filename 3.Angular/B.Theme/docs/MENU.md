@@ -11,7 +11,7 @@ const NB_MODULES = [
 ];
 ```
 
-* Instantiate the (@Nebular) Menu Module through the providers block to the theme.module.ts by adding:
+* Instantiate the (@Nebular) Menu Module through the providers block to the `theme.module.ts` by adding:
 
 ```Typescript
 const NB_THEME_PROVIDERS = [
