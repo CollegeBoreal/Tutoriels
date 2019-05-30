@@ -8,7 +8,7 @@ $ ng generate module @theme/Theme --flat
 
 # Add the base modules
 
-Edit `themes.modules.ts`
+Edit `themes.modules.ts` file
 
 add a new variable `BASE_MODULES` before the `@NgModule` Decorator 
 
