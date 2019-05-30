@@ -32,7 +32,7 @@ const NB_THEME_PROVIDERS = [
 $ ng generate component @theme/layout/LayoutOneColumn --inline-template true --spec false 
 ```
 
---- Add the following layout example (i.e. from AKVEO/Nebular) to the LayoutOneColumn Component Template
+--- Add the following layout example (i.e. from AKVEO/Nebular) to the LayoutOneColumn Component `template:`
 
 ```Typescript
     <nb-layout>
