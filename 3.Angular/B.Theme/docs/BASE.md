@@ -58,18 +58,22 @@ export class ThemeModule {
 }
 ```
 
-# Module Usage
+# Module Usage (just for your imformation - nothing to edit)
 
-* Import [instantiate] the module through `@NgModule` of app.module.ts
+To use the newly created `Theme` Module in other modules, you will need to:
+
+* Import [instantiate] the module through `@NgModule` of `app.module.ts` file
 
 ```Typescript
     ThemeModule.forRoot(),
 ```
 
-* import the module through `@NgModule` of any subsequent modules for usage
+* import the module through `@NgModule` of any subsequent modules for usage (without the need to use `forRoot()` method)
 
 ```Typescript
     ThemeModule,
 ```
+
+Further examples will be provided later on.
 
 [Next](NB.md)
