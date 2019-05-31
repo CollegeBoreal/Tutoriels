@@ -1,7 +1,7 @@
 
 |  Flag        | Country    | Code        |
 |--------------|------------|-------------|
-| :Canada:     | Canada     | `:canada:`  |
+| :canada:     | Canada     | `:canada:`  |
 | :madagascar: | Madagascar | `:madagascar:` | 
 
 :Côte_d’Ivoire:
