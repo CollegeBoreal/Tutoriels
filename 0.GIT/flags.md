@@ -7,6 +7,10 @@
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
+
+:cote_d_ivoire:
+:ivory_coast:
+
 # Europe
 
 |  Flag          | Country          | CDLR Short Name    |
