@@ -10,20 +10,18 @@
 | :guinea_bissau:  | Guinea Bissau    | `:guinea_bissau:`  |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
-
-
-# Europa :european_union:
-
-|  Flag          | Country          | CDLR Short Name    |
-|----------------|------------------|--------------------|
-| :fr:           | France           | `:fr:`             |
-
 # America
 
 |  Flag          | Country          | CDLR Short Name    |
 |----------------|------------------|--------------------|
 | :canada:       | Canada           | `:canada:`         |
 | :haiti:        | Haiti            | `:haiti:`          |
+
+# Europa :european_union:
+
+|  Flag          | Country          | CDLR Short Name    |
+|----------------|------------------|--------------------|
+| :fr:           | France           | `:fr:`             |
 
 
 https://unicode.org/emoji/charts/full-emoji-list.html
