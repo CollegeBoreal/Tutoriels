@@ -15,7 +15,7 @@
 
 |  Flag          | Country          | CDLR Short Name    |
 |----------------|------------------|--------------------|
-| :fr:           | France           | `:fr:`             |
+| :france:       | France           | `:france:`         |
 
 # North America
 
