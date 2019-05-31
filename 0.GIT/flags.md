@@ -16,6 +16,7 @@
 | :mauritius:               | Mauritius        | `:mauritius:`                        | 
 | :mali:                    | Mali             | `:mali:`                             |
 | :morocco:                 | Morocco          | `:morocco:`                          |
+| :niger:                   | Niger            | `:niger:`                            |
 | :senegal:                 | Senegal          | `:senegal:`                          |
 
 # America
