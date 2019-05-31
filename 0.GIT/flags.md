@@ -7,6 +7,7 @@
 | :burkina_faso:            | Burkina Faso             | `:burkina_faso:`             |
 | :burundi:                 | Burundi                  | `:burundi:`                  |
 | :central_african_republic:| Central African Republic | `:central_african_republic:` |
+| :chad:                    | Chad                     | `:chad:`                     |
 | :congo_brazzaville:       | Congo - Brazzaville      | `:congo_brazzaville:`        |
 | :congo_kinshasa:          | Congo - Kinshasa         | `:congo_kinshasa:`           |
 | :comoros:                 | Comoros                  | `:comoros:`                  |
