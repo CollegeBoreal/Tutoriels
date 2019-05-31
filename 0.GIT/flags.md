@@ -11,7 +11,7 @@
 
 
 
-# Europe
+# Europa :european_union:
 
 |  Flag          | Country          | CDLR Short Name    |
 |----------------|------------------|--------------------|
