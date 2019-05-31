@@ -7,7 +7,7 @@
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
 | :cameroon:       | Cameroon         | `:cameroon:`       |
 | :cote_divoire:   | Cote d'Ivoire    | `:cote_divoire:`   |
-:guinea_bissau:
+| :guinea_bissau:  | Guinea Bissau    | `:guinea_bissau:`  |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
 
