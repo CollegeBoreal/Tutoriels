@@ -7,7 +7,7 @@ Follow the [Install](./docs/INSTALL.md) Documentation
 
 ## Adding the `@Nebular/Theme` Module
 
-Follow the [Theme](./docs/STYLES.md) Documentation
+Follow the [Theme](./docs/THEME.md) Documentation
 
 ## Adding the `@Guard` 
 
