@@ -1,12 +1,10 @@
 
-|  Flag          | Country      | CDLR Short Name    |
-|----------------|--------------|--------------------|
-| :canada:       | Canada       | `:canada:`         |
-| :burkina_faso: | Burkina Faso | `:burkina_faso:`   |
-| :madagascar:   | Madagascar   | `:madagascar:`     | 
+|  Flag          | Country          | CDLR Short Name    |
+|----------------|------------------|--------------------|
+| :canada:       | Canada           | `:canada:`         |
+| :burkina_faso:   | Burkina Faso   | `:burkina_faso:`   |
+| :congo_kinshasa: | Congo Kinshasa | `:congo_kinshasa:` |
+| :madagascar:   | Madagascar       | `:madagascar:`     | 
 
-:blue_book:
 
-:congo_kinshasa:
-
-https://unicode.org/emoji/charts/emoji-list.html
+https://unicode.org/emoji/charts/full-emoji-list.html
