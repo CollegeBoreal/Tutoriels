@@ -11,6 +11,7 @@
 | :guinea_bissau:  | Guinea Bissau    | `:guinea_bissau:`  |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 | :mauritius:      | Mauritius        | `:mauritius:`      | 
+| :morocco:        | Morocco          | `:morocco:`        |
 
 # America
 
