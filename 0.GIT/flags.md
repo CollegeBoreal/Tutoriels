@@ -9,8 +9,6 @@
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
 
-:cote_divoire:
-
 
 # Europe
 
