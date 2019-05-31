@@ -7,4 +7,6 @@
 
 :blue_book:
 
+:congo_-_kinshasa:
+
 https://unicode.org/emoji/charts/emoji-list.html
