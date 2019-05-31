@@ -1,6 +1,6 @@
 # GIT 
 
-## :chequered_flag: [Emoji Flags](flags.md)
+## :bookmark: [Emoji Flags](flags.md)
 
 ## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
