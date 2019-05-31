@@ -5,6 +5,7 @@
 | :benin:          | Benin            | `:benin:`          |
 | :burkina_faso:   | Burkina Faso     | `:burkina_faso:`   |
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
+| :cameroon:       | Cameroon         | `:cameroon:`       |
 | :cote_divoire:   | Cote d'Ivoire    | `:cote_divoire:`   |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
