@@ -8,7 +8,7 @@
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
 
-:cote_d'ivoire:
+:cote_ivoire:
 :ivory_coast:
 
 # Europe
