@@ -2,6 +2,7 @@
 
 |  Flag            | Country          | CDLR Short Name    |
 |------------------|------------------|--------------------|
+| :algeria:        | Algeria          | `:algeria:`        |
 | :benin:          | Benin            | `:benin:`          |
 | :burkina_faso:   | Burkina Faso     | `:burkina_faso:`   |
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
