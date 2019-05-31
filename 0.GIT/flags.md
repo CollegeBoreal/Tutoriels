@@ -5,6 +5,7 @@
 | :algeria:        | Algeria          | `:algeria:`        |
 | :benin:          | Benin            | `:benin:`          |
 | :burkina_faso:   | Burkina Faso     | `:burkina_faso:`   |
+| :burundi:        | Burundi          | `:burundi:`        |
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
 | :comoros:        | Comoros          | `:comoros:`        |
 | :cameroon:       | Cameroon         | `:cameroon:`       |
