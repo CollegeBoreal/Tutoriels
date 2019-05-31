@@ -4,4 +4,4 @@
 | :canada:     | Canada     | `:canada:`  |
 | :madagascar: | Madagascar | `:madagascar:` | 
 
-:red_book:
+:blue_book:
