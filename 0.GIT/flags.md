@@ -5,11 +5,12 @@
 | :benin:          | Benin            | `:benin:`          |
 | :burkina_faso:   | Burkina Faso     | `:burkina_faso:`   |
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
-:comoros:
+| :comoros:        | Comoros          | `:comoros:`        |
 | :cameroon:       | Cameroon         | `:cameroon:`       |
 | :cote_divoire:   | Cote d'Ivoire    | `:cote_divoire:`   |
 | :guinea_bissau:  | Guinea Bissau    | `:guinea_bissau:`  |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
+| :mauritius:      | Mauritius        | `:mauritius:`      | 
 
 # America
 
