@@ -22,6 +22,7 @@
 | :niger:                   | Niger                    | `:niger:`                    |
 | :rwanda:                  | Rwanda                   | `:rwanda:`                   |
 | :senegal:                 | Senegal                  | `:senegal:`                  |
+| :togo:                    | Togo                     | `:togo:`                     |
 
 # America
 
