@@ -5,11 +5,12 @@
 | :benin:          | Benin            | `:benin:`          |
 | :burkina_faso:   | Burkina Faso     | `:burkina_faso:`   |
 | :congo_kinshasa: | Congo Kinshasa   | `:congo_kinshasa:` |
+| :cote_divoire:   | Cote d'Ivoire    | `:cote_divoire:`   |
 | :madagascar:     | Madagascar       | `:madagascar:`     | 
 
 
 :cote_divoire:
-:ivory_coast:
+
 
 # Europe
 
