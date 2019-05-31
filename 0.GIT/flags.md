@@ -18,11 +18,12 @@
 |----------------|------------------|--------------------|
 | :fr:           | France           | `:fr:`             |
 
-# North America
+# America
 
 |  Flag          | Country          | CDLR Short Name    |
 |----------------|------------------|--------------------|
 | :canada:       | Canada           | `:canada:`         |
+| :haiti:        | Haiti            | `:haiti:`          |
 
 
 https://unicode.org/emoji/charts/full-emoji-list.html
