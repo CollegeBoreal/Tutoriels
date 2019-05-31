@@ -13,6 +13,7 @@
 | :comoros:                 | Comoros                  | `:comoros:`                  |
 | :cameroon:                | Cameroon                 | `:cameroon:`                 |
 | :cote_divoire:            | Cote d'Ivoire            | `:cote_divoire:`             |
+| :guinea:                  | Guinea                   | `:guinea:`                   |
 | :guinea_bissau:           | Guinea Bissau            | `:guinea_bissau:`            |
 | :madagascar:              | Madagascar               | `:madagascar:`               |
 | :mauritius:               | Mauritius                | `:mauritius:`                |
