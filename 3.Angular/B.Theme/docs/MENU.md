@@ -25,7 +25,7 @@ const NB_THEME_PROVIDERS = [
 * generate a new interface called `pages-menu.ts` 
 
 ```
-$ ng generate interface pages/page-menu
+$ ng generate interface pages/pages-menu
 ```
 
 * change its entire content with the following:
