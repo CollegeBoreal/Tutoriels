@@ -9,11 +9,14 @@ https://nodejs.org/en/download/
 
 ## Versions minimales de Node and npm
 ```
-$ npm --version
-6.4.1
 
 $ node --version
 v10.15.3
+
+$ npm --version
+6.9.0
+
+
 
 ```
 
