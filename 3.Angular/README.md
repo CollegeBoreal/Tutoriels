@@ -20,7 +20,7 @@ $ npm install @angular/cli --global
 $ ng --version
 ```
 
-![alt tag](ngversion.png)
+![alt tag](ng-version.png)
 
 ## Créer un nouveau projet en utilisant SCSS
 
