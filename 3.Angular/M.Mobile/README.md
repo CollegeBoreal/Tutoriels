@@ -45,8 +45,8 @@ If you have any questions, check Stack Overflow: https://stackoverflow.com/quest
 
 ```
 $ tns --version
-```
 6.0.0-2019-06-14-134656-13407
+```
 
 ## Creating Apps with Templates
 
