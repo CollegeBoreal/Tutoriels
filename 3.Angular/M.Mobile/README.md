@@ -40,6 +40,14 @@ If you want to experiment with NativeScript in your browser, try the Playground:
 
 If you have any questions, check Stack Overflow: https://stackoverflow.com/questions/tagged/nativescript and our public Slack channel: https://nativescriptcommunity.slack.com/
 
+
+##### Check the installed version
+
+```
+$ tns --version
+```
+6.0.0-2019-06-14-134656-13407
+
 ## Creating Apps with Templates
 
 https://docs.nativescript.org/angular/start/quick-setup
