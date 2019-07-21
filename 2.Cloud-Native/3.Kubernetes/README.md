@@ -2,9 +2,7 @@
 
 ## Cheat Sheet
 
-[ :blue_book: ](./Kubernetes-Cheat-Sheet_07182019.pdf)
-
-Reference: https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
+[ :blue_book: ](./Kubernetes-Cheat-Sheet_07182019.pdf) https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
 
 ## Deploying locally for development purposes on :
 
