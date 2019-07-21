@@ -2,7 +2,7 @@
 
 ## Cheat Sheet
 
-[:home:](./Kubernetes-Cheat-Sheet_07182019.pdf)
+[:red_book:](./Kubernetes-Cheat-Sheet_07182019.pdf)
 
 Reference: https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
 
