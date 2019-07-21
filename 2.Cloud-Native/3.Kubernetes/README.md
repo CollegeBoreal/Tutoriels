@@ -1,5 +1,9 @@
 # Kubernetes
 
+## Cheat Sheet
+
+https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
+
 ## Deploying locally for development purposes on :
 
 ### :one: [Docker Desktop](./1.DockerDesktop)
