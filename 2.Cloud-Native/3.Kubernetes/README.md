@@ -2,7 +2,7 @@
 
 ## Cheat Sheet
 
-![image](./dddd)
+![image](./Kubernetes-Cheat-Sheet_07182019.pdf)
 
 Reference: https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
 
