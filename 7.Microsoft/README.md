@@ -13,17 +13,17 @@ https://boreal.onthehub.com
 
 # Cloud
 
-* Activer Azure Cloud for Students
+### Activer Azure Cloud for Students
 
 http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 
 ![Alt Tag](./Free_Azure.png)
 
-* Vérifier ses crédits
+### Vérifier ses crédits
 
 https://www.microsoftazuresponsorships.com
 
-* Installer sa première machine virtuelle
+# Installer sa première machine virtuelle
 
 
 | OS                   | Commentaires                                       |
