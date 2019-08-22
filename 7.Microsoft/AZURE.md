@@ -31,6 +31,21 @@ $ docker-machine create --driver azure \
    --azure-size Standard_B1s \
    --azure-subscription-id <subscription ID> \
    az-cb-prod
+   
+Running pre-create checks...
+(az-cb-prod) Completed machine pre-create checks.
+Creating machine...
+(az-cb-prod) Querying existing resource group.  name="college-boreal"
+(az-cb-prod) Resource group "college-boreal" already exists.
+(az-cb-prod) Configuring availability set.  name="docker-machine"
+(az-cb-prod) Configuring network security group.  name="az-cb-prod-firewall" location="eastus"
+(az-cb-prod) Querying if virtual network already exists.  name="docker-machine-vnet" rg="college-boreal" location="eastus"
+(az-cb-prod) Creating virtual network.  name="docker-machine-vnet" rg="college-boreal" location="eastus"
+(az-cb-prod) Configuring subnet.  name="docker-machine" vnet="docker-machine-vnet" cidr="192.168.0.0/16"
+(az-cb-prod) Creating public IP address.  name="az-cb-prod-ip" static=false
+(az-cb-prod) Creating network interface.  name="az-cb-prod-nic"
+(az-cb-prod) Creating storage account.  location="eastus" sku=Standard_LRS name="vhdstsxp67kdadysma7hvbot"
+(az-cb-prod) Creating virtual machine.  name="az-cb-prod" location="eastus" size="Standard_B1s" username="docker-user" osImage="canonical:UbuntuServer:16.04.0-LTS:latest"
 ```
 
 Enter the given code
