@@ -29,7 +29,7 @@ https://www.microsoftazuresponsorships.com
 | OS                   | Commentaires                                       |
 |----------------------|----------------------------------------------------|
 |[Linux](./AZURE.md)   | Suivre les commandes sous Docker                   |
-|[Windows ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)| creer sa machine a travers le [portail](https://portal.azure.com) Azure | 
+|[Windows ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)| Créer sa machine a travers le [portail](https://portal.azure.com) Azure | 
 
 
 
