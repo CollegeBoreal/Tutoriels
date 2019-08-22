@@ -144,4 +144,5 @@ https://negatblog.blob.core.windows.net/lists/os_image_list
 ### CLI Options for AZURE_IMAGE example
 ```
 --azure-image canonical:UbuntuServer:16.04.0-LTS:latest
+--azure-image canonical:UbuntuServer:18.04-LTS:latest
 ```
