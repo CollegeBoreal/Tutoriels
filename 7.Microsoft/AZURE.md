@@ -29,6 +29,7 @@ $ docker-machine create --driver azure \
    --azure-resource-group college-boreal \
    --azure-location eastus \
    --azure-size Standard_B1s \
+   --azure-image canonical:UbuntuServer:18.04-LTS:latest \
    --azure-subscription-id <subscription ID> \
    az-cb-prod
    
