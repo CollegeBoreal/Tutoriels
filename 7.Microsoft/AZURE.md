@@ -120,3 +120,13 @@ https://docs.microsoft.com/en-us/cli/azure/storage/blob
 ## Azure Maven
 
 https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage/4.0.0
+
+
+## Azure Image List (Non Official)
+
+https://negatblog.blob.core.windows.net/lists/os_image_list
+
+### CLI Options for AZURE_IMAGE example
+```
+--azure-image canonical:UbuntuServer:16.04.0-LTS:latest
+```
