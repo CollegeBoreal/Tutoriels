@@ -15,6 +15,13 @@ Python 3.7.4
 * PyCharm Idea : https://www.jetbrains.com/pycharm/
 * Enregistrement: https://www.jetbrains.com/student/
 
+
+## Jupiter Install
+
+https://jupyter.org/install
+
+pip install jupyterlab
+
 # References:
 
 https://www.python.org/about/gettingstarted/
