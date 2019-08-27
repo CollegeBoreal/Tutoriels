@@ -20,7 +20,19 @@ Python 3.7.4
 
 https://jupyter.org/install
 
-pip install jupyterlab
+```
+$ pip install jupyterlab
+```
+
+Launch
+
+```
+$ jupyter notebook
+```
+
+Execute
+
+http://localhost:8888/tree
 
 # References:
 
