@@ -1,3 +1,3 @@
 # Languages
 
-## :1: [Scala](Scala)
+## :one: [Scala](1.Scala)
