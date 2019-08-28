@@ -1,3 +1,7 @@
+# :closed_book: Guide
+
+http://biblio.collegeboreal.ca/Informatique
+
 # :book: Tutoriels
 
 ## [:zero:.GIT](0.GIT)  
