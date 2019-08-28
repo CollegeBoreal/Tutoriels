@@ -1,4 +1,4 @@
-# :closed_book: Guide
+# :closed_book: Guide De Programme [Informatique]
 
 http://biblio.collegeboreal.ca/Informatique
 
