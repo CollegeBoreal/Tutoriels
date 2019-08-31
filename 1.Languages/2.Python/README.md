@@ -38,3 +38,5 @@ http://localhost:8888/tree
 
 https://www.python.org/about/gettingstarted/
 
+https://kite.com/blog/python/functional-programming/ (Programmation Fonctionelle)
+
