@@ -4,9 +4,15 @@
 
 https://www.nativescript.org/
 
-## Book :closed_book:
+## Documentation
+
+   ### Book :closed_book:
 
 https://www.nativescript.org/get-the-nativescript-book
+
+   ### Video :movie:
+   
+https://www.nativescript.org/books-and-videos
 
 ## Installation
 
