@@ -4,6 +4,10 @@
 
 https://www.nativescript.org/
 
+## Book :closed_book:
+
+https://www.nativescript.org/get-the-nativescript-book
+
 ## Installation
 
 ### NativeScript
