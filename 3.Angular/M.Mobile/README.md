@@ -1,4 +1,4 @@
-# NativeScript
+# NativeScript :iphone:
 
 ## Site
 
@@ -10,7 +10,7 @@ https://www.nativescript.org/
 
 https://www.nativescript.org/get-the-nativescript-book
 
-   ### Video :movie:
+   ### Video :movie_camera:
    
 https://www.nativescript.org/books-and-videos
 
