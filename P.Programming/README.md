@@ -4,7 +4,7 @@
 
 ![image](images/LPC.png)
 
-![image](images/TLP.png)
+![image](images/TPP.png)
 
 https://blog.acolyer.org/2019/01/25/programming-paradigms-for-dummies-what-every-programmer-should-know/
 
