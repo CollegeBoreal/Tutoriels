@@ -51,6 +51,8 @@ https://www.youtube.com/playlist?list=PLw5h0DiJ-9PD2b2tM3m7GQsHpuklT-fOT
 
 https://www.lynda.com/fr/Angular-tutorials/Decouvrir-lecosysteme-dAngular/730130-2.html?org=collegeboreal.ca
 
+https://www.linkedin.com/learning/decouvrir-l-ecosysteme-d-angular?org=collegeboreal.ca
+
 
 ## Ressources Libres pour les images
 
