@@ -11,7 +11,7 @@ http://biblio.collegeboreal.ca/Informatique
 ## [:one:.Scala](1.Scala)  
   * Installation de Scala et de son environnement de développement  
   
-## [:two:.Docker](2.Container/2.Docker)  
+## [:two:.Docker](2.Cloud-Native/2.Docker)  
   * Installation d'une machine virtuelle avec Docker
 
 
