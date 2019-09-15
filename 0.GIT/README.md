@@ -59,6 +59,14 @@ $ git push origin master
 
 ## Pour mettre ajour ses informations personnelles
 
+* Changer l'éditeur par défaut de `vi` à `nano`
+
+```
+$ git config --global core.editor "nano"
+```
+
+* Changer le courriel et le nom utilisateur
+
 ```
 $ git config --global --edit
 ```
@@ -69,6 +77,8 @@ $ git config --global --edit
 # Please adapt and uncomment the following lines:
         name = MonNom
         email = MonCourriel@me_remplacer.com
+[core]
+        editor = nano
 ```
 
 
