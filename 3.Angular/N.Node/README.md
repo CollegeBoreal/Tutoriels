@@ -11,7 +11,7 @@ https://nodejs.org/en/download/
 ```
 
 $ node --version
-v10.15.3
+v10.16.3
 
 $ npm --version
 6.9.0
