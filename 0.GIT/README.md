@@ -30,7 +30,7 @@ $ cd Developer
 ```
 * Cloner votre premier repertoire git
 ```
-$ git clone https://github.com/CollegeBoreal/INF1083-200-19A-01.git
+$ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
 $ cd INF1083-200-19A-01
 ```
 
