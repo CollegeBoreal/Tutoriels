@@ -17,7 +17,7 @@ https://boreal.onthehub.com
 
 http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 
-![Alt Tag](./Free_Azure.png)
+![Alt Tag](./images/Free_Azure.png)
 
 ### Vérifier ses crédits
 
