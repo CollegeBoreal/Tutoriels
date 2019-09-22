@@ -99,6 +99,20 @@ $ git rm monfichier.md
 $ git rm -rf monrepertoire 
 ```
 
+# Gestion des fichiers volumineux
+
+* Utiliser LFS (Large File System)
+
+```
+$ git lfs install
+```
+
+* Modifier le buffer
+
+```
+git config --global http.postBuffer 1048576000
+```
+
 # Configurer git (Clé personnelle)
 
 ### .ssh/config
