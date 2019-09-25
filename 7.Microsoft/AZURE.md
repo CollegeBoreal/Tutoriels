@@ -86,7 +86,7 @@ $ az login
 
 ### AZ Config
 
-![alt tag](./AccessKeys.png)
+![image](images/AccessKeys.png)
 
 ~/.azure/config
 
