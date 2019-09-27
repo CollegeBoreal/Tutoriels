@@ -11,6 +11,20 @@ PS > bcdedit /set HypervisorLaunchType Auto
 
 ![image](images/bcedit-auto.png)
 
-:two: - S'assurer que le service HyperV est démarré 
+:three: - S'assurer que Docker est démarré
+
+![image](images/docker-logo.png)
+
+
+:four: - S'assurer que le service HyperV est démarré 
 
 ![image](images/docker-desktop-vm.png)
+
+:five: - S'assurer que le service HyperV est démarré 
+
+![image](images/Hyper-V_Manager.png)
+
+:six: - S'assurer que le service HyperV est démarré 
+
+![image](images/Hyper-V_Services.png)
+
