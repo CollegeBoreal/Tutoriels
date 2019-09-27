@@ -9,4 +9,4 @@ Utiliser `PowerShell` pour mettre à jour le type d'Hypervisor à démarrer (i.e
 PS > bcdedit /set HypervisorLaunchType Auto
 ```
 
-![image](images/bcedit.png)
+![image](images/bcedit-auto.png)
