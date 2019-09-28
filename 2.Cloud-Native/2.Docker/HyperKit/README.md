@@ -2,6 +2,9 @@
 
 https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-dockers-hyperkit
 
+
+Stored in the sandBox app directory `~/Library/Containers/`
+
 ```
 $ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 ```
