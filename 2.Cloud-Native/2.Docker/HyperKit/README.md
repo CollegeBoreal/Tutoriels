@@ -6,7 +6,7 @@ https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-doc
 Stored in the sandBox app directory `~/Library/Containers/`
 
 ```
-$ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+$ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 ```
 
 https://stackoverflow.com/questions/1509677/kill-detached-screen-session
