@@ -28,7 +28,7 @@ Name                    State       IPv4             Release
 ubuntu-vm               RUNNING     192.168.64.4     Ubuntu 18.04 LTS
 ```
 
-* Is the VM alive?
+* Is the VM reachable ?
 
 ```
 $ ping 192.168.64.4
