@@ -23,7 +23,7 @@ $ multipass shell ubuntu-vm
 * List all VMs
 
 ```
-$ multipass list
+$ multipass ls    # or list
 Name                    State       IPv4             Release
 ubuntu-vm               RUNNING     192.168.64.4     Ubuntu 18.04 LTS
 ```
