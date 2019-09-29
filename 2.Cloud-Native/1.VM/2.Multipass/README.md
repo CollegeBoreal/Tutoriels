@@ -1,22 +1,40 @@
 # Multipass
 
+## Install
+
 [Multipass.run](https://multipass.run)
 
+
+## Launch a machine
+
+* Launch
 
 ```
 $ multipass launch --name ubuntu-vm
 Launched: ubuntu-vm  
 ```
 
+* Get into
+
 ```
 $ multipass shell ubuntu-vm                                
 ```
+
+* List all VMs
 
 ```
 $ multipass list
 Name                    State       IPv4             Release
 ubuntu-vm               RUNNING     192.168.64.4     Ubuntu 18.04 LTS
 ```
+
+* Is the VM alive?
+
+```
+$ ping 192.168.64.4
+```
+
+* Get info about the VM
 
 ```
 $ multipass info ubuntu-vm
