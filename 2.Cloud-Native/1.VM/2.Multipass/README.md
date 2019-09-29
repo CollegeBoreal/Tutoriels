@@ -67,3 +67,8 @@ ubuntu-vm               DELETED     --               Not Available
 ```
 $ multipass purge
 ```
+
+```
+$ multipass ls
+No instances found.
+```
