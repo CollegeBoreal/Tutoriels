@@ -47,3 +47,17 @@ Load:           0.06 0.08 0.03
 Disk usage:     1.1G out of 4.7G
 Memory usage:   72.7M out of 986.1M
 ```
+
+* Delete VM
+
+```
+$ multipass delete ubuntu-vm
+```
+
+* See all the VMs
+
+```
+$ multipass list
+Name                    State       IPv4             Release
+ubuntu-vm               DELETED     --               Not Available
+```
