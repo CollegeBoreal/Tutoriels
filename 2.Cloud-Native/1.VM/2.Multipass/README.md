@@ -61,3 +61,9 @@ $ multipass list
 Name                    State       IPv4             Release
 ubuntu-vm               DELETED     --               Not Available
 ```
+
+* Cleanup
+
+```
+$ multipass purge
+```
