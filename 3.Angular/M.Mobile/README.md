@@ -58,6 +58,23 @@ $ tns --version
 6.0.0-2019-06-14-134656-13407
 ```
 
+##### Check if the emulator can run correctly
+
+```
+$ tns doctor
+No issues were detected.
+Your ANDROID_HOME environment variable is set and points to correct directory.
+Your adb from the Android SDK is correctly installed.
+The Android SDK is installed.
+A compatible Android SDK for compilation is found.
+Javac is installed and is configured properly.
+The Java Development Kit (JDK) is installed and is configured properly.
+Local builds for iOS can be executed only on a macOS system. To build for iOS on a different operating system, you can use the NativeScript cloud infrastructure.
+Component nativescript has 6.2.0-2019-09-04-074603-13841 version and is up to date.
+```
+
+
+
 ## Creating Apps with Templates
 
 https://docs.nativescript.org/angular/start/quick-setup
