@@ -22,6 +22,12 @@ https://www.nativescript.org/books-and-videos
 $ npm install nativescript@next --global 
 ```
 
+Vérifier l'installation
+
+```
+$ tns version
+5.0.0
+```
 
 To create a new project, you use:
 
