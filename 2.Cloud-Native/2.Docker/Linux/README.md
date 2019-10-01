@@ -49,7 +49,7 @@ i.e. de `git bash` Windows ou de votre Terminal Mac
 $ ssh-keygen
 ```
 
-* Copier la clé publique vers le Serveur ou est installé Docker Engine (i.e. substituer ubuntu)
+* Copier la clé publique vers le Serveur ou est installé Docker Engine (i.e. substituer ubuntu et l'adresse IP 10.13.237.16)
 
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
@@ -58,6 +58,8 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16
 ## 3) Creer votre `pseudo` machine virtuelle
 
 https://docs.docker.com/v17.09/machine/drivers/generic
+
+(i.e. substituer l'utilisateur ubuntu et l'adresse IP 10.13.237.16)
 
 ```
 $ docker-machine create --driver generic \
