@@ -25,7 +25,7 @@ $ npm install nativescript@next --global
 Vérifier l'installation
 
 ```
-$ tns version
+$ tns --version
 5.0.0
 ```
 
