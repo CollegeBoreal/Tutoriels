@@ -41,7 +41,7 @@ $ nano 300098957.md
 ```
 * mettre le fichier en scene (add to stage)
 ```
-$ git add 300098957.md
+$ git add .
 ```
 > Vérifier son status avec (doit etre vert)  
     ```
