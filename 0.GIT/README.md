@@ -54,7 +54,7 @@ $ git commit -m "Mon commentaire"
 ```
 * envoyer les modifications locales au serveur github
 ```
-$ git push origin master
+$ git push
 ```
 
 ## Pour mettre ajour ses informations personnelles
