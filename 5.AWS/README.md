@@ -96,9 +96,14 @@ $ docker-machine create --driver amazonec2 \
 ```
 
 
+# Références: 
 
-# AWS CLI
+## AWS CLI
 
 https://aws.amazon.com/fr/cli/
+
+## AWS Cheat Sheet
+
+https://linuxacademy.com/blog/amazon-web-services-2/your-aws-terminology-cheat-sheet/
 
 
