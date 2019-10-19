@@ -8,7 +8,7 @@ There is no perfect data structure design;
 
 <img src="images/Data_Compromise.png" alt="image" width="400" height="400"/>
 
-<img src="images/Design_Space.png" alt="image" width="400" height="400"/>
+<img src="images/Design_Space.png" alt="image" width="848" height="1084"/>
 
 ![image](images/First_Principles.png)
 
