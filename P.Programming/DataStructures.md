@@ -9,5 +9,8 @@ There is no perfect data structure design;
 
 ![image](images/Design_Space.png)
 
+![image](images/First_Principles.png)
+
+![image](images/Periodic_Tables.png)
 
 
