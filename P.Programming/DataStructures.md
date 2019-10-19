@@ -6,7 +6,7 @@ https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures
 There is no perfect data structure design;
 ```
 `![image](images/Data_Compromise.png)`
-<img src="images/Data_Compromise.png" alt="image" width="200"/>
+<img src="images/Data_Compromise.png" alt="image" width="200" height="200"/>
 
 ![image](images/Design_Space.png)
 
