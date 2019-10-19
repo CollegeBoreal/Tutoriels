@@ -15,3 +15,12 @@ There is no perfect data structure design;
 ![image](images/Periodic_Tables.png)
 
 
+# References:
+
+https://www.freecodecamp.org/news/what-makes-apache-kafka-so-fast-a8d4f94ab145/
+
+* MongoDB uses BTree
+
+* Cassandra uses LSM tree.
+
+* Kafka uses Queue and Protocol Buffers
