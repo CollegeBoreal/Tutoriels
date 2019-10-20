@@ -71,7 +71,7 @@ $ git config --global core.editor "nano"
 $ git config --global --edit
 ```
 
- -- Remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
+* Remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
 
 ```
 # This is Git's per-user configuration file.
