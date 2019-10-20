@@ -2,4 +2,4 @@
 
 | Date | Model | Serie      | Memory | Setting Up                                        |
 |------|-------|------------|--------|---------------------------------------------------|
-| 2013 | :one: | Model B]() | 512Mb  | https://www.youtube.com/watch?v=U7Dj7R8bu4k       |
+| 2013 | :one: | Model B    | 512Mb  | https://www.youtube.com/watch?v=U7Dj7R8bu4k       |
