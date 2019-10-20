@@ -1,5 +1,7 @@
 # Raspberry Pi
 
-| Date | Model | Serie      | Memory | Specific Signs     | Setting Up                                        |
-|------|-------|------------|--------|-------------------|---------------------------------------------------|
-| 2013 | :one: | Model B    | 512Mb  | Std SD, RCA Audio | https://www.youtube.com/watch?v=U7Dj7R8bu4k       |
+| Date | Serie | Model                                                                              | Memory | Specific Signs    | Setting Up                                       |
+|------|-------|---------------------------------------------------------------------------------|--------|-------------------|---------------------------------------------------|
+| 2013 | :one: | [B](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-model-b) | 512Mb  | Std SD, RCA Audio | https://www.youtube.com/watch?v=U7Dj7R8bu4k       |
+| 2014 | :two: | B     | 512Mb  | Std SD, RCA Audio | https://www.youtube.com/watch?v=U7Dj7R8bu4k       |
+
