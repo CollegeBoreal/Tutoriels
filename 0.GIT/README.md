@@ -57,7 +57,7 @@ $ git commit -m "Mon commentaire"
 $ git push
 ```
 
-## Pour mettre ajour ses informations personnelles
+## Configurer ses informations personnelles pour soumettre son travail vers `github.com`
 
 * Changer l'éditeur par défaut de `vi` à `nano`
 
@@ -65,11 +65,13 @@ $ git push
 $ git config --global core.editor "nano"
 ```
 
-* Changer le courriel et le nom utilisateur
+* Editer son nom utilisateur `github` et son courriel
 
 ```
 $ git config --global --edit
 ```
+
+ -- Remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
 
 ```
 # This is Git's per-user configuration file.
@@ -80,7 +82,6 @@ $ git config --global --edit
 [core]
         editor = nano
 ```
-
 
 ## Metter a jour mon repertoire local (pull)
 ```
@@ -110,7 +111,19 @@ $ git lfs install
 * Modifier le buffer
 
 ```
-git config --global http.postBuffer 1048576000
+$ git config --global http.postBuffer 1048576000
+```
+
+Le fichier de configuration devrait ressembler a ceci
+
+```
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[http]
+        postBuffer = 1048576000
 ```
 
 # Configurer git (Clé personnelle)
