@@ -39,3 +39,5 @@
 
 
 https://unicode.org/emoji/charts/full-emoji-list.html
+
+https://github.com/ikatyang/emoji-cheat-sheet
