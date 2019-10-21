@@ -12,3 +12,7 @@
 
 https://www.raspberrypi.org/documentation/installation/installing-images/
 
+Dexter Industries Images
+
+https://sourceforge.net/projects/dexterindustriesraspbianflavor/files/latest/download
+
