@@ -34,7 +34,7 @@ $ umount /dev/mmcblk0p1 /dev/mmcblk0p2
 - burn the zip
 
 ```
-$ unzip -p ~/Downloads/2019-09-26-raspbian-buster-full.zip \
-         | sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
+$ unzip -p ~/Downloads/2019-09-26-raspbian-buster-full.zip | \
+         sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
 ```
 
