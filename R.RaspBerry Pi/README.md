@@ -16,3 +16,8 @@ Dexter Industries Images
 
 https://sourceforge.net/projects/dexterindustriesraspbianflavor/files/latest/download
 
+
+```
+$ unzip -p 2019.04.05_Raspbian_For_Robots_by_Dexter_Industries_Stretch.zip | sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
+```
+
