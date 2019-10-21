@@ -7,3 +7,8 @@
 | 2015 | [:three:](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)  | [B](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-3-model-b)| 1Gb  | :four: | 1.2Ghz | 64 | GigaBit Ethernet |2.5A       | [:tv:](https://www.youtube.com/watch?v=T_WlF9I5EGw)       |
 | 2017 | [:three:](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) | [B+](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-3-model-b-pi-hardware)| 1Gb  | :four: | 1.4Ghz | 64 | GigaBit Ethernet |2.5A       | [:tv:](https://www.youtube.com/watch?v=izceGfkUtZU)       |
 
+
+## Installation 
+
+https://www.raspberrypi.org/documentation/installation/installing-images/
+
