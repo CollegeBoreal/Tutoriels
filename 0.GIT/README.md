@@ -57,7 +57,9 @@ $ git commit -m "Mon commentaire"
 $ git push
 ```
 
-## Configurer ses informations personnelles pour soumettre son travail vers `github.com`
+## Configuratio d'informations personnelles 
+
+:bulb: pour soumettre son travail vers `github.com`
 
 * Changer l'éditeur par défaut de `vi` à `nano`
 
