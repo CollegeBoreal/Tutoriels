@@ -37,8 +37,11 @@ $ cd Developer
    
    - cliquer sur le `presse papier` pour mettre en mémoire l'URL du répertoire
 
-<img src="images/NomDeURL.png" width=482 heigth=212></image>
+   <img src="images/NomDeURL.png" width=482 heigth=212></image>
 
+   - coller l'URL du répertoire en mémoire dans le presse papier avec RIGTH-CLICK/PASTE
+   
+   - - example
 
 ```
 $ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
