@@ -37,7 +37,7 @@ $ cd Developer
    
    - cliquer sur le `presse papier` pour mettre en mémoire l'URL du répertoire
 
-<img src="images/NomDeURL.png" width=200 heigth=200></image>
+<img src="images/NomDeURL.png" width=482 heigth=212></image>
 
 
 ```
