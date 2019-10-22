@@ -88,7 +88,7 @@ $ git config --global --edit
         email = MonCourriel@me_remplacer.com
 ```
 
-## Metter a jour mon repertoire local (pull)
+## Metter à jour mon rèpertoire local (pull)
 ```
 $ git pull 
 ```
