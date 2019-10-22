@@ -45,8 +45,12 @@ $ cd Developer
 
    ```
    $ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
-   $ cd INF1039-202-19A-01
-   ```
+   
+* allez dans le répertoire du cours
+
+```
+$ cd INF1039-202-19A-01
+```
 
 ## Creer son premier fichier sous git (utiliser vi)
 * Creer un fichier et l'editer 
