@@ -20,16 +20,19 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 ## Les premiers pas avec git
 
 * Ouvrir la fenetre Git bash
-* Creer un repertoire pour faire du developpement
+* Creer un repertoire pour faire du développement (en anglais et avec `D` en majuscule)
 ```
 $ mkdir Developer
 ```
-* changer de repertoire pour faire du developpement
+* changer de repertoire pour faire du développement
 ```
 $ cd Developer
 ```
 * Cloner votre premier repertoire git
 ```
+
+![image](images/NomDeURL.png)
+
 $ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
 $ cd INF1039-202-19A-01
 ```
