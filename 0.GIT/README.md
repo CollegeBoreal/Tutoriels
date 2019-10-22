@@ -60,7 +60,7 @@ $ git commit -m "Mon commentaire"
 $ git push
 ```
 
-## Configuration d'informations personnelles 
+## Configuration d'informations personnelles `~/.gitconfig`
 
 :bulb: pour soumettre son travail vers `github.com`
 
@@ -119,7 +119,7 @@ $ git lfs install
 $ git config --global http.postBuffer 1048576000
 ```
 
-Le fichier de configuration devrait ressembler a ceci
+La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
 
 ```
 [filter "lfs"]
