@@ -28,11 +28,19 @@ $ mkdir Developer
 ```
 $ cd Developer
 ```
+
 * Cloner votre premier repertoire git
-```
+
+   - aller sur la page github du cours
+   
+   - cliquer sur le bouton `clone or download`
+   
+   - cliquer sur le `presse papier` pour mettre en mémoire l'URL du répertoire
 
 ![image](images/NomDeURL.png)
 
+
+```
 $ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
 $ cd INF1039-202-19A-01
 ```
