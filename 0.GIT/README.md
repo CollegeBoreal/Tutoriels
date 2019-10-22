@@ -52,12 +52,15 @@ $ git add .
 ```
 $ git commit -m "Mon commentaire"
 ```
+
+:warning: Se referer à la section `Configuration d'informations personnelles` pour le premier `commit`
+
 * envoyer les modifications locales au serveur github
 ```
 $ git push
 ```
 
-## Configuratio d'informations personnelles 
+## Configuration d'informations personnelles 
 
 :bulb: pour soumettre son travail vers `github.com`
 
