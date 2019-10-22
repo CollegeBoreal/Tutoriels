@@ -71,16 +71,16 @@ $ git config --global core.editor "nano"
 $ git config --global --edit
 ```
 
-* Remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
+* Rajouter la section `[user]` et remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
 
 ```
-# This is Git's per-user configuration file.
+[core]
+        editor = nano
+
 [user]
 # Please adapt and uncomment the following lines:
         name = MonNom
         email = MonCourriel@me_remplacer.com
-[core]
-        editor = nano
 ```
 
 ## Metter a jour mon repertoire local (pull)
