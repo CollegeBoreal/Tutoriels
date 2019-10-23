@@ -159,6 +159,12 @@ Host github.com
     IdentityFile ~/.ssh/github.com.pk
 ```
 
+# Git & zsh
+
+https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/
+
+
+
 # Tutoriel sur Vim (Éditeur utilisé par Unix)
 
 https://www.filesilo.co.uk/video-tutorials/introduction-to-vim/
