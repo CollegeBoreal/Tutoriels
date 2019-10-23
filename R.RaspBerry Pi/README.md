@@ -37,4 +37,12 @@ $ umount /dev/mmcblk0p1 /dev/mmcblk0p2
 $ unzip -p ~/Downloads/2019-09-26-raspbian-buster-full.zip | \
          sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
 ```
+## LCD Display
 
+https://www.raspberrypi-spy.co.uk/2017/11/how-to-rotate-the-raspberry-pi-display-output/
+
+```
+sudo nano /boot/config.txt
+```
+
+add lcd_rotate=2
