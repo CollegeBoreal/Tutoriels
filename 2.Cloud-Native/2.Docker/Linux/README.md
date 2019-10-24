@@ -56,7 +56,9 @@ $ groups
 ubuntu adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
 ```
 
-## :b: Sur le client i.e. de `git bash` Windows ou de votre Terminal Mac
+## :b: Sur le client 
+
+:bookmark: i.e. de `git bash` Windows ou de votre Terminal Mac
 
 ### :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
 
