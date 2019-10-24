@@ -9,12 +9,40 @@
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
-```
-sudo snap install docker     # version 18.06.1-ce, or
-sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+* Installer avec apt
 
-See 'snap info docker' for additional versions.
 ```
+$ sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+```
+
+* demarrer le service
+
+```
+$ sudo systemctl start docker
+```
+
+* Verifier le service
+
+```
+$ systemctl status docker # doit être actif
+```
+
+## :two: Permissions
+
+
+```
+$ docker container ls
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+```
+
+```
+$ sudo -i
+
+# usermod --append --groups docker ubuntu
+```
+
+
+
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
 
@@ -27,12 +55,7 @@ $ sudo -i
 
 ## use Docker as a non-root user (i.e. substituer ubuntu)
 
-# usermod -aG docker ubuntu
-
-$ sudo systemctl enable docker
-
-$ systemctl status docker # doit être actif
-
+# usermod --append --groups docker ubuntu
 ```
 
 ## :two: Authoriser l'acces sans mot de passe
