@@ -9,6 +9,19 @@
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
+
+```
+$ docker
+
+Command 'docker' not found, but can be installed with:
+
+sudo snap install docker     # version 18.06.1-ce, or
+sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+
+See 'snap info docker' for additional versions.
+```
+
+
 * Installer avec apt
 
 ```
