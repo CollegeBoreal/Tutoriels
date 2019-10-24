@@ -58,7 +58,7 @@ ubuntu adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
 
 ## :three: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
 
-:warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante
+:warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante:
 
 ```
 Error creating machine: Error running provisioning: ssh command error:
