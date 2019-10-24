@@ -29,44 +29,24 @@ $ systemctl status docker # doit être actif
 
 ## :two: Permissions
 
+* Lister les conteneurs donne une erreur de permission
 
 ```
 $ docker container ls
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-```
-$ sudo -i
-
-# usermod --append --groups docker ubuntu
-```
-
-
-
-
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
-
-** dans le cas échéant, installer `curl` si non présent
+* Pour enlever l'erreur rajouter votre utilisateur au groupe docker
 
 ```
-$ sudo -i
-
-# curl -sSL https://get.docker.com | sh
-
-## use Docker as a non-root user (i.e. substituer ubuntu)
-
-# usermod --append --groups docker ubuntu
+$ sudo usermod --append --groups docker $USER
 ```
 
-## :two: Authoriser l'acces sans mot de passe
+* Pour verifier, sortir du terminal et lancer la commande `groups`, `docker` doit apparaitre
 
 ```
-$ sudo visudo   # edit sudo config file
-```
-
-### Rajouter la ligne ci-dessous en changeant votre utilisateur (i.e. substituer ubuntu)
-```
-ubuntu ALL=(ALL) NOPASSWD: ALL
+$ groups
+ubuntu adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
 ```
 
 ## :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
@@ -103,4 +83,36 @@ $ docker-machine create --driver generic \
 
 ```
 $ rm -rf ~/.docker/machine/machines/labo16
+```
+
+
+
+# Autre methode d'installation (plus difficile) 
+
+## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
+
+
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
+
+** dans le cas échéant, installer `curl` si non présent
+
+```
+$ sudo -i
+
+# curl -sSL https://get.docker.com | sh
+
+## use Docker as a non-root user (i.e. substituer ubuntu)
+
+# usermod --append --groups docker ubuntu
+```
+
+## :two: Authoriser l'acces sans mot de passe
+
+```
+$ sudo visudo   # edit sudo config file
+```
+
+### Rajouter la ligne ci-dessous en changeant votre utilisateur (i.e. substituer ubuntu)
+```
+ubuntu ALL=(ALL) NOPASSWD: ALL
 ```
