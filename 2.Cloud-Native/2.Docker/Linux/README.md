@@ -157,7 +157,7 @@ $ sudo snap install docker     # version 18.06.1-ce
 
 ```
 $ dpkg --list | grep docker
-ii  docker.io                             19.03.2-0ubuntu1                        amd64        Linux container runtime
+ii  docker.io      19.03.2-0ubuntu1      amd64     Linux container runtime
 ```
 
 ```
