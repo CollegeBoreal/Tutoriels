@@ -8,25 +8,16 @@
 
 ## :a: Sur le serveur
 
-## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
+### :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
 
-```
-$ docker
+** dans le cas échéant, installer `curl` si non présent (suivre les instructions du serveur)
 
-Command 'docker' not found, but can be installed with:
-
-sudo snap install docker     # version 18.06.1-ce, or
-sudo apt  install docker.io  # version 19.03.2-0ubuntu1
-
-See 'snap info docker' for additional versions.
-```
-
-
-* Installer avec apt
+* Installer avec le script `Docker`
 
 ```
-$ sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+$ sudo curl -sSL https://get.docker.com | sh
 ```
 
 * demarrer le service
@@ -35,13 +26,13 @@ $ sudo apt  install docker.io  # version 19.03.2-0ubuntu1
 $ sudo systemctl start docker
 ```
 
-* Verifier le service
+* Verifier que le service fonctionne
 
 ```
 $ systemctl status docker # doit être actif
 ```
 
-## :two: Permissions
+### :two: Permissions
 
 * Lister les conteneurs donne une erreur de permission
 
@@ -57,6 +48,8 @@ $ sudo usermod --append --groups docker $USER
 ```
 
 * Pour verifier, sortir du terminal et lancer la commande `groups`, `docker` doit apparaitre
+
+:warning: pour forcer le group il faut parfois rebooter la machine
 
 ```
 $ groups
@@ -101,24 +94,31 @@ $ rm -rf ~/.docker/machine/machines/labo16
 
 
 
-# Autre methode d'installation (plus difficile) 
+# Autre methode d'installation (plus facile)
+
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
 
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
+```
+$ docker
 
-** dans le cas échéant, installer `curl` si non présent
+Command 'docker' not found, but can be installed with:
+
+sudo snap install docker     # version 18.06.1-ce, or
+sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+
+See 'snap info docker' for additional versions.
+```
+
+
+* Installer avec apt
 
 ```
-$ sudo -i
-
-# curl -sSL https://get.docker.com | sh
-
-## use Docker as a non-root user (i.e. substituer ubuntu)
-
-# usermod --append --groups docker ubuntu
+$ sudo apt  install docker.io  # version 19.03.2-0ubuntu1
 ```
+
+
 
 ## :two: Authoriser l'acces sans mot de passe
 
