@@ -56,9 +56,9 @@ $ groups
 ubuntu adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
 ```
 
-## :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
+## :b: Sur le client i.e. de `git bash` Windows ou de votre Terminal Mac
 
-i.e. de `git bash` Windows ou de votre Terminal Mac
+### :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
 
 * generer votre cle privee/publique (~/.ssh/id_rsa)
 
@@ -72,7 +72,7 @@ $ ssh-keygen
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
 ```
 
-## 3) Creer votre `pseudo` machine virtuelle
+### 3) Creer votre `pseudo` machine virtuelle
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
