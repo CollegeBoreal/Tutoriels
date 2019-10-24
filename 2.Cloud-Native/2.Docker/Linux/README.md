@@ -125,7 +125,9 @@ $ rm -rf ~/.docker/machine/machines/labo16
 
 
 
-# Autre methode d'installation (plus facile)
+# Autre Références 
+
+:bookmark: Autre methode d'installation (plus facile) -- Ne pas utiliser
 
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
