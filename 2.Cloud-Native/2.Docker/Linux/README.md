@@ -130,3 +130,14 @@ $ sudo visudo   # edit sudo config file
 ```
 ubuntu ALL=(ALL) NOPASSWD: ALL
 ```
+
+# Enlever un package
+
+```
+$ dpkg --list | grep docker
+ii  docker.io                             19.03.2-0ubuntu1                        amd64        Linux container runtime
+```
+
+```
+$ sudo apt-get remove --purge 19.03.2-0ubuntu1
+```
