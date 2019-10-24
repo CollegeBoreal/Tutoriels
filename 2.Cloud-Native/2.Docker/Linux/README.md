@@ -6,6 +6,7 @@
   Le 'Driver' Docker à utilser est le generique `gereric`
 ```
 
+## :a: Sur le serveur
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
