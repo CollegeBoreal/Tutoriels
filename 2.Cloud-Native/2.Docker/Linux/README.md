@@ -108,6 +108,20 @@ $ sudo -i
 
 ## :two: Authoriser l'acces sans mot de passe
 
+** En cas d'erreur de création de `Docker Engine Generic` suivante
+
+```
+Error creating machine: Error running provisioning: ssh command error:
+command : sudo hostname labo16 && echo "labo16" | sudo tee /etc/hostname
+err     : exit status 1
+output  : sudo: no tty present and no askpass program specified
+```
+
+https://github.com/docker/machine/issues/1569
+
+Authoriser votre utilisateur à etre un `sudoer`
+
+
 ```
 $ sudo visudo   # edit sudo config file
 ```
