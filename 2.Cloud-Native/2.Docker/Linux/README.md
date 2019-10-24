@@ -75,7 +75,9 @@ https://github.com/docker/machine/issues/1569
 $ sudo visudo   # edit sudo config file
 ```
 
-  - Rajouter la ligne ci-dessous en changeant votre utilisateur (i.e. substituer ubuntu)
+  - Rajouter la ligne ci-dessous en changeant votre utilisateur 
+  
+  :warning: substituer ubuntu par votre utilisateur
 
   ```
   ubuntu ALL=(ALL) NOPASSWD: ALL
@@ -93,7 +95,9 @@ $ sudo visudo   # edit sudo config file
 $ ssh-keygen
 ```
 
-* Copier la clé publique vers le Serveur ou est installé Docker Engine (i.e. substituer ubuntu et l'adresse IP 10.13.237.16)
+* Copier la clé publique vers le Serveur ou est installé Docker Engine 
+
+  :warning: substituer `ubuntu` et l'adresse IP `10.13.237.16` par vos informations
 
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
@@ -139,15 +143,13 @@ See 'snap info docker' for additional versions.
 ```
 
 
-* Installer avec apt
+* Installer avec apt 
+
+:warning: installer une version officielle (18.06.1-ce) car une autre risque de ne pas marcher (19.03.2-0ubuntu1)
 
 ```
-$ sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+$ sudo snap install docker     # version 18.06.1-ce
 ```
-
-
-
-
 
 # Enlever un package
 
