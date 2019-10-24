@@ -9,6 +9,13 @@
 
 ## :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
+```
+sudo snap install docker     # version 18.06.1-ce, or
+sudo apt  install docker.io  # version 19.03.2-0ubuntu1
+
+See 'snap info docker' for additional versions.
+```
+
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
 
 ** dans le cas échéant, installer `curl` si non présent
