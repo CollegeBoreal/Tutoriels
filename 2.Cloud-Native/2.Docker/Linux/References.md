@@ -26,7 +26,7 @@ See 'snap info docker' for additional versions.
 $ sudo snap install docker     # version 18.06.1-ce
 ```
 
-# Enlever un package
+## (optionnel) Enlever un package
 
 ```
 $ dpkg --list | grep docker
