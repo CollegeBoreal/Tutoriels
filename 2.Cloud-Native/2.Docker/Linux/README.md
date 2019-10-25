@@ -20,17 +20,18 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-conven
 $ sudo curl -sSL https://get.docker.com | sh
 ```
 
-* demarrer le service
-
-```
-$ sudo systemctl start docker
-```
-
 * Verifier que le service fonctionne
 
 ```
 $ systemctl status docker # doit être actif
 ```
+
+* sinon démarrer le service
+
+```
+$ sudo systemctl enable docker
+```
+
 
 ### :two: Permissions
 
