@@ -36,3 +36,8 @@ ii  docker.io      19.03.2-0ubuntu1      amd64     Linux container runtime
 ```
 $ sudo apt-get remove --purge 19.03.2-0ubuntu1
 ```
+
+
+## DNS
+
+https://linuxize.com/post/how-to-set-dns-nameservers-on-ubuntu-18-04/
