@@ -41,3 +41,7 @@ https://www.microsoft.com/en-ca/software-download/windows10
 
 ## differences between Windows 10 (Editions)
 https://liliputing.com/2015/07/differences-between-windows-10-home-pro-enterprise-and-education.html
+
+## WSL
+
+https://wiki.ubuntu.com/WSL
