@@ -56,23 +56,28 @@ sbt script version: 1.3.3
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
 
 
+## Installation de Scala Interface en Ligne de Commandes (CLI)
+
+* Installer dans le terminal
+
+```
+$ sdk install scala
+```
+
+
+* Pour tester l'installation
+
+```
+$ scala --version
+Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
+```
+
 ## Installation de l'environnement intégré de développement (IDE)
 
 * Intellij Idea : https://www.jetbrains.com/idea/download
 * Enregistrement: https://www.jetbrains.com/student/
 
-## Installation de Scala Interface en Ligne de Commandes (CLI)
-
-* Scala CLI: https://www.scala-lang.org/download/
-
-Télécharger et extraire le fichier dans le répertoire ~/bin
-
-Ajuster son fichier de démarrage ~/.bashrc ou variable d'environnement 
-```
-export SCALA_HOME=~/bin/scala-2.12.1
-export PATH=$SCALA_HOME/bin:$PATH
-```
-
+## Play
 
 ### Debug Application:
 ```
