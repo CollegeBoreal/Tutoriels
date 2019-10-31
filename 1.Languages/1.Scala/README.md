@@ -2,23 +2,26 @@
 
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/HelloWorld.png)
 
+## Installation de [sdkman](https://sdkman.io)
+
+* Installer dans le terminal
+
+```
+$ curl -s "https://get.sdkman.io" | bash
+```
+
+* ouvrir un autre terminal et verifier l'installation
+
+```
+$ sdk version  
+
+SDKMAN 5.7.3+337
+```
+
+
 ## Installation de la machine virtuelle java
 
-* Java JDK 11 : http://www.oracle.com/technetwork/java/javase/downloads
 
-Ajuster son fichier de démarrage ~/.bashrc ou variable d'environnement 
-
-MacOSX
-```
-export JAVA_HOME="$(/usr/libexec/java_home --version 11)"
-export PATH=$JAVA_HOME/bin:$PATH
-```
-
-Windows
-```
-export JAVA_HOME="/c/Program Files/java/jdk-11.0.2"
-export PATH=$JAVA_HOME/bin:$PATH
-```
 
 ### Pour tester l'installation
 ```
