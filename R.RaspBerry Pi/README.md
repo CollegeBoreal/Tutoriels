@@ -46,3 +46,8 @@ sudo nano /boot/config.txt
 ```
 
 add lcd_rotate=2
+
+
+### Ubuntu Server
+
+https://ubuntu.com/download/iot/raspberry-pi
