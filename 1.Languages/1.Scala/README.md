@@ -93,6 +93,8 @@ Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend
 
 # References:
 
+:bulb: https://dzone.com/articles/sdkman-managing-sdks-were-never-so-smart
+
 :bangbang: https://www.toptal.com/scala/scala-bytecode-and-the-jvm
 
 
