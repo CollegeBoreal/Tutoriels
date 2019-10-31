@@ -21,36 +21,36 @@ SDKMAN 5.7.3+337
 
 ## Installation de la machine virtuelle java
 
+* Installer dans le terminal
 
-
-### Pour tester l'installation
 ```
-$ java -version
-java version "11.0.1" 2018-10-16 LTS
-Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
-Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+$ sdk install java
+```
+
+* Pour tester l'installation
+
+```
+$ java --version
+openjdk 11.0.5 2019-10-15
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.5+10)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.5+10, mixed mode)
 ```
 
 ## Installation de l'environnement de projet SBT (Simple Build Tool)
 
-* Automatique:  
+* Installer dans le terminal
 
-http://www.scala-sbt.org/download.html
-
-* manuelle:  
-
-http://www.scala-sbt.org/0.13/docs/Manual-Installation.html
-
-Windows
 ```
-export SBT_HOME="/c/Program Files/sbt"
-export PATH=$SBT_HOME/bin:$PATH
+$ sdk install sbt
 ```
 
-Mac
+
+* Pour tester l'installation
+
 ```
-export SBT_HOME="/Applications/sbt"
-export PATH=$SBT_HOME/bin:$PATH
+$ sbt --version
+[info] 1.2.8
+sbt script version: 1.3.3
 ```
 
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
