@@ -72,11 +72,6 @@ $ scala --version
 Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
 ```
 
-## Installation de l'environnement intégré de développement (IDE)
-
-* Intellij Idea : https://www.jetbrains.com/idea/download
-* Enregistrement: https://www.jetbrains.com/student/
-
 ## Play
 
 ### Debug Application:
