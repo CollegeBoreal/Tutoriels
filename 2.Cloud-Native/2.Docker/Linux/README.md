@@ -81,7 +81,7 @@ $ sudo visudo   # edit sudo config file
   :warning: substituer ubuntu par votre utilisateur
 
   ```
-  ubuntu ALL=(ALL) NOPASSWD: ALL
+  ubuntu ALL=(ALL:ALL) NOPASSWD: ALL
   ```
 
 ## :b: Sur le client 
