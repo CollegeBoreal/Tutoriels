@@ -123,18 +123,37 @@ $ git rm monfichier.md
 $ git rm -rf monrepertoire 
 ```
 
-# Gestion des fichiers volumineux
-
-* Utiliser LFS (Large File System)
+# http buffer
 
 ```
-$ git lfs install
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
 ```
 
 * Modifier le buffer
 
 ```
 $ git config --global http.postBuffer 1048576000
+```
+
+La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
+
+```
+...
+
+[http]
+        postBuffer = 1048576000
+```
+
+
+# Gestion des fichiers volumineux
+
+* Utiliser LFS (Large File System)
+
+```
+$ git lfs install
 ```
 
 La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
