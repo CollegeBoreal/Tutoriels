@@ -40,4 +40,10 @@ https://github.com/hjacobs/kubernetes-failure-stories
 
 ## Raspberry Pi 4
 
+* Install on Pies and OpenFaaS
+
 https://www.youtube.com/watch?v=DjpVtNjiXSU
+
+* Open FaaS - GOTO 2018 • Serverless Beyond the Hype • Alex Ellis
+
+https://www.youtube.com/watch?v=yOpYYYRuDQ0
