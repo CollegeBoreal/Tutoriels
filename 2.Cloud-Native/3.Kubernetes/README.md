@@ -37,3 +37,7 @@ https://blog.hasura.io/gke-vs-aks-vs-eks-411f080640dc
 ### :fire_engine: Failure Stories
 
 https://github.com/hjacobs/kubernetes-failure-stories
+
+## Raspberry Pi 4
+
+https://www.youtube.com/watch?v=DjpVtNjiXSU
