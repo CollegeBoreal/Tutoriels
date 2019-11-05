@@ -23,6 +23,8 @@ https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d
 
 https://www.quora.com/What-are-the-best-freelancing-sites
 
+https://www.codementor.io/freelance-rates
+
 
 
 
