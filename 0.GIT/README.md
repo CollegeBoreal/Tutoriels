@@ -123,7 +123,7 @@ $ git rm monfichier.md
 $ git rm -rf monrepertoire 
 ```
 
-# http buffer
+# [http buffer](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)
 
 ```
 error: RPC failed; curl 18 transfer closed with outstanding read data remaining
