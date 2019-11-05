@@ -159,13 +159,13 @@ $ git lfs install
 La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
 
 ```
+...
+
 [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
         process = git-lfs filter-process
         required = true
-[http]
-        postBuffer = 1048576000
 ```
 
 # Configurer git (Clé personnelle)
