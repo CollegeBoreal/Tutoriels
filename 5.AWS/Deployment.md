@@ -2,11 +2,14 @@
 
 # Créer sa clé d'accès
 
+![image](images/menu.png)
+
+![image](images/SecurityCredentials.png)
+
 ![image](images/CleAccess.png)
 
 ![image](images/CreerCle.png)
 
-![image](images/SecurityCredentials.png)
 
 
 # AWS Deploiement
