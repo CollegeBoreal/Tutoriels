@@ -49,7 +49,7 @@ https://www.awseducate.com/SiteLogin
 
 ```
 $ mkdir -p ~/.aws
-$ vi ~/.aws/credentials
+$ nano ~/.aws/credentials
 ```
 
 #### appliquer vos identifiants
