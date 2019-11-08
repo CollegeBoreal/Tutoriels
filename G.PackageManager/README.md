@@ -19,6 +19,14 @@
 
 
 
+```
+$ choco list --local-only
+```
+
+
+* Rajouter `-not-silent` pour debugger avec le UI
+
+
 
 
 ## MacOS
