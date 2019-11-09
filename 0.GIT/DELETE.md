@@ -28,7 +28,7 @@ $ git checkout <commit>^ -- <file>
 $ git log --diff-filter=D --summary
 ```
 
-* How to list all the files in a commit?
+*[ How to list all the files in a commit?](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
 
 ```
 % git diff-tree --no-commit-id --name-only  -r bdfec3
