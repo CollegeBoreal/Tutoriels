@@ -47,7 +47,7 @@ $ cd Developer
 $ cd INF1039-202-19A-01
 ```
 
-## Creer son premier fichier sous git (utiliser vi)
+## :two: Créer son premier fichier sous git (utiliser vi)
 * Creer un fichier et l'editer 
 ```
 $ nano 300098957.md
@@ -73,7 +73,7 @@ $ git commit -m "Mon commentaire"
 $ git push
 ```
 
-## Configuration d'informations personnelles `~/.gitconfig`
+## :three: Configurer GIT `~/.gitconfig`
 
 :bulb: pour soumettre son travail vers `github.com`
 
