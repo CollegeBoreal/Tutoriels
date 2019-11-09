@@ -24,7 +24,7 @@ $ brew install git
 * git Client : https://git-scm.com/downloads  
 
 
-# :red_book: Livres
+# :blue_book: Livres
 
 * [Livre git](https://git-scm.com/book/fr/v2)
 
