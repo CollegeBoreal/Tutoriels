@@ -22,6 +22,5 @@ $ brew install git
 ## :two: Installation Standard des binaires
 
 * git Client : https://git-scm.com/downloads  
-* [Livre git](https://git-scm.com/book/fr/v2)
 
 
