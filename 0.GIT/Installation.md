@@ -9,3 +9,9 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 * [Livre git](https://git-scm.com/book/fr/v2)
 
 ## Installation avec [chocolatey](https://chocolatey.org)
+
+
+
+```
+> choco install git.install
+```
