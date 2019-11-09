@@ -35,3 +35,16 @@ chocolatey-core.extension 1.3.4
 
 
 ## MacOS
+
+
+:one: Executer la commande suivante dans le `Terminal`
+
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+:two: Verifier l'installation
+
+```
+brew list --versions
+```
