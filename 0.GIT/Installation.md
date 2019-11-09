@@ -8,8 +8,10 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 * git Client : https://git-scm.com/downloads  
 * [Livre git](https://git-scm.com/book/fr/v2)
 
-## Installation avec [chocolatey](https://chocolatey.org)
 
+## Installation avec un Package Manager
+
+### Installation avec [chocolatey](https://chocolatey.org) - Windows Seulement
 
 
 ```
