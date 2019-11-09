@@ -1,7 +1,7 @@
 # Package Manager
 
 
-## Windows
+## :a: Windows
 
 
 [chocolatey.org](http://chocolatey.org/)
@@ -34,7 +34,7 @@ chocolatey-core.extension 1.3.4
 
 
 
-## MacOS
+## :b: MacOS
 
 
 :one: Executer la commande suivante dans le `Terminal`
