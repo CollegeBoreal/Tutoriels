@@ -51,7 +51,7 @@ $ brew cask list --versions
 ```
 
 
-:three: Multiple Users (only)
+:bookmark: Multiple Users (only)
 
 https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup
 
