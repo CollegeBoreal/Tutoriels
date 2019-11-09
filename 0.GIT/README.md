@@ -10,12 +10,7 @@ https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeb
 
 10 git commands you should know
 
-https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
-
-## Installation de la gestion de source
-
-* git Client : https://git-scm.com/downloads  
-* [Livre git](https://git-scm.com/book/fr/v2)
+## [Installation](Installation.md)
 
 ## Les premiers pas avec git
 
