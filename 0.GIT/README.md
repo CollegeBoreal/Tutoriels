@@ -10,9 +10,9 @@ https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeb
 
 10 git commands you should know
 
-## [Installation](Installation.md)
+## :zero: [Installation](Installation.md)
 
-## Les premiers pas avec git
+## :one: Les premiers pas avec git
 
 * Ouvrir la fenetre Git bash
 * Creer un repertoire pour faire du développement (en anglais et avec `D` en majuscule)
