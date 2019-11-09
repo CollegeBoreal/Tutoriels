@@ -46,5 +46,5 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 :two: Verifier l'installation
 
 ```
-brew list --versions
+$ brew list --versions
 ```
