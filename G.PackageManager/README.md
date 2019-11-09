@@ -1,7 +1,7 @@
 # Package Manager
 
 
-## :w: Windows
+## :a: Windows
 
 
 [chocolatey.org](http://chocolatey.org/)
