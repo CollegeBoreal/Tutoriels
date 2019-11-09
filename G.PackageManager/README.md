@@ -4,10 +4,10 @@
 ## Windows
 
 
-:one: Executer la commande suivante dans `cmd` en tant qu'Administrateur
+:one: Executer la commande suivante dans `PowerShell` en tant qu'Administrateur
 
 ```
-(Touche Windows > taper "cmd" > right click > Run as Administrator)
+(Touche Windows > taper "Windows PowerShell" > right click > Run as Administrator)
 ```
 
 [chocolatey.org](http://chocolatey.org/)
