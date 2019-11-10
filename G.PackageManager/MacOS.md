@@ -10,8 +10,8 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 :two: Verifier l'installation
 
 ```
-$ brew list --versions
 $ brew cask list --versions
+$ brew list --versions # Version originale avec package plus petits
 ```
 
 <hr/>
