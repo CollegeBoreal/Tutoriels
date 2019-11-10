@@ -12,6 +12,8 @@ Avec [chocolatey.org](http://chocolatey.org/)
 
 :two: Installer des `packages`
 
+:bulb: Rajouter `-not-silent` pour debugger avec le UI
+
 * Docker
 
 ```
