@@ -25,5 +25,3 @@ chocolatey-core.extension 1.3.4
 ```
 
 
-* Rajouter `-not-silent` pour debugger avec le UI
-
