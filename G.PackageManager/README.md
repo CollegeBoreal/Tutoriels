@@ -67,7 +67,7 @@ $ sudo dseditgroup -o edit -a $(whoami) -t user admin
 $ groups | grep admin
 ```
 
-As root, tweak the HomeBrew Directories
+As root, tweak the `HomeBrew` Directories
 
 ```
 $ sudo -i
@@ -76,5 +76,11 @@ $ sudo -i
 # chgrp -R admin Homebrew Caskroom Cellar bin
 # chmod -R g+rwX Homebrew Caskroom Cellar bin
 # ls -lae .
-# exit
+```
+
+Same treatment for `var/HomeBrew` Directories
+
+```
+# chgrp -R admin var/Homebrew
+# chmod -R g+rwX var/Homebrew
 ```
