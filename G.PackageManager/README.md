@@ -6,7 +6,7 @@
 
 Avec [chocolatey.org](http://chocolatey.org/)
 
-:one: Suivre le lien v
+:one: Suivre le lien --v--
 
    Installer sous [Windows](Windows.md)
 
@@ -23,7 +23,7 @@ $ brew cask install docker
 
 Avec [brew.sh](http://brew.sh/)
 
-:one: Suivre le lien v
+:one: Suivre le lien --v--
 
   Installer sous [MacOS](MacOS.md)
 
