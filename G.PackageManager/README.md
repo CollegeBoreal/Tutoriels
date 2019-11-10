@@ -47,7 +47,7 @@ $ brew cask install docker
 $ brew cask install chrome
 ```
 
-:three: Chercher des packages
+:three: Chercher des packages [cask](https://formulae.brew.sh/cask/)
 
 ```
 $ brew search --desc 'musescore' 
