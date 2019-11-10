@@ -46,3 +46,9 @@ $ brew cask install docker
 ```
 $ brew cask install chrome
 ```
+
+:three: Chercher des packages
+
+```
+$ brew search --desc 'musescore' 
+```
