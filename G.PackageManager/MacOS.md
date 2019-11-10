@@ -14,7 +14,7 @@ $ brew list --versions
 $ brew cask list --versions
 ```
 
---
+<hr/>
 
 
 :bookmark: Multiple Users (only)
