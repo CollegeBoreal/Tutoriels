@@ -24,6 +24,11 @@ $ choco install docker
 $ choco install google-chrome
 ```
 
+:three: Chercher des packages [choco](https://chocolatey.org/packages)
+
+```
+$ choco search musescore
+```
 
 ## :b: MacOS
 
