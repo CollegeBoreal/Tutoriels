@@ -1,4 +1,4 @@
-# Windows
+# :a: Windows
 
 [chocolatey.org](http://chocolatey.org/)
 
