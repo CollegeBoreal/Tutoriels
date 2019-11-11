@@ -27,8 +27,4 @@ $ tns --version
   Follow [Emulate](emulation)
 
 
-:three: Utiliser NativeScript
-
-https://github.com/CollegeBoreal/Tutoriels/tree/master/3.Angular/M.Mobile
-
 
