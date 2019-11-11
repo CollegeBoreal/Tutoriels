@@ -16,7 +16,10 @@ https://www.nativescript.org/books-and-videos
 
 ## :one: Playground
 
-Installer le [Playground](P.Playground)
+| Type    | Installation                   |
+|---------|--------------------------------|
+| Preview | https://play.nativescript.org/ |
+| Local   | [Playground](P.Playground)     |
 
 ## :two: Utilisation
 
