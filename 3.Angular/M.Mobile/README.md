@@ -20,7 +20,7 @@ Installer le [Playground](P.Playground)
 
 ## :two: Utilisation
 
-### NativeScript
+### NativeScript CLI
 
 ```
 $ npm install nativescript@next --global 
