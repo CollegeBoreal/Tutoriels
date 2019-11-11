@@ -18,7 +18,7 @@ https://www.nativescript.org/books-and-videos
 
 Installer le [Playground](P.Playground)
 
-## :two: Installation
+## :two: Utilisation
 
 ### NativeScript
 
@@ -32,6 +32,9 @@ Vérifier l'installation
 $ tns --version
 5.0.0
 ```
+
+### Projet
+
 
 To create a new project, you use:
 
