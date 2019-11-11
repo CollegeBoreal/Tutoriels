@@ -1,6 +1,6 @@
 # NativeScript :iphone:
 
-## Site
+## :zero: Site
 
 https://www.nativescript.org/
 
@@ -14,7 +14,11 @@ https://www.nativescript.org/get-the-nativescript-book
    
 https://www.nativescript.org/books-and-videos
 
-## Installation
+## :one: Playground
+
+Installer le [Playground](P.Playground)
+
+## :two: Installation
 
 ### NativeScript
 
