@@ -93,7 +93,7 @@ Component nativescript has 6.2.0-2019-09-04-074603-13841 version and is up to da
 
 | Type       | Installation                   |
 |------------|--------------------------------|
-| Templates  | [Templates](Templates)         |
-| Schematics | [Schematics](Schematics)       |
+| Templates  | [Templates](Templates.md)      |
+| Schematics | [Schematics](Schematics.md)    |
 
 
