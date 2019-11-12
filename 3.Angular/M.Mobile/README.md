@@ -91,13 +91,3 @@ Component nativescript has 6.2.0-2019-09-04-074603-13841 version and is up to da
 
 
 
-## Creating Apps with Templates
-
-https://docs.nativescript.org/angular/start/quick-setup
-
-https://github.com/NativeScript/nativescript-app-templates
-
-```
-$ tns create my-tab-ng --template tns-template-tab-navigation-ng
-```
-
