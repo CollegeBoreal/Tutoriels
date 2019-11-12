@@ -89,5 +89,11 @@ Local builds for iOS can be executed only on a macOS system. To build for iOS on
 Component nativescript has 6.2.0-2019-09-04-074603-13841 version and is up to date.
 ```
 
+# References
+
+| Type       | Installation                   |
+|------------|--------------------------------|
+| Templates  | [Templates](Templates)         |
+| Schematics | [Schematics](Schematics)       |
 
 
