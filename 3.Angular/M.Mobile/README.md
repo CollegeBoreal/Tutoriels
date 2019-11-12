@@ -101,18 +101,3 @@ https://github.com/NativeScript/nativescript-app-templates
 $ tns create my-tab-ng --template tns-template-tab-navigation-ng
 ```
 
-## [Reference: ]NativeScript Schematics
-
-```
-$ npm install @nativescript/schematics --global 
-```
-
-Note: MacOS, Linux add `--unsafe-perm`
-
-
-### Web + Mobile Code Sharing project
-
-```
-$ ng new --collection=@nativescript/schematics my-shared-app --shared
-```
-
