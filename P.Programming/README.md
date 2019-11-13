@@ -1,7 +1,7 @@
 # Programming
 
-[Paradigme](Paradigm.md)
+:pushpin: [Paradigme](Paradigm.md)
 
-[Structures de donnees](DataStructures.md)
+:pushpin: [Structures de donnees](DataStructures.md)
 
-[Algorithmes](Algorithms.md)
+:pushpin: [Algorithmes](Algorithms.md)
