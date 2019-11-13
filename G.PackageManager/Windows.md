@@ -20,8 +20,7 @@
 > choco list --local-only
 Chocolatey v0.10.15
 chocolatey 0.10.15
-chocolatey-core.extension 1.3.4
-3 packages installed.
+1 packages installed.
 ```
 
 
