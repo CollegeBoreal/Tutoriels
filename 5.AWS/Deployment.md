@@ -61,3 +61,14 @@ $ docker-machine create --driver amazonec2 \
                         --amazonec2-iam-instance-profile mon-profil \  
                         cb-dev
 ```
+
+Avec une paire de clés
+```
+$ docker-machine create --driver amazonec2  \
+                        --amazonec2-security-group default \
+                        --amazonec2-keypair-name test \
+                        --amazonec2-ssh-keypath ~/.aws \
+                        cb-dev
+```
+
+
