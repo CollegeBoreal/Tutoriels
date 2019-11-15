@@ -14,7 +14,7 @@ Récupérer votre numéro de compte AWS dans les paramètres de votre compte.
 ![alt tag](images/IDduCompte.png)
 
 
-![alt tag](images/aws.PNG)
+![alt tag](../images/aws.PNG)
 
 * Pour terminer l'application appuyer sur `Submit`
 
