@@ -11,13 +11,6 @@ Note: Si vous en avez deja, un entrer dans votre compte.
 
 https://aws.amazon.com/fr/console/
 
-## Numéro de compte AWS
-
-Récupérer votre numéro de compte AWS dans les paramètres de votre compte.
-
-![alt tag](images/IDduCompte.png)
-
-
 ## Créer un compte AWS Educate
 
 https://aws.amazon.com/fr/education/awseducate/
@@ -32,7 +25,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-* Pour ID du compte:  Rechercher l'information dans votre compte `AWS Tableau de Bord` (voir ci dessus)
+* Choisir entre le compte régulier `AWS Account ID` ou `AWS Educate Starter Account` 
 
 ![alt tag](images/aws.PNG)
 
