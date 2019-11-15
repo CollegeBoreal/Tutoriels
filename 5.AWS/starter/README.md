@@ -1,0 +1,6 @@
+![image](images/AWSAccount.png)
+![image](images/Credentials.png)
+![image](images/VocareumAWSConsole.png)
+![image](images/VocareumConsole.png)
+![image](images/VocareumConsoleAWS.png)
+![image](images/VocareumConsoleDET.png)
