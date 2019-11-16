@@ -25,10 +25,15 @@ $ aws --version
 aws-cli/1.16.280 Python/3.7.5 Darwin/19.0.0 botocore/1.13.16
 ```
 
-## :one: Configuration
+## :one: Configuration ~/.aws/config
+
+* Rajouter la  région par défault
 
 ```
-$ aws config
+aws configure
+AWS Access Key ID [****************DN2Q]: 
+AWS Secret Access Key [****************nl3Z]: 
+Default region name []: us-east-1
 ```
 
 
