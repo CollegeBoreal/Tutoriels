@@ -45,6 +45,8 @@ Default output format [None]:
 
 ## :two: Utilisation
 
+:pushpin:  Groupes de Sécurité
+
 * Liste les groupes de sécurités
 
 ```
@@ -55,5 +57,11 @@ $ aws ec2 describe-security-groups | grep GroupName
 
 ```
 $ aws ec2 describe-security-groups --group-names default
+```
+
+:pushpin:  Instances
+
+```
+$ aws ec2 describe-instances --output table
 ```
 
