@@ -1,7 +1,7 @@
 # AWS (Amazon Web Services)
 
 
-## :zero: AWS Educate: Quoi?
+## :ab: AWS Educate: Quoi?
 
 https://www.youtube.com/watch?v=X36oOsjyoXA
 
@@ -9,7 +9,9 @@ https://www.youtube.com/watch?v=X36oOsjyoXA
 Vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par AWS dans le cadre des cours sur l'infrastructure info-nuagique.
 ```
 
-## :one: Créer un compte AWS Educate
+## :a: Créer un compte AWS Educate
+
+##### :one: Appliquer 
 
 https://aws.amazon.com/fr/education/awseducate/
 
@@ -26,7 +28,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-:two: Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
+##### :two: Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
 :pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
 
