@@ -1,8 +1,18 @@
 # Multipass
 
-## Install
+## Install 
 
-[Multipass.run](https://multipass.run)
+##### :m:  Manual install on [Multipass.run](https://multipass.run)
+
+##### :m: with Package Managers
+
+:pushpin: MacOS
+
+```
+$ brew cask install multipass
+```
+
+:pushpin: MacOS
 
 
 ## Launch a machine
