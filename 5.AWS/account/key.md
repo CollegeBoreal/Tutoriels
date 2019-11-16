@@ -10,15 +10,18 @@
 
 ![image](images/SecurityCredentials.png)
 
-:pushpin: Dans la fenetre ci-dessous, choisir `Cles Acces`
+:pushpin: Dans la fenetre ci-dessous, choisir `clés d'accès`
 
 ![image](images/CleAccess.png)
+
+:pushpin: Générer votre clé
+
 
 ![image](images/CreerCle.png)
 
 
 
-# :two: Installer ses clés
+# :two: Installation ses clés sur votre machine
 
 ```
 $ mkdir -p ~/.aws
