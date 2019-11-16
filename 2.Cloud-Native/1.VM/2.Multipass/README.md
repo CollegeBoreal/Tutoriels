@@ -16,7 +16,7 @@ https://github.com/CanonicalLtd/multipass/issues/826
 $ brew cask install multipass
 ```
 
-## "b: Launch a machine
+## :b: Launch a machine
 
 * Launch
 
