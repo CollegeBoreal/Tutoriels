@@ -2,7 +2,8 @@
 
 #### Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
-par défaut (t2.micro)
+:pushpin: par défaut (t2.micro) - :dollar:
+
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
