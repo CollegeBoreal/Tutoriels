@@ -1,7 +1,7 @@
 # AWS (Amazon Web Services)
 
 
-## :one: Créer son compte Amazon AWS
+## :one: Créer son compte Amazon avec AWS Educate
 
 :pushpin: [Educate](Educate.md)
 
