@@ -3,7 +3,7 @@
 
 ## :one: Créer son compte Amazon avec AWS Educate
 
-:pushpin: [Educate](Educate.md)
+:pushpin: [Educate](educate)
 
 ## :two: Créer sa clé d'accés
 
@@ -11,12 +11,12 @@
 
 | Types de compte             |
 |-----------------------------|
-| [Régulier](account/key.md)  |
-| [Vocareum](starter/key.md)  |
+| [Régulier](educate/account/key.md)  |
+| [Vocareum](educate/starter/key.md)  |
 
 ## :three: Créer sa machine virtuelle VM
 
-:pushpin: [deployment](Deployment.md)
+:pushpin: [deployment](deployment)
 
 
 # Références: 
