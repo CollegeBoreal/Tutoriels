@@ -3,7 +3,7 @@
 
 ## :one: Créer son compte Amazon AWS
 
-:pushpin: [Educate](Educate)
+:pushpin: [Educate](Educate.md)
 
 ## :two: Créer sa machine virtuelle VM
 
