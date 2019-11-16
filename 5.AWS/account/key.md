@@ -19,7 +19,7 @@
 
 ![image](images/CreerCle.png)
 
-:bookmark: Un fichier comportant vos identifiants secrets sera telecharge sur votre machine client. Ouvrir ce fichier et r/cuperer la cle d'acces :key: et le code secret :secret:
+:bookmark: Un fichier comportant vos identifiants secrets sera telecharge sur votre machine client l'ouvrir et recuperer la cle d'acces :key: et le code secret :secret:
 
 
 
