@@ -21,7 +21,7 @@ http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 
 ### Vérifier ses crédits
 
-https://www.microsoftazuresponsorships.com
+https://www.microsoftazuresponsorships.com sera remplace par https://aka.ms/StartEdu   
 
 # Installer sa première machine virtuelle
 
