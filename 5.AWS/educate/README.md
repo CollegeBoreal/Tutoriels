@@ -27,7 +27,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Remplir la forme ci-dessous selon le modèle
 
-![alt tag](images/AWSEducateForm.png)
+![alt tag](images/EducateForm3.png)
 
 ---
 
