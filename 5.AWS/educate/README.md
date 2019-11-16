@@ -9,17 +9,15 @@ Dans le cadre des cours sur l'infrastructure info-nuagique, vous aurez besoin d'
 
 ## :a: Créer un compte AWS Educate
 
-##### :one: Appliquer 
-
 https://aws.amazon.com/fr/education/awseducate/
 
-###### :pushpin: Form 1/3
+###### :one: Form 1/3
 
 * Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`
 
 ![alt tag](images/EducateForm1.png)
 
-###### :pushpin: Form 2/3
+###### :two: Form 2/3
 
 * Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
 
@@ -34,7 +32,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-###### :pushpin: Form 3/3
+###### :three: Form 3/3
 
 * Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
@@ -43,7 +41,7 @@ https://aws.amazon.com/fr/education/awseducate/
 :pushpin: Le compte débutant [`AWS Educate Starter Account`](starter) permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit)
 
 
-![alt tag](images/aws.PNG)
+![alt tag](images/EducateForm3.PNG)
 
 * Pour terminer l'application appuyer sur `Submit`
 
