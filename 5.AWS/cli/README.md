@@ -27,7 +27,13 @@ aws-cli/1.16.280 Python/3.7.5 Darwin/19.0.0 botocore/1.13.16
 
 ## :one: Configuration ~/.aws/config
 
-* Rajouter la  région par défault
+* Afficher la liste des régions
+
+```
+$ aws ec2 describe-regions
+```
+
+* Configurer la  région par défault (dans notre example us-east-1)
 
 ```
 $ aws configure
@@ -37,5 +43,11 @@ Default region name []: us-east-1
 Default output format [None]:
 ```
 
+## :two: Utilisation
 
+:pushpin: Groupe De
+
+```
+$ aws ec2 describe-security-groups --group-names default
+```
 
