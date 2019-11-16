@@ -7,7 +7,12 @@
 
 ## :two: Créer sa clé d'accés
 
-:pushpin: [Clé](Key.md)
+:pushpin: Clé :key:
+
+| Type de compte              |
+|-----------------------------|
+| [Régulier](account/key.md)  |
+| [Vocareum](starter/key.md)  |
 
 ## :three: Créer sa machine virtuelle VM
 
