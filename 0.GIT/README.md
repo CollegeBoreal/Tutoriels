@@ -1,6 +1,6 @@
 # GIT 
 
-## :bookmark: [Emoji Flags](flags.md)
+## :bookmark: [CheatSheet](https://github.com/ikatyang/emoji-cheat-sheet) [Emoji Flags](flags.md)
 
 ## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
