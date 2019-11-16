@@ -5,7 +5,20 @@
 
 https://www.youtube.com/watch?v=X36oOsjyoXA
 
-Dans le cadre des cours sur l'infrastructure info-nuagique, vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par AWS 
+Dans le cadre des cours sur l'infrastructure info-nuagique, vous aurez besoin d'un compte `AWS Educate` pour accéder aux crédits fournis par AWS 
+
+:bulb: Les crédits sont offerts sous les formes suivantes:
+
+| Type de crédit    | Fournisseurs                | Avantages                                                           | 
+|-------------------|-----------------------------|---------------------------------------------------------------------|
+| Code Promotionnel | [`AWS Account ID`](account) | permet de bénéficier d'un crédit de $100 renouvellable tous les ans |
+| 
+:pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
+
+:pushpin: Le compte débutant [`AWS Educate Starter Account`](starter) permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit)
+
+[Plus d'infos](https://awseducate-onboarding.s3.amazonaws.com/Educator+Toolkit/Movies/Getting+Started+with+AWS+Educate.mp4)
+
 
 ## :a: Créer un compte AWS Educate
 
@@ -36,9 +49,6 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
-:pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
-
-:pushpin: Le compte débutant [`AWS Educate Starter Account`](starter) permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit)
 
 
 ![image](images/EducateForm3.png)
