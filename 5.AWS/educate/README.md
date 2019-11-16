@@ -15,16 +15,19 @@ Vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par
 
 https://aws.amazon.com/fr/education/awseducate/
 
+
 * Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`  (et non pas `k-12 High School` )
+
+* Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
+
+* Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
+
 
 :warning: La date de fin d'études doit etre dans le futur
 
 * Remplir la forme ci-dessous selon le modèle
 
 ![alt tag](images/AWSEducateForm.png)
-
-* Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
-* Pour `professeurs`, créer le compte avec le courriel `@collegeboreal.ca`  
 
 ---
 
