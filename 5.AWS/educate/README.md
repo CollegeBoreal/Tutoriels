@@ -15,7 +15,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`
 
-![alt tag](images/EducateForm1.png)
+![image](images/EducateForm1.png)
 
 ###### :two: Form 2/3
 
@@ -28,7 +28,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Remplir la forme ci-dessous selon le modèle
 
-![alt tag](images/EducateForm3.png)
+![image](images/EducateForm2.png)
 
 ---
 
@@ -41,7 +41,7 @@ https://aws.amazon.com/fr/education/awseducate/
 :pushpin: Le compte débutant [`AWS Educate Starter Account`](starter) permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit)
 
 
-![alt tag](images/EducateForm3.PNG)
+![image](images/EducateForm3.png)
 
 * Pour terminer l'application appuyer sur `Submit`
 
