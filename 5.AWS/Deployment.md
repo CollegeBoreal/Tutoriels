@@ -10,7 +10,7 @@ $ docker-machine create --driver amazonec2  \
                         cb-dev
 ```
 
-Avec une instance plus large - :heavy_dollar_sign::heavy_dollar_sign:
+:pushpin: Avec une instance plus large - :heavy_dollar_sign::heavy_dollar_sign:
 ```
 $ docker-machine create --driver amazonec2  \ 
                         --amazonec2-instance-type t2.small \
@@ -18,7 +18,7 @@ $ docker-machine create --driver amazonec2  \
                         cb-dev
 ```
 
-Avec un sous-réseau
+:pushpin: Avec un sous-réseau
 ```
 $ docker-machine create --driver amazonec2 \
                         --amazonec2-vpc-id vpc-yyyy \
@@ -27,7 +27,7 @@ $ docker-machine create --driver amazonec2 \
                         cb-dev
 ```
 
-Avec un autre profil
+:pushpin: Avec un autre profil
 ```
 $ docker-machine create --driver amazonec2 \
                         --amazonec2-security-group default \
@@ -35,7 +35,7 @@ $ docker-machine create --driver amazonec2 \
                         cb-dev
 ```
 
-Avec une paire de clés
+:pushpin: Avec une paire de clés a installer
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
