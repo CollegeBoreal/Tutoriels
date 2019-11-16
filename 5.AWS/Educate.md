@@ -37,16 +37,3 @@ https://aws.amazon.com/fr/education/awseducate/
 
 https://www.awseducate.com/SiteLogin
 
-
-
-# Références: 
-
-## AWS CLI
-
-https://aws.amazon.com/fr/cli/
-
-## AWS Cheat Sheet
-
-https://linuxacademy.com/blog/amazon-web-services-2/your-aws-terminology-cheat-sheet/
-
-
