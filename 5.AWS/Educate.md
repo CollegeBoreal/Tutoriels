@@ -17,7 +17,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`  (et non pas `k-12 High School` )
 
-:warning: La date de fin d'etude doit etre dans le futur
+:warning: La date de fin d'études doit etre dans le futur
 
 * Remplir la forme ci-dessous selon le modèle
 
