@@ -34,6 +34,7 @@ $ aws configure
 AWS Access Key ID [****************DN2Q]: 
 AWS Secret Access Key [****************nl3Z]: 
 Default region name []: us-east-1
+Default output format [None]:
 ```
 
 
