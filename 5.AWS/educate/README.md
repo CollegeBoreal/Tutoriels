@@ -5,9 +5,7 @@
 
 https://www.youtube.com/watch?v=X36oOsjyoXA
 
-```
-Vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par AWS dans le cadre des cours sur l'infrastructure info-nuagique.
-```
+Dans le cadre des cours sur l'infrastructure info-nuagique, vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par AWS 
 
 ## :a: Créer un compte AWS Educate
 
@@ -15,8 +13,13 @@ Vous aurez besoin d'un compte `AWS Educate` pour acceder aux credits fournis par
 
 https://aws.amazon.com/fr/education/awseducate/
 
+###### :pushpin: Form 1/3
 
-* Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`  (et non pas `k-12 High School` )
+* Suivre les instructions de remplissage d'utilisateurs de type `Étudiants`
+
+![alt tag](images/EducateForm1.png)
+
+###### :pushpin: Form 2/3
 
 * Pour `étudiants`, créer le compte avec le courriel `@monboreal.ca`  
 
@@ -31,7 +34,9 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-##### :two: Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
+###### :pushpin: Form 3/3
+
+* Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
 :pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
 
