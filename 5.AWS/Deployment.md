@@ -1,6 +1,6 @@
 # AWS Deploiement
 
-#### Sous Docker, Lancer une nouvelle machine
+#### Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
 par défaut (t2.micro)
 ```
