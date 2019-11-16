@@ -19,6 +19,8 @@
 
 ![image](images/CreerCle.png)
 
+:bookmark: Un fichier comportant vos identifiants secrets sera telecharge sur votre machine client.
+
 
 
 # :two: Installation ses clés sur votre machine
