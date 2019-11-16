@@ -25,7 +25,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-* Choisir entre le compte régulier `AWS Account ID` ou `AWS Educate Starter Account` 
+* Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
 ![alt tag](images/aws.PNG)
 
