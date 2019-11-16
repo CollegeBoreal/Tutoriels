@@ -9,7 +9,7 @@
 
 :pushpin: Clé :key:
 
-| Type de compte              |
+| Types de compte             |
 |-----------------------------|
 | [Régulier](account/key.md)  |
 | [Vocareum](starter/key.md)  |
