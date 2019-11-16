@@ -2,7 +2,7 @@
 
 #### Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
-:pushpin: par défaut (t2.micro) - :dollar:
+:pushpin: par défaut (t2.micro) - :heavy_dollar_sign:
 
 ```
 $ docker-machine create --driver amazonec2  \
@@ -10,7 +10,7 @@ $ docker-machine create --driver amazonec2  \
                         cb-dev
 ```
 
-Avec une instance plus large
+Avec une instance plus large - :heavy_dollar_sign::heavy_dollar_sign:
 ```
 $ docker-machine create --driver amazonec2  \ 
                         --amazonec2-instance-type t2.small \
