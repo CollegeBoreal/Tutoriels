@@ -5,7 +5,11 @@
 
 :pushpin: [Educate](Educate.md)
 
-## :two: Créer sa machine virtuelle VM
+## :two: Créer sa clé d'accés
+
+:pushpin: [Clé](Key.md)
+
+## :three: Créer sa machine virtuelle VM
 
 :pushpin: [deployment](Deployment.md)
 
