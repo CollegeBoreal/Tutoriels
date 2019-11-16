@@ -26,7 +26,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 ---
 
-* Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
+:two: Choisir entre le compte régulier [`AWS Account ID`](account) ou [`AWS Educate Starter Account`](starter) 
 
 :pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
 
@@ -39,7 +39,7 @@ https://aws.amazon.com/fr/education/awseducate/
 
 * Vous recevrez des courriels vous précisant que votre application a été approuvée
 
-## :two: Se connecter à AWS Educate
+## :b: Se connecter à AWS Educate
 
 #### :m: Vérifier son crédit
 
