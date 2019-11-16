@@ -6,14 +6,15 @@
 
 ##### :m: with Package Managers
 
+:pushpin: Windows
+
+https://github.com/CanonicalLtd/multipass/issues/826
+
 :pushpin: MacOS
 
 ```
 $ brew cask install multipass
 ```
-
-:pushpin: MacOS
-
 
 ## Launch a machine
 
