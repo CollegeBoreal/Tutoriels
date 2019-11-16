@@ -1,6 +1,6 @@
 # Multipass
 
-## Install 
+## :a: Install 
 
 ##### :m:  Manual install on [Multipass.run](https://multipass.run)
 
@@ -16,7 +16,7 @@ https://github.com/CanonicalLtd/multipass/issues/826
 $ brew cask install multipass
 ```
 
-## Launch a machine
+## "b: Launch a machine
 
 * Launch
 
