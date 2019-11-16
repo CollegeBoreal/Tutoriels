@@ -1,6 +1,6 @@
-# Deploiement
+# Gestion des clés
 
-# Créer sa clé d'accès
+# :one: Créer sa clé d'accès
 
 ![image](images/menu.png)
 
@@ -12,7 +12,7 @@
 
 
 
-# AWS Deploiement
+# :two: Installer ses clés
 
 ```
 $ mkdir -p ~/.aws
