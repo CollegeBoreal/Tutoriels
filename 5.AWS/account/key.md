@@ -2,9 +2,15 @@
 
 # :one: Créer sa clé d'accès
 
+Dans le menu de votre profil `AWS`, selectioner `Security Credentials` 
+
 ![image](images/menu.png)
 
+Dans la fenetre des choix de securite, choisir `Security Credentials` 
+
 ![image](images/SecurityCredentials.png)
+
+
 
 ![image](images/CleAccess.png)
 
