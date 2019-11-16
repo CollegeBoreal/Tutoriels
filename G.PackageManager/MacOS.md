@@ -39,8 +39,8 @@ As root, tweak the `HomeBrew` Directories
 $ sudo -i
 # cd `brew --prefix`
 # chmod -R +a "group:admin allow list,add_file,search,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,file_inherit,directory_inherit" Homebrew Caskroom Cellar bin
-# chgrp -R admin Homebrew Caskroom Cellar bin
-# chmod -R g+rwX Homebrew Caskroom Cellar bin
+# chgrp -R admin Homebrew Caskroom Cellar bin etc share
+# chmod -R g+rwX Homebrew Caskroom Cellar bin etc share
 # ls -lae .
 ```
 
