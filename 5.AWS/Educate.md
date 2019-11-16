@@ -45,3 +45,10 @@ https://aws.amazon.com/fr/education/awseducate/
 
 https://www.awseducate.com/SiteLogin
 
+
+## :o: Application Rejetée
+
+* Si vous avez été rejeté par `AWS Educate`, contactez:
+
+https://aws.amazon.com/education/awseducate/contact-us/ 
+
