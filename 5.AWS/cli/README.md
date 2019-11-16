@@ -45,7 +45,13 @@ Default output format [None]:
 
 ## :two: Utilisation
 
-:pushpin: Groupe De
+* Liste les groupes de sécurités
+
+```
+$ aws ec2 describe-security-groups | grep GroupName
+```
+
+* Décrit le groupe de sécurité `default`
 
 ```
 $ aws ec2 describe-security-groups --group-names default
