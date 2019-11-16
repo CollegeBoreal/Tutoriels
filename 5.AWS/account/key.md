@@ -23,6 +23,8 @@
 
 # :two: Installation ses clés sur votre machine
 
+:computer: Dans votre `terminal` ou `git bash`
+
 ```
 $ mkdir -p ~/.aws
 $ nano ~/.aws/credentials
