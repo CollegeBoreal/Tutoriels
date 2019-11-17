@@ -75,7 +75,7 @@ $ aws ec2 authorize-security-group-ingress --group-name <group-name> \
                                            --cidr 0.0.0.0/0 [ --profile <profile-name> ]
 ```
 
-:pushpin:  Revoquer un port en entree
+:pushpin:  [Revoquer](https://docs.aws.amazon.com/cli/latest/reference/ec2/revoke-security-group-ingress.html) un port en entree
 
 ```
 $ aws ec2 revoke-security-group-ingress --group-name <group-name> \
