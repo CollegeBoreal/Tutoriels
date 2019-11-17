@@ -35,6 +35,6 @@ https://www.awseducate.com/SiteLogin
 
 ![image](images/VocareumConsoleAWS.png)
 
-#### :m: Accéder à `AWS Console`
+#### :m: La `AWS Console` 
 
 ![image](images/VocareumAWSConsole.png)
