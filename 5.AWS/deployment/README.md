@@ -70,4 +70,6 @@ $ eval $(docker-machine env --unset)
 $ docker container ls
 ```
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oTuBq1-XI0g/0.jpg)](https://www.youtube.com/watch?v=oTuBq1-XI0g)
+# Example
+
+[![image](http://img.youtube.com/vi/oTuBq1-XI0g/0.jpg)](https://www.youtube.com/watch?v=oTuBq1-XI0g)
