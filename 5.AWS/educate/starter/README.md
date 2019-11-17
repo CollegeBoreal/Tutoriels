@@ -31,7 +31,7 @@ https://www.awseducate.com/SiteLogin
 
 :pushpin: copier le contenu dans le fichier de configuration AWS `~/.aws/credentials`
 
-#### :p: Installation ses clés sur votre machine
+#### :heavy_check_sign: Installation ses clés sur votre machine
 
 :computer: Dans votre `terminal` ou `git bash`
 
