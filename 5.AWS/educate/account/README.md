@@ -21,8 +21,8 @@ Entrer le numéro de compte AWS dans le champ prévu à cet effet
 
 * Vous recevrez des courriels vous précisant que votre application a été approuvée
 
-## :three: Cles
+## :three: Clés
 
-Grere ses cles [:key:]key.md
+Gérer ses cles [:key:](key.md)
 
 
