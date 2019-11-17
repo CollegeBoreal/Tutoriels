@@ -31,6 +31,17 @@ https://www.awseducate.com/SiteLogin
 
 :pushpin: copier le contenu dans le fichier de configuration AWS `~/.aws/credentials`
 
+#### :p: Installation ses clés sur votre machine
+
+:computer: Dans votre `terminal` ou `git bash`
+
+```
+$ mkdir -p ~/.aws
+$ nano ~/.aws/credentials
+```
+
+#### appliquer vos identifiants
+
 ```
 [default]
 aws_access_key_id=FAKE/KEY/DO/NOT/USE
