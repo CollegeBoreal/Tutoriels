@@ -67,7 +67,7 @@ $ aws ec2 describe-security-groups --group-names default  [ --profile <profile-n
 $ aws ec2 describe-instances --output table  [ --profile <profile-name> ]
 ```
 
-:pushpin:  Authoriser un port en entree
+:pushpin:  [Authoriser](https://docs.aws.amazon.com/cli/latest/reference/ec2/authorize-security-group-ingress.html) un port en entree
 
 ```
 $ aws ec2 authorize-security-group-ingress --group-name <group-name> \
