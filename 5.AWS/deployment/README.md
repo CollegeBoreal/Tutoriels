@@ -44,13 +44,13 @@ NAME      ACTIVE   DRIVER      STATE     URL                         SWARM   DOC
 cb-dev   -        amazonec2   Running   tcp://18.500.509.149:2376           v18.09.0      
 ```
 
-#### :m: activer la machine `cb-dev`
+:pushpin: activer la machine `cb-dev`
 
 ```
 $ eval $(docker-machine env cb-dev)
 ```
 
-#### :m: vérifier l'activation . :star: s'affiche
+:pushpin: vérifier l'activation . :star: s'affiche
 
 ```
 $ docker-machine ls
@@ -59,9 +59,13 @@ cb-dev   *        amazonec2   Running   tcp://18.205.189.149:2376           v18.
 ```
 
 
-#### :m: désactiver la machine `cb-dev`
+:pushpin: désactiver la machine `cb-dev`
 
 ```
 $ eval $(docker-machine env --unset)
 ```
 
+#### :m: Utiliser les commandes `docker` habituelles
+```
+$ docker container ls
+```
