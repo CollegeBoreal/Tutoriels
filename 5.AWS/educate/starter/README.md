@@ -31,7 +31,7 @@ https://www.awseducate.com/SiteLogin
 
 #### :m: Accéder à `AWS Console`
 
-:pushpin: en appuyant sur le boutton ***show***
+:pushpin: en appuyant sur le boutton ***AWS Console***
 
 ![image](images/VocareumConsoleAWS.png)
 
