@@ -33,10 +33,20 @@ aws-cli/1.16.280 Python/3.7.5 Darwin/19.0.0 botocore/1.13.16
 $ aws ec2 describe-regions
 ```
 
-* Configurer la  région par défault (dans notre example us-east-1)
+* [Configurer](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) la  région par défault (dans notre example us-east-1)
 
 ```
 $ aws configure
+AWS Access Key ID [****************DN2Q]: 
+AWS Secret Access Key [****************nl3Z]: 
+Default region name []: us-east-1
+Default output format [None]:
+```
+
+* avec un profil
+
+```
+$ aws configure --profile mon-profil
 AWS Access Key ID [****************DN2Q]: 
 AWS Secret Access Key [****************nl3Z]: 
 Default region name []: us-east-1
