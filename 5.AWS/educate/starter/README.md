@@ -13,7 +13,7 @@ https://www.awseducate.com/SiteLogin
 
 * Accéder à Vocareum pour visualiser `AWS Console` et afficher sa clé d'accés :key:
 
-:pushpin: Appuyez sur le boutton `AWS Educate Starter Account`
+:pushpin: en appuyant sur le boutton `AWS Educate Starter Account`
 
 ![image](images/AWSAccount.png)
 
