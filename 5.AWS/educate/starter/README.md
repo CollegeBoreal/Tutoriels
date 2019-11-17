@@ -19,6 +19,8 @@ https://www.awseducate.com/SiteLogin
 
 #### :m: Accéder à sa clé d'accés :key:
 
+:pushpin: en appuyant sur le boutton ***Account Details***
+
 ![image](images/VocareumConsoleDET.png)
 
 #### :m: Accéder à `AWS Console`
