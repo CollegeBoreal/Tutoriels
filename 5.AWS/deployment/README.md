@@ -2,7 +2,7 @@
 
 #### :m: Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
-:pushpin: par défaut (t2.micro) - :heavy_dollar_sign:
+:pushpin: par défaut (t2.micro) - :heavy_dollar_sign:  :bangbang: À utiliser en priorité
 
 ```
 $ docker-machine create --driver amazonec2  \
