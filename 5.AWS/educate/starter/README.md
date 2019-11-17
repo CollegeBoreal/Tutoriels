@@ -29,6 +29,16 @@ https://www.awseducate.com/SiteLogin
 
 ![image](images/Credentials.png)
 
+
+:pushpin: le copier dans le fichier de configuration AWS `~/.aws/credentials`
+
+```
+[default]
+aws_access_key_id=ASIAFFSSFSFSFPP
+aws_secret_access_key=FFFAAA
+aws_session_token=FFFAAA
+```
+
 #### :m: Accéder à `AWS Console`
 
 :pushpin: en appuyant sur le boutton ***AWS Console***
