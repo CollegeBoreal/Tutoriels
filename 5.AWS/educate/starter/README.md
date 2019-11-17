@@ -8,15 +8,16 @@
 
 https://www.awseducate.com/SiteLogin
 
-* Appuyer sur l'onglet `AWS Account`
+* Appuyer sur l'onglet `AWS Account` pour afficher le crédit
+
+* Accéder à Vocareum pour visualiser `AWS Console` et afficher sa clé d'accés :key:
+
+:pushpin: Appuyez sur le boutton `AWS Educate Starter Account`
 
 ![image](images/AWSAccount.png)
 
 #### :m: Accéder à `Vocareum Workbench`
 
-* Pour accéder à Vocareum pour accéder à AWS Consoleù et sa clé :key:
-
-Appuyez sur le boutton `AWS Educate Starter Account`
 
 ![image](images/VocareumConsoleDET.png)
 
