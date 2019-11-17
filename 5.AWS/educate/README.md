@@ -9,13 +9,10 @@ Dans le cadre des cours sur l'infrastructure info-nuagique, vous aurez besoin d'
 
 :bulb: Les crédits sont offerts sous les formes suivantes:
 
-| Type de crédit    | Fournisseurs                | Avantages                                                           | 
-|-------------------|-----------------------------|---------------------------------------------------------------------|
-| Code Promotionnel | [`AWS Account ID`](account) | permet de bénéficier d'un crédit de $100 renouvellable tous les ans |
-| 
-:pushpin: Le compte régulier [`AWS Account ID`](account) permet de bénéficier d'un crédit de $100 renouvellable
-
-:pushpin: Le compte débutant [`AWS Educate Starter Account`](starter) permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit)
+| Type de crédit    | Fournisseurs                             | Avantages                                                           | 
+|-------------------|------------------------------------------|---------------------------------------------------------------------|
+| Code Promotionnel | [`AWS Account ID`](account)              | permet de bénéficier d'un crédit de $100 renouvellable tous les ans |
+| compte débutant   | [`AWS Educate Starter Account`](starter) | permet de bénéficier d'un crédit de $75 en une fois (préférable pour les éleves sans cartes de crédit) |
 
 [Plus d'infos](https://awseducate-onboarding.s3.amazonaws.com/Educator+Toolkit/Movies/Getting+Started+with+AWS+Educate.mp4)
 
