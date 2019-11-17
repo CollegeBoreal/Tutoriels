@@ -12,7 +12,7 @@
 | Types de compte             |
 |-----------------------------|
 | [Régulier](educate/account/key.md)  |
-| [Vocareum](educate/starter/key.md)  |
+| [Vocareum](educate/starter)  |
 
 ## :three: Créer sa machine virtuelle VM
 
