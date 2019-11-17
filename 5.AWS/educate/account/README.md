@@ -23,6 +23,6 @@ Entrer le numéro de compte AWS dans le champ prévu à cet effet
 
 ## :three: Clés
 
-Gérer ses cles [:key:](key.md)
+Gérer ses clés [:key:](key.md)
 
 
