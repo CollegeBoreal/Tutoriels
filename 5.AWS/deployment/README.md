@@ -41,7 +41,7 @@ $ docker-machine create --driver amazonec2  \
 ```
 $ docker-machine ls
 NAME      ACTIVE   DRIVER      STATE     URL                         SWARM   DOCKER        ERRORS
-cb-dev   -        amazonec2   Running   tcp://18.205.189.149:2376           v18.09.0      
+cb-dev   -        amazonec2   Running   tcp://18.500.509.149:2376           v18.09.0      
 ```
 
 #### :m: activer la machine `cb-dev`
