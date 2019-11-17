@@ -47,6 +47,6 @@ aws_session_token=FFFAAA
 
 #### :m: La `AWS Console` 
 
-:bulb: Le nom de `vocastart` et le numéro de client apparait
+:bulb: Le nom de `vocstart` et le numéro de client apparait prouvant le compte `Educate starter`
 
 ![image](images/VocareumAWSConsole.png)
