@@ -5,9 +5,7 @@
 
 Note: Si vous en avez deja un entrer dans votre compte.
 
-:pushpin: Ouvrir la `console AWS`
-
-https://aws.amazon.com/fr/console/
+:pushpin: Ouvrir la `console AWS` https://aws.amazon.com/fr/console/
 
 ## :two: Numéro de compte AWS
 
