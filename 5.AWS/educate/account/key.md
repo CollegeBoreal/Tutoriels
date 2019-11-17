@@ -1,11 +1,11 @@
 # Gestion des clés
 
 
-## :o: Ouvrir AWS Console
+## :one: Ouvrir AWS Console
 
 :pushpin: Ouvrir la `console AWS` https://aws.amazon.com/fr/console/
 
-# :one: Créer sa clé d'accès
+# :two: Créer sa clé d'accès
 
 :pushpin: Dans le menu de votre profil `AWS`, selectioner `Security Credentials` 
 
@@ -28,7 +28,7 @@
 
 
 
-# :two: Installation ses clés sur votre machine
+# :three: Installation ses clés sur votre machine
 
 :computer: Dans votre `terminal` ou `git bash`
 
