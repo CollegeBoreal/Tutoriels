@@ -12,7 +12,11 @@ https://www.awseducate.com/SiteLogin
 
 ![image](images/AWSAccount.png)
 
-#### :m: Accéder à `AWS Console`
+#### :m: Accéder à `Vocareum Workbench`
+
+* Pour accéder à Vocareum pour accéder à AWS Consoleù et sa clé :key:
+
+Appuyez sur le boutton `AWS Educate Starter Account`
 
 ![image](images/VocareumConsoleDET.png)
 
