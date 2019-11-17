@@ -2,11 +2,13 @@
 
 :bulb: Géré par [Vocareum](https://www.vocareum.com/) `Cloud Lab Platform`
 
-## :0: Se connecter à AWS Educate
+## :o: Se connecter à AWS Educate
 
 #### :m: Vérifier son crédit
 
 https://www.awseducate.com/SiteLogin
+
+* Appuyer sur l'onglet `AWS Account`
 
 ![image](images/AWSAccount.png)
 
