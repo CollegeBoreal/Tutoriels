@@ -18,6 +18,10 @@
 
 :pushpin: [deployment](deployment)
 
+## :o: Gérer son environnement avec AWS CLI
+
+:bulb: [AWS CLI](cli)
+
 
 # Références: 
 
