@@ -65,11 +65,20 @@ $ aws ec2 describe-security-groups --group-names default
 $ aws ec2 describe-instances --output table
 ```
 
-:pushpin:  Ajouter un port en entree
+:pushpin:  Authoriser un port en entree
 
 ```
-% aws ec2 authorize-security-group-ingress --group-id sg-<id> \
-                                           --protocol tcp  --port 9021 \
-                                           --cidr "0.0.0.0/0" \
+$ aws ec2 authorize-security-group-ingress --group-name <group-name> \
+                                           --protocol tcp --port 9021 \
+                                           --cidr 0.0.0.0/0 \
                                            --profile <profile-name>
+```
+
+:pushpin:  Revoquer un port en entree
+
+```
+$ aws ec2 revoke-security-group-ingress --group-name <group-name> \
+                                        --protocol tcp --port 9021 \
+                                        --cidr 0.0.0.0/0 \
+                                        --profile <profile-name>
 ```
