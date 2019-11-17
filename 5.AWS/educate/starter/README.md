@@ -4,9 +4,10 @@
 
 ## :o: Se connecter à AWS Educate
 
-#### :m: Vérifier son crédit
 
 https://www.awseducate.com/SiteLogin
+
+#### :m: Vérifier son crédit et accéder à `Vocareum`
 
 * Appuyer sur l'onglet `AWS Account` pour afficher le crédit
 
