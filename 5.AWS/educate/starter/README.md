@@ -29,8 +29,7 @@ https://www.awseducate.com/SiteLogin
 
 ![image](images/Credentials.png)
 
-
-:pushpin: le copier dans le fichier de configuration AWS `~/.aws/credentials`
+:pushpin: copier le contenu dans le fichier de configuration AWS `~/.aws/credentials`
 
 ```
 [default]
