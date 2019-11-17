@@ -1,6 +1,6 @@
 # AWS Deploiement
 
-#### Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
+#### :m: Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
 :pushpin: par défaut (t2.micro) - :heavy_dollar_sign:
 
@@ -27,14 +27,6 @@ $ docker-machine create --driver amazonec2 \
                         cb-dev
 ```
 
-:pushpin: Avec un autre profil
-```
-$ docker-machine create --driver amazonec2 \
-                        --amazonec2-security-group default \
-                        --amazonec2-iam-instance-profile mon-profil \  
-                        cb-dev
-```
-
 :pushpin: Avec une paire de clés a installer
 ```
 $ docker-machine create --driver amazonec2  \
@@ -44,4 +36,32 @@ $ docker-machine create --driver amazonec2  \
                         cb-dev
 ```
 
+#### :m: Tester l'installation
+
+```
+$ docker-machine ls
+NAME      ACTIVE   DRIVER      STATE     URL                         SWARM   DOCKER        ERRORS
+cb-dev   -        amazonec2   Running   tcp://18.205.189.149:2376           v18.09.0      
+```
+
+#### :m: activer la machine `cb-dev`
+
+```
+$ eval $(docker-machine env cb-dev)
+```
+
+#### :m: vérifier l'activation . :star: s'affiche
+
+```
+$ docker-machine ls
+NAME      ACTIVE   DRIVER      STATE     URL                         SWARM   DOCKER        ERRORS
+cb-dev   *        amazonec2   Running   tcp://18.205.189.149:2376           v18.09.0      
+```
+
+
+#### :m: désactiver la machine `cb-dev`
+
+```
+$ eval $(docker-machine env --unset)
+```
 
