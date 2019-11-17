@@ -9,10 +9,11 @@ Note: Si vous en avez deja un entrer dans votre compte.
 
 ## :two: Numéro de compte AWS
 
-Récupérer votre numéro de compte AWS dans les paramètres de votre compte.
+Récupérer votre numéro de compte AWS à 13 chiffres dans les paramètres de votre compte.
 
 ![alt tag](images/IDduCompte.png)
 
+Entrer le numéro de compte AWS dans le champ prévu à cet effet
 
 ![alt tag](../images/aws.PNG)
 
