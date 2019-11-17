@@ -45,24 +45,26 @@ Default output format [None]:
 
 ## :two: Utilisation
 
+:bulb: `[ --profile <profile-name> ]` est a rajouter si les profils sont geres
+
 :pushpin:  Groupes de Sécurité
 
-* Liste les groupes de sécurités
+* Liste les groupes de sécurités  
 
 ```
-$ aws ec2 describe-security-groups | grep GroupName
+$ aws ec2 describe-security-groups | grep GroupName  [ --profile <profile-name> ]
 ```
 
 * Décrit le groupe de sécurité `default`
 
 ```
-$ aws ec2 describe-security-groups --group-names default
+$ aws ec2 describe-security-groups --group-names default  [ --profile <profile-name> ]
 ```
 
 :pushpin:  Instances
 
 ```
-$ aws ec2 describe-instances --output table
+$ aws ec2 describe-instances --output table  [ --profile <profile-name> ]
 ```
 
 :pushpin:  Authoriser un port en entree
@@ -70,8 +72,7 @@ $ aws ec2 describe-instances --output table
 ```
 $ aws ec2 authorize-security-group-ingress --group-name <group-name> \
                                            --protocol tcp --port 9021 \
-                                           --cidr 0.0.0.0/0 \
-                                           --profile <profile-name>
+                                           --cidr 0.0.0.0/0 [ --profile <profile-name> ]
 ```
 
 :pushpin:  Revoquer un port en entree
@@ -79,6 +80,5 @@ $ aws ec2 authorize-security-group-ingress --group-name <group-name> \
 ```
 $ aws ec2 revoke-security-group-ingress --group-name <group-name> \
                                         --protocol tcp --port 9021 \
-                                        --cidr 0.0.0.0/0 \
-                                        --profile <profile-name>
+                                        --cidr 0.0.0.0/0  [ --profile <profile-name> ]
 ```
