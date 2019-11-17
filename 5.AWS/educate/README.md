@@ -47,9 +47,10 @@ https://aws.amazon.com/fr/education/awseducate/
 * Choisir entre:
 
 :pushpin: le compte régulier [`AWS Account ID`](account) ou 
+
 :pushpin: le [`AWS Educate Starter Account`](starter) 
 
-Cliquez pour voir la specificite des differents comptes
+=> Cliquez pour voir la specificite des differents comptes
 
 ![image](images/EducateForm3.png)
 
