@@ -33,9 +33,9 @@ https://www.awseducate.com/SiteLogin
 
 ```
 [default]
-aws_access_key_id=ASIAFFSSFSFSFPP
-aws_secret_access_key=FFFAAA
-aws_session_token=FFFAAA
+aws_access_key_id=FAKE/KEY/DO/NOT/USE
+aws_secret_access_key=FAKE/SECRET/DO/NOT/USE
+aws_session_token=FAKE/TOKEN/DO/NOT/USE
 ```
 
 #### :m: Accéder à `AWS Console`
