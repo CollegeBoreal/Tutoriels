@@ -1,4 +1,4 @@
-# AWS Educate Staerter Account 
+# AWS Educate Starter Account 
 
 :bulb: Géré par [Vocareum](https://www.vocareum.com/) `Cloud Lab Platform`
 
