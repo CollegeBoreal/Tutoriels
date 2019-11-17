@@ -7,7 +7,7 @@
 
 https://www.awseducate.com/SiteLogin
 
-#### :m: Vérifier son crédit et accéder à `Vocareum`
+#### :m: Vérifier son crédit et accéder à `Vocareum Workbench`
 
 * Appuyer sur l'onglet `AWS Account` pour afficher le crédit
 
@@ -17,8 +17,7 @@ https://www.awseducate.com/SiteLogin
 
 ![image](images/AWSAccount.png)
 
-#### :m: Accéder à `Vocareum Workbench`
-
+#### :m: Accéder à sa clé d'accés :key:
 
 ![image](images/VocareumConsoleDET.png)
 
