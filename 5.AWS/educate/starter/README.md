@@ -47,4 +47,6 @@ aws_session_token=FFFAAA
 
 #### :m: La `AWS Console` 
 
+:bulb: Le nom de `vocastart` et le numéro de client apparait
+
 ![image](images/VocareumAWSConsole.png)
