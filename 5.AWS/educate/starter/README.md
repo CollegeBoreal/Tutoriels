@@ -2,8 +2,26 @@
 
 :bulb: Géré par [Vocareum](https://www.vocareum.com/) `Cloud Lab Platform`
 
+## :0: Se connecter à AWS Educate
+
+#### :m: Vérifier son crédit
+
+https://www.awseducate.com/SiteLogin
+
 ![image](images/AWSAccount.png)
+
+#### :m: Accéder à `AWS Console`
+
 ![image](images/VocareumConsoleDET.png)
+
+#### :m: Accéder à `AWS Console`
+
 ![image](images/Credentials.png)
+
+#### :m: Accéder à `AWS Console`
+
 ![image](images/VocareumConsoleAWS.png)
+
+#### :m: Accéder à `AWS Console`
+
 ![image](images/VocareumAWSConsole.png)
