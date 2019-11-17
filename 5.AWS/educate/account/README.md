@@ -21,8 +21,8 @@ Entrer le numéro de compte AWS dans le champ prévu à cet effet
 
 * Vous recevrez des courriels vous précisant que votre application a été approuvée
 
-## :three: Se connecter à AWS Educate
+## :three: Cles
 
-https://www.awseducate.com/SiteLogin
+Grere ses cles [:key:]key.md
 
 
