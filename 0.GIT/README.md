@@ -166,11 +166,21 @@ La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
 # Configurer git (Clé personnelle)
 
 ### .ssh/config
+
+:pushpin: Utilisation du port ssh par défaut :two::two:
+
 ```
 Host github.com
     HostName github.com
     User git
     IdentityFile ~/.ssh/github.com.pk
+```
+
+```
+Host github.com
+ HostName ssh.github.com
+ IdentityFile ~/.ssh/github.com.pk
+ Port 443
 ```
 
 # Git & zsh
