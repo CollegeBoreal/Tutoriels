@@ -8,35 +8,7 @@
 | 2017 | [:three:](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) | [B+](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-3-model-b-pi-hardware)| 1Gb  | :four: | 1.4Ghz | 64 | GigaBit Ethernet |2.5A       | [:tv:](https://www.youtube.com/watch?v=izceGfkUtZU)       |
 
 
-## Installation 
 
-https://www.raspberrypi.org/documentation/installation/installing-images/
-
-Dexter Industries Images
-
-https://sourceforge.net/projects/dexterindustriesraspbianflavor/files/latest/download
-
-
-** On Linux Terminal
-
-- List all Flash Devices
-
-```
-$ lsblk
-```
-
-- UnMount the devices
-
-```
-$ umount /dev/mmcblk0p1 /dev/mmcblk0p2
-```
-
-- burn the zip
-
-```
-$ unzip -p ~/Downloads/2019-09-26-raspbian-buster-full.zip | \
-         sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
-```
 ## LCD Display
 
 https://www.raspberrypi-spy.co.uk/2017/11/how-to-rotate-the-raspberry-pi-display-output/
