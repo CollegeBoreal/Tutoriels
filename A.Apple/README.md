@@ -20,3 +20,10 @@ $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstall
        Copying boot files...
        Install media now available at "/Volumes/Install macOS Mojave"
        Mojave Drive Created
+
+# Development Tools
+
+https://medium.com/xcblog/top-5-command-line-tools-for-ios-developer-91c0455247f0
+
+:one: xcrun (XCode Run)
+
