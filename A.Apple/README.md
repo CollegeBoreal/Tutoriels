@@ -25,5 +25,5 @@ $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstall
 
 https://medium.com/xcblog/top-5-command-line-tools-for-ios-developer-91c0455247f0
 
-:one: xcrun (XCode Run)
+:one: xcrun ([Xcode](https://developer.apple.com/xcode/) Run)
 
