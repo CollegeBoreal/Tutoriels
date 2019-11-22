@@ -27,3 +27,7 @@ https://medium.com/xcblog/top-5-command-line-tools-for-ios-developer-91c0455247f
 
 :one: xcrun ([Xcode](https://developer.apple.com/xcode/) Run)
 
+```
+% xcrun simctl list
+```
+
