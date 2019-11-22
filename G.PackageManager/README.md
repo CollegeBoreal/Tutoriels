@@ -59,3 +59,7 @@ $ brew cask install chrome
 ```
 $ brew search --desc 'musescore' 
 ```
+
+:ab: Linux - Debian
+
+https://doc.ubuntu-fr.org/dpkg
