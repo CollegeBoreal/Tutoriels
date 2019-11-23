@@ -70,3 +70,5 @@ Now using node v12.13.1 (npm v6.12.1)
 # References
 
 https://medium.com/@tertiumnon/install-nvm-on-windows-fd5008ab5a71
+
+https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/
