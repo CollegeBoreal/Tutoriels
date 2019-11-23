@@ -22,11 +22,15 @@ https://nodejs.org/en/download/
 $ brew cask install nvm
 ```
 
-## Installer node
+## node
+
+:pushpin: Installer La version 12
 
 ```
 $ nvm install 12
 ```
+
+:pushpin: Utiliser La version 12
 
 ```
 $ nvm use 12
