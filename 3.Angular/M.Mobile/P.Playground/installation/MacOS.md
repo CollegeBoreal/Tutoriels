@@ -155,3 +155,9 @@ $ brew update
 $ brew install nvm
 ```
 
+:pushpin: install `node`
+
+```
+$ nvm install node
+```
+
