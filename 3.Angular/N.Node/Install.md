@@ -43,6 +43,30 @@ $ nvm use 12
 $ nvm list
 ```
 
+## node with LTS (Long Term Support)
+
+```
+$ nvm install --lts        
+Installing latest LTS version.
+v12.13.1 is already installed.
+Now using node v12.13.1 (npm v6.12.1)
+```
+
+```
+$ nvm use --lts    
+Now using node v12.13.1 (npm v6.12.1)
+```
+
+```
+$  nvm use 13
+Now using node v13.2.0 (npm v6.13.1)
+```
+
+```
+$ nvm use --lts
+Now using node v12.13.1 (npm v6.12.1)
+```
+
 # References
 
 https://medium.com/@tertiumnon/install-nvm-on-windows-fd5008ab5a71
