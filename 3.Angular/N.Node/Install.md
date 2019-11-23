@@ -36,7 +36,12 @@ $ nvm install 12
 $ nvm use 12
 ```
 
+:pushpin: Liste des versions installées
 
+
+```
+$ nvm list
+```
 
 # References
 
