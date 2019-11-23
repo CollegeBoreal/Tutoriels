@@ -5,9 +5,9 @@
 
 :pushpin: Suivre les instructions pour installer manuellement 
 
-https://nodejs.org/en/download/
+https://nodejs.org/en/download/ 
 
-## Par un `Package Manager`
+## Par un `Package Manager` (recommandé)
 
 :pushpin: Windows
 
