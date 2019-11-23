@@ -7,7 +7,7 @@
 
 https://nodejs.org/en/download/ 
 
-## Par un `Package Manager` (recommandé)
+## À travers un `Package Manager` ( `nvm` recommandé)
 
 :pushpin: Windows
 
