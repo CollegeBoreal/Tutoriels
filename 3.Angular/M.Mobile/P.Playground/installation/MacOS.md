@@ -139,3 +139,12 @@ Gem cocoapods-1.8.4
   ...
 ```
 
+## uninstall node and install nvm
+
+```
+$ sudo rm -rf /usr/local/lib/node_modules
+```
+
+```
+$ brew cleanup
+```
