@@ -23,7 +23,16 @@ $ sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 <hr/>
 
 
-:bookmark: Multiple Users (only)
+:o: Troubleshooting
+
+```
+$ brew doctor
+```
+
+<hr/>
+
+
+:ab: Multiple Users (only)
 
 https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup
 
