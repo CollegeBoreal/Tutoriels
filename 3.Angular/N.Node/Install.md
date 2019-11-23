@@ -21,3 +21,19 @@ https://nodejs.org/en/download/
 ```
 $ brew cask install nvm
 ```
+
+## Installer node
+
+```
+$ nvm install 12
+```
+
+```
+$ nvm use 12
+```
+
+
+
+# References
+
+https://medium.com/@tertiumnon/install-nvm-on-windows-fd5008ab5a71
