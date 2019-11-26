@@ -118,6 +118,8 @@ $ docker-machine create --driver generic \
                         nom_de_ma_machine
 ```
 
+[Error :strawberry:](RaspberryPI.md) 
+
 ### enlever la clé pour recommencer l'operation si erreur il y a
 
 ```
