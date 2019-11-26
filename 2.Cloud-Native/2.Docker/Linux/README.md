@@ -118,7 +118,12 @@ $ docker-machine create --driver generic \
                         nom_de_ma_machine
 ```
 
-* Si erreur voir [Error :strawberry:](RaspberryPi.md) 
+* Si erreur 
+```
+Error creating machine: Error detecting OS: OS type not recognized
+```
+
+voir [Error :strawberry:](RaspberryPi.md) 
 
 ### enlever la clé pour recommencer l'operation si erreur il y a
 
