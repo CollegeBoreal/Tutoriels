@@ -131,5 +131,14 @@ voir [Error :strawberry:](RaspberryPi.md)
 $ rm -rf ~/.docker/machine/machines/nom_de_ma_machine
 ```
 
+:warning: Changement d'adresse IP, generant une erreur de certificat `x509` 
 
+```
+Unknown   Unable to query docker version: Get https://192.168.1.10:2376/v1.15/version: x509: certificate is valid for 10.13.237.16, not 192.168.1.10
+```
 
+:pushpin: regénérer le certificat
+
+```
+$ docker-machine regenerate-certs nom_de_ma_machine
+```
