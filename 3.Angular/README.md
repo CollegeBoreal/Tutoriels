@@ -2,7 +2,7 @@
 
 Installer [node.js](N.Node)
 
-# Angular CLI
+# <image src="https://github.com/buildkite/emojis/blob/master/img-buildkite-64/angular.png" width=25 height=25></image> Angular CLI
 
 ## Site
 
