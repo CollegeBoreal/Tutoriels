@@ -1,7 +1,5 @@
 # GIT 
 
-## :bookmark: [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet) & [Flags](flags.md)
-
 ## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ## :tada: [Le pack etudiant](https://education.github.com/pack)
