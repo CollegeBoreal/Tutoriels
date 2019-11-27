@@ -2,7 +2,7 @@
 
 Installer [node.js](N.Node)
 
-# Angular-cli :angular:
+# Angular CLI
 
 ## Site
 
