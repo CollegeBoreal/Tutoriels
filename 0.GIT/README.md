@@ -4,6 +4,8 @@
 
 ## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
+## :tada: [Le pack etudiant](https://education.github.com/pack)
+
 ## Decouvrir git
 
 https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeboreal.ca
