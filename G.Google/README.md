@@ -1,7 +1,7 @@
 # Google Cloud Platform
 
 
-## :student: Platforms
+## :scholar: Platforms
 
 | GCP - Google Cloud Platform                         | Features                                                         |
 |-----------------------------------------------------|------------------------------------------------------------------|
