@@ -1,7 +1,10 @@
-# Google
+# Google Cloud Platform
 
-https://cloud.google.com/free
+[Version Gratuite de GCP](https://cloud.google.com/free)
 
-https://edu.google.com/programs
+[Google For Education](https://edu.google.com/programs)
+
+
+[Google Cloud Platform Education Grant](https://cloud.google.com/edu)
 
 
