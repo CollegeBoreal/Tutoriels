@@ -45,8 +45,9 @@ $ diskutil unmountDisk /dev/disk3
 $ sudo dd if=Macintosh\ HD.dmg of=/dev/disk3
 ```
 
+## :m: Restore image with `hdutil`
 
-
+http://www.theinstructional.com/guides/disk-management-from-the-command-line-part-3
 
 
 # Development Tools
