@@ -30,6 +30,10 @@ https://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-comma
 
 
 ```
+$ scp b300098957@tsihombe.borealc.on.ca:"Developer/Macintosh\\ HD.dmg" .
+```
+
+```
 $ diskutil list
 ```
 
