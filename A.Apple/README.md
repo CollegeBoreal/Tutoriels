@@ -26,7 +26,7 @@ $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstall
 
 https://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-command/
 
-<image src="images/WhichBay.png" width="50" height="50"></image>
+<image src="images/WhichBay.png" width="200" height="200"></image>
 
 
 ```
