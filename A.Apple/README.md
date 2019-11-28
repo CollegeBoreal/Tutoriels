@@ -21,6 +21,28 @@ $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstall
        Install media now available at "/Volumes/Install macOS Mojave"
        Mojave Drive Created
 
+
+## :m: Restore image with `dd`
+
+https://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-command/
+
+
+```
+$ diskutil list
+```
+
+```
+$ diskutil unmountDisk /dev/disk3
+```
+
+```
+$ sudo dd if=Macintosh\ HD.dmg of=/dev/disk3
+```
+
+
+
+
+
 # Development Tools
 
 https://medium.com/xcblog/top-5-command-line-tools-for-ios-developer-91c0455247f0
