@@ -50,6 +50,11 @@ $ sudo dd if=Macintosh\ HD.dmg of=/dev/disk3
 http://www.theinstructional.com/guides/disk-management-from-the-command-line-part-3
 
 
+```
+$ sudo asr restore -source /Volumes/Mavericks --target /Volumes/NewVolume -noprompt -noverify -erase
+```
+
+
 # Development Tools
 
 https://medium.com/xcblog/top-5-command-line-tools-for-ios-developer-91c0455247f0
