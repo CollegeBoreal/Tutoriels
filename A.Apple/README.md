@@ -51,7 +51,7 @@ http://www.theinstructional.com/guides/disk-management-from-the-command-line-par
 
 
 ```
-$ sudo asr restore -source /Users/borealdev/Developer/Macintosh\ HD --target /Volumes/Macintosh\ HD\ 2 -noprompt -noverify -erase
+$ sudo asr restore -source /Users/borealdev/Developer/Macintosh\ HD.dmg --target /Volumes/Macintosh\ HD\ 2 -noprompt -noverify -erase
 ```
 
 
