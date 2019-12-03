@@ -9,7 +9,7 @@ https://nodejs.org/en/download/
 
 ## À travers un `Package Manager` ( `nvm` recommandé)
 
-:closed_lock: Windows
+:pushpin: Windows
 
 ```
 > choco install nvm
