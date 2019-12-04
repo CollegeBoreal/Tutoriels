@@ -84,4 +84,4 @@ export class AppComponent {
 
 Sauvegardez votre travail :bulb: `git`
 
-[🏠](../../)
+[🏠](../)
