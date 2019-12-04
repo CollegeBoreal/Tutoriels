@@ -1,0 +1,11 @@
+.login-wrapper {
+  background: none;
+}
+.login-wrapper .login {
+  display: block;
+  width: 100%;
+  background: none;
+}
+.login-wrapper .login:after {
+  background: none;
+}

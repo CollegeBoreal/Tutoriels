@@ -1,0 +1,12 @@
+<h3 class="title">{{thread?.title}}</h3>
+<div class="card" *ngFor="let post of thread?.posts">
+  <div class="card-block">
+    <div class="card-text">
+      {{post.post}}
+    </div>
+    <div class="row">
+      <div class="col-xs">{{post.username}}</div>
+      <div class="col-xs" style="text-align: right">{{post.timestamp | date:'medium'}}</div>
+    </div>
+  </div>
+</div>

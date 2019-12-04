@@ -1,0 +1,9 @@
+  <mat-list>
+    <h3 mat-subheader>Recent Invoices</h3>
+    <mat-list-item *ngFor="let invoice of invoices" routerLink="/invoices/{{invoice.id}}">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{invoice.service}}</h4>
+      <p mat-line> {{invoice.date | date}} </p>
+    </mat-list-item>
+  </mat-list>
+  <button mat-fab class="mat-fab-bottom-right fixed mat-accent mat-fab" routerLink="/invoices/create"><mat-icon>add</mat-icon></button>

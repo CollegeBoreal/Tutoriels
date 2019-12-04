@@ -1,0 +1,23 @@
+<div class="card wrapper">
+  <div class="card-header">
+    Chat with {{guest}}
+    <button aria-label="Close" class="close" type="button" (click)="close()">
+      <clr-icon aria-hidden="true" shape="close"></clr-icon>
+    </button>
+  </div>
+  <div class="card-block" #scrollBox>
+    <div class="card-text">
+      <div class="card message" *ngFor="let message of messages" [ngClass]="message.type">
+        <div class="card-block">
+          <div class="author">{{message.author}}</div>
+          <div class="card-text">{{message.message}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <form>
+      <input type="text" name="message" [(ngModel)]="message" placeholder="Mesage to send.." (keyup)="onKeyUp($event)">
+    </form>
+  </div>
+</div>

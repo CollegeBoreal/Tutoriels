@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-6"><a routerLink="/blogs/{{post_id * 1 - 1}}" *ngIf="canPrev">&lt; Previous Post</a></div>
+    <div class="col-xs-6" style="text-align: right"><a routerLink="/blogs/{{post_id * 1 + 1}}" *ngIf="canNext">Next Post &gt;</a></div>
+  </div>
+  <div class="card">
+    <div class="card-header">{{post?.title}}</div>
+    <div class="card-block">
+      <div class="card-text">
+        <p *ngFor="let line of lines">{{line}}</p>
+      </div>
+      <div class="row">
+        <div class="col-xs">{{post?.username}}</div>
+        <div class="col-xs" style="text-align: right">{{post?.timestamp | date:'medium'}}</div>
+      </div>
+    </div>
+  </div>
+  

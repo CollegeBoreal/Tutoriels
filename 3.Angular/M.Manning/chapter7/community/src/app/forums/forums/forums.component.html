@@ -1,0 +1,12 @@
+<table class="table">
+  <tr>
+    <th>Forum Topic</th>
+    <th>Last Post</th>
+    <th>Threads</th>
+  </tr>
+  <tr *ngFor="let forum of forums" [routerLink]="[forum.alias]">
+    <td>{{forum.title}}</td>
+    <td>{{forum.threads[0].title}} by {{forum.threads[0].posts[0].username}} on {{forum.threads[0].posts[0].timestamp | date:'medium'}}</td>
+    <td>{{forum.threads.length}}</td>
+  </tr>
+</table>

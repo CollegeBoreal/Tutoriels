@@ -1,0 +1,18 @@
+.card {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  width: 400px;
+  height: 298px;
+}
+.card-block {
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+/deep/ .clr-treenode-content {
+  padding-left: 0;
+}
+/deep/ .clr-treenode-content:hover {
+  cursor: pointer;
+}

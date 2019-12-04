@@ -1,0 +1,36 @@
+.card.wrapper {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  width: 400px;
+  height: 298px;
+}
+.card.wrapper > .card-block {
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+form {
+  padding-top: 0;
+}
+input {
+  width: 100%;
+}
+.card.message {
+  margin-top: 14px;
+  box-shadow: none;
+}
+.card.message > .card-block {
+  padding: 6px;
+}
+.card.message > .card-block > .author {
+  font-size: 0.7em;
+  line-height: 0.7em;
+}
+.card.message.left > .card-block {
+  background-color: #e8e8e8;
+}
+.card.message.right > .card-block {
+  text-align: right;
+  background-color: #f8f8f8;
+}
