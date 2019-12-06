@@ -69,6 +69,12 @@ $ echo $ANDROID_HOME
 C:\Android\android-sdk
 ```
 
+
+```
+export ANDROID_HOME=/usr/local/share/android-sdk
+export PATH=$ANDROID_HOME/emulator:$PATH
+```
+
 * `Packages` présents
 
 ```
