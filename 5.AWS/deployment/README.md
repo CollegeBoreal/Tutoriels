@@ -9,7 +9,7 @@
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
-                        --amazonec2-ami ami-0400a1104d5b9caa1
+                        --amazonec2-ami ami-0400a1104d5b9caa1 \
                         cb-dev
 ```
 
