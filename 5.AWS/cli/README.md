@@ -53,6 +53,12 @@ Default region name []: us-east-1
 Default output format [None]:
 ```
 
+:bulb: pour initialiser un profil par défaut, assigner le profil à la variable d'environmment `AWS_PROFILE`
+
+```
+$ export AWS_PROFILE=mon-profil
+```
+
 ## :two: Utilisation
 
 :bulb: `[ --profile <profile-name> ]` est a rajouter si les profils sont geres
