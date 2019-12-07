@@ -2,13 +2,14 @@
 
 #### :m: Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
-[ami-0400a1104d5b9caa1](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0400a1104d5b9caa1)
+[Ubuntu 18.0.4 LTS ami-0400a1104d5b9caa1](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0400a1104d5b9caa1)
 
 :pushpin: par défaut (t2.micro) - :heavy_dollar_sign:  :bangbang: À utiliser en priorité pour éviter de perdre vos crédits
 
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
+                        --amazonec2-ami ami-0400a1104d5b9caa1
                         cb-dev
 ```
 
