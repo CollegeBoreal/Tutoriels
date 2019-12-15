@@ -2,13 +2,13 @@
 
 ### :m: Fork
 
- :U+F8FF:
+ Apple
 
 ```
 $ brew cask install fork
 ```
 
-::
+Windows 
 
 ```
 $ choco install git-fork
