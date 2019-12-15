@@ -35,3 +35,6 @@ $ git log --pretty=oneline -- b300106918-tab-ng
 ```
 $ git reset --hard  f49cefab42bbc60f6c29d6251d1f8ebf0eebfc14
 ```
+
+
+# https://ohshitgit.com/
