@@ -10,6 +10,12 @@
 
 
 
+## Applications
+
+https://ubuntu.com/blog/getting-started-with-ubuntu-core-streaming-video-from-a-raspberry-pi
+
+
+
 
 
 
