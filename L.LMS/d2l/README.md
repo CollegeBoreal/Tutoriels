@@ -37,7 +37,3 @@ https://www.youtube.com/watch?v=ljlR2spz4RQ
 ## [D2L API](./D2L_API.md)
 
 
-## Github - LMS
-
-https://github.com/topics/learning-management-system
-
