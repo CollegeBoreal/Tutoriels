@@ -8,7 +8,9 @@
 | 2017 | [:three:](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) | [B+](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-3-model-b-pi-hardware)| 1Gb  | :four: | 1.4Ghz | 64 | GigaBit Ethernet |2.5A       | [:tv:](https://www.youtube.com/watch?v=izceGfkUtZU)       |
 | 2019 | [:four:](https://raspberry-projects.com/pi/category/pi-hardware/raspberry-pi-4/) | [B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)| 1Gb  | :four: | 1.4Ghz | 64 | GigaBit Ethernet |2.5A       | [:tv:](https://www.youtube.com/watch?v=izceGfkUtZU)       |
 
+## Documentation
 
+https://www.raspberrypi.org/documentation/configuration/
 
 ## Applications
 
