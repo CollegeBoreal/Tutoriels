@@ -1,6 +1,22 @@
 # :two: Python
 
-## Installation de la machine virtuelle java
+## Installation de la machine virtuelle Python
+
+:pushpin: Par un Package Manager
+
+:bulb: Windows
+
+```
+> choco install anaconda3 
+```
+
+:apple: MacOS 
+
+```
+$ brew cask install anaconda 
+```
+
+:pushpin: Manuellement
 
 * Python 3.7.4 :  https://www.python.org/downloads/
 
