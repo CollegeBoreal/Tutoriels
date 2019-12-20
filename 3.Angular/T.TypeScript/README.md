@@ -1,6 +1,6 @@
 # TypeScript
 
-## :one: Install TypeScript vi `npm`
+## :one: Install TypeScript via `npm`
 
 ```
 $ npm install typescript --global
