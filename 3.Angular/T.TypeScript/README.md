@@ -26,7 +26,7 @@ $ ts-node --version
 v8.5.4
 ```
 
-* Run the REPL using [npx an npm package runner](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner)
+* Run the REPL using [npx: an npm package runner](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner)
 
 ```
 % npx ts-node 
