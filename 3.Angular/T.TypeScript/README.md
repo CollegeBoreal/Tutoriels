@@ -33,6 +33,16 @@ v8.5.4
 >
 ```
 
+* Type some sample code
+
+```typescript
+> function f(x: number) { return x + 1 }
+undefined
+> f(0)
+1
+```
+
+
 * Exit from the REPL
 
 ```
