@@ -29,3 +29,5 @@ PATH components.
 # References
 
 http://tryhaskell.org/
+
+http://book.realworldhaskell.org/read/
