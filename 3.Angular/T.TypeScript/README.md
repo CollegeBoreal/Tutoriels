@@ -53,4 +53,7 @@ undefined
 
 # References
 
-https://www.typescriptlang.org/
+|                                      |                      |
+|--------------------------------------|----------------------|
+| https://www.typescriptlang.org/      |  Doc                 | 
+| https://www.typescriptlang.org/play  | Playground           |
