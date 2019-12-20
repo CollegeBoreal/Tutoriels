@@ -25,3 +25,7 @@ PATH components.
 ```
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 ```
+
+# References
+
+http://tryhaskell.org/
