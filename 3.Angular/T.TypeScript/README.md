@@ -26,6 +26,19 @@ $ ts-node --version
 v8.5.4
 ```
 
+* Run the REPL
+
+```
+% npx ts-node 
+>
+```
+
+* Exit from the REPL
+
+```
+> .exit
+```
+
 
 
 # References
