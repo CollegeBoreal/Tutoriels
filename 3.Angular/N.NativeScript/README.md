@@ -26,6 +26,13 @@ https://www.nativescript.org/books-and-videos
 ### NativeScript CLI
 
 ```
+$ npm install nativescript@rc --global 
+```
+
+* Prochaine version -- instable
+
+
+```
 $ npm install nativescript@next --global 
 ```
 
