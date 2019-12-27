@@ -66,6 +66,15 @@ $ brew search --desc 'musescore'
 $ brew install -v --debug mp4box # will give you everything. Likewise, brew gist-logs mp4box
 ```
 
+ou
+
+```
+$ brew gist-logs mp4box
+```
+
+
+
+
 :ab: Linux - Debian
 
 https://doc.ubuntu-fr.org/dpkg
