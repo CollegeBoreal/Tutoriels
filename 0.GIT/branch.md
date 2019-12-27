@@ -1,6 +1,12 @@
 # Branch
 
 
+
+## :m: List Branches in Git
+
+https://www.jquery-az.com/list-branches-git/
+
+
 ```
 $ git branch
 * master
