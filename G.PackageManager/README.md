@@ -60,6 +60,12 @@ $ brew cask install chrome
 $ brew search --desc 'musescore' 
 ```
 
+:four: Debug
+ 
+```
+$ brew install -v --debug mp4box # will give you everything. Likewise, brew gist-logs mp4box
+```
+
 :ab: Linux - Debian
 
 https://doc.ubuntu-fr.org/dpkg
