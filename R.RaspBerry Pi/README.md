@@ -16,6 +16,7 @@ https://www.raspberrypi.org/documentation/configuration/
 
 https://ubuntu.com/blog/getting-started-with-ubuntu-core-streaming-video-from-a-raspberry-pi
 
+https://github.com/christianbaun/ossperf/wiki/Minio-on-a-Raspberry-Pi-3-with-Raspbian-(Debian-Jessie-8.0)
 
 
 
