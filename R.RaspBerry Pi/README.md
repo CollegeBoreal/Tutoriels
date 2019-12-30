@@ -18,6 +18,10 @@ https://ubuntu.com/blog/getting-started-with-ubuntu-core-streaming-video-from-a-
 
 https://github.com/christianbaun/ossperf/wiki/Minio-on-a-Raspberry-Pi-3-with-Raspbian-(Debian-Jessie-8.0)
 
+https://github.com/alexellis/docker-arm/tree/master/images/armhf/minio
+
+https://blog.alexellis.io/hardened-raspberry-pi-nas/
+
 
 
 
