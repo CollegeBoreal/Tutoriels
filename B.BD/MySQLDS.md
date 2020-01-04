@@ -30,8 +30,28 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 ```
 
 
-. Dans le CLI
+. Dans le Shell CLI
 
-.. créer une base de données
+https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-documents-collections.html
+
+Se connecter a une DB
+
+```
+ MySQL localhost+ ssl world_x  JS >\use world_x
+```
+
+.. liste des collections
+
+```
+ MySQL  localhost+ ssl  world_x  JS > db.getCollections()
+[
+    <Collection:countryinfo>
+]
+```
 
 
+.. liste des collections
+
+```
+ MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find()
+```
