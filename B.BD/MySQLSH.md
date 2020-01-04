@@ -16,7 +16,7 @@ $ docker container run \
 * Accéder au conteneur
 
 ```
-$ docker container exec --interactive --tty some-mysql bash
+$ docker container exec --interactive --tty some-mysqlsh mysqlsh
 ```
 
 
