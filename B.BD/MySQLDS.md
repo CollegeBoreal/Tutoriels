@@ -14,14 +14,6 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
-```
-$ docker container run \
-         --name some-mysqlds \
-         --detach \
-         mysql/mysql-server:latest
-```
-
-
 * Accéder au conteneur
 
 ```
@@ -51,8 +43,17 @@ socke access
 
 https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-documents-collections.html
 
+* Recupérer le fichier SQL
 
 [world_x-db.zip](http://downloads.mysql.com/docs/world_x-db.zip)
+
+* Créer la base de données `world_x`
+
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword --execute 'CREATE DATABASE world_x;'
+```
+
+* Charger la base de données
 
 ```
 $ docker container exec --interactive some-mysqlds mysql --user root -ppassword world_x < ~/Downloads/world_x-db/world_x.sql
