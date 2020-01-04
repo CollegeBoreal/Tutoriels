@@ -26,13 +26,13 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 
 . lancer le CLI (Command Level Interface) de MySQL Shell
 
-:warning: this is not working use the socket file
+:warning: this is not working, use the socket file
 
 ```
 # mysqlsh --mysqlx --host localhost --user root --password=password 
 ```
 
-socke access
+socket access
 
 ```
 # mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
