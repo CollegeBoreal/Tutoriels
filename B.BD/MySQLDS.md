@@ -5,17 +5,13 @@ https://hub.docker.com/r/mysql/mysql-server/
 * Créer le conteneur
 
 ```
-$ docker container run --name some-mysqlds --publish 3306:3306 --detach mysql/mysql-server:latest
+$ % docker container run \
+         --name some-mysqlds \     
+         --env MYSQL_ROOT_PASSWORD=password \
+         --publish 3306:3306 \
+         --detach \
+         mysql/mysql-server:latest
 ```
-
-* Récupérer le mot de pass de `root`
-
-
-```
-$ docker logs some-mysqlds 2>&1 | grep GENERATED
-[Entrypoint] GENERATED ROOT PASSWORD: uj0MnYkaM=uSYGuBAGEs#oD@H[uc
-```
-
 
 * Accéder au conteneur
 
