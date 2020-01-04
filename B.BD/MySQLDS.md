@@ -9,6 +9,7 @@ $ docker container run \
          --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
+         --publish 33060:33060 \
          --detach \
          mysql/mysql-server:latest
 ```
