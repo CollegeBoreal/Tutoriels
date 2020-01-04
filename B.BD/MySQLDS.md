@@ -20,11 +20,12 @@ $ docker logs some-mysqlds 2>&1 | grep GENERATED
 * Accéder au conteneur
 
 ```
-$ docker container exec --interactive --tty some-mysqlds mysqlsh
+$ docker container exec --interactive --tty some-mysqlds bash
 ```
 
-
 ### SGBD:
+
+https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 
 . lancer le CLI (Command Level Interface) de MySQL Shell
 
