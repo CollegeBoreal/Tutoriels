@@ -6,8 +6,8 @@ https://hub.docker.com/r/mysql/mysql-server/
 
 ```
 $ docker container run \
-         --name some-mysqlsh \
-         --env MYSQL_ROOT_PASSWORD=password \
+         --name some-mysqlds \
+         --env MYSQL_ALLOW_EMPTY_PASSWORD=yes \
          --publish 3306:3306 \
          --detach \
          mysql/mysql-server:latest
@@ -16,7 +16,7 @@ $ docker container run \
 * Accéder au conteneur
 
 ```
-$ docker container exec --interactive --tty some-mysqlsh mysqlsh
+$ docker container exec --interactive --tty some-mysqlds mysqlsh
 ```
 
 
