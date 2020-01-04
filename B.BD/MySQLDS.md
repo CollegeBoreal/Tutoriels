@@ -51,6 +51,13 @@ socke access
 
 https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-documents-collections.html
 
+
+[world_x-db.zip](http://downloads.mysql.com/docs/world_x-db.zip)
+
+```
+$ docker container exec --interactive some-mysqlds mysql --user root -ppassword world_x < ~/Downloads/world_x-db/world_x.sql
+```
+
 Se connecter a une DB
 
 ```
