@@ -26,10 +26,10 @@ $ docker container exec --interactive --tty some-mysqlds mysqlsh
 
 ### SGBD:
 
-. lancer le CLI (Command Level Interface) de MySQL
+. lancer le CLI (Command Level Interface) de MySQL Shell
 
 ```
-#  mysql --user root --password
+# mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
 ```
 
 
