@@ -6,7 +6,7 @@ https://hub.docker.com/r/mysql/mysql-server/
 
 ```
 $ % docker container run \
-         --name some-mysqlds \     
+         --name some-mysqlds \
          --env MYSQL_ROOT_PASSWORD=password \
          --publish 3306:3306 \
          --detach \
