@@ -14,6 +14,14 @@ $ docker container run \
          mysql/mysql-server:latest
 ```
 
+```
+$ docker container run \
+         --name some-mysqlds \
+         --detach \
+         mysql/mysql-server:latest
+```
+
+
 * Accéder au conteneur
 
 ```
