@@ -51,13 +51,15 @@ https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-document
 * Créer la base de données `world_x`
 
 ```
-$ docker container exec --interactive some-mysqlds mysql --user root -ppassword --execute 'CREATE DATABASE world_x;'
+$ docker container exec --interactive some-mysqlds mysql \
+                        --user root -ppassword --execute 'CREATE DATABASE world_x;'
 ```
 
 * Charger la base de données
 
 ```
-$ docker container exec --interactive some-mysqlds mysql --user root -ppassword world_x < ~/Downloads/world_x-db/world_x.sql
+$ docker container exec --interactive some-mysqlds mysql \
+                        --user root -ppassword world_x < ~/Downloads/world_x-db/world_x.sql
 ```
 
 Se connecter a une DB
