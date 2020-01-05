@@ -26,13 +26,14 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 
 . lancer le CLI (Command Level Interface) de MySQL Shell
 
-:warning: this is not working, use the socket file
+
+[Creation de l'utilisateur etudiant](MySQL.md#one-tous-les-ip)
 
 ```
-# mysqlsh --mysqlx --host localhost --user root --password=password 
+# mysqlsh --mysqlx --host localhost --user etudiants --password
 ```
 
-socket access
+socket access avec root
 
 ```
 # mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
