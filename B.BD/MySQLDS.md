@@ -81,3 +81,7 @@ Se connecter a une DB
 ```
  MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find()
 ```
+
+.. Creer d'autres collections
+
+https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-crud.html
