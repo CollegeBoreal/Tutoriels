@@ -33,7 +33,7 @@ https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
 # mysqlsh --mysqlx --host localhost --user etudiants --password
 ```
 
-socket access avec root
+:bulb: socket access avec root
 
 ```
 # mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
