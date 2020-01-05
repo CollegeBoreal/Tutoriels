@@ -89,7 +89,7 @@ Se connecter a une DB
 ** une partie de la collection
 
 ```
- MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like :param').limit(1).bind('param','Z%')
+ MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like :par').limit(1).bind('par','Z%')
 {
     "GNP": 116729,
     "_id": "ZAF",
