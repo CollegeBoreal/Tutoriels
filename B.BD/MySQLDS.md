@@ -118,6 +118,12 @@ Se connecter a une DB
 1 document in set (0.0008 sec)
 ```
 
+** une partie plus fine de la collection
+
+```
+> db.countryinfo.find('geography.Continent like :param').bind('param','Afri%')
+```
+
 .. Creer d'autres collections
 
 https://dev.mysql.com/doc/x-devapi-userguide/en/working-with-collections-basic-crud.html
