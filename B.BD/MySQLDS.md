@@ -80,8 +80,36 @@ Se connecter a une DB
 
 .. liste des collections
 
+** toute la collection
+
 ```
  MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find()
+```
+
+** une partie de la collection
+
+```
+ MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like :param').limit(1).bind('param','Z%')
+{
+    "GNP": 116729,
+    "_id": "ZAF",
+    "Name": "South Africa",
+    "IndepYear": 1910,
+    "geography": {
+        "Region": "Southern Africa",
+        "Continent": "Africa",
+        "SurfaceArea": 1221037
+    },
+    "government": {
+        "HeadOfState": "Thabo Mbeki",
+        "GovernmentForm": "Republic"
+    },
+    "demographics": {
+        "Population": 40377000,
+        "LifeExpectancy": 51.099998474121094
+    }
+}
+1 document in set (0.0008 sec)
 ```
 
 .. Creer d'autres collections
