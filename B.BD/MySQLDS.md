@@ -20,29 +20,7 @@ $ docker container run \
 $ docker container exec --interactive --tty some-mysqlds bash
 ```
 
-### SGBD:
-
-https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
-
-. lancer le CLI (Command Level Interface) de MySQL Shell
-
-
-[Creation de l'utilisateur etudiant](MySQL.md#one-tous-les-ip)
-
-```
-# mysqlsh --mysqlx --host localhost --user etudiants --password
-```
-
-:bulb: socket access avec root
-
-```
-# mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
-```
-
-
-. Dans le Shell CLI
-
-https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-documents-collections.html
+### Charger les données dans la base `world_x`
 
 * Recupérer le fichier SQL
 
@@ -62,34 +40,62 @@ $ docker container exec --interactive some-mysqlds mysql \
                         --user root -ppassword world_x < ~/Downloads/world_x-db/world_x.sql
 ```
 
-Se connecter a une DB
+
+### mysql shell:
+
+https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-commands.html
+
+. lancer le CLI (Command Level Interface) de MySQL Shell
+
+
+[Creation de l'utilisateur etudiant](MySQL.md#one-tous-les-ip)
 
 ```
- MySQL localhost+ ssl world_x  JS >\use world_x
+# mysqlsh --mysqlx --host localhost --user etudiants --password
 ```
 
-.. liste des collections
+:bulb: socket access avec root
 
 ```
- MySQL  localhost+ ssl  world_x  JS > db.getCollections()
+# mysqlsh --user root --socket=/var/run/mysqld/mysqlx.sock
+```
+
+* le prompt est :
+
+```
+ MySQL localhost+ ssl world_x  JS >
+```
+
+
+. Dans le Shell CLI
+
+https://dev.mysql.com/doc/refman/8.0/en/mysql-shell-tutorial-javascript-documents-collections.html
+
+Se connecter a une DB 
+
+```
+> \use world_x
+```
+
+.. liste des collections de la BD
+
+```
+> db.getCollections()
 [
     <Collection:countryinfo>
 ]
 ```
 
-
-.. liste des collections
-
-** toute la collection
+** afficher tout le contenu de la collection
 
 ```
- MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find()
+> db.countryinfo.find()
 ```
 
 ** une partie de la collection
 
 ```
- MySQL  localhost+ ssl  world_x  JS > db.countryinfo.find('_id like :par').limit(1).bind('par','Z%')
+> db.countryinfo.find('_id like :param').limit(1).bind('param','Z%')
 {
     "GNP": 116729,
     "_id": "ZAF",
