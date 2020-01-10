@@ -24,3 +24,7 @@ Type 'help' to get help.
 
 PS /Users/moimeme>
 ```
+
+# Reference:
+
+https://www.youtube.com/watch?v=2WZwv7TxqZ0
