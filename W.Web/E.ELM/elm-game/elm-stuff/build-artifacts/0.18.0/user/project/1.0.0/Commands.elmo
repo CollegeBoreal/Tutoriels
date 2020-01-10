@@ -1,0 +1,70 @@
+var _user$project$Commands$playerDecoder = A3(
+	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+	'level',
+	_elm_lang$core$Json_Decode$int,
+	A3(
+		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+		'name',
+		_elm_lang$core$Json_Decode$string,
+		A3(
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+			'id',
+			_elm_lang$core$Json_Decode$string,
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Models$Player))));
+var _user$project$Commands$playersDecoder = _elm_lang$core$Json_Decode$list(_user$project$Commands$playerDecoder);
+var _user$project$Commands$playerEncoder = function (player) {
+	var attributes = {
+		ctor: '::',
+		_0: {
+			ctor: '_Tuple2',
+			_0: 'id',
+			_1: _elm_lang$core$Json_Encode$string(player.id)
+		},
+		_1: {
+			ctor: '::',
+			_0: {
+				ctor: '_Tuple2',
+				_0: 'name',
+				_1: _elm_lang$core$Json_Encode$string(player.name)
+			},
+			_1: {
+				ctor: '::',
+				_0: {
+					ctor: '_Tuple2',
+					_0: 'level',
+					_1: _elm_lang$core$Json_Encode$int(player.level)
+				},
+				_1: {ctor: '[]'}
+			}
+		}
+	};
+	return _elm_lang$core$Json_Encode$object(attributes);
+};
+var _user$project$Commands$savePlayerUrl = function (playerId) {
+	return A2(_elm_lang$core$Basics_ops['++'], 'http://localhost:4000/players/', playerId);
+};
+var _user$project$Commands$savePlayerRequest = function (player) {
+	return _elm_lang$http$Http$request(
+		{
+			body: _elm_lang$http$Http$jsonBody(
+				_user$project$Commands$playerEncoder(player)),
+			expect: _elm_lang$http$Http$expectJson(_user$project$Commands$playerDecoder),
+			headers: {ctor: '[]'},
+			method: 'PATCH',
+			timeout: _elm_lang$core$Maybe$Nothing,
+			url: _user$project$Commands$savePlayerUrl(player.id),
+			withCredentials: false
+		});
+};
+var _user$project$Commands$savePlayerCmd = function (player) {
+	return A2(
+		_elm_lang$http$Http$send,
+		_user$project$Msgs$OnPlayerSave,
+		_user$project$Commands$savePlayerRequest(player));
+};
+var _user$project$Commands$fetchPlayersUrl = 'http://localhost:4000/players';
+var _user$project$Commands$fetchPlayers = A2(
+	_elm_lang$core$Platform_Cmd$map,
+	_user$project$Msgs$OnFetchPlayers,
+	_krisajenkins$remotedata$RemoteData$sendRequest(
+		A2(_elm_lang$http$Http$get, _user$project$Commands$fetchPlayersUrl, _user$project$Commands$playersDecoder)));

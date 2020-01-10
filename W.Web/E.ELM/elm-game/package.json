@@ -1,0 +1,28 @@
+{
+  "name": "elm-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "api": "node api.js",
+    "build": "webpack",
+    "client": "webpack-dev-server --port 3000",
+    "start": "nf start"
+  },
+  "dependencies": {
+    "ace-css": "1.1",
+    "css-loader": "^1.0.0",
+    "elm-webpack-loader": "^4.5.0",
+    "file-loader": "^2.0.0",
+    "font-awesome": "4",
+    "foreman": "^3.0.1",
+    "json-server": "0.9.5",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  }
+}

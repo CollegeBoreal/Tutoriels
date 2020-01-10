@@ -1,0 +1,56 @@
+var _user$project$View$notFoundView = A2(
+	_elm_lang$html$Html$div,
+	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html$text('Not found'),
+		_1: {ctor: '[]'}
+	});
+var _user$project$View$playerEditPage = F2(
+	function (model, playerId) {
+		var _p0 = model.players;
+		switch (_p0.ctor) {
+			case 'NotAsked':
+				return _elm_lang$html$Html$text('');
+			case 'Loading':
+				return _elm_lang$html$Html$text('Loading ...');
+			case 'Success':
+				var maybePlayer = _elm_lang$core$List$head(
+					A2(
+						_elm_lang$core$List$filter,
+						function (player) {
+							return _elm_lang$core$Native_Utils.eq(player.id, playerId);
+						},
+						_p0._0));
+				var _p1 = maybePlayer;
+				if (_p1.ctor === 'Just') {
+					return _user$project$Players_Edit$view(_p1._0);
+				} else {
+					return _user$project$View$notFoundView;
+				}
+			default:
+				return _elm_lang$html$Html$text(
+					_elm_lang$core$Basics$toString(_p0._0));
+		}
+	});
+var _user$project$View$page = function (model) {
+	var _p2 = model.route;
+	switch (_p2.ctor) {
+		case 'PlayersRoute':
+			return _user$project$Players_List$view(model.players);
+		case 'PlayerRoute':
+			return A2(_user$project$View$playerEditPage, model, _p2._0);
+		default:
+			return _user$project$View$notFoundView;
+	}
+};
+var _user$project$View$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _user$project$View$page(model),
+			_1: {ctor: '[]'}
+		});
+};

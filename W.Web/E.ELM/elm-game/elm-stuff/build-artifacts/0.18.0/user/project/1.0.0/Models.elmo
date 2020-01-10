@@ -1,0 +1,16 @@
+var _user$project$Models$initialModel = function (route) {
+	return {players: _krisajenkins$remotedata$RemoteData$Loading, route: route};
+};
+var _user$project$Models$Model = F2(
+	function (a, b) {
+		return {players: a, route: b};
+	});
+var _user$project$Models$Player = F3(
+	function (a, b, c) {
+		return {id: a, name: b, level: c};
+	});
+var _user$project$Models$NotFoundRoute = {ctor: 'NotFoundRoute'};
+var _user$project$Models$PlayerRoute = function (a) {
+	return {ctor: 'PlayerRoute', _0: a};
+};
+var _user$project$Models$PlayersRoute = {ctor: 'PlayersRoute'};

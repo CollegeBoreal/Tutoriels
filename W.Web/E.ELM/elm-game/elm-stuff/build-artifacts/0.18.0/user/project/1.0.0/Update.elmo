@@ -1,0 +1,56 @@
+var _user$project$Update$updatePlayer = F2(
+	function (model, updatedPlayer) {
+		var pick = function (currentPlayer) {
+			return _elm_lang$core$Native_Utils.eq(updatedPlayer.id, currentPlayer.id) ? updatedPlayer : currentPlayer;
+		};
+		var updatePlayerList = function (players) {
+			return A2(_elm_lang$core$List$map, pick, players);
+		};
+		var updatedPlayers = A2(_krisajenkins$remotedata$RemoteData$map, updatePlayerList, model.players);
+		return _elm_lang$core$Native_Utils.update(
+			model,
+			{players: updatedPlayers});
+	});
+var _user$project$Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'OnFetchPlayers':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{players: _p0._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'OnLocationChange':
+				var newRoute = _user$project$Routing$parseLocation(_p0._0);
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{route: newRoute}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'ChangeLevel':
+				var _p1 = _p0._0;
+				var updatedPlayer = _elm_lang$core$Native_Utils.update(
+					_p1,
+					{level: _p1.level + _p0._1});
+				return {
+					ctor: '_Tuple2',
+					_0: model,
+					_1: _user$project$Commands$savePlayerCmd(updatedPlayer)
+				};
+			default:
+				if (_p0._0.ctor === 'Ok') {
+					return {
+						ctor: '_Tuple2',
+						_0: A2(_user$project$Update$updatePlayer, model, _p0._0._0),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				} else {
+					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+				}
+		}
+	});
