@@ -1,4 +1,4 @@
-# Shell
+# Power Shell
 
 
 ## Installation
