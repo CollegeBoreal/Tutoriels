@@ -3,14 +3,27 @@
 
 [moby/HyperKit](https://github.com/moby/hyperkit)
 
+
+### Stored in the sandBox app directory `~/Library/Containers/`
+
 https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-dockers-hyperkit
 
 
-Stored in the sandBox app directory `~/Library/Containers/`
+## :m: Accessing the Docker-Desktop LinuxKit VM
+
+:pushpin: use [screen](https://linuxize.com/post/how-to-use-linux-screen/)
+
+* Listing all the VMs
+
+$ ls ~/Library/Containers/com.docker.docker/Data/vms
+
+* Open the `TTY` of VM `#` 0 unsing `screen`
 
 ```
 $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 ```
+
+To exit the session, type `Ctrl-A k` (then y to confirm).
 
 https://stackoverflow.com/questions/1509677/kill-detached-screen-session
 
