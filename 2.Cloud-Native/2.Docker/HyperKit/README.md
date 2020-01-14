@@ -25,8 +25,38 @@ $ ls ~/Library/Containers/com.docker.docker/Data/vms
 $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 ```
 
-then type Enter
+then type Enter to get to the prompt
 
+```
+docker-desktop:~# 
+```
+
+:bulb: To get the namespace name type `CTRL-D``
+
+```
+docker-desktop:~# __  __
+
+Welcome to LinuxKit
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""__/ ===
+          {                       /  ===-
+           _____ O           __/
+                        __/
+              _________/
+
+docker-desktop login: root (automatic login)
+
+Welcome to LinuxKit!
+
+NOTE: This system is namespaced.
+The namespace you are currently in may not be the root.
+System services are namespaced; to access, use `ctr -n services.linuxkit ...`
+login[2334]: root login on 'ttyS0'
+docker-desktop:~# 
+```
 
 :two: To exit the session, type `Ctrl-A k` (then y to confirm).
 
