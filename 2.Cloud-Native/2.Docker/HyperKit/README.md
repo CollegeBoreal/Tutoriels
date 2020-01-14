@@ -19,13 +19,16 @@ https://stackoverflow.com/questions/39739560/how-to-access-the-vm-created-by-doc
 $ ls ~/Library/Containers/com.docker.docker/Data/vms
 ```
 
-* Open the `TTY` of VM `#` 0 unsing `screen`
+:one: Open the `TTY` of VM `#` 0 unsing `screen`
 
 ```
 $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 ```
 
-To exit the session, type `Ctrl-A k` (then y to confirm).
+then type Enter
+
+
+:two: To exit the session, type `Ctrl-A k` (then y to confirm).
 
 
 ## :m: killing detached screen session
