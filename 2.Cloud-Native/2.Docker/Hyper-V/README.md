@@ -3,7 +3,7 @@
 
 :one: - [BCD (Boot Configuration Data)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/bcdedit-command-line-options) Set Hyper-V Auto
 
-Utiliser `PowerShell` pour mettre à jour le type de démarrage de l'`Hypervisor` à  (i.e. Auto/Off)
+Utiliser `PowerShell` pour mettre à jour le type de démarrage de l'`Hypervisor`  (i.e. Auto/Off)
 
 ```
 PS > bcdedit /set HypervisorLaunchType Auto
