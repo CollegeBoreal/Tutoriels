@@ -31,7 +31,7 @@ then type Enter to get to the prompt
 docker-desktop:~# 
 ```
 
-:bulb: To get the namespace name type `CTRL-D``
+:bulb: To get the namespace name type `CTRL-D`
 
 ```
 docker-desktop:~# __  __
