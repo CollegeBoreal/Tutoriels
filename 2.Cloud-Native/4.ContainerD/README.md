@@ -19,3 +19,29 @@ vpnkit-forwarder         -        io.containerd.runtime.v1.linux
 write-and-rotate-logs    -        io.containerd.runtime.v1.linux    
 ```
 
+```
+# ctr -n services.linuxkit container info docker | more
+{
+    "ID": "docker",
+    "Labels": null,
+    "Image": "",
+    "Runtime": {
+        "Name": "io.containerd.runtime.v1.linux",
+        "Options": null
+    },
+    "SnapshotKey": "",
+    "Snapshotter": "",
+    "CreatedAt": "2020-01-15T14:16:08.816898999Z",
+    "UpdatedAt": "2020-01-15T14:16:08.816898999Z",
+    "Extensions": null,
+    "Spec": {
+        "ociVersion": "1.0.1",
+        "process": {
+            "user": {
+                "uid": 0,
+                "gid": 0
+            },
+            "args": [
+                "/usr/local/bin/docker-init",
+                "/usr/bin/entrypoint.sh"
+```
