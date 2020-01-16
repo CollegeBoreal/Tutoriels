@@ -11,6 +11,13 @@ Utiliser `PowerShell` pour mettre à jour le type de démarrage de l'`Hypervisor
 PS > bcdedit /set HypervisorLaunchType Auto
 ```
 
+Installer Hyper-V (et redemarrer) sur Windows Standard ou Windows Server 
+
+```
+PS > Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
+```
+
+
 ![image](images/bcedit-auto.png)
 
 :three: - S'assurer que Docker est démarré
