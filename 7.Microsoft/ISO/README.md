@@ -6,3 +6,5 @@
 :bulb: Windows Creation Tools (Créer une clé USB bootable)
 
 https://www.microsoft.com/en-ca/software-download/windows10
+
+![image](../images/Rufu_USB.png)
