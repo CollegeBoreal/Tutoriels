@@ -32,13 +32,6 @@ https://www.microsoftazuresponsorships.com sera remplace par https://aka.ms/Star
 |[Windows ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)| Créer sa machine a travers le [portail](https://portal.azure.com) Azure | 
 
 
-
-# Outils
-
-## Windows Creation Tools (Créer une clé USB bootable)
-
-https://www.microsoft.com/en-ca/software-download/windows10
-
 ## differences between Windows 10 (Editions)
 https://liliputing.com/2015/07/differences-between-windows-10-home-pro-enterprise-and-education.html
 
