@@ -1,4 +1,5 @@
 
+https://docs.microsoft.com/fr-fr/virtualization/
 
 
 https://social.technet.microsoft.com/Forums/ie/en-US/0c539ba8-ce17-4127-8190-914eac08d82a/microsoft-hyperv-server-2008-r2-administrator-password?forum=winserverhyperv
