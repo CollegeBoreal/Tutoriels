@@ -50,7 +50,26 @@ CustomProperties :
                    ServerComponent\SystemServices\SystemService\Name : vmms
 ```
 
+
+```
+PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
+
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+False   Maybe          Failed         {}
+Install-WindowsFeature : A prerequisite check for the Hyper-V feature failed.
+1. Hyper-V cannot be installed because virtualization support is not enabled in the BIOS.
+At line:1 char:1
++ Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (Hyper-V:ServerComponentWrapper) [Install-WindowsFeature], Exception
+    + FullyQualifiedErrorId : Alteration_PrerequisiteCheck_Failed,Microsoft.Windows.ServerManager.Commands.AddWindowsF
+   eatureCommand
+
 https://docs.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine
+```
+
+----------------------
 
 
 ```
