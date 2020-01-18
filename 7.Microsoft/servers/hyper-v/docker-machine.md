@@ -11,6 +11,7 @@ PS> Install-Package Docker -ProviderName DockerMsftProvider -Force
 PS> # Enable features required (HNS Service)
 PS> Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
 PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+## Will reboot
 ```
 
 
