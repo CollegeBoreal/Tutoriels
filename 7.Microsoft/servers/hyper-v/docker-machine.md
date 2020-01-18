@@ -26,3 +26,29 @@ PS> New-NetFirewallRule -DisplayName 'Docker SSL Inbound' -Profile @('Domain', '
 ```
 
 
+```
+PS> Get-NetFirewallRule  -DisplayName 'Docker SSL Inbound'
+
+
+Name                  : {559bc34a-2536-4470-baec-f1566a07c384}
+DisplayName           : Docker SSL Inbound
+Description           :
+DisplayGroup          :
+Group                 :
+Enabled               : True
+Profile               : Domain, Private, Public
+Platform              : {}
+Direction             : Inbound
+Action                : Allow
+EdgeTraversalPolicy   : Block
+LooseSourceMapping    : False
+LocalOnlyMapping      : False
+Owner                 :
+PrimaryStatus         : OK
+Status                : The rule was parsed successfully from the store. (65536)
+EnforcementStatus     : NotApplicable
+PolicyStoreSource     : PersistentStore
+PolicyStoreSourceType : Local
+```
+
+
