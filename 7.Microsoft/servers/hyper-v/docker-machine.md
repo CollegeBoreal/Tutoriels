@@ -13,6 +13,12 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
 PS> Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
+
+```
+PS> # Test docker
+PS> docker run --interactive --tty mcr.microsoft.com/windows/nanoserver:1809
+```
+
 https://docs.docker.com/v17.09/machine/drivers/hyper-v/
 
 
