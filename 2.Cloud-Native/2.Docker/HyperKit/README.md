@@ -79,13 +79,13 @@ $ screen -ls
 * Quit the session
 
 ```
-$ screen -X -S [session # you want to qui] quit
+$ screen -S <session#> -X quit # <session#> you want to quit .ie 19352, -X execute <cmd>  
 ```
 
 Example
 
 ```
-$ screen -X -S 19352 quit
+$ screen -S 19352 -X quit
 ```
 
 # References:
