@@ -1,4 +1,4 @@
-# :two: Anaconca
+# :two: Anaconda
 
 ## Installation de la distribution Python Anaconda de Continuum
 
