@@ -1,6 +1,6 @@
-# :two: Python
+# :m: Python
 
-## Installation de la machine virtuelle Python
+## :one: Installation de la machine virtuelle Python
 
 :pushpin: Par un Package Manager
 
@@ -26,6 +26,12 @@ $ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
 $ python --version
 Python 3.7.4
 ```
+
+## :two: Installation des outils d'édition
+
+[Anaconda](Anaconda.md)
+
+[IDE](IDE.md)
 
 
 
