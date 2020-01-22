@@ -56,3 +56,5 @@ https://www.python.org/about/gettingstarted/
 
 https://kite.com/blog/python/functional-programming/ (Programmation Fonctionelle)
 
+https://stackoverflow.com/questions/37117571/where-does-anaconda-python-install-on-windows (Uninstall Anaconda)
+
