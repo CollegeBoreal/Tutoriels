@@ -7,7 +7,7 @@
 :bulb: Windows
 
 ```
-> choco install python3 --version=3.7.3
+PS > choco install python3 --pre
 ```
 
 :apple: MacOS 
