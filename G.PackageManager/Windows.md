@@ -11,13 +11,13 @@
 :two: Copier et Coller l'instruction suivante et taper `entrer`
 
 ```
-> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+PS > Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
 :three: Verifier l'installation
 
 ```
-> choco list --local-only
+PS > choco list --local-only
 Chocolatey v0.10.15
 chocolatey 0.10.15
 1 packages installed.
