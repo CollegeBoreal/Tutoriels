@@ -14,6 +14,15 @@
 
 ```
 $ brew cask install anaconda 
-$ echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.bashrc .  # Note: PATH Anaconda précède PATH Python
+$ echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.bashrc .  
 ```
 
+#### Note: PATH Anaconda précède PATH Python
+
+```
+# Anaconda
+export PATH=/usr/local/anaconda3/bin:$PATH
+
+# Python3
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+```
