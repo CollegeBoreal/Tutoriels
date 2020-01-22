@@ -27,10 +27,6 @@ $ python --version
 Python 3.7.4
 ```
 
-# Installation de l'environnement intégré de développement (IDE)
-
-* PyCharm Idea : https://www.jetbrains.com/pycharm/
-* Enregistrement: https://www.jetbrains.com/student/
 
 
 # References:
