@@ -14,6 +14,6 @@
 
 ```
 $ brew cask install anaconda 
-$ echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.bashrc .  # Vérifier que le PATH pour Anaconda précéde Python
+$ echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.bashrc .  # Note: PATH Anaconda précède PATH Python
 ```
 
