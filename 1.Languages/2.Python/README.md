@@ -7,7 +7,7 @@
 :bulb: Windows
 
 ```
-> choco install anaconda3 
+> choco install python3 --version=3.7.3
 ```
 
 :apple: MacOS 
