@@ -13,7 +13,8 @@
 :apple: MacOS 
 
 ```
-$ brew cask install anaconda 
+$ brew install python
+$ echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bashrc
 ```
 
 :pushpin: Manuellement
@@ -26,29 +27,11 @@ $ python --version
 Python 3.7.4
 ```
 
-## Installation de l'environnement intégré de développement (IDE)
+# Installation de l'environnement intégré de développement (IDE)
 
 * PyCharm Idea : https://www.jetbrains.com/pycharm/
 * Enregistrement: https://www.jetbrains.com/student/
 
-
-## Jupiter Install
-
-https://jupyter.org/install
-
-```
-$ pip install jupyterlab
-```
-
-Launch
-
-```
-$ jupyter notebook
-```
-
-Execute
-
-http://localhost:8888/tree
 
 # References:
 
