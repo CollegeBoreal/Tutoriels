@@ -14,7 +14,7 @@ PS > choco install python3 --pre
 
 ```
 $ brew install python
-$ echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bashrc
+$ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
 ```
 
 :pushpin: Manuellement
