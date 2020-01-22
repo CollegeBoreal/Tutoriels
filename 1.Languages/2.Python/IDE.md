@@ -1,4 +1,4 @@
-# 'environnement intégré de développement (IDE)
+# Environnement intégré de développement (IDE)
 
 ### Installation de l'IDE
 
