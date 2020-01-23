@@ -1,4 +1,23 @@
 
+
+
+
+
+https://4sysops.com/archives/free-hyper-v-server-2019-new-features-and-limitations/
+
+```
+Microsoft Hyper-V Server 2019 (updated Sept 2019) Compute 64 bits
+```
+https://4sysops.com/archives/configure-windows-server-2019-container-host-with-powershell/
+
+https://vmarena.com/installing-hyper-v-on-windows-server-2019/
+
+
+
+
+
+
+
 https://docs.microsoft.com/fr-fr/virtualization/
 
 
