@@ -17,7 +17,7 @@ Voir [ISO](ISO)
 
 Voir [Laboratoire 3202](https://github.com/CollegeBoreal/Laboratoires/tree/master/3202)
 
-[RAID 5](https://github.com/CollegeBoreal/Laboratoires/tree/master/3202/proliant/RAID)
+[RAID 5](https://github.com/CollegeBoreal/Laboratoires/tree/master/3202/proliant/RAID) suggéré
 
 :pushpin: Installe ton serveur
 
