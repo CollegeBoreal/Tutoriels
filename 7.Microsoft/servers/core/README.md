@@ -64,9 +64,12 @@
 
 Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
-:pushpin: Ouvrir un nouveau `Task Manager`
+:pushpin: Ouvrir un nouveau `Task Manager` en tapant sur `<Enter>`
 
 <img src="images/TaskManager.png" width="736px" heigth="334px"></img>
+
+
+:pushpin: Ouvrir le menu en tapant sur `<TAB>` vers `> More Details`
 
 ## Reference:
 
