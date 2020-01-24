@@ -2,6 +2,8 @@
 
 ### :one: Installation
 
+- Configuration Language, Clavier et Format Temps Et Devises
+
 <img src="images/IMG_1804.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1805.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1807.jpeg" width="375px" heigth="812px"></img>
