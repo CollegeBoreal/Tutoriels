@@ -24,7 +24,7 @@
 <img src="images/IMG_1809.jpeg" width="375px" heigth="812px"></img>
 
 
-### :two: Installation
+### :two: Installation et Reboot
 
 <img src="images/IMG_1810.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1811.jpeg" width="375px" heigth="812px"></img>
