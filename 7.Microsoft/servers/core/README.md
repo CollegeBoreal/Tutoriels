@@ -48,6 +48,9 @@
 <img src="images/IMG_1818.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1819.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1820.jpeg" width="375px" heigth="812px"></img>
+
+:pushpin: Configuration du reseau avec `Sconfig.cmd`
+
 <img src="images/IMG_1821.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1822.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1823.jpeg" width="375px" heigth="812px"></img>
