@@ -83,7 +83,7 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 <img src="images/TaskManagerTask.png" width="400px" heigth="396px"></img>
 
 
-:pushpin: Task Manager Detail
+:pushpin: PowerShell
 
 * Entrer `powershell` et enter pour ouvrir une nouvelle fenetre
 
