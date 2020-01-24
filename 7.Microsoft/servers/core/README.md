@@ -1,23 +1,23 @@
-![image](images/IMG_1804.jpeg)
-![image](images/IMG_1805.jpeg)
-![image](images/IMG_1807.jpeg)
-![image](images/IMG_1808.jpeg)
-![image](images/IMG_1809.jpeg)
-![image](images/IMG_1810.jpeg)
-![image](images/IMG_1811.jpeg)
-![image](images/IMG_1812.jpeg)
-![image](images/IMG_1813.jpeg)
-![image](images/IMG_1814.jpeg)
-![image](images/IMG_1815.jpeg)
-![image](images/IMG_1816.jpeg)
-![image](images/IMG_1817.jpeg)
-![image](images/IMG_1818.jpeg)
-![image](images/IMG_1819.jpeg)
-![image](images/IMG_1820.jpeg)
-![image](images/IMG_1821.jpeg)
-![image](images/IMG_1822.jpeg)
-![image](images/IMG_1823.jpeg)
-![image](images/IMG_1824.jpeg)
+<img src="images/IMG_1804.jpeg"></img>
+<img src="images/IMG_1805.jpeg"></img>
+<img src="images/IMG_1807.jpeg"></img>
+<img src="images/IMG_1808.jpeg"></img>
+<img src="images/IMG_1809.jpeg"></img>
+<img src="images/IMG_1810.jpeg"></img>
+<img src="images/IMG_1811.jpeg"></img>
+<img src="images/IMG_1812.jpeg"></img>
+<img src="images/IMG_1813.jpeg"></img>
+<img src="images/IMG_1814.jpeg"></img>
+<img src="images/IMG_1815.jpeg"></img>
+<img src="images/IMG_1816.jpeg"></img>
+<img src="images/IMG_1817.jpeg"></img>
+<img src="images/IMG_1818.jpeg"></img>
+<img src="images/IMG_1819.jpeg"></img>
+<img src="images/IMG_1820.jpeg"></img>
+<img src="images/IMG_1821.jpeg"></img>
+<img src="images/IMG_1822.jpeg"></img>
+<img src="images/IMG_1823.jpeg"></img>
+<img src="images/IMG_1824.jpeg"></img>
 
 ### Remote Desktop
 
