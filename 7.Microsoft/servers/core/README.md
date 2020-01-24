@@ -80,7 +80,7 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
 * Appuyer sur `ALT`+`F` pour ouvrir une nouvelle tache dans le menu
 
-<img src="images/TaskManagerDetails.png" width="400px" heigth="396px"></img>
+<img src="images/TaskManagerTask.png" width="400px" heigth="396px"></img>
 
 
 ## Reference:
