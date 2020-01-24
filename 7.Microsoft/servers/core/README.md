@@ -1,4 +1,4 @@
-<img src="images/IMG_1804.jpeg"></img>
+<img src="images/IMG_1804.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1805.jpeg"></img>
 <img src="images/IMG_1807.jpeg"></img>
 <img src="images/IMG_1808.jpeg"></img>
