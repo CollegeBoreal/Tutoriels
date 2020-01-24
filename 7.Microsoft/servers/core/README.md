@@ -15,13 +15,17 @@
 
 <img src="images/IMG_1808.jpeg" width="375px" heigth="812px"></img>
 
-- Installation sur le disque (choix de formatter les partitions) - :warning: Boot disk on line
+- Choisir la distribution
 
 <img src="images/IMG_1826.jpeg" width="375px" heigth="812px"></img>
 
-### :two: Configuration
+- Installation sur le disque (choix de formatter les partitions) - :warning: Boot disk on line
 
 <img src="images/IMG_1809.jpeg" width="375px" heigth="812px"></img>
+
+
+### :two: Configuration
+
 <img src="images/IMG_1810.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1811.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1812.jpeg" width="375px" heigth="812px"></img>
