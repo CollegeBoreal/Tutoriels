@@ -1,6 +1,6 @@
 # Installation Windows Server 2019 (Datacenter Core)
 
-### :one: Installation
+### :one: Preparation
 
 - Configuration Language, Clavier et Format Temps Et Devises
 
@@ -24,7 +24,7 @@
 <img src="images/IMG_1809.jpeg" width="375px" heigth="812px"></img>
 
 
-### :two: Configuration
+### :two: Installation
 
 <img src="images/IMG_1810.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1811.jpeg" width="375px" heigth="812px"></img>
