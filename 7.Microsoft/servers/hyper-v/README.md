@@ -2,7 +2,7 @@
 
 
 
-https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
+:pushpin: https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
 
     # Query the registry for necessary build information
     $winver = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\'
