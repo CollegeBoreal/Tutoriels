@@ -66,7 +66,7 @@
 
 :pushpin: Ouvrir un nouveau `Task Manager`
 
-<img src="images/TaskManager.png" width="375px" heigth="812px"></img>
+<img src="images/TaskManager.png" width="736px" heigth="334px"></img>
 
 ## Reference:
 
