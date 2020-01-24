@@ -32,5 +32,4 @@ https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-
 
 
 
-
-![image](images/IMG_1826.jpeg)
+<img src="images/IMG_1826.jpeg" width="375px" heigth="812px"></img>
