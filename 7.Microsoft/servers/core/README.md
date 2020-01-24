@@ -74,13 +74,20 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 <img src="images/TaskManagerDetails.png" width="400px" heigth="396px"></img>
 
 
-:pushpin: Detail
+:pushpin: Task Manager Detail
 
 * Appuyer `Espace` pour ouvrir le detail de la page `Task Manager`
 
 * Appuyer sur `ALT`+`F` pour ouvrir une nouvelle tache dans le menu
 
 <img src="images/TaskManagerTask.png" width="400px" heigth="396px"></img>
+
+
+:pushpin: Task Manager Detail
+
+* Entrer `powershell` et enter pour ouvrir une nouvelle fenetre
+
+<img src="images/TaskManagerPWSH.png" width="400px" heigth="396px"></img>
 
 
 ## Reference:
