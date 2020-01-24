@@ -71,6 +71,9 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
 :pushpin: Ouvrir le menu en tapant sur `<TAB>` vers `> More Details`
 
+<img src="images/TaskManager.png" width="400px" heigth="396px"></img>
+
+
 ## Reference:
 
 https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-server-core-after-closing-the-last-one
