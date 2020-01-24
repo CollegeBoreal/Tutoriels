@@ -33,7 +33,7 @@
 
 ### :three: Configuration
 
-:pushpin: Du mot de passe
+:pushpin: Du mot de passe de l'Administrateur `Administrator`
 
 <img src="images/IMG_1814.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1815.jpeg" width="375px" heigth="812px"></img>
