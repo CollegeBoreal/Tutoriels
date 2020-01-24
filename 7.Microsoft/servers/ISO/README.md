@@ -7,4 +7,4 @@
 
 https://www.microsoft.com/en-ca/software-download/windows10
 
-![image](../images/rufus_USB.png)
+![image](images/rufus_USB.png)
