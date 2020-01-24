@@ -2,6 +2,15 @@
 
 
 
+https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
+
+    # Query the registry for necessary build information
+    $winver = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\'
+    $versiontag = "$($winver.CurrentMajorVersionNumber).$($winver.CurrentMinorVersionNumber).$($winver.CurrentBuildNumber).$($winver.UBR)"
+
+    # Run the actual docker pull command to download the insider image matching the host OS
+    docker pull mcr.microsoft.com/windows-insider:$versiontag
+
 
 https://4sysops.com/archives/free-hyper-v-server-2019-new-features-and-limitations/
 
