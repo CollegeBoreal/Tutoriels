@@ -37,6 +37,9 @@
 
 <img src="images/IMG_1814.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1815.jpeg" width="375px" heigth="812px"></img>
+
+:key: Appliquer la politique de securite
+
 <img src="images/IMG_1816.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1817.jpeg" width="375px" heigth="812px"></img>
 
