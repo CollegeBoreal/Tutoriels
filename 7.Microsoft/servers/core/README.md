@@ -62,7 +62,7 @@
 
 :pushpin: Ouvrir une autre fenetre CMD en remote desktop
 
-`CTRL`+`ALT`+`END` au lieu des touches `CTRL`+`ALT`+`DEL`
+Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
 :pushpin: Ouvrir un nouveau `Task Manager`
 
