@@ -66,6 +66,10 @@
 
 :pushpin: Ouvrir un nouveau `Task Manager`
 
+<img src="images/TaskManager.png" width="375px" heigth="812px"></img>
+
+## Reference:
+
 https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-server-core-after-closing-the-last-one
 
 
