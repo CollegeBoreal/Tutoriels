@@ -69,7 +69,16 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 <img src="images/TaskManager.png" width="736px" heigth="334px"></img>
 
 
-:pushpin: Ouvrir le menu en tapant sur `<TAB>` vers `> More Details`
+:pushpin: Ouvrir le menu en tapant sur `TAB` vers `> More Details`
+
+<img src="images/TaskManagerDetails.png" width="400px" heigth="396px"></img>
+
+
+:pushpin: Detail
+
+* Appuyer `Espace` pour ouvrir le detail de la page `Task Manager`
+
+* Appuyer sur `ALT`+`F` pour ouvrir une nouvelle tache dans le menu
 
 <img src="images/TaskManagerDetails.png" width="400px" heigth="396px"></img>
 
