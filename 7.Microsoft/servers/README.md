@@ -13,5 +13,8 @@ https://www.microsoft.com/en-us/cloud-platform/windows-server-pricing (Pricing)
 
 Voir [ISO](ISO)
 
+:pushpin: Prépare ta machine
+
+Voir [Laboratoire 3202](https://github.com/CollegeBoreal/Laboratoires/tree/master/3202)
 
 
