@@ -71,7 +71,7 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
 :pushpin: Ouvrir le menu en tapant sur `<TAB>` vers `> More Details`
 
-<img src="images/TaskManager.png" width="400px" heigth="396px"></img>
+<img src="images/TaskManagerDetails.png" width="400px" heigth="396px"></img>
 
 
 ## Reference:
