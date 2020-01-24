@@ -1,12 +1,23 @@
+# Installation Windows Server 2019 (Datacenter Core)
+
+### :one: Installation
+
 <img src="images/IMG_1804.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1805.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1807.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1808.jpeg" width="375px" heigth="812px"></img>
+<img src="images/IMG_1826.jpeg" width="375px" heigth="812px"></img>
+
+### :two: Configuration
+
 <img src="images/IMG_1809.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1810.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1811.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1812.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1813.jpeg" width="375px" heigth="812px"></img>
+
+### :three: Configuration
+
 <img src="images/IMG_1814.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1815.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1816.jpeg" width="375px" heigth="812px"></img>
@@ -32,4 +43,3 @@ https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-
 
 
 
-<img src="images/IMG_1826.jpeg" width="375px" heigth="812px"></img>
