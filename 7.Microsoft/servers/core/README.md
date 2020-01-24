@@ -5,16 +5,18 @@
 - Configuration Language, Clavier et Format Temps Et Devises
 
 <img src="images/IMG_1804.jpeg" width="375px" heigth="812px"></img>
+<img src="images/IMG_1805.jpeg" width="375px" heigth="812px"></img>
 
 - Accepter la license 
 
-<img src="images/IMG_1805.jpeg" width="375px" heigth="812px"></img>
+<img src="images/IMG_1807.jpeg" width="375px" heigth="812px"></img>
 
 - choisir Upgrade ou Custom
 
-
-<img src="images/IMG_1807.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1808.jpeg" width="375px" heigth="812px"></img>
+
+- Installation sur le disque (choix de formatter les partitions) - :warning: Boot disk on line
+
 <img src="images/IMG_1826.jpeg" width="375px" heigth="812px"></img>
 
 ### :two: Configuration
