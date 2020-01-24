@@ -56,14 +56,15 @@
 <img src="images/IMG_1823.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1824.jpeg" width="375px" heigth="812px"></img>
 
-### Remote Desktop
+# Utilisation a distance
 
+:a: avec Remote Desktop
 
 :pushpin: Ouvrir une autre fenetre CMD en remote desktop
 
 `CTRL`+`ALT`+`END` au lieu des touches `CTRL`+`ALT`+`DEL`
 
-:pishpin: Ouvrir un nouveau `Task Manager`
+:pushpin: Ouvrir un nouveau `Task Manager`
 
 https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-server-core-after-closing-the-last-one
 
