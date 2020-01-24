@@ -56,9 +56,6 @@
 <img src="images/IMG_1823.jpeg" width="375px" heigth="812px"></img>
 <img src="images/IMG_1824.jpeg" width="375px" heigth="812px"></img>
 
-## Reference:
-
-https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-server-core-after-closing-the-last-one
 
 
 
