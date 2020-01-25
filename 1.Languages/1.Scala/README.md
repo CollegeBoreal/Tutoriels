@@ -1,6 +1,6 @@
 # :one: Scala
 
-![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/HelloWorld.png)
+![image](images/HelloWorld.png)
 
 ## Installation de [sdkman](https://sdkman.io)
 
