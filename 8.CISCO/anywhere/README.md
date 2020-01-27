@@ -83,3 +83,9 @@ Copyright (c) 2004 - 2019 Cisco Systems, Inc.  All Rights Reserved.
 VPN> 
 ```
 
+# References
+
+| Title                               | Link                                             |
+|-------------------------------------|--------------------------------------------------|
+| Cisco AnyConnect broken on Catalina | https://forums.developer.apple.com/thread/117603 |
+
