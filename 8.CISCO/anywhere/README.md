@@ -1,6 +1,6 @@
 # CISCO Anywhere VPN Client
 
-:warning: Ne fonctionne pas sur Catalina utiliser [openconnect-gui](https://openconnect.github.io/openconnect-gui)
+:warning: Ne fonctionne pas sur Catalina utiliser [OpenConnect-GUI](https://openconnect.github.io/openconnect-gui)
 
 
 ![image](images/AnywhereMobilityClient.png)
