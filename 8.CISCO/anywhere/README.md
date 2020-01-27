@@ -88,5 +88,6 @@ VPN>
 |-------------------------------------|--------------------------------------------------|
 | Cisco AnyConnect broken on Catalina | https://forums.developer.apple.com/thread/117603 |
 | anyconnect-mac-os-x-client-certificate-authentication | https://community.cisco.com/t5/vpn-and-anyconnect/anyconnect-mac-os-x-client-certificate-authentication/td-p/1543603 |
+| [Anyconnect 4.8](https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect48/release/notes/b_Release_Notes_AnyConnect_4_8.html) | |
 
 
