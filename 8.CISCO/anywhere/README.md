@@ -5,6 +5,43 @@
 
 https://community.cisco.com/t5/vpn-and-anyconnect/anyconnect-mac-os-x-client-certificate-authentication/td-p/1543603
 
+
+```
+$  sudo /opt/cisco/anyconnect/bin/vpn connect vpn.collegeboreal.ca
+Cisco AnyConnect Secure Mobility Client (version 4.7.04056) .
+
+Copyright (c) 2004 - 2019 Cisco Systems, Inc.  All Rights Reserved.
+
+
+  >> state: Disconnected
+  >> state: Disconnected
+  >> notice: Ready to connect.
+  >> registered with local VPN subsystem.
+  >> contacting host (vpn.collegeboreal.ca) for login information...
+  >> notice: Contacting vpn.collegeboreal.ca.
+Group: RA-VPN
+
+Username: [BOREAL-ID] 
+Password: 
+  >> state: Connecting
+  >> notice: Establishing VPN session...
+  >> notice: The AnyConnect Downloader is performing update checks...
+  >> notice: Checking for profile updates...
+  >> notice: Checking for product updates...
+  >> notice: Checking for customization updates...
+  >> notice: Performing any required updates...
+  >> notice: The AnyConnect Downloader updates have been completed.
+  >> state: Connecting
+  >> notice: Establishing VPN session...
+  >> notice: Establishing VPN - Initiating connection...
+  >> notice: Establishing VPN - Examining system...
+  >> notice: Establishing VPN - Activating VPN adapter...
+  >> notice: Establishing VPN - Configuring system...
+  >> notice: Establishing VPN...
+  >> state: Connected
+```
+
+
 #### :x: Disconnect
 
 ```
