@@ -6,7 +6,7 @@
 |-----------------|-------------------|--------------------|
 | 10.13.0.0/20    | Computers         | :heavy_check_mark: |
 | 10.13.16.0/20   | Phones .          | :heavy_check_mark: |
-| 10.13.48.0/24   | Phones .          | :heavy_check_mark: |
+| 10.13.48.0/24   | Video Conf ??     | :heavy_check_mark: |
 | 10.13.237.0/25  | Lab .             | :x: |
 | 10.13.99.2/32   |                   | :heavy_check_mark: |
 
