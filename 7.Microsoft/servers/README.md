@@ -27,4 +27,13 @@ Voir [Core](core)
 
 Pour Mac [RDP pour Windows 10](https://www.snel.com/support/how-to-connect-to-your-server-via-rdp-on-macos/)
 
+[ALT]+[CTRL]+[DEL] on Mac 
+
+
+    The built-in Screen Sharing application on OS X is a VNC client that can send Ctrl-Alt-Del:
+
+    Laptop keyboard: fn+control+command+delete
+
+    Full-size keyboard: control+option+delete
+
 
