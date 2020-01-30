@@ -27,7 +27,7 @@ Voir [Core](core)
 
 Pour Mac [RDP pour Windows 10](https://www.snel.com/support/how-to-connect-to-your-server-via-rdp-on-macos/)
 
-[ALT]+[CTRL]+[DEL] on Mac 
+[ALT]+[CTRL]+[DEL] on Mac => Basically [CTRL] is [CTRL], [ALT] is [OPT] and [Windows] is [Command] Keys
 
 
     The built-in Screen Sharing application on OS X is a VNC client that can send Ctrl-Alt-Del:
