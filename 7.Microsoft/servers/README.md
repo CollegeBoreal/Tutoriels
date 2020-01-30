@@ -23,4 +23,8 @@ Voir [Laboratoire 3202](https://github.com/CollegeBoreal/Laboratoires/tree/maste
 
 Voir [Core](core)
 
+:pushpin: Connecte toi avec [RDP](https://support.microsoft.com/en-ca/help/4028379/windows-10-how-to-use-remote-desktop) 
+
+Pour Mac [RDP pour Windows 10](https://www.snel.com/support/how-to-connect-to-your-server-via-rdp-on-macos/)
+
 
