@@ -48,7 +48,7 @@ Check https://docs.docker.com/machine/drivers/hyper-v/"
 
 
 ```
- get-vmswitch
+PS > Get-VMSwitch
 
 Name                   SwitchType NetAdapterInterfaceDescription
 ----                   ---------- ------------------------------
