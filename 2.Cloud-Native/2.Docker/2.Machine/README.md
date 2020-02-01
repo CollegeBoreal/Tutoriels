@@ -16,6 +16,9 @@ https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
 PS > choco install docker-machine
 ```
 
+
+* [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
+
 :pushpin: MacOS
 
 ```
@@ -35,7 +38,6 @@ Error with pre-create check: "Hyper-v commands have to be run as an Administrato
 ```
 
 
-* [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
 
 
 
