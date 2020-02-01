@@ -30,12 +30,20 @@ PS > brew install docker-machine
 :one: Hyper-V
 
 ```
-PS C:\Users\300098957> docker-machine create --driver hyperv vm
+PS > docker-machine create --driver hyperv vm
 Creating CA: C:\Users\300098957\.docker\machine\certs\ca.pem
 Creating client certificate: C:\Users\300098957\.docker\machine\certs\cert.pem
 Running pre-create checks...
 Error with pre-create check: "Hyper-v commands have to be run as an Administrator"
 ```
+
+```
+PS > docker-machine create --driver hyperv vm
+Running pre-create checks...
+Error with pre-create check: "no External vswitch found. A valid vswitch must be available for this command to run. Check https://docs.docker.com/machine/drivers/hyper-v/"
+```
+
+
 
 
 
