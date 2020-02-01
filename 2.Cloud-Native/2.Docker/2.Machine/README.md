@@ -8,9 +8,26 @@ https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
 
 ## Prérequis
 
-* [Installer Docker Machine](https://docs.docker.com/v17.09/machine/overview/)   
+* Installer Docker Machine - avec un Package Manager
 
-https://download.docker.com/ (installer docker sans login-wall)
+:pushpin: Windows
+
+```
+PS > choco install docker-machine
+```
+
+:pushpin: MacOS
+
+```
+PS > brew install docker-machine
+```
+
+
+
+* [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
+
+
+
 
 
 
