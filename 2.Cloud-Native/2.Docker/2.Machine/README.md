@@ -97,6 +97,15 @@ NAME   ACTIVE   DRIVER   STATE     URL                      SWARM   DOCKER     E
 vm     -        hyperv   Running   tcp://10.13.4.242:2376           v19.03.5
 ```
 
+```
+PS > docker-machine ssh vm
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@vm:~$
+```
+
 
 ```
 PS > docker-machine env vm
