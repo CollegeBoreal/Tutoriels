@@ -92,20 +92,21 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 * Lister les machines virtuelles
 
 ```
-PS C:\Users\Brice> docker-machine ls
+PS > docker-machine ls
 NAME   ACTIVE   DRIVER   STATE     URL                      SWARM   DOCKER     ERRORS
 vm     -        hyperv   Running   tcp://10.13.4.242:2376           v19.03.5
 ```
 
 
 ```
-$ docker-machine env fianarantsoa
-export DOCKER_TLS_VERIFY="0"
-export DOCKER_HOST="tcp://172.17.100.165:2376"
-export DOCKER_CERT_PATH="/Users/300098957/.docker/machine/machines/vm"
-export DOCKER_MACHINE_NAME="vm"
-# Run this command to configure your shell: 
-# eval $(docker-machine env fianarantsoa)
+PS > docker-machine env vm
+$Env:DOCKER_TLS_VERIFY = "1"
+$Env:DOCKER_HOST = "tcp://10.13.4.242:2376"
+$Env:DOCKER_CERT_PATH = "C:\Users\Brice\.docker\machine\machines\vm"
+$Env:DOCKER_MACHINE_NAME = "vm"
+$Env:COMPOSE_CONVERT_WINDOWS_PATHS = "true"
+# Run this command to configure your shell:
+# & "C:\ProgramData\chocolatey\lib\docker-machine\bin\docker-machine.exe" env vm | Invoke-Expression
 ```
 
 
