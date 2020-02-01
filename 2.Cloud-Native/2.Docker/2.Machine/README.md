@@ -116,6 +116,11 @@ vm
 ```
 
 
+```
+PS >  Get-Command -Module Hyper-V
+```
+
+
 # Références 
 
 ## Docker Machine Examples
