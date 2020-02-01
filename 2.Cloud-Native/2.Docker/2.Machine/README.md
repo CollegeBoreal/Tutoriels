@@ -110,7 +110,10 @@ $Env:COMPOSE_CONVERT_WINDOWS_PATHS = "true"
 ```
 
 
-
+```
+PS > docker-machine active
+vm
+```
 
 
 # Références 
