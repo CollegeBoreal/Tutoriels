@@ -96,7 +96,7 @@ export DOCKER_CERT_PATH="/Users/b300098957/.docker/machine/machines/fianarantsoa
 export DOCKER_MACHINE_NAME="fianarantsoa"
 # Run this command to configure your shell: 
 # eval $(docker-machine env fianarantsoa)
-
+```
 
 
 
