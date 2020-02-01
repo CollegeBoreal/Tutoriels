@@ -48,17 +48,18 @@ Check https://docs.docker.com/machine/drivers/hyper-v/"
 
 
 ```
-PS > Get-VMSwitch
+ get-vmswitch
 
-Name           SwitchType NetAdapterInterfaceDescription
-----           ---------- ------------------------------
-Default Switch Internal
+Name                   SwitchType NetAdapterInterfaceDescription
+----                   ---------- ------------------------------
+Primary Virtual Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client) #4
+nat                    Internal
 ```
 
 * Creer la machine virtuelle avec la Switch Virtuelle
 
 ```
-PS > docker-machine create --driver hyperv --hyperv-virtual-switch "Default Switch" vm
+PS > docker-machine create --driver hyperv --hyperv-virtual-switch "Primary Virtual Switch" vm
 Running pre-create checks...
 (vm) Image cache directory does not exist, creating it at C:\Users\300098957\.docker\machine\cache...
 (vm) No default Boot2Docker ISO found locally, downloading the latest release...
