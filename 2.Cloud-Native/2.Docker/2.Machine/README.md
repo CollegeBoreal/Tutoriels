@@ -85,7 +85,7 @@ Checking connection to Docker...
 Error creating machine: Error checking the host: Error checking and/or regenerating the certs: There was an error validating certificates for host "172.17.100.172:2376": remote error: tls: bad certificate
 You can attempt to regenerate them using 'docker-machine regenerate-certs [name]'.
 Be advised that this will trigger a Docker daemon restart which might stop running containers.
-
+```
 
 
 
