@@ -90,10 +90,10 @@ Be advised that this will trigger a Docker daemon restart which might stop runni
 
 ```
 $ docker-machine env fianarantsoa
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://10.13.5.21:2376"
-export DOCKER_CERT_PATH="/Users/b300098957/.docker/machine/machines/fianarantsoa"
-export DOCKER_MACHINE_NAME="fianarantsoa"
+export DOCKER_TLS_VERIFY="0"
+export DOCKER_HOST="tcp://172.17.100.165:2376"
+export DOCKER_CERT_PATH="/Users/300098957/.docker/machine/machines/vm"
+export DOCKER_MACHINE_NAME="vm"
 # Run this command to configure your shell: 
 # eval $(docker-machine env fianarantsoa)
 ```
