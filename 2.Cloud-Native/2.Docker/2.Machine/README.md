@@ -129,6 +129,26 @@ vm
 PS >  Get-Command -Module Hyper-V
 ```
 
+## :o: Docker Machine Generique 
+
+:bulb: Pour commande a distance 
+
+:one: Copier les cles sur la machine distante sur la machine cliente 
+
+* Source: $env:USERPROFILE\.docker\machine\machines\<machine virtuelle>\{id_rsa,id_rsa.pub}
+
+* Destination: ~/.ssh/<machine virtuelle> 
+
+```
+% docker-machine create --driver generic \
+                        --generic-ip-address=10.13.2.45 \
+                        --generic-ssh-user=docker \
+                        --generic-ssh-key ~/.ssh/<machine virtuelle> \   
+                        <machine virtuelle>
+```
+
+
+
 
 # Références 
 
