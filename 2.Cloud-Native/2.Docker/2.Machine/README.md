@@ -129,6 +129,12 @@ vm
 PS >  Get-Command -Module Hyper-V
 ```
 
+Lire le disk virtuel utilise
+
+```
+PS > Get-VHD $env:USERPROFILE\.docker\machine\machines\vm\disk.vhd
+```
+
 ## :o: Docker Machine Generique 
 
 :bulb: Pour commande a distance 
