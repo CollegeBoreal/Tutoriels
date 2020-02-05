@@ -124,6 +124,41 @@ PS > docker-machine active
 vm
 ```
 
+## :b: Primary Virtual Switch
+
+:pushpin: Chercher les interfaces reseaux 
+
+```
+> Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress
+----                      --------------------                    ------- ------       ----------
+vEthernet (nat)           Hyper-V Virtual Ethernet Adapter             12 Up           00-15-5D-51-F8-66
+Ethernet                  QLogic BCM5709C Gigabit Ethernet ...#47      11 Up           1C-C1-DE-F3-0D-44
+vEthernet (Ethernet) 2
+Ethernet 4                QLogic BCM5709C Gigabit Ethernet ...#49       7 Disconnected 1C-C1-DE-F3-FC-AC
+vEthernet (Ethernet)
+Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#50       5 Disconnected 1C-C1-DE-F3-FC-AE
+Ethernet 3                QLogic BCM5709C Gigabit Ethernet ...#48       3 Disconnected 1C-C1-DE-F3-0D-46
+```
+
+:pushpin: Assigner a une variable
+
+```
+> $net = Get-NetAdapter -Name 'Ethernet'
+```
+
+:pushpin: Creer une interface reseau virtuelle `Primary Virtual Switch`
+
+```
+> New-VMSwitch -Name "Primary Virtual Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+
+Name                   SwitchType NetAdapterInterfaceDescription
+----                   ---------- ------------------------------
+Primary Virtual Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
+```
+
+
 
 ```
 PS >  Get-Command -Module Hyper-V
