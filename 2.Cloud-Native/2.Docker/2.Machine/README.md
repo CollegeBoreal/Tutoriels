@@ -25,7 +25,7 @@ PS > choco install docker-machine
 PS > brew install docker-machine
 ```
 
-## -[x] [Hyper-V](Hyper-Vmd)
+-[x] [Hyper-V](Hyper-Vmd)
 
 
 # Références 
