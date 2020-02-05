@@ -145,20 +145,25 @@ Ethernet 3                QLogic BCM5709C Gigabit Ethernet ...#48       3 Discon
 :pushpin: Assigner a une variable
 
 ```
-> $net = Get-NetAdapter -Name 'Ethernet'
+PS> $net = Get-NetAdapter -Name 'Ethernet'
 ```
 
 :pushpin: Creer une interface reseau virtuelle `Primary Virtual Switch`
 
 ```
-> New-VMSwitch -Name "Primary Virtual Switch" -AllowManagementOS $True -NetAdapterName $net.Name
+PS> New-VMSwitch -Name "Primary Virtual Switch" -AllowManagementOS $True -NetAdapterName $net.Name
 
 Name                   SwitchType NetAdapterInterfaceDescription
 ----                   ---------- ------------------------------
 Primary Virtual Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 ```
 
-
+```
+PS> New-NetFirewallRule `
+       -DisplayName 'Docker SSL Inbound' -Profile @('Domain', 'Public', 'Private') `
+       -Direction Inbound -Action Allow -Protocol TCP `
+       -LocalPort 2376
+```
 
 ```
 PS >  Get-Command -Module Hyper-V
@@ -201,4 +206,6 @@ https://docs.docker.com/v17.09/machine/drivers/hyper-v/
 http://www.macadamian.com/2017/01/24/docker-machine-basic-examples/
 
 https://docs.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/quick-start/connect-to-network
+
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/management/manage_remotehost
 
