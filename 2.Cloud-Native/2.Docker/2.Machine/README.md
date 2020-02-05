@@ -200,3 +200,5 @@ https://docs.docker.com/v17.09/machine/drivers/hyper-v/
 
 http://www.macadamian.com/2017/01/24/docker-machine-basic-examples/
 
+https://docs.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/quick-start/connect-to-network
+
