@@ -36,4 +36,7 @@ https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/t
 
 http://alexfalkowski.blogspot.com/2012/08/functionalprogramming-in-powershell.html
 
+## Environment Variables
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ff730964(v=technet.10)
 
