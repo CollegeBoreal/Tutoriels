@@ -158,12 +158,22 @@ Name                   SwitchType NetAdapterInterfaceDescription
 Primary Virtual Switch External   QLogic BCM5709C Gigabit Ethernet (NDIS VBD Client)
 ```
 
+:pushpin: Ouvrir le firewall pour `2376`
+
 ```
 PS> New-NetFirewallRule `
        -DisplayName 'Docker SSL Inbound' -Profile @('Domain', 'Public', 'Private') `
        -Direction Inbound -Action Allow -Protocol TCP `
        -LocalPort 2376
 ```
+
+:pushpin: Redemarrer
+
+```
+PS- Restart-Computer -Force
+```
+
+# Hyper-V
 
 ```
 PS >  Get-Command -Module Hyper-V
