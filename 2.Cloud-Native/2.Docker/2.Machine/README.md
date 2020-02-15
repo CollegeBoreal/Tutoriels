@@ -1,10 +1,11 @@
 # Docker Machine
 
-## :whale: Cheat Sheets
+## Utilisation
 
-$ docker-machine `command` => [Cheat Sheet - Machine](http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf)
+`docker-machine` est un outil pour `devops` permettant la création de machine virtuelle.
 
 https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
+
 
 ## Prérequis
 
@@ -31,3 +32,9 @@ PS > brew install docker-machine
 # Références 
 
 http://www.macadamian.com/2017/01/24/docker-machine-basic-examples/
+
+## :whale: Cheat Sheets
+
+$ docker-machine `command` => [Cheat Sheet - Machine](http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf)
+
+
