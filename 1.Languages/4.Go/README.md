@@ -10,3 +10,10 @@ Go is an open source programming language that makes it easy to build simple, re
 ```
 $ brew install golang 
 ```
+
+:window: Windows
+
+
+```
+PS> choco install golang
+```
