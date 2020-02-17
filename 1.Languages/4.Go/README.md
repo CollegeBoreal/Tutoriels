@@ -3,5 +3,10 @@
 
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
+## Installation
 
-% brew install golang 
+:apple: MacOS
+
+```
+$ brew install golang 
+```
