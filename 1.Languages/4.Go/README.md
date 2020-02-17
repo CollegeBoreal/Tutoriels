@@ -17,3 +17,5 @@ $ brew install golang
 ```
 PS> choco install golang
 ```
+
+## [Testing](https://golang.org/doc/install#testing)
