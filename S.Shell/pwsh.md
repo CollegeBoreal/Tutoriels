@@ -25,6 +25,12 @@ Type 'help' to get help.
 PS /Users/moimeme>
 ```
 
+## Tips
+
+```
+PS Remove-Item -LiteralPath "foldertodelete" -Force -Recurse
+```
+
 # Reference:
 
 https://www.youtube.com/watch?v=2WZwv7TxqZ0
