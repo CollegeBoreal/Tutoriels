@@ -28,7 +28,7 @@ PS /Users/moimeme>
 ## Tips
 
 ```
-PS Remove-Item -LiteralPath "foldertodelete" -Force -Recurse
+PS> Remove-Item -LiteralPath "foldertodelete" -Force -Recurse
 ```
 
 # Reference:
