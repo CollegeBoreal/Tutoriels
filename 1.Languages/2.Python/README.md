@@ -14,7 +14,23 @@ PS > choco install python3 --pre
 
 ```
 $ brew install python
-$ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
+---------- $ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
+```
+
+* Python3
+
+```
+$ echo "alias python=/usr/local/bin/python3.7" >> ~/.zshrc
+# or for Bash
+$ echo "alias python=/usr/local/bin/python3.7" >> ~/.bashrc
+```
+
+* Pip3
+
+```
+$ echo "alias pip=/usr/local/bin/pip3" >> ~/.zshrc 
+# or for Bash
+$ echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc
 ```
 
 :pushpin: Manuellement
