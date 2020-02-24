@@ -102,7 +102,7 @@ vm
 :pushpin: Chercher les interfaces reseaux 
 
 ```
-> Get-NetAdapter
+PS > Get-NetAdapter
 
 Name                      InterfaceDescription                    ifIndex Status       MacAddress
 ----                      --------------------                    ------- ------       ----------
@@ -115,13 +115,13 @@ Ethernet 2                QLogic BCM5709C Gigabit Ethernet ...#50       5 Discon
 Ethernet 3                QLogic BCM5709C Gigabit Ethernet ...#48       3 Disconnected 1C-C1-DE-F3-0D-46
 ```
 
-:pushpin: Assigner a une variable
+:pushpin: Assigner la carte Ethenet choisie à la variable `$net`
 
 ```
 PS> $net = Get-NetAdapter -Name 'Ethernet'
 ```
 
-:pushpin: Creer une interface reseau virtuelle `Primary Virtual Switch`
+:pushpin: Créer une interface reseau virtuelle `Primary Virtual Switch`
 
 ```
 PS> New-VMSwitch -Name "Primary Virtual Switch" -AllowManagementOS $True -NetAdapterName $net.Name
