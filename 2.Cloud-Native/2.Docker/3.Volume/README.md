@@ -16,3 +16,9 @@ $ docker volume create --driver vieux/sshfs  -o sshcmd=1and1.com:volumes  sshvol
 ```
 $ docker plugin ls
 ```
+
+
+```
+$ MOUNT="type=volume,volume-driver=vieux/sshfs,src=sshvolume,dst=/app"
+$ docker run --interactive --tty --rm --mount $MOUNT busybox
+```
