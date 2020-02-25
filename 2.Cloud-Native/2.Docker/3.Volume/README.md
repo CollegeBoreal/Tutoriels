@@ -9,7 +9,7 @@ $ docker plugin install --grant-all-permissions vieux/sshfs
 
 
 ```
-$ docker volume create --driver vieux/sshfs  -o sshcmd=1and1.com:/kunden/homepages/2/d92706092/htdocs/volumes  sshvolume
+$ docker volume create --driver vieux/sshfs  -o sshcmd=1and1.com:/path-to/volumes  sshvolume
 ```
 
 
