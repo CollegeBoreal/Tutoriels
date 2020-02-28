@@ -2,6 +2,7 @@
 
 :bulb:  Kernel => Shell (got it?)
 
-[Windows PowerShell](pwsh.md)
 
-[Shell](sh.md)
+[Shell](0.Shell)
+
+[Windows PowerShell](1.PowerShell)
