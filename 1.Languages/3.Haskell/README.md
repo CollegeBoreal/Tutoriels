@@ -5,13 +5,13 @@
 :pushpin: Windows
 
 ```
-PS > choco install haskell-stak
+PS > choco install ghc haskell-stak
 ```
 
 :pushpin: Apple
 
 ```
-$ brew install cask haskell-stack
+$ brew install ghc cabal-install haskell-stack
 ```
 
 
