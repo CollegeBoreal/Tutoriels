@@ -34,3 +34,5 @@ $ brew install ghc cabal-install haskell-stack
 http://tryhaskell.org/
 
 http://book.realworldhaskell.org/read/
+
+https://mmhaskell.com/
