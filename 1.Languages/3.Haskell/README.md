@@ -5,7 +5,7 @@
 :pushpin: Windows
 
 ```
-PS > choco install ghc haskell-stak
+PS > choco install ghc haskell-stack
 ```
 
 :pushpin: Apple
