@@ -22,5 +22,5 @@ PS > choco install openconnect-gui
 
 <img src="images/OpenConnect-GUI_Flash.png" width="222" heigth="167"></img>
 
-<img src="images/OpenConnect-GUI_Edit.png" width="412" heigth="714"></img>
+<img src="images/OpenConnect-GUI_Edit.png" width="206" heigth="357"></img>
 
