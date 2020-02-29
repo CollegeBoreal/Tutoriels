@@ -1,6 +1,6 @@
 # VPN
 
-## :x: Application
+## :ab: Application
 
 [Open Connect](http://www.infradead.org/openconnect/)
 
