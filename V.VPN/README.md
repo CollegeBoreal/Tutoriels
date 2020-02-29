@@ -34,3 +34,9 @@ PS > choco install openconnect-gui
 
 <img src="images/OpenConnect-GUI_Flash.png" width="222" heigth="167"></img>
 
+
+:pushpin: Se déconnecter du profil
+
+
+<img src="images/OpenConnect-GUI_Disconnect.png" width="222" heigth="167"></img>
+
