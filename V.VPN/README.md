@@ -20,7 +20,17 @@ PS > choco install openconnect-gui
 
 ## :a: Connection
 
-<img src="images/OpenConnect-GUI_Flash.png" width="222" heigth="167"></img>
+:pushpin: Créer un nouveau profil avec les données suivantes:
+
+* l'URL de l'adresse VPN de Boréal
+
+* Votre ID Boréal
+
+:bulb: Vérifiez que le protocole `Cisco AnyConnect` est sélectionné
 
 <img src="images/OpenConnect-GUI_Edit.png" width="206" heigth="357"></img>
+
+:pushpin: Se connecter avec le nouveau profil
+
+<img src="images/OpenConnect-GUI_Flash.png" width="222" heigth="167"></img>
 
