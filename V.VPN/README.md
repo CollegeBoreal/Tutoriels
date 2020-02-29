@@ -34,9 +34,18 @@ PS > choco install openconnect-gui
 
 <img src="images/OpenConnect-GUI_Flash.png" width="222" heigth="167"></img>
 
+:pushpin: Se connecter avec un terminal (bash) ou RDC (Remote Desktop Connection)
+
+
+
 
 :pushpin: Se déconnecter du profil
 
 
 <img src="images/OpenConnect-GUI_Disconnect.png" width="222" heigth="167"></img>
+
+
+# References
+
+https://www.techrepublic.com/article/how-to-access-microsoft-remote-desktop-on-macos-sierra/
 
