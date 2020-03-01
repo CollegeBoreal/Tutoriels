@@ -28,7 +28,7 @@ PS > brew install docker-machine
 
 ## :one: Hypervisor or Cloud Environment
 
-- [x] [1.OpenSTack](1.OpenSTack/README.md)
+- [x] [1.OpenStack](1.OpenStack/README.md)
 
 - [x] [2.Hyper-V](2.Hyper-V/README.md)
 
