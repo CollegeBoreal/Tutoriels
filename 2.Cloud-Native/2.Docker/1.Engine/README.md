@@ -4,8 +4,6 @@
 
 $ docker container `command` => [Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
 
-https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
-
 ## Prérequis
 
 * [Installer Docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker)   
