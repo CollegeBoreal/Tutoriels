@@ -12,6 +12,10 @@ Accessing minikube host
 $ ssh -t -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
 ```
 
+# References
+
+https://itnext.io/run-kubernetes-on-your-machine-7ee463af21a2
+
 ### minikube-with-hyperkit
 
 https://blog.arkey.fr/2018/06/18/minikube-with-hyperkit/
