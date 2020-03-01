@@ -8,7 +8,12 @@
 
 :pushpin: Windows
 
-https://github.com/CanonicalLtd/multipass/issues/826
+```
+PS> choco install multipass
+```
+
+
+:warning: https://github.com/CanonicalLtd/multipass/issues/826
 
 :pushpin: MacOS
 
