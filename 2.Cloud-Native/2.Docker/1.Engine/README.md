@@ -4,13 +4,6 @@
 
 $ docker container `command` => [Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
 
-## Prérequis
-
-* [Installer Docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker)   
-
-https://download.docker.com/ (installer docker sans login-wall)
-
-
 ## Docker Engine
 
 ```
