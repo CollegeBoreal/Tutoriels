@@ -19,6 +19,7 @@ https://download.docker.com/ (installer docker sans login-wall)
 
 | Plateforme           | Commentaires .               |
 |----------------------|------------------------------|
+| [Desktop](Desktop)   | Desktop - Mac & PC .         |
 | [Linux](Linux)       | Bare Metal - Generic .       |
 | [Hyper-V](Hyper-V)   | Windows Type 1 Hypervisor    |
 | [HyperKit](HyperKit) | MacOS Type 1 Hypervisor      |
