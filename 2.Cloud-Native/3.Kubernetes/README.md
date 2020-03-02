@@ -1,4 +1,4 @@
-# Kubernetes
+# :wheel_of_dharma: Kubernetes
 
 ## Cheat Sheet
 
