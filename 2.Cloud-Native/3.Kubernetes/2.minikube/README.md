@@ -6,9 +6,6 @@
 
 ## :one: Starting Minikube
 
-```
-$ minikube start 
-```
 
 
 ## :one: Kubernetes Commands
