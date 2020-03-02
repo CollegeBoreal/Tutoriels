@@ -1,6 +1,10 @@
 # MiniKube
 
-## :zero: Starting Minikube
+## :zero: Installing Minikube
+
+[Install](Install.md)
+
+## :one: Starting Minikube
 
 ```
 $ minikube start 
