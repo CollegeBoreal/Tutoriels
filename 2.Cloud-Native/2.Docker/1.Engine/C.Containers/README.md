@@ -2,7 +2,7 @@
 
 ### :a: Linux Containers
 
-<img src="images/docker-linux-engine.png" width="752" height="566"></img>
+<img src="images/docker-linux-engine.png" width="376" height="283"></img>
 
 ### :b: Windows Containers
 
