@@ -5,6 +5,10 @@
 
 ```
 PS > kubectl config get-contexts
+CURRENT   NAME                 CLUSTER          AUTHINFO         NAMESPACE
+          docker-desktop       docker-desktop   docker-desktop
+          docker-for-desktop   docker-desktop   docker-desktop
+          minikube             minikube         minikube
 ```
 
 :star: Set the context to use as docker-for-desktop:
