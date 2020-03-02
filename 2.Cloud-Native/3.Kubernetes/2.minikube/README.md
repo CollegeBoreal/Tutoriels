@@ -8,7 +8,7 @@
 
 :star: [=> Starting ...](Start-mk.md)
 
-## :one: Using Kubernetes Commands
+## :two: Using Kubernetes Commands
 
 :pushpin: Get the cluster information
 
@@ -51,7 +51,7 @@ kube-system   kube-scheduler-minikube            1/1     Running   0          39
 kube-system   storage-provisioner                1/1     Running   0          39m
 ```
 
-## :two: Using Docker Commands
+## :three: Using Docker Commands
 
 
 :pushpin: Set the environment 
@@ -75,6 +75,12 @@ $ eval $(minikube docker-env)
 ```
 $ docker container ls | grep nginx
 ```
+
+
+
+## :four: Stopping Minikube
+
+:star: [=> Stopping ...](Stop-mk.md)
 
 
 # References
