@@ -8,7 +8,7 @@
 
 :star: [=> Starting ...](Start-mk.md)
 
-## :one: Kubernetes Commands
+## :one: Using Kubernetes Commands
 
 :pushpin: Get the cluster information
 
@@ -50,6 +50,25 @@ kube-system   kube-proxy-qprtm                   1/1     Running   0          39
 kube-system   kube-scheduler-minikube            1/1     Running   0          39m
 kube-system   storage-provisioner                1/1     Running   0          39m
 ```
+
+## :two: Using Docker Commands
+
+
+:pushpin: Set the environment 
+
+:m: Powershell
+
+```
+PS > minikube --profile minikube docker-env | Invoke-Expression
+```
+
+:m: bash
+
+```
+$ eval $(minikube docker-env)
+```
+
+
 
 # References
 
