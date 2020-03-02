@@ -2,7 +2,7 @@
 
 ## :zero: Installing Minikube
 
-:star: [Install using Package Manager](Install.md)
+:star: [=> Install using Package Manager](Install.md)
 
 ## :one: Starting Minikube
 
