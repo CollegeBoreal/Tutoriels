@@ -1,3 +1,9 @@
+# Stopping Minikube
+
+
+## On Windows Server Powershell 
+
+:pushpin: Stop minikube
 
 ```
 PS > minikube stop
@@ -6,6 +12,9 @@ PS > minikube stop
 * "minikube" stopped.
 ```
 
+:pushpin: See if minikube VM is Off
+
+
 ```
 PS > get-vm
 
@@ -13,6 +22,8 @@ Name      State   CPUUsage(%) MemoryAssigned(M) Uptime             Status       
 ----      -----   ----------- ----------------- ------             ------             -------
 minikube  Off     0           0                 00:00:00           Operating normally 9.0```
 ```
+
+:pushpin: Remove minikube VM
 
 ```
 PS > remove-vm minikube
