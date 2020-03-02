@@ -20,6 +20,27 @@ $ ssh -t -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
 $ minikube ssh
 ```
 
+## :one: Kubernetes Commands
+
+:pushpin: Get the cluster information
+
+
+```
+$ kubectl cluster-info
+Kubernetes master is running at https://192.168.64.9:8443
+KubeDNS is running at https://192.168.64.9:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
+
+:pushpin: Get the node information
+
+```
+% kubectl get nodes   
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   23m   v1.17.3
+```
+
 
 # References
 
