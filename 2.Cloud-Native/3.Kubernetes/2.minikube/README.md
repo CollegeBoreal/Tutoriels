@@ -6,6 +6,8 @@ Starting
 $ minikube start 
 ```
 
+<img src="images/minikube-start.png" width="2710" heigth="1462"></img>
+
 Accessing minikube host
 
 ```
