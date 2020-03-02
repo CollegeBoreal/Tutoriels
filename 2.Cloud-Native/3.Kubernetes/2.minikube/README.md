@@ -29,11 +29,14 @@ NAME       STATUS   ROLES    AGE   VERSION
 minikube   Ready    master   23m   v1.17.3
 ```
 
+:pushpin: Get the pod information
 
 ```
 % kubectl get pods
 No resources found in default namespace.
 ```
+
+:pushpin: Get the ALL pod information
 
 ```
 % kubectl get pods --all-namespaces
