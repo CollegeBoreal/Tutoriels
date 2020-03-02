@@ -1,8 +1,26 @@
 # Starting Minikube
 
+### :a: MacOS (Darwin)
+
+```
+$ minikube start 
+```
+
+
+
 <img src="images/minikube-start.png" width="2710" heigth="1462"></img>
 
+
+### :b: Windows (powershell)
+
+```
+PS > minikube start 
+```
+
+
 <img src="images/minikube-windows-ps-start.png" width="1181" heigth="470"></img>
+
+### :ab: Connecting to the VM
 
 
 :pushpin: Accessing minikube host with ssh key :key:
