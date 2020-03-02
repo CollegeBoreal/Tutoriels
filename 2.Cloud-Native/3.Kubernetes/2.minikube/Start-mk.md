@@ -2,6 +2,9 @@
 
 <img src="images/minikube-start.png" width="2710" heigth="1462"></img>
 
+<img src="images/minikube-windows-ps-start.png" width="375" heigth="149"></img>
+
+
 :pushpin: Accessing minikube host with ssh key :key:
 
 ```
