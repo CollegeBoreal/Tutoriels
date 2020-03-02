@@ -62,12 +62,19 @@ kube-system   storage-provisioner                1/1     Running   0          39
 PS > minikube --profile minikube docker-env | Invoke-Expression
 ```
 
+```
+PS > docker container ls | Select-String nginx
+```
+
 :m: bash
 
 ```
 $ eval $(minikube docker-env)
 ```
 
+```
+$ docker container ls | grep nginx
+```
 
 
 # References
