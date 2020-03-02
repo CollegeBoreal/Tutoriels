@@ -1,5 +1,7 @@
 # MiniKube
 
+    Minikube permet l'utilisation de `kubernetes` sur un seul serveur
+
 ## :zero: Installing Minikube
 
 :star: [=> Install using Package Manager](Install.md)
