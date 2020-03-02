@@ -83,6 +83,24 @@ minikube   Ready    master   23m   v1.17.3
 ```
 
 
+```
+% kubectl get pods
+No resources found in default namespace.
+```
+
+```
+% kubectl get pods --all-namespaces
+NAMESPACE     NAME                               READY   STATUS    RESTARTS   AGE
+kube-system   coredns-6955765f44-l5knr           1/1     Running   0          39m
+kube-system   coredns-6955765f44-z5n7c           1/1     Running   0          39m
+kube-system   etcd-minikube                      1/1     Running   0          39m
+kube-system   kube-apiserver-minikube            1/1     Running   0          39m
+kube-system   kube-controller-manager-minikube   1/1     Running   0          39m
+kube-system   kube-proxy-qprtm                   1/1     Running   0          39m
+kube-system   kube-scheduler-minikube            1/1     Running   0          39m
+kube-system   storage-provisioner                1/1     Running   0          39m
+```
+
 # References
 
 https://itnext.io/run-kubernetes-on-your-machine-7ee463af21a2
