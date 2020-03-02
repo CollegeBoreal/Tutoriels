@@ -1,6 +1,6 @@
 # Container D
 
-<img src="https://containerd.io/img/architecture.png" width="1080" height="1782"></img>
+<img src="https://containerd.io/img/architecture.png" width="891" height="540"></img>
 
 https://sweetcode.io/getting-started-with-containerd/
 
