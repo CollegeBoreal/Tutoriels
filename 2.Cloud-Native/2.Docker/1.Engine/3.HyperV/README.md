@@ -164,15 +164,7 @@ PS > docker container run `
 https://hub.docker.com/_/microsoft-windows-nanoserver
 
 
-# References
-
-https://docs.microsoft.com/fr-fr/virtualization/windowscontainers/quick-start/set-up-environment?redirectedfrom=MSDN&tabs=Windows-Server
-
-https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
-
-https://vmarena.com/installing-hyper-v-on-windows-server-2019/
-
-https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
+## :x: UI Check
 
 :one: - [BCD (Boot Configuration Data)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/bcdedit-command-line-options) Set Hyper-V Auto
 
@@ -207,4 +199,14 @@ PS > Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 :six: - S'assurer que le service HyperV est démarré 
 
 ![image](images/Hyper-V_Services.png)
+
+# References
+
+https://docs.microsoft.com/fr-fr/virtualization/windowscontainers/quick-start/set-up-environment?redirectedfrom=MSDN&tabs=Windows-Server
+
+https://blogs.technet.microsoft.com/virtualization/2018/06/27/insider-preview-windows-container-image/
+
+https://vmarena.com/installing-hyper-v-on-windows-server-2019/
+
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
 
