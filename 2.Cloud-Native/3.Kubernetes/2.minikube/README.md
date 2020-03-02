@@ -1,6 +1,6 @@
 # MiniKube
 
-Starting
+## :zero: Starting Minikube
 
 ```
 $ minikube start 
@@ -8,11 +8,18 @@ $ minikube start
 
 <img src="images/minikube-start.png" width="2710" heigth="1462"></img>
 
-Accessing minikube host
+:pushpin: Accessing minikube host with ssh key :key:
 
 ```
 $ ssh -t -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
 ```
+
+:pushpin: Accessing minikube host with ssh
+
+```
+$ minikube ssh
+```
+
 
 # References
 
