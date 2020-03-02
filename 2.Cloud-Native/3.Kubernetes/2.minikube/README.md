@@ -6,7 +6,7 @@
 
 ## :one: Starting Minikube
 
-
+:star: [=> Starting ...](Start-mk.md)
 
 ## :one: Kubernetes Commands
 
