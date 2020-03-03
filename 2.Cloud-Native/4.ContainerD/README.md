@@ -3,7 +3,9 @@
 <img src="https://containerd.io/img/architecture.png" width="891" height="540"></img>
 
 
-[docker components explained](http://alexander.holbreich.org/docker-components-explained)
+### :zero: Docker-CLI, dockerd, containerd, runc, containerd-shim, ... WTH
+
+:star: [=> docker components explained](http://alexander.holbreich.org/docker-components-explained)
 
 
 ### :zero: From LinuxKit 
