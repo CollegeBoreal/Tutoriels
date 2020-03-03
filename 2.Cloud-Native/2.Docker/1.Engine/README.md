@@ -21,13 +21,6 @@ $ docker container `command` => [Cheat Sheet](https://www.docker.com/sites/defau
 
 # Références 
 
-## ContainerD
-
-https://sweetcode.io/getting-started-with-containerd/
-
-## LinuxKit
-
-https://github.com/linuxkit/linuxkit
 
 ## Container RunTime
 
