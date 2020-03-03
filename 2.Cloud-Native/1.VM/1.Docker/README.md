@@ -35,10 +35,12 @@ PS > brew install docker-machine
 ## :two: Embedded Linux
 
 
-| Hypervisor | Distribution      | 
-|------------|-------------------| 
-| HyperV     | tinycorelinux.net | 
-| HyperKit   | linuxkit.net      | 
+| Hypervisor | Distribution                          | 
+|------------|---------------------------------------| 
+| HyperV     | tinycorelinux.net                     | 
+| HyperKit   | https://github.com/linuxkit/linuxkit  | 
+
+
 
 
 # Références 
