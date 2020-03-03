@@ -14,7 +14,7 @@
 
 :closed_book: https://www.mankier.com/package/containerd
 
-### :zero: From LinuxKit 
+### :zero: From LinuxKit/Darwin
 
 https://sweetcode.io/getting-started-with-containerd/
 
@@ -60,7 +60,7 @@ docker-desktop:~# ctr --namespace services.linuxkit container info docker | more
                 "/usr/bin/entrypoint.sh"
 ```
 
-### :one: From docker-machine ssh <hyper-v>
+### :one: From docker-machine ssh/HyperV
    
 ```
 docker@CB-HYPERV:~$ sudo ctr --address /var/run/docker/containerd/containerd.sock container ls
