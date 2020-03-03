@@ -51,3 +51,9 @@ docker-desktop:~# ctr --namespace services.linuxkit container info docker | more
                 "/usr/local/bin/docker-init",
                 "/usr/bin/entrypoint.sh"
 ```
+
+### :one: From docker-machine ssh <hyper-v>
+
+```
+$ sudo ctr --address /var/run/docker/containerd/containerd.sock container ls
+```
