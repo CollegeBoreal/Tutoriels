@@ -5,6 +5,9 @@
 
 [docker components explained](http://alexander.holbreich.org/docker-components-explained)
 
+
+### :zero: From LinuxKit 
+
 https://sweetcode.io/getting-started-with-containerd/
 
 ```
@@ -23,7 +26,7 @@ write-and-rotate-logs    -        io.containerd.runtime.v1.linux
 ```
 
 ```
-# ctr -n services.linuxkit container info docker | more
+docker-desktop:~# ctr --namespace services.linuxkit container info docker | more
 {
     "ID": "docker",
     "Labels": null,
