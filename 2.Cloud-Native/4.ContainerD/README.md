@@ -2,6 +2,9 @@
 
 <img src="https://containerd.io/img/architecture.png" width="891" height="540"></img>
 
+
+[docker components explained](http://alexander.holbreich.org/docker-components-explained)
+
 https://sweetcode.io/getting-started-with-containerd/
 
 ```
