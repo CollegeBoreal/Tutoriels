@@ -1,9 +1,11 @@
 # Container D
 
+### :a: Architecture
+
 <img src="https://containerd.io/img/architecture.png" width="891" height="540"></img>
 
 
-### :zero: Docker-CLI, dockerd, containerd, runc, containerd-shim, ... WTH
+### :open_book: Docker-CLI, dockerd, containerd, runc, containerd-shim, ... WTH
 
 :star: [=> docker components explained](http://alexander.holbreich.org/docker-components-explained)
 
