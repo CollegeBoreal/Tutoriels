@@ -53,7 +53,13 @@ docker-desktop:~# ctr --namespace services.linuxkit container info docker | more
 ```
 
 ### :one: From docker-machine ssh <hyper-v>
+   
+```
+docker@CB-HYPERV:~$ sudo ctr --address /var/run/docker/containerd/containerd.sock container ls
+CONTAINER    IMAGE    RUNTIME
+```
 
 ```
-$ sudo ctr --address /var/run/docker/containerd/containerd.sock container ls
+docker@CB-HYPERV:~$ sudo ctr --address /var/run/docker/containerd/containerd.sock image ls
+REF TYPE DIGEST SIZE PLATFORMS LABELS
 ```
