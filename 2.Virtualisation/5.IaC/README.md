@@ -1,7 +1,15 @@
 # IaC (Infrastructure as Cloud)
 
 
-- IaC : Terraform, Packer, Ansible, Jenkins, Git
+- [ ] Terraform
+
+- [ ] Packer
+
+- [ ] Ansible
+
+- [ ] Jenkins
+
+- [x] Git
 
 # References
 
