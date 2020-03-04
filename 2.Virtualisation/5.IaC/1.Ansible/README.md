@@ -3,7 +3,7 @@
 
 ### :zero: Install
 
-MacOS
+ MacOS
 
 ```
 % brew install ansible
