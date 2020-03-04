@@ -1,3 +1,3 @@
 # :o: The world of Virtualization
 
-![alt tag](docker.png)
+<img src="images/docker.png" width="590" heigth="466"></img>
