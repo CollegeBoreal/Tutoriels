@@ -3,7 +3,7 @@
 
 - [ ] Terraform
 
-- [ ] Packer
+- [ ] [Packer](https://packer.io/)
 
 - [ ] Ansible
 
