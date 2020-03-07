@@ -20,6 +20,10 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 ## :pushpin: PureCell® Model 400 - Fuel Cell Energy
 
+[Inside the Purecell System](http://www.doosanfuelcellamerica.com/en/fuel-cell-solutions/inside-the-purecell-system/)
+
+<img src="images/fuell-cell-processing.png" width="524" heigth="300"></img>  
+
 CBS Installs PureCell® Model 400 Systems -- Timelapse Video
 
 https://youtu.be/1LkGda8TQ3g?t=90
