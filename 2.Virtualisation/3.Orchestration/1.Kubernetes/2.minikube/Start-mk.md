@@ -14,7 +14,7 @@ $ minikube start
 ### :b: Windows (powershell)
 
 ```
-PS > minikube start 
+PS > minikube --cpus 2 --memory 4024 start
 ```
 
 
