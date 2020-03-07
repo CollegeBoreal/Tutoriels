@@ -78,6 +78,10 @@ $ eval $(minikube docker-env)
 $ docker container ls | grep nginx
 ```
 
+## :o: Context
+
+
+    During the startup, the kubeconfig file (~/.kube/config by default) is updated (or created if it was not there already) and a new context, named minikube, is created
 
 
 ## :four: Stopping Minikube
