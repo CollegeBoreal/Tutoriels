@@ -19,7 +19,7 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 <img src="images/SAN-NAS.svg" witdth="375" height="211"></img>
 
-
+<video src="https://www.youtube.com/watch?v=sBgN8mBN1rE"></video>
 
 - [ ] [LUN](https://en.wikipedia.org/wiki/Logical_unit_number)  - Logical Unit Number
 
