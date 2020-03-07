@@ -1,5 +1,7 @@
 # Hyperscale Computing
 
+In computing, hyperscale is the ability of an architecture to scale appropriately as increased demand is added to the system.
+
 
 ## :one: SDN - [Software Defined Network](https://en.wikipedia.org/wiki/Software-defined_networking)
 
