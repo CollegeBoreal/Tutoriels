@@ -14,3 +14,11 @@ $ choco install kind
 ```
 $ brew install kind
 ```
+
+```
+$ kubectl config get-context
+```
+
+```
+$ kubectl config use-context docker-desktop```
+```
