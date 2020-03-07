@@ -83,3 +83,27 @@ d46142a52631        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11
 711bb57a4cd9        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes       127.0.0.1:32770->6443/tcp   k8s-HA-control-plane
 6aa18a6815b1        kindest/node:v1.17.0           "/usr/local/bin/entr…"   20 minutes ago      Up 20 minutes       127.0.0.1:32768->6443/tcp   k8s-control-plane
 ```
+
+```
+% kubectl get nodes                     
+NAME                    STATUS   ROLES    AGE   VERSION
+k8s-ha-control-plane    Ready    master   17m   v1.17.0
+k8s-ha-control-plane2   Ready    master   17m   v1.17.0
+k8s-ha-control-plane3   Ready    master   16m   v1.17.0
+k8s-ha-worker           Ready    <none>   15m   v1.17.0
+k8s-ha-worker2          Ready    <none>   15m   v1.17.0
+k8s-ha-worker3          Ready    <none>   15m   v1.17.0
+```
+
+## :x: Remove Cluster
+
+```
+% kind delete cluster --name k8s
+```
+
+```
+% kubectl config get-contexts                              
+CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
+*         kind-k8s-HA   kind-k8s-HA   kind-k8s-HA   
+          minikube      minikube      minikube   
+```
