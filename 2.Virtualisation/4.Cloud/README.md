@@ -18,6 +18,8 @@ And on January 23, 2012, FERC issued Verdant Power a 10-year license to install 
 
 Systems can be deployed in `units` ranging from 100kW - 600kW for village power ranging up to <b><i>5 MW</i></b>, and with `larger units` of 350 kW to 1.5 MW for `utility-scale` projects ranging up to <b><i>500 MW</i></b>.
 
+[In-Stream Hydrokinetic Power: Review and Appraisal](images/28asce29ey2E1943-78972E0000197.pdf)
+
 ## :pushpin: PureCell® Model 400 - Fuel Cell Energy
 
 [Inside the Purecell System](http://www.doosanfuelcellamerica.com/en/fuel-cell-solutions/inside-the-purecell-system/)
