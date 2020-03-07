@@ -70,3 +70,16 @@ CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
 ```
 
 <img src="images/kind-k8s-dashboard.png" width="1602" heigth="1378"></img>
+
+```
+% docker container ls
+CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS              PORTS                       NAMES
+ebe6e1909630        kindest/haproxy:2.1.1-alpine   "/docker-entrypoint.…"   11 minutes ago      Up 10 minutes       127.0.0.1:32769->6443/tcp   k8s-HA-external-load-balancer
+ee69b7df41e2        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes       127.0.0.1:32771->6443/tcp   k8s-HA-control-plane2
+c31b5b78f6bc        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes       127.0.0.1:32772->6443/tcp   k8s-HA-control-plane3
+0b39419ee411        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes                                   k8s-HA-worker2
+41263a31705b        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes                                   k8s-HA-worker3
+d46142a52631        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes                                   k8s-HA-worker
+711bb57a4cd9        kindest/node:v1.17.0           "/usr/local/bin/entr…"   11 minutes ago      Up 10 minutes       127.0.0.1:32770->6443/tcp   k8s-HA-control-plane
+6aa18a6815b1        kindest/node:v1.17.0           "/usr/local/bin/entr…"   20 minutes ago      Up 20 minutes       127.0.0.1:32768->6443/tcp   k8s-control-plane
+```
