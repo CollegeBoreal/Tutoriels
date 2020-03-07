@@ -1,7 +1,7 @@
 # Hyperscale Computing
 
 
-<img src="images/SDN-architecture-overview-transparent.png" witdth="2232" height="1152"></img>
+<img src="images/SDN-architecture-overview-transparent.png" witdth="1116" height="576"></img>
 
 
 # References
