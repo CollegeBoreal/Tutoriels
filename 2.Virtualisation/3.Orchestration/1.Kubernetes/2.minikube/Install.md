@@ -3,7 +3,7 @@
 :pushpin: Windows
 
 ```
-PS > choco install minikube
+PS > choco install minikube -y
 ```
 
 
