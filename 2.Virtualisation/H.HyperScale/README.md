@@ -16,7 +16,7 @@ SDN is meant to address the fact that the static architecture of traditional net
 <img src="images/Type-Of-SV.png" witdth="475" height="233"></img>
 
 
-- [ ] [LUN] - (https://en.wikipedia.org/wiki/Logical_unit_number) Logical Unit Number
+- [ ] [LUN](https://en.wikipedia.org/wiki/Logical_unit_number)  - Logical Unit Number
 
 # References
 
