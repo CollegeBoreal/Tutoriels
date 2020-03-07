@@ -10,6 +10,6 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 # References
 
-https://www.datacenterknowledge.com/
+https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world
 
 https://en.wikipedia.org/wiki/File:SDN-architecture-overview-transparent.png
