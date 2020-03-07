@@ -1,4 +1,9 @@
 # Hyperscale Computing
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/SDN-architecture-overview-transparent.png" witdth="" height=""></img>
+<img src="images/SDN-architecture-overview-transparent.png" witdth="2232" height="1152"></img>
+
+
+# References
+
+https://en.wikipedia.org/wiki/File:SDN-architecture-overview-transparent.png
