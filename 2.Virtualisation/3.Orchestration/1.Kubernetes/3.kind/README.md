@@ -61,3 +61,11 @@ $ kind create cluster --name k8s-HA --config HA-config.yaml
 
 <img src="images/kind-multiple-nodes.png" width="1480" heigth="618"></img>
 
+```
+% kubectl config get-contexts                              
+CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
+          kind-k8s      kind-k8s      kind-k8s      
+*         kind-k8s-HA   kind-k8s-HA   kind-k8s-HA   
+          minikube      minikube      minikube  
+```
+
