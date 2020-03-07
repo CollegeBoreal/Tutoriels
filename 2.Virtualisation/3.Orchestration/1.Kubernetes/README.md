@@ -47,3 +47,7 @@ https://www.youtube.com/watch?v=DjpVtNjiXSU
 * Open FaaS - GOTO 2018 • Serverless Beyond the Hype • Alex Ellis
 
 https://www.youtube.com/watch?v=yOpYYYRuDQ0
+
+## compose-on-kubernetes
+
+https://github.com/docker/compose-on-kubernetes
