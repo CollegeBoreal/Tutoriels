@@ -1,4 +1,4 @@
 # Hyperscale Computing
 
 
-<img src="https://en.wikipedia.org/wiki/Software-defined_networking#/media/File:SDN-architecture-overview-transparent.png" witdth="" height=""></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/SDN-architecture-overview-transparent.png" witdth="" height=""></img>
