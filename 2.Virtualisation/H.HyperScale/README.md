@@ -17,7 +17,7 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 - [ ] [SAN](https://en.wikipedia.org/wiki/Storage_area_network) - Storage Area Network
 
-<img src="images/SAN-NAS.svg" witdth="" height=""></img>
+<img src="images/SAN-NAS.svg" witdth="750" height="422"></img>
 
 
 
