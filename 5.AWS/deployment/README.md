@@ -1,6 +1,6 @@
-# AWS Deploiement
+# AWS Deploiement avec docker-machine
 
-#### :m: Avec Docker, Lancer une nouvelle machine sous `git bash` ou un `terminal`
+#### :m: Avec Docker Machine, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
 [Ubuntu 18.0.4 LTS ami-00a208c7cdba991ea](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-00a208c7cdba991ea)
 
