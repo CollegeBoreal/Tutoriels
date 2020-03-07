@@ -107,3 +107,13 @@ CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
 *         kind-k8s-HA   kind-k8s-HA   kind-k8s-HA   
           minikube      minikube      minikube   
 ```
+
+## :x: Force removing if issues
+
+```
+% rm ~/.kube/config
+```
+
+```
+% docker rm -f `docker container ls -q`
+```
