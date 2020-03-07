@@ -26,7 +26,12 @@ https://youtu.be/1LkGda8TQ3g?t=90
 
 # References
 
+:star: the average household electricity consumption kWh per day is 28.9 kWh (867 kWh / 30 days).
+
 https://electricityplans.com/kwh-kilowatt-hour-can-power/
 
-the average household electricity consumption kWh per day is 28.9 kWh (867 kWh / 30 days).
+:star: TTC buying electric buses support clean air targets
+
+https://urbantoronto.ca/news/2018/06/ttc-buying-electric-buses-support-clean-air-targets
+
 
