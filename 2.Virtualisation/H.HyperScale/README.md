@@ -17,7 +17,7 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 - [ ] [SAN](https://en.wikipedia.org/wiki/Storage_area_network) - Storage Area Network
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/SANvsNAS.svg" witdth="" height=""></img>
+<img src="images/SANvsNAS.svg" witdth="" height=""></img>
 
 
 
@@ -28,3 +28,5 @@ SDN is meant to address the fact that the static architecture of traditional net
 https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hyperscale-data-centers-world
 
 https://en.wikipedia.org/wiki/File:SDN-architecture-overview-transparent.png
+
+https://upload.wikimedia.org/wikipedia/commons/0/05/SANvsNAS.svg
