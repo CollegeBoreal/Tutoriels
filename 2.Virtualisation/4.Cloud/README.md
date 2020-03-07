@@ -30,7 +30,7 @@ https://youtu.be/1LkGda8TQ3g?t=90
 
 ## :b: Modular Data Center
 
-<img src="images/SGI-Ice-Cube.png" width="1876" heigth="1388"></img> 
+<img src="images/SGI-Ice-Cube.png" width="938" heigth="694"></img> 
 
 https://www.slideshare.net/datacenters/next-generation-data-center-infrastructure
 
