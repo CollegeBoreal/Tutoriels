@@ -15,10 +15,21 @@ $ choco install kind
 $ brew install kind
 ```
 
+## :one: Run
+
 ```
-$ kubectl config get-contexts
+% kind create cluster --name k8s
 ```
 
 ```
-$ kubectl config use-context docker-desktop```
+% kubectl config get-contexts   
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         kind-k8s   kind-k8s   kind-k8s   
+          minikube   minikube   minikube  
 ```
+
+```
+$ kubectl config use-context kind-k8s
+```
+
+
