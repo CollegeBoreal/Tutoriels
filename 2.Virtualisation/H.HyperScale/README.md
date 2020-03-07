@@ -17,6 +17,9 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 - [ ] [SAN](https://en.wikipedia.org/wiki/Storage_area_network) - Storage Area Network
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/SANvsNAS.svg" witdth="" height=""></img>
+
+
 
 - [ ] [LUN](https://en.wikipedia.org/wiki/Logical_unit_number)  - Logical Unit Number
 
