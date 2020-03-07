@@ -15,7 +15,9 @@ $ choco install kind
 $ brew install kind
 ```
 
-## :one: Run
+## :one: Run single node
+
+
 
 ```
 % kind create cluster --name k8s
@@ -32,4 +34,26 @@ CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
 $ kubectl config use-context kind-k8s
 ```
 
+## :two: Run multiple nodes
+
+:pushpin: Edit file `HA-config.yaml`
+
+```yaml
+# HA-config.yaml
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+nodes:
+- role: control-plane
+- role: control-plane
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+```
+
+:pushpin: Run the cluster
+
+```
+$ kind create cluster --name k8s-HA --config HA-config.yaml 
+```
 
