@@ -69,3 +69,4 @@ CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
           minikube      minikube      minikube  
 ```
 
+<img src="kind-k8s-dashboard.png" width="1602" heigth="1378"></img>
