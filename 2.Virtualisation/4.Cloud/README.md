@@ -28,6 +28,12 @@ CBS Installs PureCell® Model 400 Systems -- Timelapse Video
 
 https://youtu.be/1LkGda8TQ3g?t=90
 
+## :b: Modular Data Center
+
+https://www.slideshare.net/datacenters/next-generation-data-center-infrastructure
+
+
+
 # References
 
 :star: the average household electricity consumption kWh per day is 28.9 kWh (867 kWh / 30 days).
