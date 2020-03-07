@@ -20,6 +20,10 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 [In-Stream Hydrokinetic Power: Review and Appraisal](images/28asce29ey2E1943-78972E0000197.pdf)
 
+
+<img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
+
+
 ## :pushpin: PureCell® Model 400 - Fuel Cell Energy
 
 [Inside the Purecell System](http://www.doosanfuelcellamerica.com/en/fuel-cell-solutions/inside-the-purecell-system/)
