@@ -59,3 +59,5 @@ nodes:
 $ kind create cluster --name k8s-HA --config HA-config.yaml 
 ```
 
+<img src="images/kind-multiple-nodes.png" width="1480" heigth="618"></img>
+
