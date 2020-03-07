@@ -19,6 +19,11 @@ Error: unable to load the ssh key with path "/home/docker/.ssh/id_rsa": open /ho
 ```
 
 
+https://github.com/alexellis/arkade
+
+<img src="images/tce-arkade-install.png" width="2234" heigth="1150"></img>
+
+
 # References
 
 https://blog.alexellis.io/raspberry-pi-homelab-with-k3sup/
