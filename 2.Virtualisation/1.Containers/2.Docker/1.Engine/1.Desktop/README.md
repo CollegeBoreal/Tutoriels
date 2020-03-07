@@ -7,7 +7,7 @@
 :pushpin: Windows
 
 ```
-PS choco install docker-desktop
+PS > choco install docker-desktop -y
 ```
 
 :pushpin: MacOS
