@@ -14,11 +14,9 @@ And on January 23, 2012, FERC issued Verdant Power a 10-year license to install 
 
 Systems can be deployed in `units` ranging from 100kW - 600kW for village power ranging up to <b><i>5 MW</i></b>, and with `larger units` of 350 kW to 1.5 MW for `utility-scale` projects ranging up to <b><i>500 MW</i></b>.
 
-
-<a href="https://www.researchgate.net/figure/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with_fig3_273619185"><img src="images/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with.png" alt="Ocean Renewable Power Company ’ s TidGen Power System (TidGen Power System, with permission from Ocean Renewable Power Company 2014)" width="200" heigth="301"/></a>
-
-
-<img src="images/verdant-power-bags-usd-6-million-for-final-tidal-demonstration.jpg" width="417" heigth="261"></img>
+|                 |              |
+|-----------------|--------------|
+| <a href="https://www.researchgate.net/figure/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with_fig3_273619185"><img src="images/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with.png" alt="Ocean Renewable Power Company ’ s TidGen Power System (TidGen Power System, with permission from Ocean Renewable Power Company 2014)" width="200" heigth="301"/></a> | <img src="images/verdant-power-bags-usd-6-million-for-final-tidal-demonstration.jpg" width="417" heigth="261"></img> |
 
 https://electricityplans.com/kwh-kilowatt-hour-can-power/
 
