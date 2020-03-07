@@ -17,5 +17,8 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 <a href="https://www.researchgate.net/figure/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with_fig3_273619185"><img src="images/Ocean-Renewable-Power-Company-s-TidGen-Power-System-TidGen-Power-System-with.png" alt="Ocean Renewable Power Company ’ s TidGen Power System (TidGen Power System, with permission from Ocean Renewable Power Company 2014)" width="200" heigth="301"/></a>
 
+
+<img src="images/verdant-power-bags-usd-6-million-for-final-tidal-demonstration.jpg" width="835" heigth="522"></img>
+
 https://electricityplans.com/kwh-kilowatt-hour-can-power/
 
