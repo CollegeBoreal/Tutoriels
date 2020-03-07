@@ -23,6 +23,8 @@ $ brew install kind
 % kind create cluster --name k8s
 ```
 
+<img src="images/kind-single-node.png" width="1076" heigth="514"></img>
+
 ```
 % kubectl config get-contexts   
 CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
