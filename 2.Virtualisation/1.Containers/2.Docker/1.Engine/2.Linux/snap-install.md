@@ -1,4 +1,4 @@
-# References
+# Docker Engine with `snap`
 
 :bookmark: Autre methode d'installation (plus facile) -- Ne pas utiliser
 
