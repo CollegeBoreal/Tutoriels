@@ -4,7 +4,7 @@
 
 <img src="images/modular_cloud_data_center.png" width="1104" heigth="750"></img>
 
-## :pushpin: Energy Examples
+## :pushpin: Energy Examples - Hydrokinetic Power
 
 :star: https://www.verdantpower.com/riteproject
 
