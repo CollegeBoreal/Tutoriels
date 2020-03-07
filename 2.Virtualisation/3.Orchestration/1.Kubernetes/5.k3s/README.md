@@ -1,6 +1,8 @@
 # [k3s](https://k3s.io/)
 
-https://blog.alexellis.io/raspberry-pi-homelab-with-k3sup/
+
+
+https://github.com/alexellis/k3sup
 
 ```
 % curl -SLsf https://get.k3sup.dev | sudo sh
@@ -17,3 +19,6 @@ Error: unable to load the ssh key with path "/home/docker/.ssh/id_rsa": open /ho
 ```
 
 
+# References
+
+https://blog.alexellis.io/raspberry-pi-homelab-with-k3sup/
