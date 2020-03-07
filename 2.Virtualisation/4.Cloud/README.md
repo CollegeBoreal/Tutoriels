@@ -12,7 +12,7 @@ And on January 23, 2012, FERC issued Verdant Power a 10-year license to install 
 
 :star: https://www.verdantpower.com/project-development
 
-Systems can be deployed in `units` ranging from 100kW - 600kW for village power ranging up to <b><i>5 MW</i></b>, and with `larger units` of 350 kW to 1.5 MW for `utility-scale` projects ranging up to `500 MW`.
+Systems can be deployed in `units` ranging from 100kW - 600kW for village power ranging up to <b><i>5 MW</i></b>, and with `larger units` of 350 kW to 1.5 MW for `utility-scale` projects ranging up to <b><i>500 MW</i></b>.
 
 https://electricityplans.com/kwh-kilowatt-hour-can-power/
 
