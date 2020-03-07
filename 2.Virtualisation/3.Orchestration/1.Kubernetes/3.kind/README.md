@@ -16,7 +16,7 @@ $ brew install kind
 ```
 
 ```
-$ kubectl config get-context
+$ kubectl config get-contexts
 ```
 
 ```
