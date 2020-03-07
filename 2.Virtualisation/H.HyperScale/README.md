@@ -13,6 +13,9 @@ SDN is meant to address the fact that the static architecture of traditional net
 
 - [ ] [Storage Virtualization](https://searchstorage.techtarget.com/definition/storage-virtualization)
 
+<img src="images/Type-Of-SV.png" witdth="951" height="467"></img>
+
+
 - [ ] [LUN](https://en.wikipedia.org/wiki/Logical_unit_number) Logical Unit Number
 
 # References
