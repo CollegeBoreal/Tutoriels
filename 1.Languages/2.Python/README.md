@@ -24,6 +24,10 @@ $ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.zshrc
 $ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
 ```
 
+```
+$ brew switch python@3.8 3.8.1
+```
+
 :pushpin: Manuellement
 
 * Python 3.7.4 :  https://www.python.org/downloads/
