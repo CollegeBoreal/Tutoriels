@@ -12,16 +12,18 @@ PS > choco install python3 --pre
 
 :apple: MacOS 
 
+### Install @3.8
+
 ```
-$ brew install python
+$ brew install python@3.8
 ```
 
 * Set the ENV Variables
 
 ```
-$ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.zshrc
+$ echo 'export PATH="/usr/local/Cellar/python@3.8/3.8.1/libexec/bin:$PATH"' >> ~/.zshrc
 # or for Bash
-$ echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >> ~/.bashrc
+$ echo 'export PATH="/usr/local/Cellar/python@3.8/3.8.1/libexec/bin:$PATH"' >> ~/.bashrc
 ```
 
 ```
