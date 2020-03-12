@@ -15,8 +15,24 @@
 
 ## Distribution
 
-## :computer: [Tiny Core Linux](tinycorelinux.net)
+## :computer: [Tiny Core Linux](tinycorelinux.net) **tcz**
 
 [tce load](http://wiki.tinycorelinux.net/wiki:install_apps)
+
+* [Tiny Core Linux](tinycorelinux.net)
+
+
+## :computer: [Debian](https://doc.ubuntu-fr.org/dpkg)
+
+[deb](https://doc.ubuntu-fr.org/dpkg)
+
+* Ubuntu
+
+## :computer: [RPM]()
+
+* Red Hat
+
+
+## :computer: [Snap]()
 
 
