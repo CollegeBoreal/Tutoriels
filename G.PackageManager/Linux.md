@@ -13,4 +13,10 @@
 |**Search**|apt-cache search ''pattern''|yum search ''pattern''|tce-ab |
 |**List installed packages**|dpkg -l|rpm -qa|ls /usr/local/tce.installed|
 
+## Distribution
+
 ## :computer: [Tiny Core Linux](tinycorelinux.net)
+
+[tce load](http://wiki.tinycorelinux.net/wiki:install_apps)
+
+
