@@ -76,3 +76,27 @@ Server: Docker Engine - Community
   GitCommit:        fec3683
 ```
 
+## :o: Kube Config
+
+```
+PS > kubectl config view
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: C:\Users\Administrator\.minikube\ca.crt
+    server: https://10.13.5.51:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: C:\Users\Administrator\.minikube\client.crt
+    client-key: C:\Users\Administrator\.minikube\client.key
+```
