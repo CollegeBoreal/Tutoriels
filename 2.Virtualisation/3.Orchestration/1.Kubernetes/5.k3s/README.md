@@ -21,6 +21,11 @@ Error: unable to load the ssh key with path "/home/docker/.ssh/id_rsa": open /ho
 
 https://github.com/alexellis/arkade
 
+```
+# Note: you can also run without `sudo` and move the binary yourself
+curl -sLS https://dl.get-arkade.dev | sudo sh
+```
+
 <img src="images/tce-arkade-install.png" width="2232" heigth="1152"></img>
 
 
