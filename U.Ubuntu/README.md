@@ -4,7 +4,8 @@
 
 ### Ubuntu Server
 
-https://ubuntu.com/download/server/thank-you?version=18.04.4&architecture=amd64
+http://cdimage.ubuntu.com/releases/18.04.4/release/
+
 
  On Linux Terminal
 
