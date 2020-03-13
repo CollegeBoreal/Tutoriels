@@ -146,6 +146,23 @@ PS> New-NetFirewallRule `
 PS- Restart-Computer -Force
 ```
 
+## :m: DHCP Setup
+
+https://github.com/docker/for-win/issues/1378#issuecomment-502380490
+
+Do not connect the docker host directly to the external network. That's a major security hole since your docker containers will be directly accessible from outside.
+
+Instead create an internal switch with a NAT.
+
+```
+PS > New-VMSwitch -SwitchName docker -SwitchType Internal
+PS > Get-NetAdapter
+PS > New-NetIPAddress -IPAddress 172.16.0.1 -PrefixLength 16 -InterfaceAlias "vEthernet (docker)"
+PS > New-NetNat -Name nat1 -InternalIPInterfaceAddressPrefix 172.16.0.0/16
+```
+
+Since Hyper-V comes with no DHCP server, install a free DHCP server, for example [TFTPD64](http://www.tftpd64.com/). Configure DHCP on interface 172.16.0.1 to issue IP addresses in the range 172.16.0.2 ... 172.16.0.99.
+
 # Hyper-V
 
 ```
