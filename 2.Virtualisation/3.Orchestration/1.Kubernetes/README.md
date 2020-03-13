@@ -21,6 +21,10 @@ Only used with Type 2 Hypervisors [hosted] :
 
 * choose Oracle VirtualBox
 
+### configure-access-multiple-clusters
+
+https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+
 ### Local install Comparison  
 
 https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker-desktop/
