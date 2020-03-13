@@ -3,11 +3,16 @@
 
 https://github.com/tatsushid/docker-tinycore
 
+TCE version
+
 ```
 $ version
 10.1
 ```
 
+Install Python
+
+http://tinycorelinux.net/10.x/x86_64/tcz/
 
 ```
 $ tce-load -wi python3.7.tcz
@@ -41,4 +46,9 @@ Downloading: python3.7.tcz
 Connecting to repo.tinycorelinux.net (89.22.99.37:80)
 python3.7.tcz        100% |******************************************************************************************| 17.1M  0:00:00 ETA
 python3.7.tcz: OK
+```
+:star: Give an alias
+
+```
+$ echo "alias python=python3" >> ~/.bashrc
 ```
