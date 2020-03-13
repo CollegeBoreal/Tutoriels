@@ -7,6 +7,12 @@
 http://cdimage.ubuntu.com/releases/18.04.4/release/
 
 
+```
+$ curl http://cdimage.ubuntu.com/releases/18.04.4/release/ubuntu-18.04.4-server-arm64.iso \
+       --output ~/Downloads/ubuntu-18.04.4-server-amd64.iso
+```
+
+
  On Linux Terminal
 
     List all Flash Devices
