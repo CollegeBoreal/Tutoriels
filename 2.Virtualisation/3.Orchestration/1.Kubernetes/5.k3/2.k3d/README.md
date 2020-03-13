@@ -87,6 +87,28 @@ Metrics-server is running at https://localhost:6443/api/v1/namespaces/kube-syste
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
+```
+$ kubectl config view
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://localhost:6443
+  name: k3s-default
+contexts:
+- context:
+    cluster: k3s-default
+    user: k3s-default
+  name: k3s-default
+current-context: k3s-default
+kind: Config
+preferences: {}
+users:
+- name: k3s-default
+  user:
+    password: 4e34ab2e106e0263f04c5513d6a9deb8
+    username: admin
+```
 
 ```
 $ kubectl get nodes
