@@ -53,3 +53,24 @@ $ k3d l
 ```
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+```
+$ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.17.0/bin/linux/amd64/kubectl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 41.4M  100 41.4M    0     0   9.9M      0  0:00:04  0:00:04 --:--:--  9.9M
+```
+
+```
+$ chmod +x ./kubectl
+```
+
+```
+$ sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+```
+$ kubectl version --client
+Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.0", GitCommit:"70132b0f130acc0bed193d9ba59dd186f0e634cf", GitTreeState:"clean", BuildDate:"2019-12-07T21:20:10Z", GoVersion:"go1.13.4", Compiler:"gc", Platform:"linux/amd64"}
+```
+
