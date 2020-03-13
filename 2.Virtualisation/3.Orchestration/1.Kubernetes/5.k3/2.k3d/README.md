@@ -42,4 +42,14 @@ export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"
 kubectl cluster-info
 ```
 
+
+```
+$ k3d l
++-------------+------------------------------------+---------+---------+
+|    NAME     |               IMAGE                | STATUS  | WORKERS |
++-------------+------------------------------------+---------+---------+
+| k3s-default | docker.io/rancher/k3s:v1.17.2-k3s1 | running |   0/0   |
++-------------+------------------------------------+---------+---------+
+```
+
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
