@@ -52,3 +52,7 @@ python3.7.tcz: OK
 ```
 $ echo "alias python=python3" >> ~/.bashrc
 ```
+
+# References
+
+https://hub.docker.com/r/boot2docker/boot2docker/dockerfile/
