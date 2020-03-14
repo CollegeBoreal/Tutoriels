@@ -1,7 +1,12 @@
 # kind - Kubernetes In Docker
 
 
-# :warning: Needs Docker-Desktop by installing it
+# :warning: Tries to install Docker-Desktop (on Windows Server)
+
+| Docker Engine | Windows | Linux | 
+|---------------|---------|-------|
+| kind          | :heavy_check_mark: | :heavy_check_mark: |
+
 
 
 ## :o: Install
