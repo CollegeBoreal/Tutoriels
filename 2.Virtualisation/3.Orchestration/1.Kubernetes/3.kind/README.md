@@ -1,6 +1,9 @@
 # kind - Kubernetes In Docker
 
 
+# :warning: Needs Docker-Desktop
+
+
 ## :o: Install
 
 :star: Windows
