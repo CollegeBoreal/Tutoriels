@@ -1,7 +1,7 @@
 # kind - Kubernetes In Docker
 
 
-# :warning: Needs Docker-Desktop
+# :warning: Needs Docker-Desktop by installing it
 
 
 ## :o: Install
