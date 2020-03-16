@@ -1,8 +1,4 @@
 
-# Global Network 
+# Réseau 
 
-## Submarine Network:
-
-https://www.submarinecablemap.com
-
-![image](submarine.png)
+## [Submarine Network](0.Submarine)
