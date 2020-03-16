@@ -14,6 +14,7 @@ PS > choco install gns3
 $ brew cask install gns3
 ```
 
+https://github.com/GNS3/gns3-gui/releases/download/v2.2.5/GNS3.VM.VirtualBox.2.2.5.zip
 
 ## PacketTracer
 
