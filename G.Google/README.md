@@ -1,7 +1,7 @@
 # Google Cloud Platform
 
 
-## :scholar: Platforms
+## :student_woman: Platforms
 
 | GCP - Google Cloud Platform                         | Features                                                         |
 |-----------------------------------------------------|------------------------------------------------------------------|
