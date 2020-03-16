@@ -72,7 +72,11 @@ ou
 $ brew gist-logs mp4box
 ```
 
+:five: Fix tap
 
+```
+$ brew untap caskroom/cask caskroom/versions
+```
 
 
 :ab: Linux - Debian
