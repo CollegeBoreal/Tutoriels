@@ -23,20 +23,6 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 
 <img src="images/AZSubscription.png" width="477" heigth="326"></img>
 
-### :pushpin: AZ Config
-
-![image](images/AccessKeys.png)
-
-~/.azure/config
-
-```
-[storage]
-account = myBlob
-key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
-
-```
-
-https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
 
 ## Create virtual machine on Azure
