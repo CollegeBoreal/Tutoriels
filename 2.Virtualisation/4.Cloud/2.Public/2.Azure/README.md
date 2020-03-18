@@ -23,5 +23,13 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 
 <img src="images/AZSubscription.png" width="477" heigth="326"></img>
 
+## :three: Créer sa machine virtuelle VM
+
+:pushpin: [deployment](deployment)
+
+## :faoiur: Gérer son environnement avec AWS CLI
+
+:bulb: [AZ CLI](cli)
+
 
 
