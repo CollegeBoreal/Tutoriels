@@ -1,11 +1,13 @@
 # Azure
 
-## Azure Portal
+## :one: Azure Portal
 
 https://portal.azure.com/
 
 
-## search for your subscription ID
+## :two: Configuration 
+
+### :pushpin: Subscription ID
 
 https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscription-guid-new-portal/
 
@@ -20,6 +22,21 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 :warning: Subscription ID is not the same as Directory ID
 
 <img src="images/AZSubscription.png" width="477" heigth="326"></img>
+
+### :pushpin: AZ Config
+
+![image](images/AccessKeys.png)
+
+~/.azure/config
+
+```
+[storage]
+account = myBlob
+key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
+
+```
+
+https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
 
 ## Create virtual machine on Azure
@@ -85,21 +102,6 @@ $ az login
               }
             }
           ]
-
-### AZ Config
-
-![image](images/AccessKeys.png)
-
-~/.azure/config
-
-```
-[storage]
-account = myBlob
-key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
-
-```
-
-https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
 ### AZ Storage
 
