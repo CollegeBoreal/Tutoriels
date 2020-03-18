@@ -19,7 +19,7 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 
 :warning: Subscription ID is not the same as Directory ID
 
-<img src="images/AZSubscription.png" width="" heigth=""></img>
+<img src="images/AZSubscription.png" width="477" heigth="326"></img>
 
 
 ## Create virtual machine on Azure
