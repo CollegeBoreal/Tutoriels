@@ -17,7 +17,9 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 
 4. Select Subscription from the search results (see below)
 
-Note: Subscription ID is not the same as Directory ID
+:warning: Subscription ID is not the same as Directory ID
+
+<img src="images/AZSubscription.png" width="" heigth=""></img>
 
 
 ## Create virtual machine on Azure
