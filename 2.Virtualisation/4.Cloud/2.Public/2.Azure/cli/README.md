@@ -19,6 +19,22 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
 ## :a: Configure
 
+### :pushpin: AZ Config
+
+![image](../images/AccessKeys.png)
+
+~/.azure/config
+
+```
+[storage]
+account = myBlob
+key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
+
+```
+
+https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
+
+
 ```
 $ az login
 ```
