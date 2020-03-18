@@ -11,8 +11,8 @@ http://biblio.collegeboreal.ca/Informatique
 ## [:one: Languages](1.Languages)  
   * Languages et de leur environnement de développement  
   
-## [:two:.Docker](2.Cloud-Native/2.Docker)  
-  * Installation d'une machine virtuelle avec Docker
+## [:two: Virtualisation](2.Virtualisation)  
+  * Installation d'une machine virtuelle avec Docker et  Orchestration avec Kubernetes
 
 
 # :rage: À NE PAS FAIRE (Vous perdez le temps de tout le monde)
