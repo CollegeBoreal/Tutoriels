@@ -38,3 +38,4 @@ Enfin lancer College Boreal et cliquer sur connect pour mettre le numéro d'étu
 :pushpin: Se connecter avec un terminal (bash) ou RDC (Remote Desktop Connection)
 
 j'ai fait une vidéo pour bien expliquer
+https://youtu.be/AxdZMbYpX-g
