@@ -27,7 +27,7 @@ https://blogs.msdn.microsoft.com/mschray/2016/03/18/getting-your-azure-subscript
 
 :pushpin: [deployment](deployment)
 
-## :faoiur: Gérer son environnement avec AWS CLI
+## :four: Gérer son environnement avec AWS CLI
 
 :bulb: [AZ CLI](cli)
 
