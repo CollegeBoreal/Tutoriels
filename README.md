@@ -8,8 +8,8 @@ http://biblio.collegeboreal.ca/Informatique
   * Utilisation de git
   * [Livre git](https://git-scm.com/book/fr/v2)
 
-## [:one:.Scala](1.Scala)  
-  * Installation de Scala et de son environnement de développement  
+## [:one: Languages](1.Languages)  
+  * Languages et de leur environnement de développement  
   
 ## [:two:.Docker](2.Cloud-Native/2.Docker)  
   * Installation d'une machine virtuelle avec Docker
