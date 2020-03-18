@@ -17,7 +17,7 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 % brew install awscli
 ```
 
-## :x: Configure
+## :a: Configure
 
 ```
 $ az login
