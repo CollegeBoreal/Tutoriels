@@ -1,6 +1,23 @@
-## Azure CLI
+# Azure CLI
+
+## :o: Installation
+
+:pushpin: Windows
+
+```
+PS > choco install awscli
+```
+
 
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+
+:pushpin: MacOS
+
+```
+% brew install awscli
+```
+
+## :x: Configure
 
 ```
 $ az login
