@@ -13,21 +13,21 @@ Pour accéder au VPN du collège, on peut utiliser aussi utilisé Microsoft vpn
 
 ## :a: Connection
 
-Une fois l'intallation terminé lancer anyconnect
+✔ Une fois l'intallation terminé lancer anyconnect
 
 <img src="vpp.JPG" width="206" heigth="357"></img>
 
-Cliquer sur Manage VPN
+💨 Cliquer sur Manage VPN
 
 <img src="vpa.JPG" width="206" heigth="357"></img>
 
-Ensuite sur Add a VPN connection pour la configuration du vpn et cliquer sur save.Voir l'image ci dessous
+👍 Ensuite sur Add a VPN connection pour la configuration du vpn et cliquer sur save.Voir l'image ci dessous
 
 <img src="vpb.JPG" width="206" heigth="357"></img>
 
 <img src="vpn.JPG" width="206" heigth="357"></img>
 
-Enfin lancer College Boreal et cliquer sur connect pour mettre le numéro d'étudiant et le Mot de passe.
+👉 Enfin lancer College Boreal et cliquer sur connect pour mettre le numéro d'étudiant et le Mot de passe.
 
 <img src="vpc.JPG" width="206" heigth="357"></img>
 
@@ -37,5 +37,6 @@ Enfin lancer College Boreal et cliquer sur connect pour mettre le numéro d'étu
 
 :pushpin: Se connecter avec un terminal (bash) ou RDC (Remote Desktop Connection)
 
-j'ai fait une vidéo pour bien expliquer
+🆗 j'ai fait une vidéo pour bien expliquer
+
 https://youtu.be/AxdZMbYpX-g
