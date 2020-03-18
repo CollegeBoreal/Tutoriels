@@ -2,4 +2,4 @@
 
 # :one: AWS
 
-[Amazon Web Services - Educate]
+[Amazon Web Services - Educate](A.AWS)
