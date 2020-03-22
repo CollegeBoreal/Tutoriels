@@ -59,3 +59,8 @@ https://www.linkedin.com/learning/decouvrir-l-ecosysteme-d-angular?org=collegebo
 https://unsplash.com
 
 https://pexels.com
+
+
+## Github acquires npm
+
+https://www.itworldcanada.com/article/github-acquires-npm-to-aid-javascript-developers/428735
