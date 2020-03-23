@@ -1,7 +1,7 @@
 # Github Learning
 
 
-<img src="images/github-learning/-.Start-Learning.png" width="" height="" ></img>
+<img src="images/github-learning/-.Start-Learning.png" width="403" height="334" ></img>
 <img src="images/github-learning/0.Start-lab-github.png" width="" height="" ></img>
 <img src="images/github-learning/1.Accept-Terms.png" width="" height="" ></img>
 <img src="images/github-learning/2.Install-on-all-repositories.png" width="" height="" ></img>
