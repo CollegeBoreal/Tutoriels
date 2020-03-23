@@ -3,8 +3,8 @@
 
 ## :zero: Github Learning
 
-[0.github-learning](0.github-learning)
+[s'enregistrer => ](0.Github-Learning)
 
 ## :one: Azure
 
-[1.Azure](1.Azure)
+[s'enregistrer => ](1.Azure)
