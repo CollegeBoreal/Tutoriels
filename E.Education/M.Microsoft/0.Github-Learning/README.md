@@ -7,7 +7,9 @@
 
 <img src="images/github-learning/1.Accept-Terms.png" width="214" height="95" ></img>
 
-<img src="images/github-learning/2.Install-on-all-repositories.png" width="" height="" ></img>
+<img src="images/github-learning/2.Install-on-all-repositories.png" width="424" height="334" ></img>
+
+
 <img src="images/github-learning/<img src="images/github-learning/3.Install-Github-Learning.png" width="" height="" ></img>
 <img src="images/github-learning/4.Launch-your-first-course.png" width="" height="" ></img>
 <img src="images/github-learning/5.Introduction-Python.png" width="" height="" ></img>
