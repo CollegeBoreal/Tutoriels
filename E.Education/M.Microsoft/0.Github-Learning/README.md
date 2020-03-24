@@ -47,7 +47,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/7.Register-Free-Course.png" width="429" height="151" ></img>
 
-:pushpin: Vérifier l'installation de la nouvelle lecon dans son compte github
+### :ab: Vérifier l'installation de la nouvelle lecon dans son compte github
 
 :bulb: https://github.com/ `(mon ` :id: ` github)`
 
