@@ -12,7 +12,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/0.Start-lab-github.png" width="264" height="361" ></img>
 
-- [ ] Démarrer l'inscription
+- [ ] Aprés avoir démarrer l'inscription, accepter les conditions
 
 <img src="images/github-learning/1.Accept-Terms.png" width="214" height="95" ></img>
 
