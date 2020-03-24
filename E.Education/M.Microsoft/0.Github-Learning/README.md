@@ -57,7 +57,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 :warning: Vérifier que l'Application `Github Learning Lab` est bien installée dans votre profil
 
-:round_pushpin: Ouvrir la page `settings` dans le menu de l'utilisateur
+:round_pushpin: Cliquez sur le sous-menu `settings` dans le menu de l'utilisateur
 
 <img src="images/settings/0.Settings.png" width="99" height="205" ></img>
 
