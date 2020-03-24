@@ -53,7 +53,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/8.Start-Coding.png" width="372" height="200" ></img>
 
-# Github Learning Lab Application
+## Vérification `Github Learning Lab` Application
 
 :warning: Vérifier que l'Application `Github Learning Lab` est bien installée dans votre profil
 
