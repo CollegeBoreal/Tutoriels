@@ -57,14 +57,14 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 :warning: Vérifier que l'Application `Github Learning Lab` est bien installée dans votre profil
 
-:round_pushpin: Ouvrir la page `settings`
+:round_pushpin: Ouvrir la page `settings` dans le menu de l'utilisateur
 
 <img src="images/settings/0.Settings.png" width="99" height="205" ></img>
 
-:round_pushpin: Cliquez le sous-menu `Applications`
+:round_pushpin: Cliquer le sous-menu `Applications` pour vérifier que l'application soit bien installée
 
 <img src="images/settings/1.Installed-Github-Apps.png" width="474" height="241" ></img>
 
-:round_pushpin: Vérifier que l'application soit bien installée
+:round_pushpin: Cliquer l'onglet `Authorization ...` pour vérifier qu'elle aie tous les droits
 
 <img src="images/settings/2.Authorized-Github-Apps.png" width="372" height="200" ></img>
