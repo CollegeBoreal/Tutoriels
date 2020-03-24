@@ -43,10 +43,12 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/6.Start-Free-Course.png" width="430" height="340" ></img>
 
-:pushpin: Démarrer l'inscription
+:pushpin: Accepter l'installation de la nouvelle lecon dans son compte
 
 <img src="images/github-learning/7.Register-Free-Course.png" width="429" height="151" ></img>
 
-:pushpin: Démarrer l'inscription
+:pushpin: Vérifier l'installation de la nouvelle lecon dans son compte github
+
+:bulb: https://github.com/<mon :id: github>
 
 <img src="images/github-learning/8.Start-Coding.png" width="372" height="200" ></img>
