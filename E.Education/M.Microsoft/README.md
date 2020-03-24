@@ -1,10 +1,10 @@
 # Microsoft
 
 
-## :zero: Github Learning
+## :zero: Github Learning Lab
 
-[s'enregistrer => ](0.Github-Learning)
+[s'enregistrer à => ](0.Github-Learning)
 
 ## :one: Azure
 
-[s'enregistrer => ](1.Azure)
+[s'enregistrer à => ](1.Azure)
