@@ -30,23 +30,23 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 :star: https://lab.github.com
 
-- [ ] Chercher son cours
+:pushpin: Chercher son cours
 
 <img src="images/github-learning/4.Launch-your-first-course.png" width="400" height="140" ></img>
 
 
-- [ ] Démarrer l'inscription
+:pushpin: Démarrer l'inscription
 
 <img src="images/github-learning/5.Introduction-Python.png" width="432" height="242" ></img>
 
-- [ ] Démarrer l'inscription
+:pushpin: Démarrer l'inscription
 
 <img src="images/github-learning/6.Start-Free-Course.png" width="430" height="340" ></img>
 
-- [ ] Démarrer l'inscription
+:pushpin: Démarrer l'inscription
 
 <img src="images/github-learning/7.Register-Free-Course.png" width="429" height="151" ></img>
 
-- [ ] Démarrer l'inscription
+:pushpin: Démarrer l'inscription
 
 <img src="images/github-learning/8.Start-Coding.png" width="372" height="200" ></img>
