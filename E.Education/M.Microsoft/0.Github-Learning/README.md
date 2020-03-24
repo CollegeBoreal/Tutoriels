@@ -22,7 +22,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/2.Install-on-all-repositories.png" width="424" height="334" ></img>
 
-- [ ] Démarrer l'inscription
+- [ ] Confirmer l'installation
 
 <img src="images/github-learning/3.Install-Github-Learning.png" width="282" height="371" ></img>
 
