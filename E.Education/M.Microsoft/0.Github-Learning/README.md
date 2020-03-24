@@ -14,15 +14,15 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 `Github Learning Lab` effectuera des actions et utilsera des ressources liées a votre compte.
 
-- [ ] Aprés avoir démarrer l'inscription, Accepter les conditions d'utilisation
+:round_pushpin: Aprés avoir démarrer l'inscription, Accepter les conditions d'utilisation
 
 <img src="images/github-learning/1.Accept-Terms.png" width="214" height="95" ></img>
 
-- [ ] Aprés avoir accepter les conditions d'utilisation, `Github Learning Lab` demandera si toutes les référentiels (repositories) peuvent être accédé
+:round_pushpin: Aprés avoir accepter les conditions d'utilisation, `Github Learning Lab` demandera si toutes les référentiels (repositories) peuvent être accédé
 
 <img src="images/github-learning/2.Install-on-all-repositories.png" width="424" height="334" ></img>
 
-- [ ] Confirmer l'installation
+:round_pushpin: Confirmer l'installation
 
 <img src="images/github-learning/3.Install-Github-Learning.png" width="282" height="371" ></img>
 
