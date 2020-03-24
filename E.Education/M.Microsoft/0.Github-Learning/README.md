@@ -10,7 +10,7 @@
 <img src="images/github-learning/2.Install-on-all-repositories.png" width="424" height="334" ></img>
 
 
-<img src="images/github-learning/<img src="images/github-learning/3.Install-Github-Learning.png" width="" height="" ></img>
+<img src="images/github-learning/<img src="images/github-learning/3.Install-Github-Learning.png" width="282" height="371" ></img>
 <img src="images/github-learning/4.Launch-your-first-course.png" width="" height="" ></img>
 <img src="images/github-learning/5.Introduction-Python.png" width="" height="" ></img>
 <img src="images/github-learning/6.Start-Free-Course.png" width="" height="" ></img>
