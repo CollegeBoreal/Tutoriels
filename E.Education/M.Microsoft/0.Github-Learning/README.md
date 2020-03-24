@@ -49,6 +49,6 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 :pushpin: Vérifier l'installation de la nouvelle lecon dans son compte github
 
-:bulb: https://github.com/`(mon ` :id: ` github)`
+:bulb: https://github.com/ `(mon ` :id: ` github)`
 
 <img src="images/github-learning/8.Start-Coding.png" width="372" height="200" ></img>
