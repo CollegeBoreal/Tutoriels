@@ -52,3 +52,19 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 :bulb: https://github.com/ `(mon ` :id: ` github)`
 
 <img src="images/github-learning/8.Start-Coding.png" width="372" height="200" ></img>
+
+# Github Learning Lab Application
+
+:warning: Vérifier que l'Application `Github Learning Lab` est bien installée dans votre profil
+
+:round_pushpin: Ouvrir la page `settings`
+
+<img src="images/settings/0.Settings.png" width="372" height="200" ></img>
+
+:round_pushpin: Clicquez le sous-menu `Applications`
+
+<img src="images/settings/1.Installed-Github-Apps.png" width="372" height="200" ></img>
+
+:round_pushpin: Clicquez le sous-menu `Applications`
+
+<img src="images/settings/2.Authorized-Github-Apps.png" width="372" height="200" ></img>
