@@ -59,11 +59,11 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 :round_pushpin: Ouvrir la page `settings`
 
-<img src="images/settings/0.Settings.png" width="398" height="822" ></img>
+<img src="images/settings/0.Settings.png" width="99" height="205" ></img>
 
 :round_pushpin: Cliquez le sous-menu `Applications`
 
-<img src="images/settings/1.Installed-Github-Apps.png" width="372" height="200" ></img>
+<img src="images/settings/1.Installed-Github-Apps.png" width="474" height="241" ></img>
 
 :round_pushpin: Vérifier que l'application soit bien installée
 
