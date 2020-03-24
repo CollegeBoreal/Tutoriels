@@ -47,7 +47,7 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/7.Register-Free-Course.png" width="429" height="151" ></img>
 
-:bulb: Pour certaines lecons, assurz vous de sélectionner le `CLI` pour utiliser les commandes
+:bulb: Pour certaines lecons, assurez vous de sélectionner le `CLI` pour utiliser les commandes
 
 <img src="images/github-learning/7.Register-Free-Course-CLI.png" width="179" height="217" ></img>
 
