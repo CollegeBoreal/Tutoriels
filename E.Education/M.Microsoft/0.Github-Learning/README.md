@@ -65,6 +65,6 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/settings/1.Installed-Github-Apps.png" width="474" height="241" ></img>
 
-:round_pushpin: Cliquer l'onglet `Authorization ...` pour vérifier qu'elle aie tous les droits
+:round_pushpin: Cliquer l'onglet `Authorized ...` pour vérifier qu'elle aie tous les droits
 
-<img src="images/settings/2.Authorized-Github-Apps.png" width="372" height="200" ></img>
+<img src="images/settings/2.Authorized-Github-Apps.png" width="474" height="241" ></img>
