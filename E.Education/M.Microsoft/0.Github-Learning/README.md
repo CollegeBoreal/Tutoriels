@@ -26,9 +26,15 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/3.Install-Github-Learning.png" width="282" height="371" ></img>
 
-- [ ] Démarrer l'inscription
+### :b: Commencer son premier cours sur [Github Learning Lab](https://lab.github.com)
+
+:star: https://lab.github.com
+
+- [ ] Chercher son cours
 
 <img src="images/github-learning/4.Launch-your-first-course.png" width="400" height="140" ></img>
+
+
 - [ ] Démarrer l'inscription
 
 <img src="images/github-learning/5.Introduction-Python.png" width="432" height="242" ></img>
