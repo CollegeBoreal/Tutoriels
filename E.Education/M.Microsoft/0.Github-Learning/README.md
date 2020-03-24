@@ -6,7 +6,7 @@
 
 ### :a: Inscription à [Github Learning Lab](https://lab.github.com/)
 
-:round_pin: Démarrer l'inscription
+:round_pushpin: Démarrer l'inscription
 
 Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'installation de l'application dans votre profil
 
