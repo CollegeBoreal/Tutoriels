@@ -12,7 +12,7 @@
 
 <img src="images/github-learning/3.Install-Github-Learning.png" width="282" height="371" ></img>
 <img src="images/github-learning/4.Launch-your-first-course.png" width="400" height="140" ></img>
-<img src="images/github-learning/5.Introduction-Python.png" width="" height="" ></img>
-<img src="images/github-learning/6.Start-Free-Course.png" width="" height="" ></img>
+<img src="images/github-learning/5.Introduction-Python.png" width="432" height="242" ></img>
+<img src="images/github-learning/6.Start-Free-Course.png" width="430" height="340" ></img>
 <img src="images/github-learning/7.Register-Free-Course.png" width="" height="" ></img>
 <img src="images/github-learning/8.Start-Coding.png" width="" height="" ></img>
