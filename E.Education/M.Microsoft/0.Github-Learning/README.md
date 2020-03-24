@@ -12,11 +12,13 @@ Si vous n'êtes pas encore inscrit, `Github Learning Lab` va vous demander l'ins
 
 <img src="images/github-learning/0.Start-lab-github.png" width="264" height="361" ></img>
 
-- [ ] Aprés avoir démarrer l'inscription, accepter les conditions
+`Github Learning Lab` effectuera des actions et utilsera des ressources liées a votre compte.
+
+- [ ] Aprés avoir démarrer l'inscription, Accepter les conditions d'utilisation
 
 <img src="images/github-learning/1.Accept-Terms.png" width="214" height="95" ></img>
 
-- [ ] Démarrer l'inscription
+- [ ] Aprés avoir accepter les conditions d'utilisation, `Github Learning Lab` demandera si toutes les référentiels (repositories) peuvent être accédé
 
 <img src="images/github-learning/2.Install-on-all-repositories.png" width="424" height="334" ></img>
 
