@@ -3,7 +3,7 @@
 
 ## :zero: Github Learning Lab
 
-[s'enregistrer à => ](0.Github-Learning)
+[s'enregistrer à => ](0.Github-Learning-Lab/0.Installation)
 
 ## :one: Azure
 
