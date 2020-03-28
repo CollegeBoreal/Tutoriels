@@ -4,7 +4,7 @@
 
 :pushpin: Par un Package Manager
 
-:bulb: Windows
+:laptop: Windows
 
 ```
 > choco install anaconda3 
