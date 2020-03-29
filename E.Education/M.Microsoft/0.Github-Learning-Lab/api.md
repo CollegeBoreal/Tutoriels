@@ -7,11 +7,13 @@ https://developer.github.com/v3/activity/events/
 ```
 
 ```
-$ JQ_COURS="lab-algorithme-du-bfs-en-python"
-$ JQ_DATE="2020-03-28T13"
+$ JQ_COURS_K=".repo.url" \
+  JQ_COURS_V="lab-algorithme-du-bfs-en-python"
+$ JQ_DATE_K=".created_at" \
+  JQ_DATE_V="2020-03-28T13"
 $ JQ_TABLE='.[] ' \
-  JQ_WHERE_URL="| select (.repo.url   | contains(\"${JQ_COURS}\"))" \
-  JQ_WHERE_DAT="| select (.created_at | contains(\"${JQ_DATE}\"))" \
+  JQ_WHERE_URL="| select ( ${JQ_COURS_K} | contains(\"${JQ_COURS_V}\"))" \
+  JQ_WHERE_DAT="| select ( ${JQ_DATE_V} | contains(\"${JQ_DATE_V}\"))" \
   JQ_SELECT='| { progres: .payload.issue.title }' \
   JQ_QUERY=$JQ_TABLE$JQ_WHERE_URL$JQ_WHERE_DAT$JQ_SELECT
 % curl  https://api.github.com/users/setrar/events |  jq $JQ_QUERY
