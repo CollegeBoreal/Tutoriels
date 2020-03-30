@@ -27,6 +27,8 @@ Voir [Core](core)
 
 Pour Mac [RDP pour Windows 10](https://www.snel.com/support/how-to-connect-to-your-server-via-rdp-on-macos/)
 
+:round_pushpin: Login Window
+
 [ALT]+[CTRL]+[DEL] on Mac => Basically [CTRL] is [CTRL], [ALT] is [OPT] and [Windows] is [Command] Keys
 
 
@@ -35,5 +37,12 @@ Pour Mac [RDP pour Windows 10](https://www.snel.com/support/how-to-connect-to-yo
     Laptop keyboard: fn+control+option+delete
 
     Full-size keyboard: control+option+delete
+
+:round_pushpin: TaskManager Window
+
+[CRTL]+[SHFT]+[ESC] Tres utile quand on est deja dans une session RDP
+
+https://superuser.com/questions/9607/how-do-i-open-the-windows-task-manager-during-a-remote-desktop-session/9608
+
 
 
