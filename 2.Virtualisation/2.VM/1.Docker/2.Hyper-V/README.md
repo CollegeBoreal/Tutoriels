@@ -172,7 +172,7 @@ PS >  Get-Command -Module Hyper-V
 Lire le disk virtuel utilise
 
 ```
-PS > Get-VHD $env:USERPROFILE\.docker\machine\machines\vm\disk.vhd
+PS > Get-VHD $Env:USERPROFILE\.docker\machine\machines\vm\disk.vhd
 ```
 
 ## :o: Docker Machine Generique 
@@ -181,7 +181,7 @@ PS > Get-VHD $env:USERPROFILE\.docker\machine\machines\vm\disk.vhd
 
 :one: Copier les cles sur la machine distante sur la machine cliente 
 
-* Source: $env:USERPROFILE\.docker\machine\machines\<machine virtuelle>\{id_rsa,id_rsa.pub}
+* Source: $Env:USERPROFILE\.docker\machine\machines\<machine virtuelle>\{id_rsa,id_rsa.pub}
 
 * Destination: ~/.ssh/<machine virtuelle> 
 
