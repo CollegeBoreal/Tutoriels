@@ -143,7 +143,7 @@ PS> New-NetFirewallRule `
 :pushpin: Redemarrer
 
 ```
-PS- Restart-Computer -Force
+PS > Restart-Computer -Force
 ```
 
 ## :m: DHCP Setup
