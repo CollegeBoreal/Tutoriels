@@ -93,7 +93,7 @@ Your browser has been opened to visit:
 
 
 
-You are now logged in as [300098957@collegeboreal.ca].
+You are now logged in as [mon-courriel@collegeboreal.ca].
 Your current project is [None].  You can change this setting by running:
   $ gcloud config set project PROJECT_ID
 ```
