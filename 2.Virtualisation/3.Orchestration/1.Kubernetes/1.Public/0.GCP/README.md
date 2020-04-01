@@ -19,3 +19,11 @@ kubeconfig entry generated for kubia.
 NAME   LOCATION       MASTER_VERSION  MASTER_IP     MACHINE_TYPE  NODE_VERSION    NUM_NODES  STATUS
 kubia  us-central1-a  1.14.10-gke.27  34.66.86.157  f1-micro      1.14.10-gke.27  3          RUNNING
 ```
+
+```
+% kubectl get nodes
+NAME                                   STATUS     ROLES    AGE   VERSION
+gke-kubia-default-pool-d41cef64-8pm5   NotReady   <none>   11m   v1.14.10-gke.27
+gke-kubia-default-pool-d41cef64-bzc9   Ready      <none>   11m   v1.14.10-gke.27
+gke-kubia-default-pool-d41cef64-hrv2   NotReady   <none>   11m   v1.14.10-gke.27
+```
