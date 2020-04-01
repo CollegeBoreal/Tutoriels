@@ -153,3 +153,13 @@ Run 'do-release-upgrade' to upgrade to it.
 
 
 b300098957@cb-gcp-test:~$ 
+```
+
+:pushpin: Fichier de cles SSH crees
+
+```
+% ls -l ~/.ssh/google_compute_*
+-rw-------  1 b300098957  staff  1823 Mar 31 21:27 /Users/b300098957/.ssh/google_compute_engine
+-rw-r--r--  1 b300098957  staff   399 Mar 31 21:27 /Users/b300098957/.ssh/google_compute_engine.pub
+-rw-r--r--  1 b300098957  staff   189 Mar 31 21:28 /Users/b300098957/.ssh/google_compute_known_hosts
+```
