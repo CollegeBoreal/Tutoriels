@@ -25,3 +25,8 @@ Checking connection to Docker...
 Docker is up and running!
 To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env cb-gcp-test
 ```
+
+
+# References
+
+https://rominirani.com/docker-machine-to-control-docker-hosts-on-google-cloud-3a48b46809dc
