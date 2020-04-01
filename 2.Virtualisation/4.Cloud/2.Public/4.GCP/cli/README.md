@@ -107,6 +107,7 @@ Updated property [core/project].
 
 :pushpin: Creer sa cle SSH en se connectant a la machine
 
+```
 % gcloud beta compute ssh --zone us-central1-a cb-gcp-test --project b300098957
 
 WARNING: The public SSH key file for gcloud does not exist.
@@ -155,7 +156,7 @@ Run 'do-release-upgrade' to upgrade to it.
 b300098957@cb-gcp-test:~$ 
 ```
 
-:pushpin: Fichier de cles SSH crees
+:pushpin: Fichier de cles SSH crees 
 
 ```
 % ls -l ~/.ssh/google_compute_*
