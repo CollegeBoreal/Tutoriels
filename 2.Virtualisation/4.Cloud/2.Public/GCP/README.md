@@ -14,7 +14,7 @@ https://cloud.google.com/docs/authentication/production#creating_a_service_accou
 
 1. In the Cloud Console, go to the Create service account key page.
     
-    `Go to the Create Service Account Key page`
+    **Go to the Create Service Account Key page**
     
 2. From the `Service account` list, select `New service account`.
 
@@ -25,7 +25,7 @@ https://cloud.google.com/docs/authentication/production#creating_a_service_accou
 :star:
 Note: The Role field authorizes your service account to access resources. 
 You can view and change this field later by using the Cloud Console. 
-If you are developing a production app, specify more granular permissions than Project > Owner. 
+If you are developing a production app, specify more granular permissions than `Project > Owner`. 
 For more information, see granting roles to service accounts.
 
 5. Click `Create`. A JSON file that contains your key downloads to your computer.
