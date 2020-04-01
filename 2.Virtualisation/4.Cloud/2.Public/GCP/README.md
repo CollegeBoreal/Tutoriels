@@ -26,7 +26,7 @@ https://cloud.google.com/docs/authentication/production#creating_a_service_accou
 Note: The Role field authorizes your service account to access resources. 
 You can view and change this field later by using the Cloud Console. 
 If you are developing a production app, specify more granular permissions than `Project > Owner`. 
-For more information, see granting roles to service accounts.
+For more information, see `granting role` to service accounts.
 
 5. Click `Create`. A JSON file that contains your key downloads to your computer.
 
