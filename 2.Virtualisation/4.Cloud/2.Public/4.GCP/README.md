@@ -39,7 +39,7 @@ For more information, see [granting role` to service accounts](https://cloud.goo
 
 ## :four: Gérer son environnement avec AWS CLI
 
-:bulb: [AZ CLI](cli)
+:bulb: [gloud CLI](cli)
 
 
 
