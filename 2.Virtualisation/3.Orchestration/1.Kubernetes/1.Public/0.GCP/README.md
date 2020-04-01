@@ -71,3 +71,14 @@ Addresses:
   Hostname:     gke-kubia-default-pool-d41cef64-bzc9.us-central1-a.c.b300098957.internal
 ....
 ```
+
+:x: Delete a cluster
+
+```
+% gcloud container clusters delete kubia --zone "us-central1-a"
+```
+
+
+# References 
+
+https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-repair
