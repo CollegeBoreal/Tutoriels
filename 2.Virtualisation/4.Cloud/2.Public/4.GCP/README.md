@@ -30,9 +30,6 @@ For more information, see [granting role` to service accounts](https://cloud.goo
 
 5. Click `Create`. A JSON file that contains your key downloads to your computer.
 
-
-<img src="images/AZSubscription.png" width="477" heigth="326"></img>
-
 ## :three: Créer sa machine virtuelle VM
 
 :pushpin: [deployment](deployment)
