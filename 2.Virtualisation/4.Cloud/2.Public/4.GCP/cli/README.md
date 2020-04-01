@@ -11,7 +11,7 @@ PS > choco install gcloudsdk
 :pushpin: MacOS
 
 ```
-% % brew cask install google-cloud-sdk
+% brew cask install google-cloud-sdk
 ```
 
 ## :a: Configure
