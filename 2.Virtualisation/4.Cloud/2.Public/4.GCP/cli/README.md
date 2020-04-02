@@ -18,13 +18,26 @@ PS > choco install gcloudsdk
 
 ### :pushpin: Service Account Credentials
 
+
+* Créer un fichier `JSON` comportant les identifiants (credentials)
+
+* Suivre la documentation
+
 https://cloud.google.com/docs/authentication/production#providing_service_account_credentials
 
-Example
+* Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
+
+Example: ajuster avec le nom de fichier `identifiants`
 
 ```
 ~/.gcp/b300098957-a2662a9bd338.json
 ```
+
+* Ajouter la variable d'identifiants à son` Environement`
+
+https://cloud.google.com/docs/authentication/getting-started#setting_the_environment_variable
+
+Example: ajuster avec le nom de fichier `identifiants`
 
 ```
 % export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
