@@ -45,6 +45,8 @@ Example: ajuster avec le nom de fichier `identifiants`
 
 :ab: gcloud CLI
 
+* Créer sa première grappe "Cluster". Changer le nom de projet
+
 ```
 % gcloud beta compute ssh --zone "us-central1-a" "cb-gcp-test" --project "b300098957"
 You do not currently have this command group installed.  Using it 
