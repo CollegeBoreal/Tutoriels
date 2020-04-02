@@ -98,3 +98,21 @@ $ aws ec2 revoke-security-group-ingress --group-name <group-name> \
                                         --protocol tcp --port 9021 \
                                         --cidr 0.0.0.0/0  [ --profile <profile-name> ]
 ```
+
+## :o: EKSTL Installation
+
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
+
+:m: Avec `package Managers`
+
+:pushpin: [MacOS](https://formulae.brew.sh/formula/awscli)
+
+```
+$ brew install weaveworks/tap/eksctl
+```
+
+:pushpin: [Windows](https://chocolatey.org/packages/awscli)
+
+```
+$ choco install eksctl
+```
