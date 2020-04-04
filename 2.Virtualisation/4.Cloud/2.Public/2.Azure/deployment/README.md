@@ -54,6 +54,11 @@ $ docker-machine create --driver azure \
    --azure-size $AZ_SIZE \
    --azure-image $AZ_IMAGE \
    az-cb-prod
+```
+
+* Demande d'authentification de la machine en ligne
+
+```
 Running pre-create checks...
 (az-cb-prod) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 and enter the code EDIEN4D2W to authenticate.
