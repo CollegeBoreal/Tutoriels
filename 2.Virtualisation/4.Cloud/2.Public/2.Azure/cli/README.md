@@ -25,6 +25,9 @@ PS > choco install awscli
 https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
 
+* Par le navigateur
+
+
 ```
 $ az login
 ```
