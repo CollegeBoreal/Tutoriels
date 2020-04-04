@@ -26,7 +26,7 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ## :a: `kubectl` Client
 
-- [ ] La version
+- [x] La version
 
 ```
 % kubectl version --client --output=json
@@ -47,7 +47,7 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 
 
-- [ ] Le context
+- [x] Le context
 
 :star: Switching Kubernetes Context
 
