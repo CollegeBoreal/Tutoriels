@@ -72,6 +72,7 @@ $ read -sp "Azure password: " AZ_PASS && echo && az login -u 000000000@collegebo
 
 https://stackoverflow.com/questions/14141933/zsh-read-q-broken-on-osx
 
+### :bulb: Autres informations utiles
 
 * Récuperer le numero d'abonnement `subscription`
 
@@ -106,7 +107,7 @@ telemetry.txt
 
 https://mikhail.io/2019/07/how-azure-cli-manages-access-tokens/
 
-## :b: AZ Storage
+## :ab: AZ Storage
 
 ### :one: Récupérer la clé pour le `Storage`
 
