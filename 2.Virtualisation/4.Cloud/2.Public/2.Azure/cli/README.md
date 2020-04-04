@@ -50,7 +50,7 @@ $ az login
 
 * Par le CLI
 
-https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest#sign-in-with-credentials-on-the-command-line
+[sign-in-with-credentials-on-the-command-line](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest#sign-in-with-credentials-on-the-command-line)
 
 :computer: Sous Powershell
 
