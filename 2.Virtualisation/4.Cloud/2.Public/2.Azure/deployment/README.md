@@ -1,22 +1,28 @@
 ## Create virtual machine on Azure
 
-:one: Donner le numero d'abonement
+:one: Récupérer le numero d'abonement
 
 ```
-$ SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
+$ AZ_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
 ```
 
-:two: Lancer la machine
+:two: Récupérer le numero groupe
+
+```
+$ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
+```
+
+:three: Lancer la création de la machine virtuelle
 
 https://docs.docker.com/machine/drivers/azure/#authentication
 
 ```
 $ docker-machine create --driver azure \
-   --azure-resource-group college-boreal \
+   --azure-subscription-id $AZ_SUBSCRIPTION_ID \
+   --azure-resource-group $AZ_GROUP_ID \
    --azure-location eastus \
    --azure-size Standard_B1s \
    --azure-image canonical:UbuntuServer:18.04-LTS:latest \
-   --azure-subscription-id $SUBSCRIPTION_ID \
    az-cb-prod
 Running pre-create checks...
 (az-cb-prod) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
