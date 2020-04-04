@@ -1,7 +1,8 @@
 
 
-
+=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
-$ az aks create --resource-group myResourceGroup --name myAKSCluster \
-              --node-count 1 --enable-addons monitoring --generate-ssh-keys
+$ az aks create --resource-group $AZ_GROUP_ID --name kubia \
+              --node-count 3 
+              --enable-addons monitoring --generate-ssh-keys
 ```
