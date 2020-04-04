@@ -1,5 +1,13 @@
 ## Create virtual machine on Azure
 
+:one: Donner le numero d'abonement
+
+```
+$ SUBSCRIPTION_ID=<subscription ID>
+```
+
+:two: Lancer la machine
+
 https://docs.docker.com/machine/drivers/azure/#authentication
 
 ```
@@ -8,7 +16,7 @@ $ docker-machine create --driver azure \
    --azure-location eastus \
    --azure-size Standard_B1s \
    --azure-image canonical:UbuntuServer:18.04-LTS:latest \
-   --azure-subscription-id <subscription ID> \
+   --azure-subscription-id $SUBSCRIPTION_ID \
    az-cb-prod
    
 Running pre-create checks...
