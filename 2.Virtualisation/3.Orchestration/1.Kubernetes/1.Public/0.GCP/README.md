@@ -20,6 +20,12 @@ Please ensure it is enabled in Google Cloud Console and try again:
 visit https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=b300098957 to do so.
 ```
 
+```
+% gcloud projects list
+PROJECT_ID  NAME        PROJECT_NUMBER
+b300098957  b300098957  534284581522
+```
+
 https://cloud.google.com/endpoints/docs/openapi/enable-api
 
 
