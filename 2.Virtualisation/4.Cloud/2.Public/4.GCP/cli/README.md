@@ -43,9 +43,9 @@ Example: ajuster avec le nom de fichier `identifiants`
 % export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
 
-:ab: gcloud CLI
+:ab: Explorer `gcloud` CLI
 
-* Créer sa première grappe "Cluster". Changer le nom de projet
+* Se connecter à une machine existante avec `gcloud`
 
 ```
 % gcloud beta compute ssh --zone "us-central1-a" "cb-gcp-test" --project "b300098957"
