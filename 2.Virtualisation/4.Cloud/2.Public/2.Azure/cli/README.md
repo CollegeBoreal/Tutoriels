@@ -48,7 +48,7 @@ $ az login
             }
           ]
 
-* Récuperer le numero d'abonnement
+* Récuperer le numero d'abonnement `subscription`
 
 ```
 % az account get-access-token                       
