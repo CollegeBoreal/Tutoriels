@@ -8,7 +8,9 @@
 % gcloud container clusters create kubia --num-nodes 3 --machine-type f1-micro --zone "us-central1-a"
 ```
 
-:o: Initialisation si le service `Kubernetes Engine` n'est pas activé dans la console, il faut l'activer en cliquant sur le lien donné
+:o: Initialisation si le service `Kubernetes Engine` n'est pas activé dans la console, il faut l'activer en cliquant sur le lien donné par l'erreur
+
+Exemple:
 
 ```
 ERROR: (gcloud.container.clusters.create) ResponseError: code=403, message=Kubernetes Engine API is not enabled for this project. 
