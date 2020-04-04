@@ -64,7 +64,16 @@ https://negatblog.blob.core.windows.net/lists/os_image_list
 
 :four: Lancer la création de la machine virtuelle
 
-https://docs.docker.com/machine/drivers/azure/#authentication
+Example de variables requises
+
+```
+$ AZ_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
+$ AZ_LOCATION=canadacentral
+$ AZ_SIZE=Standard_B2s
+$ AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+```
+
+- [ ] Creer la machine virtuelle
 
 ```
 $ docker-machine create --driver azure \
