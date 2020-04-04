@@ -19,8 +19,7 @@ PS > choco install awscli
 
 ## :a: Connexion à Azure
 
-
-
+Les étapes suivantes sont utiles pour se connecter à Azure en utilisant les commandes CLI
 
 https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
@@ -108,6 +107,8 @@ telemetry.txt
 https://mikhail.io/2019/07/how-azure-cli-manages-access-tokens/
 
 ## :ab: AZ Storage
+
+Les étapes suivantes sont utiles pour se connecter à Azure Storage, en utilisant les commandes CLI, pour utilise le stockage sous Azure.
 
 ### :one: Récupérer la clé pour le `Storage`
 
