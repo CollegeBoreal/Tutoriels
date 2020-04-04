@@ -19,9 +19,6 @@ PS > choco install awscli
 
 ## :a: Configure
 
-### :pushpin: AZ Config
-
-![image](../images/AccessKeys.png)
 
 
 
@@ -50,7 +47,15 @@ $ az login
 
 ## :b: AZ Storage
 
+### :one: Récupérer la clé pour le `Storage`
+
+![image](../images/AccessKeys.png)
+
+### :two: Fichier de configuration
+
 [CLI Configuration File](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)
+
+
 
 ```
 ~/.azure/config
