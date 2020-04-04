@@ -43,6 +43,8 @@ Example: ajuster avec le nom de fichier `identifiants`
 % export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
 
+# References
+
 :ab: Explorer `gcloud` CLI (Optionnel, sert uniquement à tester les commandes gcloud)
 
 * Se connecter à une machine existante avec `gcloud`
