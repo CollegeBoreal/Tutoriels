@@ -20,7 +20,7 @@ $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 $ AZ_LOCATION=eastus
 ```
 
-- [ ] Azure Size
+- [ ] Azure Size (`Standard_B1s`: 1vCPU, 1GiB Mem,  `Standard_B2s`: 2vCPU, 4GiB Mem )
 
 ```
 $ AZ_SIZE=Standard_B1s
