@@ -17,7 +17,7 @@ PS > choco install awscli
 % brew install awscli
 ```
 
-## :a: Configure
+## :a: Connexion à Azure
 
 
 
