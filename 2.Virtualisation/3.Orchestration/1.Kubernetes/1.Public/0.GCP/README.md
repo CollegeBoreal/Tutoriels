@@ -1,8 +1,7 @@
+# Kubernetes Cluster dans GCP
 
 
-
-ERROR: (gcloud.container.clusters.create) ResponseError: code=403, message=Kubernetes Engine API is not enabled for this project. Please ensure it is enabled in Google Cloud Console and try again: visit https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=b300098957 to do so.
-
+:a: Créer son premier cluster
 
 
 ```
@@ -19,6 +18,16 @@ kubeconfig entry generated for kubia.
 NAME   LOCATION       MASTER_VERSION  MASTER_IP     MACHINE_TYPE  NODE_VERSION    NUM_NODES  STATUS
 kubia  us-central1-a  1.14.10-gke.27  34.66.86.157  f1-micro      1.14.10-gke.27  3          RUNNING
 ```
+
+:o: Initialisation si le service `Kubernetes Engine` n<est pas activé dans la console
+
+```
+ERROR: (gcloud.container.clusters.create) ResponseError: code=403, message=Kubernetes Engine API is not enabled for this project. Please ensure it is enabled in Google Cloud Console and try again: visit https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=b300098957 to do so.
+```
+
+
+
+
 
 ```
 % kubectl get nodes
