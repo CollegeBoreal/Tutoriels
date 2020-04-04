@@ -1,5 +1,7 @@
 ## Create virtual machine on Azure
 
+:star: ce tutoriel utilise l'utilitaire [JQ](https://github.com/CollegeBoreal/Tutoriels/tree/master/T.Texte/J.JSON). Si non présent l'installer
+
 :one: Récupérer le numero d'abonement
 
 ```
