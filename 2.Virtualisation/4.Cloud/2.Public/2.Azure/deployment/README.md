@@ -6,13 +6,32 @@
 $ AZ_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
 ```
 
-:two: Récupérer le numero groupe
+:two: Récupérer le numero de groupe
 
 ```
 $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 
-:three: Lancer la création de la machine virtuelle
+:three: Les paramètres de la machine virtuelle peuvent également changer, l'endroit `AZ_LOCATION`, la taille de la VM `AZ_SIZE` et l'image désirée `AZ_IMAGE`
+
+```
+AZ_LOCATION=eastus \
+AZ_SIZE=Standard_B1s \
+AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+```
+
+## Azure Image List (Non Official)
+
+https://negatblog.blob.core.windows.net/lists/os_image_list
+
+### CLI Options for AZURE_IMAGE example
+```
+* canonical:UbuntuServer:16.04.0-LTS:latest
+* canonical:UbuntuServer:18.04-LTS:latest
+```
+
+
+:four: Lancer la création de la machine virtuelle
 
 https://docs.docker.com/machine/drivers/azure/#authentication
 
@@ -39,13 +58,4 @@ Note: if timeout get in the way use: `$ docker-machine ssh  az-cb-prod`
 https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage/4.0.0
 
 
-## Azure Image List (Non Official)
-
-https://negatblog.blob.core.windows.net/lists/os_image_list
-
-### CLI Options for AZURE_IMAGE example
-```
---azure-image canonical:UbuntuServer:16.04.0-LTS:latest
---azure-image canonical:UbuntuServer:18.04-LTS:latest
-```
 
