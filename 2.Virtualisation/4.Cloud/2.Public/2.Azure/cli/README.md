@@ -23,9 +23,11 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
 ![image](../images/AccessKeys.png)
 
-~/.azure/config
+
+[CLI Configuration File](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)
 
 ```
+~/.azure/config
 [storage]
 account = myBlob
 key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
