@@ -105,6 +105,9 @@ $ docker-machine active
 cb-az-dev
 ```
 
+## Ouverture des ports - firewall
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal
 
 
 ## Azure Maven
