@@ -3,7 +3,7 @@
 :one: Donner le numero d'abonement
 
 ```
-$ SUBSCRIPTION_ID=`az account get-access-token | jq .subscription`
+$ SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
 ```
 
 :two: Lancer la machine
