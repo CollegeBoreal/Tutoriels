@@ -60,11 +60,20 @@ $ docker-machine create --driver azure \
 
 ```
 Running pre-create checks...
-(az-cb-prod) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
+(cb-az-dev) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 and enter the code EDIEN4D2W to authenticate.
 ```
 
 Note: if timeout gets in the way use: `$ docker-machine ssh  cb-az-dev`
+
+:six: Activer la VM azure
+
+```
+$ docker-machine ls
+NAME          ACTIVE   DRIVER    STATE     URL                        SWARM   DOCKER     ERRORS
+cb-az-dev     -        azure     Running   tcp://40.99.223.154:2376           v19.03.8   
+```
+
 
 
 ## Azure Maven
