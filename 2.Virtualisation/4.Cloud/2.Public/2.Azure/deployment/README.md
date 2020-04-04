@@ -53,7 +53,7 @@ $ docker-machine create --driver azure \
    --azure-location $AZ_LOCATION \
    --azure-size $AZ_SIZE \
    --azure-image $AZ_IMAGE \
-   az-cb-prod
+   cb-az-dev
 ```
 
 * Demande d'authentification de la machine en ligne, entrer le code donné
@@ -64,7 +64,7 @@ Running pre-create checks...
 and enter the code EDIEN4D2W to authenticate.
 ```
 
-Note: if timeout gets in the way use: `$ docker-machine ssh  az-cb-prod`
+Note: if timeout gets in the way use: `$ docker-machine ssh  cb-az-dev`
 
 
 ## Azure Maven
