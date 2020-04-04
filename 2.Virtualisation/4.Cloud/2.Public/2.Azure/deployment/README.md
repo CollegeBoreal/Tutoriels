@@ -48,9 +48,9 @@ https://docs.docker.com/machine/drivers/azure/#authentication
 $ docker-machine create --driver azure \
    --azure-subscription-id $AZ_SUBSCRIPTION_ID \
    --azure-resource-group $AZ_GROUP_ID \
-   --azure-location eastus \
-   --azure-size Standard_B1s \
-   --azure-image canonical:UbuntuServer:18.04-LTS:latest \
+   --azure-location $AZ_LOCATION \
+   --azure-size $AZ_SIZE \
+   --azure-image $AZ_IMAGE \
    az-cb-prod
 Running pre-create checks...
 (az-cb-prod) Microsoft Azure: To sign in, use a web browser to open the page https://microsoft.com/devicelogin
