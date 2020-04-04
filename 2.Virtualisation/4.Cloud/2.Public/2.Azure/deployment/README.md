@@ -17,9 +17,9 @@ $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 - [ ] Azure Location
 
 ```
-$ AZ_LOCATION=eastus
+$ AZ_LOCATION=canadacentral
 ```
-
+https://azure.microsoft.com/en-us/global-infrastructure/locations/
 https://azure.microsoft.com/en-us/global-infrastructure/regions/
 
 - [ ] Azure Size (`Standard_B1s`: 1vCPU, 1GiB Mem,  `Standard_B2s`: 2vCPU, 4GiB Mem )
