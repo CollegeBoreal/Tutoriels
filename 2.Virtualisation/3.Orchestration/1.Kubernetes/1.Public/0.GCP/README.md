@@ -20,6 +20,8 @@ Please ensure it is enabled in Google Cloud Console and try again:
 visit https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=b300098957 to do so.
 ```
 
+<img src="images/" width=1564 height=358></img>
+
 
 :b: Administrer la grappe (cluster)
 
