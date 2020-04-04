@@ -68,10 +68,41 @@ Note: if timeout gets in the way use: `$ docker-machine ssh  cb-az-dev`
 
 :six: Activer la VM azure
 
+* Inactive au commande `Docker`
+
 ```
 $ docker-machine ls
 NAME          ACTIVE   DRIVER    STATE     URL                        SWARM   DOCKER     ERRORS
 cb-az-dev     -        azure     Running   tcp://40.99.223.154:2376           v19.03.8   
+```
+
+* Activer au commande `Docker`
+
+:computer: Sous Powershell
+
+```
+PS > docker-machine env cb-az-dev | Invoke-Expression
+```
+
+:apple: Sous `bash` ou `zsh`
+
+
+```
+$ eval $(docker-machine env cb-az-dev)
+```
+
+
+* Verification :star: 
+
+```
+$ docker-machine ls
+NAME          ACTIVE   DRIVER    STATE     URL                        SWARM   DOCKER     ERRORS
+cb-az-dev     *        azure     Running   tcp://40.99.223.154:2376           v19.03.8   
+```
+
+```
+$ docker-machine active
+cb-az-dev
 ```
 
 
