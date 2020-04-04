@@ -24,15 +24,6 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 ![image](../images/AccessKeys.png)
 
 
-[CLI Configuration File](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)
-
-```
-~/.azure/config
-[storage]
-account = myBlob
-key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
-
-```
 
 https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration
 
@@ -59,6 +50,17 @@ $ az login
 
 ## :b: AZ Storage
 
+[CLI Configuration File](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)
+
+```
+~/.azure/config
+[storage]
+account = myBlob
+key = sdsdsdrsdsdsd/s=DFFF-+da7h2xlQCjS9Z3TxmI8FyMBlYjXI5nqNXOnoM783zeHpA==
+
+```
+
+* Storage Command
 
 ```
 $ az storage account keys list -g MyResourceGroup -n MyStorageAccount
