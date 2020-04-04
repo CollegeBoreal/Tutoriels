@@ -24,7 +24,30 @@ brew install kubernetes-cli
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
-:a: Changer de context
+## :a: `kubectl` Client
+
+- [ ] La version
+
+```
+% kubectl version --client --output=json
+{
+  "clientVersion": {
+    "major": "1",
+    "minor": "15",
+    "gitVersion": "v1.15.5",
+    "gitCommit": "20c265fef0741dd71a66480e35bd69f18351daea",
+    "gitTreeState": "clean",
+    "buildDate": "2019-10-15T19:16:51Z",
+    "goVersion": "go1.12.10",
+    "compiler": "gc",
+    "platform": "darwin/amd64"
+  }
+}
+```
+
+
+
+- [ ] Le context
 
 :star: Switching Kubernetes Context
 
