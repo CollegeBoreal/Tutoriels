@@ -20,11 +20,11 @@ AZ_SIZE=Standard_B1s \
 AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
 ```
 
-## Azure Image List (Non Official)
+##### Azure Image List (Non Official)
 
 https://negatblog.blob.core.windows.net/lists/os_image_list
 
-### CLI Options for AZURE_IMAGE example
+##### CLI Options for AZURE_IMAGE example
 ```
 * canonical:UbuntuServer:16.04.0-LTS:latest
 * canonical:UbuntuServer:18.04-LTS:latest
