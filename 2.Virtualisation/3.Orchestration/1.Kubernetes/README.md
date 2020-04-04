@@ -58,7 +58,8 @@ CURRENT   NAME                                 CLUSTER                          
           docker-desktop                       docker-desktop                       docker-desktop
           docker-for-desktop                   docker-desktop                       docker-desktop
           minikube                             minikube                             minikube
-*         gke_b300098957_us-central1-a_kubia   gke_b300098957_us-central1-a_kubia   gke_b300098957_us-central1-a_kubia   
+          gke_b300098957_us-central1-a_kubia   gke_b300098957_us-central1-a_kubia   gke_b300098957_us-central1-a_kubia   
+*         kubia                                kubia                                clusterUser_college-boreal_kubia    
 ```
 
 :star: Set the context to use as docker-for-desktop:
