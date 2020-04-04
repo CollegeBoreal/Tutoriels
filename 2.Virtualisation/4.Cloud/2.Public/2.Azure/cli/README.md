@@ -55,7 +55,7 @@ $ az login
 
 [CLI Configuration File](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)
 
-
+* Stocker la clé d'accès au `Storage` dans le fichier de configuration suivant
 
 ```
 ~/.azure/config
