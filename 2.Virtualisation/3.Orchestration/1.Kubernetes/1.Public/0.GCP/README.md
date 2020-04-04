@@ -8,9 +8,9 @@
 % gcloud container clusters create kubia --num-nodes 3 --machine-type f1-micro --zone "us-central1-a"
 ```
 
-:bulb: Initialisation 
+:bulb: Initialisation du `Kubernetes Engine API`
 
-si le service `Kubernetes Engine` n'est pas activé dans la console, il faut l'activer en cliquant sur le lien donné par l'erreur
+si le service `Kubernetes Engine API` n'est pas activé dans la console, il faut l'activer en cliquant sur le lien donné par l'erreur
 
 Exemple:
 
@@ -19,6 +19,10 @@ ERROR: (gcloud.container.clusters.create) ResponseError: code=403, message=Kuber
 Please ensure it is enabled in Google Cloud Console and try again: 
 visit https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=b300098957 to do so.
 ```
+
+https://cloud.google.com/endpoints/docs/openapi/enable-api
+
+
 
 <img src="images/GCP-Compute-Engine-DB.png" width="782" height="179" ></img>
 
