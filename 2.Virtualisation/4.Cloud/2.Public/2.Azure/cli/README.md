@@ -48,6 +48,21 @@ $ az login
             }
           ]
 
+* Récuperer le numero d'abonnement
+
+```
+% az account get-access-token                       
+{
+  "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSIsImtpZCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldC8iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81M2I4ZmMzMy0zMTQ1LTQzMWItOWFmYi04YWM1YjYwMWQ1MzMvIiwiaWF0IjoxNTg2MDIxNTM1LCJuYmYiOjE1ODYwMjE1MzUsImV4cCI6MTU4NjAyNTQzNSwiYWNyIjoiMSIsImFpbyI6IkFTUUEyLzhQQUFBQW94Tnpic2puc0",
+  "expiresOn": "2020-04-04 14:37:15.234302",
+  "subscription": "0b1ddmnnd-3bca-4529-xxxx-fa3xxxxxxxcb5",
+  "tenant": "53b8fc33-3145-431b-xxxxx-8xxxxxd533",
+  "tokenType": "Bearer"
+}
+```
+
+
+
 * Repérer les jetons d'accès `Access Tokens`
 
 ```
