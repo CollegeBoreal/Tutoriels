@@ -14,6 +14,7 @@ PS > choco install jq
 % brew install jq
 ```
 
+:ab: Exemples
 
 ```
 % curl 'https://api.github.com/users/collegeboreal' | jq '. | { nom: .login, lieu: .location}'
