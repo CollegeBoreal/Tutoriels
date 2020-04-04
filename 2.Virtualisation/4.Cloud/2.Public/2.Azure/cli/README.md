@@ -48,6 +48,19 @@ $ az login
             }
           ]
 
+* Par le CLI
+
+:computer: Sous Powershell
+
+```
+PS > $AzCred = Get-Credential -UserName 000000000@collegeboreal.ca
+```
+
+```
+PS > az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
+```
+
+
 * Récuperer le numero d'abonnement `subscription`
 
 ```
