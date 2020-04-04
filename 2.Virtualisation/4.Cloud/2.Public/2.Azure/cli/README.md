@@ -48,6 +48,24 @@ $ az login
             }
           ]
 
+* Repérer les jetons d'accès `Access Tokens`
+
+```
+% ls  ~/.azure 
+accessTokens.json
+az.sess
+clouds.config
+config
+telemetry
+az.json
+azureProfile.json
+commands
+logs
+telemetry.txt
+```
+
+https://mikhail.io/2019/07/how-azure-cli-manages-access-tokens/
+
 ## :b: AZ Storage
 
 ### :one: Récupérer la clé pour le `Storage`
