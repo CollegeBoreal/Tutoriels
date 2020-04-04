@@ -17,13 +17,13 @@ $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 - [ ] Azure Location
 
 ```
-AZ_LOCATION=eastus
+$ AZ_LOCATION=eastus
 ```
 
 - [ ] Azure Size
 
 ```
-AZ_SIZE=Standard_B1s
+$ AZ_SIZE=Standard_B1s
 ```
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
@@ -32,7 +32,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
 - [ ] Azure Image List
 
 ```
-AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+$ AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
 ```
 
 (Non Official)
