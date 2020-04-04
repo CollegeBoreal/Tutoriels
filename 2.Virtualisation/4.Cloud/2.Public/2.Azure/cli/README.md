@@ -68,7 +68,7 @@ PS > az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
 $ read -sp "Azure password: " AZ_PASS && echo && az login -u 000000000@collegeboreal.ca -p $AZ_PASS
 ```
 
-:warning: Attention read ne marche pas sous `zsh` passer en bash en tapant `% bash`
+:warning: Attention `read` ne marche pas sous `zsh` passer en bash en tapant `% bash`
 
 https://stackoverflow.com/questions/14141933/zsh-read-q-broken-on-osx
 
