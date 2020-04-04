@@ -56,7 +56,7 @@ $ docker-machine create --driver azure \
    az-cb-prod
 ```
 
-* Demande d'authentification de la machine en ligne
+* Demande d'authentification de la machine en ligne, entrer le code donné
 
 ```
 Running pre-create checks...
@@ -64,9 +64,7 @@ Running pre-create checks...
 and enter the code EDIEN4D2W to authenticate.
 ```
 
-Enter the given code
-
-Note: if timeout get in the way use: `$ docker-machine ssh  az-cb-prod`
+Note: if timeout gets in the way use: `$ docker-machine ssh  az-cb-prod`
 
 
 ## Azure Maven
