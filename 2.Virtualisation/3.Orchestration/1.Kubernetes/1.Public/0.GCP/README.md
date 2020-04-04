@@ -1,7 +1,7 @@
 # Kubernetes Cluster dans GCP
 
 
-:a: Créer son premier cluster
+:a: Créer sa première grappe (cluster)
 
 
 ```
@@ -15,8 +15,11 @@ ERROR: (gcloud.container.clusters.create) ResponseError: code=403, message=Kuber
 ```
 
 
+:b: Administrer la grappe (cluster)
 
+Utiliser l'utilitaire standardisé `kubectl` - `Kubernetes Control`
 
+:round_pushpin: Vérifier que l'on a 3 noeuds (nodes) - un noeud est égale une machine virtuelle (VM)
 
 ```
 % kubectl get nodes
@@ -25,6 +28,8 @@ gke-kubia-default-pool-d41cef64-8pm5   NotReady   <none>   11m   v1.14.10-gke.27
 gke-kubia-default-pool-d41cef64-bzc9   Ready      <none>   11m   v1.14.10-gke.27
 gke-kubia-default-pool-d41cef64-hrv2   NotReady   <none>   11m   v1.14.10-gke.27
 ```
+
+:round_pushpin: Décrire un des noeuds avec la commande `describe` 
 
 ```
 % kubectl describe node gke-kubia-default-pool-d41cef64-bzc9
