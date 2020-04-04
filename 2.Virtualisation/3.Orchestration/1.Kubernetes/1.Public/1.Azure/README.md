@@ -5,9 +5,13 @@ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 
 ```
+AZ_NODE_COUNT=2 # Malheureusement Azure Education ne nous permet que deux VMs par cluster
+```
+
+```
 $ az aks create --resource-group $AZ_GROUP_ID \
                 --name kubia \
-              --node-count 3 \
+              --node-count $AZ_NODE_COUT \
               --generate-ssh-keys \
               --enable-addons monitoring 
 SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa.pub' have been generated under ~/.ssh to allow SSH access to the VM. If using machines without permanent storage like Azure Cloud Shell without an attached file share, back up your keys to a safe location
