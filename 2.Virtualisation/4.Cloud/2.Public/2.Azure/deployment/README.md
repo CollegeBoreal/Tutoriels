@@ -1,6 +1,24 @@
 ## Create virtual machine on Azure
 
-:star: ce tutoriel utilise l'utilitaire [JQ](https://github.com/CollegeBoreal/Tutoriels/tree/master/T.Texte/J.JSON). Si non présent l'installer
+
+:o: Prérequis
+
+
+:pushpin: ce tutoriel utilise l'utilitaire [JQ](https://github.com/CollegeBoreal/Tutoriels/tree/master/T.Texte/J.JSON). Si non présent l'installer
+
+:pushpin: tester la connection avec Azure
+
+```
+$ az account get-access-token
+
+  "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1N...",
+  "expiresOn": "2020-04-04 16:51:23.499032",
+  "subscription": "0bxx315-xxx-4529-azz9-faxxxxfffffb5",
+  "tenant": "53bdddd-31dd-4dddb-ssfb-8accvvvddd33",
+  "tokenType": "Bearer"
+}
+```
+
 
 :one: Récupérer le numero d'abonement
 
