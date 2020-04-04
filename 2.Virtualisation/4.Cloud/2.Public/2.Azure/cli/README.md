@@ -2,14 +2,14 @@
 
 ## :o: Installation
 
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+
+
 :pushpin: Windows
 
 ```
 PS > choco install awscli
 ```
-
-
-https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
 :pushpin: MacOS
 
