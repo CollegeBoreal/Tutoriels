@@ -53,7 +53,7 @@ gke-kubia-default-pool-d41cef64-hrv2   NotReady   <none>   11m   v1.14.10-gke.27
 % kubectl describe node gke-kubia-default-pool-d41cef64-bzc9
 ```
 
-:AB: Delete a cluster
+:ab: Delete a cluster
 
 ```
 % gcloud container clusters delete kubia --zone "us-central1-a"
