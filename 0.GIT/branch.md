@@ -88,3 +88,11 @@ $ git show-branch --remote
 -------- [origin/HEAD^] Merge branch 'master' of github.com:setrar/players
 ```
 
+
+:m: Create a branch from a tag
+
+https://stackoverflow.com/questions/10940981/how-to-create-a-new-branch-from-a-tag
+
+```
+$ git checkout -b newbranch v1.0
+```
