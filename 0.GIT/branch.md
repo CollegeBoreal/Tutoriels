@@ -96,3 +96,11 @@ https://stackoverflow.com/questions/10940981/how-to-create-a-new-branch-from-a-t
 ```
 $ git checkout -b newbranch v1.0
 ```
+
+or 
+
+```
+$ git branch newbranch v1.0
+$ git checkout newbranch
+```
+
