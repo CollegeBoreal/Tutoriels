@@ -39,7 +39,7 @@ $ az aks create --resource-group $AZ_GROUP_ID \
 ```
 
 
-:b: Ajouter votre grappe `kubia` à votre contexte Kubernetes
+:b: Ajouter votre grappe `kubia` à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/3.Orchestration/1.Kubernetes)
 
 ```
 % az aks get-credentials --resource-group $AZ_GROUP_ID --name kubia       
