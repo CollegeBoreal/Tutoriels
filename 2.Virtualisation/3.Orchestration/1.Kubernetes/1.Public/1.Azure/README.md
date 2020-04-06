@@ -1,3 +1,6 @@
+# Azure AKS (Azure Kubernetes Services)
+
+:a: Créer sa première grappe (cluster)
 
 
 ```
@@ -7,6 +10,7 @@ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 AZ_NODE_COUNT=2 # Malheureusement Azure Education ne nous permet que deux VMs par cluster
 ```
+
 
 ```
 $ az aks create --resource-group $AZ_GROUP_ID \
