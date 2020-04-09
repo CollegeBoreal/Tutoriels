@@ -32,7 +32,9 @@ $ git checkout master
 
 <hr>
 
-[branches](https://www.atlassian.com/git/tutorials/using-branches)
+# Références
+
+Utiliser les [branches](https://www.atlassian.com/git/tutorials/using-branches)
 
 
 ## :m: List Branches in Git
