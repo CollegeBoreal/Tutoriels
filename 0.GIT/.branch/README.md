@@ -1,4 +1,30 @@
-# Branch
+# [Branch](https://git-scm.com/docs/git-branch)
+
+Un branche sert à créer une section à part dans l'arbre du référentiel github.
+
+Si on veut appeller notre branche `premiere-action`
+
+:one: Créer une branche
+
+```
+$ git branch premiere-action
+```
+
+:two: Accéder à la branche
+
+```
+$ git checkout premiere-action
+```
+
+:three: Soumettre les modifications de la branche
+
+* avant de soumettre, rajouter le code à la branche `git add .`, mettre en scene `git commit -m "mon message"`
+
+```
+$ git push origin premiere-action
+```
+
+<hr>
 
 [branches](https://www.atlassian.com/git/tutorials/using-branches)
 
