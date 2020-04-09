@@ -4,24 +4,30 @@ Un branche sert à créer une section à part dans l'arbre du référentiel gith
 
 Si on veut appeller notre branche `premiere-action`
 
-:one: Créer une branche
+:round_pushpin: Créer une branche
 
 ```
 $ git branch premiere-action
 ```
 
-:two: Accéder à la branche
+:round_pushpin: Accéder à la branche
 
 ```
 $ git checkout premiere-action
 ```
 
-:three: Soumettre les modifications de la branche
+:round_pushpin: Soumettre les modifications de la branche
 
 * avant de soumettre, rajouter le code à la branche `git add .`, mettre en scene `git commit -m "mon message"`
 
 ```
 $ git push origin premiere-action
+```
+
+:round_pushpin: Revenir à la branche principale `master`
+
+```
+$ git checkout master
 ```
 
 <hr>
