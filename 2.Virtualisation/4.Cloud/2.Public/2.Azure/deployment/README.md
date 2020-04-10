@@ -23,21 +23,21 @@ $ az account get-access-token
 :one: Récupérer le numero d'abonement
 
 ```
-$ AZ_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
+$ AZURE_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
 ```
 
 :two: Récupérer le numero de groupe
 
 ```
-$ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
+$ AZURE_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 
-:three: Les paramètres de la machine virtuelle peuvent également être changé, l'endroit `AZ_LOCATION`, la taille de la VM `AZ_SIZE` et l'image désirée `AZ_IMAGE`
+:three: Les paramètres de la machine virtuelle peuvent également être changé, l'endroit `AZURE_LOCATION`, la taille de la VM `AZURE_SIZE` et l'image désirée `AZURE_IMAGE`
 
 - [ ] Azure Location
 
 ```
-$ AZ_LOCATION=canadacentral
+$ AZURE_LOCATION=canadacentral
 ```
 https://azure.microsoft.com/en-us/global-infrastructure/locations/
 https://azure.microsoft.com/en-us/global-infrastructure/regions/
@@ -45,7 +45,7 @@ https://azure.microsoft.com/en-us/global-infrastructure/regions/
 - [ ] Azure Size (`Standard_B1s`: 1vCPU, 1GiB Mem,  `Standard_B2s`: 2vCPU, 4GiB Mem )
 
 ```
-$ AZ_SIZE=Standard_B1s
+$ AZURE_SIZE=Standard_B1s
 ```
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
@@ -54,7 +54,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
 - [ ] Azure Image List
 
 ```
-$ AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+$ AZURE_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
 ```
 
 (Non Official)
@@ -67,21 +67,21 @@ https://negatblog.blob.core.windows.net/lists/os_image_list
 Example de variables requises
 
 ```
-$ AZ_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
-$ AZ_LOCATION=canadacentral
-$ AZ_SIZE=Standard_B2s
-$ AZ_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+$ AZURE_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
+$ AZURE_LOCATION=canadacentral
+$ AZURE_SIZE=Standard_B2s
+$ AZURE_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
 ```
 
 - [ ] Creer la machine virtuelle
 
 ```
 $ docker-machine create --driver azure \
-   --azure-subscription-id $AZ_SUBSCRIPTION_ID \
-   --azure-resource-group $AZ_GROUP_ID \
-   --azure-location $AZ_LOCATION \
-   --azure-size $AZ_SIZE \
-   --azure-image $AZ_IMAGE \
+   --azure-subscription-id $AZURE_SUBSCRIPTION_ID \
+   --azure-resource-group $AZURE_GROUP_ID \
+   --azure-location $AZURE_LOCATION \
+   --azure-size $AZURE_SIZE \
+   --azure-image $AZURE_IMAGE \
    cb-az-dev
 ```
 
