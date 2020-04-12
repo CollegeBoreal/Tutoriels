@@ -27,6 +27,8 @@ https://www.youtube.com/watch?v=2WZwv7TxqZ0
 
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/try-hyper-v-powershell
 
+https://4sysops.com/archives/split-path-get-childitem-splitting-file-names-in-powershell/
+
 
 # Programming
 
