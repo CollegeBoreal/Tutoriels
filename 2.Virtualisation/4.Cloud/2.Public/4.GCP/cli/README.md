@@ -25,6 +25,8 @@ $ gcloud info
 [Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
 
 
+[activate-service-account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account)
+
 ```
 PS > gcloud auth activate-service-account `
            --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json `
