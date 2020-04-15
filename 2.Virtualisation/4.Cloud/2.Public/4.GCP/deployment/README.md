@@ -28,9 +28,33 @@ Docker is up and running!
 To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env cb-gcp-test
 ```
 
+--google-project GCE Project [$GOOGLE_PROJECT]
+
+--google-zone "us-central1-a" GCE Zone [$GOOGLE_ZONE]
+
+--google-disk-size "10" GCE Instance Disk Size (in GB) [$GOOGLE_DISK_SIZE]
+
+--google-disk-type "pd-standard" GCE Instance Disk type [$GOOGLE_DISK_TYPE]
+
+--google-machine-type "f1-micro" GCE Machine Type [$GOOGLE_MACHINE_TYPE]
+
 :round_pushpin: Type de machines 
 
 https://cloud.google.com/compute/docs/machine-types
+
+
+--google-address GCE Instance External IP [$GOOGLE_ADDRESS]
+
+--google-auth-token GCE oAuth token [$GOOGLE_AUTH_TOKEN]
+
+--google-preemptible GCE Instance Preemptibility [$GOOGLE_PREEMPTIBLE]
+
+--google-scopes "https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write"
+                  GCE Scopes (comma-separated if multiple scopes) [$GOOGLE_SCOPES]
+
+--google-username "docker-user" GCE User Name [$GOOGLE_USERNAME]
+
+
 
 # References
 
