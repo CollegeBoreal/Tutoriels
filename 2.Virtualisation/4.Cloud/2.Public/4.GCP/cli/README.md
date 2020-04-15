@@ -5,7 +5,7 @@
 :pushpin: Windows
 
 ```
-PS > choco install gcloudsdk
+PS > choco install gcloudsdk --ignore-checksums
 ```
 
 :pushpin: MacOS
