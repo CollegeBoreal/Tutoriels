@@ -15,14 +15,14 @@ PS > choco install gcloudsdk --ignore-checksums
 ```
 
 
-## :o: gcloud
+## :o: gcloud configuration
 
 ```
 $ gcloud info
 ```
 
 
-
+[Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
 
 ## :a: Configure
 
