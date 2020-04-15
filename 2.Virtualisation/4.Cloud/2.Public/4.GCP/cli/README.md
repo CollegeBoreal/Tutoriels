@@ -38,7 +38,7 @@ Your active configuration is: [default]
 
 ## :a: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
 
-:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine sans navigateur web)
+:round_pushpin: Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) (machine avec navigateur web)
 
 
 
