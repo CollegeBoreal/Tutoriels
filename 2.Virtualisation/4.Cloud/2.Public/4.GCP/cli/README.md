@@ -24,6 +24,25 @@ $ gcloud info
 
 [Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
 
+
+```
+PS > gcloud auth activate-service-account `
+           --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json `
+           --project=b300098957
+Activated service account credentials for: [53434267881522-compute@developer.gserviceaccount.com]
+```
+
+```
+PS C:\Windows\system32> gcloud config list
+[core]
+account = 53434267881522-compute@developer.gserviceaccount.com
+disable_usage_reporting = True
+project = b300098957
+
+Your active configuration is: [default]
+```
+
+
 ## :a: Configure
 
 ### :pushpin: Service Account Credentials
