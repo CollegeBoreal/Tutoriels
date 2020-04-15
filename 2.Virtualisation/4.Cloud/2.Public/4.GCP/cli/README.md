@@ -42,6 +42,13 @@ Your active configuration is: [default]
 
 ```
 PS > gcloud auth login
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/authcode_challenge=hf8c4Uge0jUNF&prompt=select_account&.........2Faccounts.reauth
+
+You are now logged in as [mon-courriel@collegeboreal.ca].
+Your current project is [None].  You can change this setting by running:
+PS > gcloud config set project PROJECT_ID
 ```
 
 
