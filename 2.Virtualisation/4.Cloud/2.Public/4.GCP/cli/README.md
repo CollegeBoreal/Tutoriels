@@ -38,7 +38,7 @@ Your active configuration is: [default]
 
 ## :a: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
 
-:round_pushpin: Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) (machine avec navigateur web)
+:round_pushpin: Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) (machine AVEC navigateur web)
 
 ```
 PS > gcloud auth login
@@ -52,7 +52,7 @@ PS > gcloud config set project PROJECT_ID
 ```
 
 
-:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine sans navigateur web)
+:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine SANS navigateur web)
 
 ```
 PS > gcloud auth activate-service-account `
