@@ -24,16 +24,6 @@ $ gcloud info
 
 [Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
 
-
-[activate-service-account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account)
-
-```
-PS > gcloud auth activate-service-account `
-           --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json `
-           --project=b300098957
-Activated service account credentials for: [53434267881522-compute@developer.gserviceaccount.com]
-```
-
 ```
 PS C:\Windows\system32> gcloud config list
 [core]
@@ -42,6 +32,35 @@ disable_usage_reporting = True
 project = b300098957
 
 Your active configuration is: [default]
+```
+
+
+
+## :a: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
+
+:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine sans navigateur web)
+
+
+
+:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine sans navigateur web)
+
+```
+PS > gcloud auth activate-service-account `
+           --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json `
+           --project=b300098957
+Activated service account credentials for: [53434267881522-compute@developer.gserviceaccount.com]
+```
+
+
+```
+$ gcloud auth list
+                  Credentialed Accounts
+ACTIVE  ACCOUNT
+        300098957@collegeboreal.ca
+*       534284581522-compute@developer.gserviceaccount.com
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
 ```
 
 ```
