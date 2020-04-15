@@ -28,6 +28,9 @@ Docker is up and running!
 To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env cb-gcp-test
 ```
 
+:round_pushpin: Type de machines 
+
+https://cloud.google.com/compute/docs/machine-types
 
 # References
 
