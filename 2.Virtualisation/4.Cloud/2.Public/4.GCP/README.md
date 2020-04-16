@@ -19,7 +19,7 @@ https://console.cloud.google.com
 
 1. Dans la liste `Role`, selectionne `Project > Owner`.
 
-1. Clique sur le bouton [`Create`]. 
+1. Clique sur le bouton [`Create`](). 
 
     A JSON file that contains your key downloads to your computer.
 
