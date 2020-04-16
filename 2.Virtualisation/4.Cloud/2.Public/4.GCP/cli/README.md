@@ -40,7 +40,7 @@ Your active configuration is: [default]
 
 Pour authentifier son ordinateur, il y a plusieurs façons
 
-:round_pushpin: Machine AVEC navigateur web
+:round_pushpin: Machine `AVEC` navigateur web
 
 * Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) 
 
@@ -55,7 +55,7 @@ Your current project is [None].  You can change this setting by running:
 PS  > gcloud config set project PROJECT_ID
 ```
 
-:round_pushpin: Machine SANS navigateur web i.e machine de production
+:round_pushpin: Machine `SANS` navigateur web i.e. machine de production
 
 * Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) 
 
