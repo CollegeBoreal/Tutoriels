@@ -74,9 +74,12 @@ $ gcloud auth activate-service-account --key-file=${HOME}/.gcp/b300098957-a2662a
 
 ```
 $ gcloud auth list
+```
+Réponse:
+```
                   Credentialed Accounts
 ACTIVE  ACCOUNT
-        300098957@collegeboreal.ca
+        399999999@collegeboreal.ca
 *       534284581522-compute@developer.gserviceaccount.com
 
 To set the active account, run:
