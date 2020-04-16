@@ -36,45 +36,17 @@ Your active configuration is: [default]
 ```
 
 
-
+:pushpin: Set le projet
 
 ```
-PS  > gcloud config set project b300098957 # PROJECT_ID
+% gcloud config set project b300098957
+Updated property [core/project].
 ```
 
-
+Gérer son cluster
 
 ```
 PS > gcloud container clusters list
 NAME   LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE  NODE_VERSION  NUM_NODES  STATUS
 kuron  us-central1-a  1.16.8-gke.8    104.197.255.8  g1-small      1.16.8-gke.8  3          RUNNING
-```
-
-## :a: Configure
-
-### :pushpin: Service Account Credentials
-
-
-* Créer un fichier `JSON` comportant les identifiants (credentials)
-
-* Suivre la documentation
-
-https://cloud.google.com/docs/authentication/production#providing_service_account_credentials
-
-* Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
-
-Example: ajuster avec le nom de fichier `identifiants`
-
-```
-~/.gcp/b300098957-a2662a9bd338.json
-```
-
-* Ajouter la variable d'identifiants à son` Environement`
-
-https://cloud.google.com/docs/authentication/getting-started#setting_the_environment_variable
-
-Example: ajuster avec le nom de fichier `identifiants`
-
-```
-% export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
