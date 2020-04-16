@@ -49,6 +49,9 @@ Donnes ton nom de compte que tu utilises pour accéder à ton compte google. Par
 
 ```
 PS > gcloud auth login 399999999@collegeboreal.ca
+```
+Reponse: Google te fournira un lien `http` que tu colleras dans ton navigateur pour etre authentifié
+```
 Your browser has been opened to visit:
 
     https://accounts.google.com/o/oauth2/authcode_challenge=bt3MZaa.....pzJPPs&prompyunt&......com%2Fauth%2Faccounts.reauth
@@ -63,10 +66,13 @@ PS  > gcloud config set project PROJECT_ID
 * Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) 
 
 ```
-PS > gcloud auth activate-service-account `
-           --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json `
-           --project=b300098957
-Activated service account credentials for: [53434267881522-compute@developer.gserviceaccount.com]
+PS > gcloud auth activate-service-account --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json
+```
+
+PS  > gcloud config set project b300098957 # PROJECT_ID
+
+```
+$ gcloud auth activate-service-account --key-file=${HOME}/.gcp/b300098957-a2662a9bd338.json
 ```
 
 
