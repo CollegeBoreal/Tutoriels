@@ -4,7 +4,7 @@ Pour authentifier son ordinateur, il y a plusieurs façons:
 
 * avec son compte utilisateur, par exemple avec le courriel utilisé pour s'enregistrer à la console `Google`
 
-* avec un compte de service permettant de se connecter aux `API` de google et utilise les outils de nuage comme `docker` et `kubernetes
+* avec un compte de service permettant de se connecter aux `API` de google et utiliser les outils de nuage comme `docker` et `kubernetes`
 
 ## :a: Machine cliente `AVEC` navigateur web
 
