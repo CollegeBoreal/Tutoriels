@@ -13,19 +13,13 @@ https://console.cloud.google.com
     
     [**Go to the Create Service Account Key page**](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
     
-2. Dans la liste `Service account`, selectionne `New service account`.
+1. Dans la liste `Service account`, selectionne `New service account`.
 
-3. Dans le champ `Service account name`, entre un nom.
+1. Dans le champ `Service account name`, entre un nom.
 
-4. Dans la liste `Role`, selectionne `Project > Owner`.
+1. Dans la liste `Role`, selectionne `Project > Owner`.
 
-:star:
-Note: The Role field authorizes your service account to access resources. 
-You can view and change this field later by using the Cloud Console. 
-If you are developing a production app, specify more granular permissions than `Project > Owner`. 
-For more information, see [granting role` to service accounts](https://cloud.google.com/iam/docs/granting-roles-to-service-accounts).
-
-5. Clique sur le bouton [`Create`]. A JSON file that contains your key downloads to your computer.
+1. Clique sur le bouton [`Create`]. A JSON file that contains your key downloads to your computer.
 
 * Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
 
@@ -35,7 +29,7 @@ Example: ajuster avec le nom de fichier `identifiants`
 ~/.gcp/b300098957-a2662a9bd338.json
 ```
 
-6. Ajouter la variable d'identifiants à son` Environement`
+1. Ajouter la variable d'identifiants à son` Environement`
 
 https://cloud.google.com/docs/authentication/getting-started#setting_the_environment_variable
 
