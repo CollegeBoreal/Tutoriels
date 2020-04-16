@@ -23,12 +23,16 @@ https://cloud.google.com/docs/authentication/getting-started#setting_the_environ
 
 Example: ajuster avec le nom de fichier `identifiants`
 
-:computer: Sous [https://cloud.google.com/docs/authentication/production#windows] PowerShell 
-
-:apple: Sous [https://cloud.google.com/docs/authentication/production#linux-or-macos] Bash
+:computer: Sous [Windows](https://cloud.google.com/docs/authentication/production#windows) PowerShell 
 
 ```
-% export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
+PS > $env:GOOGLE_APPLICATION_CREDENTIALS="$env:USERPROFILE\.gpc\b300098957-a2662a9bd338.json"
+```
+
+:apple: Sous [Bash](https://cloud.google.com/docs/authentication/production#linux-or-macos)
+
+```
+$ export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
 
 ## :three: Créer sa machine virtuelle VM
