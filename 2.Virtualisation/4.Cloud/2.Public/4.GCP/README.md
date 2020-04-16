@@ -25,7 +25,7 @@ You can view and change this field later by using the Cloud Console.
 If you are developing a production app, specify more granular permissions than `Project > Owner`. 
 For more information, see [granting role` to service accounts](https://cloud.google.com/iam/docs/granting-roles-to-service-accounts).
 
-5. Click `Create`. A JSON file that contains your key downloads to your computer.
+5. Clique sur le bouton [`Create`]. A JSON file that contains your key downloads to your computer.
 
 * Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
 
