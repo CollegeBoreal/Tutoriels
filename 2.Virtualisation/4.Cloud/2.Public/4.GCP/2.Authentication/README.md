@@ -1,6 +1,10 @@
 # :two: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
 
-Pour authentifier son ordinateur, il y a plusieurs façons
+Pour authentifier son ordinateur, il y a plusieurs façons: 
+
+* avec son compte courriel utilisé pour s'enregistré à la console `Google`
+
+* avec un compte de service permettant de se connecter aux `API` de google et utilise les outils de nuage comme `docker` et `kubernetes
 
 ## :a: Machine cliente `AVEC` navigateur web
 
