@@ -23,6 +23,10 @@ https://cloud.google.com/docs/authentication/getting-started#setting_the_environ
 
 Example: ajuster avec le nom de fichier `identifiants`
 
+:computer: Sous [https://cloud.google.com/docs/authentication/production#windows] PowerShell 
+
+:apple: Sous [https://cloud.google.com/docs/authentication/production#linux-or-macos] Bash
+
 ```
 % export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
