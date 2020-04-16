@@ -19,15 +19,17 @@ https://console.cloud.google.com
 
 1. Dans la liste `Role`, selectionne `Project > Owner`.
 
-1. Clique sur le bouton [`Create`]. A JSON file that contains your key downloads to your computer.
+1. Clique sur le bouton [`Create`]. 
 
-* Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
+    A JSON file that contains your key downloads to your computer.
 
-Example: ajuster avec le nom de fichier `identifiants`
+    * Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
 
-```
-~/.gcp/b300098957-a2662a9bd338.json
-```
+    Example: ajuster avec le nom de fichier `identifiants`
+
+    ```
+    ~/.gcp/b300098957-a2662a9bd338.json
+    ```
 
 1. Ajouter la variable d'identifiants à son` Environement`
 
