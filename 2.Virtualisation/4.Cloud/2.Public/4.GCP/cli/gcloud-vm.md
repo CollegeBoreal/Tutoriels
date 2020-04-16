@@ -1,51 +1,4 @@
-# GCP CLI
-
-## :o: Installation
-
-:pushpin: Windows
-
-```
-PS > choco install gcloudsdk --ignore-checksums
-```
-
-:pushpin: MacOS
-
-```
-% brew cask install google-cloud-sdk
-```
-
-## :a: Configure
-
-### :pushpin: Service Account Credentials
-
-
-* Créer un fichier `JSON` comportant les identifiants (credentials)
-
-* Suivre la documentation
-
-https://cloud.google.com/docs/authentication/production#providing_service_account_credentials
-
-* Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
-
-Example: ajuster avec le nom de fichier `identifiants`
-
-```
-~/.gcp/b300098957-a2662a9bd338.json
-```
-
-* Ajouter la variable d'identifiants à son` Environement`
-
-https://cloud.google.com/docs/authentication/getting-started#setting_the_environment_variable
-
-Example: ajuster avec le nom de fichier `identifiants`
-
-```
-% export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
-```
-
-# References
-
-:ab: Explorer `gcloud` CLI (Optionnel, sert uniquement à tester les commandes gcloud)
+# Explorer `gcloud` CLI (Optionnel, sert uniquement à tester les commandes gcloud)
 
 * Se connecter à une machine existante avec `gcloud`
 
@@ -98,28 +51,6 @@ different account:
 
 to select an already authenticated account to use.
 
-```
-
-:pushpin: Connection par le `browser`
-
-```
-% gcloud auth login
-Your browser has been opened to visit:
-
-    https://accounts.google.com/o/oauth2/auth?code_challenge=hf8c4Uge0NqytjHSWlUNFr7UO1LP5v5QqT8tsftyOkU&prompt=select_account&code_challenge_method=S256&access_type=offline&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth
-
-
-
-You are now logged in as [mon-courriel@collegeboreal.ca].
-Your current project is [None].  You can change this setting by running:
-  $ gcloud config set project PROJECT_ID
-```
-
-:pushpin: Set le projet
-
-```
-% gcloud config set project b300098957
-Updated property [core/project].
 ```
 
 :pushpin: Creer sa cle SSH en se connectant a la machine
