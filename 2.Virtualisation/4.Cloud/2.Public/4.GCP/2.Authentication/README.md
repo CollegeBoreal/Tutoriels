@@ -1,10 +1,8 @@
-# :two: Authentification
-
-## :a: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
+# :two: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
 
 Pour authentifier son ordinateur, il y a plusieurs façons
 
-:round_pushpin: Machine cliente `AVEC` navigateur web
+## :a: Machine cliente `AVEC` navigateur web
 
 * Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) 
 
@@ -24,7 +22,7 @@ Your current project is [None].  You can change this setting by running:
 PS  > gcloud config set project PROJECT_ID
 ```
 
-:round_pushpin: Machine client `SANS` navigateur web i.e. machine de production
+## :b: Machine client `SANS` navigateur web i.e. machine de production
 
 ### :pushpin: [Créer un Compte de Service](https://cloud.google.com/docs/authentication/production#creating_a_service_account)
 
