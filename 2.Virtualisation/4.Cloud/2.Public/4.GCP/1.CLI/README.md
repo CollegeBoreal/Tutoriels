@@ -1,4 +1,4 @@
-# GCP CLI
+# :one: GCP CLI
 
 ## :o: Installation
 
