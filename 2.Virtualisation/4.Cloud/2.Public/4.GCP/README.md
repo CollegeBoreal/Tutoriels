@@ -31,9 +31,6 @@ Example: ajuster avec le nom de fichier `identifiants`
 
 :pushpin: [deployment](deployment)
 
-## :four: Gérer son environnement avec AWS CLI
-
-:bulb: [gloud CLI](cli)
 
 
 
