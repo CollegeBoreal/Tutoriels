@@ -21,11 +21,11 @@ https://console.cloud.google.com
 
 1. Clique sur le bouton [`Create`](). 
 
-    A JSON file that contains your key downloads to your computer.
+    * Le fichier JSON qui contient ta clé sera téléchargé et doit être sauvegardé dans le répertoire `~/.gcp` 
+    
+    * Crée le répertoire `~.gcp` au préalable.
 
-    * Le fichier téléchargé sera sauvegarder dans le répertoire `~/.gcp` Créer le répertoire au préalable.
-
-    Example: ajuster avec le nom de fichier `identifiants`
+    Exemple de nom de fichier, ajuste ton nom de fichier `identifiants`
 
     ```
     ~/.gcp/b300098957-a2662a9bd338.json
