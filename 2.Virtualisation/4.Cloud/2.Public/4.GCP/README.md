@@ -6,9 +6,7 @@ https://console.cloud.google.com
 
 ## :two: Configuration 
 
-### :pushpin: [Create a Service Account](https://cloud.google.com/docs/authentication/production#creating_a_service_account)
-
-
+### :pushpin: [Créer un Compte de Service](https://cloud.google.com/docs/authentication/production#creating_a_service_account)
 
 
 1. Dans La [`Console Google Cloud`](https://console.cloud.google.com), aller à la page `Create service account key` en cliquant le lien ci-dessous:
