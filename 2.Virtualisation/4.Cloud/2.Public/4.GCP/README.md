@@ -1,8 +1,14 @@
 # GCP - Google Cloud Platform
 
-## :one: GCP Console
+## :zero: GCP Console
 
 https://console.cloud.google.com
+
+
+## :one: Authentification
+
+Pour s'authentifier au nuage google, suivre cette documentation [1.Authentication](1.Authentication)
+
 
 ## :two: Configuration 
 
