@@ -27,9 +27,10 @@ $ gcloud info
 ```
 PS C:\Windows\system32> gcloud config list
 [core]
+account = 399999999@collegeboreal.ca
 account = 53434267881522-compute@developer.gserviceaccount.com
 disable_usage_reporting = True
-project = b300098957
+project = b99999999
 
 Your active configuration is: [default]
 ```
@@ -44,13 +45,15 @@ Pour authentifier son ordinateur, il y a plusieurs façons
 
 * Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) 
 
+Donnes ton nom de compte que tu utilises pour accéder à ton compte google. Par exemple ton email `39999999@collegeboreal.ca`
+
 ```
-PS > gcloud auth login 300098957@collegeboreal.ca
+PS > gcloud auth login 399999999@collegeboreal.ca
 Your browser has been opened to visit:
 
     https://accounts.google.com/o/oauth2/authcode_challenge=bt3MZaa.....pzJPPs&prompyunt&......com%2Fauth%2Faccounts.reauth
 
-You are now logged in as [300098957@collegeboreal.ca].
+You are now logged in as [399999999@collegeboreal.ca].
 Your current project is [None].  You can change this setting by running:
 PS  > gcloud config set project PROJECT_ID
 ```
