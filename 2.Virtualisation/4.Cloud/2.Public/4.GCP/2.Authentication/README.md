@@ -28,7 +28,7 @@ PS  > gcloud config set project PROJECT_ID
 
 ## :b: Machine client `SANS` navigateur web i.e. machine de production
 
-### :pushpin: [Créer un Compte de Service](https://cloud.google.com/docs/authentication/production#creating_a_service_account)
+### :star: [Créer un Compte de Service](https://cloud.google.com/docs/authentication/production#creating_a_service_account)
 
 
 1. Dans La [`Console Google Cloud`](https://console.cloud.google.com), aller à la page `Create service account key` en cliquant le lien ci-dessous:
@@ -54,15 +54,23 @@ PS  > gcloud config set project PROJECT_ID
     ```
     
 
-* Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) 
+### :star: Activer le [Compte de service](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) 
+
+Avec le fichier `identifiants` en place, éxécute les commande suivantes 
+
+:computer: Sous PowerShell 
 
 ```
 PS > gcloud auth activate-service-account --key-file=$env:USERPROFILE\.gcp\b300098957-a2662a9bd338.json
 ```
 
+:apple: Sous bash
+
 ```
 $ gcloud auth activate-service-account --key-file=${HOME}/.gcp/b300098957-a2662a9bd338.json
 ```
+
+### Visualise la liste des comptes identifiants
 
 ```
 $ gcloud auth list
