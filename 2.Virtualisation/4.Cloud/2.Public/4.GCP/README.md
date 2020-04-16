@@ -15,11 +15,11 @@ https://console.cloud.google.com
     
     [**Go to the Create Service Account Key page**](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
     
-2. From the `Service account` list, select `New service account`.
+2. Dans la liste `Service account`, selectionne `New service account`.
 
-3. In the Service account name field, enter a name.
+3. Dans le champ `Service account name`, entre un nom.
 
-4. From the `Role` list, select `Project > Owner`.
+4. Dans la liste `Role`, selectionne `Project > Owner`.
 
 :star:
 Note: The Role field authorizes your service account to access resources. 
