@@ -14,14 +14,13 @@ Pour installer le CLI [`gcloud`](https://cloud.google.com/sdk/gcloud), suivre [1
 Pour s'authentifier au nuage google, suivre cette documentation [2.Authentication](2.Authentication)
 
 
-## :three: Configuration 
+## :three: Configuration API ENV
 
-
-1. Ajouter la variable d'identifiants à son` Environement`
+Pour pouvoir utiliser les CLI comme `docker` ou `kubernetes`, il faut ajouter la variable d'identifiants à son` Environement`
 
 https://cloud.google.com/docs/authentication/getting-started#setting_the_environment_variable
 
-Example: ajuster avec le nom de fichier `identifiants`
+Exemple: ajuster avec le nom de fichier `identifiants`
 
 :computer: Sous [Windows](https://cloud.google.com/docs/authentication/production#windows) PowerShell 
 
