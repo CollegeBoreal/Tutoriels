@@ -9,12 +9,12 @@ https://console.cloud.google.com
 
 Pour installer le CLI [`gcloud`](https://cloud.google.com/sdk/gcloud), suivre [1.CLI](1.CLI)
 
-## :one: Authentification
+## :two: Authentification
 
 Pour s'authentifier au nuage google, suivre cette documentation [1.Authentication](1.Authentication)
 
 
-## :two: Configuration 
+## :three: Configuration 
 
 
 1. Ajouter la variable d'identifiants à son` Environement`
