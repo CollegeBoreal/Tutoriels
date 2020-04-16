@@ -34,7 +34,7 @@ PS > $env:GOOGLE_APPLICATION_CREDENTIALS="$env:USERPROFILE\.gpc\b300098957-a2662
 $ export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json"
 ```
 
-## :three: Créer sa machine virtuelle VM
+## :four: Créer sa machine virtuelle VM
 
 :pushpin: [deployment](deployment)
 
