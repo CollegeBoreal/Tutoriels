@@ -38,21 +38,26 @@ Your active configuration is: [default]
 
 ## :a: gcloud [Auth](https://cloud.google.com/sdk/gcloud/reference/auth)entication
 
-:round_pushpin: Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) (machine AVEC navigateur web)
+Pour authentifier son ordinateur, il y a plusieurs façons
+
+:round_pushpin: Machine AVEC navigateur web
+
+* Activate [Login Account](https://cloud.google.com/sdk/gcloud/reference/auth/login) 
 
 ```
-PS > gcloud auth login
+PS > gcloud auth login 300098957@collegeboreal.ca
 Your browser has been opened to visit:
 
-    https://accounts.google.com/o/oauth2/authcode_challenge=hf8c4Uge0jUNF&prompt=select_account&.........2Faccounts.reauth
+    https://accounts.google.com/o/oauth2/authcode_challenge=bt3MZaa.....pzJPPs&prompyunt&......com%2Fauth%2Faccounts.reauth
 
-You are now logged in as [mon-courriel@collegeboreal.ca].
+You are now logged in as [300098957@collegeboreal.ca].
 Your current project is [None].  You can change this setting by running:
-PS > gcloud config set project PROJECT_ID
+PS  > gcloud config set project PROJECT_ID
 ```
 
+:round_pushpin: Machine SANS navigateur web i.e machine de production
 
-:round_pushpin: Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) (machine SANS navigateur web)
+* Activate [Service Account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account) 
 
 ```
 PS > gcloud auth activate-service-account `
