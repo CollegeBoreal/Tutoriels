@@ -5,7 +5,7 @@
 https://console.cloud.google.com
 
 
-## :one: CLI
+## :one: [`gcloud`](https://cloud.google.com/sdk/gcloud) CLI
 
 Pour installer le CLI [`gcloud`](https://cloud.google.com/sdk/gcloud), suivre [1.CLI](1.CLI)
 
