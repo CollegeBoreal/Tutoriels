@@ -21,21 +21,6 @@ PS > choco install gcloudsdk --ignore-checksums
 $ gcloud info
 ```
 
-
-[Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
-
-```
-$ gcloud config list
-[core]
-account = 399999999@collegeboreal.ca
-account = 53434267881522-compute@developer.gserviceaccount.com
-disable_usage_reporting = True
-project = b99999999
-
-Your active configuration is: [default]
-```
-
-
 :round_pushpin: Set le projet
 
 ```
@@ -45,8 +30,26 @@ Updated property [core/project].
 
 :round_pushpin: Set la zone
 
-
 ```
 $ gcloud config set compute/zone "us-central1-a"
+```
+
+[Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
+
+```
+~/.config/gcloud
+```
+
+```
+% gcloud config list                      
+[compute]
+zone = us-central1-a
+[core]
+account = 399999999@collegeboreal.ca
+account = 534284581522-compute@developer.gserviceaccount.com
+disable_usage_reporting = True
+project = b300098957
+
+Your active configuration is: [default]
 ```
 
