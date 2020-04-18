@@ -25,7 +25,7 @@ $ gcloud info
 [Where-does-gcloud-store-its-defaults](https://stackoverflow.com/questions/49212350/where-does-gcloud-store-its-defaults)
 
 ```
-PS C:\Windows\system32> gcloud config list
+$ gcloud config list
 [core]
 account = 399999999@collegeboreal.ca
 account = 53434267881522-compute@developer.gserviceaccount.com
@@ -36,10 +36,17 @@ Your active configuration is: [default]
 ```
 
 
-:pushpin: Set le projet
+:round_pushpin: Set le projet
 
 ```
 % gcloud config set project b300098957
 Updated property [core/project].
+```
+
+:round_pushpin: Set la zone
+
+
+```
+$ gcloud config set compute/zone "us-central1-a"
 ```
 
