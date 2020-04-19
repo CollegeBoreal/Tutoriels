@@ -4,8 +4,6 @@
 
 ## [nano](https://www.nano-editor.org/)
 
-
-
-https://www.thegeekstuff.com/2009/01/vi-and-vim-macro-tutorial-how-to-record-and-play
-
 ## [emacs](https://www.gnu.org/software/emacs/)
+
+## [:four: LightTable](4.lighttable.md)
