@@ -36,3 +36,5 @@ http://tryhaskell.org/
 http://book.realworldhaskell.org/read/
 
 https://mmhaskell.com/
+
+https://github.com/thma/WhyHaskellMatters
