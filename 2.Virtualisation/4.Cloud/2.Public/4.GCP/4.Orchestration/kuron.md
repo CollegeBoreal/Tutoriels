@@ -144,18 +144,20 @@ $ export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json
 
 - [ ] Crée ta grappe `kuron` avec 3 VM (noeuds)
 
+:bulb: Pour créer une grappe en mode `développemnt`
+
 ```
 $ gcloud beta container clusters create "kuron" --release-channel "rapid"
 ```
 
-ou 
+au lieu de 
 
 ```
 $ gcloud container clusters create "kuron"
 ```
 
 
-* avec Powershell
+:computer: Sous PowerShell
 
 ```
 PS > gcloud container clusters create "kuron" `
@@ -169,7 +171,7 @@ PS > gcloud container clusters create "kuron" `
                         --enable-autoupgrade --enable-autorepair --enable-ip-alias                
 ```
 
-* avec gitbash
+:apple: Sous gitbash
 
 
 ```
