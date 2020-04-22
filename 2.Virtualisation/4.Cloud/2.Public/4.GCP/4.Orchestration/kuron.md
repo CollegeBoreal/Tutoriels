@@ -8,7 +8,7 @@ Ce laboratoire permettra de créer une grappe sur le cloud public [GCP].
 
 `$ mkdir K.Kuron`
 
-- [ ] Copier les fichiers se trouvant dans le répertoire `.` dans votre répertoire :id:
+- [ ] Dans le répertoire `K.Kuron` créer le fichier suivant sous format [here documents](https://tldp.org/LDP/abs/html/here-docs.html)
 
 ```yaml
 $ cat << EOF > kuron-deployment.yaml
