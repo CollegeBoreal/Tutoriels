@@ -144,11 +144,23 @@ $ export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.gcp/b300098957-a2662a9bd338.json
 
 - [ ] Crée ta grappe `kuron` avec 3 VM (noeuds)
 
+```
+$ gcloud beta container clusters create "kuron" --release-channel "rapid"
+```
+
+ou 
+
+```
+$ gcloud container clusters create "kuron"
+```
+
+
 * avec Powershell
 
 ```
-PS > gcloud beta container clusters create "kuron" --zone "us-central1-a" `
-                        --num-nodes "3" --release-channel "rapid" `
+PS > gcloud container clusters create "kuron" `
+                        --zone "us-central1-a" `
+                        --num-nodes "3"  `
                         --machine-type "g1-small" --image-type "COS" `
                         --disk-type "pd-standard" --disk-size "30" `
                         --no-enable-stackdriver-kubernetes --no-enable-basic-auth `
@@ -161,7 +173,8 @@ PS > gcloud beta container clusters create "kuron" --zone "us-central1-a" `
 
 
 ```
-$ gcloud beta container clusters create "kuron" --zone "us-central1-a" \
+$ gcloud container clusters create "kuron" \
+                        --zone "us-central1-a" \
                         --num-nodes "3" --release-channel "rapid" \
                         --machine-type "g1-small" --image-type "COS" \
                         --disk-type "pd-standard" --disk-size "30" \
