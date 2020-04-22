@@ -4,11 +4,11 @@ Ce laboratoire permettra de créer une grappe sur le cloud public [GCP].
 
 ## :o: Sur votre PC, créer votre répertoire de travail dans `git bash`
 
-- [ ] Dans le répertoire  Créer un répertoire avec comme nom `K.Kuron`
+- [ ] Dans le répertoire  Créer un répertoire avec comme nom `k.kuron`
 
-`$ mkdir K.Kuron`
+`$ mkdir k.kuron`
 
-- [ ] Dans le répertoire `K.Kuron` créer le fichier suivant sous format [here documents](https://tldp.org/LDP/abs/html/here-docs.html)
+- [ ] Dans le répertoire `k.kuron` créer le fichier suivant sous format [here documents](https://tldp.org/LDP/abs/html/here-docs.html)
 
 :computer: Sous PowerShell
 
@@ -66,7 +66,32 @@ spec:
 EOF
 ```
 
-- [ ] Copier les fichiers se trouvant dans le répertoire `.` dans votre répertoire :id:
+- [ ] ainsi que le fichier `service` suivant:
+
+:computer: Sous PowerShell
+
+```yaml
+PS > @'
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "kuron-deployment-service"
+  namespace: "default"
+  labels:
+    app: "kuron"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 8080
+  selector:
+    app: "kuron"
+  type: "LoadBalancer"
+  loadBalancerIP: ""
+'@ > kuron-deployment-service.yaml
+```
+
+:apple: Sous Bash
 
 ```yaml
 $ cat << EOF > kuron-deployment-service.yaml
