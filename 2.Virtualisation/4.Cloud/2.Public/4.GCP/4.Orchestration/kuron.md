@@ -10,7 +10,7 @@ Ce laboratoire permettra de créer une grappe sur le cloud public [GCP].
 
 - [ ] Dans le répertoire `K.Kuron` créer le fichier suivant sous format [here documents](https://tldp.org/LDP/abs/html/here-docs.html)
 
-:compute: Sous PowerShell
+:computer: Sous PowerShell
 
 ```yaml
 PS > @'
