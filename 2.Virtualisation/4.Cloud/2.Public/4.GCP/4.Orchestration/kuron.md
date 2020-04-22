@@ -11,6 +11,34 @@ Ce laboratoire permettra de créer une grappe sur le cloud public [GCP].
 - [ ] Copier les fichiers se trouvant dans le répertoire `.` dans votre répertoire :id:
 
 ```yaml
+$ cat << EOF > kuron-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuron-deployment
+  labels:
+    app: kuron
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kuron
+  template:
+    metadata:
+      labels:
+        app: kuron
+    spec:
+      containers:
+      - name: kuron
+        image: collegeboreal/kuron:latest
+        ports:
+        - containerPort: 8080
+EOF
+```
+
+- [ ] Copier les fichiers se trouvant dans le répertoire `.` dans votre répertoire :id:
+
+```yaml
 $ cat << EOF > kuron-deployment-service.yaml
 ---
 apiVersion: "v1"
@@ -30,6 +58,7 @@ spec:
   loadBalancerIP: ""
 EOF
 ```
+
 
 - [ ] Soumets ton répertoire de travail vers github `(git add, commit, push)` 
 
