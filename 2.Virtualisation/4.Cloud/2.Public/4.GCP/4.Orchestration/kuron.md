@@ -338,11 +338,3 @@ KiB Mem:   1732772
 $ gcloud container clusters delete kuron --zone "us-central1-a"
 ```
 
-
-# [Participation](.scripts/Participation.md)
-
-# Références
-
-https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/4.GCP
-
-https://github.com/CollegeBoreal/INF1087-200-20H-02/tree/master/K.Kubernetes
