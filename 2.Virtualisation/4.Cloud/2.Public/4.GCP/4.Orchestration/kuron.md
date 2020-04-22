@@ -257,35 +257,13 @@ kubernetes                 ClusterIP      10.32.0.1    <none>         443/TCP   
 kuron-deployment-service   LoadBalancer   10.32.3.1    34.70.183.28   8080:30237/TCP   11m
 ```
 
+* Note l'adresse IP locale de ton cluster, dans ce cas `10.32.3.1` 
+
 - [ ] Publie ton site Internet avec les informations du service
 
 http://34.70.183.28:8080/
 
 ## :o: Teste ton application en prouvant que tes `pods` tournent sur un service redondant
-
-- [ ] Liste ton `service`
-
-```
-$ kubectl get services                                                          
-NAME                       TYPE           CLUSTER-IP   EXTERNAL-IP    PORT(S)          AGE
-kubernetes                 ClusterIP      10.32.0.1    <none>         443/TCP          25m
-kuron-deployment-service   LoadBalancer   10.32.3.1    34.70.183.28   8080:30237/TCP   11m
-```
-
-* Note l'adresse IP locale de ton cluster, dans ce cas `10.32.3.1` 
-
-- [ ] Liste tes `pods`
-
-```
-$ kubectl get pods                                                              
-NAME                               READY   STATUS    RESTARTS   AGE
-kuron-deployment-8bf4f7f9f-5hm4n   1/1     Running   0          20m
-kuron-deployment-8bf4f7f9f-d4d9l   1/1     Running   0          20m
-kuron-deployment-8bf4f7f9f-xw4gz   1/1     Running   0          20m
-```
-
-* Note le nom de tes trois `pods` ou conteneurs, i.e. `kuron-deployment-8bf4f7f9f-5hm4n`, `kuron-deployment-8bf4f7f9f-d4d9l`
-
 
 - [ ] Tapes les commandes ci-dessous en changeant le nom des pods et l'adresse IP locale.
 
@@ -293,7 +271,7 @@ Le programme javascript qui tourne dans les pods récupère le nom du conteneur 
 
 :warning: Remarque le nom du pod retourné change et n'est pas forcément le nom du pod
 
-:bangbang: Respecte le séparateur de commande `--` devant la commande `curl`
+:bangbang: Respecte le séparateur de commande `--` devant la commande `curl`, lance la commande plusieurs fois
 
 ```
 $ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
