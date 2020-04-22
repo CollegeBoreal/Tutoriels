@@ -10,6 +10,36 @@ Ce laboratoire permettra de créer une grappe sur le cloud public [GCP].
 
 - [ ] Dans le répertoire `K.Kuron` créer le fichier suivant sous format [here documents](https://tldp.org/LDP/abs/html/here-docs.html)
 
+:compute: Sous PowerShell
+
+```yaml
+PS > @'
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuron-deployment
+  labels:
+    app: kuron
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kuron
+  template:
+    metadata:
+      labels:
+        app: kuron
+    spec:
+      containers:
+      - name: kuron
+        image: collegeboreal/kuron:latest
+        ports:
+        - containerPort: 8080
+'@ > kuron-deployment.yaml
+```
+
+:apple: Sous Bash
+
 ```yaml
 $ cat << EOF > kuron-deployment.yaml
 apiVersion: apps/v1
