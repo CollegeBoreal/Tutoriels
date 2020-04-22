@@ -196,11 +196,11 @@ $ kubectl cluster-info
 - [ ] Vérifie que tes :three: `noeuds` (VMs) soient dans un état `Ready`
 
 ```
-% kubectl get nodes
-NAME                                   STATUS   ROLES    AGE     VERSION
-gke-kuron-default-pool-1e3feddf-8s94   Ready    <none>   2m32s   v1.16.8-gke.8
-gke-kuron-default-pool-1e3feddf-c4tn   Ready    <none>   2m32s   v1.16.8-gke.8
-gke-kuron-default-pool-1e3feddf-p2j8   Ready    <none>   2m32s   v1.16.8-gke.8
+$ kubectl get nodes             
+NAME                                   STATUS   ROLES    AGE   VERSION
+gke-kuron-default-pool-68ead64d-dq2s   Ready    <none>   16m   v1.16.8-gke.9
+gke-kuron-default-pool-68ead64d-g9cg   Ready    <none>   16m   v1.16.8-gke.9
+gke-kuron-default-pool-68ead64d-wvhs   Ready    <none>   16m   v1.16.8-gke.9
 ```
 
 ## :b: Déploie ton application `kuron`
