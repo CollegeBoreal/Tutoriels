@@ -227,6 +227,17 @@ kuron-deployment-8bf4f7f9f-d4d9l   1/1     Running   0          20m
 kuron-deployment-8bf4f7f9f-xw4gz   1/1     Running   0          20m
 ```
 
+- [ ] Vérifie sur quels noeuds `nodes` tes :three: `pods` tournent
+
+
+```
+$ kubectl get pods --output wide     
+NAME                               READY   STATUS    RESTARTS   AGE     IP          NODE                                  ...
+kuron-deployment-8bf4f7f9f-5ccjc   1/1     Running   0          8m56s   10.28.2.3   gke-kuron-default-pool-68ead64d-wvhs  ...
+kuron-deployment-8bf4f7f9f-6nf9d   1/1     Running   0          8m56s   10.28.1.4   gke-kuron-default-pool-68ead64d-g9cg  ...
+kuron-deployment-8bf4f7f9f-d6lz6   1/1     Running   0          8m56s   10.28.0.5   gke-kuron-default-pool-68ead64d-dq2s  ...
+```
+
 ## :ab: Déploie le service `kuron-deployment-service`
 
 Le service permet la publication des ports vers l'extérieur. Le port que nous allons utiliser et le port `8080`
