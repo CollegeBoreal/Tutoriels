@@ -259,7 +259,7 @@ kuron-deployment-service   LoadBalancer   10.32.3.1    34.70.183.28   8080:30237
 
 - [ ] Publie ton site Internet avec les informations du service
 
-http://34.71.18.253:8080/
+http://34.70.183.28:8080/
 
 ## :o: Teste ton application en prouvant que tes `pods` tournent sur un service redondant
 
@@ -300,27 +300,7 @@ $ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
 Tu as touché kuron-deployment-8bf4f7f9f-d4d9l
 ```
 
-```
-$ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
-Tu as touché kuron-deployment-8bf4f7f9f-5hm4n
-```
-
-```
-$ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
-Tu as touché kuron-deployment-8bf4f7f9f-5hm4n
-```
-
-```
-$ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
-Tu as touché kuron-deployment-8bf4f7f9f-5hm4n
-```
-
-```
-$ kubectl exec kuron-deployment-8bf4f7f9f-5hm4n -- curl -s http://10.32.3.1:8080
-Tu as touché kuron-deployment-8bf4f7f9f-xw4gz
-```
-
-- [ ] Finalement, aller dans un pod (conteneur) et donner la taille mémoire du pod avec la commande `top`
+- [ ] Finalement, entre dans un pod (conteneur) et donne la taille mémoire du pod avec la commande `top`
 
 ```
 $ kubectl exec --stdin --tty  kuron-deployment-8bf4f7f9f-5hm4n -- /bin/bash
