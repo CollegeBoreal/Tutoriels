@@ -45,3 +45,13 @@ $ kubectl expose deployment nginx --port 80 --type LoadBalancer
 $ kubectl get services
 ```
 
+```
+$ kubectl get pods
+NAME                    READY   STATUS    RESTARTS   AGE
+nginx-fb9c7b94d-j9x4g   1/1     Running   0          6m32s
+```
+
+```
+$ kubectl scale deployment nginx --replicas 3
+deployment.extensions/nginx scaled
+```
