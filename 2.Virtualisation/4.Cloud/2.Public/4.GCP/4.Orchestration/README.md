@@ -182,3 +182,9 @@ secret/tls-certs created
 $ kubectl create configmap nginx-proxy-conf --from-file nginx/proxy.conf
 configmap/nginx-proxy-conf created
 ```
+
+https://github.com/b300098957/orchestrate-with-kubernetes/blob/master/kubernetes/pods/secure-monolith.yaml
+
+```
+$ gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
+```
