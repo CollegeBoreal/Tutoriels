@@ -2,6 +2,8 @@
 
 https://www.coursera.org/learn/google-kubernetes-engine
 
+https://codelabs.developers.google.com/codelabs/cloud-orchestrate-with-kubernetes
+
 ```
 PS > gcloud config set compute/zone us-central1-a
 ```
@@ -28,4 +30,18 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubect
 $ gcloud container clusters get-credentials [cluster-name]
 ```
 
+
+* Creer un pod
+
+```
+$ kubectl run nginx --image=nginx:1.10.0 --generator=run-pod/v1
+```
+
+```
+$ kubectl expose deployment nginx --port 80 --type LoadBalancer
+```
+
+```
+$ kubectl get services
+```
 
