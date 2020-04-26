@@ -172,8 +172,13 @@ spec:
 $ kubectl explain pods.spec.containers
 ```
 
-# Secret
+# Secrets
+
+Creates two volumes `tls-certs` and `ConfigMap`
 
 ```
 $ kubectl create secret generic tls-certs --from-file tls/
+secret/tls-certs created
+$ kubectl create configmap nginx-proxy-conf --from-file nginx/proxy.conf
+configmap/nginx-proxy-conf created
 ```
