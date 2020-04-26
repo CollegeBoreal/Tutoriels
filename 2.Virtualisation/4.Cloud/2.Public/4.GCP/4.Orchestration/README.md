@@ -136,6 +136,12 @@ $ kubectl logs nginx
 127.0.0.1:37382 - - [Sun, 26 Apr 2020 15:25:40 UTC] "GET /secure HTTP/1.1" curl/7.52.1
 ```
 
+Capture token with `jq`
+
+```
+$ TOKEN=$(curl http://127.0.0.1:10080/login -u user|jq -r '.token')
+```
+
 # Documentation
 
 ```
