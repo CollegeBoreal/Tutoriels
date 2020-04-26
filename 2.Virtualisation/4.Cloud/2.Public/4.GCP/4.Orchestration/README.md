@@ -125,7 +125,7 @@ Handling connection for 10080
 ```
 
 ```
-$ kubectl logs nginx
+$ kubectl logs -f nginx
 2020/04/26 15:20:27 Starting server...
 2020/04/26 15:20:27 Health service listening on 0.0.0.0:81
 2020/04/26 15:20:27 HTTP service listening on 0.0.0.0:80
@@ -140,6 +140,12 @@ Capture token with `jq`
 
 ```
 $ TOKEN=$(curl http://127.0.0.1:80/login -u user|jq -r '.token')
+```
+
+Quit forward and logs
+
+```
+press Ctrl+C
 ```
 
 # Documentation
