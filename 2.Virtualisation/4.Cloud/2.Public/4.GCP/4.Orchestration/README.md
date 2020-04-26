@@ -95,5 +95,16 @@ Commercial support is available at
 <a href="http://nginx.com/">nginx.com</a>.</p>
 <p><em>Thank you for using nginx.</em></p>
 </body>
-```
 </html>
+```
+
+
+### Clean Up
+
+```
+$ kubectl delete deployment nginx
+```
+
+```
+$ kubectl delete service nginx
+```
