@@ -55,3 +55,11 @@ nginx-fb9c7b94d-j9x4g   1/1     Running   0          6m32s
 $ kubectl scale deployment nginx --replicas 3
 deployment.extensions/nginx scaled
 ```
+
+```
+$ kubectl get pods
+NAME                    READY   STATUS    RESTARTS   AGE
+nginx-fb9c7b94d-j9x4g   1/1     Running   0          8m14s
+nginx-fb9c7b94d-nkggs   1/1     Running   0          32s
+nginx-fb9c7b94d-vlk2b   1/1     Running   0          32s
+```
