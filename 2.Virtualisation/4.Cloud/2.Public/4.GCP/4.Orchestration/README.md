@@ -1,5 +1,6 @@
 # :four: Orchestration
 
+https://www.coursera.org/learn/google-kubernetes-engine
 
 ```
 PS > gcloud config set compute/zone us-central1-a
