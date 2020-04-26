@@ -124,6 +124,18 @@ Handling connection for 10080
 Handling connection for 10080
 ```
 
+```
+$ kubectl logs nginx
+2020/04/26 15:20:27 Starting server...
+2020/04/26 15:20:27 Health service listening on 0.0.0.0:81
+2020/04/26 15:20:27 HTTP service listening on 0.0.0.0:80
+127.0.0.1:37250 - - [Sun, 26 Apr 2020 15:23:22 UTC] "GET / HTTP/1.1" curl/7.52.1
+127.0.0.1:37276 - - [Sun, 26 Apr 2020 15:23:48 UTC] "GET /secure HTTP/1.1" curl/7.52.1
+127.0.0.1:37334 - - [Sun, 26 Apr 2020 15:24:55 UTC] "GET /login HTTP/1.1" curl/7.52.1
+127.0.0.1:37364 - - [Sun, 26 Apr 2020 15:25:25 UTC] "GET /login HTTP/1.1" curl/7.52.1
+127.0.0.1:37382 - - [Sun, 26 Apr 2020 15:25:40 UTC] "GET /secure HTTP/1.1" curl/7.52.1
+```
+
 # Documentation
 
 ```
