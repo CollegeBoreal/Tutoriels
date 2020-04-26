@@ -108,3 +108,27 @@ $ kubectl delete deployment nginx
 ```
 $ kubectl delete service nginx
 ```
+
+# Documentation
+
+```
+$ kubectl explain pods
+```
+
+```
+$ cat pods/my-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: my-pod
+spec:
+  containers:
+    - name: my-pod
+...
+```
+
+```
+$ kubectl explain pods.spec.containers
+```
