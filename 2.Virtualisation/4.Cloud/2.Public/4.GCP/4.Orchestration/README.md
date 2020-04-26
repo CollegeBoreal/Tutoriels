@@ -63,3 +63,37 @@ nginx-fb9c7b94d-j9x4g   1/1     Running   0          8m14s
 nginx-fb9c7b94d-nkggs   1/1     Running   0          32s
 nginx-fb9c7b94d-vlk2b   1/1     Running   0          32s
 ```
+
+```
+$ kubectl get services
+NAME         TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)        AGE
+kubernetes   ClusterIP      10.51.240.1     <none>          443/TCP        14m
+nginx        LoadBalancer   10.51.247.153   34.69.156.133   80:31578/TCP   3m48s
+```
+
+```
+$ curl http://34.69.156.133:80
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+<p><em>Thank you for using nginx.</em></p>
+</body>
+```
+</html>
