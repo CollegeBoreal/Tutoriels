@@ -1,5 +1,14 @@
 # :four: Orchestration
 
+
+```
+PS > gcloud config set compute/zone us-central1-a
+```
+
+```
+PS > gcloud container clusters create bootcamp --num-nodes 5 --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw"
+```
+
 * Gérer son cluster avec `gcloud` CLI
 
 ```
