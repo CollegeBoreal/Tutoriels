@@ -109,6 +109,21 @@ $ kubectl delete deployment nginx
 $ kubectl delete service nginx
 ```
 
+
+### Port Forward (no service)
+
+:warning: No tested needs more
+
+```
+$ kubectl port-forward nginx 80:80
+Forwarding from 127.0.0.1:80 -> 80
+Handling connection for 10080
+Handling connection for 10080
+Handling connection for 10080
+Handling connection for 10080
+Handling connection for 10080
+```
+
 # Documentation
 
 ```
