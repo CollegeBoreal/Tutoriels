@@ -45,7 +45,11 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 }
 ```
 
+## Autocompletion (bash)
 
+```
+$ source <(kubectl completion bash)
+```
 
 - [x] Le context
 
