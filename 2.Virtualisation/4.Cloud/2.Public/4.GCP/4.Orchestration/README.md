@@ -139,7 +139,7 @@ $ kubectl logs nginx
 Capture token with `jq`
 
 ```
-$ TOKEN=$(curl http://127.0.0.1:10080/login -u user|jq -r '.token')
+$ TOKEN=$(curl http://127.0.0.1:80/login -u user|jq -r '.token')
 ```
 
 # Documentation
