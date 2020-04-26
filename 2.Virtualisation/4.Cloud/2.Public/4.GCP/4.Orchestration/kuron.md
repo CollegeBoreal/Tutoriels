@@ -276,7 +276,15 @@ kuron-deployment-service   LoadBalancer   10.32.3.1    34.70.183.28   8080:30237
 
 - [ ] Publie ton site Internet avec les informations du service
 
-http://34.70.183.28:8080/
+```
+$ curl http://34.70.183.28:8080/
+```
+
+ou lance la commande ci-dessous qui va directement l'adresse IP externe
+
+```
+$ curl -ks https://`kubectl get svc kuron-deployment-service -o=jsonpath="{.status.loadBalancer.ingress[0].ip}"`
+```
 
 ## :o: Teste ton application en prouvant que tes `pods` tournent sur un service redondant
 
