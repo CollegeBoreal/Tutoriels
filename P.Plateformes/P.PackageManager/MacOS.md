@@ -14,10 +14,10 @@ $ brew cask list --versions
 $ brew list --versions # Version originale avec package plus petits
 ```
 
-:three: Desinstaller brew (seulement si desire)
+:three: Desinstaller brew (seulement si voulu)
 
 ```
-$ sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
 ```
 
 <hr/>
