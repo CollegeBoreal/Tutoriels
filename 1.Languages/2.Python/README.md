@@ -62,6 +62,15 @@ $ source .env/python/bin/activate
 
 Le prompt devrait changer comme ci-dessous (à peu près)
 
+:computer: Sous PowerShell
+
+```
+(python) PS /Users/user >
+```
+
+:apple: Sous bash ou Zsh
+
+
 ```
 (python) user@computer ~ $ 
 ```
