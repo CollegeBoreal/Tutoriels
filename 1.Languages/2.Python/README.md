@@ -12,8 +12,6 @@ PS > choco install python3 --pre
 
 :apple: MacOS 
 
-### Install @3.8
-
 ```
 $ brew install python@3.8
 ```
