@@ -4,7 +4,7 @@
 
 :pushpin: Par un Package Manager
 
-:bulb: Windows
+:computer: Sous PowerShell
 
 ```
 PS > choco install python3 --pre
@@ -34,7 +34,23 @@ $ brew switch python@3.8 3.8.1
 
 * Python 3.7.4 :  https://www.python.org/downloads/
 
-### Pour tester l'installation
+### Pour tester l'installation du package
+
+:computer: Sous PowerShell
+
+```
+PS > choco list --local-only python
+```
+
+:apple: Sous Mac
+
+
+```
+$ brew list python
+```
+
+### Pour tester la version
+
 ```
 $ python --version
 Python 3.7.4
