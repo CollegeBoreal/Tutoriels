@@ -51,13 +51,13 @@ $ python3 -m venv .env/python
 :computer: Sous PowerShell
 
 ```
-PS > . ./.env/python/bin/Activate.ps1
+PS > . $Env:USERPROFILE/.env/python/bin/Activate.ps1
 ```
 
 :apple: Sous bash ou Zsh
 
 ```
-$ source .env/python/bin/activate
+$ source ~/.env/python/bin/activate
 ```
 
 Le prompt devrait changer comme ci-dessous (à peu près)
