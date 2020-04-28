@@ -48,6 +48,8 @@ https://docs.python.org/3/tutorial/venv.html
 $ python -m venv $Env:USERPROFILE\.env\python 
 ```
 
+:round_pushpin: [dot sourcing](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7#script-scope-and-dot-sourcing)
+
 :computer: Sous PowerShell
 
 ```
