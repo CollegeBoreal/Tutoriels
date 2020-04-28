@@ -40,6 +40,32 @@ $ python --version
 Python 3.7.4
 ```
 
+## :two: Environemment Virtuel
+
+https://docs.python.org/3/tutorial/venv.html
+
+```
+$ python3 -m venv .env/python 
+```
+
+:computer: Sous PowerShell
+
+```
+PS > . ./.env/python/bin/Activate.ps1
+```
+
+:apple: Sous bash ou Zsh
+
+```
+$ source .env/python/bin/activate
+```
+
+Le prompt devrait changer comme ci-dessous (à peu près)
+
+```
+(python) user@computer ~ $ 
+```
+
 ## :two: Installation des outils d'édition
 
 [Anaconda](Anaconda.md)
