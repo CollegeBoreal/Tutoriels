@@ -51,7 +51,7 @@ $ python -m venv $Env:USERPROFILE\.env\python
 :computer: Sous PowerShell
 
 ```
-PS > . $Env:USERPROFILE/.env/python/bin/Activate.ps1
+PS > . $Env:USERPROFILE\.env\python\Scripts\Activate.ps1
 ```
 
 :apple: Sous bash ou Zsh
