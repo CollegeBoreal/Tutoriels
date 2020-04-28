@@ -45,7 +45,7 @@ Python 3.7.4
 https://docs.python.org/3/tutorial/venv.html
 
 ```
-$ python3 -m venv .env/python 
+$ python -m venv $Env:USERPROFILE\.env\python 
 ```
 
 :computer: Sous PowerShell
