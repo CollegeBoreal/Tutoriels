@@ -29,6 +29,14 @@ For compilers to find python@3.8 you may need to set:
   export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
 ```
 
+Forcer la version 3 pour Python
+
+```
+% echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
+% echo 'alias python=python3' >> ~/.zshrc
+% echo 'alias pip=pip3' >> ~/.zshrc
+```
+
 Pour switcher de version
 
 ```
