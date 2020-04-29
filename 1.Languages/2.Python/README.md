@@ -73,9 +73,21 @@ Python 3.7.4
 
 https://docs.python.org/3/tutorial/venv.html
 
+Creer son environemment virtuel
+
+
+:computer: Sous PowerShell
+
 ```
 $ python -m venv $Env:USERPROFILE\.env\python 
 ```
+
+:apple: Sous bash ou Zsh
+
+```
+$ python -m venv ~/.env/python
+```
+
 
 :round_pushpin: [dot sourcing](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7#script-scope-and-dot-sourcing)
 
