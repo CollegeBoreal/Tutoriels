@@ -73,7 +73,7 @@ Python 3.7.4
 
 https://docs.python.org/3/tutorial/venv.html
 
-Creer son environemment virtuel
+:a: Creer son environemment virtuel
 
 
 :computer: Sous PowerShell
@@ -89,7 +89,7 @@ $ python -m venv ~/.env/python
 ```
 
 
-:round_pushpin: [dot sourcing](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7#script-scope-and-dot-sourcing)
+:b: [dot sourcing](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7#script-scope-and-dot-sourcing) Activer son environnement
 
 :computer: Sous PowerShell
 
@@ -117,6 +117,13 @@ Le prompt devrait changer comme ci-dessous (à peu près)
 ```
 (python) user@computer ~ $ 
 ```
+
+:ab: Desactiver son environemment
+
+```
+(python) user@computer ~ $ deactivate
+```
+
 
 ## :two: Installation des outils d'édition
 
