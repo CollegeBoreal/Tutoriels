@@ -19,10 +19,17 @@ $ brew install python@3.8
 * Set the ENV Variables
 
 ```
-$ echo 'export PATH="/usr/local/Cellar/python@3.8/3.8.1/libexec/bin:$PATH"' >> ~/.zshrc
-# or for Bash
-$ echo 'export PATH="/usr/local/Cellar/python@3.8/3.8.1/libexec/bin:$PATH"' >> ~/.bashrc
+python@3.8 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have python@3.8 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find python@3.8 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
 ```
+
+Pour switcher de version
 
 ```
 $ brew switch python@3.8 3.8.1
@@ -30,7 +37,7 @@ $ brew switch python@3.8 3.8.1
 
 :pushpin: Manuellement
 
-* Python 3.7.4 :  https://www.python.org/downloads/
+* Python 3.8.1 :  https://www.python.org/downloads/
 
 ### Pour tester l'installation du package
 
