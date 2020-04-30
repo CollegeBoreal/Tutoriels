@@ -1,11 +1,11 @@
-# AWS (Amazon Web Services)
+# :one; AWS (Amazon Web Services)
 
 
-## :one: Créer son compte Amazon avec AWS Educate
+## :a: Créer son compte Amazon avec AWS Educate
 
 :pushpin: [Educate](educate)
 
-## :two: Créer sa clé d'accés
+## :b: Créer sa clé d'accés
 
 :pushpin: Clé :key:
 
