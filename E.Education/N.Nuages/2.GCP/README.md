@@ -1,4 +1,4 @@
-# Google Cloud Platform
+# :two: GCP - Google Cloud Platform
 
 
 ## :woman_student: Platforms
