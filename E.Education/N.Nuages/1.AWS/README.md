@@ -1,4 +1,4 @@
-# :one; AWS (Amazon Web Services)
+# :one: AWS (Amazon Web Services)
 
 
 ## :a: Créer son compte Amazon avec AWS Educate
