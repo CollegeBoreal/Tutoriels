@@ -1,3 +1,3 @@
 # .tld - Top Level Domains
 
-[N.Names]
+[N.Name](N.Name)
