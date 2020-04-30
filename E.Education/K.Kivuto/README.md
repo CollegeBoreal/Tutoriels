@@ -10,12 +10,3 @@ http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
 On The Hub
 
 https://boreal.onthehub.com
-
-# Cloud
-
-### Activer Azure Cloud for Students
-
-http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
-
-![Alt Tag](./images/Free_Azure.png)
-
