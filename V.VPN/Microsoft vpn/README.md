@@ -36,7 +36,3 @@ Pour accéder au VPN du collège, on peut utiliser aussi utilisé Microsoft vpn
 <img src="images/vpd.JPG" width="206" heigth="357"></img>
 
 :pushpin: Se connecter avec un terminal (bash) ou RDC (Remote Desktop Connection)
-
-🆗 j'ai fait une vidéo pour bien expliquer
-
-https://youtu.be/AxdZMbYpX-g
