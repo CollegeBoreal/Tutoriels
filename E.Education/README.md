@@ -4,7 +4,7 @@ Student's Goodies
 
 ## :o: VCS (Version Control System)
 
-[Founisseurs de version de contrôle en partenariat avec le Collège](V.VCS)
+[Founisseurs de version de contrôle en partenariat avec le Collège](G.Github)
 
 ## :a: Nuages
 
