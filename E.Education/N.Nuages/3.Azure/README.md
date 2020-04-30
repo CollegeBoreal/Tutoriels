@@ -15,9 +15,7 @@ https://azure.microsoft.com/fr-ca/
 :pushpin: Pour accéder au portail Azure https://portal.azure.com/
 
 
-:pushpin: Vérifier les crédits Azure qu'il te reste
-
-https://www.microsoftazuresponsorships.com sera remplace par https://aka.ms/StartEdu   
+:pushpin: Vérifier les crédits Azure qu'il te reste https://aka.ms/StartEdu   
 
 
 ### :b: differences between Windows 10 (Editions)
