@@ -1,16 +1,23 @@
 # Azure
 
-### Vérifier ses crédits
+Azure est une infrastructure info-nuagique ou nuage fourni par Microsoft
+
+## :one: Activation
+
+
+:pushpin: Les serveurs de courriel du Collège `@collegeboreal.ca` et `@monboreal.ca` sont hébergé chez Microsoft. La license éducative permet au Collège de bénéficier du nuage `Azure` de Microsoft ainsi que les licenses comme `Windows 10 Education`
+
+Pout t'enregistrer à Azure, clique le lien ci-dessous et utilise ta connexion lié à ton courriel du Collège
+
+https://azure.microsoft.com/fr-ca/
+
+
+:pushpin: Pour accéder au portail Azure https://portal.azure.com/
+
+
+:pushpin: Vérifier les crédits Azure qu'il te reste
 
 https://www.microsoftazuresponsorships.com sera remplace par https://aka.ms/StartEdu   
-
-# Installer sa première machine virtuelle
-
-
-| OS                   | Commentaires                                       |
-|----------------------|----------------------------------------------------|
-|[Linux](./AZURE.md)   | Suivre les commandes sous Docker                   |
-|[Windows ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)| Créer sa machine a travers le [portail](https://portal.azure.com) Azure | 
 
 
 ## differences between Windows 10 (Editions)
