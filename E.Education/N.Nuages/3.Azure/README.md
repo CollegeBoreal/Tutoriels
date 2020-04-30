@@ -2,7 +2,7 @@
 
 Azure est une infrastructure info-nuagique ou nuage fourni par Microsoft
 
-## :one: Activation
+### :a: Activation
 
 
 :pushpin: Les serveurs de courriel du Collège `@collegeboreal.ca` et `@monboreal.ca` sont hébergé chez Microsoft. La license éducative permet au Collège de bénéficier du nuage `Azure` de Microsoft ainsi que les licenses comme `Windows 10 Education`
@@ -20,7 +20,7 @@ https://azure.microsoft.com/fr-ca/
 https://www.microsoftazuresponsorships.com sera remplace par https://aka.ms/StartEdu   
 
 
-## differences between Windows 10 (Editions)
+### :b: differences between Windows 10 (Editions)
 https://liliputing.com/2015/07/differences-between-windows-10-home-pro-enterprise-and-education.html
 
 ## WSL
