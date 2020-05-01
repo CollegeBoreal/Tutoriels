@@ -3,4 +3,4 @@
 [C.Coursera](C.Coursera)
 
 
-[LinkedIn Learning](https://www.linkedin.com/learning)
+[L.LinkedIn Learning](https://www.linkedin.com/learning) (Anciennement Lynda)
