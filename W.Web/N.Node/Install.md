@@ -7,7 +7,7 @@
 
 https://nodejs.org/en/download/ 
 
-## À travers un `Package Manager` ( `nvm` recommandé)
+## À travers un `Package Manager` ( [`nvm`](ttp://nvm.sh) recommandé)
 
 :pushpin: Windows
 
@@ -19,7 +19,7 @@ https://nodejs.org/en/download/
 
 
 ```
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 ## node
