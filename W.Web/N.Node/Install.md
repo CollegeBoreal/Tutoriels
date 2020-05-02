@@ -12,7 +12,7 @@ https://nodejs.org/en/download/
 :pushpin: Windows
 
 ```
-> choco install nvm
+PS > choco install nvm
 ```
 
 :pushpin: MacOS
@@ -20,7 +20,7 @@ https://nodejs.org/en/download/
 En fonction de ton environnement soit `bash` soit `zsh`
 
 ```
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+% curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 ```
 
 ## node
