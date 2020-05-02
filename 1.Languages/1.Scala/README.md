@@ -7,7 +7,7 @@
 * Installer dans le terminal
 
 ```
-$ curl -s "https://get.sdkman.io" | bash
+$ curl -s "https://get.sdkman.io" | zsh
 ```
 
 * ouvrir un autre terminal et verifier l'installation
