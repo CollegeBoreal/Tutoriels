@@ -1,7 +1,12 @@
 # :one: Scala
 
 
-## Installation de l'environnement de projet SBT (Simple Build Tool)
+## :o: Installer la JVM
+
+[J.JVM](../J.JVM)
+
+
+## :a: Installation de l'environnement de projet SBT (Simple Build Tool)
 
 * Installer dans le terminal
 
