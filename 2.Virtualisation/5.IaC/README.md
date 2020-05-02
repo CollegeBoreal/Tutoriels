@@ -11,6 +11,8 @@
 
 - [x] Git
 
+- [ ] [libcloud](https://libcloud.apache.org)
+
 # References
 
 https://a.aviatrix.com/learning/cloud-routing-networking/terraform-and-infrastructure-as-code/
