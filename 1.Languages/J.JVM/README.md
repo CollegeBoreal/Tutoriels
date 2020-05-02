@@ -4,10 +4,18 @@
 
 ## Installation de [sdkman](https://sdkman.io)
 
-* Installer dans le terminal
+:round_pushpin: Installer dans le terminal
+
+:computer: Sous Windows installer avec gitbash
 
 ```
-$ curl -s "https://get.sdkman.io" | zsh
+$ curl -s "https://get.sdkman.io" | bash
+```
+
+:apple: Sous Apple installer avec zsh
+
+```
+% curl -s "https://get.sdkman.io" | zsh
 ```
 
 * ouvrir un autre terminal et verifier l'installation
