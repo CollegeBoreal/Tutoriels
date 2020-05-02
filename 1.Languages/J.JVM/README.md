@@ -67,3 +67,10 @@ Do a straight copy of 7z.exe to zip.exe and voila
 ```
 $ cp /c/ProgramData/chocolatey/bin/7z.exe /c/ProgramData/chocolatey/bin/zip.exe
 ```
+
+
+## :bulb: Lancer Gitbash sous PowerShell
+
+```
+PS > & 'C:\Program Files\Git\git-bash.exe'
+```
