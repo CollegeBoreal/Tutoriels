@@ -2,7 +2,7 @@
 
 ![image](images/HelloWorld.png)
 
-## Installation de [sdkman](https://sdkman.io)
+## :o: Installation de [sdkman](https://sdkman.io)
 
 :round_pushpin: Installer dans le terminal
 
@@ -27,7 +27,7 @@ SDKMAN 5.7.3+337
 ```
 
 
-## Installation de la machine virtuelle java
+## :a: Installation de la machine virtuelle java
 
 * Installer dans le terminal
 
