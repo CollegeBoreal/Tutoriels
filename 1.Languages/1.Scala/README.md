@@ -26,7 +26,7 @@ sbt script version: 1.3.3
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
 
 
-## Installation de Scala Interface en Ligne de Commandes (CLI)
+## :b: Installation de Scala Interface en Ligne de Commandes (CLI)
 
 * Installer dans le terminal
 
