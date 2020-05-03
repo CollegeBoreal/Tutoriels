@@ -33,8 +33,8 @@ $ lein repl
 * Pour tester l'installation
 
 ```
-$ scala --version
-Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
+user=> (+ 1 2)
+3
 ```
 
 
