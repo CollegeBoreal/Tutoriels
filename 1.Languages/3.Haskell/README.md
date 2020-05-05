@@ -38,3 +38,5 @@ http://book.realworldhaskell.org/read/
 https://mmhaskell.com/
 
 https://github.com/thma/WhyHaskellMatters
+
+http://okmij.org/ftp/README.html
