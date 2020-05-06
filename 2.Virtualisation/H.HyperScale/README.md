@@ -30,3 +30,5 @@ https://www.datacenterknowledge.com/cloud/analysts-there-are-now-more-500-hypers
 https://en.wikipedia.org/wiki/File:SDN-architecture-overview-transparent.png
 
 https://upload.wikimedia.org/wikipedia/commons/0/05/SANvsNAS.svg
+
+https://www.infoworld.com/article/3321176/14-ways-aws-beats-microsoft-azure-and-google-cloud.html
