@@ -10,7 +10,7 @@ Fondé en `1993`, CANARIE est une société sans but lucratif principalement fin
 Recherche, collaboration et innovation. Toujours.
 
 ## Mission
-CANARIE conçoit et met en place l’infrastructure numérique qui sous-tend les milieux de la recherche, de l’éducation et de l’innovation, et en pilote l’adoption.
+CANARIE conçoit et met en place l’infrastructure numérique qui sous-tend les milieux de la recherche, de l’`éducation` et de l’innovation, et en pilote l’adoption.
 
 ## Raison d’être
 Faire progresser l’infrastructure canadienne du savoir et de l’innovation.
