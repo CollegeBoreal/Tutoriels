@@ -29,16 +29,14 @@ Le nouveau Canada DRI (Digital Research Infrastructure)
  
 Ceci permettra, plus facilement, au Collège d’identifier et de soumissionner sur de projets informatiques en fonction des divers domaines variés que nos programmes offrent, du réseau au nuage en passant par les données et les applications; une source intarissable de financement nous permettant de pallier à nos problèmes de ressources actuels.
  
-À titre d’exemple, l’ancienne structure d’applications (CFI Canada Foundation Innovation) a attribué les montants aux Collèges ci-dessous
+À titre d’exemple, l’ancienne structure d’applications (CFI Canada Foundation Innovation) a attribué les montants aux Collèges ci-dessous:
+
 https://www.innovation.ca/funded-projects
 
 | Collège            | Financement|
 |--------------------|------------|
 | La Cité collégiale | $2,388,382 |
 | Sault College.     | $1,532,535 |
-
- 
- 
 
  
 https://www.engagedri.ca/membership/associate-members/
