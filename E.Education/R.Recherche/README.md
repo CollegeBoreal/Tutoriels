@@ -17,6 +17,11 @@ CANARIE conçoit et met en place l’infrastructure numérique qui sous-tend les
 #### Raison d’être
 Faire progresser l’infrastructure canadienne du savoir et de l’innovation.
 
+https://bgp.he.net/AS33389
+
+https://bgpview.io/prefix/199.212.45.0/24#whois
+
+
 ## :b:  NOIRN
 
 L’infrastructure de recherche au Canada est en train de changer. Elle s’appelle NOIRN (Nouvelle Organisation de l’Infrastructure de Recherche Numérique).
