@@ -79,8 +79,18 @@ $ nvm use --lts
 Now using node v12.16.3 (npm v6.14.4)
 ```
 
+### :gear: .zshrc
+
+
+```zsh
+export NVM_DIR="/Users/zaro/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+```
+
 # References
 
 https://medium.com/@tertiumnon/install-nvm-on-windows-fd5008ab5a71
 
 https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/
+
+http://broken-by.me/lazy-load-nvm/
