@@ -7,6 +7,8 @@
     Traditional SRE saying
 
 
+![image](images/SRE-Skills.png)
+
 ## oAuth2
 
 https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
