@@ -1,4 +1,4 @@
-# Securite
+# Secure and Reliable Systems (SRE)
 
 
 
