@@ -1,5 +1,4 @@
-# Site Reliability Engineer (SRE)
-
+# S. Site Reliability Engineer (SRE)
 
 
     Hope is not a strategy.
@@ -7,9 +6,13 @@
     Traditional SRE saying
 
 
+[Salaires](https://www.payscale.com/research/US/Job=Site_Reliability_Engineer_(SRE)/Salary)
+
 <img src="images/SRE-Skills.png" width=323 height=597></img>
 
-## oAuth2
+## :a: Security
+
+#### oAuth2
 
 https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
 
@@ -19,7 +22,6 @@ https://medium.com/@adriencrovetto/create-an-oauth2-provider-with-play-and-scala
 https://github.com/epot/play-silhouette-angular-typescript.g8
 
 
-https://www.payscale.com/research/US/Job=Site_Reliability_Engineer_(SRE)/Salary
 
 
 
