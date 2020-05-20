@@ -1,4 +1,4 @@
-# Secure and Reliable Systems (SRE)
+# Site Reliability Engineer (SRE)
 
 
 
@@ -15,6 +15,11 @@ https://medium.com/@adriencrovetto/create-an-oauth2-provider-with-play-and-scala
 
 
 https://github.com/epot/play-silhouette-angular-typescript.g8
+
+
+https://www.payscale.com/research/US/Job=Site_Reliability_Engineer_(SRE)/Salary
+
+
 
 # Reference
 
