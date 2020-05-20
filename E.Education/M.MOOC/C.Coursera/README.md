@@ -2,7 +2,7 @@
 
 Coursera For Campus
 
-https://www.coursera.org/programs/college-boral-on-coursera-yfoyc
+https://www.coursera.org/programs/college-boreal-on-coursera-wemml
 
 ### Available Course with Certificate
 
@@ -18,3 +18,5 @@ https://www.coursera.org/professional-certificates/google-it-automation
 # Reference
 
 https://www.coursera.org/o/c4c-college-boral/admin/home
+
+https://rhyme.com/c/how-to-use-rhyme/10213
