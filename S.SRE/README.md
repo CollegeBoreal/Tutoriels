@@ -7,7 +7,7 @@
     Traditional SRE saying
 
 
-![image](images/SRE-Skills.png)
+<img src="images/SRE-Skills.png" width=646 height=1194></img>
 
 ## oAuth2
 
