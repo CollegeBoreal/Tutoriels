@@ -8,3 +8,9 @@ https://medium.com/@adriencrovetto/create-an-oauth2-provider-with-play-and-scala
 
 
 https://github.com/epot/play-silhouette-angular-typescript.g8
+
+# Reference
+
+https://landing.google.com/sre/books/
+
+
