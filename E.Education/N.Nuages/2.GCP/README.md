@@ -15,5 +15,7 @@ https://medium.com/@sathishvj/writing-and-passing-the-google-cloud-associate-eng
 
 https://github.com/sathishvj/awesome-gcp-certifications
 
+https://gcpfellow.com/2020/03/14/getting-all-the-10-10-gcp-certificates-how-do-i-start-part-1-x/
+
 
 
