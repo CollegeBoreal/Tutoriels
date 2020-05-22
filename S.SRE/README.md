@@ -21,6 +21,9 @@ https://medium.com/@adriencrovetto/create-an-oauth2-provider-with-play-and-scala
 
 https://github.com/epot/play-silhouette-angular-typescript.g8
 
+#### Quic
+
+https://www.chromium.org/quic
 
 
 
