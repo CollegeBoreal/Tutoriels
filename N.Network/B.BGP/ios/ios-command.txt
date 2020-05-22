@@ -1,0 +1,68 @@
+!conf bgp router internet
+
+enable
+conf t
+hostname internet
+int s0/1/1
+ip address 209.165.20.1 255.255.255.252
+no sh
+exit
+int s0/1/0
+ip address 209.165.10.1 255.255.255.252
+no sh
+exit
+do wr
+router BGP 300
+network 209.165.10.0 mask 255.255.255.252
+network 209.165.20.0 mask 255.255.255.252
+neighbor 209.165.10.2 remote-as 100
+neighbor 209.165.20.2 remote-as 200
+do wr
+end
+show ip bgp summary
+
+!conf bgp router 1
+
+enable
+conf t
+int s0/1/0
+ip address 209.165.10.2 255.255.255.252
+no sh
+exit
+int g0/0
+ip address 192.168.10.254 255.255.255.0
+no sh
+exit
+do wr
+router BGP 100
+network 209.165.10.0 mask 255.255.255.252
+network 192.168.10.0 mask 255.255.255.0
+neighbor 209.165.10.1 remote-as 300
+do wr
+end
+show ip bgp summary
+
+!conf bgp router 2
+
+enable
+conf t
+int s0/1/0
+ip address 209.165.20.2 255.255.255.252
+no sh
+exit
+int g0/0
+ip address 192.168.20.254 255.255.255.0
+no sh
+exit
+do wr
+router BGP 200
+network 209.165.20.0 mask 255.255.255.252
+network 192.168.20.0 mask 255.255.255.0
+neighbor 209.165.20.1 remote-as 300
+do wr
+end
+show ip bgp summary
+
+
+
+
