@@ -17,6 +17,8 @@ https://www.peeringdb.com/asn/15169 (Google)
 
 https://peering.google.com/#/options/peering
 
+https://cloud.google.com/interconnect/docs/how-to/carrier-peering#service_providers
+
 
 # Reference
 
