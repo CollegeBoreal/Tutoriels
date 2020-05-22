@@ -10,6 +10,9 @@ Cependant  une entreprise qui serait connecte de façon redondante a plusieurs F
 
 Outre internet ,des réseaux IP prives peuvent utiliser BGP, par exemple pour interconnecter des réseaux locaux utilisant OSPF.
 
+## Schema
+
+![image](../images/BGP.png)
 
 ### Les commandes de base pour config BGP
 
