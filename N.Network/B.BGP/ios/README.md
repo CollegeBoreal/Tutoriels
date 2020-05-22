@@ -41,3 +41,9 @@ clear  ip bgp <ASN>
 clear  ip bgp <@IP>
 ```
 
+# References
+
+CCNP BGP Part1
+
+https://www.youtube.com/watch?v=WcnNQS1hgqk
+
