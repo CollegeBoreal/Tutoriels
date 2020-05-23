@@ -13,8 +13,8 @@ Create an empty text file called main.tf in an empty folder.
 - [ ] Step :two:: Initialize the aws Provider
 Add the following code to configure the AWS provider:
 
-```bash
-cat <<EOF >> main.tf
+```zsh
+% cat <<EOF >> main.tf
 provider "aws" 
 {
   	access_key = "Your AWS Access Key"
