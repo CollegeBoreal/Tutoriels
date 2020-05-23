@@ -1,7 +1,6 @@
 # Create the mynetwork network
 resource "google_compute_network" "mynetwork" {
   name                    = "mynetwork"
-  project                 = "qwiklabs-gcp-04-58acf6ab89fb"
   auto_create_subnetworks = true
 }
 
