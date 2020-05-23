@@ -5,11 +5,11 @@ Dans les recentes années, la venue des gros fournisseurs d'architecture info-mu
 Pour passer d'une infrastructure (vendeur) à une autre, des vendeurs d'outils sont apparu. Voici les plus connus:
 
 
-- [ ] [Terraform](https://www.hashicorp.com/products/terraform)
+- [ ] [Ansible](1.Ansible)
+
+- [ ] [Terraform](2.Terraform)
 
 - [ ] [Packer](https://packer.io/)
-
-- [ ] [Ansible](1.Ansible)
 
 - [ ] Jenkins
 
