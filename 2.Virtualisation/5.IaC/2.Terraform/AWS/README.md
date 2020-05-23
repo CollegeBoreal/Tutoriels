@@ -15,11 +15,10 @@ Add the following code to configure the AWS provider:
 
 ```zsh
 % cat <<EOF >> main.tf
-provider "aws" 
-{
-  	access_key = "Your AWS Access Key"
-  	secret_key = "Your AWS Secret Key"
-	region=”us-east-1”
+provider "aws" {
+        access_key="AKIA-------------SMQ"
+        secret_key="d8-------------Lcl-------------sD-----ei"
+        region="us-east-1"
 }
 EOF
 
@@ -27,10 +26,9 @@ EOF
 
 ```zsh
 % cat <<EOF >> main.tf
-resource "aws_vpc" "vpc_name" 
-{
-	cidr_block="190.168.0.0/16"
-	instance_tenancy="default"
+resource "aws_vpc" "vpc_name" {
+        cidr_block="192.168.0.0/16"
+        instance_tenancy="default"
 }
 EOF
 ```
