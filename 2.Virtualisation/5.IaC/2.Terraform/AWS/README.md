@@ -47,3 +47,17 @@ EOF
 ```zsh
 %  terraform apply
 ```
+
+```powershell
+PS > > New-Item -ItemType file main.tf
+```
+
+```powershell
+ @'
+provider "aws" {
+        access_key="AKIA-------------SMQ"
+        secret_key="d8-------------Lcl-------------sD-----ei"
+        region="us-east-1"
+}
+'@ >> main.tf
+```
