@@ -49,15 +49,24 @@ EOF
 ```
 
 ```powershell
-PS > > New-Item -ItemType file main.tf
+PS > New-Item -ItemType file main.tf
 ```
 
 ```powershell
- @'
+PS > @"
 provider "aws" {
         access_key="AKIA-------------SMQ"
         secret_key="d8-------------Lcl-------------sD-----ei"
         region="us-east-1"
 }
-'@ >> main.tf
+"@ >> main.tf
+```
+
+```powershell
+PS > @"
+resource "aws_vpc" "vpc_name" {
+        cidr_block="192.168.0.0/16"
+        instance_tenancy="default"
+}
+"@ >> main.tf
 ```
