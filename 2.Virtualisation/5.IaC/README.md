@@ -5,9 +5,11 @@ Dans les recentes années, la venue des gros fournisseurs d'architecture info-mu
 Pour passer d'une infrastructure (vendeur) à une autre, des vendeurs d'outils sont apparu. Voici les plus connus:
 
 
-- [ ] [Ansible](1.Ansible)
+- [ ] [1.Ansible](1.Ansible)
 
-- [ ] [Terraform](2.Terraform)
+- [ ] [2.Terraform](2.Terraform)
+
+- [ ] [3.libcloud]()
 
 - [ ] [Packer](https://packer.io/)
 
@@ -15,7 +17,6 @@ Pour passer d'une infrastructure (vendeur) à une autre, des vendeurs d'outils s
 
 - [x] Git
 
-- [ ] [libcloud](https://libcloud.apache.org)
 
 # References
 
