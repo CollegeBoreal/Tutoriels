@@ -22,3 +22,15 @@ provider "aws"
 	region=”us-east-1”
 }
 EOF
+
+- [ ] Step :three:: Define an aws_vpc Resource
+
+```zsh
+% cat <<EOF >> main.tf
+resource "aws_vpc" "vpc_name" 
+{
+	cidr_block="190.168.0.0/16"
+	instance_tenancy="default"
+}
+EOF
+```

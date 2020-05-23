@@ -39,3 +39,7 @@ jspm_packages
 # IDE
 .idea
 .DS_Store
+
+# Terraform temp files and plugin folders
+*~
+*terraform*
