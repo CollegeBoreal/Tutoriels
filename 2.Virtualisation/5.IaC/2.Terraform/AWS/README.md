@@ -21,6 +21,7 @@ provider "aws" {
         region="us-east-1"
 }
 EOF
+```
 
 - [ ] Step :three:: Define an aws_vpc Resource
 
@@ -31,4 +32,18 @@ resource "aws_vpc" "vpc_name" {
         instance_tenancy="default"
 }
 EOF
+```
+
+- [ ] Step :four:: Execute Terraform Configuration file
+
+```zsh
+% terraform init
+```
+
+```zsh
+% terraform plan
+```
+
+```zsh
+%  terraform apply
 ```
