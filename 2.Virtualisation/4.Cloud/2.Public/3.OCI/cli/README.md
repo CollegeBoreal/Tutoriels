@@ -93,6 +93,27 @@ Config written to /Users/b300098957/.oci/config
 
 ```
 
+Quick Test:
+
+```
+$ oci iam availability-domain list
+```
+Response
+
+```
+{
+  "data": [
+    {
+      "compartment-id": "ocid1.tenancy.oc1..biglongID",
+      "id": "ocid1.availabilitydomain.oc1..biglongID",
+      "name": "Nbww:CA-TORONTO-1-AD-1"
+    }
+  ]
+}
+```
+
+
+
 
 https://oracle.com/cloud/sign-in.html
 
