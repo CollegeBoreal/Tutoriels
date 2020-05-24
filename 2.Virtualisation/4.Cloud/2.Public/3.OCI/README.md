@@ -33,6 +33,16 @@ What optional CLI packages would you like to be installed (comma separated names
 
 ```
 
+Set `.zshrc` file
+
+```
+# Oracle OCI PATH
+export OCI_HOME=~/.oci
+export PATH="$OCI_HOME/bin":$PATH
+[[ -e "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
+```
+
+
 https://github.com/oracle/oci-cli
 
 https://technology.amis.nl/2020/02/06/run-always-free-docker-container-on-oracle-cloud-infrastructure/
