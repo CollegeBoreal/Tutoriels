@@ -77,7 +77,7 @@ Enter a name for your key [oci_api_key]:
 Public key written to: /Users/b300098957/.oci/oci_api_key_public.pem
 Enter a passphrase for your private key (empty for no passphrase): 
 Private key written to: /Users/b300098957/.oci/oci_api_key.pem
-Fingerprint: c7:c9:a9:79:28:75:a0:9b:ef:7a:e3:6e:cc:ad:d9:e7
+Fingerprint: c7:c9:xx:xx:xx:xx:xx:xx:d9:e7
 Config written to /Users/b300098957/.oci/config
 
 
