@@ -3,7 +3,7 @@
 
 ## CLI
 
-Install [CLI](CLI)
+Install [CLI](cli)
 
 
 
