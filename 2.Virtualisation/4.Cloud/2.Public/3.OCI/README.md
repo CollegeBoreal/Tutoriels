@@ -3,6 +3,8 @@
 
 ## CLI
 
+Install [CLI](CLI)
+
 
 
 
