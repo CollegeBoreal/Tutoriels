@@ -47,6 +47,51 @@ export PATH="$OCI_HOME/bin":$PATH
 ```
 
 
+```
+% oci setup config
+    This command provides a walkthrough of creating a valid CLI config file.
+
+    The following links explain where to find the information required by this
+    script:
+
+    User API Signing Key, OCID and Tenancy OCID:
+
+        https://docs.cloud.oracle.com/Content/API/Concepts/apisigningkey.htm#Other
+
+    Region:
+
+        https://docs.cloud.oracle.com/Content/General/Concepts/regions.htm
+
+    General config documentation:
+
+        https://docs.cloud.oracle.com/Content/API/Concepts/sdkconfig.htm
+
+
+Enter a location for your config [/Users/b300098957/.oci/config]: 
+Enter a user OCID: ocid1.user.oc1..aaaa-----------------------------------------------4hjfq
+Enter a tenancy OCID: ocid1.tenancy.oc1..aaaa------------------------------------------------vpla
+Enter a region (e.g. ap-hyderabad-1, ap-melbourne-1, ap-mumbai-1, ap-osaka-1, ap-seoul-1, ap-sydney-1, ap-tokyo-1, ca-montreal-1, ca-toronto-1, eu-amsterdam-1, eu-frankfurt-1, eu-zurich-1, me-jeddah-1, sa-saopaulo-1, uk-gov-london-1, uk-london-1, us-ashburn-1, us-gov-ashburn-1, us-gov-chicago-1, us-gov-phoenix-1, us-langley-1, us-luke-1, us-phoenix-1): ca-toronto-1
+Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y/n]: Y
+Enter a directory for your keys to be created [/Users/b300098957/.oci]: 
+Enter a name for your key [oci_api_key]: 
+Public key written to: /Users/b300098957/.oci/oci_api_key_public.pem
+Enter a passphrase for your private key (empty for no passphrase): 
+Private key written to: /Users/b300098957/.oci/oci_api_key.pem
+Fingerprint: c7:c9:a9:79:28:75:a0:9b:ef:7a:e3:6e:cc:ad:d9:e7
+Config written to /Users/b300098957/.oci/config
+
+
+    If you haven't already uploaded your API Signing public key through the
+    console, follow the instructions on the page linked below in the section
+    'How to upload the public key':
+
+        https://docs.cloud.oracle.com/Content/API/Concepts/apisigningkey.htm#How2
+
+```
+
+
+https://oracle.com/cloud/sign-in.html
+
 https://github.com/oracle/oci-cli
 
 https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm
