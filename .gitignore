@@ -41,5 +41,5 @@ jspm_packages
 .DS_Store
 
 # Terraform temp files and plugin folders
-*~
-*terraform*
+.terraform
+terraform*
