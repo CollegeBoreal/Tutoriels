@@ -122,3 +122,5 @@ https://github.com/oracle/oci-cli
 https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm
 
 https://learncodeshare.net/2020/03/06/install-and-configure-the-oracle-cloud-command-line-interface/
+
+https://medium.com/@thiago_lemos/install-oci-cli-quick-setp-by-step-guide-ea0283e925d0
