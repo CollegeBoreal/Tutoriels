@@ -46,6 +46,10 @@ export PATH="$OCI_HOME/bin":$PATH
 [[ -e "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
 ```
 
+https://console.ca-toronto-1.oraclecloud.com/
+
+Take all the below info from the console i.e. OCID and Tenancy OCID:
+
 
 ```
 % oci setup config
