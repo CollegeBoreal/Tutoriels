@@ -19,4 +19,6 @@ PS > choco install terraform
 
 ## :a: Examples
 
-[AWS](AWS)
+[A.AWS](A.AWS)
+
+[G.GCP](G.GCP)
