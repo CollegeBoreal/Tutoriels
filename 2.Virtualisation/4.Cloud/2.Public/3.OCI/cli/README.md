@@ -1,5 +1,17 @@
 # OCI CLI
 
+Mac / Linux
+
+```
+bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+```
+
+Windows
+
+```
+$ powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.gi
+```
+
 ```
 ===> In what directory would you like to place the install? (leave blank to use '/Users/b300098957/lib/oracle-cli'): ~/.oci/lib/oracle-cli
 -- Creating directory '/Users/b300098957/.oci/lib/oracle-cli'.
