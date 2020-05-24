@@ -19,6 +19,18 @@
 
 ===> Currently supported optional packages are: ['db (will install cx_Oracle)']
 What optional CLI packages would you like to be installed (comma separated names; press enter if you don't need any optional packages)?: 
+
+...
+
+===> Modify profile to update your $PATH and enable shell/tab completion now? (Y/n): Y
+
+===> Enter a path to an rc file to update (leave blank to use '/Users/my-user/.bash_profile'): ~/.zshrc
+-- Backed up '/Users/b300098957/.zshrc' to '/Users/my-user/.zshrc.backup'
+-- Tab completion set up complete.
+-- If tab completion is not activated, verify that '/Users/my-user/.zshrc' is sourced by your shell.
+
+
+
 ```
 
 https://github.com/oracle/oci-cli
