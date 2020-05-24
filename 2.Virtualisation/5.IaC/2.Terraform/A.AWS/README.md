@@ -27,8 +27,9 @@ EOF
 ```zsh
 % cat <<EOF >> main.tf
 resource "aws_vpc" "vpc_name" {
-        cidr_block="192.168.0.0/16"
-        instance_tenancy="default"
+   count=2
+   cidr_block="192.168.0.0/16"
+   instance_tenancy="default"
 }
 EOF
 ```
@@ -45,5 +46,9 @@ EOF
 
 ```zsh
 %  terraform apply
+```
+
+```zsh
+%  terraform destroy
 ```
 
