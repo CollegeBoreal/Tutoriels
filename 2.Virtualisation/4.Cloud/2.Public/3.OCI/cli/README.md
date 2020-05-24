@@ -48,3 +48,5 @@ export PATH="$OCI_HOME/bin":$PATH
 
 
 https://github.com/oracle/oci-cli
+
+https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm
