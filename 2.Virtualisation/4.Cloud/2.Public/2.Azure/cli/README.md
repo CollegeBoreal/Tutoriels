@@ -8,7 +8,7 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 :pushpin: Windows
 
 ```
-PS > choco install awscli
+PS > choco install azure-cli
 ```
 
 :pushpin: MacOS
