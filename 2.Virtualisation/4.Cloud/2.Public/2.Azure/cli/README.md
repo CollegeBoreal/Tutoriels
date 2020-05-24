@@ -14,7 +14,7 @@ PS > choco install awscli
 :pushpin: MacOS
 
 ```
-% brew install awscli
+% brew install azure-cli
 ```
 
 ## :a: Connexion à Azure
