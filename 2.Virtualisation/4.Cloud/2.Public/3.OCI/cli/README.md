@@ -120,3 +120,5 @@ https://oracle.com/cloud/sign-in.html
 https://github.com/oracle/oci-cli
 
 https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm
+
+https://learncodeshare.net/2020/03/06/install-and-configure-the-oracle-cloud-command-line-interface/
