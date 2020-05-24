@@ -6,12 +6,7 @@ Mac / Linux
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 ```
 
-Windows
-
-```
-PS > Set-ExecutionPolicy Bypass -Scope Process -Force; `
-     iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))
-```
+When installing, follow the below
 
 ```
 ===> In what directory would you like to place the install? (leave blank to use '/Users/b300098957/lib/oracle-cli'): ~/.oci/lib/oracle-cli
