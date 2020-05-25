@@ -11,42 +11,58 @@ $ brew install certbot
 ```
 
 
-:bulb: WildCard
-
-      --server https://acme-v02.api.letsencrypt.org/directory \
+## :bulb: WildCard
 
 ```
-% certbot certonly \
+% sudo certbot certonly \
       --manual \
       --agree-tos \
       --preferred-challenges dns \
-      --email 300098957@collegeboreal.ca \
-      --manual-public-ip-logging-ok -d '*.boreal.codes' \
-      -d boreal.codes
+      --email me@mydomain.com \
+      --manual-public-ip-logging-ok -d '*.mydomain.com' \
+      -d mydomain.com
+```
+Response
+```
+Password:
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator manual, Installer None
+Obtaining a new certificate
+Performing the following challenges:
+dns-01 challenge for mydomain.com
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please deploy a DNS TXT record under the name
+_acme-challenge.mydomain.com with the following value:
+
+MyBJe-----------------------------------o8KfGTD
+
+Before continuing, verify the record is deployed.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Press Enter to Continue
+Waiting for verification...
+Cleaning up challenges
+
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/mydomain.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/mydomain.com/privkey.pem
+   Your cert will expire on 2020-08-23. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot
+   again. To non-interactively renew *all* of your certificates, run
+   "certbot renew"
+ - If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
 ```
 
 
 # References
 
-```
-Please read the Terms of Service at
-https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
-agree in order to register with the ACME server at
-https://acme-v02.api.letsencrypt.org/directory
-```
-
-
-```
-% certbot-auto certonly \
-     --manual \
-     --preferred-challenges=dns \
-     --email 300098957@collegeboreal.ca \ 
-     --server https://acme-v02.api.letsencrypt.org/directory \
-     --agree-tos \
-     -d *.boreal.codes
-```
-
-
 https://www.macstrategy.com/article.php?211#install_letsencrypt
+
+https://dev.to/nabbisen/let-s-encrypt-wildcard-certificate-with-certbot-plo (worked)
 
 https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
