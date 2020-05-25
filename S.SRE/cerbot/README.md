@@ -11,6 +11,21 @@ $ brew install certbot
 ```
 
 
+:bulb: WildCard
+
+      --server https://acme-v02.api.letsencrypt.org/directory \
+
+```
+% certbot certonly \
+      --manual \
+      --agree-tos \
+      --preferred-challenges dns \
+      --email 300098957@collegeboreal.ca \
+      --manual-public-ip-logging-ok -d '*.boreal.codes' \
+      -d boreal.codes
+```
+
+
 # References
 
 ```
