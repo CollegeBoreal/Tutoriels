@@ -11,7 +11,7 @@ $ brew install certbot
 ```
 
 
-## :bulb: WildCard
+## :a: WildCard
 
 ```
 % sudo certbot certonly \
@@ -56,6 +56,27 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
+```
+
+## :b: cross verify certificate
+
+```
+% sudo certbot certificates
+```
+Response
+```
+Password:
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Found the following certs:
+  Certificate Name: mydomain.com
+    Serial Number: 3490c099214099d090f90293099a0934
+    Domains: *.mydomain.com mydomain.com
+    Expiry Date: 2020-08-23 16:10:25+00:00 (VALID: 89 days)
+    Certificate Path: /etc/letsencrypt/live/mydomain.com/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/mydomain.com/privkey.pem
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 
 
