@@ -87,3 +87,5 @@ https://www.macstrategy.com/article.php?211#install_letsencrypt
 https://dev.to/nabbisen/let-s-encrypt-wildcard-certificate-with-certbot-plo (worked)
 
 https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
+
+https://www.nyquest.com/showpage/using-lets-encrypt-wildcard
