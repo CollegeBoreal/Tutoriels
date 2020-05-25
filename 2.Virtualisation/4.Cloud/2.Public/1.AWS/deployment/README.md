@@ -17,10 +17,10 @@ $ docker-machine create --driver amazonec2  \
 
 :pushpin: Avec une instance plus large - :heavy_dollar_sign::heavy_dollar_sign:
 ```
-$ docker-machine create --driver amazonec2  \ 
+$ docker-machine create --driver amazonec2 \
                         --amazonec2-instance-type t2.small \
                         --amazonec2-security-group default \
-                        cb-dev
+                        blog.mydomain.com
 ```
 
 :pushpin: Avec un sous-réseau
