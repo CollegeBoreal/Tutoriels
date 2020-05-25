@@ -33,3 +33,5 @@ https://acme-v02.api.letsencrypt.org/directory
 
 
 https://www.macstrategy.com/article.php?211#install_letsencrypt
+
+https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
