@@ -30,3 +30,6 @@ https://acme-v02.api.letsencrypt.org/directory
      --agree-tos \
      -d *.boreal.codes
 ```
+
+
+https://www.macstrategy.com/article.php?211#install_letsencrypt
