@@ -5,3 +5,5 @@ https://sunlightmedia.org/bash-vs-zsh/
 https://wilsonmar.github.io/zsh/
 
 https://github.com/sharkdp/shell-functools
+
+http://www.zsh.org/mla/users/2008/msg00566.html
