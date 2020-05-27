@@ -30,6 +30,22 @@ Scan for additional .ini files in: (none)
 Additional .ini files parsed:      (none)
 ```
 
+## :bulb: php-fpm
+
+Config
+
+```
+% sudo vi /etc/php/7.2/fpm/pool.d/www.conf 
+```
+
+```
+$ ss -tapn
+State           Recv-Q                Send-Q                 Local Address:Port                   Peer Address:Port       
+...
+LISTEN           0                     128                             *:9000                               *:*      
+LISTEN           0                     128                          [::]:22                              [::]:*  
+```
+
 # References
 
 https://vyspiansky.github.io/2018/11/08/set-up-php-7.2-on-macos-mojave-with-homebrew/
