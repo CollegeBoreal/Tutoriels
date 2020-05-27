@@ -43,6 +43,10 @@ listen = 9000
 ```
 
 ```
+% sudo systemctl restart php7.2-fpm.service
+```
+
+```
 $ ss -tapn
 State           Recv-Q                Send-Q                 Local Address:Port                   Peer Address:Port       
 ...
