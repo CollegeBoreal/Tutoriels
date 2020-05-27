@@ -30,7 +30,9 @@ Scan for additional .ini files in: (none)
 Additional .ini files parsed:      (none)
 ```
 
-## :bulb: php-fpm
+## :o: Configuration
+
+## :one: php-fpm on Linux
 
 Config
 
@@ -52,6 +54,18 @@ State           Recv-Q            Send-Q                 Local Address:Port     
 ...
 LISTEN           0                 128                             *:9000                           *:*      
 LISTEN           0                 128                          [::]:22                          [::]:*  
+```
+
+
+## :two: php-fpm on Docker
+
+```
+% ls -l /usr/local/etc/php-fpm.d
+total 48
+-rw-r--r-- 1 root root   357 May 15 13:35 docker.conf
+-rw-r--r-- 1 root root 19624 May 15 13:35 www.conf
+-rw-r--r-- 1 root root 19624 May 15 13:34 www.conf.default
+-rw-r--r-- 1 root root    45 May 15 13:35 zz-docker.conf
 ```
 
 # References
