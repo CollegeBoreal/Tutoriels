@@ -48,10 +48,10 @@ listen = 9000
 
 ```
 $ ss -tapn
-State           Recv-Q            Send-Q                 Local Address:Port                   Peer Address:Port       
+State           Recv-Q            Send-Q                 Local Address:Port               Peer Address:Port       
 ...
-LISTEN           0                 128                             *:9000                               *:*      
-LISTEN           0                 128                          [::]:22                              [::]:*  
+LISTEN           0                 128                             *:9000                           *:*      
+LISTEN           0                 128                          [::]:22                          [::]:*  
 ```
 
 # References
