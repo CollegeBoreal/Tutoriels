@@ -33,3 +33,5 @@ Additional .ini files parsed:      (none)
 # References
 
 https://vyspiansky.github.io/2018/11/08/set-up-php-7.2-on-macos-mojave-with-homebrew/
+
+https://getgrav.org/blog/macos-catalina-apache-multiple-php-versions
