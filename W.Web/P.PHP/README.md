@@ -36,6 +36,10 @@ Config
 
 ```
 % sudo vi /etc/php/7.2/fpm/pool.d/www.conf 
+...
+; Note: This value is mandatory.
+;listen = /run/php/php7.2-fpm.sock
+listen = 9000
 ```
 
 ```
