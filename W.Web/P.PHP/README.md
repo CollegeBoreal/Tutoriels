@@ -68,6 +68,11 @@ total 48
 -rw-r--r-- 1 root root    45 May 15 13:35 zz-docker.conf
 ```
 
+```
+# cat /usr/local/etc/php-fpm.d/www.conf | grep "listen ="
+listen = 127.0.0.1:9000
+```
+
 # References
 
 https://vyspiansky.github.io/2018/11/08/set-up-php-7.2-on-macos-mojave-with-homebrew/
