@@ -82,3 +82,6 @@ https://getgrav.org/blog/macos-catalina-apache-multiple-php-versions
 https://getcomposer.org/
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+
+https://blog.joshwalsh.me/docker-nginx-php-fpm/#docker-nginx-for-php-fpm
+
