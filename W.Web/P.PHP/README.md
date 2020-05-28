@@ -85,3 +85,4 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysq
 
 https://blog.joshwalsh.me/docker-nginx-php-fpm/#docker-nginx-for-php-fpm
 
+https://www.tecmint.com/enable-monitor-php-fpm-status-in-nginx/
