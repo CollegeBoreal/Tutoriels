@@ -80,3 +80,5 @@ https://vyspiansky.github.io/2018/11/08/set-up-php-7.2-on-macos-mojave-with-home
 https://getgrav.org/blog/macos-catalina-apache-multiple-php-versions
 
 https://getcomposer.org/
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
