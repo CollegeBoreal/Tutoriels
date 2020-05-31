@@ -2,7 +2,7 @@
 
 ## :o: Installation
 
-[Installer](install.md) `Haskell`
+[Installer `Haskell`](install.md) 
 
 ## :a: Utilisation
 
