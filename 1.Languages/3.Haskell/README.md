@@ -2,7 +2,9 @@
 
 ## :o: Installation
 
-## [a] Utilisation
+[installation] de Haskell
+
+## :a: Utilisation
 
 ```
 $ ghci
