@@ -14,7 +14,7 @@ PS > choco install ghc haskell-stack
 $ brew install ghc cabal-install haskell-stack
 ```
   
-:strawberry: Linux
+:strawberry: :penguin: Linux
 
 ```
 $ sudo apt-get install haskell-platform
