@@ -32,3 +32,13 @@ Install scala
 $ curl --insecure https://downloads.lightbend.com/scala/2.13.2/scala-2.13.2.deb --output scala-2.13.2.deb
 $ sudo dpkg -i scala-2.13.2.deb 
 ```
+
+
+```
+$ sbt new scala-native/scala-native.g8
+$ sbt run
+```
+
+warning: shift count >= width of type [-Wshift-count-overflow]
+[error]         chunkSize = chunkSize > MAX_BLOCK_SIZE ? MAX_BLOCK_SIZE : chunkSize;
+  
