@@ -13,6 +13,12 @@ PS > choco install ghc haskell-stack
 ```
 $ brew install ghc cabal-install haskell-stack
 ```
+  
+:raspberry: Linux
+
+```
+$ sudo apt-get install haskell-platform
+```
 
 
 ## :ab: Manual Install
