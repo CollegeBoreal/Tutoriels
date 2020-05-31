@@ -1,5 +1,16 @@
 # Haskell
 
+## :o: Installation
+
+## [a] Utilisation
+
+```
+$ ghci
+```
+
+```
+Prelude> :set prompt "ghci> "
+```
 
 # References
 
