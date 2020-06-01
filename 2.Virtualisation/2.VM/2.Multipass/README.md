@@ -13,6 +13,15 @@ PS> choco install multipass
 ```
 
 
+:x: Versions 
+
+```
+ERROR: Hyper-V requires Windows 10 Pro/Enterprise with a build version > 17134
+The install of multipass was NOT successful.
+Error while running 'C:\ProgramData\chocolatey\lib\multipass\tools\chocolateyinstall.ps1'.
+ See log for details.
+```
+
 :warning: https://github.com/CanonicalLtd/multipass/issues/826
 
 :pushpin: MacOS
