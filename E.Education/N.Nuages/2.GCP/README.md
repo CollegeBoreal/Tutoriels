@@ -7,6 +7,7 @@
 |-----------------------------------------------------|------------------------------------------------------------------|
 | [GCP Free Tier](https://cloud.google.com/free)      | For all, $300 Credit to be spent in 12 month time                |
 | [GCP Education Grant](https://cloud.google.com/edu) | [Google For Education](https://edu.google.com/programs) Grants   |
+| [GCP Training](https://cloud.google.com/training)   | [GCP Data Analyst sur Github](https://github.com/GoogleCloudPlatform/training-data-analyst) |
 
 
 ## :bulb: Certifications
