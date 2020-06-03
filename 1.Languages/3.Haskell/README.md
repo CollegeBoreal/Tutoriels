@@ -38,3 +38,5 @@ https://github.com/ppelleti/hs-wiringPi
 https://github.com/thma/WhyHaskellMatters
 
 http://okmij.org/ftp/README.html
+
+https://www.simplehaskell.org/
