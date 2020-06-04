@@ -10,7 +10,9 @@
 
 [IDE](IDE.md)
 
+## :three: La programmation Fonctionnelle sous Python
 
+[FP](FP.md)
 
 # References:
 
