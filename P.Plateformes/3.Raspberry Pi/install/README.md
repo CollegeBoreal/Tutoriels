@@ -14,6 +14,15 @@ For the official Raspberry Pi OS, if you need to manually log in, the default us
 
 You should change the default password straight away to ensure your Raspberry Pi is secure.
 
+## :o: Configuration
+
+
+https://www.raspberrypi.org/documentation/configuration/raspi-config.md
+
+```
+$ sudo raspi-config
+```
+
 ---
 
 [Raspbian](Raspbian.md)
