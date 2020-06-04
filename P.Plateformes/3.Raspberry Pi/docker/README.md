@@ -64,16 +64,35 @@ $ sudo usermod -aG docker pi
 :b: Start the Docker (remote) installer with `docker-machine`
 
 
+* Install your SSH public key in `~/.ssh/authorized_keys`
+
+
+Change the OS's ID so Docker Machine won't throw errors. 
+
+
+```
+$ sudo nano /etc/os-release
+```
+
+and change the line that says ID=raspbian to ID=debian
+
+
+* Install from the remote client machine
+
+
 ```
 $ docker-machine create --driver generic \
                         --generic-ip-address=192.168.1.110 \
                         --generic-ssh-user=pi \
-                        --generic-ssh-key ~/.ssh/ramena.pk \
-                        --engine-storage-driver overlay2 \
-                      ambohibao
+                        --generic-ssh-key ~/.ssh/my-private-key.pk \
+                      my-machine-name
 ```
 
 
+
+
 References: 
+
+https://docs.docker.com/storage/storagedriver/select-storage-driver/
 
 https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/
