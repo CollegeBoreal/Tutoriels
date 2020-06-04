@@ -36,7 +36,7 @@ $ sudo systemctl reboot
 ```
 
 
-* Start the Docker installer
+:a: Start the Docker (local) installer
 
 ```
 $ curl -sSL https://get.docker.com | sh
@@ -58,6 +58,19 @@ $ sudo systemctl start docker
 
 ```
 $ sudo usermod -aG docker pi
+```
+
+
+:b: Start the Docker (remote) installer with `docker-machine`
+
+
+```
+$ docker-machine create --driver generic \
+                        --generic-ip-address=192.168.1.110 \
+                        --generic-ssh-user=pi \
+                        --generic-ssh-key ~/.ssh/ramena.pk \
+                        --engine-storage-driver overlay2 \
+                      ambohibao
 ```
 
 
