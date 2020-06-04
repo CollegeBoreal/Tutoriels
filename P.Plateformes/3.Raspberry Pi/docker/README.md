@@ -17,6 +17,25 @@ Edit /boot/config.txt and add this line:
 gpu_mem=16
 ```
 
+* boot without UI to save memory
+
+```
+$ sudo systemctl set-default multi-user.target
+```
+
+* check the new setup
+
+```
+$ sudo systemctl get-default
+```
+
+* reboot
+
+```
+$ sudo systemctl reboot
+```
+
+
 * Start the Docker installer
 
 ```
