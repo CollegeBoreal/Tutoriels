@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: echoweb
+  labels:
+    app: echo
+spec:
+  template:
+    metadata:
+      labels:
+        app: echo
+        tier: web
+    spec:
+      containers:
+      - name: echo-app
+        image: gcr.io/google-samples/echo-app:1.0
+        ports:
+        - containerPort: 8000
