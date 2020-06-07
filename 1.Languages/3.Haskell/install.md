@@ -21,6 +21,17 @@ $ sudo apt-get install haskell-platform
 ```
 
 
+## :b: Verifier 
+
+:strawberry: ou :penguin: Linux
+
+```
+$ apt list --installed haskell-platform
+Listing... Done
+haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
+```
+
+
 ## :ab: Manual Install
 
 ### :m: Install
