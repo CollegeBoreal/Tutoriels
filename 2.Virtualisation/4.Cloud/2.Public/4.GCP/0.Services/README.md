@@ -4,7 +4,8 @@
 | Services       | Open Source Equivalent              | Comments                 |
 |----------------|-------------------------------------|--------------------------|
 | Cloud SQL      | MySQL, PostGres                     |                          |
-| Cloud Dataproc | Cloud-native Spark and Hadoop       |                          |
+| Cloud Dataproc | Spark and Hadoop                    |                          |
+| Cloud Pub/Sub  | Rabbit MQ, Kafka                    |                          |
 
 
 
