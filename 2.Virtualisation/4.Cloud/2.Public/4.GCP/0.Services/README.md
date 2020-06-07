@@ -7,6 +7,7 @@
 | Cloud Dataproc           | Spark and Hadoop                    |                          |
 | Cloud Pub/Sub            | Rabbit MQ, Kafka                    |                          |
 | Cloud Container Builder  | Quay, Clair, Jib                    |                          |
+| Cloud DNS                |                                     |                          |
 
 
 
