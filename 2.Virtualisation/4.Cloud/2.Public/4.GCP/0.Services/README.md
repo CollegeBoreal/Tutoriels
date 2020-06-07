@@ -8,6 +8,7 @@
 | Cloud Pub/Sub            | Rabbit MQ, Kafka                    |                          |
 | Cloud Container Builder  | Quay, Clair, Jib                    |                          |
 | Cloud DNS                |                                     |                          |
+| Cloud RUN                | KNative API                         |                          |
 
 
 
