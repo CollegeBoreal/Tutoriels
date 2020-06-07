@@ -1,1 +1,79 @@
 theme: jekyll-theme-minimal
+
+# Basic
+name:               "Overcoming Software"
+
+# URL
+baseurl:            ""
+#baseurl:            "" #For Root Domain
+permalink:          /:year/:month/:day/:title.html
+
+gems:
+    - jekyll-redirect-from
+    - jekyll-paginate
+    - jekyll-feed
+
+plugins:
+    - jekyll-paginate
+
+paginate: 10
+paginate_path: "page:num"
+# Markdown
+markdown: kramdown
+
+kramdown:
+    input: GFM
+    hard_wrap: false
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+##syntax highlighter. change it to pygments
+highlighter: rouge
+
+
+# Navigation
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name: "Tutorials"
+    href: "/tutorials"
+  - name: "Consulting"
+    href: "/consulting"
+  - name: "Production Haskell"
+    href: "/production-haskell"
+  - name: "Twitter"
+    href: "//www.twitter.com/mattoflambda"
+  - name: "Github"
+    href: "//www.github.com/parsonsmatt"
+  - name: "Email"
+    href: "mailto:parsonsmatt@gmail.com"
+
+##Some commonly used links
+links:
+  facebook: parsonsmatt
+  twitter: mattoflambda
+  email: parsonsmatt@gmail.com
+  github: parsonsmatt
+
+##The website description (to be used in meta tags)
+description: A series of articles on practical functional programming in Haskell
+##Some frequently used keywords on your website
+keywords: programming, haskell, category theory, type 
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"

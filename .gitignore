@@ -43,3 +43,5 @@ jspm_packages
 # Terraform temp files and plugin folders
 .terraform
 terraform*
+
+.jekyll-cache
