@@ -14,3 +14,9 @@ Source Profile
 ```
 $ . /Users/valiha/.nix-profile/etc/profile.d/nix.sh
 ```
+
+Nix Store
+
+```
+% ls -l /nix
+```
