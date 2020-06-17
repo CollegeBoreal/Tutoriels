@@ -3,6 +3,9 @@
 https://discourse.nixos.org/t/migrating-from-homebrew-to-nix-for-osx/2892
 
 
+[Download](https://nixos.org/download.html)
+
+
 :apple: MacOS
 
 ```
