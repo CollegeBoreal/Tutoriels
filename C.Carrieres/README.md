@@ -22,6 +22,8 @@ https://roadmap.sh/devops
 
 ## References:
 
+https://stackoverflow.blog/2020/06/10/the-rise-of-the-devops-mindset/
+
 https://www.quora.com/What-are-the-best-freelancing-sites
 
 https://www.codementor.io/freelance-rates
