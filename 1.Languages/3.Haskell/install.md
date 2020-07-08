@@ -49,3 +49,22 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 ## :x: Nix
 
 https://github.com/Gabriel439/haskell-nix
+
+* Install `cabal-install`
+
+```
+$ nix-env --install cabal-install
+```
+
+* Install Stack
+
+```
+$ nix-env --file "<nixpkgs>" --install --attr stack
+```
+
+
+* Install the GHC Compiler
+
+```
+$ nix-env --file "<nixpkgs>" --install --attr ghc
+```
