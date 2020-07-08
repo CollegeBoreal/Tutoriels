@@ -45,3 +45,7 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 ```
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 ```
+
+## :x: Nix
+
+https://github.com/Gabriel439/haskell-nix
