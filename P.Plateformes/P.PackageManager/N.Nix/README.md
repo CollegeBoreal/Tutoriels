@@ -25,6 +25,6 @@ Nix Store
 ```
 
 
-:desktop: Windows
+:laptop: Windows
 
 https://nathan.gs/2019/04/12/nix-on-windows/
