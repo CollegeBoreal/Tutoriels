@@ -23,3 +23,8 @@ Nix Store
 ```
 % ls -l /nix
 ```
+
+
+:windows: Windows
+
+https://nathan.gs/2019/04/12/nix-on-windows/
