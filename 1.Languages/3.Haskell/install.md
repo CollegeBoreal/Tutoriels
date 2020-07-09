@@ -34,7 +34,7 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 
 ## :ab: Manual Install
 
-### :m: Install
+### :m: Install (ghcup)
 
 ```
 % curl https://get-ghcup.haskell.org -sSf | sh
