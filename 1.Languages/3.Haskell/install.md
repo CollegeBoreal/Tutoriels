@@ -68,3 +68,10 @@ $ nix-env --file "<nixpkgs>" --install --attr stack
 ```
 $ nix-env --file "<nixpkgs>" --install --attr ghc
 ```
+
+https://github.com/NixOS/nixpkgs/issues/9682
+
+```
+$ nix-env -f "<nixpkgs>" --query --available --attr-path --attr haskellPackages Cabal
+```
+
