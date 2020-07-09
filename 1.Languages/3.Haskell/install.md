@@ -44,6 +44,27 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 ```
 
+## :m: Utilisation
+
+* lister les binaires installes.
+
+```
+$ ghcup list
+```
+
+* installer un version specifique
+
+```
+$ ghcup install 8.6.3
+```
+
+* assigner un version specifique
+
+```
+$ ghcup set 8.6.3
+```
+
+
 http://dev.stephendiehl.com/hask/
 
 ## :x: Nix
