@@ -79,3 +79,8 @@ $ nix-env --file "<nixpkgs>" --query --available --attr-path --attr haskellPacka
 $ nix-env --file "<nixpkgs>" --profile /tmp/foo --install --attr haskellPackages.Cabal_2_2_0_1 
 ```
 
+* Machine Info 
+
+```
+$ nix-shell --packages nix-info --run "nix-info --markdown"
+```
