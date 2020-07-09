@@ -32,9 +32,7 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 ```
 
 
-## :ab: Manual Install
-
-### :m: Install (ghcup)
+## :ab: Install with `ghcup`
 
 ```
 % curl https://get-ghcup.haskell.org -sSf | sh
@@ -45,6 +43,8 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 ```
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 ```
+
+http://dev.stephendiehl.com/hask/
 
 ## :x: Nix
 
