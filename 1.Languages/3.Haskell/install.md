@@ -32,10 +32,10 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 ```
 
 
-## :ab: Install with `ghcup`
+## :ab: Install with [`ghcup`](https://www.haskell.org/ghcup/)
 
 ```
-% curl https://get-ghcup.haskell.org -sSf | sh
+$ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
 ### :m: Env Variable (~/.bashrc or ~/.zshrc)
