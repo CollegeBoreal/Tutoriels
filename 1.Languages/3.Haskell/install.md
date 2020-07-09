@@ -71,6 +71,8 @@ $ nix-env --file "<nixpkgs>" --install --attr ghc
 
 https://github.com/NixOS/nixpkgs/issues/9682
 
+### :magnifier: Query and Install
+
 ```
 $ nix-env --file "<nixpkgs>" --query --available --attr-path --attr haskellPackages Cabal
 ```
@@ -78,6 +80,8 @@ $ nix-env --file "<nixpkgs>" --query --available --attr-path --attr haskellPacka
 ```
 $ nix-env --file "<nixpkgs>" --profile /tmp/foo --install --attr haskellPackages.Cabal_2_2_0_1 
 ```
+
+% nix-env --file "<nixpkgs>" --query --available --attr-path --attr haskell.compiler
 
 * Machine Info 
 
