@@ -1,5 +1,8 @@
 # Installation
 
+:bulb: [Documentation `awesome cabal`](https://kowainik.github.io/projects/awesome-cabal)
+
+
 ## :a: Install with Package Managers
 
 :pushpin: Windows
