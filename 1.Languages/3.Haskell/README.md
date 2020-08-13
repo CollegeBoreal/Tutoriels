@@ -27,6 +27,8 @@ ghci> :load hello_world.hs
 
 # References
 
+http://dev.stephendiehl.com/hask/
+
 http://tryhaskell.org/
 
 http://book.realworldhaskell.org/read/
