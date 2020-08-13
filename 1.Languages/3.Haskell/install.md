@@ -3,39 +3,10 @@
 :bulb: [Documentation `awesome cabal`](https://kowainik.github.io/projects/awesome-cabal)
 
 
-## :a: Install with Package Managers
 
-:pushpin: Windows
+## :a: Install with [`ghcup`](https://www.haskell.org/ghcup/)
 
-```
-PS > choco install ghc haskell-stack
-```
-
-:pushpin: Apple
-
-```
-$ brew install ghc cabal-install haskell-stack
-```
-  
-:strawberry: ou :penguin: Linux
-
-```
-$ sudo apt-get install haskell-platform
-```
-
-
-## :b: Verifier 
-
-:strawberry: ou :penguin: Linux
-
-```
-$ apt list --installed haskell-platform
-Listing... Done
-haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
-```
-
-
-## :ab: Install with [`ghcup`](https://www.haskell.org/ghcup/)
+* pour Linux et MacOS
 
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
@@ -67,8 +38,45 @@ $ ghcup install 8.6.3
 $ ghcup set 8.6.3
 ```
 
+* pour Windows PowerShell
 
-http://dev.stephendiehl.com/hask/
+https://github.com/kakkun61/ghcups
+
+
+
+
+## :b: Install with Package Managers (pas recommandé)
+
+:pushpin: Windows
+
+```
+PS > choco install ghc haskell-stack
+```
+
+:pushpin: Apple
+
+```
+$ brew install ghc cabal-install haskell-stack
+```
+  
+:strawberry: ou :penguin: Linux
+
+```
+$ sudo apt-get install haskell-platform
+```
+
+
+### :bookmark: Verifier 
+
+:strawberry: ou :penguin: Linux
+
+```
+$ apt list --installed haskell-platform
+Listing... Done
+haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
+```
+
+
 
 ## :x: Nix
 
