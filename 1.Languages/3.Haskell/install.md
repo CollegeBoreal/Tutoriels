@@ -6,21 +6,21 @@
 
 ## :a: Install with [`ghcup`](https://www.haskell.org/ghcup/)
 
-:one: pour Linux et MacOS
+###:one: pour Linux et MacOS
 
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
-### :m: Env Variable (~/.bashrc or ~/.zshrc)
+##### :m: Env Variable (~/.bashrc or ~/.zshrc)
 
 ```
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 ```
 
-## :m: Utilisation
+##### :m: Utilisation
 
-* lister les binaires installes.
+* lister les binaires installés.
 
 ```
 $ ghcup list
@@ -47,13 +47,26 @@ https://www.powershellgallery.com/packages/ghcups/3.7
 > Install-Module -Name ghcups
 ```
 
+- [ ] lister les version disponibles.
+
+```powershell
+> get-ghc
+```
+
+- [ ] Installer la version de `ghci` désirée
+
 ```powershell
 > Install-Ghc 8.6.5
 ```
 
+- [ ] Rendre la version installée par défaut
+
+
 ```powershell
 > Set-Ghc 8.6.5
 ```
+
+- [ ] Vérifier la version installée par défaut
 
 ```powershell
 > ghci --version
