@@ -67,9 +67,9 @@ https://github.com/kakkun61/ghcups
 > Import-Module ghcups
 ```
 
-* Confirm l'installation.
+* Confirmer l'installation du module.
 
-```
+```powershell
 > Get-Module ghcups
 ```
 
