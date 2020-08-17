@@ -47,20 +47,25 @@ https://www.powershellgallery.com/packages/ghcups/3.7
 > Install-Module -Name ghcups
 ```
 
-```
+```powershell
 > Install-Ghc 8.6.5
 ```
 
-```
+```powershell
 > Set-Ghc 8.6.5
 ```
 
-
+```powershell
+> ghci --version
+The Glorious Glasgow Haskell Compilation System, version 8.6.5
 ```
+
+
+```powershell
 > Install-Cabal 3.2.0.0
 ```
 
-```
+```powershell
 > Set-Cabal 3.2.0.0
 ```
 
