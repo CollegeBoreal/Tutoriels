@@ -43,7 +43,7 @@ $ ghcup set 8.6.5
 https://www.powershellgallery.com/packages/ghcups/3.7
 
 
-```Powershell
+```powershell
 > Install-Module -Name ghcups
 ```
 
