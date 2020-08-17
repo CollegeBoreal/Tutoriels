@@ -12,6 +12,23 @@
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
+  Welcome to Haskell!
+
+  This script will download and install the following binaries:
+    * ghcup - The Haskell toolchain installer
+              (for managing GHC/cabal versions)
+    * ghc   - The Glasgow Haskell Compiler
+    * cabal - The Cabal build tool
+
+  ghcup installs only into the following directory,
+  which can be removed anytime:
+    /Users/b300098957/.ghcup
+
+  Press ENTER to proceed or ctrl-c to abort.
+  Note that this script can be re-run at any given time.
+
+
+
 ##### :m: Env Variable (~/.bashrc or ~/.zshrc)
 
 ```
@@ -20,25 +37,25 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 ##### :m: Utilisation
 
-* lister les binaires installés.
+- [ ] Lister les binaires installés.
 
 ```
 $ ghcup list
 ```
 
-* installer un version specifique
+- [ ] Installer une version spécifique
 
 ```
 $ ghcup install 8.6.5
 ```
 
-* assigner un version specifique
+- [ ] Assigner un version spécifique
 
 ```
 $ ghcup set 8.6.5
 ```
 
-:two: pour Windows PowerShell
+### :two: pour Windows PowerShell
 
 https://www.powershellgallery.com/packages/ghcups/3.7
 
