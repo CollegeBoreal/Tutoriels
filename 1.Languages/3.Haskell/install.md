@@ -60,9 +60,17 @@ $ ghcup set 8.6.5
 
 https://www.powershellgallery.com/packages/ghcups/3.7
 
+https://github.com/kakkun61/ghcups
 
 ```powershell
 > Install-Module -Name ghcups
+> Import-Module ghcups
+```
+
+* Confirm l'installation.
+
+```
+> Get-Module ghcups
 ```
 
 - [ ] lister les version disponibles.
