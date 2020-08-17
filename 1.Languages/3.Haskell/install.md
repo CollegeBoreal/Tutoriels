@@ -56,6 +56,14 @@ https://www.powershellgallery.com/packages/ghcups/3.7
 ```
 
 
+```
+> Install-Cabal 3.2.0.0
+```
+
+```
+> Set-Cabal 3.2.0.0
+```
+
 ## :b: Install with Package Managers (pas recommandé)
 
 :pushpin: Windows
