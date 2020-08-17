@@ -6,7 +6,7 @@
 
 ## :a: Install with [`ghcup`](https://www.haskell.org/ghcup/)
 
-* pour Linux et MacOS
+;one: pour Linux et MacOS
 
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
@@ -29,20 +29,27 @@ $ ghcup list
 * installer un version specifique
 
 ```
-$ ghcup install 8.6.3
+$ ghcup install 8.6.5
 ```
 
 * assigner un version specifique
 
 ```
-$ ghcup set 8.6.3
+$ ghcup set 8.6.5
 ```
 
-* pour Windows PowerShell
+:two: pour Windows PowerShell
 
 https://github.com/kakkun61/ghcups
 
 
+```
+> Install-Ghc 8.6.5
+```
+
+```
+> Set-Ghc 8.6.5
+```
 
 
 ## :b: Install with Package Managers (pas recommandé)
