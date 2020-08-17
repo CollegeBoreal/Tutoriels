@@ -12,6 +12,7 @@
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
+```
   Welcome to Haskell!
 
   This script will download and install the following binaries:
@@ -26,7 +27,7 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
   Press ENTER to proceed or ctrl-c to abort.
   Note that this script can be re-run at any given time.
-
+```
 
 
 ##### :m: Env Variable (~/.bashrc or ~/.zshrc)
