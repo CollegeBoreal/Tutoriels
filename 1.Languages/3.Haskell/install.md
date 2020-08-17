@@ -6,7 +6,7 @@
 
 ## :a: Install with [`ghcup`](https://www.haskell.org/ghcup/)
 
-;one: pour Linux et MacOS
+:one: pour Linux et MacOS
 
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
