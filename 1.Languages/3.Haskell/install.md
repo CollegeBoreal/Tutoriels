@@ -40,8 +40,12 @@ $ ghcup set 8.6.5
 
 :two: pour Windows PowerShell
 
-https://github.com/kakkun61/ghcups
+https://www.powershellgallery.com/packages/ghcups/3.7
 
+
+```Powershell
+> Install-Module -Name ghcups
+```
 
 ```
 > Install-Ghc 8.6.5
