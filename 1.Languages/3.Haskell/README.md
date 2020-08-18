@@ -44,3 +44,7 @@ http://okmij.org/ftp/README.html
 https://www.simplehaskell.org/
 
 https://habr.com/en/post/441350/ (Is Haskell really the language of geniuses and academia?)
+
+:tada: Music
+
+https://tidalcycles.org/
