@@ -53,6 +53,6 @@ https://tidalcycles.org/
 
 https://gist.github.com/graninas/833a9ff306338aefec7e543100c16ea1
 
-:bookmark:
+:bookmark: Category Theory
 
-https://www.youtube.com/watch?v=US4Zr1WKD-8&list=PLCTMeyjMKRkoS699U0OJ3ymr3r01sI08l (Category Theory)
+https://www.youtube.com/watch?v=US4Zr1WKD-8&list=PLCTMeyjMKRkoS699U0OJ3ymr3r01sI08l Category Theory For Beginners :video:
