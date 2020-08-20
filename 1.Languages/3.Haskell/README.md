@@ -48,3 +48,7 @@ https://habr.com/en/post/441350/ (Is Haskell really the language of geniuses and
 :tada: Music
 
 https://tidalcycles.org/
+
+:x: Job Preparation
+
+https://gist.github.com/graninas/833a9ff306338aefec7e543100c16ea1
