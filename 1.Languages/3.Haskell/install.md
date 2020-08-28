@@ -62,12 +62,12 @@ https://www.powershellgallery.com/packages/ghcups/3.7
 
 https://github.com/kakkun61/ghcups
 
+:o: S'assurer d'etre en mode Administrateur
+
 ```powershell
 > Install-Module -Name ghcups
 > Import-Module ghcups
 ```
-
-:o: S'assurer d'etre en mode Administrateur
 
 * Confirmer l'installation du module.
 
