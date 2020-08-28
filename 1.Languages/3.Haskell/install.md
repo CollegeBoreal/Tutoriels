@@ -67,6 +67,8 @@ https://github.com/kakkun61/ghcups
 > Import-Module ghcups
 ```
 
+:o: S'assurer d'etre en mode Administrateur
+
 * Confirmer l'installation du module.
 
 ```powershell
