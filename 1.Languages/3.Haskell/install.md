@@ -73,6 +73,14 @@ https://github.com/kakkun61/ghcups
 > Get-Module ghcups
 ```
 
+
+:x: Prérequis - S'assurer que `7Zip` soit installé 
+
+
+```
+> choco install 7zip.install
+```
+
 - [ ] lister les version disponibles.
 
 ```powershell
