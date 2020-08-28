@@ -81,6 +81,8 @@ https://github.com/kakkun61/ghcups
 > choco install 7zip.install
 ```
 
+:m: Installer `GHC`
+
 - [ ] lister les version disponibles.
 
 ```powershell
@@ -95,7 +97,6 @@ https://github.com/kakkun61/ghcups
 
 - [ ] Rendre la version installée par défaut
 
-
 ```powershell
 > Set-Ghc 8.6.5
 ```
@@ -107,14 +108,34 @@ https://github.com/kakkun61/ghcups
 The Glorious Glasgow Haskell Compilation System, version 8.6.5
 ```
 
+:m: Installer `Cabal`
+
+- [ ] lister les version disponibles.
+
+```powershell
+> get-cabal
+```
+
+- [ ] Installer la version de `cabal` désirée
 
 ```powershell
 > Install-Cabal 3.2.0.0
 ```
 
+- [ ] Rendre la version installée par défaut
+
 ```powershell
 > Set-Cabal 3.2.0.0
 ```
+
+- [ ] Vérifier la version installée par défaut
+
+```powershell
+> cabal --version
+cabal-install version 3.2.0.0
+compiled using version 3.2.0.0 of the Cabal library
+```
+
 
 ## :b: Install with Package Managers (pas recommandé)
 
