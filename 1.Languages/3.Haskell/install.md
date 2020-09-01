@@ -62,25 +62,30 @@ https://www.powershellgallery.com/packages/ghcups/3.7
 
 https://github.com/kakkun61/ghcups
 
-:o: S'assurer d'etre en mode Administrateur
-
-```powershell
-> Install-Module -Name ghcups
-> Import-Module ghcups
-```
-
-* Confirmer l'installation du module.
-
-```powershell
-> Get-Module ghcups
-```
-
-
 :x: Prérequis - S'assurer que `7Zip` soit installé 
-
 
 ```
 > choco install 7zip.install
+```
+
+:o: Installer `ghcups` - `(S'assurer d'etre en mode Administrateur)`
+
+```powershell
+> Install-Module -Name ghcups
+```
+
+:m: En tant qu'utilisteur normal, 
+
+- [ ] Importer le module `ghcups` 
+
+```
+> Import-Module ghcups
+```
+
+- [ ] Confirmer l'installation du module.
+
+```powershell
+> Get-Module ghcups
 ```
 
 :m: Installer `GHC`
