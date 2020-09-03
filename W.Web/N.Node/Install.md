@@ -83,7 +83,7 @@ Now using node v12.16.3 (npm v6.14.4)
 
 
 ```zsh
-export NVM_DIR="/Users/zaro/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ```
 
