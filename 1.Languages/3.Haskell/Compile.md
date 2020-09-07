@@ -7,6 +7,6 @@ The Glorious Glasgow Haskell Compiler.
 https://gitlab.haskell.org/ghc/ghc
 
 ```
-$ git clone https://gitlab.haskell.org/ghc/ghc.git && cd ghc
+$ git clone --recursive https://gitlab.haskell.org/ghc/ghc.git && cd ghc
 ```
 
