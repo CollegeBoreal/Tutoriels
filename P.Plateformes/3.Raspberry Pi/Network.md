@@ -1,5 +1,7 @@
 # :strawberry: Static IP Change using `DHCP` Method
 
+https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server
+
 
 # :a: Changer l'adresse IP statique
 
@@ -12,28 +14,46 @@ $ ip route | grep default | awk '{print $3}'
 ```
 
 
-## :one: Modifier le fichier `/etc/dhcpcd.conf`
+## :one: Modifier le fichier `/etc/netplan/50-cloud-init.yaml`
 
 :bookmark: En enlevant les commentaires devant les lignes de configurations suivantes
 
 :pushpin: à la maison derrière son routeur
 
 ```
-# Home configuration:
-interface eth0
-static ip_address=192.168.1.10/24
-static routers=192.168.1.1
-static domain_name_servers=192.168.1.1 8.8.8.8
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        eth0:
+            dhcp4: false
+            addresses: [192.168.1.202/24]
+            gateway4: 192.168.1.1
+            nameservers:
+              addresses: [8.8.8.8,8.8.4.4,192.168.1.1]
+    version: 2
 ```
 
 :pushpin: au Collège avec les adresses IP fixes `10.13.237.0/25` DNS `10.10.99.2` et `10.10.99.3`
 
 ```
-# Lab configuration:
-#interface eth0
-#static ip_address=10.13.237.16/25
-#static routers=10.13.237.1
-#static domain_name_servers=10.10.99.2 10.10.99.3 8.8.8.8
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        eth0:
+            dhcp4: false
+            addresses: [10.13.237.16/25]
+            gateway4: 10.13.237.1
+            nameservers:
+              addresses: [8.8.8.8,8.8.4.4,10.10.99.2,10.10.99.3]
+    version: 2
 ```
 
 ## :two: Redémarrer ou Éteindre la machine
