@@ -37,4 +37,4 @@ Any default operating system credentials used during Live Boot, or pre-created V
 
 User: `kali`
 
-Password: `kali
+Password: `kali`
