@@ -30,3 +30,5 @@ $ sudo raspi-config
 [Ubuntu Server](Ubuntu.md)
 
 [Moodle Box](moodlebox.md)
+
+[Kali](Kali.md)
