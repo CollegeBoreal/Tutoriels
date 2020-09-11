@@ -25,7 +25,7 @@ $ umount /dev/mmcblk0p1 /dev/mmcblk0p2
 - burn the zip
 
 ```
-$ unzip -p ~/Downloads/Downloads/kali-linux-2020.3a-rpi3-nexmon-64.img.xz | \
-         sudo dd of=/dev/mmcblk0 bs=4M conv=fsync
+$ xzcat ~/Downloads/ubuntu-19.10.1-preinstalled-server-arm64+raspi3.img.xz | \
+         sudo dd bs=4M of=/dev/mmcblk0
 ```
 
