@@ -36,4 +36,5 @@ https://www.kali.org/docs/introduction/default-credentials/
 Any default operating system credentials used during Live Boot, or pre-created VMware and ARM images will be:
 
 User: kali
+
 Password: kali
