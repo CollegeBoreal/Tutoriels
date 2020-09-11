@@ -15,7 +15,7 @@ $ sh <(curl https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-vo
 Source Profile
 
 ```
-$ . /Users/valiha/.nix-profile/etc/profile.d/nix.sh
+$ source ~/.nix-profile/etc/profile.d/nix.sh
 ```
 
 Nix Store
