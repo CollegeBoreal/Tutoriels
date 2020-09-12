@@ -18,7 +18,7 @@ $ curl http://cdimage.ubuntu.com/releases/18.04.4/release/ubuntu-18.04.4-server-
     List all Flash Devices
 
 ```
-$ $ lsblk
+$ lsblk
 NAME                     MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0                      7:0    0    16K  1 loop /snap/software-boutique/39
 loop1                      7:1    0  54.7M  1 loop /snap/core18/1668
@@ -52,3 +52,31 @@ $ xzcat ~/Downloads/ubuntu-19.10.1-preinstalled-server-arm64+raspi3.img.xz | \
           sudo dd bs=4M of=/dev/mmcblk0
 ```
 
+## Network
+
+https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server
+
+* Edit `/etc/netplan/50-cloud-init.yaml`
+
+```
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        enp0s3:
+            dhcp4: false
+            addresses: [192.168.1.202/24]
+            gateway4: 192.168.1.1
+            nameservers:
+              addresses: [8.8.8.8,8.8.4.4,192.168.1.1]
+    version: 2
+```
+
+* To apply the new Netplan changes execute:
+
+```
+$ sudo netplan apply
+```
