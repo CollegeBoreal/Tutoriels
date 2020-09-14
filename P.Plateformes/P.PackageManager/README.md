@@ -17,7 +17,7 @@ Avec [chocolatey.org](http://chocolatey.org/)
 * Docker
 
 ```
-$ choco install docker
+$ choco install docker-desktop
 ```
 
 * Docker
@@ -45,7 +45,7 @@ Avec [brew.sh](http://brew.sh/)
 * Docker
 
 ```
-$ brew cask install docker
+$ brew cask install docker-desktop
 ```
 
 * Google Chrome
