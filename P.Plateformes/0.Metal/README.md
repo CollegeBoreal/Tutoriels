@@ -1,4 +1,4 @@
-# :zero: Metal
+# Metal
 
 
 ## :one: Installation Proliant
