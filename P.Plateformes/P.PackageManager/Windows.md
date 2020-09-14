@@ -12,6 +12,7 @@
 
 ```
 PS > $env:chocolateyUseWindowsCompression = 'true'
+PS > Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope LocalMachine
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
