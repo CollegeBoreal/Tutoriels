@@ -1,6 +1,7 @@
 # Desktop
 
 
+https://docs.docker.com/desktop/
 
 ## :o: Installation
 
@@ -13,5 +14,5 @@ PS > choco install docker-desktop -y
 :pushpin: MacOS
 
 ```
-% brew cask install docker
+$ brew cask install docker-desktop
 ```
