@@ -9,7 +9,7 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 
 
 ```
-> choco install git.install
+PS > choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf"
 ```
 
 ### Installation avec [brew](https://brew.sh) - MacOS Seulement
