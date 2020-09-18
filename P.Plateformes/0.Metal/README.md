@@ -73,7 +73,7 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 ## :two: Configuration
 
-:network: Réseau Interne
+:electric_plug: Réseau Interne
 
 - [x] `10.13.237.0/25` : Réseau
 
@@ -84,6 +84,9 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 - [x] `10.10.99.2, 10.10.99.3, 8.8.8.8`: DNS Servers
 
 :bulb: Prenez une adresse dans la plage du réseau, assurez vous qu'elle est au dessus de `10.13.237.10`
+
+:electric_plug: Réseau Externe
+
 
 ## :three: Installation de l'OS 
           
