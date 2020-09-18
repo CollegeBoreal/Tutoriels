@@ -1,13 +1,8 @@
 # Installation
 
 
-## Téléchargement manuel (non recommandé)
 
-:pushpin: Suivre les instructions pour installer manuellement 
-
-https://nodejs.org/en/download/ 
-
-## À travers un `Package Manager` ( [`nvm`](ttp://nvm.sh) recommandé)
+## :a: À travers un `Package Manager` ( [`nvm`](http://nvm.sh) recommandé)
 
 :pushpin: Windows
 
@@ -87,6 +82,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
+
+## :x: Téléchargement manuel (non recommandé)
+
+:pushpin: Suivre les instructions pour installer manuellement 
+
+https://nodejs.org/en/download/ 
+
 
 # References
 
