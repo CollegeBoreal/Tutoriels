@@ -89,8 +89,40 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 
 ## :three: Installation de l'OS 
-          
 
+```
+$ sudo nano /etc/netplan/00-installer-config.yaml 
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp2s0f0:
+      addresses:
+      - 10.13.237.x/25
+      gateway4: 10.13.237.1
+      nameservers:
+        addresses:
+        - 10.10.99.2
+        - 10.10.99.3
+        - 8.8.8.8
+        search:
+        - borealc.on.ca
+    enp2s0f1:
+      addresses:
+      - 10.13.x.x/20
+      gateway4: 10.13.0.1
+      nameservers:
+        addresses:
+        - 10.10.99.2
+        - 10.10.99.3
+        - 8.8.8.8
+        search:
+        - borealc.on.ca
+  version: 2
+```
+
+```
+$ sudo netplan apply
+```
 
 ### :o: Accès à distance 
 
