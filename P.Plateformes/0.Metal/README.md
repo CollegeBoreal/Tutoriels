@@ -71,8 +71,21 @@
 Actually, Your External USB keys were set to disable, its very simple to fix: remove the cover from your DL360PG8, plug your USB keyboard into the single USB port located "on the motherboard" in front of the power supplies, power up server & wait for F9 BIOS setting to come up at the end of post, here you will be able to get into the F9 settings command from your keyboard, at the 1st drop down menu in the F9 menu click "SYSTEM OPTIONS", scroll down 3 lines to "USB Options" & click, 1st option in the box will be "USB Control" & click on it, a gray box will open with 2 options, click on "USB Enable", after hit "Escape key" 3 times to exit and you will be all set. Good Luck!
 ```
 
+## :two: Configuration
 
-## :two: Installation de l'OS 
+:network: Réseau Interne
+
+- [x] `10.13.237.0/25` : Réseau
+
+- [x] `10.13.237.1`: Passerelle
+
+- [x] `borealc.on.ca`: DNS Search Domain
+
+- [x] `10.10.99.2, 10.10.99.3, 8.8.8.8`: DNS Servers
+
+:bulb: Prenez une adresse dans la plage du réseau, assurez vous qu'elle est au dessus de `10.13.237.10`
+
+## :three: Installation de l'OS 
           
 
 
