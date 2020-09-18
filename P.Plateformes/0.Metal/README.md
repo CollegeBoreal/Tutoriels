@@ -73,7 +73,7 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 ## :two: Configuration
 
-:electric_plug: Réseau Interne
+#### :electric_plug: Réseau Interne
 
 - [x] `10.13.237.0/25` : Réseau
 
@@ -85,10 +85,9 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 :bulb: Prenez une adresse dans la plage du réseau, assurez vous qu'elle est au dessus de `10.13.237.10`
 
-:electric_plug: Réseau Externe
+#### :electric_plug: Réseau Externe
 
-
-## :three: Installation de l'OS 
+- [x] Éditer le fichier ci-dessous avec vos paramêtres
 
 ```
 $ sudo nano /etc/netplan/00-installer-config.yaml 
@@ -120,9 +119,13 @@ network:
   version: 2
 ```
 
+- [x] Appliquer le changement
+
 ```
 $ sudo netplan apply
 ```
+
+## :three: Installation de l'OS 
 
 ### :o: Accès à distance 
 
