@@ -5,7 +5,7 @@
 
 ## Installation
 
-:laptop: Sur Windows
+:computer: Sur Windows
 
 ```
 $ choco install android-ndk
