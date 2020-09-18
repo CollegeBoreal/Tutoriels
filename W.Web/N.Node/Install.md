@@ -18,7 +18,7 @@ En fonction de ton environnement soit `bash` soit `zsh`
 % curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 ```
 
-## node
+### :m: Installer Node
 
 :pushpin: Liste des versions installées localement
 
