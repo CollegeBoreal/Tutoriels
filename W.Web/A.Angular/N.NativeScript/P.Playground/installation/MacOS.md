@@ -138,35 +138,3 @@ Gem cocoapods-1.8.4
   cocoapods-core (= 1.8.4)
   ...
 ```
-
-## uninstall node and install nvm
-
-:pushpin: remove old `node`
-
-```
-$ sudo rm -rf /usr/local/lib/node_modules
-$ brew cleanup
-```
-
-:pushpin: install `nvm`
-
-```
-$ brew update
-$ brew install nvm
-```
-
-Edit ~/.bash_profile
-
-```bash
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-```
-
-
-:pushpin: install `node`
-
-```
-$ nvm install node
-```
-
