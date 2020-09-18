@@ -96,7 +96,7 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
  * Accès coté client
  
-    (SSH or RDC):
+    (OpenSSH or RDC):
     
     * Adresse IP
     
