@@ -1,6 +1,7 @@
 # Android on Raspberry Pi
 
-https://konstakang.com/devices/rpi4/LineageOS17.1/
+[LineageOS 17.1 (Android 10)
+for Raspberry Pi 4 by Konsta Kang](https://konstakang.com/devices/rpi4/LineageOS17.1)
 
 [How To Install Android On the Raspberry Pi 4 & Google Play Store](https://www.youtube.com/watch?v=QSgf_-EwfrQ)
 
