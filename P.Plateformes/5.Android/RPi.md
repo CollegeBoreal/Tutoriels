@@ -14,6 +14,8 @@ PS > choco install etcher
 ```
 
 
+[lineage-17.1-20200813-UNOFFICIAL-KonstaKANG-rpi4.zip](https://www.androidfilehost.com/?fid=8889791610682914187)
+
 # Références
 
 [[DEV][ROM][UNOFFICIAL] LineageOS 17.1 (Android 10) for Raspberry Pi 4 B](https://forum.xda-developers.com/raspberry-pi/orig-development/dev-lineageos-17-1-android-10-raspberry-t4139059)
