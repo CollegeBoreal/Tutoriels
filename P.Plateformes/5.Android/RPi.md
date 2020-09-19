@@ -1,5 +1,7 @@
 # Android on Raspberry Pi
 
+[[DEV][ROM][UNOFFICIAL] LineageOS 17.1 (Android 10) for Raspberry Pi 4 B](https://forum.xda-developers.com/raspberry-pi/orig-development/dev-lineageos-17-1-android-10-raspberry-t4139059)
+
 [LineageOS 17.1 (Android 10)
 for Raspberry Pi 4 by Konsta Kang](https://konstakang.com/devices/rpi4/LineageOS17.1)
 
