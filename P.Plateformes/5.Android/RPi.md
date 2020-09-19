@@ -1,5 +1,21 @@
 # Android on Raspberry Pi
 
+
+## Graver 
+
+[Etcher](https://www.balena.io/etcher)
+
+```
+PS > choco install etcher
+```
+
+```
+% brew cask install balenaetcher
+```
+
+
+# Références
+
 [[DEV][ROM][UNOFFICIAL] LineageOS 17.1 (Android 10) for Raspberry Pi 4 B](https://forum.xda-developers.com/raspberry-pi/orig-development/dev-lineageos-17-1-android-10-raspberry-t4139059)
 
 [LineageOS 17.1 (Android 10)
