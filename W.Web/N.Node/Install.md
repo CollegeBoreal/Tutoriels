@@ -35,17 +35,14 @@ $ nvm ls-remote
 :pushpin: Installer La version LTS (Long Term Support)
 
 ```
-$ nvm install --lts 
-Installing latest LTS version.
-v12.16.3 is already installed.
-Now using node v12.16.3 (npm v6.14.4)
+$ nvm install 12.18.4 
 ```
 
 :pushpin: Utiliser La version LTS
 
 ```
-$ nvm use --lts
-Now using node v12.16.3 (npm v6.14.4)
+$ nvm use 12.18.4
+Now using node v12.18.4 (npm v6.14.4)
 ```
 
 :pushpin: Installer La version 14
