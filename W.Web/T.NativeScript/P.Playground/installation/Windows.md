@@ -5,7 +5,7 @@
 `(Touche Windows > taper "cmd" > right click > Run as Administrator)`
 
 ```
-> @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://www.nativescript.org/setup/win'))"
+PS > @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://www.nativescript.org/setup/win'))"
 ```
 
 :two: Questions a repondre
