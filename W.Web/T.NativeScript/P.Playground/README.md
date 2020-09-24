@@ -8,14 +8,14 @@
 * install NativeScript CLI (add sudo if required)
 
 ```
-$ npm install nativescript --global
+$ npm install nativescript@rc --global
  ```
  
  * Test
  
  ```
 $ tns --version
-6.1.2
+7.0.9-rc.1
  ```
 
 :one: Installation
