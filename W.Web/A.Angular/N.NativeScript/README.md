@@ -40,7 +40,7 @@ Vérifier l'installation
 
 ```
 $ tns --version
-5.0.0
+7.0.9-rc.1
 ```
 
 ### Projet
@@ -78,7 +78,7 @@ If you have any questions, check Stack Overflow: https://stackoverflow.com/quest
 
 ```
 $ tns --version
-6.0.0-2019-06-14-134656-13407
+7.0.9-rc.1
 ```
 
 ##### Check if the emulator can run correctly
