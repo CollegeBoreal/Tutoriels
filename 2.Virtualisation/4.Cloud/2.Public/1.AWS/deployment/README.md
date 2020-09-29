@@ -4,7 +4,7 @@
 
 [Ubuntu 18.0.4 LTS ami-00a208c7cdba991ea](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-00a208c7cdba991ea)
 
-###### :warning: Ne choisir qu<une seule machine virtuelle
+###### :warning: Ne choisir qu'une seule machine virtuelle
 
 :pushpin: par défaut (t2.micro) - :heavy_dollar_sign:  :bangbang: À utiliser en priorité pour éviter de perdre vos crédits
 
