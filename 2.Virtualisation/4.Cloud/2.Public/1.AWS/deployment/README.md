@@ -2,7 +2,10 @@
 
 #### :m: Avec Docker Machine, Lancer une nouvelle machine sous `git bash` ou un `terminal`
 
-[Ubuntu 18.0.4 LTS ami-00a208c7cdba991ea](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-00a208c7cdba991ea)
+* [Ubuntu 20.04 LTS ami-0c43b23f011ba5061](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0c43b23f011ba5061)
+
+* [Ubuntu 18.04 LTS ami-00a208c7cdba991ea](https://console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-00a208c7cdba991ea)
+
 
 ###### :warning: Ne choisir qu'une seule machine virtuelle
 
@@ -11,7 +14,7 @@
 ```
 $ docker-machine create --driver amazonec2  \
                         --amazonec2-security-group default \
-                        --amazonec2-ami ami-00a208c7cdba991ea \
+                        --amazonec2-ami ami-0c43b23f011ba5061 \
                         cb-aws-dev
 ```
 
