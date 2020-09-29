@@ -54,7 +54,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
 - [ ] Azure Image List
 
 ```
-$ AZURE_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+$ AZURE_IMAGE=Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
 ```
 
 (Non Official)
@@ -70,7 +70,7 @@ Example de variables requises
 $ AZURE_SUBSCRIPTION_ID=`az account get-access-token | jq .subscription | sed 's/"//g'`
 $ AZURE_LOCATION=canadacentral
 $ AZURE_SIZE=Standard_B2s
-$ AZURE_IMAGE=canonical:UbuntuServer:18.04-LTS:latest
+$ AZURE_IMAGE=Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
 ```
 
 - [ ] Creer la machine virtuelle
@@ -85,7 +85,7 @@ $ docker-machine create --driver azure \
    cb-az-dev
 ```
 
-* Demande d'authentification de la machine en ligne, entrer le code donné
+* Demande d'authentification de la machine en ligne, entrez le code donné dans votre navigateur
 
 ```
 Running pre-create checks...
