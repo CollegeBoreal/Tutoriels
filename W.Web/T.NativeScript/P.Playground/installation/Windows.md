@@ -57,7 +57,7 @@ Press any key to continue...
 
 :four: Vérification
 
-:bangbang: Sortir du Terminal `cmd` et rouvrir un autre (i.e. `bash`) pour tester les variables
+:bangbang: Sortir du Terminal `cmd` et rouvrir un autre (i.e. `git bash`) pour tester les variables
 
 * Variables d'environnements présentes
 
