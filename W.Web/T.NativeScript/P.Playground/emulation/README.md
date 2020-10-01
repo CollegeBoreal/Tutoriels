@@ -22,5 +22,10 @@ $ adb -s $ANDROID_DEVICE shell
 ```
 
 
+```
+$ sdkmanager --install "ndk;20.1.5948944" 
+```
+
+
 
 
