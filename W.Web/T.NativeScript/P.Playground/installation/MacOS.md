@@ -138,3 +138,10 @@ Gem cocoapods-1.8.4
   cocoapods-core (= 1.8.4)
   ...
 ```
+
+
+:x: Installation Individuelle
+
+```
+$ brew cask install homebrew/cask-versions/adoptopenjdk8
+```
