@@ -8,7 +8,7 @@
 
 * Installer l'emulateur, les differents outils et la derniere version de la SDK Android
 
-### :o: Variables d'environemment
+### :o: Ajouter les Variables d'environemment
 
 * Ouvrir le fichier `~/.bashrc` avec `nano`
 
@@ -25,7 +25,17 @@ alias avdmanager=avdmanager.bat
 
 ### :a: Gestion de la SDK `Android`
 
-:one: Verifier que les `packages` de la SDK sont installés
+:one: Installer l'émulateur Android version 28
+
+- [x] Installer l'émulateur, la plateforme android et les outils version 28
+
+```bash
+$ sdkmanager "emulator" \
+             "platform-tools" "platforms;android-28" "build-tools;28.0.3" \
+             "extras;android;m2repository" "extras;google;m2repository"
+```
+
+- [x] Vérifier l'installation
 
 ```bash
 $ sdkmanager --list
@@ -42,20 +52,15 @@ Installed packages:=====================] 100% Computing updates...
   tools                                       | 26.1.1  | Android SDK Tools 26.1.1                   | tools\
 ```
 
-:two: Sinon les `Installer` 
+:two: Installer l'image Android version 28
 
-```bash
-$ sdkmanager "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"
-```
-
-* Installer le package Android SDK version 28
+- [x] Installer les images, les APIs de l'Android SDK version 28 sur l'émulateur X86_64
 
 ```bash
 $ sdkmanager --install "system-images;android-28;google_apis;x86_64"
 ```
 
-* Vérifier l'installation du package Android SDK version 28
-
+- [x] Vérifier l'installation
 
 ```bash
 $ sdkmanager --list
@@ -67,9 +72,9 @@ Installed packages:=====================] 100% Computing updates...
 ...
 ```
 
-### Pour créer un nouveau mobile (autre que test)
+### :b: Pour créer un nouveau mobile
 
-* Creer le AVD (Android Virtual Device) avec un SDK
+* Creer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
 
 ```bash
 $ avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64"
@@ -97,4 +102,4 @@ $ emulator -avd test &
 
 * Jouer avec l'AVD
 
-![image](../images/emulator.png)
+<img src="../images/emulator.png" width="197" height="276"></img>
