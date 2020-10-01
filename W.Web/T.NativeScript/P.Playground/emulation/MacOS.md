@@ -123,7 +123,7 @@ $ simulator
 
 * Jouer avec le simulateur
 
-<img src="../images/simulator.png" width="" height=""></img>
+<img src="../images/simulator.png" width="473" height="935"></img>
 
 
 
