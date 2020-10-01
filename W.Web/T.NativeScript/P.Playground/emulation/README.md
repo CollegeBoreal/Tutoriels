@@ -18,7 +18,7 @@ $ ANDROID_DEVICE=`adb devices | awk 'NR==2 {print $1}'`
 ```
 
 ```
-$ adb -s ANDROID_DEVICE shell
+$ adb -s $ANDROID_DEVICE shell
 ```
 
 
