@@ -11,7 +11,7 @@
 
 [Emulateur sur MacOS](MacOS.md)
 
-## Test de l'Emulateur Android
+## Test de l'Emulateur Android (:x: Ne pas utiliser)
 
 ```
 $ ANDROID_DEVICE=`adb devices | awk 'NR==2 {print $1}'`
