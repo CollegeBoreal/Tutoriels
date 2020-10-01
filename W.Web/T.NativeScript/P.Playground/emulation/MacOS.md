@@ -36,7 +36,7 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 
 ## :a: Gestion de la SDK `Android`
 
-:one: `Installation` Android SDK version 28
+:one: Installer l'émulateur Android version 28
 
 - [x] Installer l'émulateur, la plateforme android et les outils version 28
 
@@ -63,13 +63,15 @@ Installed packages:=====================] 100% Computing updates...
   tools                                       | 26.1.1  | Android SDK Tools 26.1.1                   | tools\
 ```
 
+:two: Installer l'image Android version 28
+
 - [x] Installer les images, les APIs de l'Android SDK version 28 sur l'émulateur X86_64
 
 ```bash
 $ sdkmanager --install "system-images;android-28;google_apis;x86_64"
 ```
 
-:two: Vérifier l'installation
+- [x] Vérifier l'installation
 
 ```bash
 $ sdkmanager --list
@@ -80,7 +82,6 @@ Installed packages:=====================] 100% Computing updates...
   system-images;android-28;google_apis;x86_64 | 9       | Google APIs Intel x86 Atom_64 System Image | system-images\android-28\google_apis\x86_64\
 ...
 ```
-
 
 ### :b: Pour créer un nouveau mobile
 
