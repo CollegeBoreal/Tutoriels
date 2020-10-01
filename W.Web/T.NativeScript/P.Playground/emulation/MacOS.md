@@ -1,13 +1,39 @@
 
 
 
-## MacOS
+# MacOS
 
 :bookmark: Ouvrir le terminal
 
 * Installer l'emulateur, les differents outils, la derniere version de la SDK Android et le simulateur
 
 :warning: Sous MacOS modifier les variables d'environnements => [c.f.](MacOS.md#variables-denvironemment)
+
+## :one: Variables d'environemment
+
+* Ouvrir le fichier `~/.bashrc` **(bash)** ou `~/.zshrc` **(zsh)** avec `nano`
+
+```bash
+$ nano ~/.zshrc
+```
+
+
+* Vérifier (ou rajouter) les variables d'environemments suivantes
+
+- [x] Pour acceder a l'emulateur Android
+
+```
+## Android Specific
+export ANDROID_HOME=/usr/local/share/android-sdk
+export PATH=$ANDROID_HOME/emulator:$PATH
+```
+
+- [x] Pour acceder au Simulateur Mac
+
+```
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+```
+
 
 ### :a: Gestion de la SDK `Android`
 
@@ -97,27 +123,3 @@ $ simulator
 
 
 
-# Variables d'environemment
-
-* Ouvrir le fichier `~/.bashrc` **(bash)** ou `~/.zshrc` **(zsh)** avec `nano`
-
-```bash
-$ nano ~/.zshrc
-```
-
-
-* Vérifier (ou rajouter) les variables d'environemments suivantes
-
-- [x] Pour acceder a l'emulateur Android
-
-```
-## Android Specific
-export ANDROID_HOME=/usr/local/share/android-sdk
-export PATH=$ANDROID_HOME/emulator:$PATH
-```
-
-- [x] Pour acceder au Simulateur Mac
-
-```
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
-```
