@@ -86,7 +86,7 @@ $ emulator -list-avds
 ```
 
 
-# Accélerateur de matériel à vérifier (optionnel pour les nouvelles machines)
+#### :x: Accélerateur de matériel à vérifier (optionnel pour les nouvelles machines)
 
 :warning: Installer l'accélérateur en fonction de votre plateforme
 
