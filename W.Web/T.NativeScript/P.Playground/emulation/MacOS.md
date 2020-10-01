@@ -23,7 +23,7 @@ $ nano ~/.zshrc
 ```
 ## Android Specific
 export ANDROID_HOME=/usr/local/share/android-sdk
-export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 ```
 
 - [x] Pour acceder au Simulateur Mac
