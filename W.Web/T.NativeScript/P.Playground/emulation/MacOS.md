@@ -102,13 +102,13 @@ $ simulator
 * Ouvrir le fichier `~/.bashrc` **(bash)** ou `~/.zshrc` **(zsh)** avec `nano`
 
 ```bash
-$ nano ~/.bashrc
+$ nano ~/.zshrc
 ```
 
 
-* Vérifier les variables d'environemments suivantes
+* Vérifier (ou rajouter) les variables d'environemments suivantes
 
-- Pour acceder a l'emulateur Android
+- [x] Pour acceder a l'emulateur Android
 
 ```
 ## Android Specific
@@ -116,7 +116,7 @@ export ANDROID_HOME=/usr/local/share/android-sdk
 export PATH=$ANDROID_HOME/emulator:$PATH
 ```
 
-- Pour acceder au Simulateur Mac
+- [x] Pour acceder au Simulateur Mac
 
 ```
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
