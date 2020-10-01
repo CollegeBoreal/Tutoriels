@@ -37,5 +37,7 @@ $ sdkmanager --install "ndk;20.1.5948944"
 ```
 
 
+https://medium.com/@amanshuraikwar.in/connecting-to-android-device-with-adb-over-wifi-made-a-little-easy-39439d69b86b
+
 
 
