@@ -8,9 +8,22 @@
 
 * Installer l'emulateur, les differents outils et la derniere version de la SDK Android
 
-:warning: Sous Windows ajouter l'extension `.bat` à `sdkmanager` Voir => [c.f.](Windows.md#variables-denvironemment)
+### :o: Variables d'environemment
 
-### Gestion de la SDK `Android`
+* Ouvrir le fichier `~/.bashrc` avec `nano`
+
+```bash
+$ nano ~/.bashrc
+```
+
+* ajouter les alias suivants
+
+```
+alias sdkmanager=sdkmanager.bat
+alias avdmanager=avdmanager.bat
+```
+
+### :a: Gestion de la SDK `Android`
 
 :one: Verifier que les `packages` de la SDK sont installés
 
@@ -85,28 +98,3 @@ $ emulator -avd test &
 * Jouer avec l'AVD
 
 ![image](../images/emulator.png)
-
-
-# Variables d'environemment
-
-* Ouvrir le fichier `~/.bashrc` avec `nano`
-
-```bash
-$ nano ~/.bashrc
-```
-
-* ajouter les alias suivants
-
-```
-alias sdkmanager=sdkmanager.bat
-alias avdmanager=avdmanager.bat
-```
-
-* Problème de JDK
-
-modifier votre JDK en "/c/Program Files/java/jdk1.8.0_221"
-
-```
-export JAVA_HOME="/c/Program Files/java/jdk1.8.0_221"
-```
-
