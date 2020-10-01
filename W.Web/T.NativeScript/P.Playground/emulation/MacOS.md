@@ -5,7 +5,7 @@
 
 :bookmark: Ouvrir le terminal
 
-* Installer l'emulateur, les differents outils, la derniere version de la SDK Android et le simulateur
+* Installer l'emulateur, les differents outils, la derniere version de la SDK Android et le simulateur iOS
 
 ## :o: Ajouter les Variables d'environemment
 
@@ -113,7 +113,7 @@ $ emulator -avd test &
 
 * Jouer avec l'AVD
 
-![image](../images/emulator.png)
+<img src="../images/emulator.png" width="" height=""></img>
 
 * Lancer le Simulateur iOS
 
@@ -123,7 +123,7 @@ $ simulator
 
 * Jouer avec le simulateur
 
-![image](../images/simulator.png)
+<img src="../images/simulator.png" width="" height=""></img>
 
 
 
