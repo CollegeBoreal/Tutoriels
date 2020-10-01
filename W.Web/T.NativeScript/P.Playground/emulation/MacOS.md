@@ -9,16 +9,16 @@
 
 :warning: Sous MacOS modifier les variables d'environnements => [c.f.](MacOS.md#variables-denvironemment)
 
-## :one: Variables d'environemment
+## :o: Ajouter les Variables d'environemment
 
-* Ouvrir le fichier `~/.bashrc` **(bash)** ou `~/.zshrc` **(zsh)** avec `nano`
+* En fonction du shell, ouvrir le fichier `~/.zshrc` **(zsh)** ou `~/.bashrc` **(bash)** avec `[nano]`
 
 ```bash
 $ nano ~/.zshrc
 ```
 
 
-* Vérifier (ou rajouter) les variables d'environemments suivantes
+* Ajouter (ou Vérifier) les variables d'environemments suivantes:
 
 - [x] Pour acceder a l'emulateur Android
 
@@ -31,13 +31,24 @@ export PATH=$ANDROID_HOME/emulator:$PATH
 - [x] Pour acceder au Simulateur Mac
 
 ```
+## iOS Specific
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 ```
 
 
-### :a: Gestion de la SDK `Android`
+## :a: Gestion de la SDK `Android`
 
-:one: Verifier que les `packages` de la SDK sont installés
+:one: `Installation` Android SDK version 28
+
+- [x] Installer l'émulateur, la plateforme android et les outils version 28
+
+```bash
+$ sdkmanager "emulator" \
+             "platform-tools" "platforms;android-28" "build-tools;28.0.3" \
+             "extras;android;m2repository" "extras;google;m2repository"
+```
+
+- [x] Vérifier l'installation
 
 ```bash
 $ sdkmanager --list
@@ -54,20 +65,13 @@ Installed packages:=====================] 100% Computing updates...
   tools                                       | 26.1.1  | Android SDK Tools 26.1.1                   | tools\
 ```
 
-:two: Sinon les `Installer` 
-
-```bash
-$ sdkmanager "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"
-```
-
-* Installer le package Android SDK version 28
+- [x] Installer les images, les APIs de l'Android SDK version 28 sur l'émulateur X86_64
 
 ```bash
 $ sdkmanager --install "system-images;android-28;google_apis;x86_64"
 ```
 
-* Vérifier l'installation du package Android SDK version 28
-
+:two: Vérifier l'installation
 
 ```bash
 $ sdkmanager --list
@@ -78,6 +82,7 @@ Installed packages:=====================] 100% Computing updates...
   system-images;android-28;google_apis;x86_64 | 9       | Google APIs Intel x86 Atom_64 System Image | system-images\android-28\google_apis\x86_64\
 ...
 ```
+
 
 ### :b: Pour créer un nouveau mobile
 
