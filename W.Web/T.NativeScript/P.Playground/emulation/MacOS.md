@@ -7,8 +7,6 @@
 
 * Installer l'emulateur, les differents outils, la derniere version de la SDK Android et le simulateur
 
-:warning: Sous MacOS modifier les variables d'environnements => [c.f.](MacOS.md#variables-denvironemment)
-
 ## :o: Ajouter les Variables d'environemment
 
 * En fonction du shell, ouvrir le fichier `~/.zshrc` **(zsh)** ou `~/.bashrc` **(bash)** avec `[nano]`
