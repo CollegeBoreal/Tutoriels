@@ -57,9 +57,9 @@ Press any key to continue...
 
 :four: Vérification
 
-:bangbang: Sortir du Terminal `cmd` et rouvrir un autre (i.e. `git bash`) pour tester les variables
+:bangbang: Sortir du Terminal `[cmd]` et ouvrir `un` nouveau `[git bash]` pour tester les variables ci-dessous
 
-* Variables d'environnements présentes
+- [x] `Variables d'environnements` présentes:
 
 ```bash
 $ echo $JAVA_HOME
@@ -69,13 +69,7 @@ $ echo $ANDROID_HOME
 C:\Android\android-sdk
 ```
 
-
-```
-export ANDROID_HOME=/usr/local/share/android-sdk
-export PATH=$ANDROID_HOME/emulator:$PATH
-```
-
-* `Packages` présents
+- [x] `Packages` présents:
 
 ```
 $ choco list --local-only
@@ -85,14 +79,14 @@ android-sdk 26.1.1
 ...
 ```
 
-* `emulator` présent
+- [x] `emulator` présent
+
 ```
 $ emulator -list-avds
-test
 ```
 
 
-# Accélerateur de matériel
+# Accélerateur de matériel à vérifier (optionnel pour les nouvelles machines)
 
 :warning: Installer l'accélérateur en fonction de votre plateforme
 
