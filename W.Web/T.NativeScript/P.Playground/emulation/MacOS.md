@@ -113,7 +113,7 @@ $ emulator -avd test &
 
 * Jouer avec l'AVD
 
-<img src="../images/emulator.png" width="394" height="553"></img>
+<img src="../images/emulator.png" width="197" height="276"></img>
 
 * Lancer le Simulateur iOS
 
