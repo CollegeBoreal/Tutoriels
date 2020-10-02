@@ -21,6 +21,11 @@ PS > choco install ntop.portable
 PS> Remove-Item -LiteralPath "foldertodelete" -Force -Recurse
 ```
 
+## Issues
+
+https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
+
+
 # Reference:
 
 https://www.youtube.com/watch?v=2WZwv7TxqZ0
