@@ -8,11 +8,3 @@
 
 :pushpin: [deployment](deployment)
 
-
-# Références: 
-
-## AWS Cheat Sheet
-
-https://linuxacademy.com/blog/amazon-web-services-2/your-aws-terminology-cheat-sheet/
-
-
