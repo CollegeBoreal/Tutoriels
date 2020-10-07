@@ -56,7 +56,7 @@ $ ghcup install 8.6.5
 $ ghcup set 8.6.5
 ```
 
-### :two: pour Windows PowerShell
+### :two: pour `[Windows PowerShell]`
 
 https://www.powershellgallery.com/packages/ghcups/3.7
 
@@ -65,13 +65,13 @@ https://github.com/kakkun61/ghcups
 :x: Prérequis - S'assurer que `7Zip` soit installé 
 
 ```
-> choco install 7zip.install
+PS > choco install 7zip.install
 ```
 
 :o: Installer `ghcups` - `(S'assurer d'etre en mode Administrateur)`
 
 ```powershell
-> Install-Module -Name ghcups
+PS > Install-Module -Name ghcups
 ```
 
 :m: En tant qu'utilisteur normal, 
@@ -79,13 +79,13 @@ https://github.com/kakkun61/ghcups
 - [ ] Importer le module `ghcups` 
 
 ```
-> Import-Module ghcups
+PS > Import-Module ghcups
 ```
 
 - [ ] Confirmer l'installation du module.
 
 ```powershell
-> Get-Module ghcups
+PS > Get-Module ghcups
 ```
 
 :m: Installer `GHC`
@@ -93,25 +93,25 @@ https://github.com/kakkun61/ghcups
 - [ ] lister les version disponibles.
 
 ```powershell
-> get-ghc
+PS > get-ghc
 ```
 
 - [ ] Installer la version de `ghci` désirée
 
 ```powershell
-> Install-Ghc 8.6.5
+PS > Install-Ghc 8.6.5
 ```
 
 - [ ] Rendre la version installée par défaut
 
 ```powershell
-> Set-Ghc 8.6.5
+PS > Set-Ghc 8.6.5
 ```
 
 - [ ] Vérifier la version installée par défaut
 
 ```powershell
-> ghci --version
+PS > ghci --version
 The Glorious Glasgow Haskell Compilation System, version 8.6.5
 ```
 
@@ -120,25 +120,25 @@ The Glorious Glasgow Haskell Compilation System, version 8.6.5
 - [ ] lister les version disponibles.
 
 ```powershell
-> get-cabal
+PS > get-cabal
 ```
 
 - [ ] Installer la version de `cabal` désirée
 
 ```powershell
-> Install-Cabal 3.2.0.0
+PS > Install-Cabal 3.2.0.0
 ```
 
 - [ ] Rendre la version installée par défaut
 
 ```powershell
-> Set-Cabal 3.2.0.0
+PS > Set-Cabal 3.2.0.0
 ```
 
 - [ ] Vérifier la version installée par défaut
 
 ```powershell
-> cabal --version
+PS > cabal --version
 cabal-install version 3.2.0.0
 compiled using version 3.2.0.0 of the Cabal library
 ```
