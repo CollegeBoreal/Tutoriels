@@ -181,7 +181,7 @@ haskell-platform/stable,now 2014.2.0.0.debian8 all [installed]
 
 https://github.com/Gabriel439/haskell-nix
 
-* Install `cabal-install`
+* Install `cabal-install` <i>Add  --dry-run</i> for testing
 
 ```
 $ nix-env --install cabal-install
