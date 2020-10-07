@@ -228,7 +228,7 @@ $ nix-env --file "<nixpkgs>" --query --available --attr-path --attr haskell.comp
 $ nix-env --file "<nixpkgs>" --profile /tmp/foo --install --attr haskell.compiler.ghc865 
 ```
 
-* Environment vith nix https://romainviallard.dev/en/blog/setting-up-a-haskell-development-environment-with-nix/
+* Environment vith nix https://github.com/aveltras/setting-up-a-haskell-development-environment-with-nix
 
 ```
 $ nix-env --query
