@@ -118,6 +118,29 @@ $ git rm monfichier.md
 $ git rm -rf monrepertoire 
 ```
 
+# Configurer git (Clé personnelle)
+
+### .ssh/config
+
+:pushpin: Utilisation du port ssh par défaut :two::two:
+
+```
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github.com.pk
+```
+
+:pushpin: Utilisation du port ssh à travers TLS :four::four::three:
+
+
+```
+Host github.com
+ HostName ssh.github.com
+ IdentityFile ~/.ssh/github.com.pk
+ Port 443
+```
+
 # [http buffer](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)
 
 ```
@@ -161,29 +184,6 @@ La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
         smudge = git-lfs smudge -- %f
         process = git-lfs filter-process
         required = true
-```
-
-# Configurer git (Clé personnelle)
-
-### .ssh/config
-
-:pushpin: Utilisation du port ssh par défaut :two::two:
-
-```
-Host github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/github.com.pk
-```
-
-:pushpin: Utilisation du port ssh à travers TLS :four::four::three:
-
-
-```
-Host github.com
- HostName ssh.github.com
- IdentityFile ~/.ssh/github.com.pk
- Port 443
 ```
 
 # Git & zsh
