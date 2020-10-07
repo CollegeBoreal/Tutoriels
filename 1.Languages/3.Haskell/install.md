@@ -64,7 +64,7 @@ https://github.com/kakkun61/ghcups
 
 :x: Prérequis - S'assurer que `7Zip` soit installé 
 
-```
+```powershell
 PS > choco install 7zip.install
 ```
 
@@ -78,7 +78,7 @@ PS > Install-Module -Name ghcups
 
 - [ ] Importer le module `ghcups` 
 
-```
+```powershell
 PS > Import-Module ghcups
 ```
 
@@ -148,7 +148,7 @@ compiled using version 3.2.0.0 of the Cabal library
 
 :pushpin: Windows
 
-```
+```powershell
 PS > choco install ghc haskell-stack
 ```
 
