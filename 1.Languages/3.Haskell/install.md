@@ -244,3 +244,7 @@ $ nix-env --uninstall ghc
 ```
 $ nix-shell --packages nix-info --run "nix-info --markdown"
 ```
+
+# References
+
+https://appuals.com/fix-execution-of-scripts-is-disabled-on-this-system/#:~:text=What%20Causes%20the%20%E2%80%9CExecution%20of%20scripts%20is%20disabled,4%3A%20Resolve%20the%20Method%20Using%20the%20Registry.%20
