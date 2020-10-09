@@ -26,3 +26,5 @@ chocolatey 0.10.15
 ```
 
 
+https://stackoverflow.com/questions/27753917/how-do-you-successfully-change-execution-policy-and-enable-execution-of-powershe
+
