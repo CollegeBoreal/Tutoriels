@@ -30,6 +30,12 @@ Error while running 'C:\ProgramData\chocolatey\lib\multipass\tools\chocolateyins
 $ brew cask install multipass
 ```
 
+:pushpin: Linux snap
+
+```
+$ sudo snap install multipass
+```
+
 ## :b: Launch a machine
 
 * Launch
