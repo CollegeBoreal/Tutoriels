@@ -106,6 +106,13 @@ No instances found.
 
 ## :key: Multipass Keys
 
+
+:penguin: Linux
+
+```
+$ sudo ssh -i /var/snap/multipass/common/data/multipassd/ssh-keys/id_rsa ubuntu@10.15.78.10
+```
+
 :apple: MacOS
 
 ```
