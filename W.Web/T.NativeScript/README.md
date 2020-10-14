@@ -26,21 +26,14 @@ https://www.nativescript.org/books-and-videos
 ### NativeScript CLI
 
 ```
-$ npm install nativescript@rc --global 
-```
-
-* Prochaine version -- instable
-
-
-```
-$ npm install nativescript@next --global 
+$ npm install nativescript@6.5.1 --global 
 ```
 
 Vérifier l'installation
 
 ```
 $ tns --version
-7.0.9-rc.1
+6.5.1
 ```
 
 ### Projet
@@ -78,7 +71,7 @@ If you have any questions, check Stack Overflow: https://stackoverflow.com/quest
 
 ```
 $ tns --version
-7.0.9-rc.1
+6.5.1
 ```
 
 ##### Check if the emulator can run correctly
