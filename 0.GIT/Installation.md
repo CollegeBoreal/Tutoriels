@@ -5,14 +5,14 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 
 ## :one: Installation avec un [Package Manager](../P.Plateformes/P.PackageManager) (Recommandé)
 
-### Installation avec [chocolatey](https://chocolatey.org) - [Windows](../P.Plateformes/P.PackageManager/Windows.md) Seulement
+### Installation avec [chocolatey](https://chocolatey.org) - Pour [Windows](../P.Plateformes/P.PackageManager/Windows.md) Seulement
 
 
 ```
 PS > choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf"
 ```
 
-### Installation avec [brew](https://brew.sh) - MacOS Seulement
+### Installation avec [brew](https://brew.sh) - pour [MacOS](../P.Plateformes/P.PackageManager/MacOS.md) Seulement
 
 
 ```
