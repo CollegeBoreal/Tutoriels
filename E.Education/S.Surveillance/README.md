@@ -11,7 +11,13 @@
 - [ ] Démarrer le test
 - [ ] Le test va démarrer `LockDown Browser` et arrêter toutes les applications  
 
-  - [ ] Lancer l'installation de `LockDown Browser` (si ce n'est pas installé)
+  :warning: Si ce n'est pas installé, Lancer l'installation
+
+:two: Dans `LockDown Browser`
+
+  - [ ] Dans le champ description, cliquer sur le lien `zoom`qui lancera une session
+  
+  - [ ] Démarrer le test
 
 
 
