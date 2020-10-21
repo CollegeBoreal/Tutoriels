@@ -1,5 +1,7 @@
 # Windows 10 (Pro et Éducation)
 
+[Installation Doc](https://docs.nativescript.org/start/ns-setup-win)
+
 :one: Executer la commande suivante dans `cmd` en tant qu'Administrateur 
 
 `(Touche Windows > taper "cmd" > right click > Run as Administrator)`
