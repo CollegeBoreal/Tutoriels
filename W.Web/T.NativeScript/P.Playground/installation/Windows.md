@@ -2,6 +2,8 @@
 
 [Installation Doc](https://docs.nativescript.org/start/ns-setup-win)
 
+[Executer un script sur windows](https://www.it-connect.fr/powershell-get-executionpolicy-et-set-executionpolicy/)
+
 :one: Executer la commande suivante dans `cmd` en tant qu'Administrateur 
 
 `(Touche Windows > taper "cmd" > right click > Run as Administrator)`
