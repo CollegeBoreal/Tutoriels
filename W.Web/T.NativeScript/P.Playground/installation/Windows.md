@@ -1,8 +1,6 @@
-# Windows 10 (Pro et Éducation)
+# [Windows](https://docs.nativescript.org/start/ns-setup-win) 10 (Pro et Éducation)
 
-[Installation Doc](https://docs.nativescript.org/start/ns-setup-win)
-
-[Executer un script sur windows](https://www.it-connect.fr/powershell-get-executionpolicy-et-set-executionpolicy/)
+:bookmark: [Executer un script sur windows](https://www.it-connect.fr/powershell-get-executionpolicy-et-set-executionpolicy/)
 
 :one: Executer la commande suivante dans `cmd` en tant qu'Administrateur 
 
