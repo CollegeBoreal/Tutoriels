@@ -25,6 +25,22 @@ https://www.nativescript.org/books-and-videos
 
 ### NativeScript CLI
 
+Installer la dernière version
+
+
+```
+$ npm install nativescript --global 
+```
+
+Vérifier l'installation
+
+```
+$ ns --version
+7.0.11
+```
+
+Installer une version spécifique
+
 ```
 $ npm install nativescript@6.5.1 --global 
 ```
@@ -42,12 +58,12 @@ $ tns --version
 To create a new project, you use:
 
 ```
-$ tns create <app name>
+$ ns create <app name>
 ```
 
 To build your project locally you use:
 ```
-$ tns build <platform>
+$ ns build <platform>
 ```
 
 NOTE: Local builds require additional setup of your environment. You can find more information here: https://docs.nativescript.org/start/quick-setup
@@ -55,7 +71,7 @@ NOTE: Local builds require additional setup of your environment. You can find mo
 
 To build your project in the cloud you can use:
 ```
-tns cloud build <platform>
+$ ns cloud build <platform>
 ```
 
 NOTE: Cloud builds require Telerik account. You can find more information here: https://docs.nativescript.org/sidekick/intro/requirements
@@ -66,13 +82,6 @@ If you want to experiment with NativeScript in your browser, try the Playground:
 
 If you have any questions, check Stack Overflow: https://stackoverflow.com/questions/tagged/nativescript and our public Slack channel: https://nativescriptcommunity.slack.com/
 
-
-##### Check the installed version
-
-```
-$ tns --version
-6.5.1
-```
 
 ##### Check if the emulator can run correctly
 
