@@ -8,14 +8,14 @@
 * install NativeScript CLI (add sudo if required)
 
 ```
-$ npm install nativescript@6.5.1 --global
+$ npm install nativescript --global
  ```
  
  * Test
  
  ```
-$ tns --version
-6.5.1
+$ ns --version
+7.0.11
  ```
 
 :one: Installation
