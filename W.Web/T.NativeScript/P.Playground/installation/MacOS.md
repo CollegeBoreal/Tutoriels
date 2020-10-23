@@ -107,7 +107,7 @@ y
 * Avec brew:
 
 ```
-% brew cask list --versions
+% % brew list --cask --versions
 ```
 
 Verifier que les `artifacts` suivant sont presents
