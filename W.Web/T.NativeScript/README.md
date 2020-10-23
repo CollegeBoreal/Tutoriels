@@ -25,27 +25,28 @@ https://www.nativescript.org/books-and-videos
 
 ### NativeScript CLI
 
-Installer la dernière version
-
+- [ ] Installer la dernière version
 
 ```
 $ npm install nativescript --global 
 ```
 
-Vérifier l'installation
+- [ ] Vérifier l'installation
 
 ```
 $ ns --version
 7.0.11
 ```
 
-Installer une version spécifique
+##### :x: Autres versions 
+
+- [ ] Installer une version spécifique
 
 ```
 $ npm install nativescript@6.5.1 --global 
 ```
 
-Vérifier l'installation
+- [ ] Vérifier l'installation
 
 ```
 $ tns --version
