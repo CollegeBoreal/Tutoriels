@@ -1,5 +1,7 @@
 # MacOS
 
+### :a: Automatique
+
 * Ouvrir un terminal et executer la commande
 
 ```
@@ -102,7 +104,11 @@ Do you want to install HAXM (Hardware accelerated Android emulator)? (y/n)
 y
 ```
 
-## :three: Verification
+### :b: Manuel
+
+https://docs.nativescript.org/start/ns-setup-os-x
+
+## :ab: Verification
 
 * Avec brew:
 
