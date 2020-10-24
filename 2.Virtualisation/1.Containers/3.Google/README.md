@@ -22,7 +22,7 @@ $ cd python-docs-samples/appengine/standard_python37/hello_world
 :bulb: Current Python is 2.7
 
 ```
-$ python --verison
+$ python --version
 ********************************************************************************
 Python 2 is deprecated. Upgrade to Python 3 as soon as possible.
 See https://cloud.google.com/python/docs/python2-sunset
