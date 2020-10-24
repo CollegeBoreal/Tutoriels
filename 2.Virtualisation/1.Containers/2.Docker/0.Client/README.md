@@ -20,6 +20,14 @@ PS > choco install docker-cli
 
 :m: Gestion des Conteneurs
 
+- [ ] Liste des conteneurs existants
+
 ```
 $ docker container ls
+```
+
+- [ ] Liste de tous les conteneurs existants, et zombies
+
+```
+$ docker container ls --all
 ```
