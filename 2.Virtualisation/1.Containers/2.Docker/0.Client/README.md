@@ -31,3 +31,15 @@ $ docker container ls
 ```
 $ docker container ls --all
 ```
+
+:m: Gestion des volumes
+
+```
+$ docker volume ls
+```
+
+:m: Gestion des images
+
+```
+$ docker image ls
+```
