@@ -22,6 +22,8 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 [In-Stream Hydrokinetic Power: Review and Appraisal](images/28asce29ey2E1943-78972E0000197.pdf)
 
+https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-energy-future-power-plants/
+
 
 <img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
 
