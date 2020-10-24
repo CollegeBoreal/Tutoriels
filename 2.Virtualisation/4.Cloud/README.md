@@ -4,7 +4,9 @@
 
 <img src="images/modular_cloud_data_center.png" width="1104" heigth="750"></img>
 
-## :a: Hydrokinetic Power
+## :a: Power
+
+##### :pushpin: Hydrokinetic Power
 
 :star: https://www.verdantpower.com/riteproject
 
@@ -24,7 +26,9 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 <img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
 
 
-## :pushpin: PureCell® Model 400 - Fuel Cell Energy
+##### :pushpin: Fuel Cell Energy
+
+:bulb: PureCell® Model 400
 
 [Inside the Purecell System](http://www.doosanfuelcellamerica.com/en/fuel-cell-solutions/inside-the-purecell-system/)
 
@@ -36,7 +40,7 @@ https://youtu.be/1LkGda8TQ3g?t=90
 
 ## :b: Data Center
 
-##### :m: Modular 
+##### :pushpin: Modular 
 
 <img src="images/SGI-Ice-Cube.png" width="938" heigth="694"></img> 
 
@@ -46,7 +50,7 @@ https://youtube.com/watch?v=DLjBecEbNMA
 
 https://www.ecmwf.int/sites/default/files/elibrary/2012/14029-sgi-update.pdf
 
-##### :m: Underwatwer 
+##### :pushpin: Underwatwer 
 
 
 https://news.microsoft.com/innovation-stories/project-natick-underwater-datacenter/
