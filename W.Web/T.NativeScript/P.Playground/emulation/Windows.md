@@ -25,14 +25,20 @@ alias avdmanager=avdmanager.bat
 
 ### :a: Gestion de la SDK `Android`
 
+:zero: Installer l'émulateur, les outils pour les plateformes et les référentiels
+
+```bash
+$ sdkmanager "emulator" \
+             "platform-tools" \
+             "extras;android;m2repository" "extras;google;m2repository"
+```
+
 :one: Installer l'émulateur Android [Pie](https://www.android.com/versions/pie-9-0) version 28
 
 - [x] Installer l'émulateur, la plateforme android et les outils version 28
 
 ```bash
-$ sdkmanager "emulator" \
-             "platform-tools" "platforms;android-28" "build-tools;28.0.3" \
-             "extras;android;m2repository" "extras;google;m2repository"
+$ sdkmanager "platforms;android-28" "build-tools;28.0.3"
 ```
 
 - [x] Vérifier l'installation
