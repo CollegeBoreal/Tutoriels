@@ -88,9 +88,16 @@ Installed packages:=====================] 100% Computing updates...
 * Creer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
 
 ```bash
-$ avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64"
-Auto-selecting single ABI x86===========] 100% Fetch remote repository...
-Do you wish to create a custom hardware profile? [no] no
+$ echo no | avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64"
+```
+
+```bash
+$ cat << EOF >> ~/.android/avd/test.avd/config.ini
+showDeviceFrame=yes
+skin.dynamic=yes
+skin.name=pixel_3a
+skin.path=$ANDROID_HOME/skins/pixel_3a
+EOF
 ```
 
 * Vérifier
