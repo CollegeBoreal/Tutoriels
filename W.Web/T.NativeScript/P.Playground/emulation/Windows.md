@@ -25,7 +25,7 @@ alias avdmanager=avdmanager.bat
 
 ### :a: Gestion de la SDK `Android`
 
-:one: Installer l'émulateur Android version 28
+:one: Installer l'émulateur Android [Pie](https://www.android.com/versions/pie-9-0) version 28
 
 - [x] Installer l'émulateur, la plateforme android et les outils version 28
 
