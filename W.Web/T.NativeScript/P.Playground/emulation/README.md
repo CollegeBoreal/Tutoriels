@@ -3,13 +3,15 @@
 
 ## Installation de Playground 
 
-### sur Windows
+### :a: Préparer son environemment
+
+#### :computer: sous Windows
 
 [Emulateur sur Windows](Windows.md)
 
-### sur MacOS
+#### :apple: sous MacOS
 
-[Emulateur sur MacOS](MacOS.md)
+[Emulateur sur MacOS](Enviroment-MacOS.md)
 
 ## Test de l'Emulateur Android (:x: Ne pas utiliser)
 
