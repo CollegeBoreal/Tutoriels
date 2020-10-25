@@ -110,6 +110,12 @@ $ emulator -avd test -skin 768x1280 &
 
 <img src="../images/emulator.png" width="197" height="276"></img>
 
+:x: Supprimer
+
+```
+$ avdmanager delete avd --name test
+```
+
 ## References
 
 https://gist.github.com/mrk-han/66ac1a724456cadf1c93f4218c6060ae
