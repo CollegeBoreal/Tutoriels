@@ -97,7 +97,7 @@ Available Android Virtual Devices:
 * Lancer l'appareil virtuel Android
 
 ```bash
-$ emulator -avd test &
+$ emulator -avd test -skin 768x1280 &
 ```
 
 * Jouer avec l'AVD
