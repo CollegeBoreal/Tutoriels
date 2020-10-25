@@ -83,44 +83,7 @@ Installed packages:=====================] 100% Computing updates...
 ...
 ```
 
-### :b: Pour créer un nouveau mobile
 
-* Creer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
-
-```bash
-$ echo no | avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64"
-```
-
-```bash
-$ cat << EOF >> ~/.android/avd/test.avd/config.ini
-showDeviceFrame=yes
-skin.dynamic=yes
-skin.name=pixel_3a
-skin.path=$ANDROID_HOME/skins/pixel_3a
-EOF
-```
-
-* Vérifier
-
-
-```bash
-$ avdmanager list avd
-Available Android Virtual Devices:
-    Name: test
-    Path: C:\Users\300098957\.android\avd\test.avd
-  Target: Google APIs (Google Inc.)
-          Based on: Android API 28 Tag/ABI: google_apis/x86_64
-```
-
-* Lancer l'appareil virtuel Android
-
-```bash
-$ emulator -avd test &
-```
-
-* Jouer avec l'AVD
-
-<img src="../images/emulator.png" width="197" height="276"></img>
 
 * Lancer le Simulateur iOS
 
