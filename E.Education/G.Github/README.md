@@ -21,5 +21,5 @@ https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classro
 
 ## :two: Github Campus Advisors
 
-[s'enregistrer à => ](1.Github-Learning-Lab/0.Installation)
+[s'enregistrer à => ](2.Campus-Advisors)
 
