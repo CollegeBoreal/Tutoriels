@@ -2,7 +2,7 @@
 
 ### :a: Gestion de la SDK `Android`
 
-Sous `git bash`
+Sous `git bash` ou dans le `Terminal`
 
 :zero: Installer l'émulateur, les outils pour les plateformes et les référentiels
 
@@ -80,7 +80,6 @@ EOF
 ```
 
 - [x] Vérifier
-
 
 ```bash
 $ avdmanager list avd
