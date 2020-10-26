@@ -16,4 +16,4 @@ https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classro
 
 ## :one: Github Learning Lab
 
-[s'enregistrer à => ](0.Github-Learning-Lab/0.Installation)
+[s'enregistrer à => ](1.Github-Learning-Lab/0.Installation)
