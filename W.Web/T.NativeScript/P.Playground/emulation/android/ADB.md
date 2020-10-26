@@ -2,6 +2,8 @@
 
 ## :a: Utilisation de l'ADB CLI
 
+:warning: Sous `git bash` rajouter `winpty`
+
 ```
 $ ANDROID_DEVICE=`adb devices | awk 'NR==2 {print $1}'`
 ```
