@@ -23,3 +23,8 @@ https://github.blog/2020-03-18-set-up-your-digital-classroom-with-github-classro
 
 [s'enregistrer à => ](2.Campus-Advisors)
 
+
+## :three: Visualizing Git
+
+http://git-school.github.io/visualizing-git/
+
