@@ -33,16 +33,3 @@ export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 ```
 
-
-* Lancer le Simulateur iOS
-
-```bash
-$ simulator
-```
-
-* Jouer avec le simulateur
-
-<img src="../images/simulator.png" width="236" height="467"></img>
-
-
-
