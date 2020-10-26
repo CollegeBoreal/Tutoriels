@@ -5,7 +5,7 @@
 
 ### :a: Préparer son environemment
 
-- [ ] [Environnment de l'Emulateur](environnement)
+- [ ] [Environnment de l'Emulateur](environment)
 
 ### :b: Installer l'émulateur et le simulateur
 
