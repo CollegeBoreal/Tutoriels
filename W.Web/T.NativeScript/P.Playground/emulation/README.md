@@ -5,13 +5,7 @@
 
 ### :a: Préparer son environemment
 
-#### :computer: sous Windows
-
-[Emulateur sur Windows](Windows.md)
-
-#### :apple: sous MacOS
-
-[Emulateur sur MacOS](Environment-MacOS.md)
+- [ ] [Environnment de l'Emulateur](environnement)
 
 ### :b: Installer l'émulateur et le simulateur
 
