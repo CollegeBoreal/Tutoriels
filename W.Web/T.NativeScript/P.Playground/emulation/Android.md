@@ -57,11 +57,13 @@ Installed packages:=====================] 100% Computing updates...
 
 ### :b: Pour créer un nouveau mobile
 
-* Creer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
+- [x] Créer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
 
 ```bash
 $ echo no | avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64" --device "pixel"
 ```
+
+- [x] Embellir l'émulateur pour qu'il ressemble à un smartphone
 
 ```bash
 $ cat << EOF >> ~/.android/avd/test.avd/config.ini
@@ -69,10 +71,13 @@ showDeviceFrame=yes
 skin.dynamic=yes
 skin.name=pixel_3a
 skin.path=$ANDROID_HOME/skins/pixel_3a
+hw.gpu.enabled=yes
+hw.gpu.mode=auto
+hw.ramSize=1536
 EOF
 ```
 
-* Vérifier
+- [x] Vérifier
 
 
 ```bash
