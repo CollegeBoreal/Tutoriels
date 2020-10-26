@@ -137,7 +137,7 @@ https://medium.com/@amanshuraikwar.in/connecting-to-android-device-with-adb-over
 
 
 
-
+https://stackoverflow.com/questions/4032960/how-do-i-get-an-apk-file-from-an-android-device
 
 
 ## References
