@@ -18,5 +18,5 @@
 
 - [ ] [Emulateur Android](android)
 
-- [ ] [Simulateur iOS](iOS)
+- [ ] [Simulateur iOS](ios)
 
