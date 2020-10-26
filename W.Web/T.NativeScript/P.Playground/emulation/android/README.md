@@ -108,3 +108,7 @@ $ emulator -avd test &
 ```
 $ avdmanager delete avd --name test
 ```
+
+## :ab: Utiliser l'Android CLI
+
+[ADB CLI](ADB.md)
