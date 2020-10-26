@@ -60,7 +60,7 @@ Installed packages:=====================] 100% Computing updates...
 * Creer le AVD (Android Virtual Device) avec l'utilitaire `avdmanager`
 
 ```bash
-$ echo no | avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64"
+$ echo no | avdmanager create avd --name test --package "system-images;android-28;google_apis;x86_64" --device "pixel"
 ```
 
 ```bash
