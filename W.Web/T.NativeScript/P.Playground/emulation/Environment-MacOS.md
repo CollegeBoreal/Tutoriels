@@ -34,57 +34,6 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 ```
 
 
-## :a: Gestion de la SDK `Android`
-
-:one: Installer l'émulateur Android version 28
-
-- [x] Installer l'émulateur, la plateforme android et les outils version 28
-
-```bash
-$ sdkmanager "emulator" \
-             "platform-tools" "platforms;android-28" "build-tools;28.0.3" \
-             "extras;android;m2repository" "extras;google;m2repository"
-```
-
-- [x] Vérifier l'installation
-
-```bash
-$ sdkmanager --list
-Installed packages:=====================] 100% Computing updates...
-  Path                                        | Version | Description                                | Location
-  -------                                     | ------- | -------                                    | -------
-  build-tools;28.0.3                          | 28.0.3  | Android SDK Build-Tools 28.0.3             | build-tools\28.0.3\
-  emulator                                    | 29.2.2  | Android Emulator                           | emulator\
-  extras;android;m2repository                 | 47.0.0  | Android Support Repository                 | extras\android\m2repository\
-  extras;google;m2repository                  | 58      | Google Repository                          | extras\google\m2repository\
-  platform-tools                              | 29.0.4  | Android SDK Platform-Tools                 | platform-tools\
-  platforms;android-28                        | 6       | Android SDK Platform 28                    | platforms\android-28\
-  system-images;android-28;google_apis;x86_64 | 9       | Google APIs Intel x86 Atom_64 System Image | system-images\android-28\google_apis\x86_64\
-  tools                                       | 26.1.1  | Android SDK Tools 26.1.1                   | tools\
-```
-
-:two: Installer l'image Android version 28
-
-- [x] Installer les images, les APIs de l'Android SDK version 28 sur l'émulateur X86_64
-
-```bash
-$ sdkmanager --install "system-images;android-28;google_apis;x86_64"
-```
-
-- [x] Vérifier l'installation
-
-```bash
-$ sdkmanager --list
-Installed packages:=====================] 100% Computing updates...
-  Path                                        | Version | Description                                | Location
-  -------                                     | ------- | -------                                    | -------
-...
-  system-images;android-28;google_apis;x86_64 | 9       | Google APIs Intel x86 Atom_64 System Image | system-images\android-28\google_apis\x86_64\
-...
-```
-
-
-
 * Lancer le Simulateur iOS
 
 ```bash
