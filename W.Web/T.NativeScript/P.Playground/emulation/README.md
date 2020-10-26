@@ -15,6 +15,6 @@
 
 ### :b: Installer l'émulateur sous Android
 
-[Emulateur Android](Android)
+[Emulateur Android](android)
 
 
