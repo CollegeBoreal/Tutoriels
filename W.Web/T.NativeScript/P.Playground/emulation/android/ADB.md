@@ -1,6 +1,6 @@
+# ADB (Android Debug Bus)
 
-
-## :ab: Test de l'Emulateur Android (Optionnel)
+## :a: Utilisation de l'ADB CLI
 
 ```
 $ ANDROID_DEVICE=`adb devices | awk 'NR==2 {print $1}'`
