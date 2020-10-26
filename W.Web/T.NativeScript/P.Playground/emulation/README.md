@@ -13,8 +13,10 @@
 
 [Emulateur sur MacOS](Environment-MacOS.md)
 
-### :b: Installer l'émulateur sous Android
+### :b: Installer l'émulateur et le simulateur
 
-[Emulateur Android](android)
 
+- [ ] [Emulateur Android](android)
+
+- [ ] [Simulateur iOS](iOS)
 
