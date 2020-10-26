@@ -97,7 +97,8 @@ $ emulator -avd test &
 
 * Jouer avec l'AVD
 
-<img src="../images/emulator.png" width="197" height="276"></img>
+<!--img src="../images/emulator.png" width="197" height="276"></img-->
+<img src="../images/Test_Pixel.png" width="936" height="1706"></img>
 
 :x: Supprimer
 
