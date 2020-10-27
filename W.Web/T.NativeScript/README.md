@@ -53,7 +53,12 @@ $ tns --version
 6.5.1
 ```
 
-### Projet
+## :three: IDE
+
+[Installer les IDEs](IDE.md)
+
+
+## :four: Projet
 
 
 To create a new project, you use:
