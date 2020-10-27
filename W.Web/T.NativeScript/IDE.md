@@ -2,7 +2,7 @@
 
 ## :o: Installation
 
-### Android Studio
+### :pushpin: Android Studio
 
 ##### :computer: Windows
 
