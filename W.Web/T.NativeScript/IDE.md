@@ -1,8 +1,21 @@
 # IDE
 
-## :o: Installation
+### :o: Visual Studio Code (VSC)
 
-### :pushpin: Android Studio
+##### :computer: Windows
+
+```
+PS > choco install vscode
+``` 
+
+##### :apple: MacOS
+
+```
+% brew cask install visual-studio-code
+```
+
+
+### :a: Android Studio
 
 ##### :computer: Windows
 
@@ -37,3 +50,13 @@ et fournir le lien symbolique de $ANDROID_HOME
 ```
 $ ln -s $ANDROID_HOME ~/Library/Android/sdk
 ```
+
+### :b: XCode
+
+##### :computer: Windows
+
+:x: N'existe pas sur Windows
+
+##### :apple: MacOS
+
+:+1: Est installé par défaut pour faire du développement
