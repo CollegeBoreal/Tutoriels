@@ -93,15 +93,26 @@ If you have any questions, check Stack Overflow: https://stackoverflow.com/quest
 
 ```
 $ tns doctor
+✔ Getting environment information 
+
 No issues were detected.
-Your ANDROID_HOME environment variable is set and points to correct directory.
-Your adb from the Android SDK is correctly installed.
-The Android SDK is installed.
-A compatible Android SDK for compilation is found.
-Javac is installed and is configured properly.
-The Java Development Kit (JDK) is installed and is configured properly.
-Local builds for iOS can be executed only on a macOS system. To build for iOS on a different operating system, you can use the NativeScript cloud infrastructure.
-Component nativescript has 6.2.0-2019-09-04-074603-13841 version and is up to date.
+✔ Your ANDROID_HOME environment variable is set and points to correct directory.
+✔ Your adb from the Android SDK is correctly installed.
+✔ The Android SDK is installed.
+✔ A compatible Android SDK for compilation is found.
+✔ Javac is installed and is configured properly.
+✔ The Java Development Kit (JDK) is installed and is configured properly.
+✔ Xcode is installed and is configured properly.
+✔ xcodeproj is installed and is configured properly.
+✔ CocoaPods are installed.
+✔ CocoaPods update is not required.
+✔ CocoaPods are configured properly.
+✔ Your current CocoaPods version is newer than 1.0.0.
+✔ Python installed and configured correctly.
+✔ The Python 'six' package is found.
+✔ Xcode version 12.0.1 satisfies minimum required version 10.
+✔ Getting NativeScript components versions information...
+⚠ Update available for component nativescript. Your current version is 6.5.1 and the latest available version is 7.0.11.
 ```
 
 # References
