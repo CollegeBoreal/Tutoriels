@@ -22,3 +22,6 @@ La présente installation du `Playground Local` utilise [`HomeBrew`](https://bre
 % echo $ANDROID_HOME
 /usr/local/share/android-sdk
 ```
+
+
+<img src="images/android-studio-preferences.png" witdth=1042 height=754></img>
