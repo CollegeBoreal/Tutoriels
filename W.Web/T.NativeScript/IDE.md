@@ -23,5 +23,4 @@ La présente installation du `Playground Local` utilise [`HomeBrew`](https://bre
 /usr/local/share/android-sdk
 ```
 
-
-<img src="images/android-studio-preferences.png" width="1042" height="754" > </img>
+<img src="images/android-studio-preferences.png" alt="Preferences" width="1042" height="754" >
