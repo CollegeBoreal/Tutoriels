@@ -2,7 +2,7 @@
 
 ## :o: Installation
 
-### Android 
+### Android Studio
 
 ##### :computer: Windows
 
