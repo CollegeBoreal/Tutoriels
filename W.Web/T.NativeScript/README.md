@@ -92,7 +92,8 @@ If you have any questions, check Stack Overflow: https://stackoverflow.com/quest
 ##### Check if the emulator can run correctly
 
 ```
-$ tns doctor
+$  ns doctor                       
+Error while loading nativescript-cloud is: Default commands should be required before child commands
 ✔ Getting environment information 
 
 No issues were detected.
@@ -112,7 +113,7 @@ No issues were detected.
 ✔ The Python 'six' package is found.
 ✔ Xcode version 12.0.1 satisfies minimum required version 10.
 ✔ Getting NativeScript components versions information...
-⚠ Update available for component nativescript. Your current version is 6.5.1 and the latest available version is 7.0.11.
+✔ Component nativescript has 7.0.11 version and is up to date.
 ```
 
 # References
