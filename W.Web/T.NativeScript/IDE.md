@@ -26,3 +26,12 @@ PS > choco install androidstudio
 /usr/local/share/android-sdk
 ```
 
+Pour utiliser la SDK Android installée avec 'HomeBrew`, il faut renommer la SDK installée par `Android Studio` et fournir le lien symbolique de $ANDROID_HOME
+
+```
+$ mv ~/Library/Android/sdk ~/Library/Android/sdk-intellij
+```
+
+```
+$ ln -s $ANDROID_HOME ~/Library/Android/sdk
+```
