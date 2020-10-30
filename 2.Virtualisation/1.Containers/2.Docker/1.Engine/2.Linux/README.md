@@ -76,7 +76,7 @@ https://github.com/docker/machine/issues/1569
 $ sudo visudo   # edit sudo config file
 ```
 
-  :>: `Ajouter` la ligne ci-dessous en changeant votre utilisateur 
+  :>>: `Ajouter` la ligne ci-dessous en changeant votre utilisateur 
   
   :warning: substituer ubuntu par votre utilisateur
 
