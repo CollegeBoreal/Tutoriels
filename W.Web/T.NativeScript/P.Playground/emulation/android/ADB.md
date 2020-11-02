@@ -1,5 +1,9 @@
 # ADB (Android Debug Bus)
 
+## :o: Établi la connection avec Android
+
+https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-adb-list
+
 ## :a: Utilisation de l'ADB CLI
 
 
