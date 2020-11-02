@@ -4,6 +4,15 @@
 
 https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-adb-list
 
+1. turn on developer options on the android device.
+1. enable check box for stay awake.
+1. enable check box for USB debugging.
+1. open cmd
+1. got to platform tools adt tools here https://developer.android.com/studio.
+1. adb kill-server
+1. adb start-server
+1. adb devices
+
 ## :a: Utilisation de l'ADB CLI
 
 
