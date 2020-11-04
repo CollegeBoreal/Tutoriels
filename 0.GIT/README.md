@@ -39,12 +39,12 @@ $ cd Developer
    - * example
 
    ```
-   $ git clone https://github.com/CollegeBoreal/INF1039-202-19A-01.git
+   $ git clone https://github.com/CollegeBoreal/INF1039-202-20A-01.git
    
 * allez dans le répertoire du cours
 
 ```
-$ cd INF1039-202-19A-01
+$ cd INF1039-202-20A-01
 ```
 
 ## :two: Créer son premier fichier sous git (utiliser vi)
