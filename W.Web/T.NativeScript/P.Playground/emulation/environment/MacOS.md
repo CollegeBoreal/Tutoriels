@@ -35,6 +35,6 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 
 ### :bulb: Exit
 
-Quitter et revenir dans `git bash` pour que les variables soient prises en compte
+Quitter et revenir dans le `Terminal` pour que les variables soient prises en compte
 
 
