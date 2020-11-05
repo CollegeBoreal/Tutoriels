@@ -39,7 +39,7 @@ MachinePolicy       Undefined
  LocalMachine       Undefined
 ```
 
-:x: Entreprise
+:bulb: Entreprise
 
 ```
 PS > $env:chocolateyUseWindowsCompression = 'true'
