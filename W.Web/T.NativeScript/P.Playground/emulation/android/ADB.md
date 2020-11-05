@@ -56,10 +56,22 @@ restarting in TCP mode port: 5555
 ```
 
 ```
-$ ANDROID_DEVICE_IP=`adb -s $ANDROID_DEVICE shell ip --family inet addr show wlan0 | grep inet | cut -d/ -f1 | awk '{print $2}'`
+$ ANDROID_DEVICE_IP=`adb -s $ANDROID_DEVICE shell ip --family inet addr show wlan0 |  cut -d/ -f1 | awk 'NR%2==0 {print $2}'`
+```
+
+* Vérification
+
+```
+$ echo $ANDROID_DEVICE_IP
+```
+
+* Connexion
+
+```
 $ adb connect $ANDROID_DEVICE_IP:5555   
 ```
 
+# References
 
 ```
 $ sdkmanager --install "ndk;20.1.5948944" 
