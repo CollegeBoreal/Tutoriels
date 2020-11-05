@@ -16,6 +16,17 @@ PS > Set-ExecutionPolicy Bypass -Scope Process -Force;
      iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
+:three: Verifier l'installation
+
+```
+PS > choco list --local-only
+Chocolatey v0.10.15
+chocolatey 0.10.15
+1 packages installed.
+```
+
+## :x: Troubleshooting
+
 ```
 PS > Get-ExecutionPolicy -List
 
@@ -28,23 +39,13 @@ MachinePolicy       Undefined
  LocalMachine       Undefined
 ```
 
-:x: Autre
+:x: Entreprise
 
 ```
 PS > $env:chocolateyUseWindowsCompression = 'true'
 PS > Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope LocalMachine
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
-
-:three: Verifier l'installation
-
-```
-PS > choco list --local-only
-Chocolatey v0.10.15
-chocolatey 0.10.15
-1 packages installed.
-```
-
 
 https://stackoverflow.com/questions/27753917/how-do-you-successfully-change-execution-policy-and-enable-execution-of-powershe
 
