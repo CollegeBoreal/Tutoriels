@@ -19,11 +19,27 @@ https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-
 
 Pour se connecter à l'appareil mobile Android, connecter l'appareil avec son cable  `USB`
 
-- [ ] Capturer l':id: de l'appareil dans la variable d'environnement `$ANDROID_DEVICE
+- [ ] Capturer l':id: de l'appareil dans la variable d'environnement `$ANDROID_DEVICE`
+
+* Capture
 
 ```
 $ ANDROID_DEVICE=`adb devices | awk 'NR==2 {print $1}'`
 ```
+
+* Vérification
+
+```
+$ echo $ANDROID_DEVICE
+```
+
+Est-ce bien l'appareil voulu?
+
+```
+$ adb devices
+```
+
+- [ ] Se connecter à l'appareil avec ADB CLI
 
 :warning: Sous `git bash` rajouter `winpty` pour utiliser le shell
 
