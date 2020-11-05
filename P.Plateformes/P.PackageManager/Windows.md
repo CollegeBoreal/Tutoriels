@@ -16,6 +16,18 @@ PS > Set-ExecutionPolicy Bypass -Scope Process -Force;
      iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
+```
+PS > Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process       Undefined
+  CurrentUser       Undefined
+ LocalMachine       Undefined
+```
+
 :x: Autre
 
 ```
