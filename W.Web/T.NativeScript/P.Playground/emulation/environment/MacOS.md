@@ -33,3 +33,8 @@ export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 ```
 
+### :bulb: Exit
+
+Quitter et revenir dans `git bash` pour que les variables soient prises en compte
+
+
