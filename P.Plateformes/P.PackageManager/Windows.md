@@ -1,6 +1,6 @@
 # :a: Windows
 
-[chocolatey.org](http://chocolatey.org/)
+[chocolatey.org](http://chocolatey.org/) [Installation](https://chocolatey.org/install)
 
 :one: Executer la commande suivante dans `PowerShell` en tant qu'Administrateur
 
