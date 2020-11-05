@@ -72,6 +72,12 @@ $ echo $ANDROID_DEVICE_IP
 $ adb connect $ANDROID_DEVICE_IP:5555   
 ```
 
+* Déconnexion
+
+```
+$ adb disconnect $ANDROID_DEVICE_IP:5555
+```
+
 # References
 
 ```
