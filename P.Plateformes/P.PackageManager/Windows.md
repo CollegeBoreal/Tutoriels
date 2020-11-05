@@ -8,7 +8,7 @@
 (Touche Windows > taper "Windows PowerShell" > right click > Run as Administrator)
 ```
 
-:two: Copier et Coller l'instruction suivante et taper `entrer`
+:two: Copier et Coller les instructions suivantes et taper `entrer`
 
 ```
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; 
