@@ -1,4 +1,4 @@
-## :b: Sur le client 
+## :o: Sur le client 
 
 :bookmark: i.e. de `git bash` Windows ou de votre Terminal Mac
 
@@ -17,6 +17,34 @@ $ ssh-keygen
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
 ```
+
+
+## :one: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
+
+:warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante:
+
+```
+Error creating machine: Error running provisioning: ssh command error:
+command : sudo hostname labo16 && echo "labo16" | sudo tee /etc/hostname
+err     : exit status 1
+output  : sudo: no tty present and no askpass program specified
+```
+
+https://github.com/docker/machine/issues/1569
+
+- [ ] Authoriser votre utilisateur à etre un `sudoer`
+
+```
+$ sudo visudo   # edit sudo config file
+```
+
+  :>>: `Ajouter` la ligne ci-dessous en changeant votre utilisateur 
+  
+  :warning: substituer ubuntu par votre utilisateur
+
+  ```
+  ubuntu ALL=(ALL:ALL) NOPASSWD: ALL
+  ```
 
 ### 3) Creer votre `pseudo` machine virtuelle
 
