@@ -23,3 +23,6 @@ alias sdkmanager=sdkmanager.bat
 alias avdmanager=avdmanager.bat
 ```
 
+### :bulb: Exit
+
+Quitter et revenir dans `git bash` pour que les variables soient prises en compte
