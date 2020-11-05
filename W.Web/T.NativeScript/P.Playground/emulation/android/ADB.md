@@ -48,7 +48,7 @@ $ adb -s $ANDROID_DEVICE shell
 ```
 
 
-### :m: Connexion WIFI [:green_book: Doc.]()
+### :m: Connexion WIFI
 
 ```
 % adb -s $ANDROID_DEVICE tcpip 5555
