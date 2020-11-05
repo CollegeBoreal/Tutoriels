@@ -33,7 +33,7 @@ restarting in TCP mode port: 5555
 ```
 
 ```
-$ ANDROID_DEVICE_IP=`adb -s $ANDROID_DEVICE shell ifconfig wlan0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'`
+$ ANDROID_DEVICE_IP=`adb -s $ANDROID_DEVICE ip addr show wlan0 | grep 'inet ' | cut -d/ -f1 | awk '{print $1}'`
 $ adb connect $ANDROID_DEVICE_IP:5555   
 ```
 
