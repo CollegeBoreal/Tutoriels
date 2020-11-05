@@ -11,6 +11,14 @@
 :two: Copier et Coller l'instruction suivante et taper `entrer`
 
 ```
+PS > Set-ExecutionPolicy Bypass -Scope Process -Force; 
+     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
+     iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+:x: Autre
+
+```
 PS > $env:chocolateyUseWindowsCompression = 'true'
 PS > Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope LocalMachine
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
