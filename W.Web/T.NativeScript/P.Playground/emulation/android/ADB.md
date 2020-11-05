@@ -15,7 +15,7 @@ https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-
 
 ## :a: Utilisation de l'ADB CLI
 
-- [ ] Connexion du cable 
+### :m: Connexion avec cable 
 
 Pour se connecter à l'appareil mobile Android, connecter l'appareil avec son cable  `USB`
 
@@ -46,6 +46,9 @@ $ adb devices
 ```
 $ adb -s $ANDROID_DEVICE shell
 ```
+
+
+### :m: Connexion [WIFI](https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp)
 
 ```
 % adb -s $ANDROID_DEVICE tcpip 5555
