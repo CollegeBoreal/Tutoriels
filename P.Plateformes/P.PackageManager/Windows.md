@@ -34,7 +34,7 @@ PS > Get-ExecutionPolicy -List
         ----- ---------------
 MachinePolicy       Undefined
    UserPolicy       Undefined
-      Process       Undefined
+      Process       Bypass
   CurrentUser       Undefined
  LocalMachine       Undefined
 ```
