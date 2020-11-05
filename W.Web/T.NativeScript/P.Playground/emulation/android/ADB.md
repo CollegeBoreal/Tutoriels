@@ -48,7 +48,7 @@ $ adb -s $ANDROID_DEVICE shell
 ```
 
 
-### :m: Connexion WIFI [:green_book: Doc.](https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp)
+### :m: Connexion WIFI [:green_book: Doc.]()
 
 ```
 % adb -s $ANDROID_DEVICE tcpip 5555
@@ -77,14 +77,10 @@ $ adb connect $ANDROID_DEVICE_IP:5555
 $ sdkmanager --install "ndk;20.1.5948944" 
 ```
 
+https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp
 
 https://medium.com/@amanshuraikwar.in/connecting-to-android-device-with-adb-over-wifi-made-a-little-easy-39439d69b86b
 
-
-
 https://stackoverflow.com/questions/4032960/how-do-i-get-an-apk-file-from-an-android-device
-
-
-## References
 
 https://gist.github.com/mrk-han/66ac1a724456cadf1c93f4218c6060ae
