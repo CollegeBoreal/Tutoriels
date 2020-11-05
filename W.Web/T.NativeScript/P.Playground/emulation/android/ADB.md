@@ -48,7 +48,7 @@ $ adb -s $ANDROID_DEVICE shell
 ```
 
 
-### :m: Connexion WIFI [:green_book:](https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp)
+### :m: Connexion WIFI [:green_book: Doc.](https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp)
 
 ```
 % adb -s $ANDROID_DEVICE tcpip 5555
