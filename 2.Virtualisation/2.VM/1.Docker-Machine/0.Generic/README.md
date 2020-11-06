@@ -3,7 +3,7 @@
 La procédure suivante permet de gérer un moteur Docker (Docker Engine) installé sur un serveur à partir d'un client à distance grace à `Docker Machine`.
 
 
-## :pushpin: Préparer le serveur Linux où est installé `Docker Engine`
+## :o: Préparer le serveur Linux où est installé `Docker Engine`
 
 :bookmark: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
 
@@ -34,11 +34,11 @@ $ sudo visudo   # edit sudo config file
 
 
 
-## :o: Sur le client 
+## :a: Sur le client 
 
 :bookmark: i.e. de `git bash` Windows ou de votre Terminal Mac
 
-### :three: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
+### :one: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
 
 * generer votre cle privee/publique (~/.ssh/id_rsa)
 
