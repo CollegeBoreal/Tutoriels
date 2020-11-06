@@ -5,7 +5,7 @@
 
 ## :pushpin: Préparer le serveur
 
-- [ ] Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
+:bookmark: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
 
 :warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante:
 
@@ -18,7 +18,7 @@ output  : sudo: no tty present and no askpass program specified
 
 https://github.com/docker/machine/issues/1569
 
-- [ ] Authoriser votre utilisateur à etre un `sudoer`
+- [ ] Il faut authoriser votre utilisateur à etre un `sudoer`
 
 ```
 $ sudo visudo   # edit sudo config file
