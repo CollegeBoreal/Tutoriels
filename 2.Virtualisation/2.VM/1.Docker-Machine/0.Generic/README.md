@@ -59,7 +59,7 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
-:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine` par vos propres informations (votre :id:, Adresse IP et votre nom de machine :computer:)
+:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine` par vos propres informations (votre :id:, `Adresse IP` et votre `nom de machine` :computer:)
 
 ```
 $ docker-machine create --driver generic \
