@@ -40,26 +40,26 @@ $ sudo visudo   # edit sudo config file
 
 ### :one: Installer la clé publique de la machine client à utiliser (d'où les commandes docker seront lancées) 
 
-* generer votre cle privee/publique (~/.ssh/id_rsa)
+- [ ] générer votre clé privée/publique (~/.ssh/id_rsa)
 
 ```
 $ ssh-keygen
 ```
 
-* Copier la clé publique vers le Serveur ou est installé Docker Engine 
+* Copier la clé publique vers le Serveur ou est installé `Docker Engine` 
 
-  :warning: substituer `ubuntu` et l'adresse IP `10.13.237.16` par vos informations
+  :warning: substituer `ubuntu` et l'adresse IP `10.13.237.16` par vos propres informations
 
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
 ```
 
 
-### 3) Creer votre `pseudo` machine virtuelle
+### :two: Creer votre `pseudo` machine virtuelle
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
-:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine`
+:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine` par vos propres informations
 
 ```
 $ docker-machine create --driver generic \
@@ -76,7 +76,7 @@ Error creating machine: Error detecting OS: OS type not recognized
 
 voir [Error :strawberry:](RaspberryPi.md) 
 
-### enlever la clé pour recommencer l'operation si erreur il y a
+### :x: enlever la clé pour recommencer l'operation si erreur il y a
 
 ```
 $ rm -rf ~/.docker/machine/machines/nom_de_ma_machine
