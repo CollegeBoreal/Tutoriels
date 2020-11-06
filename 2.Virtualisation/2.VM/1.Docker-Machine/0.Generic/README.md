@@ -1,9 +1,9 @@
 # 0.Generic
 
+La procédure suivante permet de gérer un moteur Docker (Docker Engine) installé sur un serveur à partir d'un client à distance grace à `Docker Machine`.
 
 
-
-## :pushpin: Préparer le serveur
+## :pushpin: Préparer le serveur Linux où est installé `Docker Engine`
 
 :bookmark: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
 
