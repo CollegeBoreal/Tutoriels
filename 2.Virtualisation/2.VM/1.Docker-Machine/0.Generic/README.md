@@ -7,11 +7,11 @@
 
 :bookmark: Authoriser l'acces à distance sans mot de passe quand on utilise `ssh`
 
-:warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante:
+:warning: Pour prévenir l'erreur de création de `Docker Engine Generic` suivante sur la machine cliente:
 
 ```
 Error creating machine: Error running provisioning: ssh command error:
-command : sudo hostname labo16 && echo "labo16" | sudo tee /etc/hostname
+command : sudo hostname mon_serveur_ubuntu && echo "mon_serveur_ubuntu" | sudo tee /etc/hostname
 err     : exit status 1
 output  : sudo: no tty present and no askpass program specified
 ```
