@@ -18,13 +18,13 @@ output  : sudo: no tty present and no askpass program specified
 
 https://github.com/docker/machine/issues/1569
 
-- [ ] Il faut authoriser votre utilisateur à etre un `sudoer`
+- [ ] Il faut authoriser votre utilisateur sur le serveur Linux :id: à etre un `sudoer`
 
 ```
 $ sudo visudo   # edit sudo config file
 ```
 
-  :>>: `Ajouter` la ligne ci-dessous en changeant votre utilisateur 
+  :<>: `Ajouter` la ligne ci-dessous en changeant votre utilisateur :id: Linux
   
   :warning: substituer ubuntu par votre utilisateur
 
