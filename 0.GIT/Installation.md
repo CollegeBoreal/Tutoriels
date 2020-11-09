@@ -19,7 +19,7 @@ PS > choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChan
 $ brew install git
 ```
 
-## :two: Installation Standard des binaires
+## :two: Autre Installation manuelle des binaires
 
 * git Client : https://git-scm.com/downloads  
 
