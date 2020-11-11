@@ -25,7 +25,7 @@ chocolatey 0.10.15
 1 packages installed.
 ```
 
-## :x: Troubleshooting
+## :x:  [Troubleshooting](https://chocolatey.org/docs/troubleshooting)
 
 ```
 PS > Get-ExecutionPolicy -List
