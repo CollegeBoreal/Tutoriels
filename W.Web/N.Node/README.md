@@ -20,7 +20,7 @@ v10.16.3
 6.9.0
 ```
 
--- Lister un package localement
+- [ ] Lister un package localement
 
 ```
 % npm list @nativescript/schematics     
@@ -28,7 +28,7 @@ v10.16.3
 └── @nativescript/schematics@10.1.0 
 ```
 
--- Lister un package globalement
+- [ ] Lister un package globalement
 
 ```
 % npm list @nativescript/schematics --global
@@ -36,21 +36,27 @@ v10.16.3
 └── (empty)
 ```
 
--- Installer un package globalement
+- [ ] Installer un package globalement
 
 ```
 % npm install @nativescript/schematics --global 
 ```
 
 
--- Installer un package localement
+- [ ] Installer un package localement
 
 ```
 % npm install @nativescript/schematics
 ```
 
--- Installer un package localement dans la section developpement
+- [ ] Installer un package localement dans la section developpement
 
 ```
 % npm install @nativescript/schematics --save-dev
+```
+
+- [ ] Desinstaller un package globalement
+
+```
+% npm uninstall @nativescript/schematics --global 
 ```
