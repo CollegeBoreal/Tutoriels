@@ -1,6 +1,8 @@
 # Schematics
 
-[Documentation](https://github.com/NativeScript/nativescript-schematics)
+[github Documentation](https://github.com/NativeScript/nativescript-schematics) 
+
+[MarketPlace Documentation](https://market.nativescript.org/plugins/@nativescript/schematics)
 
 ## :m: NativeScript Schematics
 
