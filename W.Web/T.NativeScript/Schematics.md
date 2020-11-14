@@ -6,6 +6,8 @@
 
 ```
 $ npm install @nativescript/schematics --global 
+...
++ @nativescript/schematics@10.1.0
 ```
 
 ```
