@@ -118,9 +118,12 @@ No issues were detected.
 
 # References
 
-| Type       | Installation                   |
-|------------|--------------------------------|
-| Templates  | [Templates](Templates.md)      |
-| Schematics | [Schematics](Schematics.md)    |
+| Type         | Installation                                                               |
+|--------------|----------------------------------------------------------------------------|
+| Templates    | [Templates](Templates.md)                                                  |
+| Schematics   | [Schematics](Schematics.md)                                                |
+| NS 7 imports | [Reference](https://nativescript.org/blog/nativescript-7-import-reference) |
+
+
 
 
