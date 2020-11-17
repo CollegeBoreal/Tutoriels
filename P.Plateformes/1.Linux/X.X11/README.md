@@ -49,7 +49,22 @@ ou tester avec xcalc
 
 tightvncserver
 
+### :a: Sur le serveur
+
+```
+$ sudo apt install tigervnc-standalone-server
+```
+
+:two: Sur le client
+
+:apple: MacOS
 
 ```
 % brew cask install vnc-viewer
+```
+
+:computer: Windows
+
+```
+PS > choco install vnc-viewer --version=6.18.625
 ```
