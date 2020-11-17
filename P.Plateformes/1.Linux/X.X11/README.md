@@ -67,10 +67,13 @@ $ vncserver :1
 
 :two: Sur le client
 
+:bulb: Remplacer `ubuntu` par votre utilisateur
 
 ```
-$ xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1
+$ ssh -Y ubuntu@10.13.14.15 xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1 &
 ```
+
+:x: Marche pas
 
 :apple: MacOS
 
