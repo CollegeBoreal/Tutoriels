@@ -27,7 +27,7 @@ X11Forwarding yes
 :three: Redémarer le serveur SSH
 
 ```
-$ sudo systenctl restart ssh
+$ sudo systemctl restart ssh
 ```
 
 ### :b: Sur le client
