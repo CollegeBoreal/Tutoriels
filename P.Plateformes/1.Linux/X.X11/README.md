@@ -45,3 +45,11 @@ $ ssh -Y user@IP
 
 ou tester avec xcalc
 
+# VNC
+
+tightvncserver
+
+
+```
+% brew cask install vnc-viewer
+```
