@@ -51,11 +51,26 @@ tightvncserver
 
 ### :a: Sur le serveur
 
+- [ ] Installation
+
 ```
-$ sudo apt install tigervnc-standalone-server
+$ sudo apt install tigervnc-standalone-server tigervnc-viewer
 ```
 
+- [ ] Configuration
+
+```
+$ vncserver :1
+```
+
+:bookmark: Rentrer 
+
 :two: Sur le client
+
+
+```
+$ xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1
+```
 
 :apple: MacOS
 
