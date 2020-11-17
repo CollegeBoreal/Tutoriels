@@ -24,6 +24,14 @@ $ cat /etc/ssh/sshd_config | grep X11Forwarding | awk 'NR==1 {print $0}'
 X11Forwarding yes
 ```
 
+:three: Redémarer le serveur SSH
+
+```
+$ sudo systenctl restart ssh
+```
+
+### Sur le client
+
 [caja](https://ubuntu-mate.community/t/x11-forwarding-with-caja-in-18-04-1/18911)
 
 
