@@ -61,16 +61,31 @@ $ sudo apt install tigervnc-standalone-server tigervnc-viewer
 
 ```
 $ vncserver :1
+
+New 'ambatolampy:1 (ubuntu)' desktop at :1 on machine ambatolampy
+
+Starting applications specified in /etc/X11/Xvnc-session
+Log file is /home/ubuntu/.vnc/ambatolampy:1.log
+
+Use xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1 to connect to the VNC server.
 ```
 
 :bookmark: Rentrer 
 
 :two: Sur le client
 
-:bulb: Remplacer `ubuntu` par votre utilisateur
+:apple: XQuartz on Mac 
+
+- [ ] Se connecter avec `-Y      Enables trusted X11 forwarding.` 
 
 ```
-$ ssh -Y ubuntu@10.13.14.15 xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1 &
+$ ssh -Y user@IP # ssh -Y ubuntu@10.13.14.15 
+```
+
+- [ ] Lancer la session
+
+```
+$ xtigervncviewer -SecurityTypes VncAuth -passwd /home/ubuntu/.vnc/passwd :1 &
 ```
 
 :x: Marche pas
