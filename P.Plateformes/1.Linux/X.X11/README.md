@@ -1,6 +1,6 @@
 # X11
 
-### Sur le serveur ubuntu
+### :a: Sur le serveur ubuntu
 
 :one: Installer `ubuntu-desktop`
 
@@ -30,14 +30,18 @@ X11Forwarding yes
 $ sudo systenctl restart ssh
 ```
 
-### Sur le client
-
-[caja](https://ubuntu-mate.community/t/x11-forwarding-with-caja-in-18-04-1/18911)
+### :b: Sur le client
 
 
-XQuartz on Mac `-Y      Enables trusted X11 forwarding.`
+:apple: XQuartz on Mac 
+
+- [ ] Se connecter avec `-Y      Enables trusted X11 forwarding.` 
 
 ```
 $ ssh -Y user@IP
 ```
+
+- [ ] Installer [caja](https://ubuntu-mate.community/t/x11-forwarding-with-caja-in-18-04-1/18911)
+
+ou tester avec xcalc
 
