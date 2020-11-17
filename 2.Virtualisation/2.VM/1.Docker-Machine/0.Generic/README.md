@@ -46,26 +46,41 @@ $ sudo visudo   # edit sudo config file
 $ ssh-keygen
 ```
 
-* Copier la clé publique vers le Serveur ou est installé `Docker Engine` 
+- [ ] renommer votre clé privée/publique (~/.ssh/id_rsa)
+
+Renommer la clé `id_rsa` par votre addresse IP par exemple si votre adresse IP est `10.13.237.16`:
+
+* Clé privée
+
+```
+$ mv ~/.ssh/id_rsa ~/.ssh/10.13.237.16.pk
+```
+
+* Clé publique
+
+```
+$ mv ~/.ssh/id_rsa.pub ~/.ssh/10.13.237.16.pub
+```
+
+- [ ] Copier la clé publique vers le Serveur ou est installé `Docker Engine` 
 
   :warning: substituer `ubuntu` et l'adresse IP `10.13.237.16` par vos propres informations (votre :id: et Adresse IP)
 
 ```
-$ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@10.13.237.16  
+$ ssh-copy-id -i ~/.ssh/10.13.237.16.pub ubuntu@10.13.237.16  
 ```
-
 
 ### :two: Creer votre `pseudo` machine virtuelle
 
 https://docs.docker.com/v17.09/machine/drivers/generic
 
-:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine` par vos propres informations (votre :id:, `Adresse IP` et votre `nom de machine` :computer:)
+:warning: substituer l'utilisateur `ubuntu`, l'adresse IP `10.13.237.16` et le nom `nom_de_ma_machine` par vos propres informations (votre :id:, `Adresse IP`, clé privé et votre `nom_de_ma_machine` :computer:)
 
 ```
 $ docker-machine create --driver generic \
                         --generic-ip-address=10.13.237.16 \
                         --generic-ssh-user=ubuntu \
-                        --generic-ssh-key ~/.ssh/id_rsa \
+                        --generic-ssh-key ~/.ssh/10.13.237.16.pk \
                         nom_de_ma_machine
 ```
 
