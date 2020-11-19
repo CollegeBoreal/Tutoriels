@@ -1,5 +1,7 @@
 # IDE
 
+[Choose an editor](https://docs.nativescript.org/start/cli-basics#choosing-an-editor)
+
 ### :o: Visual Studio Code (VSC)
 
 ##### :computer: Windows
