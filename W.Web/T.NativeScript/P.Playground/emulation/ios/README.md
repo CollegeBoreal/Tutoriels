@@ -19,4 +19,8 @@ $ simulator
 % xcrun xctrace list devices
 ```
 
+# References
+
+https://mokagio.github.io/tech-journal/2015/03/12/xcode-list-available-devices.html
+
 
