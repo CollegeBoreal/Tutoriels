@@ -11,4 +11,12 @@ $ simulator
 
 <img src="../../images/simulator.png" width="236" height="467"></img>
 
+:x: Troubleshooting
+
+- [ ] Lister les equipements
+
+```
+% xcrun xctrace list devices
+```
+
 
