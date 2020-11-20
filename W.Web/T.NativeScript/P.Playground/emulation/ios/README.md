@@ -23,4 +23,6 @@ $ simulator
 
 https://mokagio.github.io/tech-journal/2015/03/12/xcode-list-available-devices.html
 
+https://github.com/NativeScript/nativescript-cli/issues/5342 (ns devices on Big Sur run `npm install nativescript@next --global` )
+
 
