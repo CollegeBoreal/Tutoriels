@@ -23,6 +23,11 @@ PS > choco install vscode
 [NativeScript pour VS Code](https://nativescript.org/nativescript-for-visual-studio-code)
 
 
+```
+$ ns create MyNewApp
+$ cd MyNewApp
+$ code .
+```
 
 
 
