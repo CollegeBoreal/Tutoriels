@@ -4,6 +4,8 @@
 
 ### :o: Visual Studio Code (VSC)
 
+### :p: Installation
+
 ##### :computer: Windows
 
 ```
@@ -15,6 +17,13 @@ PS > choco install vscode
 ```
 % brew cask install visual-studio-code
 ```
+
+### :p: Utilisation
+
+[NativeScript pour VS Code](https://nativescript.org/nativescript-for-visual-studio-code)
+
+
+
 
 
 ### :a: Android Studio
