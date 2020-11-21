@@ -48,7 +48,7 @@ Le séparateur est :
 Le package "extras;android;m2repository" sera donc installé dans 
 
 ```
-$ ls -l $ANDROID_HOME/extras\android\m2repository # pour Unix
+$ ls -l $ANDROID_HOME/extras/android/m2repository # pour Unix
 ```
 
 :two: Installer l'image Android version 28
