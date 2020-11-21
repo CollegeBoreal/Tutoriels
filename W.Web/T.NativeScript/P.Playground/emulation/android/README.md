@@ -6,7 +6,11 @@ Sous `git bash` ou dans le `Terminal`
 
 :zero: Installer l'émulateur, les outils pour les plateformes et les référentiels
 
-:bulb: À noter que la ponctuation `;` correspond au séparateur de dossiers/fichiers
+:bulb: À noter que la ponctuation `;` correspond au séparateur de dossiers/fichiers, 
+
+Le séparateur est :
+* `/` si Environnement Unix (Linux/MacOS) 
+* `\` si Environnement Windows 
 
 ```bash
 $ sdkmanager "emulator" \
