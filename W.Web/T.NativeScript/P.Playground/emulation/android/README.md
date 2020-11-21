@@ -9,7 +9,8 @@ Sous `git bash` ou dans le `Terminal`
 ```bash
 $ sdkmanager "emulator" \
              "platform-tools" \
-             "extras;android;m2repository" "extras;google;m2repository"
+             "extras;android;m2repository" \
+             "extras;google;m2repository"
 ```
 
 :one: Installer l'émulateur Android [Pie](https://www.android.com/versions/pie-9-0) version 28
