@@ -6,12 +6,6 @@ Sous `git bash` ou dans le `Terminal`
 
 :zero: Installer l'émulateur, les outils pour les plateformes et les référentiels
 
-:bulb: À noter que la ponctuation `;` correspond au séparateur de dossiers/fichiers, 
-
-Le séparateur est :
-* `/` si Environnement Unix (Linux/MacOS) 
-* `\` si Environnement Windows 
-
 ```bash
 $ sdkmanager "emulator" \
              "platform-tools" \
@@ -43,6 +37,18 @@ Installed packages:=====================] 100% Computing updates...
   platforms;android-28                        | 6       | Android SDK Platform 28                    | platforms\android-28\
   system-images;android-28;google_apis;x86_64 | 9       | Google APIs Intel x86 Atom_64 System Image | system-images\android-28\google_apis\x86_64\
   tools                                       | 26.1.1  | Android SDK Tools 26.1.1                   | tools\
+```
+
+:bulb: À noter que la ponctuation `;` correspond au séparateur de dossiers/fichiers, 
+
+Le séparateur est :
+* `/` si Environnement Unix (Linux/MacOS) 
+* `\` si Environnement Windows 
+
+Le package "extras;android;m2repository" sera donc installé dans 
+
+```
+$ ls -l $ANDROID_HOME/extras\android\m2repository # pour Unix
 ```
 
 :two: Installer l'image Android version 28
