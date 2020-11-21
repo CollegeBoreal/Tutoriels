@@ -6,6 +6,8 @@ Sous `git bash` ou dans le `Terminal`
 
 :zero: Installer l'émulateur, les outils pour les plateformes et les référentiels
 
+:bulb: À noter que la ponctuation `;` correspond au séparateur de dossiers/fichiers
+
 ```bash
 $ sdkmanager "emulator" \
              "platform-tools" \
@@ -18,7 +20,8 @@ $ sdkmanager "emulator" \
 - [x] Installer l'émulateur, la plateforme android et les outils version 28
 
 ```bash
-$ sdkmanager "platforms;android-28" "build-tools;28.0.3"
+$ sdkmanager "platforms;android-28" \
+             "build-tools;28.0.3"
 ```
 
 - [x] Vérifier l'installation
