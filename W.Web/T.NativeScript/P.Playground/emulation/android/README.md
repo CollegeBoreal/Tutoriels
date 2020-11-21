@@ -45,7 +45,7 @@ Le séparateur est :
 * `/` si Environnement Unix (Linux/MacOS) 
 * `\` si Environnement Windows 
 
-Le package "extras;android;m2repository" sera donc installé dans 
+Le package `"extras;android;m2repository"` sera donc installé dans 
 
 ```
 $ ls -l $ANDROID_HOME/extras/android/m2repository # pour Unix
