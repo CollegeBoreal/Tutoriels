@@ -26,3 +26,6 @@ Step 6: Select the ‘Connect via network’ checkbox and you are done.
 
 Step 7: Now you can disconnect USB.
 
+![image](../images/xcode-ios-wifi.png)
+
+![image](../images/ns-devices-wifi.png)
