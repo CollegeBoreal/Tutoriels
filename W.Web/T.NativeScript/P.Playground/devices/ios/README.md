@@ -30,8 +30,12 @@ Step 7: Now you can disconnect USB.
 
 ## :b: Vérifier la connection avec iOS
 
+Taper la commande: 
+
 ```
 $ ns devices
 ```
+
+Vérifier que l'équipement `iOS` aie une connection `WiFi`
 
 ![image](../images/ns-devices-wifi.png)
