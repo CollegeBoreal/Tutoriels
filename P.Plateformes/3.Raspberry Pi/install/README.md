@@ -5,6 +5,18 @@ https://www.raspberrypi.org/downloads/
 Raspberry Pi OS (previously called Raspbian) is our official operating system for all models of the Raspberry Pi.
 Use `Raspberry Pi Imager` for an easy way to install Raspberry Pi OS and other operating systems to an SD card ready to use with your Raspberry Pi:
 
+:computer: sur Windows
+
+```
+PS > choco install rpi-imager
+```
+
+:apple: sur MacOS
+
+```
+% brew cask install raspberry-pi-imager
+```
+
 https://www.raspberrypi.org/documentation/installation/installing-images
 
 Boot your new OS
