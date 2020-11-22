@@ -1,6 +1,6 @@
 # ADB (Android Debug Bus)
 
-## :o: Établi la connection avec Android
+## :o: Établir la connection avec Android
 
 https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-adb-list
 
