@@ -28,4 +28,10 @@ Step 7: Now you can disconnect USB.
 
 ![image](../images/xcode-ios-wifi.png)
 
+## :b: Vérifier la connection avec iOS
+
+```
+$ ns devices
+```
+
 ![image](../images/ns-devices-wifi.png)
