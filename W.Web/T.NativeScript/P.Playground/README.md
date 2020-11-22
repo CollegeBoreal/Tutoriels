@@ -26,4 +26,7 @@ $ ns --version
 
   Follow [Emulate](emulation)
 
+:three: Devices
+
+  Follow [Devices](devices)
 
