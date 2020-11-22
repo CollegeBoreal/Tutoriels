@@ -36,6 +36,6 @@ Taper la commande:
 $ ns devices
 ```
 
-Vérifier que l'équipement `iOS` aie une connection `WiFi`
+Vérifier que l'équipement `iOS` aie une connection `Wifi`
 
 ![image](../images/ns-devices-wifi.png)
