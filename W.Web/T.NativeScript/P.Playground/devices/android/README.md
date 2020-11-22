@@ -78,6 +78,18 @@ $ adb connect $ANDROID_DEVICE_IP:5555
 $ adb disconnect $ANDROID_DEVICE_IP:5555
 ```
 
+### :m: Vérifier la connection avec Android
+
+Taper la commande: 
+
+```
+$ ns devices
+```
+
+Vérifier que l'équipement `android` aie une connection Wifi `i.e. 192.168.1.1:5555`
+
+![image](../images/ns-devices-wifi.png)
+
 # References
 
 ```
