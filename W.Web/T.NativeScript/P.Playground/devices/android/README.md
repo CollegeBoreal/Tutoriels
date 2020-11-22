@@ -86,7 +86,7 @@ Taper la commande:
 $ ns devices
 ```
 
-Vérifier que l'équipement `android` aie une connection Wifi `i.e. 192.168.1.1:5555`
+Vérifier que l'équipement `Android` aie une connection Wifi `i.e. 192.168.1.121:5555` dans le champ `Device Identifier`
 
 ![image](../images/ns-devices-wifi.png)
 
