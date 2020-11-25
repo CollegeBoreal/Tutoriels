@@ -1,5 +1,9 @@
 # ADB (Android Debug Bus)
 
+## :bookmark: Developer Options
+
+https://www.digitaltrends.com/mobile/how-to-get-developer-options-on-android/
+
 ## :o: Établi la connection avec Android
 
 https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-adb-list
