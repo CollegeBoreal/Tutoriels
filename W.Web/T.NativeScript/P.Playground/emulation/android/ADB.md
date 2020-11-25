@@ -6,6 +6,9 @@ https://www.digitaltrends.com/mobile/how-to-get-developer-options-on-android/
 
 - [x] ON - Developer Options 
 
+- [x] ON - USB Debugging
+
+
 ## :o: Établi la connection avec Android
 
 https://stackoverflow.com/questions/21170392/android-device-does-not-show-up-in-adb-list
