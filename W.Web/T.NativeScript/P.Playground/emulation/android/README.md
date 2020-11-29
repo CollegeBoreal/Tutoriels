@@ -13,9 +13,9 @@ $ sdkmanager "emulator" \
              "extras;google;m2repository"
 ```
 
-:one: Installer l'émulateur Android [Pie](https://www.android.com/versions/pie-9-0) version 28
+:one: Installer la plateforme Android [Pie](https://www.android.com/versions/pie-9-0) - version 28
 
-- [x] Installer l'émulateur, la plateforme android et les outils version 28
+- [x] Installer la plateforme android et les outils version 28
 
 ```bash
 $ sdkmanager "platforms;android-28" \
