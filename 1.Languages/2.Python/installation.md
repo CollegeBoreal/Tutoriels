@@ -52,7 +52,10 @@ $ brew switch python@3.8 3.8.1
 :computer: Sous PowerShell
 
 ```
-PS > choco list --local-only python
+PS > choco list python3 --local-only
+Chocolatey v0.10.15
+python3 3.10.0-a2
+1 packages installed.
 ```
 
 :apple: Sous Mac
