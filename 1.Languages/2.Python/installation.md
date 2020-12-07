@@ -100,6 +100,12 @@ $ python -m venv ~/.env/python
 PS > . $Env:USERPROFILE\.env\python\Scripts\Activate.ps1
 ```
 
+:computer: Sous Git Bash
+
+```
+$ source ~/.env/python/Scripts/Activate.ps1
+```
+
 :apple: Sous bash ou Zsh
 
 ```
@@ -112,6 +118,14 @@ Le prompt devrait changer comme ci-dessous (à peu près)
 
 ```
 (python) PS /Users/user >
+```
+
+:computer: Sous Git Bash
+
+```
+admin@MONPC MINGW64 ~
+$
+(python)
 ```
 
 :apple: Sous bash ou Zsh
