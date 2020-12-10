@@ -30,6 +30,13 @@ Step 7: Now you can disconnect USB.
 
 ## :b: Vérifier la connection avec iOS
 
+
+```
+$ xcrun xctrace list devices
+== Devices ==
+iPad (14.2) (c087b75f0d4cc3ce7716ba095f0d4cc3ce7a87c)
+```
+
 Taper la commande: 
 
 ```
