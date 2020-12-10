@@ -6,6 +6,8 @@
 
 ## [:bulb: github-flow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
 
+## [Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+
 ## Decouvrir git
 
 https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeboreal.ca
