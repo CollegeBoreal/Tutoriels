@@ -6,7 +6,7 @@
 
 ## [:bulb: github-flow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
 
-## [Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+## [:+1: Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
 ## Decouvrir git
 
