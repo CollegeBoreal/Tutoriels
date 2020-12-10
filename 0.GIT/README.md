@@ -4,6 +4,8 @@
 
 ## :tada: [Le pack etudiant](https://education.github.com/pack)
 
+## [:bulb: github-flow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
+
 ## Decouvrir git
 
 https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeboreal.ca
