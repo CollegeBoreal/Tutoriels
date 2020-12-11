@@ -33,6 +33,11 @@ https://certbot.eff.org/
 [certbot](certbot) letsencrypt
 
 
+# :b: SSH - Key Management
+
+```
+$ ssh-add -l
+```
 
 
 # Reference
