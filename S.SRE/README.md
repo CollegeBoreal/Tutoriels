@@ -33,7 +33,7 @@ https://certbot.eff.org/
 [certbot](certbot) letsencrypt
 
 
-# :b: Identity Management - (SSH Keys) 
+# :id: Identity Management - (SSH Keys) 
 
 - [ ] Listing all identities
 
@@ -42,14 +42,21 @@ $ ssh-add -l
 2048 SHA256:yvO+DdkJO+DdkJektruO+DdkJek+DdkJekUah+oO+DdkJekNjBBZg /Users/meMyself/.ssh/github.com-myid.pk (RSA)
 ```
 
-- [ ] Adding identity by using the Identity's `primary` key
+- [ ] Removing all identities
+
+```
+$ ssh-add -D
+All identities removed.
+```
+
+- [ ] Adding a single identity by using the Identity's `primary` key
 
 ```
 $ ssh-add ~/.ssh/github.com-myid.pk 
 Identity added: /Users/meMyself/.ssh/github.com-myid.pk (/Users/meMyself/.ssh/github.com-myid.pk)
 ```
 
-- [ ] Removing identity by using the Identity's `public` key
+- [ ] Removing a single identity by using the Identity's `public` key
 
 
 ```
