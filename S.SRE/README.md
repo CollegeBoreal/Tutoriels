@@ -37,13 +37,18 @@ https://certbot.eff.org/
 
 ```
 $ ssh-add -l
-2048 SHA256:yvO+DdkJO+DdkJektruO+DdkJek+DdkJekUah+oO+DdkJekNjBBZg ~/.ssh/github.com-myid.pk (RSA)
+2048 SHA256:yvO+DdkJO+DdkJektruO+DdkJek+DdkJekUah+oO+DdkJekNjBBZg /Users/meMyself/.ssh/github.com-myid.pk (RSA)
 
 ```
 
 ```
 $ ssh-add ~/.ssh/github.com-myid.pk 
-Identity added: ~/.ssh/github.com-myid.pk (~/.ssh/github.com-myid.pk)
+Identity added: /Users/meMyself/.ssh/github.com-myid.pk (/Users/meMyself/.ssh/github.com-myid.pk)
+```
+
+```
+$ ssh-add -d /Users/meMyself/.ssh/github.com-myid.pub 
+Identity removed: /Users/meMyself/.ssh/github.com-myid.pub (meMyself@mydomain.com)
 ```
 
 
