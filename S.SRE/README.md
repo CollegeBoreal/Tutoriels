@@ -35,16 +35,22 @@ https://certbot.eff.org/
 
 # :b: SSH - Key Management
 
+- [ ] Listing all identities
+
 ```
 $ ssh-add -l
 2048 SHA256:yvO+DdkJO+DdkJektruO+DdkJek+DdkJekUah+oO+DdkJekNjBBZg /Users/meMyself/.ssh/github.com-myid.pk (RSA)
-
 ```
+
+- [ ] Adding identity by using the Identity's `primary` key
 
 ```
 $ ssh-add ~/.ssh/github.com-myid.pk 
 Identity added: /Users/meMyself/.ssh/github.com-myid.pk (/Users/meMyself/.ssh/github.com-myid.pk)
 ```
+
+- [ ] Removing identity by using the Identity's `public` key
+
 
 ```
 $ ssh-add -d /Users/meMyself/.ssh/github.com-myid.pub 
