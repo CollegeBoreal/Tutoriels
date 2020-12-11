@@ -41,6 +41,11 @@ $ ssh-add -l
 
 ```
 
+```
+$ ssh-add ~/.ssh/github.com-myid.pk 
+Identity added: ~/.ssh/github.com-myid.pk (~/.ssh/github.com-myid.pk)
+```
+
 
 # Reference
 
