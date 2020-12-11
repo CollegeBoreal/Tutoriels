@@ -37,6 +37,8 @@ https://certbot.eff.org/
 
 ```
 $ ssh-add -l
+2048 SHA256:yvO+DdkJO+DdkJektruO+DdkJek+DdkJekUah+oO+DdkJekNjBBZg ~/.ssh/github.com-myid.pk (RSA)
+
 ```
 
 
