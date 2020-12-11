@@ -33,7 +33,7 @@ https://certbot.eff.org/
 [certbot](certbot) letsencrypt
 
 
-# :b: SSH - Key Management
+# :b: Identity Management - (SSH Keys) 
 
 - [ ] Listing all identities
 
