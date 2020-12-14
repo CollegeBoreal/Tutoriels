@@ -139,7 +139,13 @@ $ sudo netplan apply
     
     * Mot de passe
           
-          
+## :four: Mémoire
+
+Pour connaitre la mémoire physique
+
+```
+$ sudo lshw -c memory
+```
           
 # References
 
