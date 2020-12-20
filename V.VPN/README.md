@@ -11,7 +11,7 @@ Pour accéder au VPN du collège, on peut utiliser [Cisco AnyConnect](https://ww
 - [x] L'article suivant utilise [CISCO AnyConnect](Microsoft%20vpn)
 
 
-## :x: Point to Site VPN
+## :x: [Point to Site](P2S-S2S) VPN
 
 
 # References
