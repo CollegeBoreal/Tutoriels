@@ -1,6 +1,6 @@
 # VPN
 
-## :ab: Application
+## :ab: Application Cliente
 
 Pour accéder au VPN du collège, on peut utiliser [Cisco AnyConnect](https://www.cisco.com/c/en_ca/products/security/anyconnect-secure-mobility-client) mais on peut également utiliser [Open Connect](http://www.infradead.org/openconnect/) qui permet de se connecter d'un PC et d'un Mac. 
 
@@ -10,6 +10,10 @@ Pour accéder au VPN du collège, on peut utiliser [Cisco AnyConnect](https://ww
 
 - [x] L'article suivant utilise [CISCO AnyConnect](Microsoft%20vpn)
 
+
+## :x: IP PassThrough
+
+https://serverfault.com/questions/850011/ip-passthrough-openvpn-configuration/851562
 
 # References
 
