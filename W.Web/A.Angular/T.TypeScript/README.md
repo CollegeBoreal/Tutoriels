@@ -57,3 +57,4 @@ undefined
 |--------------------------------------|----------------------|
 | https://www.typescriptlang.org/      |  Doc                 | 
 | https://www.typescriptlang.org/play  | Playground           |
+| https://fireship.io/lessons/ts-decorators-by-example/ | TS Decorators |
