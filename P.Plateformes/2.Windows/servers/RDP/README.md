@@ -1,6 +1,6 @@
 # Utilisation a distance
 
-:a: avec Remote Desktop
+:a: avec Remote Desktop (pour le client)
 
 :pushpin: Ouvrir une autre fenetre CMD en remote desktop
 
@@ -33,9 +33,11 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 
 
 
-# :ab: Remote Desktop Services
+# :ab: Remote Desktop Services (pour le serveur)
 
 https://www.dell.com/support/kbdoc/en-ca/000121424/how-to-install-remote-desktop-services
+
+Ouvrir Powershell en tant qu'Administrateur
 
 ```
 PS > Install-WindowsFeature Remote-Desktop-Services
