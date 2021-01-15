@@ -32,6 +32,16 @@ Taper `CTRL`+`ALT`+`END` (au lieu des touches `CTRL`+`ALT`+`DEL`)
 <img src="images/TaskManagerPWSH.png" width="400px" heigth="396px"></img>
 
 
+
+# :ab: Remote Desktop Services
+
+https://www.dell.com/support/kbdoc/en-ca/000121424/how-to-install-remote-desktop-services
+
+```
+PS > Install-WindowsFeature Remote-Desktop-Services
+```
+
+
 ## Reference:
 
 https://serverfault.com/questions/512231/open-a-new-cmd-console-on-windows-2012-server-core-after-closing-the-last-one
