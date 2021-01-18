@@ -5,7 +5,7 @@
 
 - [ ] check is `Ubuntu` system supports virtualization
 
-An outcome greater than 0 
+Result must be greater than 0 
 
 ```
 $ egrep -c '(vmx|svm)' /proc/cpuinfo
