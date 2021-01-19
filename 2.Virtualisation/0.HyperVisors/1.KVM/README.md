@@ -40,6 +40,19 @@ $ sudo systemctl status libvirtd
 ## :ab: Vagrant
 
 ```
+$ sudo apt install libvirt-clients libvirt-dev
+```
+
+```
+$ sudo apt install libxslt-dev libxml2-dev zlib1g-dev ruby-dev ruby-libvirt 
+```
+
+```
+$ sudo ebtables dnsmasq-base
+```
+
+
+```
 $ curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
 ```
 
