@@ -26,8 +26,24 @@ if `kvm-ok` not present install `cpu-cheker` package
 $ sudo apt install cpu-checker
 ```
 
+
+## :ab: Vagrant
+
+```
+$ curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+```
+
+
+```
+$ sudo apt install ./vagrant_2.2.14_x86_64.deb
+```
+
+
 # References
 
 https://www.tecmint.com/install-kvm-on-ubuntu/
 
 https://ostechnix.com/how-to-use-vagrant-with-libvirt-kvm-provider/
+
+
+https://linuxize.com/post/how-to-install-vagrant-on-ubuntu-20-04/
