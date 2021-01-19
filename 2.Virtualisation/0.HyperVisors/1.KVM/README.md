@@ -48,6 +48,10 @@ $ curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.de
 $ sudo apt install ./vagrant_2.2.14_x86_64.deb
 ```
 
+```
+$ vagrant --version
+Vagrant 2.2.14
+```
 
 # References
 
