@@ -108,6 +108,13 @@ $ vagrant init centos/7
 $ vagrant up --provider=libvirt
 ```
 
+:round_pushpin: Virsh
+
+```
+$ virsh list
+```
+
+
 ## :x: Troubleshooting
 
 ```
@@ -130,5 +137,6 @@ https://www.tecmint.com/install-kvm-on-ubuntu/
 
 https://ostechnix.com/how-to-use-vagrant-with-libvirt-kvm-provider/
 
+https://computingforgeeks.com/virsh-commands-cheatsheet/
 
 https://linuxize.com/post/how-to-install-vagrant-on-ubuntu-20-04/
