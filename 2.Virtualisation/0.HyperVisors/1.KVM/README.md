@@ -40,7 +40,7 @@ $ sudo systemctl status libvirtd
 ## :ab: Vagrant
 
 ```
-$ sudo apt install libvirt-clients libvirt-dev
+$ sudo apt install gcc libvirt-clients libvirt-dev
 ```
 
 ```
