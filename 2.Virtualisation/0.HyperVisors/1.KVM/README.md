@@ -39,31 +39,69 @@ $ sudo systemctl status libvirtd
 
 ## :ab: Vagrant
 
-```
-$ sudo apt install gcc libvirt-clients libvirt-dev
-```
+- [ ] Install Vagrant
 
-```
-$ sudo apt install libxslt-dev libxml2-dev zlib1g-dev ruby-dev ruby-libvirt 
-```
-
-```
-$ sudo apt install ebtables dnsmasq-base
-```
-
+* download
 
 ```
 $ curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
 ```
 
+* install
 
 ```
 $ sudo apt install ./vagrant_2.2.14_x86_64.deb
 ```
 
+* test version
+
 ```
 $ vagrant --version
 Vagrant 2.2.14
+```
+
+- [ ] Install Vagrant `libvirt` plugin development environment
+
+* Install `gcc` and `libvirt` development environment
+
+```
+$ sudo apt install gcc libvirt-clients libvirt-dev
+```
+
+* Install `ruby` development environment
+
+```
+$ sudo apt install libxslt-dev libxml2-dev zlib1g-dev ruby-dev ruby-libvirt 
+```
+
+* Install other libraries
+
+```
+$ sudo apt install ebtables dnsmasq-base
+```
+
+- [ ] Install Vagrant `libvirt` plugin
+
+* plugin
+
+```
+$ vagrant plugin install vagrant-libvirt
+```
+
+* plugin which converts vagrant boxes to work with different providers
+
+```
+$ vagrant plugin install vagrant-mutate
+```
+
+:round_pushpin: Start a VM
+
+```
+$ mkdir vagrant && cd vagrant
+```
+
+```
+$ vagrant init centos/7
 ```
 
 ```
