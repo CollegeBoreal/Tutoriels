@@ -26,6 +26,16 @@ if `kvm-ok` not present install `cpu-cheker` package
 $ sudo apt install cpu-checker
 ```
 
+## :b: LibVirt
+
+
+```
+$ sudo apt install qemu-kvm libvirt-daemon-system
+```
+
+```
+$ sudo systemctl status libvirtd
+```
 
 ## :ab: Vagrant
 
