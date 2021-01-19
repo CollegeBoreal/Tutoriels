@@ -152,6 +152,8 @@ The Libvirt domain is running. To stop this machine, you can run
 
 https://www.vagrantup.com/docs/networking/private_network#static-ip
 
+https://www.vagrantup.com/docs/networking/public_network
+
 ```
 $ vagrant ssh default
 Last login: Tue Jan 19 01:18:24 2021 from 192.168.121.1
