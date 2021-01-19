@@ -104,7 +104,7 @@ $ mkdir vagrant && cd vagrant
 
 
 ```
-$ vagrant init centos/7
+$ vagrant init generic/ubuntu2010
 ```
 
 
