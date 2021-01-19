@@ -150,6 +150,7 @@ The Libvirt domain is running. To stop this machine, you can run
 `vagrant halt`. To destroy the machine, you can run `vagrant destroy`.
 ```
 
+https://www.vagrantup.com/docs/networking/private_network#static-ip
 
 ```
 $ vagrant ssh default
