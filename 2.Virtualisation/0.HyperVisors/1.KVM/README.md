@@ -140,6 +140,25 @@ $ vagrant up --provider=libvirt
     default: Key inserted! Disconnecting and reconnecting using new SSH key...
 ```
 
+```
+$ vagrant status
+Current machine states:
+
+default                   running (libvirt)
+
+The Libvirt domain is running. To stop this machine, you can run
+`vagrant halt`. To destroy the machine, you can run `vagrant destroy`.
+```
+
+
+```
+$ vagrant ssh default
+Last login: Tue Jan 19 01:18:24 2021 from 192.168.121.1
+vagrant@ubuntu2010:~$ 
+```
+
+
+
 :round_pushpin: Virsh
 
 ```
