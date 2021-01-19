@@ -110,6 +110,34 @@ $ vagrant init generic/ubuntu2010
 
 ```
 $ vagrant up --provider=libvirt
+...
+==> default:  -- Base box:          generic/ubuntu2010
+==> default:  -- Storage pool:      default
+==> default:  -- Image:             /var/lib/libvirt/images/vagrant_default.img (128G)
+==> default:  -- Volume Cache:      default
+==> default:  -- Kernel:            
+==> default:  -- Initrd:            
+==> default:  -- Graphics Type:     vnc
+==> default:  -- Graphics Port:     -1
+==> default:  -- Graphics IP:       127.0.0.1
+==> default:  -- Graphics Password: Not defined
+==> default:  -- Video Type:        cirrus
+==> default:  -- Video VRAM:        256
+==> default:  -- Sound Type:	
+==> default:  -- Keymap:            en-us
+==> default:  -- TPM Path:          
+==> default:  -- INPUT:             type=mouse, bus=ps2
+==> default: Creating shared folders metadata...
+==> default: Starting domain.
+==> default: Waiting for domain to get an IP address...
+==> default: Waiting for SSH to become available...
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
 ```
 
 :round_pushpin: Virsh
