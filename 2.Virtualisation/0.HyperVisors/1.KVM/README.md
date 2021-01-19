@@ -67,12 +67,24 @@ Vagrant 2.2.14
 ```
 
 ```
-$ vagrant init hashicorp/bionic64
-A `Vagrantfile` has been placed in this directory. You are now
-ready to `vagrant up` your first virtual environment! Please read
-the comments in the Vagrantfile as well as documentation on
-`vagrantup.com` for more information on using Vagrant.
+$ vagrant up --provider=libvirt
 ```
+
+## :x: Troubleshooting
+
+```
+$ vagrant up --provider=libvirt
+Bringing machine 'default' up with 'libvirt' provider...
+Error while connecting to Libvirt: Error making a connection to libvirt URI qemu:///system?no_verify=1&keyfile=/home/ubuntu/.ssh/id_rsa:
+Call to virConnectOpen failed: Failed to connect socket to '/var/run/libvirt/libvirt-sock': Permission denied
+```
+
+```
+$ sudo adduser $USER libvirt
+```
+
+Exit and return to the Terminal
+
 
 # References
 
