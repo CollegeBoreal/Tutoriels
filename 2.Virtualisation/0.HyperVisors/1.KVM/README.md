@@ -48,7 +48,7 @@ $ sudo apt install libxslt-dev libxml2-dev zlib1g-dev ruby-dev ruby-libvirt
 ```
 
 ```
-$ sudo ebtables dnsmasq-base
+$ sudo apt install ebtables dnsmasq-base
 ```
 
 
