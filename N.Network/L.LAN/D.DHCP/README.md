@@ -35,3 +35,24 @@ https://www.cira.ca/cybersecurity-services/canadian-shield/configure
 ## :b: Docker
 
 https://hub.docker.com/r/networkboot/dhcpd/
+
+/etc/dhcp.conf
+
+
+```
+ddns-update-style none;
+
+option domain-name-servers 145.253.2.75, 193.174.32.18;
+
+default-lease-time 86400;
+max-lease-time 604800;
+
+authoritative;
+
+subnet 192.168.0.0 netmask 255.255.255.0 {
+        range 192.168.0.200 192.168.0.229;
+        option subnet-mask 255.255.255.0;
+        option broadcast-address 192.168.0.255;
+        option routers 192.168.0.1;
+}
+```
