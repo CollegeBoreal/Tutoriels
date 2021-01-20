@@ -1,4 +1,4 @@
-## :L: [LibVirt](https://libvirt.org/) Virtualisation API
+## `L` [LibVirt](https://libvirt.org/) Virtualisation API
 
 
 ```
