@@ -34,12 +34,9 @@ https://www.cira.ca/cybersecurity-services/canadian-shield/configure
 
 ## :b: Docker
 
-https://hub.docker.com/r/networkboot/dhcpd/
-
-/etc/dhcp.conf
-
 
 ```
+$ cat /etc/dhcp3/dhcpd.conf
 ddns-update-style none;
 
 option domain-name-servers 145.253.2.75, 193.174.32.18;
@@ -56,3 +53,5 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
         option routers 192.168.0.1;
 }
 ```
+
+https://hub.docker.com/r/networkboot/dhcpd/
