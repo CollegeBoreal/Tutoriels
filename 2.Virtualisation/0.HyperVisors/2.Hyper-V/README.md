@@ -1,8 +1,5 @@
 # :two: Hyper V 
 
-## Qu'est-ce que Hyper-V?
-
-
 ## :a: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server
 
 ```
