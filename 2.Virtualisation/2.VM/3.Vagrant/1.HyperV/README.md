@@ -64,3 +64,13 @@ $ vagrant ssh --command 'ip addr'
        valid_lft forever preferred_lft forever
 Connection to 172.17.110.115 closed.
 ```
+
+```
+PS > get-vm
+
+Name                                State   CPUUsage(%) MemoryAssigned(M) Uptime             Status             Version
+----                                -----   ----------- ----------------- ------             ------             -------
+DockerDesktopVM                     Running 0           2048              1.20:54:18.5610000 Operating normally 9.0
+minikube                            Running 0           2000              1.21:10:05.2680000 Operating normally 9.0
+vagrant_default_1611157976809_12938 Running 0           2048              00:18:24.6290000   Operating normally 9.0
+```
