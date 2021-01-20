@@ -28,7 +28,7 @@ if `kvm-ok` not present install `cpu-cheker` package
 $ sudo apt install cpu-checker
 ```
 
-:red-book: https://www.tecmint.com/install-kvm-on-ubuntu/
+:closed_book: https://www.tecmint.com/install-kvm-on-ubuntu/
 
 
 ## :b: [LibVirt](https://libvirt.org/) Virtualisation API
@@ -52,7 +52,7 @@ drwxr-x--- 9 libvirt-qemu kvm  4096 Jan 20 01:45 qemu
 drwx------ 2 root         root 4096 Oct  8 05:36 sanlock
 ```
 
-:redbook: https://computingforgeeks.com/virsh-commands-cheatsheet/
+:open_book: https://computingforgeeks.com/virsh-commands-cheatsheet/
 
 
 
