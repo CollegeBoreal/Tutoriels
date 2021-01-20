@@ -47,7 +47,7 @@ max-lease-time 604800;
 authoritative;
 
 subnet 10.13.237.0 netmask 255.255.255.0 {
-        range 10.13.237.128 192.168.0.192;
+        range 10.13.237.128 10.13.237.192;
         option subnet-mask 255.255.255.0;
         option broadcast-address 10.13.237.255;
         option routers 10.13.237.1;
