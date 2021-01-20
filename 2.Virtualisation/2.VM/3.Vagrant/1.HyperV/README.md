@@ -75,4 +75,4 @@ minikube                            Running 0           2000              1.21:1
 vagrant_default_1611157976809_12938 Running 0           2048              00:18:24.6290000   Operating normally 9.0
 ```
 
-<img src="../images/Hyper-V_Manager-Vagrant.png" width="2362" height="1436"></img>
+<img src="../images/Hyper-V_Manager-Vagrant.png" width="590" height="359"></img>
