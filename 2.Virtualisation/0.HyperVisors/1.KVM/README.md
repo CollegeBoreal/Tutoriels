@@ -5,7 +5,7 @@
 #### :bookmark: on Ubuntu 20.04
 
 
-- [ ] check is `Ubuntu` system supports virtualization
+- [ ] check if `Ubuntu` system supports virtualization
 
 Result must be greater than 0 
 
