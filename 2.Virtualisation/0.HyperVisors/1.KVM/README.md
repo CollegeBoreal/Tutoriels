@@ -130,6 +130,11 @@ $ mkdir vagrant && cd vagrant
 $ vagrant init generic/ubuntu2010
 ```
 
+| providers | Comments  |
+|-----------|-----------|
+| hyperv    | Microsoft |
+| libvirt   | KVM Linux |
+
 
 ```
 $ vagrant up --provider=libvirt
