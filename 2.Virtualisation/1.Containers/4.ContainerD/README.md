@@ -15,6 +15,13 @@
 :closed_book: https://www.mankier.com/package/containerd
 
 ```
+# ctr --version
+ctr containerd.io 1.3.7
+```
+
+containerd CLI
+
+```
 $ ctr
 NAME:
    ctr - 
