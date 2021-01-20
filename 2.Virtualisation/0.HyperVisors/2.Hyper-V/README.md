@@ -1,16 +1,16 @@
 # :two: Hyper V 
 
-## Qu'est-ce que Hyper V
+## Qu'est-ce que Hyper-V?
 
 
-## :one: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server
+## :a: Installer le role [Hyper V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server) sur Windows Server
 
 ```
 PS> Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 ```
 
 
-### :pushpin: Tester le role Hyper V et les outils de gestion `RSAT`
+- [ ] Tester le role Hyper V et les outils de gestion `RSAT`
 
 ```
 PS> Get-WindowsFeature *Hyper*
@@ -22,7 +22,9 @@ Display Name                                            Name                    
             [X] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Installed
 ```
 
-### :pushpin: Installer les modules individuellement (Si non installé par la commande globale)
+:bulb: Si non installé par la commande globale
+
+- [ ] Installer les modules individuellement
 
 ```
 PS> Install-WindowsFeature -Name Hyper-V-PowerShell
@@ -37,6 +39,7 @@ PS> # Install the Hyper-V hypervisor and all tools (method #2)
 PS> Install-WindowsFeature -Name Hyper-V, RSAT-Hyper-V-Tools
 ```
 
+- [ ] Lister les modules Hyper-V
 
 ```
 PS> Get-Module -ListAvailable *Hyper*
@@ -52,7 +55,7 @@ Binary     1.1        Hyper-V                             {Add-VMDvdDrive, Add-V
 
 ```
 
-## Voir les commandes Powershell pour le role Hyper V
+## :b: Voir les commandes Powershell pour le role Hyper V
 
 ```
 PS> Get-Command -Module Hyper-V
