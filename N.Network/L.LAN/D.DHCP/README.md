@@ -39,18 +39,18 @@ https://www.cira.ca/cybersecurity-services/canadian-shield/configure
 $ cat /etc/dhcp3/dhcpd.conf
 ddns-update-style none;
 
-option domain-name-servers 145.253.2.75, 193.174.32.18;
+option domain-name-servers 149.112.121.20, 149.112.122.20;
 
 default-lease-time 86400;
 max-lease-time 604800;
 
 authoritative;
 
-subnet 192.168.0.0 netmask 255.255.255.0 {
-        range 192.168.0.200 192.168.0.229;
+subnet 10.13.237.0 netmask 255.255.255.0 {
+        range 10.13.237.128 192.168.0.192;
         option subnet-mask 255.255.255.0;
-        option broadcast-address 192.168.0.255;
-        option routers 192.168.0.1;
+        option broadcast-address 10.13.237.255;
+        option routers 10.13.237.1;
 }
 ```
 
@@ -60,4 +60,4 @@ https://hub.docker.com/r/networkboot/dhcpd/
 
 1. Create `data/dhcpd.conf` with a subnet clause for the specified network interface. If you need assistance, you can run `docker run -it --rm networkboot/dhcpd man dhcpd.conf` for a description of the configuration file syntax.
 
-1. Run `docker run -it --rm --init --net host -v "$(pwd)/data":/data networkboot/dhcpd eth0`. dhcpd will automatically start and display its logs on the console. You can press Ctrl-C to terminate the server.
+1. Run `docker run -it --rm --init --net host -v "$(pwd)/data":/data networkboot/dhcpd enp2s0f0`. dhcpd will automatically start and display its logs on the console. You can press Ctrl-C to terminate the server.
