@@ -3,7 +3,7 @@
 https://www.vagrantup.com/
 
 
-## :0: Prérequis - Installation
+## :zero: Prérequis - Installation
 
 :computer: Sous Windows X
 
