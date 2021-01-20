@@ -29,7 +29,7 @@ drwx------ 2 root         root 4096 Oct  8 05:36 sanlock
 $ sudo apt install virt-manager virt-viewer 
 ```
 
-## :desktop: virt-viewer (Windows) - UI
+## :computer: virt-viewer (Windows) - UI
 
 ```
 $ sudo apt install virt-manager virt-viewer 
