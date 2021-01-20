@@ -74,3 +74,5 @@ DockerDesktopVM                     Running 0           2048              1.20:5
 minikube                            Running 0           2000              1.21:10:05.2680000 Operating normally 9.0
 vagrant_default_1611157976809_12938 Running 0           2048              00:18:24.6290000   Operating normally 9.0
 ```
+
+<img src="../images/Hyper-V_Manager-Vagrant.png" width="2362" height="1436"></img>
