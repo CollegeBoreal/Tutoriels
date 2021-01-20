@@ -56,8 +56,8 @@ subnet 10.13.237.0 netmask 255.255.255.0 {
 
 https://hub.docker.com/r/networkboot/dhcpd/
 
-1. Create `data` folder.
+1. Create `dhcp` folder.
 
-1. Create `data/dhcpd.conf` with a subnet clause for the specified network interface. If you need assistance, you can run `docker run -it --rm networkboot/dhcpd man dhcpd.conf` for a description of the configuration file syntax.
+1. Create `dhcp/dhcpd.conf` with a subnet clause for the specified network interface. If you need assistance, you can run `docker run -it --rm networkboot/dhcpd man dhcpd.conf` for a description of the configuration file syntax.
 
-1. Run `docker run -it --rm --init --net host -v "$(pwd)/data":/data networkboot/dhcpd enp2s0f0`. dhcpd will automatically start and display its logs on the console. You can press Ctrl-C to terminate the server.
+1. Run `docker run --interactive --tty --rm --init --net host -v "$(pwd)/dhcp":/data networkboot/dhcpd enp2s0f0`. dhcpd will automatically start and display its logs on the console. You can press Ctrl-C to terminate the server.
