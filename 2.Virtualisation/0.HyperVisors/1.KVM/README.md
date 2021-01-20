@@ -58,26 +58,6 @@ drwx------ 2 root         root 4096 Oct  8 05:36 sanlock
 
 ## :ab: Vagrant
 
-- [ ] Install Vagrant
-
-* download
-
-```
-$ curl -O https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
-```
-
-* install
-
-```
-$ sudo apt install ./vagrant_2.2.14_x86_64.deb
-```
-
-* test version
-
-```
-$ vagrant --version
-Vagrant 2.2.14
-```
 
 - [ ] Install Vagrant `libvirt` plugin development environment
 
