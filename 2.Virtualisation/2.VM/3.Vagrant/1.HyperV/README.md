@@ -37,3 +37,11 @@ Download redirected to host: vagrantcloud-files-production.s3.amazonaws.com
     default: Key inserted! Disconnecting and reconnecting using new SSH key...
 ==> default: Machine booted and ready!
 ```
+
+
+```
+$ vagrant status
+Current machine states:
+
+default                   running (hyperv)
+```
