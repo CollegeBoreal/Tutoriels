@@ -76,9 +76,9 @@ $ sudo apt install libxslt-dev libxml2-dev zlib1g-dev ruby-dev ruby-libvirt
 
 * Install other libraries 
 
-- [ebtables](https://flylib.com/books/en/3.105.1.88/1/)
+    - [ebtables](https://flylib.com/books/en/3.105.1.88/1/)
 
-- [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
+    - [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
 
 ```
 $ sudo apt install ebtables dnsmasq-base
