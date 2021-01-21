@@ -37,3 +37,25 @@ virbr1		        8000.5254005a371b	yes		      virbr1-nic
 ```
 
 https://www.thegeekstuff.com/2017/06/brctl-bridge/
+
+
+:x: Cleaning up `virbr0		        8000.525400a6ccee	yes		      virbr0-nic`
+
+- [ ] Detach the NIC interface
+
+```
+$ sudo brctl delif virbr0 virbr0-nic
+```
+
+- [ ] Shutdown the `virbr0` bridge
+
+```
+$ sudo ip link set virbr0 down
+```
+
+- [ ] Delete the `virbr0` bridge
+
+
+```
+$ sudo brctl delbr virbr0
+```
