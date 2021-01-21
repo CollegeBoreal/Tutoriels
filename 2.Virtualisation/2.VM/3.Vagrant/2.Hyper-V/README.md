@@ -3,6 +3,14 @@
 :bulb: Pour créer une machine sous `Hyper-V`, il faut avoir les droits administrateurs. Vous pouvez utiliser `git bash`
 
 
+Initialiser la source
+
+```
+$ vagrant init generic/ubuntu2010
+```
+
+Lancer la VM
+
 ```
 $ vagrant up --provider=hyperv
 Bringing machine 'default' up with 'hyperv' provider...
