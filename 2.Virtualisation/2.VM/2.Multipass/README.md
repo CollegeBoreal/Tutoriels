@@ -104,6 +104,12 @@ $ multipass ls
 No instances found.
 ```
 
+## :x: Troubleshooting
+
+```
+$ journalctl -f -au snap.multipass.* 
+```
+
 ## :key: Multipass Keys
 
 
