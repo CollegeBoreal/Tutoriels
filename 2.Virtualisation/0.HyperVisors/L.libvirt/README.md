@@ -47,3 +47,18 @@ VIRT CLI
 ```
 $ virsh --connect qemu:///system
 ```
+
+
+## :x: Troubleshooting
+
+```
+$ sudo journalctl --unit libvirtd.service
+-- Logs begin at Wed 2020-09-16 21:12:37 UTC, end at Thu 2021-01-21 03:35:04 UTC. --
+Jan 18 21:54:55 ranomafana systemd[1]: Starting Virtualization daemon...
+Jan 18 21:54:55 ranomafana systemd[1]: Started Virtualization daemon.
+Jan 18 21:54:56 ranomafana dnsmasq[3006702]: started, version 2.80 cachesize 150
+Jan 18 21:54:56 ranomafana dnsmasq[3006702]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCP>
+Jan 18 21:54:56 ranomafana dnsmasq-dhcp[3006702]: DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease t>
+Jan 18 21:54:56 ranomafana dnsmasq-dhcp[3006702]: DHCP, sockets bound exclusively to interface virbr0
+...
+```
