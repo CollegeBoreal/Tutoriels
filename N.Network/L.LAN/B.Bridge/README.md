@@ -55,7 +55,12 @@ $ sudo ip link set virbr0 down
 
 - [ ] Delete the `virbr0` bridge
 
-
 ```
 $ sudo brctl delbr virbr0
+```
+
+- [ ] Restart the attached service (i.e. libvirt)
+
+```
+$ sudo systemctl restart libvirtd.service
 ```
