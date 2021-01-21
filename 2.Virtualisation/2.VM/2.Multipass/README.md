@@ -36,6 +36,10 @@ $ brew cask install multipass
 $ sudo snap install multipass
 ```
 
+```
+$ sudo snap remove multipass
+```
+
 ## :b: Launch a machine
 
 * Launch
