@@ -1,6 +1,8 @@
 # `L`.[LibVirt](https://libvirt.org/) Virtualisation API
 
-## :penguin: virt daemon (Linux)
+## :gear: Install
+
+### :penguin: virt daemon (Linux)
 
 ```
 $ sudo apt install qemu-kvm libvirt-daemon-system
@@ -23,16 +25,25 @@ drwx------ 2 root         root 4096 Oct  8 05:36 sanlock
 :open_book: https://computingforgeeks.com/virsh-commands-cheatsheet/
 
 
-## :penguin: virt-manager (Linux) - UI
+### :penguin: virt-manager (Linux) - UI
 
 ```
 $ sudo apt install virt-manager virt-viewer 
 ```
 
-## :computer: virt-viewer (Windows) - UI
+### :computer: virt-viewer (Windows) - UI
 
 ```
 $ sudo apt install virt-manager virt-viewer 
 ```
 
 https://mangolassi.it/topic/19379/virt-manager-for-windows/7
+
+
+## :a: Usage
+
+VIRT CLI
+
+```
+$ virsh --connect qemu:///system
+```
