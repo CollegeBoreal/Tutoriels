@@ -20,3 +20,8 @@ https://gregives.co.uk/blog/choosing-a-cms-for-your-website/
 - [ ] API-Based
 
 - [ ] GIT-Based
+
+
+# References
+
+https://www.netlify.com/blog/2019/09/17/using-the-angular-builder-for-netlify/
