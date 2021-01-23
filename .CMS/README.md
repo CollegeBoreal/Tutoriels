@@ -9,6 +9,6 @@ https://gofreethemes.com/
 
 https://ithemes.com/seven-of-the-best-wordpress-lms-plugins/
 
-## :m: JAM Stack
+## :m: [JAM Stack](https://jamstack.org/)
 
 https://www.youtube.com/watch?v=KX4G49ZrvY0
