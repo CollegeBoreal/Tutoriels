@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 
+
 # Basic
 name:               "Overcoming Software"
 
@@ -12,6 +13,10 @@ gems:
     - jekyll-redirect-from
     - jekyll-paginate
     - jekyll-feed
+
+gems: 
+  - jemoji
+
 
 plugins:
     - jekyll-paginate
