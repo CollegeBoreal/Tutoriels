@@ -1,5 +1,17 @@
 # PHP
 
+# :o: Install
+
+:strawberry: MacOS
+
+```
+$ brew install php
+```
+
+https://formulae.brew.sh/formula/php
+
+
+
 
 
 # Reférences
