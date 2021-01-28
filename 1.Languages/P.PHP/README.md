@@ -4,13 +4,13 @@
 
 :computer: Windows
 
--[ ] Install
+- [ ] Install
 
 ```
 PS > choco install php
 ```
 
--[ ] Test
+- [ ] Test
 
 ```
 $ php --version
