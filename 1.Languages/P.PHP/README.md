@@ -64,6 +64,38 @@ php > echo sum(sum(3, 4),sum(5,5));
 php >
 ```
 
+
+
+```
+php > $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+php > $square = function (int $num): int {
+php { return pow($num, 2);
+php { };
+php > var_dump( array_map($square, $array));
+array(10) {
+  [0]=>
+  int(0)
+  [1]=>
+  int(1)
+  [2]=>
+  int(4)
+  [3]=>
+  int(9)
+  [4]=>
+  int(16)
+  [5]=>
+  int(25)
+  [6]=>
+  int(36)
+  [7]=>
+  int(49)
+  [8]=>
+  int(64)
+  [9]=>
+  int(81)
+}
+```
+
 https://formulae.brew.sh/formula/php
 
 
@@ -76,3 +108,4 @@ https://dev.to/ohryan/what-are-your-thoughts-on-functional-programming-in-php-33
 
 https://apiumhub.com/tech-blog-barcelona/functional-php/
 
+https://leanpub.com/functional-php/read
