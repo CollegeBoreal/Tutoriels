@@ -8,7 +8,7 @@
 $ choco install php
 ```
 
-:strawberry: MacOS
+:apple: MacOS
 
 ```
 $ brew install php
