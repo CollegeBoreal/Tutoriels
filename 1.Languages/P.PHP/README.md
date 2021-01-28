@@ -26,6 +26,18 @@ Zend Engine v4.0.1, Copyright (c) Zend Technologies
 $ brew install php
 ```
 
+## :a: CLI
+
+:bulb: Sous `git bash` ajouter `winpty`
+
+```
+$ php -a
+```
+
+
+https://www.php.net/manual/en/features.commandline.interactive.php
+
+
 https://formulae.brew.sh/formula/php
 
 
