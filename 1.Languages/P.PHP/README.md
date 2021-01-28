@@ -76,7 +76,7 @@ php > $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 php > $square = function (int $num): int {
 php { return pow($num, 2);
 php { };
-php > var_dump( array_map($square, $array));
+php > var_dump( array_map($square, $array)); //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 array(10) {
   [0]=>
   int(0)
