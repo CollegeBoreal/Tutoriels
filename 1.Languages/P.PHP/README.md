@@ -30,8 +30,19 @@ $ brew install php
 
 :bulb: Sous `git bash` ajouter `winpty`
 
-```
+```php
 $ php -a
+Interactive shell
+
+php > echo 5+8;
+13
+php > function addTwo($n)
+php > {
+php { return $n + 2;
+php { }
+php > var_dump(addTwo(2));
+int(4)
+php >
 ```
 
 
