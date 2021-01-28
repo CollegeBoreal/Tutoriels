@@ -50,6 +50,8 @@ https://www.php.net/manual/en/features.commandline.interactive.php
 
 ## :b: Functional Programming
 
+- HOF
+
 ```php
 $ php -a
 Interactive shell
@@ -64,9 +66,12 @@ php > echo sum(sum(3, 4),sum(5,5));
 php >
 ```
 
+- Map
 
+```php
+$ php -a
+Interactive shell
 
-```
 php > $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 php > $square = function (int $num): int {
 php { return pow($num, 2);
