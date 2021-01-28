@@ -48,6 +48,21 @@ php >
 
 https://www.php.net/manual/en/features.commandline.interactive.php
 
+## :b: Functional Programming
+
+```php
+$ php -a
+Interactive shell
+
+php > function sum(int $number1, int $number2) {
+php {   return $number1 + $number2;
+php { }
+php > var_dump( sum(sum(3, 4),sum(5,5)));
+int(17)
+php > echo sum(sum(3, 4),sum(5,5));
+17
+php >
+```
 
 https://formulae.brew.sh/formula/php
 
