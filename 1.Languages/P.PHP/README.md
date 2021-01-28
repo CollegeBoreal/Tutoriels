@@ -2,6 +2,12 @@
 
 # :o: Install
 
+:computer: Windows
+
+```
+$ choco install php
+```
+
 :strawberry: MacOS
 
 ```
