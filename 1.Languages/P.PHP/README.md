@@ -4,9 +4,21 @@
 
 :computer: Windows
 
+- [ ] Install
+
 ```
-$ choco install php
+PS > choco install php
 ```
+
+- [ ] Test
+
+```
+$ php --version
+PHP 8.0.1 (cli) (built: Jan  5 2021 23:43:33) ( NTS Visual C++ 2019 x64 )
+Copyright (c) The PHP Group
+Zend Engine v4.0.1, Copyright (c) Zend Technologies
+```
+
 
 :apple: MacOS
 
