@@ -17,6 +17,8 @@ Your lock file does not contain a compatible set of packages. Please run compose
 $ cd moodle
 ```
 
+:coin: Token go to https://github.com/settings/tokens/new?scopes=repo&description=Composer+on+infongp-us4+2021-01-29+0853
+
 ```
 $ composer update
 Loading composer repositories with package information
@@ -27,4 +29,24 @@ to retrieve a token. It will be stored in "/kunden/homepages/2/d92706092/htdocs/
 Token (hidden):
 No token given, aborting.
 You can also add it manually later by using "composer config --global --auth github-oauth.github.com <token>"
+```
+
+
+```
+$ composer update
+Loading composer repositories with package information
+GitHub API limit (0 calls/hr) is exhausted, could not fetch https://api.github.com/repos/moodlehq/php-webdriver. Create a GitHub OAuth token to go over the API rate limit. You can also wait until ? for the rate limit to reset.
+
+Head to https://github.com/settings/tokens/new?scopes=repo&description=Composer+on+infongp-us4+2021-01-29+0857
+to retrieve a token. It will be stored in "/kunden/homepages/2/d92706092/htdocs/.composer/auth.json" for future use by Composer.
+Token (hidden): 
+Token stored successfully.
+Updating dependencies     
+Lock file operations: 0 installs, 43 updates, 2 removals
+  - Removing paragonie/random_compat (v9.99.99)
+  - Removing symfony/polyfill-php70 (v1.18.1)
+...
+Generating autoload files
+43 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
 ```
