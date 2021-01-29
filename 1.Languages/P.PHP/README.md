@@ -36,10 +36,9 @@ Interactive shell
 
 php > echo 5+8;
 13
-php > function addTwo($n)
-php > {
-php { return $n + 2;
-php { }
+php > function addTwo($n) {
+        return $n + 2;
+      }
 php > var_dump(addTwo(2));
 int(4)
 php >
@@ -57,8 +56,8 @@ $ php -a
 Interactive shell
 
 php > function sum(int $number1, int $number2) {
-php {   return $number1 + $number2;
-php { }
+        return $number1 + $number2;
+      }
 php > var_dump( sum(sum(3, 4),sum(5,5)));
 int(17)
 php > echo sum(sum(3, 4),sum(5,5));
@@ -74,8 +73,8 @@ Interactive shell
 
 php > $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 php > $square = function (int $num): int {
-php { return pow($num, 2);
-php { };
+         return pow($num, 2);
+      };
 php > var_dump( array_map($square, $array)); //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 array(10) {
   [0]=>
