@@ -12,3 +12,11 @@ Verifying lock file contents can be installed on current platform.
 Your lock file does not contain a compatible set of packages. Please run composer update.
 ...
 ```
+
+```
+$ cd moodle
+```
+
+```
+$ composer update
+```
