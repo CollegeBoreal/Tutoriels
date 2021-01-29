@@ -122,3 +122,5 @@ https://dev.to/ohryan/what-are-your-thoughts-on-functional-programming-in-php-33
 https://apiumhub.com/tech-blog-barcelona/functional-php/
 
 https://leanpub.com/functional-php/read
+
+https://leanpub.com/functional-php/read
