@@ -25,4 +25,6 @@ GitHub API limit (0 calls/hr) is exhausted, could not fetch https://api.github.c
 Head to https://github.com/settings/tokens/new?scopes=repo&description=Composer+on+infongp-us4+2021-01-29+0853
 to retrieve a token. It will be stored in "/kunden/homepages/2/d92706092/htdocs/.composer/auth.json" for future use by Composer.
 Token (hidden):
+No token given, aborting.
+You can also add it manually later by using "composer config --global --auth github-oauth.github.com <token>"
 ```
