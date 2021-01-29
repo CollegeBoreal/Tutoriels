@@ -100,6 +100,15 @@ array(10) {
 }
 ```
 
+
+```php
+PHP > function add(int $a, int $b): int {
+        return $a + $b;
+      }
+php > var_dump( array_reduce(array_map($square, $array), 'add'); //-> 285
+```
+      
+
 https://formulae.brew.sh/formula/php
 
 
