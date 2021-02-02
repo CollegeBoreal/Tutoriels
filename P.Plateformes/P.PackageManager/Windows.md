@@ -8,7 +8,30 @@
 (Touche Windows > taper "Windows PowerShell" > right click > Run as Administrator)
 ```
 
-:two: Copier et Coller les instructions suivantes et taper `entrer`
+
+:two: Politique d'éxécution
+
+Éxécuter la commande ci-dessous, 
+
+```
+PS> Get-ExecutionPolicy
+```
+
+Si ça retourne `Restricted``
+
+Alors Éxécuter 
+
+```
+PS> Set-ExecutionPolicy AllSigned
+```
+
+OU
+
+```
+PS> Set-ExecutionPolicy Bypass -Scope Process
+``` 
+
+:three: Copier et Coller les instructions suivantes et taper `entrer`
 
 ```
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; 
@@ -16,7 +39,7 @@ PS > Set-ExecutionPolicy Bypass -Scope Process -Force;
      iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-:three: Verifier l'installation
+:four: Verifier l'installation
 
 ```
 PS > choco list --local-only
