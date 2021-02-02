@@ -17,7 +17,7 @@
 PS> Get-ExecutionPolicy
 ```
 
-:bang: Si ça retourne `Restricted`
+:bangbang: Si ça retourne `Restricted`
 
 Alors Éxécuter 
 
