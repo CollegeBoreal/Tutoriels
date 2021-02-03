@@ -38,14 +38,22 @@ UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0  2020 ?        00:44:33 /lib/systemd/systemd --system --deserialize 29
 ```
 
+Changer a une apparance Ubuntu
+
+```
+$ sudo ros console switch ubuntu
+```
+
 - [ ] Lister les [services](https://rancher.com/docs/os/v1.x/en/system-services/) de RancherOS (l'equivalent `init` SysV ou `systemd`)
 
 ```
 $ sudo ros service list
 ```
 
+
 ```
-$ sudo ros os list
+$ sudo ros os list | grep running
+v1.5.7 running
 ```
 
 - [ ] Utiliser system-docker
