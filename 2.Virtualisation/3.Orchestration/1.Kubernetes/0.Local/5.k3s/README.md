@@ -19,6 +19,22 @@ PS> docker-machine ssh CB-K3S1
 
 - [ ] Lister les [services](https://rancher.com/docs/os/v1.x/en/system-services/) de RancherOS (l'equivalent `init` SysV ou `systemd`)
 
+* sous rancherOS
+
+```
+$ $ ps -ef | awk 'NR<=2'
+PID   USER     COMMAND
+    1 root     system-dockerd --bip 172.18.42.1/16 --config-file /etc/docker/system-docker.json --exec-root /var/run/system-docker --host unix:///var/run/system-docker.sock --userland-proxy=false --group root --graph /var/lib/system-docker --restart=false --storage-driver overlay2 --log-opt max-file=2 --log-opt max-size=25m --pidfile /var/run/system-docker.pid
+```
+
+* sous Ubuntu
+
+```
+$ $ ps -ef | awk 'NR<=2'
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0  2020 ?        00:44:33 /lib/systemd/systemd --system --deserialize 29
+```
+
 ```
 $ sudo ros service list
 ```
