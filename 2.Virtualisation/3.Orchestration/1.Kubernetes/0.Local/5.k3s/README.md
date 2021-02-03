@@ -44,3 +44,17 @@ rancher/container-crontab   v0.4.0                7a2485d285d9        3 years ag
 ```
 $ cat /var/log/system-docker.log
 ```
+
+```
+$ sudo system-docker container  ps
+CONTAINER ID        IMAGE                                          COMMAND                  CREATED             STATUS              PORTS               NAMES
+cb2c2718af7c        rancher/os-docker:19.03.14                     "ros user-docker"        6 hours ago         Up 5 hours                              docker
+2d3d98be49ab        rancher/os-console:v1.5.7                      "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              console
+2fbb911412a7        rancher/os-base:v1.5.7                         "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              ntp
+feb50d78ce4f        rancher/os-hypervvmtools:v4.14.138-rancher-1   "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              hyperv-vm-tools
+9eb7bdabe71f        rancher/os-base:v1.5.7                         "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              network
+7279ef97c280        rancher/os-base:v1.5.7                         "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              udev
+888803eae14a        rancher/container-crontab:v0.4.0               "container-crontab"      6 hours ago         Up 6 hours                              system-cron
+19c6c9eaf323        rancher/os-syslog:v1.5.7                       "/usr/bin/entrypoi..."   6 hours ago         Up 6 hours                              syslog
+a29f5efb8441        rancher/os-acpid:v1.5.7                        "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              acpid
+```
