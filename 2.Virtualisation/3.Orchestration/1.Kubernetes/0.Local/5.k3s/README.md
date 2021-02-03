@@ -17,7 +17,7 @@ PS> docker-machine create --driver hyperv `
 PS> docker-machine ssh CB-K3S1
 ```
 
-- [ ] Lister les [services](https://rancher.com/docs/os/v1.x/en/system-services/) de RancherOS 
+- [ ] Lister les [services](https://rancher.com/docs/os/v1.x/en/system-services/) de RancherOS (l'equivalent `init` SysV ou `systemd`)
 
 ```
 $ sudo ros service list
