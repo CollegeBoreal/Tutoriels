@@ -3,7 +3,7 @@
 Lightweight Kubernetes
 
 
-:bulb: Example de création de machine virtuelle sous HYPER-V en utilisant une image `boot2docker` provenant de `RancherOS`
+:bulb: Example de création de machine virtuelle sous HYPER-V en utilisant une image `boot2docker` provenant de [`RancherOS`](https://rancher.com/docs/os/v1.x/en/installation/workstation/docker-machine/)
 
 ```powershell
 PS> docker-machine create --driver hyperv `
