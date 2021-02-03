@@ -18,6 +18,9 @@ ssh -i /home/docker/.ssh/id_rsa -p 22 Administrator@10.13.5.54
 Error: unable to load the ssh key with path "/home/docker/.ssh/id_rsa": open /home/docker/.ssh/id_rsa: no such file or directory
 ```
 
+```
+$ export HOST="10.13.237.195" k3sup install --host $HOST --user Administrator  --ssh-key ~/.ssh/$HOST.pk
+```
 
 https://github.com/alexellis/arkade
 
