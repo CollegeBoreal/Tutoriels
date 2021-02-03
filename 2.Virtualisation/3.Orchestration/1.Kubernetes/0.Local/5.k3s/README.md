@@ -32,7 +32,7 @@ PID   USER     COMMAND
 * sous Ubuntu
 
 ```
-$ $ ps -ef | awk 'NR<=2'
+$ ps -ef | awk 'NR<=2'
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0  2020 ?        00:44:33 /lib/systemd/systemd --system --deserialize 29
 ```
