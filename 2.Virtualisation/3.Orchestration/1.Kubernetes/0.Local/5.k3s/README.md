@@ -74,3 +74,16 @@ feb50d78ce4f        rancher/os-hypervvmtools:v4.14.138-rancher-1   "/usr/bin/ros
 19c6c9eaf323        rancher/os-syslog:v1.5.7                       "/usr/bin/entrypoi..."   6 hours ago         Up 6 hours                              syslog
 a29f5efb8441        rancher/os-acpid:v1.5.7                        "/usr/bin/ros entr..."   6 hours ago         Up 6 hours                              acpid
 ```
+
+### :gear: [cloud-config](https://rancher.com/docs/os/v1.x/en/configuration/#cloud-config)
+
+```
+$ sudo cat /var/lib/rancher/conf/cloud-config.yml 
+rancher:
+  services_include:
+    hyperv-vm-tools: true
+  ssh:
+    keys:
+      dsa: |+
+      ...
+```
