@@ -123,7 +123,8 @@ $ sudo ros config get rancher.services.user-volumes.volumes
 * add the volumes
 
 ```
-$ sudo ros config set rancher.services.user-volumes.volumes  [/home:/home,/opt:/opt,/var/lib/kubelet:/var/lib/kubelet,/etc/kubernetes:/etc/kubernetes]
+$ sudo ros config set rancher.services.user-volumes.volumes \
+       [/home:/home,/opt:/opt,/var/lib/kubelet:/var/lib/kubelet,/etc/kubernetes:/etc/kubernetes]
 ```
 
 * remove all volumes
