@@ -105,3 +105,35 @@ rancher:
       ...
 ```
 
+### System Volume 
+
+https://github.com/rancher/os/issues/2188#issuecomment-354418794
+
+- [ ] Before
+
+```
+$ sudo ros config get rancher.services.user-volumes.volumes
+- /home:/home
+- /opt:/opt
+```
+
+
+- [ ] Add system volumes 
+
+* add the volumes
+
+```
+$ sudo ros config set rancher.services.user-volumes.volumes  [/home:/home,/opt:/opt,/var/lib/kubelet:/var/lib/kubelet,/etc/kubernetes:/etc/kubernetes]
+```
+
+* remove all volumes
+
+```
+$ sudo system-docker rm all-volumes
+```
+
+* reboot
+
+```
+$ reboot
+```
