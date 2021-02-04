@@ -135,5 +135,5 @@ $ sudo system-docker rm all-volumes
 * reboot
 
 ```
-$ reboot
+$ sudo reboot
 ```
