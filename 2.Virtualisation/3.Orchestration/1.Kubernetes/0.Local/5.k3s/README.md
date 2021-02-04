@@ -38,10 +38,16 @@ UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0  2020 ?        00:44:33 /lib/systemd/systemd --system --deserialize 29
 ```
 
-Changer a une apparance Ubuntu
+Changer a une apparance Ubuntu (permet l'utilisation de `curl`)
 
 ```
 $ sudo ros console switch ubuntu
+Switching consoles will
+1. destroy the current console container
+2. log you out
+3. restart Docker
+Continue [y/N]: Y
+INFO[0005] Service console using local image docker.io/rancher/os-ubuntuconsole:v1.5.5 
 ```
 
 - [ ] Lister les [services](https://rancher.com/docs/os/v1.x/en/system-services/) de RancherOS (l'equivalent `init` SysV ou `systemd`)
