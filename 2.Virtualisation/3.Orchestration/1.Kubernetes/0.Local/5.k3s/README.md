@@ -8,6 +8,33 @@ PS> docker-machine create `
           CB-K3OS
 ```
 
+https://access.redhat.com/documentation/en-us/red_hat_container_development_kit/3.0/html/installation_guide/docker-machine-driver-install
+
+```
+$ docker-machine create \
+          --driver kvm \
+          --kvm-boot2docker-url https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso \
+          CB-K3OS
+```
+
+(CB-K3OS) Failed to start: [Code-55] [Domain-19] Requested operation is not valid: network 'default' is not active
+Error creating machine: Error in driver during machine creation: [Code-55] [Domain-19] Requested operation is not valid: network 'default' is not active
+
+```
+# curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+     chmod +x /tmp/docker-machine &&
+     sudo cp /tmp/docker-machine /usr/local/bin/docker-machine 
+# sudo chmod +x /usr/local/bin/docker-machine
+```
+
+
+```
+# sudo curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm -o /usr/local/bin/docker-machine-driver-kvm
+```
+
+```
+# sudo chmod +x /usr/local/bin/docker-machine-driver-kvm
+```
 
 # K3s
 
