@@ -1,5 +1,11 @@
 # K3os
 
+https://titanwolf.org/Network/Articles/Article?AID=0608030d-f550-404e-ba5a-b69096db56f4#gsc.tab=0
+
+
+
+
+
 :x: Failed no SSH connection
 
 ```powershell
