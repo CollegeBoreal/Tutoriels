@@ -4,7 +4,10 @@
 
 
 ```
-$ docker-machine create           --driver kvm           --kvm-boot2docker-url https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso           CB-K3OS
+$ docker-machine create \
+        --driver kvm \
+        --kvm-boot2docker-url https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso \
+        CB-K3OS
 Running pre-create checks...
 Creating machine...
 (CB-K3OS) Downloading /home/ubuntu/.docker/machine/cache/boot2docker.iso from https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso...
