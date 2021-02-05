@@ -71,6 +71,11 @@ Waiting for SSH to be available...
 Error creating machine: Error detecting OS: Too many retries waiting for SSH to be available.  Last error: Maximum number of retries (60) exceeded
 ```
 
+```
+$ docker-machine ls
+NAME      ACTIVE   DRIVER   STATE     URL                         SWARM   DOCKER    ERRORS
+CB-K3OS   -        kvm      Running   tcp://192.168.42.247:2376           Unknown   Unable to query docker version: Cannot connect to the docker engine endpoint
+```
 
 # References
 
