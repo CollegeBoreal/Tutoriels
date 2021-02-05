@@ -22,6 +22,23 @@ $ docker-machine create \
 (CB-K3OS) Failed to start: [Code-55] [Domain-19] Requested operation is not valid: network 'default' is not active
 Error creating machine: Error in driver during machine creation: [Code-55] [Domain-19] Requested operation is not valid: network 'default' is not active
 
+https://askubuntu.com/questions/1036297/cant-start-kvm-guest-network-default-is-not-active
+
+```
+$ virsh net-list --all
+ Name              State      Autostart   Persistent
+------------------------------------------------------
+ default           inactive   yes         yes
+ docker-machines   active     yes         yes
+ vagrant-libvirt   active     no          yes
+ vagrant0          inactive   no          yes
+```
+
+```
+$ virsh net-start default 
+Network default started
+```
+
 ```
 # curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
      chmod +x /tmp/docker-machine &&
