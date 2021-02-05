@@ -39,6 +39,11 @@ Network default started
 ```
 
 ```
+$ virsh net-destroy default 
+Network default destroyed
+```
+
+```
 # curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
      chmod +x /tmp/docker-machine &&
      sudo cp /tmp/docker-machine /usr/local/bin/docker-machine 
