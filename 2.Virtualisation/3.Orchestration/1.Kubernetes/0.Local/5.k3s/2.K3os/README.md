@@ -5,7 +5,10 @@
 https://titanwolf.org/Network/Articles/Article?AID=0608030d-f550-404e-ba5a-b69096db56f4#gsc.tab=0
 
 
-
+```
+$ sudo k3os --version
+k3os version v0.11.1
+```
 
 
 :x: Failed no SSH connection
