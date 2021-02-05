@@ -1,3 +1,14 @@
+
+# K3os
+
+```powershell
+PS> docker-machine create `
+          --driver hyperv `
+          --hyperv-boot2docker-url https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso `
+          CB-K3OS
+```
+
+
 # K3s
 
 Lightweight Kubernetes
