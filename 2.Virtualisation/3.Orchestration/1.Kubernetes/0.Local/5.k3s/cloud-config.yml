@@ -1,0 +1,94 @@
+#cloud-config
+write_files:
+  - path: /opt/rancher/bin/start.sh
+    permissions: "0755"
+    owner: root
+    content: |
+      #!/bin/bash
+      {% include 'start-setup_ebs.j2' %}  # actual content of startup script removed
+      echo "Setting up EBS volume"
+      setup_ebs
+rancher:
+  docker:
+    args: [daemon, --log-level=warn, --log-opt, max-size=25m, --log-opt, max-file=2, -s, aufs, -G, docker, -H, 'unix:///var/run/docker.sock', --userland-proxy=false, --iptables=false, --ip-masq=false, --bridge=cbr0]
+  system-docker:
+    args: [daemon, --log-level=warn, --log-opt, max-size=25m, --log-opt, max-file=2, -s, aufs, -b, docker-sys, --restart=false, -g, /var/lib/system-docker, -G, root, -H, 'unix:///var/run/system-docker.sock', --userland-proxy=false, --iptables=false, --ip-masq=false]
+  services:
+    etcd-aws:
+      image: monsantoco/etcd-aws-cluster:latest
+      labels:
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=network
+      net: host
+      restart: on-failure
+      volumes:
+      - /etc/etcd:/etc/sysconfig
+    etcd-conf:
+      image: stepanstipl/etcd-conf:latest
+      restart: on-failure
+      labels:
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=etcd-aws
+      - io.rancher.os.reloadconfig=true
+      net: host
+      volumes:
+      - /usr/sbin/ros:/usr/sbin/ros
+      - /etc/etcd:/etc/etcd
+      volumes_from:
+      - system-volumes
+    etcd:
+      image: quay.io/coreos/etcd:v2.0.12
+      restart: always
+      labels:
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=etcd-conf
+      net: host
+      environment:
+      - ETCD_*
+      volumes:
+      - /srv/etcd:/var/etcd
+    flannel-conf:
+      image: stepanstipl/flannel-conf:latest
+      restart: on-failure
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=etcd
+      - io.rancher.os.reloadconfig=true
+      net: host
+      volumes:
+      - /etc/flannel:/etc/flannel
+      - /usr/sbin/ros:/usr/sbin/ros
+      volumes_from:
+      - system-volumes
+    flannel:
+      image: quay.io/coreos/flannel:1.2.3
+      restart: always
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=flannel-conf
+      environment:
+      - FLANNELD_*
+      net: host
+      volumes:
+      - /etc/flannel:/etc/flannel
+    docker-conf:
+      image: stepanstipl/docker-conf:latest
+      restart: on-failure
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=flannel
+      - io.rancher.os.before=docker
+      - io.rancher.os.reloadconfig=true
+      net: host
+      volumes_from:
+      - flannel-conf
+    kubelet:
+      image: gcr.io/google_containers/hyperkube:v1.1.2
+      labels:
+      - io.rancher.os.scope=system
+      - io.rancher.os.after=docker
+      net: host
+      volumes_from:
+      - system-volumes
+      restart: always
+      command: /hyperkube kubelet --api-servers=http://127.0.0.1 --config=/etc/kubernetes/manifests --cluster-dns=10.0.0.10 --cluster-domain=cluster.internal --address=0.0.0.0 --cloud-provider=aws
+      volumes:
+      - /etc/kubernetes:/etc/kubernetes
+      restartPolicy: always

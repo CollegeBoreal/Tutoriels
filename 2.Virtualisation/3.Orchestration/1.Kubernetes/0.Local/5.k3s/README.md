@@ -144,3 +144,14 @@ $ sudo system-docker rm all-volumes
 ```
 $ sudo reboot
 ```
+
+
+# Kubernetes
+
+https://github.com/rancher/os/issues/679
+
+
+# References
+
+* cloud-config.yml examples
+https://gist.github.com/janeczku/02302dae3fbfa011f4f7a60df2b5f24e
