@@ -1,6 +1,8 @@
 
 # K3os
 
+:x: Failed no SSH connection
+
 ```powershell
 PS> docker-machine create `
           --driver hyperv `
