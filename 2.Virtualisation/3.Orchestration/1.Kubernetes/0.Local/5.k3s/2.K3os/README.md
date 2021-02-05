@@ -1,8 +1,5 @@
 # K3os
 
-
-# K3os
-
 :x: Failed no SSH connection
 
 ```powershell
@@ -60,6 +57,7 @@ Network default started
 ```
 $ docker-machine create \
         --driver kvm \
+        --kvm-network docker-machines \
         --kvm-boot2docker-url https://github.com/rancher/k3os/releases/download/v0.11.0/k3os-amd64.iso \
         CB-K3OS
 Running pre-create checks...
@@ -72,3 +70,8 @@ Detecting operating system of created instance...
 Waiting for SSH to be available...
 Error creating machine: Error detecting OS: Too many retries waiting for SSH to be available.  Last error: Maximum number of retries (60) exceeded
 ```
+
+
+# References
+
+https://blog.scottlowe.org/2017/11/24/using-docker-machine-kvm-libvirt/
