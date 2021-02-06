@@ -61,5 +61,17 @@ VIRT CLI
 $ virsh --connect qemu:///system
 ```
 
+- [ ] Network
+
+```
+$ virsh net-list --all
+ Name              State      Autostart   Persistent
+------------------------------------------------------
+ default           inactive   yes         yes
+ docker-machines   active     yes         yes
+ vagrant-libvirt   active     no          yes
+ vagrant0          inactive   no          yes
+ ```
+https://serverfault.com/questions/627238/kvm-libvirt-how-to-configure-static-guest-ip-addresses-on-the-virtualisation-ho
 
 
