@@ -74,6 +74,21 @@ $ virsh net-list --all
  ```
 https://serverfault.com/questions/627238/kvm-libvirt-how-to-configure-static-guest-ip-addresses-on-the-virtualisation-ho
 
+```xml
+$ virsh net-edit docker-machines
+<network>
+  <name>docker-machines</name>
+  <uuid>4f24694c-ffa1-432b-a968-977848b3aae0</uuid>
+  <bridge name='virbr3' stp='on' delay='0'/>
+  <mac address='52:54:00:15:06:09'/>
+  <ip address='192.168.42.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.42.2' end='192.168.42.254'/>
+    </dhcp>
+  </ip>
+</network>
+```
+
 - [ ] VMs
 
 ```
