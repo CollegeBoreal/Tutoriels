@@ -93,11 +93,11 @@ https://wiki.libvirt.org/page/Networking#Arbitrary_changes_to_the_network
 
 ```
 $ brctl show
-bridge name	bridge id		       STP enabled	   interfaces
+bridge name	bridge id		STP enabled	interfaces
 ...
-virbr3		    8000.525400150609	yes		          virbr3-nic
-							                                      vnet2
-							                                      vnet3
+virbr3		8000.525400150609	yes		virbr3-nic
+							vnet2
+							vnet3
 ```
 
 - [ ] VMs
