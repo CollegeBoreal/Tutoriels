@@ -74,4 +74,24 @@ $ virsh net-list --all
  ```
 https://serverfault.com/questions/627238/kvm-libvirt-how-to-configure-static-guest-ip-addresses-on-the-virtualisation-ho
 
+- [ ] VMs
 
+```
+$ virsh list
+ Id   Name              State
+---------------------------------
+ 7    vagrant_default   running
+ 13   CB-KVM            running
+```
+
+```
+$ virsh edit CB-KVM
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: 2
+```
