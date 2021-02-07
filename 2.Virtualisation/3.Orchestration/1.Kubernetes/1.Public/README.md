@@ -10,3 +10,6 @@
 creation d'une grappe avec kops
 
 
+https://www.weave.works/blog/kops-vs-kubeadm
+
+
