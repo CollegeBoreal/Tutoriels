@@ -210,3 +210,5 @@ https://vmarena.com/installing-hyper-v-on-windows-server-2019/
 
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
 
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server
+
