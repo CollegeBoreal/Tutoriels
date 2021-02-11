@@ -8,6 +8,10 @@
 
 # References
 
+envoyproxy.io
+
+https://rtfm.co.ua/en/kubernetes-clusterip-vs-nodeport-vs-loadbalancer-services-and-ingress-an-overview-with-examples/
+
 https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/
 
 https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
