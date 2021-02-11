@@ -1,7 +1,8 @@
 # LB-RP 
 
-LB - Load Balancer
-RP - Reverse Proxy
+`RP - Reverse Proxy`: You can think of the reverse proxy as a website’s “public face.”
+
+`LB - Load Balancer`: commonly deployed when a site needs multiple servers because the volume of requests is too much for a single server to handle efficiently
 
 
 
