@@ -9,6 +9,10 @@
 
 https://github.com/jbkc85/docker-moodle
 
+## Docker Compose
+
+https://github.com/ellakcy/moodle-compose
+
 ## Kubernetes 
 
 https://github.com/jbkc85/moodle-kubernetes-tutorial/
