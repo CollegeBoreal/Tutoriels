@@ -1,5 +1,8 @@
 # :wheel_of_dharma: Kubernetes
 
+
+<img src="images/kube-control-planes.png" width="" height="" ></img>
+
 ## Cheat Sheet
 
 [ :blue_book: ](./Kubernetes-Cheat-Sheet_07182019.pdf) https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/
