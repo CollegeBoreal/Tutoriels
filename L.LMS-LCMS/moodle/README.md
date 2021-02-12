@@ -8,6 +8,7 @@
 ## Docker
 
 https://github.com/jbkc85/docker-moodle
+https://github.com/sergiogomez/docker-moodle
 
 ## Docker Compose
 
