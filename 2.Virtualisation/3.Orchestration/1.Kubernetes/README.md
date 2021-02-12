@@ -1,7 +1,7 @@
 # :wheel_of_dharma: Kubernetes
 
 
-<img src="images/kube-control-planes.png" width="480" height="323" ></img>
+<img src="images/kube-control-planes.png" width="720" height="484" ></img>
 
 ## Cheat Sheet
 
