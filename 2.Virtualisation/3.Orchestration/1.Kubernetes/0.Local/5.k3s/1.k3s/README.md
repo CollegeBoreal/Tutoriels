@@ -35,3 +35,5 @@ curl -sLS https://dl.get-arkade.dev | sudo sh
 # References
 
 https://blog.alexellis.io/raspberry-pi-homelab-with-k3sup/
+
+https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/
