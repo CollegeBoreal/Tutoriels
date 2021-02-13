@@ -53,3 +53,9 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/a
 ```
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
 ```
+
+- [ ] Prevent the kube tools to be altered
+
+```
+$ sudo apt-mark hold kubeadm kubelet kubectl
+```
