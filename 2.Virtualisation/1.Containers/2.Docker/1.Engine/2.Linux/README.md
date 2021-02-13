@@ -26,7 +26,7 @@ $ sudo curl -sSL https://get.docker.com | sh
 $ systemctl status docker # doit être actif - Active (running)
 ```
 
-* sinon démarrer le service
+* Permettre l'accès au service au démarrage de la machine
 
 ```
 $ sudo systemctl enable docker
