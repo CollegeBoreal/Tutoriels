@@ -12,7 +12,7 @@ https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
 | Worker | k8s-worker02.computingforgeeks.com | 4GB Ram, 2vcpus |
 
 
-## :one: Install Kubernetes Servers
+## :zero: Prepare the Servers
 
 Once the servers are ready, update, upgrade them.
 
@@ -22,13 +22,23 @@ Once the servers are ready, update, upgrade them.
 $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 ```
 
-## :two: Install kubelet, kubeadm and kubectl
+## :one: Install the download tools
 
 - [ ] Install `curl` and `apt-transport-https` used to download new packages
 
 ```
 $ sudo apt update && sudo apt -y install curl apt-transport-https
 ```
+
+## :two: Install kubelet, kubeadm and kubectl
+
+:bulb: What kube tools to Install? 
+
+| Tool    | Usage                                                   |
+|---------|---------------------------------------------------------|
+| kubeadm | tool built to provide kubeadm `init` and kubeadm `join` |
+| kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
+| kubectl | Kubernetes command-line tool |
 
 - [ ] Add the Google packages Signing Key with the `apt-key` tool to the APT SSH Agent
 
@@ -42,13 +52,7 @@ $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key a
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
-- [ ] Install kube tools 
-
-| Tool    | Usage                                                   |
-|---------|---------------------------------------------------------|
-| kubeadm | tool built to provide kubeadm `init` and kubeadm `join` |
-| kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
-| kubectl | Kubernetes command-line tool |
+- [ ] Install the kunbe tools
 
 ```
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
