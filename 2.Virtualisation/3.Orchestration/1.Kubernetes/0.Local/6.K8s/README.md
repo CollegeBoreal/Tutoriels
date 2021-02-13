@@ -48,7 +48,7 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/a
 |---------|---------------------------------------------------------|
 | kubeadm | tool built to provide kubeadm `init` and kubeadm `join` |
 | kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
-| kubectl |       |
+| kubectl | Kubernetes command-line tool |
 
 ```
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
