@@ -14,8 +14,12 @@ https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
 
 ## :one: Install Kubernetes Servers
 
-Once the servers are ready, update them.
+Once the servers are ready, update, upgrade them.
+
+:warning: The server will reboot
 
 ```
 $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 ```
+
+## :two: Install kubelet, kubeadm and kubectl
