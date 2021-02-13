@@ -87,7 +87,7 @@ $ sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
 $ free --human
               total        used        free      shared  buff/cache   available
 Mem:           62Gi       440Mi        61Gi       1.0Mi       1.4Gi        61Gi
-Swap:           8Gi          0B         2Gi
+Swap:           8Gi           0         8Gi
 ```
 
 - [ ] swap off
@@ -98,7 +98,9 @@ $ sudo swapoff -a
 
 - [ ] After
 
+```
 $ free
               total        used        free      shared  buff/cache   available
 Mem:       65951296      450920    64080956        1584     1419420    64857060
 Swap:             0           0           0
+```
