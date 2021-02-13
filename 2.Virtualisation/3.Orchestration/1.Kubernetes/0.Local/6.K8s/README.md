@@ -30,7 +30,7 @@ $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 $ sudo apt update && sudo apt -y install curl apt-transport-https
 ```
 
-- [ ] Install Google packages Signing Key with `apt-key` tool
+- [ ] Add the Google packages Signing Key with the `apt-key` tool to the APT SSH Agent
 
 ```
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
