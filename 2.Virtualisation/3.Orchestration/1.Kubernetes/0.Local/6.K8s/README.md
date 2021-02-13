@@ -12,3 +12,10 @@ https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
 | Worker | k8s-worker02.computingforgeeks.com | 4GB Ram, 2vcpus |
 
 
+## :one: Install Kubernetes Servers
+
+Once the servers are ready, update them.
+
+```
+$ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
+```
