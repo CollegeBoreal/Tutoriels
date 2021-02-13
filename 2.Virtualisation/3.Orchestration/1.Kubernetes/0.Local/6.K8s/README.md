@@ -23,3 +23,21 @@ $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 ```
 
 ## :two: Install kubelet, kubeadm and kubectl
+
+- [ ] Install `curl` and `apt-transport-https` used to download new packages
+
+```
+$ sudo apt -y install curl apt-transport-https
+```
+
+- [ ] Install Google packages `apt-key`
+
+```
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+```
+
+- [ ] Install kubernetes debian repository
+
+```
+$ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+```
