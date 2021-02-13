@@ -44,7 +44,7 @@ Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json:
 dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-* Pour enlever l'erreur rajouter votre utilisateur au groupe docker
+* Permettre l'accès au `socket file` en rajoutant votre utilisateur au groupe `docker`
 
 ```
 $ sudo usermod --append --groups docker $USER
