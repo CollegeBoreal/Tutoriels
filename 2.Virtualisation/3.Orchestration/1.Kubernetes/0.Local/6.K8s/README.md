@@ -63,5 +63,5 @@ $ sudo apt-mark hold kubeadm kubelet kubectl
 - [ ] Test that the kube tools are installed
 
 ```
-$ kubectl version --client && kubeadm version
+$ OUT="--output=json"; kubeadm version ${OUT} && kubectl version --client ${OUT}
 ```
