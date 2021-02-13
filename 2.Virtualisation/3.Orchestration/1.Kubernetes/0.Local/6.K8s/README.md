@@ -69,3 +69,7 @@ $ sudo apt-mark hold kubeadm kubelet kubectl
 ```
 $ OUT="--output=json"; kubeadm version ${OUT} && kubectl version --client ${OUT}
 ```
+
+## :three: Disabling the swap (otherwise Kubernetes won't work) 
+
+$ sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
