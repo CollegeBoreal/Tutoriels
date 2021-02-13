@@ -40,31 +40,31 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https
 | kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
 | kubectl | Kubernetes command-line tool |
 
-- [ ] Add the Google packages Signing Key with the `apt-key` tool to the APT SSH Agent
+:round_pushpin: Add the Google packages Signing Key with the `apt-key` tool to the APT SSH Agent
 
 ```
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 ```
 
-- [ ] Create the kubernetes debian repository file
+:round_pushpin: Create the kubernetes debian repository file
 
 ```
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
-- [ ] Install the kube tools
+:round_pushpin: Install the kube tools
 
 ```
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
 ```
 
-- [ ] Prevent the kube tools to be altered
+:round_pushpin: Prevent the kube tools to be altered (optional)
 
 ```
 $ sudo apt-mark hold kubeadm kubelet kubectl
 ```
 
-- [ ] Test that the kube tools are installed
+:+1: Test that the kube tools are installed
 
 ```
 $ OUT="--output=json"; kubeadm version ${OUT} && kubectl version --client ${OUT}
