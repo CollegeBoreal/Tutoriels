@@ -59,3 +59,9 @@ $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
 ```
 $ sudo apt-mark hold kubeadm kubelet kubectl
 ```
+
+- [ ] Test that the kube tools are installed
+
+```
+$ kubectl version --client && kubeadm version
+```
