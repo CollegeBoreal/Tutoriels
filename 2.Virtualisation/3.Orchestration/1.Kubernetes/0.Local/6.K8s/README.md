@@ -81,6 +81,15 @@ $ OUT="--output=json"; kubeadm version ${OUT} && kubectl version --client ${OUT}
 $ sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
 ```
 
+- [ ] Check `swap` in `/etc/fstab` is commented
+
+```
+$ cat /etc/fstab 
+# /etc/fstab: static file system information.
+...
+#/swap.img	none	swap	sw	0	0
+```
+
 - [ ] Before
 
 ```
