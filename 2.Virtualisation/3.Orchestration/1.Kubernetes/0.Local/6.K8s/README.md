@@ -41,3 +41,15 @@ $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key a
 ```
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
+
+- [ ] Install kube tools 
+
+| Tool    | Usage                                                   |
+|---------|---------------------------------------------------------|
+| kubeadm | tool built to provide kubeadm `init` and kubeadm `join` |
+| kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
+| kubectl |       |
+
+```
+$ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
+```
