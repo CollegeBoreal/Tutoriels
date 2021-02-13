@@ -35,7 +35,7 @@ $ sudo systemctl enable docker
 
 ### :two: Permissions
 
-* Lister les conteneurs donne une erreur de permission
+* Lister les conteneurs donne une erreur de permission quand à l'accès des [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files)
 
 ```
 $ docker container ls
