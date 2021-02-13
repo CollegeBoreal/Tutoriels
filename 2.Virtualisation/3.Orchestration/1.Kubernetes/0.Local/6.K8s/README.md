@@ -27,7 +27,7 @@ $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 - [ ] Install `curl` and `apt-transport-https` used to download new packages
 
 ```
-$ sudo apt -y install curl apt-transport-https
+$ sudo apt update && sudo apt -y install curl apt-transport-https
 ```
 
 - [ ] Install Google packages Signing Key with `apt-key` tool
