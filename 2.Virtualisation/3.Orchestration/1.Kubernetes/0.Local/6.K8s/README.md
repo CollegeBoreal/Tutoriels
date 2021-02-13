@@ -24,7 +24,7 @@ $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 
 ## :one: Install the download tools
 
-- [ ] Install `curl` and `apt-transport-https` used to download new packages
+:round_pushpin: Install `curl` and `apt-transport-https` used to download new packages
 
 ```
 $ sudo apt update && sudo apt -y install curl apt-transport-https
