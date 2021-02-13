@@ -52,7 +52,7 @@ $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key a
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
-- [ ] Install the kunbe tools
+- [ ] Install the kube tools
 
 ```
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
