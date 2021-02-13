@@ -37,6 +37,8 @@ $ sudo systemctl enable docker
 
 * Lister les conteneurs donne une erreur de permission quand à l'accès des [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files)
 
+Les [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files) sont utilisé pour communiquer entre applications gràce aux [IPC](https://en.wikipedia.org/wiki/Inter-process_communication)
+
 ```
 $ docker container ls
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: 
