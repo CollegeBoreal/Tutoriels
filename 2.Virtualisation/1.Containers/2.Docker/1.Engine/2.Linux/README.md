@@ -26,7 +26,7 @@ $ sudo curl -sSL https://get.docker.com | sh
 $ systemctl status docker # doit être actif - Active (running)
 ```
 
-* sinon démarrer le service
+* Permettre l'accès au service au démarrage de la machine
 
 ```
 $ sudo systemctl enable docker
@@ -35,14 +35,18 @@ $ sudo systemctl enable docker
 
 ### :two: Permissions
 
-* Lister les conteneurs donne une erreur de permission
+* Lister les conteneurs donne une erreur de permission quand à l'accès des [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files)
+
+Les [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files) sont utilisé pour communiquer entre applications gràce aux [IPC](https://en.wikipedia.org/wiki/Inter-process_communication)
 
 ```
 $ docker container ls
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: 
+Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: 
+dial unix /var/run/docker.sock: connect: permission denied
 ```
 
-* Pour enlever l'erreur rajouter votre utilisateur au groupe docker
+* Permettre l'accès au `socket file` en rajoutant votre utilisateur au groupe `docker`
 
 ```
 $ sudo usermod --append --groups docker $USER
