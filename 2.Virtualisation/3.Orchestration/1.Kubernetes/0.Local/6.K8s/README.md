@@ -32,7 +32,7 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https
 
 ## :two: Install kubelet, kubeadm and kubectl
 
-:bulb: What kube tools to Install? 
+:bulb: What :ice_cube: kube tools to Install? 
 
 | Tool    | Usage                                                   |
 |---------|---------------------------------------------------------|
