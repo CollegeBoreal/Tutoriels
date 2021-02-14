@@ -10,11 +10,9 @@
 
 ### :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
-
 ** dans le cas échéant, installer `curl` si non présent (suivre les instructions du serveur)
 
-* Installer avec le script `Docker`
+* Installer `Docker` avec le [`convenient script`](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) en développement
 
 ```
 $ sudo curl -sSL https://get.docker.com | sh
