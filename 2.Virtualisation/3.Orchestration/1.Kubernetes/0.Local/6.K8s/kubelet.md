@@ -1,7 +1,7 @@
 # kubelet
 
 
-## :gear: kubelet [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service)
+## :gear: kubelet [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service) (i.e. systemd .conf file)
 
 ```
 $ cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
