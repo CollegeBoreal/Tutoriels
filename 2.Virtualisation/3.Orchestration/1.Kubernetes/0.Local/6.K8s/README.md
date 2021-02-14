@@ -74,22 +74,6 @@ $ OUT="--output=json"; kubeadm version ${OUT} && kubectl version --client ${OUT}
 
 [how-do-i-disable-swap?](https://askubuntu.com/questions/214805/how-do-i-disable-swap)
 
-
-- [ ] Disable `swap` at boot in `/etc/fstab` file
-
-```
-$ sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
-```
-
-- [ ] Check `swap` in `/etc/fstab` is commented
-
-```
-$ cat /etc/fstab 
-# /etc/fstab: static file system information.
-...
-#/swap.img	none	swap	sw	0	0
-```
-
 - [ ] Before
 
 ```
@@ -99,10 +83,10 @@ Mem:           62Gi       440Mi        61Gi       1.0Mi       1.4Gi        61Gi
 Swap:           8Gi           0         8Gi
 ```
 
-- [ ] swap off
+- [ ] swap off and disabled at boot in `/etc/fstab` file
 
 ```
-$ sudo swapoff -a
+$ sudo swapoff -a && sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
 ```
 
 - [ ] After
@@ -112,4 +96,13 @@ $ free --human
               total        used        free      shared  buff/cache   available
 Mem:           62Gi       440Mi        61Gi       1.0Mi       1.4Gi        61Gi
 Swap:            0B          0B          0B
+```
+
+- [ ] Check `swap` in `/etc/fstab` is commented
+
+```
+$ cat /etc/fstab 
+# /etc/fstab: static file system information.
+...
+#/swap.img	none	swap	sw	0	0
 ```
