@@ -1,5 +1,12 @@
 # kubelet
 
+
+## :gear: kubelet [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service)
+
+```
+$ cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+```
+
 ## :zero: Just after package management install
 
 :+1: Test that the `kubelet` service is just loaded
