@@ -2,9 +2,6 @@
 
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
-
-https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
-
 | Server | Type	Server                        | Hostname	Specs |
 |--------|------------------------------------|-----------------|
 | Master | k8s-master01.computingforgeeks.com | 4GB Ram, 2vcpus |
@@ -108,3 +105,10 @@ $ cat /etc/fstab
 ...
 #/swap.img	none	swap	sw	0	0
 ```
+
+# References
+
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
+
