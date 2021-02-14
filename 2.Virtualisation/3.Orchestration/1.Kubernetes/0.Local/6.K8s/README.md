@@ -57,7 +57,7 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/a
 $ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
 ```
 
-:round_pushpin: Prevent the :ice_cube: `kube`  tools to be altered (optional)
+:round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
 
 ```
 $ sudo apt-mark hold kubeadm kubelet kubectl
