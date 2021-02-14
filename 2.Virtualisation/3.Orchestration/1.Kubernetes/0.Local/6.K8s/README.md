@@ -42,7 +42,7 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https
 
 :round_pushpin: Adding the `kubernetes` package repository to the package manager registry  
 
-- [ ] Add the Google packages Signing Key :key: with the `apt-key` tool to the APT SSH Agent
+- [ ] Add the Google packages Signing Key :key: with the `apt-key` tool to the APT SSH Agent and `/etc/apt/trusted.gpg` file
 
 ```
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
