@@ -86,7 +86,7 @@ Swap:           8Gi           0         8Gi
 - [ ] swap off and disabled at boot in `/etc/fstab` file
 
 ```
-$ sudo swapoff --all && sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
+$ sudo swapoff --all && sudo sed --regexp-extended --in-place '/\sswap\s/s/^#?/#/' /etc/fstab
 ```
 
 - [ ] After
