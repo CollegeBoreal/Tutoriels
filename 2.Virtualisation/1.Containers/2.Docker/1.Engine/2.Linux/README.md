@@ -12,7 +12,7 @@
 
 ** dans le cas échéant, installer `curl` si non présent (suivre les instructions du serveur)
 
-* Installer `Docker` avec le [`convenient script`](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) en développement
+* Installer `Docker` avec le [`convenient script`](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) dans un environnement de  développement
 
 ```
 $ sudo curl -sSL https://get.docker.com | sh
