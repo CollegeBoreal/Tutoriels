@@ -80,3 +80,5 @@ PS > kubectl config use-context docker-for-desktop
 [Google To The World](https://cloud.google.com/blog/products/gcp/from-google-to-the-world-the-kubernetes-origin-story)
 
 https://kubernetes.io/case-studies/
+
+https://zero-to-jupyterhub.readthedocs.io/en/stable/
