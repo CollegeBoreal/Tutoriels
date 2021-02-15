@@ -39,10 +39,21 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https ca-certificate
 
 :round_pushpin: Adding the `kubernetes` package repository to the package manager registry  
 
-- [ ] Add the Google packages Signing Key :key: with the `apt-key` tool to the APT SSH Agent and `/etc/apt/trusted.gpg` file
+- [ ] Add the Google official `pgp` :key: that will go to the `/etc/apt/trusted.gpg` file
+
+* add the PGP key
 
 ```
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+```
+
+* Verify that you now have the key with the fingerprint `54A6 47F9 048D 5688 D7DA  2ABE 6A03 0B21 BA07 F4FB`, by searching for the last 8 characters of the fingerprint.
+
+```
+$ sudo apt-key fingerprint BA07F4FB
+pub   rsa2048 2018-04-01 [SCE] [expires: 2021-03-31]
+      54A6 47F9 048D 5688 D7DA  2ABE 6A03 0B21 BA07 F4FB
+uid           [ unknown] Google Cloud Packages Automatic Signing Key <gc-team@google.com>
 ```
 
 - [ ] Create the kubernetes debian repository file
