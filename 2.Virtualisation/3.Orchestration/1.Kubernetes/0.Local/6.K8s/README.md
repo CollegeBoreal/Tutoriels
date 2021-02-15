@@ -59,7 +59,7 @@ uid           [ unknown] Google Cloud Packages Automatic Signing Key <gc-team@go
 - [ ] Create the kubernetes debian repository file
 
 ```
-$ echo "deb https://apt.kubernetes.io/ kubernetes-$(lsb_release --codename --short) main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+$ echo "deb https://apt.kubernetes.io/ kubernetes-$(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
 :round_pushpin: Install the :ice_cube: `kube` tools
