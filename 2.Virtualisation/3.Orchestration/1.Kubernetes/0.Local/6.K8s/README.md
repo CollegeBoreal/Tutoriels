@@ -58,10 +58,10 @@ uid           [ unknown] Google Cloud Packages Automatic Signing Key <gc-team@go
 
 - [ ] Create the kubernetes debian repository file
 
-:warning: as of 2021 `xenial` is still the latest version check `https://packages.cloud.google.com/apt/dists` 
+:warning: as of 2021 `xenial` (a.k.a yakkety) is still the latest version check `https://packages.cloud.google.com/apt/dists` 
 
 ```
-$ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+$ echo "deb https://apt.kubernetes.io/ kubernetes-yakkety main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
 :round_pushpin: Install the :ice_cube: `kube` tools
@@ -126,3 +126,5 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-ku
 https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/ (Ubuntu focal, using Calico CNI)
 
 https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux (Ubuntu focal, using Flannel CNI)
+
+https://info.rancher.com/kubernetes-networking-deep-dive (ebook)
