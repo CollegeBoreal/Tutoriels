@@ -123,3 +123,4 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-ku
 
 https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
 
+https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux
