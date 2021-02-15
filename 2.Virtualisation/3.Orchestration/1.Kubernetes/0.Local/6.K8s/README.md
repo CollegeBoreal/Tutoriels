@@ -19,12 +19,12 @@ Once the servers are ready, update, upgrade them.
 $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 ```
 
-## :one: Install the download tools
+## :one: Install using the [repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
-:round_pushpin: Install `curl` and `apt-transport-https` used to download new packages
+:round_pushpin: Install `curl` and `apt-transport-https` and others used to download new packages
 
 ```
-$ sudo apt update && sudo apt -y install curl apt-transport-https
+$ sudo apt update && sudo apt -y install curl apt-transport-https ca-certificates gnupg-agent software-properties-common
 ```
 
 ## :two: Install kubelet, kubeadm and kubectl
