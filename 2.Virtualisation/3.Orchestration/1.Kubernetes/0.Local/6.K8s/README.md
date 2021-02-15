@@ -123,6 +123,6 @@ $ cat /etc/fstab
 
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
-https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/
+https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/ (Ubuntu focal, using Calico CNI)
 
-https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux
+https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux (Ubuntu focal, using Flannel CNI)
