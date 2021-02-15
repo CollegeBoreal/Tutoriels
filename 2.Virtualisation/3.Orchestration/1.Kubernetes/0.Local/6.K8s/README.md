@@ -39,7 +39,7 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https ca-certificate
 
 :round_pushpin: Adding the `kubernetes` package repository to the package manager registry  
 
-- [ ] Add the Google official `pgp` :key: that will go to the `/etc/apt/trusted.gpg` file
+- [ ] Add the Google official `pgp` key :key: that will go to the `/etc/apt/trusted.gpg` binary file
 
 * add the PGP key
 
