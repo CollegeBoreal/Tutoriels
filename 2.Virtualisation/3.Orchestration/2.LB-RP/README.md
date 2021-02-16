@@ -26,7 +26,7 @@ https://metallb.universe.tf/
 
 https://cdn2.hubspot.net/hubfs/468859/Rancher%20Labs%20Online%20Meetup%20-%20June%202018%20Kubernetes%20Networking%20Master%20Class%20Slides%20Condensed.pdf
 
-[T]("https://cdn2.hubspot.net/hubfs/468859/Rancher Labs Online Meetup - June 2018 Kubernetes Networking Master Class Slides Condensed.pdf")
+[T](https://cdn2.hubspot.net/hubfs/468859/Rancher Labs Online Meetup - June 2018 Kubernetes Networking Master Class Slides Condensed.pdf)
 
 
 [June 2018 Online Meetup: Kubernetes Networking Master Class](https://www.youtube.com/watch?v=GXq3FS8M_kw)
