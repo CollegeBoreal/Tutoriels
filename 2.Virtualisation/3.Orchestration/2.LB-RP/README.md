@@ -17,3 +17,8 @@ https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/
 https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 https://github.com/mong/lb-rp
+
+
+https://kubernetes.github.io/ingress-nginx/deploy/baremetal/
+
+https://metallb.universe.tf/ 
