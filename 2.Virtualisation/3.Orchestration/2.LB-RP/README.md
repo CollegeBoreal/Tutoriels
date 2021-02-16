@@ -22,3 +22,9 @@ https://github.com/mong/lb-rp
 https://kubernetes.github.io/ingress-nginx/deploy/baremetal/
 
 https://metallb.universe.tf/ 
+
+
+https://cdn2.hubspot.net/hubfs/468859/Rancher%20Labs%20Online%20Meetup%20-%20June%202018%20Kubernetes%20Networking%20Master%20Class%20Slides%20Condensed.pdf
+
+
+[June 2018 Online Meetup: Kubernetes Networking Master Class](https://www.youtube.com/watch?v=GXq3FS8M_kw)
