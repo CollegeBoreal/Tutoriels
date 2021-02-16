@@ -36,3 +36,5 @@ https://metallb.universe.tf/
 
 
 https://www.infoq.com/news/2020/07/porter-kubernetes-bare-metal/
+
+https://itnext.io/porter-an-open-source-load-balancer-designed-for-bare-metal-kubernetes-clusters-870e1313b7f0
