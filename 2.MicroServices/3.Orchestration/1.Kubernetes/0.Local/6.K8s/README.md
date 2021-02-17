@@ -181,7 +181,7 @@ $ sudo add-apt-repository \
 :round_pushpin: Install the :whale: `Docker` engine
 
 ```
-$ sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io
+$ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 :five: Start the ...
