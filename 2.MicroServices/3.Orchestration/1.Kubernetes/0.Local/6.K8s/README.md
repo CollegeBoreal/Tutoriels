@@ -186,6 +186,20 @@ $ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli contain
 
 :five: Start the ...
 
+
+:round_pushpin: First download the images
+
+```
+$ mkdir -p $HOME/.kube
+$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+
+## :x: Troubleshooting
+
+- [ ] Docker is missing
+
 ```
 $ sudo kubeadm init
 W0217 18:10:40.216863 1082239 kubelet.go:200] cannot automatically set CgroupDriver when starting the Kubelet: cannot execute 'docker info -f {{.CgroupDriver}}': executable file not found in $PATH
