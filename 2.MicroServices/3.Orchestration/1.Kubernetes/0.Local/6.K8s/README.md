@@ -131,7 +131,7 @@ for more details, see [sysctl-cluster](https://kubernetes.io/docs/tasks/administ
 
 | Link | OS.      | CNI      | Working | 
 |------|----------|----------|----------| 
-| [setting-up-the-kubernetes-cluster-on-linux-via-kubeadm](https://subscription.packtpub.com/book/virtualization_and_cloud/9781788837606/1/ch01lvl1sec15/setting-up-the-kubernetes-cluster-on-linux-via-kubeadm) | CentOS7 | :heavy_check_mark: Tested |
+| [setting-up-the-kubernetes-cluster-on-linux-via-kubeadm](https://subscription.packtpub.com/book/virtualization_and_cloud/9781788837606/1/ch01lvl1sec15/setting-up-the-kubernetes-cluster-on-linux-via-kubeadm) | CentOS7 | [Calico](https://www.projectcalico.org) | :heavy_check_mark: Tested |
 
 
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
