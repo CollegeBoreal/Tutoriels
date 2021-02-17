@@ -135,3 +135,5 @@ https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/ 
 https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux (Ubuntu focal, using Flannel CNI)
 
 https://info.rancher.com/kubernetes-networking-deep-dive (ebook)
+
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/ (adding WindowsNodes)
