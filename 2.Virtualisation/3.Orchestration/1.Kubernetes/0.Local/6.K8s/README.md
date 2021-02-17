@@ -119,7 +119,7 @@ $ cat /etc/fstab
 #/swap.img	none	swap	sw	0	0
 ```
 
-## :four: sysctl
+## :four: [sysctl](https://wiki.archlinux.org/index.php/sysctl)
 
 https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/#listing-all-sysctl-parameters
 
