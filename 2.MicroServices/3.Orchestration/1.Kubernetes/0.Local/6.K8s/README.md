@@ -129,16 +129,11 @@ for more details, see [sysctl-cluster](https://kubernetes.io/docs/tasks/administ
 
 - [ ] Enable the parameters by setting them to 1
 
-* IPv4
+* IPv6 end IPv4
 
 ```
-$ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k8s.conf'
-```
-
-* IPv6
-
-```
-$ sudo bash -c 'echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf'
+$ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k8s.conf' && \
+  sudo bash -c 'echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf'
 ```
 
 - [ ] reload the configuration
