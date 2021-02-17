@@ -82,3 +82,5 @@ PS > kubectl config use-context docker-for-desktop
 https://kubernetes.io/case-studies/
 
 https://zero-to-jupyterhub.readthedocs.io/en/stable/
+
+https://rancher.com/blog/2019/2019-04-12-understanding-kubernetes-node/ (images à récupérer)
