@@ -188,8 +188,24 @@ $ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli contain
 
 Docker uses `iptables` and a kernel module called `br_netfilter` to manage inter-container networking. When the Docker daemon starts, it creates a variety of IPTables rules it required to operate.
 
+- [ ] br_netfilter
+
 ```
 $ sudo lsmod | grep br_netfilter
+```
+
+- [ ] iptables
+
+```
+$ sudo iptables --list | grep DOCKER
+DOCKER-USER  all  --  anywhere             anywhere            
+DOCKER-ISOLATION-STAGE-1  all  --  anywhere             anywhere            
+DOCKER     all  --  anywhere             anywhere            
+Chain DOCKER (1 references)
+Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+DOCKER-ISOLATION-STAGE-2  all  --  anywhere             anywhere            
+Chain DOCKER-ISOLATION-STAGE-2 (1 references)
+Chain DOCKER-USER (1 references)
 ```
 
 :five: Start the ...
