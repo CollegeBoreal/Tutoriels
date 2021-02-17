@@ -119,11 +119,33 @@ $ cat /etc/fstab
 #/swap.img	none	swap	sw	0	0
 ```
 
-## :four: kernel parameters
+## :four: kernel runtime parameters
 
 [sysctl](https://wiki.archlinux.org/index.php/sysctl) is a tool for examining and changing kernel parameters at runtime . sysctl is implemented in `procfs`, the virtual process file system at `/proc/`.
 
 for more details, see [sysctl-cluster](https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster) in Kubernetes
+
+:round_pushpin: Enable the usage of iptables. To prevent some routing errors happening, add runtime parameters:
+
+- [ ] Enable the parameters by setting them to 1
+
+* IPv4
+
+```
+$ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k8s.conf'
+```
+
+* IPv6
+
+```
+$ sudo bash -c 'echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf'
+```
+
+- [ ] reload the configuration
+
+```
+$ sudo sysctl --system
+```
 
 
 # References
