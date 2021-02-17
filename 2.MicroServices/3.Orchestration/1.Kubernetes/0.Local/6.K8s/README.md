@@ -192,6 +192,8 @@ Docker uses `iptables` and a kernel module called `br_netfilter` to manage inter
 
 ```
 $ sudo lsmod | grep br_netfilter
+br_netfilter           28672  0
+bridge                176128  1 br_netfilter
 ```
 
 - [ ] iptables
