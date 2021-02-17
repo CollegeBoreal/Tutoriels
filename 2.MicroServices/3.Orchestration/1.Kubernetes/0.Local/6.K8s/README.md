@@ -142,7 +142,7 @@ $ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k
 $ sudo sysctl --system
 ```
 
-:round_pushpin: Booting up the service
+:round_pushpin: Booting up the `kubelet` service
 
 ``` 
 $ sudo systemctl enable kubelet && sudo systemctl start kubelet
