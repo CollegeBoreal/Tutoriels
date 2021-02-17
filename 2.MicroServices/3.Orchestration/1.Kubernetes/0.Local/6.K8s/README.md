@@ -136,10 +136,31 @@ $ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k
   sudo bash -c 'echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf'
 ```
 
-- [ ] reload the configuration
+     * reload the configuration
 
 ```
 $ sudo sysctl --system
+```
+
+:round_pushpin: Booting up the service
+
+``` 
+$ sudo systemctl enable kubelet && sudo systemctl start kubelet
+```
+
+:five: Start the ...
+
+```
+$ sudo kubeadm init
+W0217 18:10:40.216863 1082239 kubelet.go:200] cannot automatically set CgroupDriver when starting the Kubelet: cannot execute 'docker info -f {{.CgroupDriver}}': executable file not found in $PATH
+[init] Using Kubernetes version: v1.20.2
+[preflight] Running pre-flight checks
+[preflight] WARNING: Couldn't create the interface used for talking to the container runtime: docker is required for container runtime: exec: "docker": executable file not found in $PATH
+error execution phase preflight: [preflight] Some fatal errors occurred:
+	[ERROR FileContent--proc-sys-net-bridge-bridge-nf-call-iptables]: /proc/sys/net/bridge/bridge-nf-call-iptables does not exist
+	[ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
 ```
 
 
