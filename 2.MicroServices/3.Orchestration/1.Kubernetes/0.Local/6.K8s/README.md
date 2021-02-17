@@ -186,9 +186,9 @@ $ sudo add-apt-repository \
 $ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
-:round_pushpin: [Docker Networking](https://stackoverflow.com/a/60897412)
+:round_pushpin: Check [Docker Networking](https://stackoverflow.com/a/60897412)
 
-Docker uses iptables and a kernel module called br_netfilter to manage inter-container networking. When the Docker daemon starts, it creates a variety of IPTables rules it required to operate.
+Docker uses `iptables` and a kernel module called `br_netfilter` to manage inter-container networking. When the Docker daemon starts, it creates a variety of IPTables rules it required to operate.
 
 ```
 $ sudo lsmod | grep br_netfilter
