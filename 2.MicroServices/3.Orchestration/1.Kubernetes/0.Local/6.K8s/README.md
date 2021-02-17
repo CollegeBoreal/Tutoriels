@@ -127,18 +127,16 @@ for more details, see [sysctl-cluster](https://kubernetes.io/docs/tasks/administ
 
 :round_pushpin: Enable the usage of iptables. To prevent some routing errors happening, add runtime parameters:
 
-- [ ] Enable the parameters by setting them to 1
+- [ ] Enable the parameters by setting them to 1 for both IPv6 and IPv4
 
-      * IPv6 and IPv4
-
-### :gear: k8s.conf [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service) (i.e. sysctl .conf file)
+##### :gear: k8s.conf [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service) (i.e. sysctl .conf file)
 
 ```
 $ sudo bash -c 'echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k8s.conf' && \
   sudo bash -c 'echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf'
 ```
 
-     * reload the configuration
+- [ ] reload the configuration
 
 ```
 $ sudo sysctl --system
