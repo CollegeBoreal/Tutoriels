@@ -36,7 +36,6 @@ $ sudo apt update && sudo apt -y install curl apt-transport-https ca-certificate
 | Tool    | Usage                                                   |
 |---------|---------------------------------------------------------|
 | kubeadm | tool built to provide kubeadm `init` and kubeadm `join` |
-| kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
 | kubectl | Kubernetes command-line tool |
 
 :round_pushpin: Adding the `kubernetes` package repository to the package manager registry  
