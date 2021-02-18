@@ -2,7 +2,20 @@
 
 ## :zero: Install the packages 
 
-[< previous page](../)
+[< previous page](../) to find the Google PGP Key :key: and Repository Artifact. (if not installed)
+
+:round_pushpin: Install the `kubelet` service package
+
+```
+$ sudo apt update && sudo apt -y install kubelet
+```
+
+:round_pushpin: Prevent the `kubelet` service package from being altered (optional)
+
+```
+$ sudo apt-mark hold kubelet
+```
+
 
 ## :gear: Where is the `kubelet` [drop-in file](https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service) (i.e. systemd .conf file)
 
