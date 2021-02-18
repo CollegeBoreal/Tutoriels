@@ -51,7 +51,7 @@ $ sudo systemctl enable kubelet && sudo systemctl start kubelet
 
 ## :three: Start the Kubernetes Control Plane 
 
-[< previous page](./#seven-start-the-control-plane-service) see `kubeadm init`
+[< previous page](control-plane.md#seven-start-the-control-plane-service) see `kubeadm init`
 
 
 
