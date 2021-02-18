@@ -163,7 +163,10 @@ $ sudo kubeadm config images pull
 :round_pushpin: Initialize the cluster
 
 ```
-$ sudo kubeadm init
+$ ## sudo kubeadm init
+$ sudo kubeadm init \
+  --pod-network-cidr=192.168.0.0/16 \
+  --control-plane-endpoint=orion
 ```
 
 [see the generated log => ](kubeadm-init.md)
