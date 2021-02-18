@@ -67,13 +67,13 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-yakkety main" | sudo tee /etc/
 :round_pushpin: Install the :ice_cube: `kube` tools
 
 ```
-$ sudo apt update && sudo apt -y install kubeadm kubelet kubectl
+$ sudo apt update && sudo apt -y install kubeadm kubectl
 ```
 
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
 
 ```
-$ sudo apt-mark hold kubeadm kubelet kubectl
+$ sudo apt-mark hold kubeadm kubectl
 ```
 
 :+1: Test that the :ice_cube: `kube` tools are installed
