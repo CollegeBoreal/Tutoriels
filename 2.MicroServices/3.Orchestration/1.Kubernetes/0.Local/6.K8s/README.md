@@ -143,7 +143,21 @@ $ sudo sysctl --system
 ```
 
 
-:five: Start the ...
+## :five: Install the :whale: `Docker` Service
+
+[:whale: Docker](docker.md)
+
+## :six: Install the :droplet: `Kubelet` Service
+
+[:droplet: Kubelet](kubelet.md)
+
+## :seven: Start the control plane service
+
+```
+$ sudo kubeadm init
+```
+
+[log](kubeadm-init.md)
 
 
 :round_pushpin: First download the images
