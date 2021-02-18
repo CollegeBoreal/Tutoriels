@@ -153,129 +153,46 @@ $ sudo sysctl --system
 
 [:droplet: Kubelet](kubelet.md)
 
-## :seven: Start the control plane service
+## :seven: Start the data plane service
 
-:round_pushpin: Pull the images (to accelerate the process)
-
-```
-$ sudo kubeadm config images pull
-```
-
-:round_pushpin: Initialize the cluster
+:round_pushpin: Join a node 
 
 ```
-$ sudo kubeadm init
+$ $ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
+>     --discovery-token-ca-cert-hash sha256:90d43a9c5fd2486f802bead7f91da3cbdd8680058f3b5a4c01569a965af2eccb 
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+	[ERROR IsPrivilegedUser]: user is not running as root
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
+ubuntu@ursa:~$ sudo kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f     --discovery-token-ca-cert-hash sha256:90d43a9c5fd2486f802bead7f91da3cbdd8680058f3b5a4c01569a965af2eccb 
+[preflight] Running pre-flight checks
+	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
+	[WARNING SystemVerification]: this Docker version is not on the list of validated versions: 20.10.3. Latest validated version: 19.03
+[preflight] Reading configuration from the cluster...
+[preflight] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -o yaml'
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Starting the kubelet
+[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...
+
+This node has joined the cluster:
+* Certificate signing request was sent to apiserver and a response was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
 ```
 
-[see the generated log => ](kubeadm-init.md)
-
-
-:tada: Your Kubernetes control-plane has initialized successfully!
-
-:round_pushpin: To start using your cluster, you need to run the following as a regular user:
-
-```
-$ mkdir -p $HOME/.kube
-$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
-
-Alternatively, if you are the root user, you can run:
-
-```
-  export KUBECONFIG=/etc/kubernetes/admin.conf
-```
-
-:round_pushpin: Check the current context (when being on the control plane node)
-
-```
-$ kubectl config get-contexts
-CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPACE
-*         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   
-```
+:o: Back to the control panel
 
 :round_pushpin: Check the current nodes (with `kubectl`)
 
 ```
 $ kubectl get nodes
-NAME    STATUS     ROLES                  AGE    VERSION
-orion   NotReady   control-plane,master   3h9m   v1.20.2
-```
-
-:warning: Not yet ready 
-
-## :eight: You should now deploy a pod network to the cluster.
-
-[Install Pod Network](kubelet.md#five-install-the-cni-plugin)
-
-## :nine: Confirm that all of the pods are running
-
-```
-$ watch kubectl get pods --all-namespaces
-```
-
-CTRL+C to exit
-
-```
-Every 2.0s: kubectl get pods --all-namespaces                orion: Thu Feb 18 02:55:26 2021
-
-NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
-kube-system   calico-kube-controllers-86bddfcff-fk2dr   1/1     Running   0          19m
-kube-system   calico-node-8pzzz                         1/1     Running   0          19m
-kube-system   coredns-74ff55c5b-56k4w                   1/1     Running   0          4h3m
-kube-system   coredns-74ff55c5b-lwbh6                   1/1     Running   0          4h3m
-kube-system   etcd-orion                                1/1     Running   0          4h3m
-kube-system   kube-apiserver-orion                      1/1     Running   0          4h3m
-kube-system   kube-controller-manager-orion             1/1     Running   0          4h3m
-kube-system   kube-proxy-7cfq9                          1/1     Running   0          4h3m
-kube-system   kube-scheduler-orion                      1/1     Running   0          4h3m
-```
-
-- [ ] Confirm master node is ready:
-
-:round_pushpin: Check the nodes once again
-
-```
-$ kubectl get nodes --output=wide
-NAME    STATUS   ROLES                  AGE    VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
-orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>        Ubuntu 20.04.2 LTS   5.4.0-65-generic   docker://20.10.3
+NAME    STATUS   ROLES                  AGE     VERSION
+orion   Ready    control-plane,master   4h49m   v1.20.2
+ursa    Ready    <none>                 9m      v1.20.2
 ```
 
 :tada: Ready
 
-
-## :x: Troubleshooting
-
-- [ ] Docker is missing
-
-```
-$ sudo kubeadm init
-W0217 18:10:40.216863 1082239 kubelet.go:200] cannot automatically set CgroupDriver when starting the Kubelet: cannot execute 'docker info -f {{.CgroupDriver}}': executable file not found in $PATH
-[init] Using Kubernetes version: v1.20.2
-[preflight] Running pre-flight checks
-[preflight] WARNING: Couldn't create the interface used for talking to the container runtime: docker is required for container runtime: exec: "docker": executable file not found in $PATH
-error execution phase preflight: [preflight] Some fatal errors occurred:
-	[ERROR FileContent--proc-sys-net-bridge-bridge-nf-call-iptables]: /proc/sys/net/bridge/bridge-nf-call-iptables does not exist
-	[ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1
-[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
-To see the stack trace of this error execute with --v=5 or higher
-```
-
-
-# References
-
-
-| Link | OS.      | CNI      | Working | 
-|------|----------|----------|----------| 
-| [setting-up-the-kubernetes-cluster-on-linux-via-kubeadm](https://subscription.packtpub.com/book/virtualization_and_cloud/9781788837606/1/ch01lvl1sec15/setting-up-the-kubernetes-cluster-on-linux-via-kubeadm) | CentOS7 | [Calico](https://www.projectcalico.org) | :heavy_check_mark: Tested |
-
-
-https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
-
-https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/ (Ubuntu focal, using Calico CNI)
-
-https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux (Ubuntu focal, using Flannel CNI)
-
-https://info.rancher.com/kubernetes-networking-deep-dive (ebook)
-
-https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/ (adding WindowsNodes)
