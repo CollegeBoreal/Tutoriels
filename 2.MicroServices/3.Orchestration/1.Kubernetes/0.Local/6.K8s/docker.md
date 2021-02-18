@@ -59,3 +59,11 @@ DOCKER-ISOLATION-STAGE-2  all  --  anywhere             anywhere
 Chain DOCKER-ISOLATION-STAGE-2 (1 references)
 Chain DOCKER-USER (1 references)
 ```
+
+- [ ] Check that the service is enabled
+
+```
+$ systemctl list-unit-files | grep docker
+docker.service                         enabled         enabled      
+docker.socket                          enabled         enabled  
+```
