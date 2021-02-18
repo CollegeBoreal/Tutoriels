@@ -3,10 +3,10 @@
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
 | Server | Type	Server                        | Hostname	Specs |
-|--------|------------------------------------|-----------------|
-| Master | k8s-master01.computingforgeeks.com | 4GB Ram, 2vcpus |
-| Worker | k8s-worker01.computingforgeeks.com | 4GB Ram, 2vcpus |
-| Worker | k8s-worker02.computingforgeeks.com | 4GB Ram, 2vcpus |
+|--------|------------------------------------|-----------------------|
+| Master | orion `10.13.15.200/20`            | 64GB Ram,      16cpus |
+| Worker | canis `10.13.15.201/20`            | 64GB Ram,      16cpus |
+| Worker | ursa  `10.13.15.202/20`            | 32GB Ram,      16cpus |
 
 
 ## :zero: Prepare the Servers
