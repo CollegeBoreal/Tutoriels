@@ -148,6 +148,39 @@ Feb 18 02:36:35 orion kubelet[1130554]: 2021-02-18 02:36:35.483 [INFO][1182250] 
 lines 1-22/22 (END)
 ```
 
+## :ab: On the data plane 
+
+- [ ] After Joining
+
+```
+$ systemctl status kubelet
+● kubelet.service - kubelet: The Kubernetes Node Agent
+     Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled)
+    Drop-In: /etc/systemd/system/kubelet.service.d
+             └─10-kubeadm.conf
+     Active: active (running) since Thu 2021-02-18 03:32:25 UTC; 3min 3s ago
+       Docs: https://kubernetes.io/docs/home/
+   Main PID: 7812 (kubelet)
+      Tasks: 26 (limit: 38476)
+     Memory: 54.5M
+     CGroup: /system.slice/kubelet.service
+             └─7812 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.co>
+
+Feb 18 03:33:09 ursa kubelet[7812]: W0218 03:33:09.931497    7812 driver-call.go:149] FlexVolume: driver call failed: executable: /usr/lib>
+Feb 18 03:33:09 ursa kubelet[7812]: E0218 03:33:09.931520    7812 plugins.go:738] Error dynamically probing plugins: Error creating Flexvo>
+Feb 18 03:33:09 ursa kubelet[7812]: E0218 03:33:09.931793    7812 driver-call.go:266] Failed to unmarshal output for command: init, output>
+Feb 18 03:33:09 ursa kubelet[7812]: W0218 03:33:09.931807    7812 driver-call.go:149] FlexVolume: driver call failed: executable: /usr/lib>
+Feb 18 03:33:09 ursa kubelet[7812]: E0218 03:33:09.931823    7812 plugins.go:738] Error dynamically probing plugins: Error creating Flexvo>
+Feb 18 03:33:09 ursa kubelet[7812]: E0218 03:33:09.932033    7812 driver-call.go:266] Failed to unmarshal output for command: init, output>
+Feb 18 03:33:09 ursa kubelet[7812]: W0218 03:33:09.932047    7812 driver-call.go:149] FlexVolume: driver call failed: executable: /usr/lib>
+Feb 18 03:33:09 ursa kubelet[7812]: E0218 03:33:09.932061    7812 plugins.go:738] Error dynamically probing plugins: Error creating Flexvo>
+Feb 18 03:33:28 ursa kubelet[7812]: E0218 03:33:28.168698    7812 remote_runtime.go:332] ContainerStatus "ed0f52a1a69f6cc8f03905a03424afed>
+Feb 18 03:33:28 ursa kubelet[7812]: E0218 03:33:28.168744    7812 kuberuntime_manager.go:980] getPodContainerStatuses for pod "calico-node>
+lines 1-22/22 (END)
+```
+
+
+
 # References
 
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/
