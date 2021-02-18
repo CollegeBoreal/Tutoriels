@@ -26,7 +26,12 @@ $ systemctl status kubelet
    Main PID: 315103 (code=exited, status=255/EXCEPTION)
 ```
 
-## :two: Just after `kubeadm init`
+## :two: Booting up the `kubelet` service
+
+``` 
+$ sudo systemctl enable kubelet && sudo systemctl start kubelet
+```
+
 
 
 
