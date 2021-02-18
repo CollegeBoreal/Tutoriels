@@ -261,22 +261,20 @@ orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>  
 
 :tada: Ready
 
+## :o: Controlling the cluster from Client Computer
 
-## :x: Troubleshooting
-
-- [ ] Docker is missing
+- [ ] Copy the :ice_cude: `kube` config file to your PC
 
 ```
-$ sudo kubeadm init
-W0217 18:10:40.216863 1082239 kubelet.go:200] cannot automatically set CgroupDriver when starting the Kubelet: cannot execute 'docker info -f {{.CgroupDriver}}': executable file not found in $PATH
-[init] Using Kubernetes version: v1.20.2
-[preflight] Running pre-flight checks
-[preflight] WARNING: Couldn't create the interface used for talking to the container runtime: docker is required for container runtime: exec: "docker": executable file not found in $PATH
-error execution phase preflight: [preflight] Some fatal errors occurred:
-	[ERROR FileContent--proc-sys-net-bridge-bridge-nf-call-iptables]: /proc/sys/net/bridge/bridge-nf-call-iptables does not exist
-	[ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1
-[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
-To see the stack trace of this error execute with --v=5 or higher
+$ scp -i ~/.ssh/myprivate-key.pk ubuntu@10.13.15.200:.kube/config .kube/config
+```
+
+- [ ] Get the context
+
+```
+% kubectl config get-contexts                                                      
+CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPACE
+*         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   
 ```
 
 
