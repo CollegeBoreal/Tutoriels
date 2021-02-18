@@ -217,7 +217,7 @@ $ watch kubectl get pods --all-namespaces
 CTRL+C to exit
 
 ```
-Every 2.0s: kubectl get pods --all-namespaces                    orion: Thu Feb 18 02:55:26 2021
+Every 2.0s: kubectl get pods --all-namespaces                orion: Thu Feb 18 02:55:26 2021
 
 NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
 kube-system   calico-kube-controllers-86bddfcff-fk2dr   1/1     Running   0          19m
