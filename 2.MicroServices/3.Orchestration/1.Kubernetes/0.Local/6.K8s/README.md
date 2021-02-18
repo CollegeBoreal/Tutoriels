@@ -208,16 +208,6 @@ orion   NotReady   control-plane,master   3h9m   v1.20.2
 
 [Install Pod Network](kubelet.md#five-install-the-cni-plugin)
 
-:round_pushpin: Check the nodes once again
-
-```
-$ kubectl get nodes
-NAME    STATUS   ROLES                  AGE     VERSION
-orion   Ready    control-plane,master   3h58m   v1.20.2
-```
-
-:tada: Ready
-
 ## :nine: Confirm that all of the pods are running
 
 ```
@@ -240,6 +230,19 @@ kube-system   kube-controller-manager-orion             1/1     Running   0     
 kube-system   kube-proxy-7cfq9                          1/1     Running   0          4h3m
 kube-system   kube-scheduler-orion                      1/1     Running   0          4h3m
 ```
+
+- [ ] Confirm master node is ready:
+
+:round_pushpin: Check the nodes once again
+
+```
+$ $ kubectl get nodes --output=wide
+NAME    STATUS   ROLES                  AGE    VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
+orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>        Ubuntu 20.04.2 LTS   5.4.0-65-generic   docker://20.10.3
+```
+
+:tada: Ready
+
 
 ## :x: Troubleshooting
 
