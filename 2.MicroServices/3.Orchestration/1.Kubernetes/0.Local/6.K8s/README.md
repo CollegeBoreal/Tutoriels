@@ -236,7 +236,7 @@ kube-system   kube-scheduler-orion                      1/1     Running   0     
 :round_pushpin: Check the nodes once again
 
 ```
-$ $ kubectl get nodes --output=wide
+$ kubectl get nodes --output=wide
 NAME    STATUS   ROLES                  AGE    VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
 orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>        Ubuntu 20.04.2 LTS   5.4.0-65-generic   docker://20.10.3
 ```
