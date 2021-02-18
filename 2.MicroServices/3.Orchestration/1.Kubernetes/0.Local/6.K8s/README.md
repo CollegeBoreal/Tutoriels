@@ -208,7 +208,8 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
   
 ```
-$ kubectl apply -f https://docs.projectcalico.org/v2.6/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml
+$ kubectl apply -f kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+```
 
 ## :x: Troubleshooting
 
