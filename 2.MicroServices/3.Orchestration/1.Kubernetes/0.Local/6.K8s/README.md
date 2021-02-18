@@ -218,6 +218,29 @@ orion   Ready    control-plane,master   3h58m   v1.20.2
 
 :tada: Ready
 
+## :nine: Confirm that all of the pods are running
+
+```
+$ watch kubectl get pods --all-namespaces
+```
+
+CTRL+C to exit
+
+```
+Every 2.0s: kubectl get pods --all-namespaces                         orion: Thu Feb 18 02:55:26 2021
+
+NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
+kube-system   calico-kube-controllers-86bddfcff-fk2dr   1/1     Running   0          19m
+kube-system   calico-node-8pzzz                         1/1     Running   0          19m
+kube-system   coredns-74ff55c5b-56k4w                   1/1     Running   0          4h3m
+kube-system   coredns-74ff55c5b-lwbh6                   1/1     Running   0          4h3m
+kube-system   etcd-orion                                1/1     Running   0          4h3m
+kube-system   kube-apiserver-orion                      1/1     Running   0          4h3m
+kube-system   kube-controller-manager-orion             1/1     Running   0          4h3m
+kube-system   kube-proxy-7cfq9                          1/1     Running   0          4h3m
+kube-system   kube-scheduler-orion                      1/1     Running   0          4h3m
+```
+
 ## :x: Troubleshooting
 
 - [ ] Docker is missing
