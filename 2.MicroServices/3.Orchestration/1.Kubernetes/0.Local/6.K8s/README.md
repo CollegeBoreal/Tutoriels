@@ -202,10 +202,21 @@ NAME    STATUS     ROLES                  AGE    VERSION
 orion   NotReady   control-plane,master   3h9m   v1.20.2
 ```
 
+:warning: Not yet ready 
+
 ## :eight: You should now deploy a pod network to the cluster.
 
 [Install Pod Network](kubelet.md#five-install-the-cni-plugin)
 
+:round_pushpin: Check the nodes once again
+
+```
+$ kubectl get nodes
+NAME    STATUS   ROLES                  AGE     VERSION
+orion   Ready    control-plane,master   3h58m   v1.20.2
+```
+
+:tada: Ready
 
 ## :x: Troubleshooting
 
