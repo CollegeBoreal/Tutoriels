@@ -155,6 +155,12 @@ $ sudo sysctl --system
 
 ## :seven: Start the control plane service
 
+:round_pushpin: Pull the images (to accelerate the process)
+
+```
+$ sudo kubeadm config images pull
+```
+
 :round_pushpin: Initialize the cluster
 
 ```
@@ -195,6 +201,14 @@ $ kubectl get nodes
 NAME    STATUS     ROLES                  AGE    VERSION
 orion   NotReady   control-plane,master   3h9m   v1.20.2
 ```
+
+## :eight: You should now deploy a pod network to the cluster.
+
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+  
+```
+$ kubectl apply -f https://docs.projectcalico.org/v2.6/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml
 
 ## :x: Troubleshooting
 
