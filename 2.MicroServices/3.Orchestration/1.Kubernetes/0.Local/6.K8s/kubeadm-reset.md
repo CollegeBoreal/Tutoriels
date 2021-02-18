@@ -35,7 +35,9 @@ Please, check the contents of the $HOME/.kube/config file.
 $ kubectl config delete-context kubernetes-admin@kubernetes
 ```
 
-- [ ] Reset the node
+
+- [ ] Reset the node
+
 
 ```
 $ sudo kubeadm reset cleanup-node
