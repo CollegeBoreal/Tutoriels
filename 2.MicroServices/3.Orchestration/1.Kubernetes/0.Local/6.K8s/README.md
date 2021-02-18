@@ -155,6 +155,8 @@ $ sudo sysctl --system
 
 ## :seven: Start the control plane service
 
+:round_pushpin: Initialize the cluster
+
 ```
 $ sudo kubeadm init
 ```
@@ -164,7 +166,7 @@ $ sudo kubeadm init
 
 :tada: Your Kubernetes control-plane has initialized successfully!
 
-To start using your cluster, you need to run the following as a regular user:
+:round_pushpin: To start using your cluster, you need to run the following as a regular user:
 
 ```
 $ mkdir -p $HOME/.kube
@@ -178,6 +180,21 @@ Alternatively, if you are the root user, you can run:
   export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 
+:round_pushpin: Check the current context (when being on the control plane node)
+
+```
+$ kubectl config get-contexts
+CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPACE
+*         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   
+```
+
+:round_pushpin: Check the current nodes (with `kubectl`)
+
+```
+$ kubectl get nodes
+NAME    STATUS     ROLES                  AGE    VERSION
+orion   NotReady   control-plane,master   3h9m   v1.20.2
+```
 
 ## :x: Troubleshooting
 
