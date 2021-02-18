@@ -23,6 +23,8 @@ $ sudo apt update && sudo apt -y upgrade && sudo systemctl reboot
 
 :round_pushpin: Install `curl` and `apt-transport-https` and others used to download new packages
 
+:bulb: Some repositories are URL with HTTPS. The `apt-transport-https` package must be installed to access the HTTPS endpoint:
+
 ```
 $ sudo apt update && sudo apt -y install curl apt-transport-https ca-certificates gnupg-agent software-properties-common
 ```
