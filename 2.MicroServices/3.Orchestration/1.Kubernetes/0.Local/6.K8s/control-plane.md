@@ -284,9 +284,7 @@ CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPAC
 | Link | OS.      | CNI      | Working | 
 |------|----------|----------|----------| 
 | [setting-up-the-kubernetes-cluster-on-linux-via-kubeadm](https://subscription.packtpub.com/book/virtualization_and_cloud/9781788837606/1/ch01lvl1sec15/setting-up-the-kubernetes-cluster-on-linux-via-kubeadm) | CentOS7 | [Calico](https://www.projectcalico.org) | :heavy_check_mark: Tested |
-
-
-https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+| [kubernetes.io install-kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm) | | 
 
 https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/ (Ubuntu focal, using Calico CNI)
 
