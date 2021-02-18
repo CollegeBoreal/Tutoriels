@@ -1,5 +1,7 @@
 # :wheel_of_dharma: Kubeadm Reset
 
+- [ ] Reset the cluster
+
 ```
 $ sudo kubeadm reset
 [sudo] password for ubuntu: 
@@ -25,4 +27,10 @@ to reset your system's IPVS tables.
 
 The reset process does not clean your kubeconfig files and you must remove them manually.
 Please, check the contents of the $HOME/.kube/config file.
+```
+
+- [ ] Delete the context
+
+```
+$ kubectl config delete-context kubernetes-admin@kubernetes
 ```
