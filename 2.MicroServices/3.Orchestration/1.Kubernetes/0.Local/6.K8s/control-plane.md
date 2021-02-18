@@ -165,7 +165,7 @@ $ sudo kubeadm config images pull
 ```
 $ ## sudo kubeadm init
 $ sudo kubeadm init \
-  --pod-network-cidr=192.168.0.0/16 \
+  --pod-network-cidr=172.16.0.0/16 \
   --control-plane-endpoint=orion
 ```
 
