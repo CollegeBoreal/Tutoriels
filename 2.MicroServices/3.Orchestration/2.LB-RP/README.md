@@ -11,6 +11,8 @@
 
 - [ ] [MetalLB](https://metallb.universe.tf/)
 
+- [ ] [PureLB](https://purelb.gitlab.io/docs/)
+
 
 # References
 
@@ -40,3 +42,5 @@ https://www.infoq.com/news/2020/07/porter-kubernetes-bare-metal/
 https://itnext.io/porter-an-open-source-load-balancer-designed-for-bare-metal-kubernetes-clusters-870e1313b7f0
 
 https://medium.com/@benmeier_/a-quick-minimal-ipvs-load-balancer-demo-d5cc42d0deb4
+
+https://medium.com/thermokline/comparing-k8s-load-balancers-2f5c76ea8f31
