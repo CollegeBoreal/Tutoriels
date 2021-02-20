@@ -3,7 +3,7 @@
 
 ## :a: Windows
 
-Installer [C.Chocolatey]()
+Installer [C.Chocolatey](C.Chocolatey)
 
 ## :b: MacOS
 
