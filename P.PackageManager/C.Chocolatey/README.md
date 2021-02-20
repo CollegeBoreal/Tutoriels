@@ -1,4 +1,4 @@
-# Chocolatey
+# :chocolate_bar: Chocolatey
 
 
 ## :o: Installation
