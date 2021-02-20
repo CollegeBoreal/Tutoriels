@@ -1,4 +1,8 @@
-# :a: Chocolatey
+# Chocolatey
+
+
+## :gear: Installation
+
 
 [chocolatey.org](http://chocolatey.org/) [Installation](https://chocolatey.org/install)
 
@@ -9,7 +13,7 @@
 ```
 
 
-:two: Politique d'éxécution
+:round_pushpin: Politique d'éxécution
 
 Éxécuter la commande ci-dessous, 
 
@@ -31,7 +35,7 @@ OU
 PS> Set-ExecutionPolicy Bypass -Scope Process
 ``` 
 
-:three: Copier et Coller les instructions suivantes et taper `entrer`
+:round_pushpin: Copier et Coller les instructions suivantes et taper `entrer`
 
 ```
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; 
@@ -39,7 +43,7 @@ PS > Set-ExecutionPolicy Bypass -Scope Process -Force;
      iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-:four: Verifier l'installation
+:a: Verifier l'installation
 
 ```
 PS > choco list --local-only
@@ -47,6 +51,29 @@ Chocolatey v0.10.15
 chocolatey 0.10.15
 1 packages installed.
 ```
+
+## :b: Installer des `packages`
+
+:bulb: Rajouter `-not-silent` pour debugger avec le UI
+
+* Docker
+
+```
+$ choco install docker-desktop
+```
+
+* Google Chrome
+
+```
+$ choco install google-chrome
+```
+
+## :ab: Chercher des packages [choco](https://chocolatey.org/packages)
+
+```
+$ choco search musescore
+```
+
 
 ## :x:  [Troubleshooting](https://chocolatey.org/docs/troubleshooting)
 
