@@ -1,4 +1,4 @@
-# :a: Windows
+# :a: Chocolatey
 
 [chocolatey.org](http://chocolatey.org/) [Installation](https://chocolatey.org/install)
 
