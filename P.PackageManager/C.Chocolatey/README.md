@@ -1,7 +1,7 @@
 # Chocolatey
 
 
-## :gear: Installation
+## :o: Installation
 
 
 [chocolatey.org](http://chocolatey.org/) [Installation](https://chocolatey.org/install)
@@ -101,6 +101,8 @@ PS > Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope MachinePolicy
 PS > $env:chocolateyUseWindowsCompression = 'true'
 PS > Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
+
+## :bookmark: Références
 
 https://stackoverflow.com/questions/27753917/how-do-you-successfully-change-execution-policy-and-enable-execution-of-powershe
 
