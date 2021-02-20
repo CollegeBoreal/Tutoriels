@@ -34,6 +34,8 @@ $ sudo apt-get update && sudo apt-get install helm
 
 ## :a: Usage
 
+https://helm.sh/docs/intro/using_helm/
+
 ```
 $ helm search hub moodle
 URL                                               	CHART VERSION	APP VERSION	DESCRIPTION                                       
