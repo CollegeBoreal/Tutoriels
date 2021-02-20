@@ -2,20 +2,20 @@
 
 ## :o: Installation
 
-:one: Executer la commande suivante dans le `Terminal`
+:round_pushpin: Executer la commande suivante dans le `Terminal`
 
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-:two: Verifier l'installation
+:round_pushpin: Verifier l'installation
 
 ```
 $ brew cask list --versions
 $ brew list --versions # Version originale avec package plus petits
 ```
 
-:three: Desinstaller brew (seulement si voulu)
+:round_pushpin: Desinstaller brew (seulement si voulu)
 
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
@@ -24,7 +24,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 <hr/>
 
 
-:o: Troubleshooting
+## :x: Troubleshooting
 
 ```
 $ brew doctor
@@ -33,17 +33,17 @@ $ brew doctor
 <hr/>
 
 
-:busts_in_silhouette: Multiple Users (only)
+## :busts_in_silhouette: Multiple Users (only)
 
 https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup
 
-* Add the current user to the `admin` group
+- [ ]  Add the current user to the `admin` group
 
 ```
 $ sudo dseditgroup -o edit -a $(whoami) -t user admin
 ```
 
-* Check the result
+- [ ] Check the result
 
 ```
 $ groups | grep admin
