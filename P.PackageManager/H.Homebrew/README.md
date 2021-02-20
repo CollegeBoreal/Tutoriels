@@ -13,8 +13,8 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 :round_pushpin: Verifier l'installation
 
 ```
-$ brew cask list --versions
-$ brew list --versions # Version originale avec package plus petits
+% brew list --cask --versions
+% brew list --versions # Version originale avec package plus petits
 ```
 
 :round_pushpin: Desinstaller brew (seulement si voulu)
@@ -31,13 +31,13 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 * Docker
 
 ```
-$ brew cask install docker-desktop
+$ brew install --cask docker-desktop
 ```
 
 * Google Chrome
 
 ```
-$ brew cask install chrome
+$ brew install --cask chrome
 ```
 
 ## :ab: Chercher des packages [cask](https://formulae.brew.sh/cask/)
