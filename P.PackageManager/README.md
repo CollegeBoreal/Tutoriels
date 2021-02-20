@@ -3,7 +3,7 @@
 
 ## :a: Windows
 
-
+Installer [C.Chocolatey]
 
 ## :b: MacOS
 
