@@ -2,8 +2,9 @@
 
 https://helm.sh/docs/intro/install/
 
+## :o: Install
 
-## :ab: :penguin: Debian
+#### :one: :penguin: Debian
 
 https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 
@@ -29,4 +30,12 @@ $ echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/a
 
 ```
 $ sudo apt-get update && sudo apt-get install helm
+```
+
+## :a: Usage
+
+```
+$ helm search hub moodle
+URL                                               	CHART VERSION	APP VERSION	DESCRIPTION                                       
+https://artifacthub.io/packages/helm/bitnami/mo...	11.0.3       	3.10.1     	Moodle(TM) is a learning platform designed to p...
 ```
