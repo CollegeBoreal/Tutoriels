@@ -33,7 +33,7 @@ $ brew doctor
 <hr/>
 
 
-:ab: Multiple Users (only)
+:busts_in_silhouette: Multiple Users (only)
 
 https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup
 
