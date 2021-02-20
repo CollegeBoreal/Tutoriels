@@ -1,5 +1,7 @@
 # :beer: HomeBrew
 
+Avec [brew.sh](http://brew.sh/)
+
 ## :o: Installation
 
 :round_pushpin: Executer la commande suivante dans le `Terminal`
@@ -24,10 +26,49 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 <hr/>
 
 
+## :a: Installer des `packages`
+
+* Docker
+
+```
+$ brew cask install docker-desktop
+```
+
+* Google Chrome
+
+```
+$ brew cask install chrome
+```
+
+## :ab: Chercher des packages [cask](https://formulae.brew.sh/cask/)
+
+```
+$ brew search --desc 'musescore' 
+```
+
+ 
 ## :x: Troubleshooting
 
 ```
 $ brew doctor
+```
+
+* Debug
+
+```
+$ brew install -v --debug mp4box # will give you everything. Likewise, brew gist-logs mp4box
+```
+
+ou
+
+```
+$ brew gist-logs mp4box
+```
+
+:round_pushpin: Fix tap
+
+```
+$ brew untap caskroom/cask caskroom/versions
 ```
 
 <hr/>
