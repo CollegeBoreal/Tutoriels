@@ -1,12 +1,13 @@
 # Package Manager
 
 
-## :a: Windows
+## :a: Sous Windows
 
 Installer :chocolate_bar: [C.Chocolatey](C.Chocolatey)
 
-## :b: MacOS
+## :b: Sous MacOS
 
+Installer :beer: [H.Homebrew](H.Homebrew)
 
 
 :ab: Linux - Debian
