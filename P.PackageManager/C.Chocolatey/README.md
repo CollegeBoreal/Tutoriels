@@ -6,7 +6,7 @@
 
 [chocolatey.org](http://chocolatey.org/) [Installation](https://chocolatey.org/install)
 
-:one: Executer la commande suivante dans `PowerShell` en tant qu'Administrateur
+:bulb: Executer la commande suivante dans `PowerShell` en tant qu'Administrateur
 
 ```
 (Touche Windows > taper "Windows PowerShell" > right click > Run as Administrator)
@@ -43,7 +43,7 @@ PS > Set-ExecutionPolicy Bypass -Scope Process -Force;
      iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-:a: Verifier l'installation
+## :a: Verifier l'installation
 
 ```
 PS > choco list --local-only
