@@ -4,33 +4,6 @@
 ## :a: Windows
 
 
-Avec [chocolatey.org](http://chocolatey.org/)
-
-:one: Suivre le lien --v--
-
-   Installer sous [Windows](Windows.md)
-
-:two: Installer des `packages`
-
-:bulb: Rajouter `-not-silent` pour debugger avec le UI
-
-* Docker
-
-```
-$ choco install docker-desktop
-```
-
-* Docker
-
-```
-$ choco install google-chrome
-```
-
-:three: Chercher des packages [choco](https://chocolatey.org/packages)
-
-```
-$ choco search musescore
-```
 
 ## :b: MacOS
 
