@@ -1,5 +1,6 @@
-# :b: MacOS
+# :beer: HomeBrew
 
+## :o: Installation
 
 :one: Executer la commande suivante dans le `Terminal`
 
