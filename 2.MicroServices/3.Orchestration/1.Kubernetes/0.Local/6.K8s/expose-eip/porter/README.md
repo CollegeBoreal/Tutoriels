@@ -100,6 +100,6 @@ $ kubectl apply -f porter-layer2-eip.yaml
 ```
 
 
-## :x: Losing cluster access
+## :warning: Losing cluster access when load balancer in `<pending>` state
 
-At a certain point when installing the `Porter` L2 Load Balancer you will lose access to the cluster, including SSH access but it comes back
+At some point when installing a service on the `Porter` L2 Load Balancer, you will lose access to the cluster for about 20 minutes, including SSH access but eventually it comes back.
