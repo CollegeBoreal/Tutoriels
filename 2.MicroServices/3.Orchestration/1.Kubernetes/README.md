@@ -91,7 +91,15 @@ PS > kubectl config use-context docker-for-desktop
 
 ## :ab: Interacting with cluster
 
-https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-nodes-and-cluster
+
+
+| Topic | Comments | 
+|-------|--|
+| [cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-nodes-and-cluster)| interacting-with-nodes-and-cluster |
+
+
+
+https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 
 ```
 $ kubectl cluster-info dump
