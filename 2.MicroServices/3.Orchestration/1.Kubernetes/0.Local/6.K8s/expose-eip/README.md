@@ -30,9 +30,8 @@ Configure `kubectl` to communicate with your Kubernetes API server. For instruct
 * Creating a service for an application running in two pods
 * Run a `kuron` application in your cluster:
 
-`kuron-deployment.yaml` 
-
-```
+```yaml
+$ cat << EOF > kuron-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -54,6 +53,7 @@ spec:
         image: collegeboreal/kuron:latest
         ports:
         - containerPort: 8080
+EOF
 ```
 
 ```
