@@ -93,9 +93,26 @@ PS > kubectl config use-context docker-for-desktop
 
 
 
-| Topic | Comments | 
-|-------|--|
-| [cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-nodes-and-cluster)| interacting-with-nodes-and-cluster |
+| cheatsheet                                                                                            | Comments | 
+|-------------------------------------------------------------------------------------------------------|----------|
+| [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete) |          |
+| [BASH]([Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash)          |          |
+| ZSH
+| Kubectl context and configuration
+| Kubectl apply
+| Creating objects
+| Viewing, finding resources
+| Updating resources
+| Patching resources
+| Editing resources
+| Scaling resources
+| Deleting resources
+| Interacting with running Pods
+| [Interacting with Nodes and cluster](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-nodes-and-cluster) | |
+| Resource types
+| Formatting output
+| Kubectl output verbosity and debugging
+| What's next
 
 
 
