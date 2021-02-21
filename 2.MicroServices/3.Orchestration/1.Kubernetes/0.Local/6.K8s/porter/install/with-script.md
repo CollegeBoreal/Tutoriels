@@ -72,5 +72,5 @@ porter-admission-patch-j5wmx    0/1     Terminating   0          9h
 Apply the script 
 
 ```
-$ bash kill-kube-ns porter-system
+$ bash kill-kube-ns.sh porter-system
 ```
