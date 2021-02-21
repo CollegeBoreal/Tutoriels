@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kuron-loadbalancer
+  annotations:
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+spec:
+  type: LoadBalancer
+  selector:
+    app: kuron
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  externalTrafficPolicy: Cluster
