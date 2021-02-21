@@ -49,6 +49,7 @@ spec:
         name: hello-world
         ports:
         - containerPort: 8080
+```
 
 ```
 $ kubectl apply -f https://k8s.io/examples/service/load-balancer-example.yaml
