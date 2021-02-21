@@ -148,25 +148,31 @@ Note: If the external IP address is shown as <pending>, wait for a minute and en
 Display detailed information about the Service:
 
 ```
-kubectl describe services kuron-loadbalancer
+$ kubectl describe services kuron-loadbalancer
 ```
 
 The output is similar to:
 
-```
-Name:           my-service
-Namespace:      default
-Labels:         app.kubernetes.io/name=load-balancer-example
-Annotations:    <none>
-Selector:       app.kubernetes.io/name=load-balancer-example
-Type:           LoadBalancer
-IP:             10.3.245.137
-LoadBalancer Ingress:   104.198.205.71
-Port:           <unset> 8080/TCP
-NodePort:       <unset> 32377/TCP
-Endpoints:      10.0.0.6:8080,10.0.1.6:8080,10.0.1.7:8080 + 2 more...
-Session Affinity:   None
-Events:         <none>
+```yaml
+kubectl describe services kuron-loadbalancer
+Name:                     kuron-loadbalancer
+Namespace:                default
+Labels:                   eip.porter.kubesphere.io/v1alpha2=porter-layer2-eip
+Annotations:              eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+                          layer2.porter.kubesphere.io/v1alpha1: ursa
+                          lb.kubesphere.io/v1alpha1: porter
+                          protocol.porter.kubesphere.io/v1alpha1: layer2
+Selector:                 app=kuron
+Type:                     LoadBalancer
+IP:                       10.100.75.64
+LoadBalancer Ingress:     10.13.15.200
+Port:                     http  80/TCP
+TargetPort:               8080/TCP
+NodePort:                 http  30464/TCP
+Endpoints:                172.16.183.136:8080,172.16.183.137:8080
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
 ```
   
 Make a note of the external IP address (LoadBalancer Ingress) exposed by your service. In this example, the external IP address is 104.198.205.71. Also note the value of Port and NodePort. In this example, the Port is 8080 and the NodePort is 32377.
