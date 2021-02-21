@@ -137,14 +137,7 @@ kuron-loadbalancer   LoadBalancer   10.100.75.64   10.13.15.200   80:30464/TCP  
 
 * The `type=LoadBalancer` service is usually backed by external cloud providers, which is not covered in this example, since it is using `Porter` load balancer.
 * If the external IP address is shown as `<pending>`, wait for a minute and enter the same command again.
-* The `kubernetes` cluster may also take some time to come back (around 10 minutes) 
-
-##### :x: <pending>
-
-:warning: 
-  *  ran at 2021/02/21T01:45:00PM EST (lock)
-  *  unlock at 2021/02/21T02:07:00PM EST (unlock)
-
+* The `kubernetes` cluster may also take some time to come back during that `<pending>` state (i.e. around 20 minutes) :warning:
 
 Display detailed information about the Service:
 
