@@ -179,20 +179,22 @@ Make a note of the external IP address (LoadBalancer Ingress) exposed by your se
 In the preceding output, you can see that the service has several endpoints: 10.0.0.6:8080,10.0.1.6:8080,10.0.1.7:8080 + 2 more. These are internal addresses of the pods that are running the Hello World application. To verify these are pod addresses, enter this command:
 
 ```
-kubectl get pods --output=wide
+$ kubectl get pods --output=wide
 ```
 
 The output is similar to:
 
 ```
-NAME                         ...  IP         NODE
-hello-world-2895499144-1jaz9 ...  10.0.1.6   gke-cluster-1-default-pool-e0b8d269-1afc
-hello-world-2895499144-2e5uh ...  10.0.1.8   gke-cluster-1-default-pool-e0b8d269-1afc
-hello-world-2895499144-9m4h1 ...  10.0.0.6   gke-cluster-1-default-pool-e0b8d269-5v7a
-hello-world-2895499144-o4z13 ...  10.0.1.7   gke-cluster-1-default-pool-e0b8d269-1afc
-hello-world-2895499144-segjf ...  10.0.2.5   gke-cluster-1-default-pool-e0b8d269-cpuc
+NAME                                READY   STATUS      RESTARTS   AGE   IP               NODE   NOMINATED NODE   READINESS GATES
+command-demo                        0/1     Completed   0          15h   172.16.183.133   ursa   <none>           <none>
+kuron-deployment-55878fd4cd-9k7zs   1/1     Running     0          43m   172.16.183.136   ursa   <none>           <none>
+kuron-deployment-55878fd4cd-rjvfh   1/1     Running     0          43m   172.16.183.137   ursa   <none>           <none>
+nginx-server                        1/1     Running     0          15h   172.16.183.129   ursa   <none>           <none>
+porter-admission-create-9xwzs       0/1     Completed   0          16h   172.16.183.131   ursa   <none>           <none>
+porter-admission-patch-v687j        0/1     Completed   1          16h   172.16.183.130   ursa   <none>           <none>
+porter-manager-98cc6c799-sggrq      1/1     Running     0          16h   10.13.15.202     ursa   <none>           <none>
 ```
-Use the external IP address (LoadBalancer Ingress) to access the Hello World application:
+Use the external IP address (LoadBalancer Ingress) to access the `kuron` application:
 
 ```
 $ curl http://10.13.15.200:80
@@ -209,10 +211,10 @@ Tu as touché kuron-deployment-55878fd4cd-9k7zs
 
 where <external-ip> is the external IP address (LoadBalancer Ingress) of your Service, and <port> is the value of Port in your Service description. If you are using minikube, typing minikube service my-service will automatically open the Hello World application in a browser.
 
-The response to a successful request is a hello message:
+The response to a successful request is a `touché` message:
 
 ```
-Hello Kubernetes!
+Tu as touché kuron-deployment-55878fd4cd-9k7zs
 ```
 
 ## :ab: Cleaning up
