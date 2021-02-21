@@ -209,11 +209,11 @@ Tu as touché kuron-deployment-55878fd4cd-9k7zs
 To delete the Service, enter this command:
 
 ```
-kubectl delete services kuron-loadbalancer
+$ kubectl delete services kuron-loadbalancer
 ```
 
-To delete the Deployment, the ReplicaSet, and the Pods that are running the Hello World application, enter this command:
+To delete the `Deployment`, the `ReplicaSet`, and the `Pods` that are running the `kuron` application, enter this command:
 
 ```
-kubectl delete deployment kuron-deployment
+$ kubectl delete deployment kuron-deployment
 ```
