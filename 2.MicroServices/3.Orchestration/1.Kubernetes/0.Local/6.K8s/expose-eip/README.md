@@ -15,8 +15,8 @@ This page shows how to create a Kubernetes Service object that exposes an extern
 Before you begin
 
 - [ ] Install `kubectl`.
-
 - [ ] Use `kubeadm` to create a Kubernetes cluster. 
+- [ ] Install the [Porter](porter) Load Balancer
 
 This tutorial creates an internal load balancer, which requires bare metal servers.
 
