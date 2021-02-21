@@ -12,7 +12,7 @@ This page shows how to create a Kubernetes Service object that exposes an extern
 
 
 
-Before you begin
+## :o: Before you begin
 
 - [ ] Install `kubectl`.
 - [ ] Use `kubeadm` to create a Kubernetes cluster. 
@@ -28,7 +28,11 @@ Configure `kubectl` to communicate with your Kubernetes API server. For instruct
 * Create a Service object that exposes an external IP address.
 * Use the Service object to access the running application.
 * Creating a service for an application running in two pods
-* Run a `kuron` application in your cluster:
+
+
+## :a: Creating a service for an application running in two pods 
+
+:round_pushpin: Run a `kuron` application in your cluster:
 
 ```yaml
 $ cat << EOF > kuron-deployment.yaml
@@ -57,7 +61,7 @@ EOF
 ```
 
 ```
-$ kubectl apply -f https://k8s.io/examples/service/load-balancer-example.yaml
+$ kubectl apply -f kuron-deployment.yaml 
 ```
 
 The preceding command creates a Deployment and an associated ReplicaSet. The ReplicaSet has five Pods each of which runs the Hello World application.
@@ -65,8 +69,8 @@ The preceding command creates a Deployment and an associated ReplicaSet. The Rep
 Display information about the Deployment:
 
 ```
-$ kubectl get deployments hello-world
-$ kubectl describe deployments hello-world
+$ kubectl get deployments kuron-deployment
+$ kubectl describe deployments kuron-deployment
 ```
 
 Display information about your ReplicaSet objects:
