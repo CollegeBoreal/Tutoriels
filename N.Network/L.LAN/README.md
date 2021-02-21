@@ -6,7 +6,7 @@
 
 ## VLAN
 
-[brtcl][C.brctl]
+[brtcl](C.brctl)
 
 [bridge](B.bridge)
 
