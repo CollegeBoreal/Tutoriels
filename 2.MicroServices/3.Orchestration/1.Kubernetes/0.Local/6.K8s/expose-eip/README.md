@@ -8,15 +8,22 @@ Exposing an External IP Address to Access an Application in a Cluster
 This page shows how to create a Kubernetes Service object that exposes an external IP address.
 
 Before you begin
-Install kubectl.
-Use a cloud provider like Google Kubernetes Engine or Amazon Web Services to create a Kubernetes cluster. This tutorial creates an external load balancer, which requires a cloud provider.
-Configure kubectl to communicate with your Kubernetes API server. For instructions, see the documentation for your cloud provider.
-Objectives
-Run five instances of a Hello World application.
-Create a Service object that exposes an external IP address.
-Use the Service object to access the running application.
-Creating a service for an application running in five pods
-Run a Hello World application in your cluster:
+
+Install `kubectl`.
+
+Use a cloud provider like Google Kubernetes Engine or Amazon Web Services to create a Kubernetes cluster. 
+
+This tutorial creates an internal load balancer, which requires a bare metal server.
+
+Configure `kubectl` to communicate with your Kubernetes API server. For instructions, see the documentation for a bare metal installation.
+
+:round_pushpin: Objectives
+
+* Run five instances of a Hello World application.
+* Create a Service object that exposes an external IP address.
+* Use the Service object to access the running application.
+* Creating a service for an application running in five pods
+* Run a Hello World application in your cluster:
 
 service/load-balancer-example.yaml Copy service/load-balancer-example.yaml to clipboard
 
