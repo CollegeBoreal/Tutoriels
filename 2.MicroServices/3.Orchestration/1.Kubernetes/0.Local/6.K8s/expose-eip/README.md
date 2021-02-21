@@ -122,14 +122,14 @@ $ kubectl apply -f kuron-svc-loadbalancer.yaml
 Display information about the Service:
 
 ```
-$ kubectl get services my-service
+$ kubectl get services kuron-loadbalancer
 ```
 
 The output is similar to:
 
 ```
-NAME         TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)    AGE
-my-service   LoadBalancer   10.3.245.137   104.198.205.71   8080/TCP   54s
+NAME                TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)    AGE
+kuron-loadbalancer  LoadBalancer   10.19.0.01    10.13.15.200     8080/TCP   54s
 ```
 
 Note: The type=LoadBalancer service is backed by external cloud providers, which is not covered in this example, please refer to this page for the details.
@@ -139,7 +139,7 @@ Note: If the external IP address is shown as <pending>, wait for a minute and en
 Display detailed information about the Service:
 
 ```
-kubectl describe services my-service
+kubectl describe services kuron-loadbalancer
 ```
 
 The output is similar to:
@@ -181,7 +181,16 @@ hello-world-2895499144-segjf ...  10.0.2.5   gke-cluster-1-default-pool-e0b8d269
 Use the external IP address (LoadBalancer Ingress) to access the Hello World application:
 
 ```
-curl http://<external-ip>:<port>
+$ curl http://10.13.15.200:80
+Tu as touché kuron-deployment-55878fd4cd-9k7zs
+% curl http://10.13.15.200:80
+Tu as touché kuron-deployment-55878fd4cd-9k7zs
+% curl http://10.13.15.200:80
+Tu as touché kuron-deployment-55878fd4cd-9k7zs
+$ curl http://10.13.15.200:80
+Tu as touché kuron-deployment-55878fd4cd-rjvfh
+$ curl http://10.13.15.200:80
+Tu as touché kuron-deployment-55878fd4cd-9k7zs
 ```
 
 where <external-ip> is the external IP address (LoadBalancer Ingress) of your Service, and <port> is the value of Port in your Service description. If you are using minikube, typing minikube service my-service will automatically open the Hello World application in a browser.
