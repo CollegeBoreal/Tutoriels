@@ -106,9 +106,8 @@ EOF
 
 :bulb: NOTE
 
-You must set `spec.type` to LoadBalancer.
-
-The `lb.kubesphere.io/v1alpha1: porter` `annotation` specifies that the service uses `Porter`.
+* You must set `spec.type` to LoadBalancer.
+* The `lb.kubesphere.io/v1alpha1: porter` `annotation` specifies that the service uses `Porter`.
 
 The `protocol.porter.kubesphere.io/v1alpha1: layer2` `annotation` specifies that `Porter` is used in `Layer 2` mode.
 
