@@ -7,12 +7,15 @@
 | [Expose IP](expose-eip)           | Expose External IP Address         | 
 
 
-Check if you can run a pod
+- [ ] run a pod
 
 ```
 $ kubectl apply -f https://k8s.io/examples/pods/commands.yaml
 pod/command-demo created
 ```
+
+- [ ] Check its status
+
 
 ```
 $ kubectl get pods
@@ -20,14 +23,28 @@ NAME           READY   STATUS              RESTARTS   AGE
 command-demo   0/1     ContainerCreating   0          16s
 ```
 
-```
-% kubectl run --image=nginx nginx-server --port=80 --env="DOMAIN=cluster"
-```
+- [ ] When completed
 
 ```
-% kubectl expose deployment nginx-server --port=80 --name=nginx-http     
+$ kubectl get pods      
+NAME                                READY   STATUS      RESTARTS   AGE
+command-demo                        0/1     Completed   0          16h
 ```
 
+- [ ] [Delete a completed pod](https://stackoverflow.com/questions/55072235/how-to-delete-completed-kubernetes-pod)
+
+```
+% kubectl get pod --field-selector=status.phase==Succeeded
+NAME                            READY   STATUS      RESTARTS   AGE
+command-demo                    0/1     Completed   0          16h
+```
+
+Apply a filter
+
+```
+$ kubectl delete pod --field-selector=status.phase==Succeeded
+pod "command-demo" deleted
+```
 
 :x: Troubleshooting
 
