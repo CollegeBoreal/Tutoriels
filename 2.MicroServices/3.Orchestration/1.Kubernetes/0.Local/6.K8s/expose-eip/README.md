@@ -14,11 +14,11 @@ This page shows how to create a Kubernetes Service object that exposes an extern
 
 Before you begin
 
-Install `kubectl`.
+- [ ] Install `kubectl`.
 
-Use a cloud provider like Google Kubernetes Engine or Amazon Web Services to create a Kubernetes cluster. 
+- [ ] Use `kubeadm` to create a Kubernetes cluster. 
 
-This tutorial creates an internal load balancer, which requires a bare metal server.
+This tutorial creates an internal load balancer, which requires bare metal servers.
 
 Configure `kubectl` to communicate with your Kubernetes API server. For instructions, see the documentation for a bare metal installation.
 
