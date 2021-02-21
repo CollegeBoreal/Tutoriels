@@ -54,6 +54,13 @@ job.batch "porter-admission-patch" deleted
 validatingwebhookconfiguration.admissionregistration.k8s.io "porter-admission" deleted
 ```
 
+
+:x: Troubleshooting
+
+:round_pushpin: Terminating Issue
+
+https://github.com/kubernetes/kubernetes/issues/19317
+
 ```
 $ kubectl get po -n porter-system
 NAME                            READY   STATUS        RESTARTS   AGE
@@ -61,9 +68,6 @@ porter-admission-create-smww9   0/1     Terminating   0          9h
 porter-admission-patch-j5wmx    0/1     Terminating   0          9h
 ```
 
-:x: Troubleshooting
-
-https://github.com/kubernetes/kubernetes/issues/19317
 
 Apply the script 
 
