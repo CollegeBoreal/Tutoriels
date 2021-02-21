@@ -96,7 +96,7 @@ PS > kubectl config use-context docker-for-desktop
 | cheatsheet                                                                                            | Comments | 
 |-------------------------------------------------------------------------------------------------------|----------|
 | [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete) |          |
-| [BASH]([Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash)          |          |
+| [BASH](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash)          |          |
 | ZSH
 | Kubectl context and configuration
 | Kubectl apply
