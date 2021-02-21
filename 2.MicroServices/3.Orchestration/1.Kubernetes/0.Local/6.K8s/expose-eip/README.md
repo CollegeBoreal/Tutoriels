@@ -154,7 +154,6 @@ $ kubectl describe services kuron-loadbalancer
 The output is similar to:
 
 ```yaml
-kubectl describe services kuron-loadbalancer
 Name:                     kuron-loadbalancer
 Namespace:                default
 Labels:                   eip.porter.kubesphere.io/v1alpha2=porter-layer2-eip
