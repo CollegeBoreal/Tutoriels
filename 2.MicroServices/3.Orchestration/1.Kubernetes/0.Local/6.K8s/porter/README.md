@@ -67,6 +67,38 @@ $ kubectl annotate nodes orion \
           layer2.porter.kubesphere.io/v1alpha1="10.13.15.200"
 ```
 
+## :three: Create an Eip Object
+
+The `Eip object functions` as an `IP address pool` for Porter.
+
+Run the following command to create a YAML file for the Eip object:
+
+- [ ] Edit the `porter-layer2-eip.yaml` and add the following information `IP pool` to the YAML file:
+
+```
+apiVersion: network.kubesphere.io/v1alpha2
+kind: Eip
+metadata:
+  name: porter-layer2-eip
+spec:
+  address: 10.13.15.200-10.13.15.202
+  interface: enp3s0f0
+  protocol: layer2
+```
+
+  NOTE
+
+  The IP addresses specified in spec.address must be on the same network segment as the Kubernetes cluster nodes.
+
+  For details about the fields in the Eip YAML configuration, see Configure IP Address Pools Using Eip.
+
+Run the following command to create the Eip object:
+
+```
+$ kubectl apply -f porter-layer2-eip.yaml
+```
+
+
 ## :x: Losing cluster access
 
 At a certain point when installing the `Porter` L2 Load Balancer you will lose access to the cluster, including SSH access
