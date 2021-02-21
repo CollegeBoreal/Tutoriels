@@ -51,9 +51,16 @@ $ ip link
     link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netnsid 1
 ```
 
-In this example, the `orion` node, which is used as the `control plane`, where Porter is installed has two NICs (`enp3s0f0 10.13.15.200` and `others <not defined>`), and `enpf0s0 10.13.15.200` will be used for Porter.
+Note that the `enp3s0f0` NIC (link/ether) has an `UP` state and has its own MAC address `3c:d9:2b:ec:fb:a4` 
 
-Run the following command to annotate `orion` (control plane) to specify the `NIC`:
+```
+2: enp3s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 3c:d9:2b:ec:fb:a4 brd ff:ff:ff:ff:ff:ff
+```
+
+In this example, the `orion` node, which is used as the `control plane`, where `Porter` is installed has two NICs (`enp3s0f0 10.13.15.200` and `others <not defined>`), and `enpf0s0 10.13.15.200` will be used for Porter.
+
+Run the following command on `orion` (control plane) to annotate the `NIC` at a specific IP address:
 
 ```
 $ kubectl annotate nodes orion \
