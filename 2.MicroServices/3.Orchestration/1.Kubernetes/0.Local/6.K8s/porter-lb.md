@@ -60,3 +60,13 @@ NAME                            READY   STATUS        RESTARTS   AGE
 porter-admission-create-smww9   0/1     Terminating   0          9h
 porter-admission-patch-j5wmx    0/1     Terminating   0          9h
 ```
+
+:x: Troubleshooting
+
+https://github.com/kubernetes/kubernetes/issues/19317
+
+Apply the script 
+
+```
+$ bash kill-kube-ns porter-system
+```
