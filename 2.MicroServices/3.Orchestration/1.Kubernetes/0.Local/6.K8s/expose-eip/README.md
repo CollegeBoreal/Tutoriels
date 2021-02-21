@@ -64,7 +64,7 @@ EOF
 $ kubectl apply -f kuron-deployment.yaml 
 ```
 
-The preceding command creates a Deployment and an associated ReplicaSet. The ReplicaSet has five Pods each of which runs the Hello World application.
+The preceding command creates a Deployment and an associated `ReplicaSet`. The `ReplicaSet` has two Pods each of which runs the `kuron` application.
 
 Display information about the Deployment:
 
@@ -80,7 +80,29 @@ $ kubectl get replicasets
 $ kubectl describe replicasets
 ```
 
-Create a Service object that exposes the deployment:
+:round_pushpin: Create a Service object that exposes the deployment:
+
+```yaml
+$ cat << EOF > kuron-svc-loadbalancer.yaml 
+apiVersion: v1
+kind: Service
+metadata:
+  name: porter-layer2-svc
+  annotations:
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+spec:
+  selector:
+    app: porter-layer2
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  externalTrafficPolicy: Cluster
+EOF
+```
 
 ```
 $ kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
