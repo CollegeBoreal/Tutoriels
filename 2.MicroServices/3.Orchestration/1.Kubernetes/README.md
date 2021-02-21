@@ -48,18 +48,18 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 }
 ```
 
-## Autocompletion (bash)
+## Autocompletion (bash or zsh)
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion
 
 ```
-$ source <(kubectl completion bash)
+$ source <(kubectl completion bash) # for zsh replace bash with zsh
 ```
 
-- [ ] Source the completion script in your `~/.bashrc` file:
+- [ ] Source the completion script in your `~/.bashrc` or `~/.zshrc`file:
 
 ```
-$ echo 'source <(kubectl completion bash)' >>~/.bashrc
+$ echo 'source <(kubectl completion bash)' >>~/.bashrc # for zsh replace bash with zsh
 ```
 
 - [ ] Add the completion script to the `/etc/bash_completion.d` directory: (on Linux)
