@@ -4,7 +4,7 @@
 |-----------------------------------|----------|
 | [Control Plane](control-plane.md) |          | 
 | [Data Plane](data-plane.md)       |          | 
-| [Expose IP](expose-ip)       |          | 
+| [Expose IP](expose-eip)           | Expose External IP Address         | 
 
 
 Check if you can run a pod
