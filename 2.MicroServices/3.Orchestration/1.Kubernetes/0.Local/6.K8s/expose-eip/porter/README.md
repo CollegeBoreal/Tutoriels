@@ -75,7 +75,7 @@ Run the following command to create a YAML file for the Eip object:
 
 - [ ] Create a [here document](https://en.wikipedia.org/wiki/Here_document) called `porter-layer2-eip.yaml` and add the following information `IP pool` to the YAML file:
 
-```
+```yaml
 $ cat << EOF > porter-layer2-eip.yaml
 apiVersion: network.kubesphere.io/v1alpha2
 kind: Eip
