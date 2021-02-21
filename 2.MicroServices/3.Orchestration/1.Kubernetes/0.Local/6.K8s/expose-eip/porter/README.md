@@ -14,7 +14,7 @@ $ kubectl edit configmap kube-proxy --namespace kube-system
 
 - [ ] In the `kube-proxy ConfigMap YAML` configuration, set `data.config.conf.ipvs.strictARP` to `true`.
 
-```
+```yaml
 ipvs:
   strictARP: true
 ```
