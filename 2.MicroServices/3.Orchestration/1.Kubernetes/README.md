@@ -89,6 +89,14 @@ CURRENT   NAME                                 CLUSTER                          
 PS > kubectl config use-context docker-for-desktop
 ```
 
+## :ab: Interacting with cluster
+
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-nodes-and-cluster
+
+```
+$ kubectl cluster-info dump
+```
+
 # Références
 
 [Google To The World](https://cloud.google.com/blog/products/gcp/from-google-to-the-world-the-kubernetes-origin-story)
