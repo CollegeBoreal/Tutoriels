@@ -34,5 +34,6 @@ In this example, the `orion` node, which is used as the `control plane`, where P
 Run the following command to annotate `orion` (control plane) to specify the `NIC`:
 
 ```
-$ kubectl annotate nodes master1 layer2.porter.kubesphere.io/v1alpha1="10.13.15.200"
+$ kubectl annotate nodes orion \
+          layer2.porter.kubesphere.io/v1alpha1="10.13.15.200"
 ```
