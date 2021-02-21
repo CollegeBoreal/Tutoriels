@@ -1,11 +1,15 @@
 # Expose EIP (External IP Address)
 
-https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/
-
 
 Exposing an External IP Address to Access an Application in a Cluster
 
 This page shows how to create a Kubernetes Service object that exposes an external IP address.
+
+| Link | Comments |
+|------|----------|
+| [expose-external-ip-address](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address) | | 
+
+
 
 Before you begin
 
