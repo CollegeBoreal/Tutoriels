@@ -73,9 +73,10 @@ The `Eip object functions` as an `IP address pool` for Porter.
 
 Run the following command to create a YAML file for the Eip object:
 
-- [ ] Edit the `porter-layer2-eip.yaml` and add the following information `IP pool` to the YAML file:
+- [ ] Create a [here document](https://en.wikipedia.org/wiki/Here_document) called `porter-layer2-eip.yaml` and add the following information `IP pool` to the YAML file:
 
 ```
+$ cat << EOF > porter-layer2-eip.yaml
 apiVersion: network.kubesphere.io/v1alpha2
 kind: Eip
 metadata:
@@ -84,6 +85,7 @@ spec:
   address: 10.13.15.200-10.13.15.202
   interface: enp3s0f0
   protocol: layer2
+EOF
 ```
 
 :bulb: NOTE
