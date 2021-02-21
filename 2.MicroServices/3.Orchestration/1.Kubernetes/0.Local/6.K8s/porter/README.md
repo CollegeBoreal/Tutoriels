@@ -100,4 +100,4 @@ $ kubectl apply -f porter-layer2-eip.yaml
 
 ## :x: Losing cluster access
 
-At a certain point when installing the `Porter` L2 Load Balancer you will lose access to the cluster, including SSH access
+At a certain point when installing the `Porter` L2 Load Balancer you will lose access to the cluster, including SSH access but it comes back
