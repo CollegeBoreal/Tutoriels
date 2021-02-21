@@ -6,30 +6,52 @@ https://porterlb.io/docs/getting-started/usage/use-porter-in-layer-2-mode/
 
 In Layer 2 mode, you need to enable strictARP for kube-proxy so that all NICs in the Kubernetes cluster stop answering ARP requests from other NICs and Porter handles ARP requests instead.
 
-Log in to the Kubernetes cluster and run the following command to edit the `kube-proxy ConfigMap`:
+- [ ] Log in to the Kubernetes cluster and run the following command to edit the `kube-proxy ConfigMap`:
 
 ```
 $ kubectl edit configmap kube-proxy --namespace kube-system
 ```
 
-In the `kube-proxy ConfigMap YAML` configuration, set `data.config.conf.ipvs.strictARP` to `true`.
+- [ ] In the `kube-proxy ConfigMap YAML` configuration, set `data.config.conf.ipvs.strictARP` to `true`.
 
 ```
 ipvs:
   strictARP: true
 ```
 
-Run the following command to restart kube-proxy:
+- [ ] Run the following command to restart `kube-proxy`:
 
 ```
-$ kubectl rollout restart daemonset kube-proxy -n kube-system
+$ kubectl rollout restart daemonset kube-proxy --namespace kube-system
 ```
 
 ## :two: Specify the NIC Used for Porter
 
 If the node where Porter is installed has multiple `NICs`, you need to specify the `NIC` used for Porter in `Layer 2` mode. You can skip this step if the node has only one `NIC`.
 
-In this example, the `orion` node, which is used as the `control plane`, where Porter is installed has two NICs (`enpf0s0 10.13.15.200` and `enpf0s1 <not defined>`), and `enpf0s0 10.13.15.200` will be used for Porter.
+```
+$ ip link
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp3s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 3c:d9:2b:ec:fb:a4 brd ff:ff:ff:ff:ff:ff
+3: enp3s0f1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/ether 3c:d9:2b:ec:fb:a6 brd ff:ff:ff:ff:ff:ff
+4: enp4s0f0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/ether 3c:d9:2b:ec:fb:b0 brd ff:ff:ff:ff:ff:ff
+5: enp4s0f1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/ether 3c:d9:2b:ec:fb:b2 brd ff:ff:ff:ff:ff:ff
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:a1:01:96:da brd ff:ff:ff:ff:ff:ff
+7: tunl0@NONE: <NOARP,UP,LOWER_UP> mtu 1480 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+10: calicf6f6b1c134@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1480 qdisc noqueue state UP mode DEFAULT group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netnsid 0
+11: cali4911fcea19a@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1480 qdisc noqueue state UP mode DEFAULT group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netnsid 1
+```
+
+In this example, the `orion` node, which is used as the `control plane`, where Porter is installed has two NICs (`enp3s0f0 10.13.15.200` and `others <not defined>`), and `enpf0s0 10.13.15.200` will be used for Porter.
 
 Run the following command to annotate `orion` (control plane) to specify the `NIC`:
 
