@@ -41,3 +41,11 @@ $ helm search hub moodle
 URL                                               	CHART VERSION	APP VERSION	DESCRIPTION                                       
 https://artifacthub.io/packages/helm/bitnami/mo...	11.0.3       	3.10.1     	Moodle(TM) is a learning platform designed to p...
 ```
+
+- [ ] List packages
+
+```
+$ helm ls
+NAME  	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART       	APP VERSION
+porter	default  	1       	2021-02-21 02:16:33.823649987 +0000 UTC	deployed	porter-0.2.1	0.4.1      
+```
