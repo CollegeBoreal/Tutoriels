@@ -24,34 +24,34 @@ Configure `kubectl` to communicate with your Kubernetes API server. For instruct
 
 :round_pushpin: Objectives
 
-* Run five instances of a Hello World application.
+* Run two instances of a `kuron` application.
 * Create a Service object that exposes an external IP address.
 * Use the Service object to access the running application.
-* Creating a service for an application running in five pods
-* Run a Hello World application in your cluster:
+* Creating a service for an application running in two pods
+* Run a `kuron` application in your cluster:
 
-service/load-balancer-example.yaml Copy service/load-balancer-example.yaml to clipboard
+`kuron-deployment.yaml` 
 
 ```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: kuron-deployment
   labels:
-    app.kubernetes.io/name: load-balancer-example
-  name: hello-world
+    app: kuron
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
-      app.kubernetes.io/name: load-balancer-example
+      app: kuron
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: load-balancer-example
+        app: kuron
     spec:
       containers:
-      - image: gcr.io/google-samples/node-hello:1.0
-        name: hello-world
+      - name: kuron
+        image: collegeboreal/kuron:latest
         ports:
         - containerPort: 8080
 ```
