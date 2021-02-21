@@ -1,9 +1,10 @@
 # k8s :wheel_of_dharma: 
 
-| Plane Type | Comments |
-|------------|----------|
-| [Control Plane](control-plane.md) | | 
-| [Data Plane](data-plane.md) | | 
+| Plane Type                        | Comments |
+|-----------------------------------|----------|
+| [Control Plane](control-plane.md) |          | 
+| [Data Plane](data-plane.md)       |          | 
+| [Expose IP](expose-ip)       |          | 
 
 
 Check if you can run a pod
