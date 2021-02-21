@@ -50,8 +50,22 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ## Autocompletion (bash)
 
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion
+
 ```
 $ source <(kubectl completion bash)
+```
+
+- [ ] Source the completion script in your `~/.bashrc` file:
+
+```
+$ echo 'source <(kubectl completion bash)' >>~/.bashrc
+```
+
+- [ ] Add the completion script to the `/etc/bash_completion.d` directory: (on Linux)
+
+```
+$ kubectl completion bash >/etc/bash_completion.d/kubectl
 ```
 
 - [x] Le context
