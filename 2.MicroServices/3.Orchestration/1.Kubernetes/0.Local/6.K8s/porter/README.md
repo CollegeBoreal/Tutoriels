@@ -86,11 +86,10 @@ spec:
   protocol: layer2
 ```
 
-  NOTE
+:bulb: NOTE
 
-  The IP addresses specified in spec.address must be on the same network segment as the Kubernetes cluster nodes.
-
-  For details about the fields in the Eip YAML configuration, see Configure IP Address Pools Using Eip.
+The IP addresses specified in spec.address must be on the same network segment as the Kubernetes cluster nodes.
+For details about the fields in the Eip YAML configuration, see Configure IP Address Pools Using Eip.
 
 Run the following command to create the Eip object:
 
