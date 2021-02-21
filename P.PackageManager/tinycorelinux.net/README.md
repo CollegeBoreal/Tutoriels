@@ -3,7 +3,7 @@
 
 https://github.com/tatsushid/docker-tinycore
 
-TCE version
+[TCE](http://distro.ibiblio.org/tinycorelinux/tce.html) version - TCE: Tiny Core Extension
 
 ```
 $ version
