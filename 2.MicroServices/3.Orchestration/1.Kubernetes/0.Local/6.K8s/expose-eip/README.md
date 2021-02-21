@@ -120,13 +120,6 @@ Run the following command to create the service:
 $ kubectl apply -f kuron-svc-loadbalancer.yaml 
 ```
 
-## :x: Lock
-
-:warning: 
-  *  ran at 2021/02/21T01:45:00PM EST (lock)
-  *  unlock at 2021/02/21T02:07:00PM EST (unlock)
-
-
 Display information about the Service:
 
 ```
@@ -140,9 +133,18 @@ NAME                 TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)       
 kuron-loadbalancer   LoadBalancer   10.100.75.64   10.13.15.200   80:30464/TCP   26m
 ```
 
-Note: The type=LoadBalancer service is backed by external cloud providers, which is not covered in this example, please refer to this page for the details.
+:bulb: Note: 
 
-Note: If the external IP address is shown as <pending>, wait for a minute and enter the same command again.
+* The `type=LoadBalancer` service is usually backed by external cloud providers, which is not covered in this example, since it is using `Porter` load balancer.
+* If the external IP address is shown as `<pending>`, wait for a minute and enter the same command again.
+* The `kubernetes` cluster may also take some time to come back (around 10 minutes) 
+
+##### :x: <pending>
+
+:warning: 
+  *  ran at 2021/02/21T01:45:00PM EST (lock)
+  *  unlock at 2021/02/21T02:07:00PM EST (unlock)
+
 
 Display detailed information about the Service:
 
