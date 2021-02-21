@@ -7,7 +7,8 @@ This page shows how to create a Kubernetes Service object that exposes an extern
 
 | Link | Comments |
 |------|----------|
-| [expose-external-ip-address](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address) | | 
+| [expose-external-ip-address](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address) | Document Template that uses GKE cloud provider for Load Balancing | 
+| [use-porter-in-layer-2-mode](https://porterlb.io/docs/getting-started/usage/use-porter-in-layer-2-mode) | Page that shows how to use a local (Bare Metal) load balancer |
 
 
 
