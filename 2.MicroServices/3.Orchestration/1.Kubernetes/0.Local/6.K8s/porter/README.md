@@ -66,3 +66,7 @@ Run the following command on `orion` (control plane) to annotate the `NIC` at a 
 $ kubectl annotate nodes orion \
           layer2.porter.kubesphere.io/v1alpha1="10.13.15.200"
 ```
+
+## :x: Losing cluster access
+
+At a certain point when installing the `Porter` L2 Load Balancer you will lose access to the cluster, including SSH access
