@@ -18,3 +18,15 @@ $ kubectl get pods
 NAME           READY   STATUS              RESTARTS   AGE
 command-demo   0/1     ContainerCreating   0          16s
 ```
+
+```
+$ kubectl describe pods
+```
+
+```
+% kubectl run --image=nginx nginx-server --port=80 --env="DOMAIN=cluster"
+```
+
+```
+% kubectl expose deployment nginx-server --port=80 --name=nginx-http     
+```
