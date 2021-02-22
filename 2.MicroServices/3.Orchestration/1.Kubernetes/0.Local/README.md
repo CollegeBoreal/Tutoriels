@@ -1,5 +1,8 @@
+# :wheel_of_dharma: Local Kubernetes  
 
-# Deploying locally for development purposes on :
+Local would mean, deplying a kubernetes cluster on a PC or on bare metal servers
+
+## :a: Deploying locally for development purposes on :
 
 ### :one: [Docker Desktop](./1.DockerDesktop)
 
@@ -25,7 +28,7 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker-desktop/
 
 
-## Deploying through Cloud Providers for production purposes on :
+## :b: Deploying through Cloud Providers for production purposes on :
 
 ### Cloud Service Comparison  
 
