@@ -7,7 +7,7 @@ Avec [brew.sh](http://brew.sh/)
 :round_pushpin: Executer la commande suivante dans le `Terminal`
 
 ```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 :round_pushpin: Verifier l'installation
