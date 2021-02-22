@@ -47,11 +47,6 @@ https://www.youtube.com/watch?v=DjpVtNjiXSU
 
 https://www.youtube.com/watch?v=yOpYYYRuDQ0
 
-
-## 3 nodes Ubuntu 18.04
-
-https://computingforgeeks.com/how-to-setup-3-node-kubernetes-cluster-on-ubuntu-18-04-with-weave-net-cni/
-
 ## compose-on-kubernetes
 
 https://github.com/docker/compose-on-kubernetes
