@@ -298,6 +298,8 @@ CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPAC
 | [deploy-kubernetes-cluster-on-ubuntu-with-kubeadm](https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm) | Ubuntu focal | Calico | | 
 | [how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux](https://linuxconfig.org/how-to-install-kubernetes-on-ubuntu-20-04-focal-fossa-linux) | Ubuntu focal | Flannel  | |
 
+https://blog.alexellis.io/kubernetes-in-10-minutes/
+
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/ (adding WindowsNodes)
 
 https://info.rancher.com/kubernetes-networking-deep-dive (ebook)
