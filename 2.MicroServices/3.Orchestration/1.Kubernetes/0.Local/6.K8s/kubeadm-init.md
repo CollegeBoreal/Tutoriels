@@ -99,7 +99,9 @@ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
 :a: With control-plane
 
 ```
-$ $ sudo kubeadm init   --pod-network-cidr=172.16.0.0/16   --control-plane-endpoint=orion
+$ $ sudo kubeadm init \
+>   --pod-network-cidr=172.16.0.0/16 \
+>   --control-plane-endpoint=orion
 [init] Using Kubernetes version: v1.20.4
 [preflight] Running pre-flight checks
 	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
@@ -136,13 +138,13 @@ $ $ sudo kubeadm init   --pod-network-cidr=172.16.0.0/16   --control-plane-endpo
 [control-plane] Creating static Pod manifest for "kube-scheduler"
 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
-[apiclient] All control plane components are healthy after 17.502605 seconds
+[apiclient] All control plane components are healthy after 17.002780 seconds
 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
 [kubelet] Creating a ConfigMap "kubelet-config-1.20" in namespace kube-system with the configuration for the kubelets in the cluster
 [upload-certs] Skipping phase. Please see --upload-certs
 [mark-control-plane] Marking the node orion as control-plane by adding the labels "node-role.kubernetes.io/master=''" and "node-role.kubernetes.io/control-plane='' (deprecated)"
 [mark-control-plane] Marking the node orion as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: zupd2o.vovt0umrytwpp9fi
+[bootstrap-token] Using token: k7tcdn.lsg5g9jbm5lwjm7a
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
@@ -172,12 +174,12 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 You can now join any number of control-plane nodes by copying certificate authorities
 and service account keys on each node and then running the following as root:
 
-  kubeadm join orion:6443 --token zupd2o.vovt0umrytwpp9fi \
-    --discovery-token-ca-cert-hash sha256:507a985cd8a2c4a9426594c2e0e30a234f963f98f8c9c3d1e90f5981c32937e9 \
+  kubeadm join orion:6443 --token k7tcdn.lsg5g9jbm5lwjm7a \
+    --discovery-token-ca-cert-hash sha256:ed71e2c76d24983d6f3c854b31ca9deee829d5487efec960c6b28d708ec63550 \
     --control-plane 
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join orion:6443 --token zupd2o.vovt0umrytwpp9fi \
-    --discovery-token-ca-cert-hash sha256:507a985cd8a2c4a9426594c2e0e30a234f963f98f8c9c3d1e90f5981c32937e9 
+kubeadm join orion:6443 --token k7tcdn.lsg5g9jbm5lwjm7a \
+    --discovery-token-ca-cert-hash sha256:ed71e2c76d24983d6f3c854b31ca9deee829d5487efec960c6b28d708ec63550 
 ```
