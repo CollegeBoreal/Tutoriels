@@ -15,7 +15,7 @@ PS > choco install openconnect-gui
 :m: Sur Mac de [OpenConnect-GUI](https://chocolatey.org/packages/openconnect-gui)
 
 ```
-% brew cask install openconnect-gui
+% brew install openconnect-gui
 ```
 
 ## :a: Connection
