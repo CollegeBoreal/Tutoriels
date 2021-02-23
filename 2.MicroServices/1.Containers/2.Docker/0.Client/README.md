@@ -14,10 +14,10 @@ Le `docker` CLI (Command Level Interface) permet de lancer les instructions perm
 PS > choco install docker-cli
 ```
 
-:apple: MacOS
+:apple: MacOS :m::one:
 
 ```
-% brew cask install docker
+% brew install docker
 ```
 
 ## :a: Utilisation
