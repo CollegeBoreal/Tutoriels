@@ -35,7 +35,7 @@ $ npm install nativescript --global
 
 ```
 $ ns --version
-7.0.11
+7.2.0
 ```
 
 ##### :x: Autres versions 
