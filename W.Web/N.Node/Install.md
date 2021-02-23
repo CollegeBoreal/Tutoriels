@@ -10,7 +10,7 @@
 PS > choco install nvm
 ```
 
-:pushpin: MacOS
+:pushpin: MacOS :m::one: :tada:
 
 En fonction de ton environnement soit `bash` soit `zsh`
 
