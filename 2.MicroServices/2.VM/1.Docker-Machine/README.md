@@ -17,7 +17,7 @@ https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
 PS > choco install docker-machine
 ```
 
-:pushpin: :strwaberry: MacOS
+:pushpin: :strawberry: MacOS
 
 ```
 PS > brew install docker-machine
@@ -25,7 +25,7 @@ PS > brew install docker-machine
 
 * [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
 
-:pushpin: :pinguin: Linux
+:pushpin: :penguin: Linux
 
 ```
 $ base=https://github.com/docker/machine/releases/download/v0.16.0 &&
