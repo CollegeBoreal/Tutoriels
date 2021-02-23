@@ -11,20 +11,29 @@ https://docs.docker.com/machine/get-started-cloud/#drivers-for-cloud-providers
 
 * Installer Docker Machine - avec un Package Manager
 
-:pushpin: Windows
+:pushpin: :computer: Windows
 
 ```
 PS > choco install docker-machine
 ```
 
-
-* [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
-
-:pushpin: MacOS
+:pushpin: :strwaberry: MacOS
 
 ```
 PS > brew install docker-machine
 ```
+
+* [Installer Docker Machine - Manuellement](https://docs.docker.com/v17.09/machine/install-machine/)   
+
+:pushpin: :pinguin: Linux
+
+```
+$ base=https://github.com/docker/machine/releases/download/v0.16.0 &&
+  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&
+  chmod +x /usr/local/bin/docker-machine
+```
+
 
 ## :one: Hypervisor or Cloud Environment
 
