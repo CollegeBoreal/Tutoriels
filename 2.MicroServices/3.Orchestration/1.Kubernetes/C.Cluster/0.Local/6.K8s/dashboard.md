@@ -52,5 +52,5 @@ EOF
 ```
 $ kubectl --namespace kubernetes-dashboard describe secret \
  `kubectl --namespace kubernetes-dashboard get secret \
- | grep admin-user | awk '{print $1}'` | grep 'token:'
+ | grep admin-user | awk '{print $1}'` | grep 'token:' | awk '{print $2}'
  ```
