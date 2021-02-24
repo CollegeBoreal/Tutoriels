@@ -14,7 +14,7 @@ NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
 kubernetes-dashboard   1/1     1            1           22h
 ```
 
-- [ ] Create admin user service account
+- [ ] Create [sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md) service account
 
 Since the dashboard shows us resources across our whole cluster, we will need to create an admin account `admin-user` for it.
 
