@@ -46,3 +46,11 @@ subjects:
   namespace: kubernetes-dashboard
 EOF
 ```
+
+- [ ] Let's get the generated token
+
+```
+$ kubectl --namespace kubernetes-dashboard describe secret \ 
+ `kubectl --namespace kubernetes-dashboard get secret \
+ | grep admin-user | awk '{print $1}'` | grep 'token:'
+ ```
