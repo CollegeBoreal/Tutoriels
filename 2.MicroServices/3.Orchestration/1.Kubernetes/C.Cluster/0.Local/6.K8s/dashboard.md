@@ -47,6 +47,30 @@ subjects:
 EOF
 ```
 
+```yaml
+$ cat << EOF > dashboard-svc-loadbalancer.yaml 
+apiVersion: v1
+kind: Service
+metadata:
+  name: dashboard-loadbalancer
+  namespace: kubernetes-dashboard
+  annotations:
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+spec:
+  type: LoadBalancer
+  selector:
+    app: kubernetes-dashboard
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  externalTrafficPolicy: Cluster
+EOF
+```
+
+
 - [ ] Let's get the generated token
 
 ```
@@ -54,3 +78,5 @@ $ kubectl --namespace kubernetes-dashboard describe secret \
  `kubectl --namespace kubernetes-dashboard get secret \
  | grep admin-user | awk '{print $1}'` | grep 'token:' | awk '{print $2}'
  ```
+ 
+ 
