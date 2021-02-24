@@ -47,36 +47,21 @@ subjects:
 EOF
 ```
 
-```yaml
-$ cat << EOF > dashboard-svc-loadbalancer.yaml 
-apiVersion: v1
-kind: Service
-metadata:
-  name: dashboard-loadbalancer
-  namespace: kubernetes-dashboard
-  annotations:
-    lb.kubesphere.io/v1alpha1: porter
-    protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
-spec:
-  type: LoadBalancer
-  selector:
-    app: kubernetes-dashboard
-  ports:
-    - name: http
-      port: 9000
-      targetPort: 8001
-  externalTrafficPolicy: Cluster
-EOF
-```
+:bulb: Command line proxy
 
-
-- [ ] Let's get the generated token
+You can access Dashboard using the `kubectl` command-line tool by running the following command:
 
 ```
-$ kubectl --namespace kubernetes-dashboard describe secret \
- `kubectl --namespace kubernetes-dashboard get secret \
- | grep admin-user | awk '{print $1}'` | grep 'token:' | awk '{print $2}'
+$ kubectl proxy
+```
+
+`Kubectl` will make Dashboard available at `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy`
+
+- [ ] Let's get the [bearer token](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md#getting-a-bearer-token)
+
+```
+$ kubectl -n kubernetes-dashboard get secret \
+ `kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`
  ```
  
  
