@@ -64,8 +64,8 @@ spec:
     app: kubernetes-dashboard
   ports:
     - name: http
-      port: 80
-      targetPort: 8080
+      port: 9000
+      targetPort: 8001
   externalTrafficPolicy: Cluster
 EOF
 ```
