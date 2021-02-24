@@ -31,7 +31,7 @@ EOF
 - [ ] Create its `role`
 
 ```yaml
-kubectl apply -f - <<EOF
+$ kubectl apply -f - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
