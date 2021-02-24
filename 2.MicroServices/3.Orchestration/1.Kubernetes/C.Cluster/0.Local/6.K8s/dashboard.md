@@ -65,4 +65,5 @@ $ kubectl -n kubernetes-dashboard get secret \
    --output go-template="{{.data.token | base64decode}}"
  ```
  
+ Now copy the token and paste it into `Enter token` field on the login screen.
  
