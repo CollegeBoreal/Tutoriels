@@ -47,13 +47,31 @@ subjects:
 EOF
 ```
 
-:bulb: Command line proxy
+:bookmark: Command line proxy
 
 You can access Dashboard using the `kubectl` command-line tool by running the following command:
 
 ```
 $ kubectl proxy
 ```
+
+:star: Create a tunnel proxy from your PC to access the dashboard remotely
+
+```
+$ ssh -L 8001:127.0.0.1:8001 ubuntu@orion
+ubuntu@orion's password: <enter passwd>
+
+# on the control plane server
+ubuntu@orion:~$ kubectl proxy &
+```
+
+:x: if issue
+
+```
+$ netstat -lnp | grep 8001
+# kill the process
+```
+
 
 `Kubectl` will make Dashboard available at `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy`
 
