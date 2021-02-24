@@ -184,15 +184,16 @@ $ sudo kubeadm init \
 :round_pushpin: To start using your cluster, you need to run the following as a regular user:
 
 ```
-$ mkdir -p $HOME/.kube
-$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
+$ mkdir -p $HOME/.kube/config
+$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config/orion
+$ sudo chown $(id -u):$(id -g) $HOME/.kube/config/orion
+$ export KUBECONFIG=$HOME/.kube/config/orion
 ```
 
 Alternatively, if you are the root user, you can run:
 
 ```
-  export KUBECONFIG=/etc/kubernetes/admin.conf
+$ export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 
 :round_pushpin: Check the current context (when being on the control plane node)
