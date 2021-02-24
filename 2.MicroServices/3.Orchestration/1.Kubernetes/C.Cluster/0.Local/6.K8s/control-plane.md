@@ -274,10 +274,12 @@ orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>  
 
 ## :o: Controlling the cluster from Client Computer
 
-- [ ] Copy the :ice_cude: `kube` config file to your PC
+- [ ] Copy the :ice_cube: `kube` config file to your PC
 
 ```
-$ scp -i ~/.ssh/myprivate-key.pk ubuntu@10.13.15.200:.kube/config ~/.kube/config
+$ mkdir -p $HOME/.kube/config
+$ scp -i ~/.ssh/myprivate-key.pk ubuntu@10.13.15.200:.kube/config/orion ~/.kube/config/orion
+$ export KUBECONFIG=$HOME/.kube/config/orion
 ```
 
 - [ ] Get the context
