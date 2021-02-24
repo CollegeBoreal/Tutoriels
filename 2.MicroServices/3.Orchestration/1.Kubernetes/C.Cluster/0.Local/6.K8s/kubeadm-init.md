@@ -99,7 +99,7 @@ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
 :a: With control-plane
 
 ```
-$ $ sudo kubeadm init \
+$ sudo kubeadm init \
 >   --pod-network-cidr=172.16.0.0/16 \
 >   --control-plane-endpoint=orion
 [init] Using Kubernetes version: v1.20.4
@@ -138,13 +138,13 @@ $ $ sudo kubeadm init \
 [control-plane] Creating static Pod manifest for "kube-scheduler"
 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
-[apiclient] All control plane components are healthy after 17.002780 seconds
+[apiclient] All control plane components are healthy after 16.002756 seconds
 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
 [kubelet] Creating a ConfigMap "kubelet-config-1.20" in namespace kube-system with the configuration for the kubelets in the cluster
 [upload-certs] Skipping phase. Please see --upload-certs
 [mark-control-plane] Marking the node orion as control-plane by adding the labels "node-role.kubernetes.io/master=''" and "node-role.kubernetes.io/control-plane='' (deprecated)"
 [mark-control-plane] Marking the node orion as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: k7tcdn.lsg5g9jbm5lwjm7a
+[bootstrap-token] Using token: wdav4u.7ogqe6237rvcuc9o
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
@@ -174,12 +174,12 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 You can now join any number of control-plane nodes by copying certificate authorities
 and service account keys on each node and then running the following as root:
 
-  kubeadm join orion:6443 --token k7tcdn.lsg5g9jbm5lwjm7a \
-    --discovery-token-ca-cert-hash sha256:ed71e2c76d24983d6f3c854b31ca9deee829d5487efec960c6b28d708ec63550 \
+  kubeadm join orion:6443 --token wdav4u.7ogqe6237rvcuc9o \
+    --discovery-token-ca-cert-hash sha256:00be15698cb2286b8c44e29e697dc31a698d91c600177300e73556d0e108d013 \
     --control-plane 
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join orion:6443 --token k7tcdn.lsg5g9jbm5lwjm7a \
-    --discovery-token-ca-cert-hash sha256:ed71e2c76d24983d6f3c854b31ca9deee829d5487efec960c6b28d708ec63550 
+kubeadm join orion:6443 --token wdav4u.7ogqe6237rvcuc9o \
+    --discovery-token-ca-cert-hash sha256:00be15698cb2286b8c44e29e697dc31a698d91c600177300e73556d0e108d013
 ```
