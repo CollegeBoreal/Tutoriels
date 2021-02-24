@@ -98,8 +98,3 @@ Run the following command to create the Eip object:
 ```
 $ kubectl apply -f porter-layer2-eip.yaml
 ```
-
-
-## :warning: Losing cluster access when service in `<pending>` state
-
-At some point when installing a service on the `Porter` L2 Load Balancer, you will lose access to the cluster for about 20 minutes, including SSH access but eventually it comes back.
