@@ -2,6 +2,19 @@
 
 https://porterlb.io/docs/getting-started/usage/use-porter-in-layer-2-mode/
 
+## :zero: [Install Porter](https://porterlb.io/docs/getting-started/installation/install-porter-on-kubernetes/#install-porter-using-kubectl)
+
+```
+$ kubectl apply -f https://raw.githubusercontent.com/kubesphere/porter/master/deploy/porter.yaml
+```
+
+* Verify that porter is installed
+
+```
+$ kubectl get po -n porter-system
+```
+
+
 ## :one: Enable strictARP for kube-proxy
 
 In Layer 2 mode, you need to enable strictARP for kube-proxy so that all NICs in the Kubernetes cluster stop answering ARP requests from other NICs and Porter handles ARP requests instead.
