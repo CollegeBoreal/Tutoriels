@@ -11,7 +11,8 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubesphere/porter/master/de
 * Verify that porter is installed
 
 ```
-$ kubectl get po -n porter-system
+$ $ kubectl get pods | grep porter-manager 
+porter-manager-98cc6c799-wztpd      1/1     Running   0          42h
 ```
 
 
