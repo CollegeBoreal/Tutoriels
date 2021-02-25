@@ -179,7 +179,15 @@ Feb 18 03:33:28 ursa kubelet[7812]: E0218 03:33:28.168744    7812 kuberuntime_ma
 lines 1-22/22 (END)
 ```
 
+## :bangbang: Expired Token
 
+[kubernetes-unable-to-join-a-remote-master-node](https://stackoverflow.com/questions/61352209/kubernetes-unable-to-join-a-remote-master-node)
+
+* Generate a new token on the control plane
+
+```
+$ kubeadm token create --print-join-command
+```
 
 # References
 
