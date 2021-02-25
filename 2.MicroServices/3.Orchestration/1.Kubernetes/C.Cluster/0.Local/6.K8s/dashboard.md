@@ -80,7 +80,8 @@ $ netstat -lnp | grep 8001
 ```
 $ kubectl -n kubernetes-dashboard get secret \
  $(kubectl -n kubernetes-dashboard get sa/admin-user --output jsonpath="{.secrets[0].name}") \
-   --output go-template="{{.data.token | base64decode}}"
+   --output go-template="{{.data.token | base64decode}}" \
+   && echo ''
  ```
  
  Now copy the token and paste it into `Enter token` field on the login screen.
