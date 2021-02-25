@@ -86,3 +86,13 @@ $ kubectl -n kubernetes-dashboard get secret \
  
  Now copy the token and paste it into `Enter token` field on the login screen.
  
+ 
+ :bulb: you can also use kubectl proxy without using a tunnel but `ssh` needs to be enabled
+ 
+ $ kubectl proxy --accept-hosts='.*' --address orion
+Starting to serve on 10.13.15.200:8001
+ 
+ 
+# References
+ 
+https://stackoverflow.com/questions/62965122/is-it-possible-to-disable-kubernetes-dashboard-tls-check
