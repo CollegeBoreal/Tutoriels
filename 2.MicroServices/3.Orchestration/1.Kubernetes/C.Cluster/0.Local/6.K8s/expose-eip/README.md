@@ -83,7 +83,7 @@ $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
-  name: kuron-loadbalancer
+  name: kuron-deployment-service
   annotations:
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
@@ -113,14 +113,14 @@ EOF
 Display information about the Service:
 
 ```
-$ kubectl get services kuron-loadbalancer
+$ kubectl get services kuron-deployment-service
 ```
 
 The output is similar to:
 
 ```
-NAME                 TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)        AGE
-kuron-loadbalancer   LoadBalancer   10.100.75.64   10.13.15.200   80:30464/TCP   26m
+NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)        AGE
+kuron-deployment-service   LoadBalancer   10.100.75.64   10.13.15.200   80:30464/TCP   26m
 ```
 
 :bulb: Note: 
@@ -132,13 +132,13 @@ kuron-loadbalancer   LoadBalancer   10.100.75.64   10.13.15.200   80:30464/TCP  
 Display detailed information about the Service:
 
 ```
-$ kubectl describe services kuron-loadbalancer
+$ kubectl describe services kuron-deployment-service
 ```
 
 The output is similar to:
 
 ```yaml
-Name:                     kuron-loadbalancer
+Name:                     kuron-deployment-service
 Namespace:                default
 Labels:                   eip.porter.kubesphere.io/v1alpha2=porter-layer2-eip
 Annotations:              eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
@@ -199,7 +199,7 @@ Tu as touché kuron-deployment-55878fd4cd-9k7zs
 To delete the Service, enter this command:
 
 ```
-$ kubectl delete services kuron-loadbalancer
+$ kubectl delete services kuron-deployment-service
 ```
 
 To delete the `Deployment`, the `ReplicaSet`, and the `Pods` that are running the `kuron` application, enter this command:
