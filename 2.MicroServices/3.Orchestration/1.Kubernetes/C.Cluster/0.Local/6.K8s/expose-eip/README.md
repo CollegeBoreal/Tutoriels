@@ -43,7 +43,7 @@ metadata:
   labels:
     app: kuron
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: kuron
