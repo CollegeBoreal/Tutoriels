@@ -306,4 +306,6 @@ https://blog.alexellis.io/kubernetes-in-10-minutes/
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/ (adding WindowsNodes)
 
 https://info.rancher.com/kubernetes-networking-deep-dive (ebook)
+
+https://thenewstack.io/the-smallest-kubernetes-cluster-scaling-down-to-the-edge/
      
