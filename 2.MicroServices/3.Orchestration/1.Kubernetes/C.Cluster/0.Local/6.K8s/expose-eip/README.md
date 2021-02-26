@@ -60,10 +60,6 @@ spec:
 EOF
 ```
 
-```
-$ kubectl apply -f kuron-deployment.yaml 
-```
-
 The preceding command creates a Deployment and an associated `ReplicaSet`. The `ReplicaSet` has two Pods each of which runs the `kuron` application.
 
 Display information about the Deployment:
@@ -113,12 +109,6 @@ EOF
 * If `spec.externalTrafficPolicy` is set to `Cluster` (default value), Porter randomly selects a node from all Kubernetes cluster nodes to handle service requests. Pods on other nodes can also be reached over `kube-proxy`.
 * If `spec.externalTrafficPolicy` is set to `Local`, Porter randomly selects a node that contains a pod in the Kubernetes cluster to handle service requests. Only pods on the selected node can be reached.
 
-
-Run the following command to create the service:
-
-```
-$ kubectl apply -f kuron-svc-loadbalancer.yaml 
-```
 
 Display information about the Service:
 
