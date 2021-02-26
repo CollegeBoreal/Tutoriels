@@ -35,7 +35,7 @@ Configure `kubectl` to communicate with your Kubernetes API server. For instruct
 :round_pushpin: Run a `kuron` application in your cluster:
 
 ```yaml
-$ cat << EOF > kuron-deployment.yaml
+$ kubectl apply --filename - <<EOF
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -83,7 +83,7 @@ $ kubectl describe replicasets
 :round_pushpin: Create a Service object that exposes the deployment:
 
 ```yaml
-$ cat << EOF > kuron-svc-loadbalancer.yaml 
+$ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
