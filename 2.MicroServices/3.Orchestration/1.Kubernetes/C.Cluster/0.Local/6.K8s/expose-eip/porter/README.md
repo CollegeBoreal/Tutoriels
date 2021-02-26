@@ -5,7 +5,7 @@ https://porterlb.io/docs/getting-started/usage/use-porter-in-layer-2-mode/
 ## :zero: [Install Porter](https://porterlb.io/docs/getting-started/installation/install-porter-on-kubernetes/#install-porter-using-kubectl)
 
 ```
-$ kubectl apply -f https://raw.githubusercontent.com/kubesphere/porter/master/deploy/porter.yaml
+$ kubectl apply --filename https://raw.githubusercontent.com/kubesphere/porter/master/deploy/porter.yaml
 ```
 
 * Verify that porter is installed
@@ -85,12 +85,12 @@ $ kubectl annotate nodes orion \
 
 The `Eip object functions` as an `IP address pool` for Porter.
 
-Run the following command to create a YAML file for the Eip object:
+Run the following command to create a YAML file for the `Eip object`:
 
-- [ ] Create a [here document](https://en.wikipedia.org/wiki/Here_document) called `porter-layer2-eip.yaml` and add the following information `IP pool` to the YAML file: 
+- [ ] change the `IP pool` information in `spec.address` field an run the following command to create the `Eip object` and : 
 
 ```yaml
-$ kubectl apply -f - <<EOF
+$ kubectl apply --filename - <<EOF
 apiVersion: network.kubesphere.io/v1alpha2
 kind: Eip
 metadata:
@@ -107,8 +107,3 @@ EOF
 The IP addresses specified in `spec.address` must be on the same network segment as the Kubernetes cluster nodes.
 For details about the fields in the `Eip YAML` configuration, see Configure `IP Address Pools` Using `Eip`.
 
-Run the following command to create the Eip object:
-
-```
-$ kubectl apply -f porter-layer2-eip.yaml
-```
