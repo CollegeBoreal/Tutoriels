@@ -12,6 +12,8 @@ Installer :beer: [H.Homebrew](B.Brew)
 
 ## :ab: :penguin: Linux 
 
+Installer :penguin: [L.Linux](L.Linux)
+
 - [ ] Debian
 
 https://doc.ubuntu-fr.org/dpkg
