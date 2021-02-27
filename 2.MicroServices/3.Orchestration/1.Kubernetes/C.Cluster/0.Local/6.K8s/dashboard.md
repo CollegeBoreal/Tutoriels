@@ -73,7 +73,9 @@ $ netstat -lnp | grep 8001
 ```
 
 
-`Kubectl` will make Dashboard available at `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy`
+`Kubectl` will make Dashboard available at:
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
 - [ ] Let's get the [bearer token](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md#getting-a-bearer-token)
 
