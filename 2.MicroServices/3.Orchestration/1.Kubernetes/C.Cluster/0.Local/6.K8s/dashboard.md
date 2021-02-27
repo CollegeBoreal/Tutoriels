@@ -47,29 +47,13 @@ subjects:
 EOF
 ```
 
-:bookmark: Command line proxy
+
+## :bookmark: [Proxying API Server to localhost](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#optional-proxying-api-server-to-localhost)
 
 You can access Dashboard using the `kubectl` command-line tool by running the following command:
 
 ```
-$ kubectl proxy
-```
-
-:star: Create a tunnel proxy from your PC to access the dashboard remotely
-
-```
-$ ssh -L 8001:127.0.0.1:8001 ubuntu@orion
-ubuntu@orion's password: <enter passwd>
-
-# on the control plane server
-ubuntu@orion:~$ kubectl proxy &
-```
-
-:x: if issue
-
-```
-$ netstat -lnp | grep 8001
-# kill the process
+$ kubectl --kubeconfig ~/.kube/config/admin.conf proxy &
 ```
 
 
@@ -98,3 +82,22 @@ Starting to serve on 10.13.15.200:8001
 # References
  
 https://stackoverflow.com/questions/62965122/is-it-possible-to-disable-kubernetes-dashboard-tls-check
+
+
+#### :star: You cal also create a tunnel proxy from your PC to access the dashboard remotely (without installing the `kube-config` files)
+
+```
+$ ssh -L 8001:127.0.0.1:8001 ubuntu@orion
+ubuntu@orion's password: <enter passwd>
+
+# on the control plane server
+ubuntu@orion:~$ kubectl proxy &
+```
+
+:x: if issue
+
+```
+$ netstat -lnp | grep 8001
+# kill the process
+```
+
