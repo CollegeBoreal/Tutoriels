@@ -6,7 +6,7 @@
 
 ## :zero: Install the packages 
 
-[< previous page](../) to find the Google PGP Key :key: and Repository Artifact. (if not already installed)
+[< previous page](Control-Plane.md) to find the Google PGP Key :key: and Repository Artifact. (if not already installed)
 
 :round_pushpin: Install the `kubelet` service package
 
