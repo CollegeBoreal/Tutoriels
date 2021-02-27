@@ -5,3 +5,9 @@
 
 https://askubuntu.com/questions/428772/how-to-install-specific-version-of-some-package
 
+- [ ] Package's Version 
+
+```
+$ apt-cache policy kubeadm
+```
+
