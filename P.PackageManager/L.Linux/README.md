@@ -26,9 +26,9 @@
 
 ## :computer: [Debian](https://doc.ubuntu-fr.org/dpkg)
 
-[deb](https://doc.ubuntu-fr.org/dpkg)
-
 * Ubuntu
+
+[debian](debian.md)
 
 ## :computer: [RPM]()
 
