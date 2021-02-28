@@ -85,7 +85,7 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/a
 :round_pushpin: Install the :ice_cube: `kube` tools
 
 ```
-$ sudo apt update && sudo apt -y install kubeadm=${KUBEVERSION}-00 kubectl=${KUBEVERSION}-00
+$ sudo apt update && sudo apt install -y kubeadm=${KUBEVERSION}-00 kubelet=${KUBEVERSION}-00 kubectl=${KUBEVERSION}-00
 ```
 
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
