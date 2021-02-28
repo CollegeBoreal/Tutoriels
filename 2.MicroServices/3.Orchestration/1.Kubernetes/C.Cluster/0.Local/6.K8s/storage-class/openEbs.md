@@ -19,6 +19,12 @@ https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 $ sudo cat /etc/iscsi/initiatorname.iscsi
 ```
 
+:bulb: if `ìnitiator` file is not present, install
+
+```
+$ sudo apt-get update && sudo apt-get install open-iscsi
+```
+
 - [ ] Check `iscsid` Sercice is enabled
 
 :warning: Printout below shows `disabled` 
