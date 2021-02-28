@@ -114,6 +114,10 @@ openebs-provisioner-7ff7958d7f-k27hz           1/1     Running            0     
 openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running            0          92s
 ```
 
+`openebs-ndm` is a daemon set, it should be running on all nodes or on the nodes that are selected through nodeSelector configuration.
+
+The control plane pods `openebs-provisioner`, `maya-apiserver` and `openebs-snapshot-operator` should be running.
+
 ```
 $ kubectl get pods --namespace openebs --output wide
 NAME                                           READY   STATUS    RESTARTS   AGE     IP               NODE    NOMINATED NODE   READINESS GATES
