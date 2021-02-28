@@ -66,10 +66,16 @@ uid           [ unknown] Google Cloud Packages Automatic Signing Key <gc-team@go
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
+:round_pushpin: Let's install a specific version
+
+```
+$ export KUBEVERSION=1.18.6
+```
+
 :round_pushpin: Install the :ice_cube: `kube` tools
 
 ```
-$ sudo apt update && sudo apt -y install kubeadm kubectl
+$ sudo apt update && sudo apt -y install kubeadm=${KUBECONFIG}-00 kubectl=${KUBECONFIG}-00
 ```
 
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
