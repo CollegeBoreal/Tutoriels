@@ -1,4 +1,4 @@
-# Storage Class
+# Open EBS
 
 
 https://openebs.io
