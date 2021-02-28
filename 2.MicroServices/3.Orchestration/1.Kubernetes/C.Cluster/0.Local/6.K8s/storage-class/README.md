@@ -12,7 +12,7 @@ $ kubectl get storageclass
 https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-storage-engine
 
 | APPLICATION REQUIREMENTS	  | STORAGE TYPE	| OPENEBS VOLUMES |
-|-------------|---------------|---------------|-----------------|
+|-----------------------------|---------------|-----------------|
 | Low Latency, High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning	| SSDs/Cloud Volumes	| OpenEBS Mayastor 	| 
 | High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning | Disks/SSDs/Cloud Volumes | OpenEBS cStor |
 | High Availability, Synchronous replication, Thin provisioning | hostpath or external mounted storage | OpenEBS Jiva | 
