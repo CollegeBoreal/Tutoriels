@@ -17,7 +17,7 @@ https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 $ sudo cat /etc/iscsi/initiatorname.iscsi
 ```
 
-- [ ] Check is enabled
+- [ ] Check `iscsid` Sercice is enabled
 
 ```
 $ systemctl status iscsid 
