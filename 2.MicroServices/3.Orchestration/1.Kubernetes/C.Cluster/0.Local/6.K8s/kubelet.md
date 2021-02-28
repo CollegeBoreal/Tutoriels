@@ -4,6 +4,12 @@
 |---------|---------------------------------------------------------|
 | kubelet | responsible for maintaining a set of pods, which are composed of one or more containers, on a local system |
 
+- [ ] Let's install a specific version
+
+```
+export KUBEVERSION=1.18.6
+``` 
+
 ## :zero: Install the packages 
 
 [< previous page](Control-Plane.md) to find the Google PGP Key :key: and Repository Artifact. (if not already installed)
@@ -11,7 +17,7 @@
 :round_pushpin: Install the `kubelet` service package
 
 ```
-$ sudo apt update && sudo apt -y install kubelet
+$ sudo apt update && sudo apt -y install kubelet=${KUBEVERSION}-00
 ```
 
 :round_pushpin: Prevent the `kubelet` service package from being altered (optional)
