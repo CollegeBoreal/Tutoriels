@@ -11,7 +11,9 @@ Used by `kubesphere`
 
 https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 
-- [ ] Verify iSCSI services are configured
+:star: Verify iSCSI services are configured
+
+- [ ] Check presence of `iscsi` configuration file  
 
 ```
 $ sudo cat /etc/iscsi/initiatorname.iscsi
