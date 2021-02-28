@@ -9,7 +9,7 @@ $ kubectl get storageclass
 | Vendor                                 |  MySQL |
 |----------------------------------------|-------------------------------------------------------|
 | [OpenEBS](https://docs.openebs.io)     | [MySQL](https://docs.openebs.io/docs/next/mysql.html) |
-| [AWS](https://aws.amazon.com)          | [AWS RDS](https://aws.amazon.com/rds/) |
+| [AWS](https://aws.amazon.com)          | [RDS](https://aws.amazon.com/rds/) |
 | Cloud AZ 
 | Cloud GCP 
 | OVH 
