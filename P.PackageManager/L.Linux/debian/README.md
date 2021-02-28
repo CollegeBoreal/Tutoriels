@@ -17,3 +17,9 @@ kubeadm:
         100 /var/lib/dpkg/status
 ```
 
+- [ ] Install a specific version 
+
+```
+$ apt install kubeadm=1.18.6
+```
+
