@@ -11,6 +11,21 @@
 | data plane    | ursa.boreal.codes  | `10.13.15.202/20` | 32GB Ram,      16cpus |
 
 
+## :gear: Kubernetes Version
+
+- [ ] Check all available Versions
+
+```
+$ curl -s https://packages.cloud.google.com/apt/dists/kubernetes-xenial/main/binary-amd64/Packages | grep Version
+``` 
+
+- [ ] Let's install a specific version
+
+```
+export KUBEVERSION=1.18.6
+``` 
+
+
 ## :zero: Prepare the Servers
 
 Once the servers are ready, update, upgrade them.
@@ -70,7 +85,7 @@ $ echo "deb https://apt.kubernetes.io/ kubernetes-yakkety main" | sudo tee /etc/
 :round_pushpin: Install the :ice_cube: `kube` tools
 
 ```
-$ sudo apt update && sudo apt -y install kubeadm kubectl
+$ sudo apt update && sudo apt -y install kubeadm=${KUBEVERSION}-00 kubectl=${KUBEVERSION}-00
 ```
 
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
