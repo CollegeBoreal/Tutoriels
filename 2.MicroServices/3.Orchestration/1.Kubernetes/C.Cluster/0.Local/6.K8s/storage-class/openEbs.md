@@ -141,3 +141,7 @@ openebs-hostpath            openebs.io/local                                    
 openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  15m
 openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  15m
 ```
+
+# References
+
+https://thenewstack.io/how-openebs-brings-container-attached-storage-to-kubernetes/
