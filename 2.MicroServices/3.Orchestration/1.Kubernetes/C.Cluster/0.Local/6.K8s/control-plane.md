@@ -190,7 +190,7 @@ $ sudo kubeadm config images pull
 $ ## sudo kubeadm init
 $ sudo kubeadm init \
   --pod-network-cidr=172.16.0.0/16 \
-  --control-plane-endpoint=orion
+  --control-plane-endpoint=orion.boreal.codes
 ```
 
 [see the generated log => ](kubeadm-init.md)
