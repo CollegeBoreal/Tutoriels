@@ -16,7 +16,7 @@ https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-stora
 | Low Latency, High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning	| SSDs/Cloud Volumes	| OpenEBS Mayastor 	| 
 | High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning | Disks/SSDs/Cloud Volumes | OpenEBS cStor |
 | High Availability, Synchronous replication, Thin provisioning | hostpath or external mounted storage | OpenEBS Jiva | 
-Low latency, Local PV	hostpath or external mounted storage	Dynamic Local PV - Hostpath
+| Low latency, Local PV	| hostpath or external mounted storage	| Dynamic Local PV - Hostpath |
 Low latency, Local PV	Disks/SSDs/Cloud Volumes	Dynamic Local PV - Device
 Low latency, Local PV, Snapshots, Clones	Disks/SSDs/Cloud Volumes	OpenEBS Dynamic Local PV - ZFS
 
