@@ -17,3 +17,13 @@ https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 $ sudo cat /etc/iscsi/initiatorname.iscsi
 ```
 
+- [ ] Check is enabled
+
+```
+$ systemctl status iscsid 
+● iscsid.service - iSCSI initiator daemon (iscsid)
+     Loaded: loaded (/lib/systemd/system/iscsid.service; disabled; vendor preset: enabled)
+     Active: inactive (dead)
+TriggeredBy: ● iscsid.socket
+       Docs: man:iscsid(8)
+```
