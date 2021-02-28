@@ -81,3 +81,20 @@ Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 
 
 :round_pushpin: [Install using kubectl](https://docs.openebs.io/docs/next/installation.html#installation-through-kubectl)
+
+```
+$ kubectl apply -f https://openebs.github.io/charts/openebs-operator.yaml
+namespace/openebs created
+serviceaccount/openebs-maya-operator created
+clusterrole.rbac.authorization.k8s.io/openebs-maya-operator created
+clusterrolebinding.rbac.authorization.k8s.io/openebs-maya-operator created
+deployment.apps/maya-apiserver created
+service/maya-apiserver-service created
+deployment.apps/openebs-provisioner created
+deployment.apps/openebs-snapshot-operator created
+configmap/openebs-ndm-config created
+daemonset.apps/openebs-ndm created
+deployment.apps/openebs-ndm-operator created
+deployment.apps/openebs-admission-server created
+deployment.apps/openebs-localpv-provisioner created
+```
