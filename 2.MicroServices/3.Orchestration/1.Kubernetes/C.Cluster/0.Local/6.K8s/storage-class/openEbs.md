@@ -73,4 +73,6 @@ Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 ```
 
 
+:round_pushpin: [Set Cluster Admin User Context](https://docs.openebs.io/docs/next/installation.html#set-cluster-admin-user-context)
+
 <img src="images/kube-context.png" width="658" height="48"> </img>
