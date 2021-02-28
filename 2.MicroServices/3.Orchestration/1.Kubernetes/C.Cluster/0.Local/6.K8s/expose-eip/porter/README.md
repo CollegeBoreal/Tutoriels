@@ -11,7 +11,7 @@ $ kubectl apply --filename https://raw.githubusercontent.com/kubesphere/porter/m
 * Verify that porter is installed
 
 ```
-$ $ kubectl get pods | grep porter-manager 
+$ kubectl get pods | grep porter-manager 
 porter-manager-98cc6c799-wztpd      1/1     Running   0          42h
 ```
 
