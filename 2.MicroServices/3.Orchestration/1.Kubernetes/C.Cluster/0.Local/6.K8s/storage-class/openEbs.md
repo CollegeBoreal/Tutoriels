@@ -1,4 +1,4 @@
-# Open EBS
+# Open EBS Installation
 
 
 https://openebs.io
@@ -7,11 +7,9 @@ Used by `kubesphere`
 
 <img src="images/1-config-sequence.svg" width="657" height="145"> </img>
 
-## :o: Installation
+## :a: Verify iSCSI services are configured
 
 https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
-
-:round_pushpin: Verify iSCSI services are configured
 
 - [ ] Check presence of `iscsi` configuration file  
 
@@ -72,6 +70,8 @@ Feb 28 18:13:56 orion systemd[1]: Started iSCSI initiator daemon (iscsid).
 Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 ```
 
+
+## :b: Install OpenEBS
 
 :round_pushpin: [Set Cluster Admin User Context](https://docs.openebs.io/docs/next/installation.html#set-cluster-admin-user-context)
 
