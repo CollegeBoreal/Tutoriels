@@ -11,7 +11,7 @@ Used by `kubesphere`
 
 https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 
-:star: Verify iSCSI services are configured
+:round_pushpin: Verify iSCSI services are configured
 
 - [ ] Check presence of `iscsi` configuration file  
 
