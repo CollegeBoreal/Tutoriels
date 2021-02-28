@@ -71,3 +71,6 @@ Feb 28 18:13:56 orion systemd[1]: iscsid.service: Failed to parse PID from file 
 Feb 28 18:13:56 orion systemd[1]: Started iSCSI initiator daemon (iscsid).
 Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 ```
+
+
+<img src="images/kube-context.png" width="658" height="48"> </img>
