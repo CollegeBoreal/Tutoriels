@@ -6,9 +6,9 @@ $ kubectl get storageclass
 ```
 
 
-| Storage Type |  Local | Cloud AWS | Cloud AZ | Cloud GCP | OVH | Digital Ocean |
-|--------------|--------|----------------------------------------|----------|-----------|-----|---------------|
-| Storage Type |  [OpenEBS](https://docs.openebs.io/docs/next/mysql.html) | [AWS RDS](https://aws.amazon.com/rds/) | Cloud AZ | Cloud GCP | OVH | Digital Ocean |
+| Storage Type  |  Local | Cloud AWS | Cloud AZ | Cloud GCP | OVH | Digital Ocean |
+|---------------|--------|----------------------------------------|----------|-----------|-----|---------------|
+| Relational DB |  [OpenEBS](https://docs.openebs.io/docs/next/mysql.html) | [AWS RDS](https://aws.amazon.com/rds/) | Cloud AZ | Cloud GCP | OVH | Digital Ocean |
 
 
 
