@@ -79,7 +79,7 @@ uid           [ unknown] Google Cloud Packages Automatic Signing Key <gc-team@go
 :warning: as of 2021 `xenial` (a.k.a yakkety) is still the latest version check `https://packages.cloud.google.com/apt/dists` 
 
 ```
-$ echo "deb https://apt.kubernetes.io/ kubernetes-yakkety main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+$ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
 :round_pushpin: Install the :ice_cube: `kube` tools
