@@ -5,8 +5,8 @@ https://openebs.io
 
 Used by `kubesphere`
 
-![Alt text](images/controllers_brief.svg)
-<img src="images/controllers_brief.svg">
+![Alt text](images/1-config-sequence.svg)
+<img src="images/1-config-sequence.svg">
 
 ## :o: Installation
 
