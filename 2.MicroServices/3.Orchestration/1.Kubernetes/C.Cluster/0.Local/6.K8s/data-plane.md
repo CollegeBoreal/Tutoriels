@@ -164,7 +164,7 @@ $ sudo sysctl --system
 :round_pushpin: Join a node 
 
 ```
-$ $ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
+$ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
 >     --discovery-token-ca-cert-hash sha256:90d43a9c5fd2486f802bead7f91da3cbdd8680058f3b5a4c01569a965af2eccb 
 [preflight] Running pre-flight checks
 error execution phase preflight: [preflight] Some fatal errors occurred:
