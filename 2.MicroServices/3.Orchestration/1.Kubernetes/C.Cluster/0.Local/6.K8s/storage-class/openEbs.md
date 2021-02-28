@@ -131,4 +131,13 @@ openebs-provisioner-7ff7958d7f-k27hz           1/1     Running   0          6m22
 openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running   0          6m22s   172.16.108.6     canis   <none>           <none>
 ```
 
+:star: Verify `StorageClasses` 
 
+```
+$ kubectl get storageclass
+NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  15m
+openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  15m
+openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  15m
+openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  15m
+```
