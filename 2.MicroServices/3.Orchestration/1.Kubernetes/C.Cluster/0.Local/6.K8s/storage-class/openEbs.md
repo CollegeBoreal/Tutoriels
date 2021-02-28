@@ -99,7 +99,7 @@ deployment.apps/openebs-admission-server created
 deployment.apps/openebs-localpv-provisioner created
 ```
 
-## :ab: Verification
+## :ab: [Verifying OpenEBS Installation](https://docs.openebs.io/docs/next/installation.html#verifying-openebs-installation)
 
 ```
 $ kubectl get pods --namespace openebs
