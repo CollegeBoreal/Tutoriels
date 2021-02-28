@@ -113,3 +113,18 @@ openebs-ndm-xkl58                              1/1     Running            0     
 openebs-provisioner-7ff7958d7f-k27hz           1/1     Running            0          92s
 openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running            0          92s
 ```
+
+```
+$ kubectl get pods --namespace openebs --output wide
+NAME                                           READY   STATUS    RESTARTS   AGE     IP               NODE    NOMINATED NODE   READINESS GATES
+maya-apiserver-6999679866-t5xxz                1/1     Running   3          6m22s   172.16.183.133   ursa    <none>           <none>
+openebs-admission-server-68cf7797d7-jhhm4      1/1     Running   0          6m22s   172.16.183.132   ursa    <none>           <none>
+openebs-localpv-provisioner-7bc9cbbc9c-hlsxb   1/1     Running   0          6m22s   172.16.183.135   ursa    <none>           <none>
+openebs-ndm-operator-575c46f9d8-m7rkb          1/1     Running   0          6m22s   172.16.183.136   ursa    <none>           <none>
+openebs-ndm-x275n                              1/1     Running   0          6m22s   10.13.15.201     canis   <none>           <none>
+openebs-ndm-xkl58                              1/1     Running   0          6m22s   10.13.15.202     ursa    <none>           <none>
+openebs-provisioner-7ff7958d7f-k27hz           1/1     Running   0          6m22s   172.16.183.134   ursa    <none>           <none>
+openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running   0          6m22s   172.16.108.6     canis   <none>           <none>
+```
+
+
