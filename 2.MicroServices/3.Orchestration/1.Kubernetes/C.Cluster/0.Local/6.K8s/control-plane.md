@@ -91,7 +91,7 @@ $ sudo apt update && sudo apt install -y kubeadm=${KUBEVERSION}-00 kubelet=${KUB
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
 
 ```
-$ sudo apt-mark hold kubeadm kubelet kubectl
+$ sudo apt-mark hold kubeadm kubectl
 ```
 
 :+1: Test that the :ice_cube: `kube` tools are installed
