@@ -5,7 +5,7 @@ https://openebs.io
 
 Used by `kubesphere`
 
-## :o: Prerequisites
+## :o: Installation
 
 https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 
