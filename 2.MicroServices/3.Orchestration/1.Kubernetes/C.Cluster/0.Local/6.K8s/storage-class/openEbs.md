@@ -5,7 +5,7 @@ https://openebs.io
 
 Used by `kubesphere`
 
-<img src="images/1-config-sequence.svg" width="" height=""> </img>
+<img src="images/1-config-sequence.svg" width="657" height="145"> </img>
 
 ## :o: Installation
 
