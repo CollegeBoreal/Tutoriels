@@ -175,13 +175,15 @@ $ sudo sysctl --system
 
 ```
 $ sudo kubeadm config images pull
-[config/images] Pulled k8s.gcr.io/kube-apiserver:v1.20.4
-[config/images] Pulled k8s.gcr.io/kube-controller-manager:v1.20.4
-[config/images] Pulled k8s.gcr.io/kube-scheduler:v1.20.4
-[config/images] Pulled k8s.gcr.io/kube-proxy:v1.20.4
+I0228 02:50:23.382028 3985225 version.go:252] remote version is much newer: v1.20.4; falling back to: stable-1.18
+W0228 02:50:23.598562 3985225 configset.go:202] WARNING: kubeadm cannot validate component configs for API groups [kubelet.config.k8s.io kubeproxy.config.k8s.io]
+[config/images] Pulled k8s.gcr.io/kube-apiserver:v1.18.16
+[config/images] Pulled k8s.gcr.io/kube-controller-manager:v1.18.16
+[config/images] Pulled k8s.gcr.io/kube-scheduler:v1.18.16
+[config/images] Pulled k8s.gcr.io/kube-proxy:v1.18.16
 [config/images] Pulled k8s.gcr.io/pause:3.2
-[config/images] Pulled k8s.gcr.io/etcd:3.4.13-0
-[config/images] Pulled k8s.gcr.io/coredns:1.7.0
+[config/images] Pulled k8s.gcr.io/etcd:3.4.3-0
+[config/images] Pulled k8s.gcr.io/coredns:1.6.7
 ```
 
 :round_pushpin: Initialize the cluster
