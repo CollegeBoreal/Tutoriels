@@ -98,3 +98,18 @@ deployment.apps/openebs-ndm-operator created
 deployment.apps/openebs-admission-server created
 deployment.apps/openebs-localpv-provisioner created
 ```
+
+## :ab: Verification
+
+```
+$ kubectl get pods --namespace openebs
+NAME                                           READY   STATUS             RESTARTS   AGE
+maya-apiserver-6999679866-t5xxz                0/1     CrashLoopBackOff   2          92s
+openebs-admission-server-68cf7797d7-jhhm4      1/1     Running            0          92s
+openebs-localpv-provisioner-7bc9cbbc9c-hlsxb   1/1     Running            0          92s
+openebs-ndm-operator-575c46f9d8-m7rkb          1/1     Running            0          92s
+openebs-ndm-x275n                              1/1     Running            0          92s
+openebs-ndm-xkl58                              1/1     Running            0          92s
+openebs-provisioner-7ff7958d7f-k27hz           1/1     Running            0          92s
+openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running            0          92s
+```
