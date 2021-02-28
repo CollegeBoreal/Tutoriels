@@ -75,7 +75,7 @@ $ export KUBEVERSION=1.18.6
 :round_pushpin: Install the :ice_cube: `kube` tools
 
 ```
-$ sudo apt update && sudo apt -y install kubeadm=${KUBECONFIG}-00 kubectl=${KUBECONFIG}-00
+$ sudo apt update && sudo apt -y install kubeadm=${KUBEVERSION}-00 kubectl=${KUBEVERSION}-00
 ```
 
 :round_pushpin: Prevent the :ice_cube: `kube`  tools from being altered (optional)
