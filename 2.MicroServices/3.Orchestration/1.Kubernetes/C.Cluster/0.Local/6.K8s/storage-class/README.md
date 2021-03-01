@@ -15,7 +15,6 @@ The Container Storage Interface (CSI) is a standard for exposing arbitrary block
 
 | Name	| CSI Driver Name	| Compatible with CSI Version(s)	| Description	| Persistence (Beyond Pod Lifetime)	| Supported Access Modes	| Dynamic Provisioning	| Other Features | 
 |-------|-----------------|---------------------------------|-------------|-----------------------------------|-------------------------|---------------------|----------------------| 
-
 | OpenEBS	| cstor.csi.openebs.io	| v1.0	| A Container Storage Interface (CSI) Driver for OpenEBS	| Persistent	| Read/Write Single Pod	| Yes	| Expansion, Snapshot, Cloning | 
 
 
