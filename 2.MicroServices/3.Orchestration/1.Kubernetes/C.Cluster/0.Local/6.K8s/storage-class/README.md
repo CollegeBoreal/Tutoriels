@@ -2,6 +2,18 @@
 
 ## :a: Definition
 
+
+### :round_pushpin: [CSI - Container Storage Interface](https://kubernetes-csi.github.io/docs)
+
+The Container Storage Interface (CSI) is a standard for exposing arbitrary block and file storage systems to containerized workloads on Container Orchestration Systems (COs) like Kubernetes. Using CSI third-party storage providers can write and deploy plugins exposing new storage systems in Kubernetes without ever having to touch the core Kubernetes code.
+
+
+### :round_pushpin: [CSI - Drivers](https://kubernetes-csi.github.io/docs/drivers.html)
+
+| Name	| CSI Driver Name	| Compatible with CSI Version(s)	| Description	| Persistence (Beyond Pod Lifetime)	| Supported Access Modes	| Dynamic Provisioning	| Other Features | 
+|-------|-----------------|---------------------------------|-------------|-----------------------------------|-------------------------|---------------------|----------------------| 
+| [OpenEBS](OpenEBS.md)	| cstor.csi.openebs.io	| v1.0	| A Container Storage Interface (CSI) Driver for OpenEBS	| Persistent	| Read/Write Single Pod	| Yes	| Expansion, Snapshot, Cloning | 
+
 ```
 $ kubectl get storageclass
 NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
@@ -10,18 +22,6 @@ openebs-hostpath            openebs.io/local                                    
 openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  6h23m
 openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  6h23m
 ```
-
-[CSI - Container Storage Interface](https://kubernetes-csi.github.io/docs)
-
-The Container Storage Interface (CSI) is a standard for exposing arbitrary block and file storage systems to containerized workloads on Container Orchestration Systems (COs) like Kubernetes. Using CSI third-party storage providers can write and deploy plugins exposing new storage systems in Kubernetes without ever having to touch the core Kubernetes code.
-
-
-[CSI - Drivers](https://kubernetes-csi.github.io/docs/drivers.html)
-
-| Name	| CSI Driver Name	| Compatible with CSI Version(s)	| Description	| Persistence (Beyond Pod Lifetime)	| Supported Access Modes	| Dynamic Provisioning	| Other Features | 
-|-------|-----------------|---------------------------------|-------------|-----------------------------------|-------------------------|---------------------|----------------------| 
-| [OpenEBS](OpenEBS.md)	| cstor.csi.openebs.io	| v1.0	| A Container Storage Interface (CSI) Driver for OpenEBS	| Persistent	| Read/Write Single Pod	| Yes	| Expansion, Snapshot, Cloning | 
-
 
 
 
