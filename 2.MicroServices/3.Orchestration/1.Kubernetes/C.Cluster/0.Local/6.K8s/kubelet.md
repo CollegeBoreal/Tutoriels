@@ -55,11 +55,11 @@ $ systemctl status kubelet
 $ sudo systemctl enable kubelet && sudo systemctl start kubelet
 ```
 
-## :three: Start the Kubernetes Control Plane 
+## :three: Start Kubernetes Cluster
 
 | Control Plane | Data Plane |
 |---------------|------------|
-| see [`kubeadm init`](control-plane.md#seven-start-the-control-plane-service) see | [`kubeadm join`]data-plane.md#seven-start-the-data-plane-service |
+| see [`kubeadm init`](control-plane.md#seven-start-the-control-plane-service) see | [`kubeadm join`](data-plane.md#seven-start-the-data-plane-service) |
 
 
 
