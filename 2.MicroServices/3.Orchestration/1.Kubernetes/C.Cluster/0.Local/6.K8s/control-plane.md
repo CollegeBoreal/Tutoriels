@@ -169,7 +169,7 @@ $ sudo sysctl --system
 
 [:droplet: Kubelet](kubelet.md)
 
-## :seven: Start the control plane service
+## :seven: Start the :control_knobs: control plane service
 
 :round_pushpin: Pull the images (to accelerate the process)
 
