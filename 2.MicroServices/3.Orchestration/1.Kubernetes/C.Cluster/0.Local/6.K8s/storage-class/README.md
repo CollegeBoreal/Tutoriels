@@ -21,7 +21,7 @@ Depending on the type of storage attached to your Kubernetes worker nodes, you c
 
 Replicated Volumes also are capable of enterprise storage features like snapshots, clone, volume expansion and so forth. **Replicated Volumes are a preferred choice for Stateful workloads like Percona/MySQL, Jira, GitLab, etc**.
 
-Depending on the type of storage attached to your Kubernetes worker nodes and application performance requirements, you can select from `Jiva`, `cStor` or `Mayastor.
+Depending on the type of storage attached to your Kubernetes worker nodes and application performance requirements, you can select from `Jiva`, `cStor` or [`Mayastor`](https://mayastor.gitbook.io).
 
 | APPLICATION REQUIREMENTS	  | STORAGE TYPE	| OPENEBS VOLUMES |
 |-----------------------------|---------------|-----------------|
