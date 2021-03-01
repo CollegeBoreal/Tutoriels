@@ -8,6 +8,8 @@ $ kubectl get storageclass
 
 [CSI - Container Storage Interface](https://kubernetes-csi.github.io/docs)
 
+The Container Storage Interface (CSI) is a standard for exposing arbitrary block and file storage systems to containerized workloads on Container Orchestration Systems (COs) like Kubernetes. Using CSI third-party storage providers can write and deploy plugins exposing new storage systems in Kubernetes without ever having to touch the core Kubernetes code.
+
 
 [CSI - Drivers](https://kubernetes-csi.github.io/docs/drivers.html)
 
