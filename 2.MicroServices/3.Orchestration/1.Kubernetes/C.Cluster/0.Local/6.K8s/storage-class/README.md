@@ -1,6 +1,6 @@
 # Storage Class
 
-
+## :a: Definition
 
 ```
 $ kubectl get storageclass
