@@ -1,4 +1,4 @@
-# k8s :wheel_of_dharma: (Data Plane)
+# k8s :wheel_of_dharma: :abacus: Data Plane
 
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
