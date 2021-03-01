@@ -5,6 +5,7 @@
 | [Control Plane](control-plane.md) |          | 
 | [Data Plane](data-plane.md)       |          | 
 | [Expose IP](expose-eip)           | Expose External IP Address         | 
+| [Storage Class](storage-class)         |          |
 | [Dashboard](dashboard.md)         |          |
 
 
