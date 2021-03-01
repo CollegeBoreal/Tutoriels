@@ -6,7 +6,7 @@
 | [ :abacus: Data Plane](data-plane.md)       |          | 
 | [ :link: Expose EIP](expose-eip)           | Expose External IP Address         | 
 | [Storage Class](storage-class)         |          |
-| [Dashboard](dashboard.md)         |          |
+| [ :bar_chart: Dashboard](dashboard.md)         |          |
 
 
 - [ ] run a pod
