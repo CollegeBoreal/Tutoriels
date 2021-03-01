@@ -4,7 +4,7 @@
 |-----------------------------------|----------|
 | [ :control_knobs: Control Plane](control-plane.md) |          | 
 | [ :abacus: Data Plane](data-plane.md)       |          | 
-| [Expose EIP](expose-eip)           | Expose External IP Address         | 
+| [ :link: Expose EIP](expose-eip)           | Expose External IP Address         | 
 | [Storage Class](storage-class)         |          |
 | [Dashboard](dashboard.md)         |          |
 
