@@ -5,7 +5,7 @@
 
 ### :round_pushpin: [CSI - Container Storage Interface](https://kubernetes-csi.github.io/docs)
 
-The Container Storage Interface (CSI) is a standard for exposing arbitrary `block and file storage systems` to containerized workloads on Container Orchestration Systems (COs) like Kubernetes. Using CSI third-party storage providers can write and deploy plugins exposing new storage systems in Kubernetes without ever having to touch the core Kubernetes code.
+The Container Storage Interface (CSI) is a standard for exposing arbitrary [`block and file storage systems`](https://www.backblaze.com/blog/object-file-block-storage-guide) to containerized workloads on Container Orchestration Systems (COs) like Kubernetes. Using CSI third-party storage providers can write and deploy plugins exposing new storage systems in Kubernetes without ever having to touch the core Kubernetes code.
 
 
 ### :round_pushpin: [CSI - Drivers](https://kubernetes-csi.github.io/docs/drivers.html)
