@@ -32,9 +32,9 @@ Depending on the type of storage attached to your Kubernetes worker nodes and ap
 | Low Latency, High Availability, [Synchronous replication](#round_pushpin-replicated-volumes), Snapshots, Clones, Thin provisioning	| SSDs/Cloud Volumes	| OpenEBS Mayastor 	| 
 | High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning | Disks/SSDs/Cloud Volumes | OpenEBS cStor |
 | High Availability, Synchronous replication, Thin provisioning | hostpath or external mounted storage | OpenEBS Jiva | 
-| Low latency, [Local PV]((#round_pushpin-local-volumes))	                    | hostpath or external mounted storage	| [Dynamic Local PV - Hostpath](https://docs.openebs.io/docs/next/uglocalpv-hostpath.html) |
-| Low latency, Local PV	                    | Disks/SSDs/Cloud Volumes | [Dynamic Local PV - Device](https://docs.openebs.io/docs/next/uglocalpv-device.html) |
-| Low latency, Local PV, Snapshots, Clones	| Disks/SSDs/Cloud Volumes | [OpenEBS Dynamic Local PV - ZFS](https://github.com/openebs/zfs-localpv) |
+| Low latency, [Local PV](#round_pushpin-local-volumes)	                    | hostpath or external mounted storage	| [Dynamic Local PV - Hostpath](https://docs.openebs.io/docs/next/uglocalpv-hostpath.html) |
+| Low latency, [Local PV](#round_pushpin-local-volumes)                    | Disks/SSDs/Cloud Volumes | [Dynamic Local PV - Device](https://docs.openebs.io/docs/next/uglocalpv-device.html) |
+| Low latency, [Local PV](#round_pushpin-local-volumes), Snapshots, Clones	| Disks/SSDs/Cloud Volumes | [OpenEBS Dynamic Local PV - ZFS](https://github.com/openebs/zfs-localpv) |
 
 
 
