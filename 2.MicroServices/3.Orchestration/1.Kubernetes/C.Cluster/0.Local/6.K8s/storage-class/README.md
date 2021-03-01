@@ -4,6 +4,11 @@
 
 ```
 $ kubectl get storageclass
+NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  6h23m
+openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  6h23m
+openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  6h23m
+openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  6h23m
 ```
 
 [CSI - Container Storage Interface](https://kubernetes-csi.github.io/docs)
