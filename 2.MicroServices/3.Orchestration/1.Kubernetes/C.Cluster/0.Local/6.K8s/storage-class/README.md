@@ -15,6 +15,8 @@ The Container Storage Interface (CSI) is a standard for exposing arbitrary [`blo
 | AWS Elastic File System	| efs.csi.aws.com	      | v0.3, v1.0	| A Container Storage Interface (CSI) Driver for AWS Elastic File System (EFS)	| Persistent	      | Read/Write Multiple Pods|	No	| |
 | [OpenEBS](OpenEBS.md)	  | cstor.csi.openebs.io	| v1.0	      | A Container Storage Interface (CSI) Driver for OpenEBS	                      | Persistent	| Read/Write Single Pod	  | Yes	| Expansion, Snapshot, Cloning | 
 
+- [ ] Check which CSI is installed on your cluster
+
 ```
 $ kubectl get storageclass
 NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
