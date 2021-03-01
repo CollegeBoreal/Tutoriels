@@ -10,7 +10,7 @@ $ kubectl get storageclass
 ## :b: Storage Class Engine
 
 
-### :star: [Storage Engine Types](https://docs.openebs.io/docs/next/installation.%20html#types-of-openebs-storage-engines)
+### :star: [Types](https://docs.openebs.io/docs/next/installation.%20html#types-of-openebs-storage-engines)
 
 #### :round_pushpin: [Local Volumes](https://docs.openebs.io/docs/next/installation.%20html#local-volumes)
 
@@ -24,7 +24,7 @@ Replicated Volumes also are capable of enterprise storage features like snapshot
 
 Depending on the type of storage attached to your Kubernetes worker nodes and application performance requirements, you can select from `Jiva`, `cStor` or [`Mayastor`](https://mayastor.gitbook.io) **:new:**.
 
-### :star: [Storage Engine Selection:](https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-storage-engine)
+### :star: [Selection:](https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-storage-engine)
 
 
 | APPLICATION REQUIREMENTS	  | STORAGE TYPE	| OPENEBS VOLUMES |
