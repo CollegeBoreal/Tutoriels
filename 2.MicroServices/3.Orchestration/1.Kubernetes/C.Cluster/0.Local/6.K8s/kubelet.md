@@ -59,7 +59,7 @@ $ sudo systemctl enable kubelet && sudo systemctl start kubelet
 
 | Control Plane | Data Plane |
 |---------------|------------|
-| see [`kubeadm init`](control-plane.md#seven-start-the-control-plane-service) see | [`kubeadm join`](data-plane.md#seven-start-the-data-plane-service) |
+| Follow > [`kubeadm init`](control-plane.md#seven-start-the-control-plane-service)  | Follow > [`kubeadm join`](data-plane.md#seven-start-the-data-plane-service) |
 
 
 
