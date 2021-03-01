@@ -189,7 +189,7 @@ This node has joined the cluster:
 Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
 ```
 
-:o: Back to the :control_knobs: control panel
+:o: Back to the :control_knobs: `control plane`
 
 :round_pushpin: Check the current nodes (with `kubectl`)
 
