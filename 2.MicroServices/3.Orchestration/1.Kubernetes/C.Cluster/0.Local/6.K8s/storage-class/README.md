@@ -11,6 +11,8 @@ $ kubectl get storageclass
 
 https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-storage-engine
 
+:round_pushpin: [High Availablity](https://docs.openebs.io/docs/next/installation.%20html#replicated-volumes-aka-highly-available-volumes)
+
 | APPLICATION REQUIREMENTS	  | STORAGE TYPE	| OPENEBS VOLUMES |
 |-----------------------------|---------------|-----------------|
 | Low Latency, High Availability, Synchronous replication, Snapshots, Clones, Thin provisioning	| SSDs/Cloud Volumes	| OpenEBS Mayastor 	| 
