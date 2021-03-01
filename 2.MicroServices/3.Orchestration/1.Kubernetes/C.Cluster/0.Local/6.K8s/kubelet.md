@@ -59,7 +59,7 @@ $ sudo systemctl enable kubelet && sudo systemctl start kubelet
 
 | :control_knobs: Control Plane | :abacus: Data Plane |
 |---------------|------------|
-| Follow > [`kubeadm init`](control-plane.md#seven-start-the-contro_knobs-control-plane-service)  | Follow > [`kubeadm join`](data-plane.md#seven-start-the-abacus-data-plane-node) |
+| Follow > [`kubeadm init`](control-plane.md#seven-start-the-control_knobs-control-plane-service)  | Follow > [`kubeadm join`](data-plane.md#seven-start-the-abacus-data-plane-node) |
 
 
 
