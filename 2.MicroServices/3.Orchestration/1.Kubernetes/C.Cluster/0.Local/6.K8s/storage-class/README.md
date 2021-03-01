@@ -13,6 +13,10 @@ https://docs.openebs.io/docs/next/installation.%20html#selecting-the-right-stora
 
 ### :round_pushpin: [Local Volumes](https://docs.openebs.io/docs/next/installation.%20html#local-volumes)
 
+Local Volumes are accessible only from a single node in the cluster. Pods using Local Volume have to be scheduled on the node where volume is provisioned. Local Volumes are typically preferred for distributed workloads like Cassandra, MongoDB, Elastic, etc that are **distributed in nature and have high availability built into them**.
+
+Depending on the type of storage attached to your Kubernetes worker nodes, you can select from different flavors of `Dynamic Local PV` - `Hostpath`, `Device`, `ZFS` or `Rawfile`.
+
 ### :round_pushpin: [Replicated Volumes](https://docs.openebs.io/docs/next/installation.%20html#replicated-volumes-aka-highly-available-volumes)
 
 | APPLICATION REQUIREMENTS	  | STORAGE TYPE	| OPENEBS VOLUMES |
