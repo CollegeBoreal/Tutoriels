@@ -1,4 +1,4 @@
-# k8s :wheel_of_dharma: :abacus: Data Plane
+# :wheel_of_dharma: k8s :abacus: Data Plane
 
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
@@ -159,7 +159,7 @@ $ sudo sysctl --system
 
 [:droplet: Kubelet](kubelet.md)
 
-## :seven: Start the data plane service
+## :seven: Start the :abacus: `data plane` node
 
 :round_pushpin: Join a node 
 
