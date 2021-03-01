@@ -1,4 +1,4 @@
-# K8s :wheel_of_dharma: (Control Plane)
+# :wheel_of_dharma: K8s :control_knobs: Control Plane
 
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
