@@ -155,5 +155,6 @@ https://github.com/rancher/os/issues/679
 
 # References
 
-* cloud-config.yml examples
-https://gist.github.com/janeczku/02302dae3fbfa011f4f7a60df2b5f24e
+* [cloud-config.yml examples](https://gist.github.com/janeczku/02302dae3fbfa011f4f7a60df2b5f24e)
+
+https://medium.com/@imikushin/running-kubernetes-cluster-on-rancheros-b2bd1308eb6d
