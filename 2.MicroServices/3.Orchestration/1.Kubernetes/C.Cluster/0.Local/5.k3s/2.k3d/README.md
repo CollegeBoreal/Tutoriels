@@ -2,9 +2,17 @@
 
 https://github.com/rancher/k3d
 
-In a docker-machine
+## :o: What is k3d?
 
-Install k3d
+k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+
+k3d makes it very easy to create single- and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
+
+## :a: Install k3d
+
+- [ ] In a Linux Machine (VM or Metal)
+
+- [ ] Install the binary
 
 ```
 $ curl -s https://raw.githubusercontent.com/rancher/k3d/master/install.sh | bash
@@ -13,6 +21,7 @@ k3d installed into /usr/local/bin/k3d
 Run 'k3d --help' to see what you can do with it.
 ```
 
+- [ ] Check k3d installation
 
 ```
 $ k3d
@@ -27,6 +36,9 @@ VERSION:
 ...
 ```
 
+## :b: k3d Cluster
+
+- [ ] Create a cluster
 
 ```
 $ k3d c
