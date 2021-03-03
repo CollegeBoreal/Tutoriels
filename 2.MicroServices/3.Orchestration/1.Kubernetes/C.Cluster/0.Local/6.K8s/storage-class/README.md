@@ -72,7 +72,9 @@ Depending on the type of storage attached to your Kubernetes worker nodes and ap
 
 
 
+# References
 
+https://medium.com/volterra-io/kubernetes-storage-performance-comparison-v2-2020-updated-1c0b69f0dcf4
 
 
 
