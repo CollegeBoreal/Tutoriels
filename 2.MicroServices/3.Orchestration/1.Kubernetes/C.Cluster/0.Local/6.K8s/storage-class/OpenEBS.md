@@ -147,3 +147,5 @@ openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-prom
 https://thenewstack.io/how-openebs-brings-container-attached-storage-to-kubernetes/
 
 https://github.com/openebs/openebs/issues/2286 (HA Quorum)
+
+https://medium.com/volterra-io/kubernetes-storage-performance-comparison-v2-2020-updated-1c0b69f0dcf4
