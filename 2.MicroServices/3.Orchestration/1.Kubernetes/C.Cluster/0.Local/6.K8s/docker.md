@@ -67,3 +67,30 @@ $ systemctl list-unit-files | grep docker
 docker.service                         enabled         enabled      
 docker.socket                          enabled         enabled  
 ```
+
+- [ ] Check that the service is active
+
+```
+$ systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2021-03-04 19:35:11 UTC; 40s ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 5014 (dockerd)
+      Tasks: 24
+     Memory: 45.0M
+     CGroup: /system.slice/docker.service
+             └─5014 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Mar 04 19:35:09 lepus dockerd[5014]: time="2021-03-04T19:35:09.401552372Z" level=warning msg="Your kernel d>
+Mar 04 19:35:09 lepus dockerd[5014]: time="2021-03-04T19:35:09.401571865Z" level=warning msg="Your kernel d>
+Mar 04 19:35:09 lepus dockerd[5014]: time="2021-03-04T19:35:09.401582174Z" level=warning msg="Your kernel d>
+Mar 04 19:35:09 lepus dockerd[5014]: time="2021-03-04T19:35:09.401769185Z" level=info msg="Loading containe>
+Mar 04 19:35:10 lepus dockerd[5014]: time="2021-03-04T19:35:10.247296387Z" level=info msg="Default bridge (>
+Mar 04 19:35:10 lepus dockerd[5014]: time="2021-03-04T19:35:10.779249707Z" level=info msg="Loading containe>
+Mar 04 19:35:11 lepus dockerd[5014]: time="2021-03-04T19:35:11.254944437Z" level=info msg="Docker daemon" c>
+Mar 04 19:35:11 lepus dockerd[5014]: time="2021-03-04T19:35:11.255105264Z" level=info msg="Daemon has compl>
+Mar 04 19:35:11 lepus systemd[1]: Started Docker Application Container Engine.
+Mar 04 19:35:11 lepus dockerd[5014]: time="2021-03-04T19:35:11.425829313Z" level=info msg="API listen on /r>
+```
