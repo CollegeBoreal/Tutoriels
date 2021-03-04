@@ -9,6 +9,7 @@
 | control plane | orion.boreal.codes | `10.13.15.200/20` | 64GB Ram,      16cpus |
 | data plane    | canis.boreal.codes | `10.13.15.201/20` | 64GB Ram,      16cpus |
 | data plane    | ursa.boreal.codes  | `10.13.15.202/20` | 32GB Ram,      16cpus |
+| data plane    | lepus.boreal.codes | `10.13.15.203/20` | 64GB Ram,      16cpus |
 
 
 ## :gear: Kubernetes Version
