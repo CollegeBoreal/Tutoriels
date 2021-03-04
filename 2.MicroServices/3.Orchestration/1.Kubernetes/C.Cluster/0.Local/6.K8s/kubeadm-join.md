@@ -1,0 +1,5 @@
+
+
+```
+$ kubeadm token list
+```
