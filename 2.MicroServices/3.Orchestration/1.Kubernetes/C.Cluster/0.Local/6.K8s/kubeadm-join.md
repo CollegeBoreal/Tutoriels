@@ -26,3 +26,14 @@ lepus   NotReady   <none>   28s     v1.20.4
 orion   Ready      master   4d17h   v1.18.6
 ursa    Ready      <none>   4d16h   v1.18.6
 ```
+
+After a few minutes
+
+```
+% kubectl get nodes
+NAME    STATUS   ROLES    AGE     VERSION
+canis   Ready    <none>   4d16h   v1.18.6
+lepus   Ready    <none>   58s     v1.20.4
+orion   Ready    master   4d17h   v1.18.6
+ursa    Ready    <none>   4d16h   v1.18.6
+```
