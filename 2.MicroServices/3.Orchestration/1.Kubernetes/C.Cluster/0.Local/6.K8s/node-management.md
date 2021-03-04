@@ -6,7 +6,7 @@ Drain a node (from `ursa` to `canis`)
 $ kubectl drain ursa --ignore-daemonsets --delete-local-data
 ```
 
-Check the transioniin of the pods to the remaining node
+Check the transioning of the pods to the remaining node
 
 ```
 $ kubectl get pods --output=wide
