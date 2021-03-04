@@ -145,3 +145,5 @@ openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-prom
 # References
 
 https://thenewstack.io/how-openebs-brings-container-attached-storage-to-kubernetes/
+
+https://github.com/openebs/openebs/issues/2286 (HA Quorum)
