@@ -18,6 +18,23 @@ export KUBEVERSION=1.18.6
 
 ```
 $ sudo apt update && sudo apt -y install kubelet=${KUBEVERSION}-00
+Hit:1 http://ca.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://ca.archive.ubuntu.com/ubuntu focal-updates InRelease          
+Hit:4 https://download.docker.com/linux/ubuntu focal InRelease             
+Hit:5 http://ca.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:6 http://ca.archive.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 https://packages.cloud.google.com/apt kubernetes-xenial InRelease
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be DOWNGRADED:
+  kubelet
+0 upgraded, 0 newly installed, 1 downgraded, 0 to remove and 2 not upgraded.
+E: Packages were downgraded and -y was used without --allow-downgrades.
 ```
 
 :round_pushpin: Prevent the `kubelet` service package from being altered (optional)
