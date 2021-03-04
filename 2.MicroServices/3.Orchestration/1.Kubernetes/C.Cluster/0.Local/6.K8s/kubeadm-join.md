@@ -17,3 +17,12 @@ $ kubeadm token list
 TOKEN                     TTL         EXPIRES                USAGES                   DESCRIPTION    EXTRA GROUPS
 zlt7nb.lpd06ao1kxf4uwgm   23h         2021-03-05T19:51:22Z   authentication,signing   <none>         system:bootstrappers:kubeadm:default-node-token
 ```
+
+```
+% kubectl get nodes
+NAME    STATUS     ROLES    AGE     VERSION
+canis   Ready      <none>   4d16h   v1.18.6
+lepus   NotReady   <none>   28s     v1.20.4
+orion   Ready      master   4d17h   v1.18.6
+ursa    Ready      <none>   4d16h   v1.18.6
+```
