@@ -1,4 +1,3 @@
-https://docs.mirantis.com/mcp/q4-18/mcp-operations-guide/kubernetes-operations/k8s-node-ops/k8s-node-remove.html
 
 
 Drain a node (from `ursa` to `canis`)
@@ -20,3 +19,8 @@ kuron-deployment-55878fd4cd-z2frn   0/1     ContainerCreating   0          49s  
 porter-manager-98cc6c799-t7twm      0/1     ContainerCreating   0          49s     10.13.15.201     canis   <none>           <none>
 porter-manager-98cc6c799-wztpd      0/1     Terminating         0          3d16h   10.13.15.202     ursa    <none>           <none>
 ```
+
+
+https://stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes
+
+https://docs.mirantis.com/mcp/q4-18/mcp-operations-guide/kubernetes-operations/k8s-node-ops/k8s-node-remove.html
