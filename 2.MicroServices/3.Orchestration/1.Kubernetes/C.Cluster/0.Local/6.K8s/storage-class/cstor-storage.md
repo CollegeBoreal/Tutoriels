@@ -36,3 +36,20 @@ $ kubectl get spc
 NAME              AGE
 cstor-disk-pool   3m45s
 ```
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: openebs.io/v1alpha1
+kind: StoragePoolClaim
+metadata:
+  name: cstor-disk
+  annotations:
+    cas.openebs.io/config: |
+      - name: PoolResourceLimits
+        value: |-
+            memory: 4Gi
+spec:
+  name: cstor-disk
+  type: disk
+EOF
+```
