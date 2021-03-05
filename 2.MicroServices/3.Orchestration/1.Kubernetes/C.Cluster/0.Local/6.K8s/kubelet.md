@@ -7,7 +7,7 @@
 - [ ] Let's install a specific version
 
 ```
-export KUBEVERSION=1.18.6
+$ export KUBEVERSION=1.18.6
 ``` 
 
 ## :zero: Install the packages 
