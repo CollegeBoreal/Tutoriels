@@ -30,3 +30,9 @@ spec:
 ---
 EOF
 ```
+
+```
+$ kubectl get spc
+NAME              AGE
+cstor-disk-pool   3m45s
+```
