@@ -1,5 +1,7 @@
 
 
+https://docs.openebs.io/docs/next/ugcstor.html#creating-cStor-storage-pools
+
 ```yaml
 $ kubectl apply -f - <<EOF
 #Use the following YAMLs to create a cStor Storage Pool.
