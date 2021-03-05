@@ -9,6 +9,12 @@
 | [ :bar_chart: Dashboard](dashboard.md)         |          |
 
 
+| Management |.  |
+|------------|---|
+| [Token](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/) | |
+
+
+
 - [ ] run a pod
 
 ```
