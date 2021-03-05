@@ -56,3 +56,8 @@ pod "command-demo" deleted
 $ kubectl describe pods
 ```
 
+
+# References:
+
+https://learnk8s.io/how-many-clusters#2-many-small-single-use-clusters
+
