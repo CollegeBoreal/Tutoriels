@@ -80,3 +80,7 @@ network:
 ```
 $ sudo netplan apply
 ```
+
+# References
+
+https://askubuntu.com/questions/1059954/how-to-recover-from-accidentally-removing-the-sudo-group
