@@ -1,6 +1,8 @@
 # Logical Volume Manager
 
 
+https://opensource.com/business/16/9/linux-users-guide-lvm
+
 - [ ] List the block devices
 
 ```
