@@ -18,6 +18,8 @@ https://github.com/ellakcy/moodle-compose
 
 https://github.com/jbkc85/moodle-kubernetes-tutorial/
 
+https://artifacthub.io/packages/helm/bitnami/moodle
+
 
 # References:
 
