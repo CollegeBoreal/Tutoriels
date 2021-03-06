@@ -8,3 +8,4 @@ https://www.reddit.com/r/redhat/comments/dvuyng/what_is_multipathd_and_why_does_
 
 https://www.backblaze.com/blog/whats-the-diff-nas-vs-san/
 
+http://cdn.ttgtmedia.com/CascadingTargetedDownloads/downloads/storage%20area%20network%20(SAN)%20definition.pdf
