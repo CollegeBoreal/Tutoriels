@@ -6,3 +6,5 @@ A SAN is a specialized, high-speed network that provides block-level network acc
 
 https://www.reddit.com/r/redhat/comments/dvuyng/what_is_multipathd_and_why_does_it_prevent_so/
 
+https://www.backblaze.com/blog/whats-the-diff-nas-vs-san/
+
