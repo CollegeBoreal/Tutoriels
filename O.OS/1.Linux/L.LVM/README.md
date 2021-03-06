@@ -23,6 +23,12 @@ sda                         8:0    0 273.4G  0 disk
 sr0                        11:0    1  1024M  0 rom  
 ```
 
+```
+$ df --human --type ext4
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  134G   16G  111G  13% /
+/dev/sda2                          976M  104M  806M  12% /boot
+```
 
 ```
 $ ( printf "DEVICES .. FS .... TYPE ATTRIBUTES\n"; mount --types ext4) | column -t
