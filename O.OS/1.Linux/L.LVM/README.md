@@ -23,6 +23,17 @@ sda                         8:0    0 273.4G  0 disk
 sr0                        11:0    1  1024M  0 rom  
 ```
 
+
+```
+$ ( printf "DEVICES .. FS .... TYPE ATTRIBUTES\n"; mount --types ext4) | column -t
+DEVICES                            ..  FS                                                                                                             ....  TYPE  ATTRIBUTES
+/dev/mapper/ubuntu--vg-ubuntu--lv  on  /                                                                                                              type  ext4  (rw,relatime)
+/dev/sda2                          on  /boot                                                                                                          type  ext4  (rw,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/d7b2db25-998b-4a12-b19b-4d2241213d01/volume-subpaths/config/node-disk-manager/0          type  ext4  (rw,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/b634fa33-51cd-4e9c-8f29-f596b05e7dba/volume-subpaths/chroot-iscsiadm/cstor-csi-plugin/4  type  ext4  (rw,relatime)
+```
+
+
 https://serverfault.com/questions/262541/how-to-display-used-devices-free-space-when-using-lvm/648302
 
 https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
