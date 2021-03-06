@@ -1,4 +1,4 @@
-# Volume Groups
+# Logical Volume Manager
 
 
 - [ ] List the block devices
