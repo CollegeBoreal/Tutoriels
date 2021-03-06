@@ -53,59 +53,6 @@ DEVICES                            ..  FS                                       
 /dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/b634fa33-51cd-4e9c-8f29-f596b05e7dba/volume-subpaths/chroot-iscsiadm/cstor-csi-plugin/4  type  ext4  (rw,relatime)
 ```
 
-```
-$ sudo fdisk -l
-Disk /dev/loop0: 55.39 MiB, 58073088 bytes, 113424 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/loop1: 69.9 MiB, 73277440 bytes, 143120 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/loop2: 31.9 MiB, 32595968 bytes, 63664 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/loop3: 32.28 MiB, 33845248 bytes, 66104 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/loop4: 55.48 MiB, 58159104 bytes, 113592 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/sda: 273.41 GiB, 293563949056 bytes, 573367088 sectors
-Disk model: LOGICAL VOLUME  
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disklabel type: gpt
-Disk identifier: 147F8706-F7D6-4323-BFF8-64FA5D7B9A32
-
-Device       Start       End   Sectors   Size Type
-/dev/sda1     2048      4095      2048     1M BIOS boot
-/dev/sda2     4096   2101247   2097152     1G Linux filesystem
-/dev/sda3  2101248 573364223 571262976 272.4G Linux filesystem
-
-
-Disk /dev/mapper/ubuntu--vg-ubuntu--lv: 136.2 GiB, 146242797568 bytes, 285630464 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-```
-
-
 https://serverfault.com/questions/262541/how-to-display-used-devices-free-space-when-using-lvm/648302
 
 https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
