@@ -3,7 +3,7 @@
 
 https://opensource.com/business/16/9/linux-users-guide-lvm
 
-<img src="images/lvm-520x222.png" width= height=""></img>
+<img src="images/lvm-520x222.png" width="520" height="222"> </img>
 
 - [ ] List the block devices
 
