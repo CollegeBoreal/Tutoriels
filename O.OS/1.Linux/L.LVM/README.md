@@ -5,22 +5,36 @@ https://opensource.com/business/16/9/linux-users-guide-lvm
 
 <img src="images/lvm-520x222.png" width="520" height="222"> </img>
 
+- [ ] List the physical disks
+
+* For example listing all the **SD** (**S**CSI **D**isks)
+
+```
+$ sudo fdisk -l /dev/sd?
+Disk /dev/sda: 273.41 GiB, 293563949056 bytes, 573367088 sectors
+Disk model: LOGICAL VOLUME  
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 147F8706-F7D6-4323-BFF8-64FA5D7B9A32
+
+Device       Start       End   Sectors   Size Type
+/dev/sda1     2048      4095      2048     1M BIOS boot
+/dev/sda2     4096   2101247   2097152     1G Linux filesystem
+/dev/sda3  2101248 573364223 571262976 272.4G Linux filesystem
+```
+
 - [ ] List the block devices
 
 ```
-$ lsblk
+$ sudo lsblk /dev/sda
 NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-loop0                       7:0    0  55.5M  1 loop /snap/core18/1988
-loop1                       7:1    0  55.4M  1 loop /snap/core18/1944
-loop2                       7:2    0  69.9M  1 loop /snap/lxd/19188
-loop3                       7:3    0  31.1M  1 loop /snap/snapd/11036
-loop4                       7:4    0  32.3M  1 loop /snap/snapd/11107
 sda                         8:0    0 273.4G  0 disk 
 ├─sda1                      8:1    0     1M  0 part 
 ├─sda2                      8:2    0     1G  0 part /boot
 └─sda3                      8:3    0 272.4G  0 part 
   └─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
-sr0                        11:0    1  1024M  0 rom  
 ```
 
 ```
