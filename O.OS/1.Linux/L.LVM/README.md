@@ -398,11 +398,11 @@ sda                       273.4G disk
 ```
 
 
-https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
-
-
 # References
 
+https://medium.com/@dunefro/part-3-4-using-block-devices-for-kubernetes-volume-understanding-openebs-cstor-80ff6307ea29
+
+https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
 
 https://serverfault.com/questions/262541/how-to-display-used-devices-free-space-when-using-lvm/648302
 
