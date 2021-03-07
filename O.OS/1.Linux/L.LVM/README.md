@@ -152,6 +152,25 @@ $ sudo lvcreate -n vol_backups -l 100%FREE ubuntu-vg
   Logical volume "vol_backups" created.
 ```
 
+```
+$ sudo lvs
+  LV          VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  ubuntu-lv   ubuntu-vg -wi-ao---- <136.20g                                                    
+  vol_backups ubuntu-vg -wi-a----- <136.20g      
+```
+
+
+```
+$ sudo lvrename ubuntu-vg vol_backups mysql-lv
+  Renamed "vol_backups" to "mysql-lv" in volume group "ubuntu-vg"
+```
+
+```
+$ sudo lvs
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  mysql-lv  ubuntu-vg -wi-a----- <136.20g                                                    
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g   
+```
 # References
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
