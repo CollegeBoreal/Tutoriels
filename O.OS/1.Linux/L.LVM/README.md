@@ -145,7 +145,7 @@ DEVICES                            ..  FS                                       
 ```
 
 
-## :b: Edit LVG
+## :a: PLaying with the LVG
 
 - [ ] Lets create the LV
 
@@ -211,19 +211,24 @@ Do you really want to remove and DISCARD active logical volume ubuntu-vg/mysql-l
   Logical volume "mysql-lv" successfully removed
 ```
 
+## :b: Multiple LVs
 
-- [ ] Lets finalize the LVs
+- [ ] Create a 100G LV for iscsi usage (i.e. SAN) - Storage Access Network
 
 ```
 $ sudo lvcreate --name iscsi-lv --size 100G  ubuntu-vg
   Logical volume "iscsi-lv" created.
 ```
 
+- [ ] Create a Docker Volume with the remainder
+
+
 ```
 $ sudo lvcreate --name docker-lv --extents 100%FREE ubuntu-vg
   Logical volume "docker-lv" created.
 ```
 
+* Check the result by summarizing the entries
 
 ```
 $ sudo lvs
@@ -233,17 +238,44 @@ $ sudo lvs
   ubuntu-lv ubuntu-vg -wi-ao---- <136.20g  
 ```
 
+* Check the result by summarizing the entries
+
+
 ```
-$ sudo lsblk /dev/sda
-NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-sda                         8:0    0 273.4G  0 disk 
-├─sda1                      8:1    0     1M  0 part 
-├─sda2                      8:2    0     1G  0 part /boot
-└─sda3                      8:3    0 272.4G  0 part 
-  ├─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
-  ├─ubuntu--vg-iscsi--lv  253:1    0   100G  0 lvm  
-  └─ubuntu--vg-docker--lv 253:2    0  36.2G  0 lvm  
+$ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
+sda                       273.4G disk                                  
+├─sda1                        1M part                                  
+├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+└─sda3                    272.4G part        LVM2_member               
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-iscsi--lv    100G lvm                                   
+  └─ubuntu--vg-docker--lv  36.2G lvm                                   
 ```
+
+:round_pushpin: Let's focus on `docker-lv`
+
+```
+$ sudo lvdisplay ubuntu-vg/docker-lv
+  --- Logical volume ---
+  LV Path                /dev/ubuntu-vg/docker-lv
+  LV Name                docker-lv
+  VG Name                ubuntu-vg
+  LV UUID                VoP1ad-6sDQ-qNED-hYUa-I65a-QdmT-FGRr43
+  LV Write Access        read/write
+  LV Creation host, time canis, 2021-03-07 12:15:54 +0000
+  LV Status              available
+  # open                 0
+  LV Size                <36.20 GiB
+  Current LE             9267
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:2
+```
+
+
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
