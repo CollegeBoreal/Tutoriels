@@ -275,7 +275,20 @@ $ sudo lvdisplay ubuntu-vg/docker-lv
   Block device           253:2
 ```
 
+```
+$ sudo mkfs.ext4 /dev/ubuntu-vg/docker-lv
+mke2fs 1.45.5 (07-Jan-2020)
+Creating filesystem with 9489408 4k blocks and 2375680 inodes
+Filesystem UUID: 2ee26b54-05a1-405f-a63a-0fb94f8c871a
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624
 
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (65536 blocks): done
+Writing superblocks and filesystem accounting information: done  
+```
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
