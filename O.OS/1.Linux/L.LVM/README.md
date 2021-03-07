@@ -203,6 +203,13 @@ sda                         8:0    0 273.4G  0 disk
   └─ubuntu--vg-mysql--lv  253:1    0 136.2G  0 lvm  
 ```
 
+- [ ] Lets remove the LV
+
+```
+$ sudo lvremove ubuntu-vg/mysql-lv
+Do you really want to remove and DISCARD active logical volume ubuntu-vg/mysql-lv? [y/n]: y
+  Logical volume "mysql-lv" successfully removed
+```
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
