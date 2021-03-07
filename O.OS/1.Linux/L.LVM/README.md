@@ -72,3 +72,5 @@ DEVICES                            ..  FS                                       
 https://serverfault.com/questions/262541/how-to-display-used-devices-free-space-when-using-lvm/648302
 
 https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
+
+https://blog.confirm.ch/mount-options-atime-vs-relatime/
