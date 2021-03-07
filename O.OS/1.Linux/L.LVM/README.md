@@ -224,6 +224,27 @@ $ sudo lvcreate --name docker-lv --extents 100%FREE ubuntu-vg
   Logical volume "docker-lv" created.
 ```
 
+
+```
+$ sudo lvs
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  docker-lv ubuntu-vg -wi-a-----  <36.20g                                                    
+  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                                    
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g  
+```
+
+```
+$ sudo lsblk /dev/sda
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                         8:0    0 273.4G  0 disk 
+├─sda1                      8:1    0     1M  0 part 
+├─sda2                      8:2    0     1G  0 part /boot
+└─sda3                      8:3    0 272.4G  0 part 
+  ├─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
+  ├─ubuntu--vg-iscsi--lv  253:1    0   100G  0 lvm  
+  └─ubuntu--vg-docker--lv 253:2    0  36.2G  0 lvm  
+```
+
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
