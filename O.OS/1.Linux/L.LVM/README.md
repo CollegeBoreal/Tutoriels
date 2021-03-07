@@ -413,7 +413,8 @@ openebs-ndm-sl7h7                                 1/1     Running   2          2
 ```
 
 ```
-$ kubectl get  pod openebs-ndm-jpm2x -n openebs --output jsonpath='{.status.hostIP}' && echo 
+$ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.status.hostIP}' && echo
+10.13.15.201
 ```
 
 ```
@@ -430,6 +431,8 @@ data:
         include: "/dev/ubuntu-vg/iscsi-lv"
         exclude: "/dev/loop,/dev/fd0,/dev/sr0,/dev/ram,/dev/dm-,/dev/md,/dev/rbd,/dev/zd"
 ```
+
+% kubectl logs -f openebs-ndm-jx64c -n openebs 
 
 # References
 
