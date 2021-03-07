@@ -242,7 +242,7 @@ $ sudo lvs
 
 
 ```
-$ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
 sda                       273.4G disk                                  
 ├─sda1                        1M part                                  
@@ -288,6 +288,18 @@ Allocating group tables: done
 Writing inode tables: done                            
 Creating journal (65536 blocks): done
 Writing superblocks and filesystem accounting information: done  
+```
+
+```
+$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
+sda                       273.4G disk                                  
+├─sda1                        1M part                                  
+├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+└─sda3                    272.4G part        LVM2_member               
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-iscsi--lv    100G lvm                                   
+  └─ubuntu--vg-docker--lv  36.2G lvm         ext4    
 ```
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
