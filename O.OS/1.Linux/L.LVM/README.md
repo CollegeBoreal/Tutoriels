@@ -52,17 +52,26 @@ sda                       273.4G disk
   └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.8G    12% /
 ```
 
+```
 $ sudo pvs
-[sudo] password for ubuntu: 
-  PV         VG        Fmt  Attr PSize    PFree   
-  /dev/sda3  ubuntu-vg lvm2 a--  <272.40g <136.20g
-ubuntu@canis:~$ sudo vgs
-  VG        #PV #LV #SN Attr   VSize    VFree   
-  ubuntu-vg   1   1   0 wz--n- <272.40g <136.20g
-ubuntu@canis:~$ sudo lvs
-  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
-  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                                    
-ubuntu@canis:~$ sudo pvdisplay
+  PV         VG          Fmt   Attr   PSize      PFree   
+  /dev/sda3  ubuntu-vg   lvm2  a--    <272.40g   <136.20g
+```
+
+```
+$ sudo vgs
+  VG         #PV  #LV  #SN  Attr    VSize     VFree   
+  ubuntu-vg    1    1    0  wz--n-  <272.40g  <136.20g
+```
+
+```
+$ sudo lvs
+  LV          VG          Attr         LSize      Pool   Origin   Data%    Meta%    Move   Log   Cpy%Sync Convert
+  ubuntu-lv   ubuntu-vg   -wi-ao----   <136.20g                                                    
+```
+
+```
+$ sudo pvdisplay
   --- Physical volume ---
   PV Name               /dev/sda3
   VG Name               ubuntu-vg
@@ -73,10 +82,10 @@ ubuntu@canis:~$ sudo pvdisplay
   Free PE               34867
   Allocated PE          34867
   PV UUID               wMmt0Q-zccm-5bUc-Z2NQ-CLx1-pJ35-smZFTQ
-   
-ubuntu@canis:~$ sudo gvdisplay
-sudo: gvdisplay: command not found
-ubuntu@canis:~$ sudo vgdisplay
+```   
+
+```
+$ sudo vgdisplay
   --- Volume group ---
   VG Name               ubuntu-vg
   System ID             
@@ -97,8 +106,10 @@ ubuntu@canis:~$ sudo vgdisplay
   Alloc PE / Size       34867 / <136.20 GiB
   Free  PE / Size       34867 / <136.20 GiB
   VG UUID               3wU1Gs-K3RM-9v8m-InM2-B300-iKIJ-9GlQss
-   
-ubuntu@canis:~$ sudo lvdisplay
+```
+
+```
+$ sudo lvdisplay
   --- Logical volume ---
   LV Path                /dev/ubuntu-vg/ubuntu-lv
   LV Name                ubuntu-lv
@@ -115,7 +126,7 @@ ubuntu@canis:~$ sudo lvdisplay
   Read ahead sectors     auto
   - currently set to     256
   Block device           253:0
-
+```
 
 ```
 $ df --human --type ext4
