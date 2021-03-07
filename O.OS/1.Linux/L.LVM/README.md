@@ -402,6 +402,21 @@ sda                       273.4G disk
 - [ ] Add `/dev/ubuntu-vg/iscsi-lv` to the `openebs-ndm-config` configmaps 
 
 ```
+$ kubectl get pods --namespace openebs
+NAME                                              READY   STATUS    RESTARTS   AGE
+...
+openebs-ndm-jpm2x                                 1/1     Running   2          2d20h
+openebs-ndm-jx64c                                 1/1     Running   4          2d20h
+openebs-ndm-operator-575c46f9d8-cqlz2             1/1     Running   0          6h25m
+openebs-ndm-sl7h7                                 1/1     Running   2          2d20h
+...
+```
+
+```
+$ kubectl get  pod openebs-ndm-jpm2x -n openebs --output jsonpath='{.status.hostIP}' && echo 
+```
+
+```
 $ kubectl edit configmaps openebs-ndm-config -n openebs
 ...
 data:
