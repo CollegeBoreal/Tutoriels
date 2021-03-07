@@ -147,10 +147,14 @@ DEVICES                            ..  FS                                       
 
 ## :b: Edit LVG
 
+- [ ] Lets create the LV
+
 ```
-$ sudo lvcreate -n vol_backups -l 100%FREE ubuntu-vg
+$ sudo lvcreate --name vol_backups --extends 100%FREE ubuntu-vg
   Logical volume "vol_backups" created.
 ```
+
+* Lets get a summary with lv**s**
 
 ```
 $ sudo lvs
@@ -159,17 +163,44 @@ $ sudo lvs
   vol_backups ubuntu-vg -wi-a----- <136.20g      
 ```
 
+- [ ] Lets rename the LV
 
 ```
 $ sudo lvrename ubuntu-vg vol_backups mysql-lv
   Renamed "vol_backups" to "mysql-lv" in volume group "ubuntu-vg"
 ```
 
+* Lets get another summary with lv**s**
+
 ```
 $ sudo lvs
   LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
   mysql-lv  ubuntu-vg -wi-a----- <136.20g                                                    
   ubuntu-lv ubuntu-vg -wi-ao---- <136.20g   
+```
+
+* The created LV appears in /dev/mapper
+
+```
+$ ls -l /dev/mapper
+total 0
+crw------- 1 root root 10, 236 Mar  6 05:03 control
+lrwxrwxrwx 1 root root       7 Mar  7 03:56 ubuntu--vg-mysql--lv -> ../dm-1
+lrwxrwxrwx 1 root root       7 Mar  6 05:03 ubuntu--vg-ubuntu--lv -> ../dm-0
+```
+
+* It has to be mounted
+
+```
+$ sudo lsblk /dev/sda
+[sudo] password for ubuntu: 
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                         8:0    0 273.4G  0 disk 
+├─sda1                      8:1    0     1M  0 part 
+├─sda2                      8:2    0     1G  0 part /boot
+└─sda3                      8:3    0 272.4G  0 part 
+  ├─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
+  └─ubuntu--vg-mysql--lv  253:1    0 136.2G  0 lvm  
 ```
 
 
