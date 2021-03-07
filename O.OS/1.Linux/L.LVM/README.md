@@ -211,6 +211,19 @@ Do you really want to remove and DISCARD active logical volume ubuntu-vg/mysql-l
   Logical volume "mysql-lv" successfully removed
 ```
 
+
+- [ ] Lets finalize the LVs
+
+```
+$ sudo lvcreate --name iscsi-lv --size 100G  ubuntu-vg
+  Logical volume "iscsi-lv" created.
+```
+
+```
+$ sudo lvcreate --name docker-lv --extents 100%FREE ubuntu-vg
+  Logical volume "docker-lv" created.
+```
+
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
