@@ -27,6 +27,8 @@ Device       Start       End   Sectors   Size Type
 
 - [ ] List the block devices
 
+* Just displaying the physical volumes
+
 ```
 $ sudo lsblk /dev/sda
 NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
@@ -36,6 +38,20 @@ sda                         8:0    0 273.4G  0 disk
 └─sda3                      8:3    0 272.4G  0 part 
   └─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
 ```
+
+* displaying the physical volumes with the **FS** (File System) Information
+
+
+```
+$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
+sda                       273.4G disk                                  
+├─sda1                        1M part                                  
+├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+└─sda3                    272.4G part        LVM2_member               
+  └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.8G    12% /
+```
+
 
 ```
 $ df --human --type ext4
