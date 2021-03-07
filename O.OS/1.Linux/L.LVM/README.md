@@ -397,6 +397,24 @@ sda                       273.4G disk
   └─ubuntu--vg-docker--lv  36.2G lvm         ext4                      
 ```
 
+## :o: OpenEBS
+
+- [ ] Add `/dev/ubuntu-vg/iscsi-lv` to the `openebs-ndm-config` configmaps 
+
+```
+$ kubectl edit configmaps openebs-ndm-config -n openebs
+...
+data:
+  node-disk-manager.config: |
+    ...
+    filterconfigs:
+      ...
+      - key: path-filter
+        name: path filter
+        state: true
+        include: "/dev/ubuntu-vg/iscsi-lv"
+        exclude: "/dev/loop,/dev/fd0,/dev/sr0,/dev/ram,/dev/dm-,/dev/md,/dev/rbd,/dev/zd"
+```
 
 # References
 
