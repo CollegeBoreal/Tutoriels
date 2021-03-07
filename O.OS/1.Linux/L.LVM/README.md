@@ -332,6 +332,8 @@ sda                       273.4G disk
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
+- [ ] Let's display the file system tab at boot process `/etc/fstab`
+
 ```
 $ cat /etc/fstab 
 # /etc/fstab: static file system information.
@@ -347,6 +349,10 @@ $ cat /etc/fstab
 /dev/disk/by-uuid/e46c3253-aa81-452a-a71e-d5ab518f7393 /boot ext4 defaults 0 0
 #/swap.img	none	swap	sw	0	0
 ```
+
+- [ ] `/etc/fstab` file structure
+
+Let's use the mounting by uuid **/dev/disk/by-`uuid`**
 
 ```
 $ sudo blkid /dev/ubuntu-vg/iscsi-lv
@@ -370,13 +376,26 @@ $ mount --all
 
 - [ ] Check that `/vol/iscsi-lv` is mounted 
 
-
 ```
 $ mount --type ext4
 /dev/mapper/ubuntu--vg-ubuntu--lv on / type ext4 (rw,relatime)
 /dev/sda2 on /boot type ext4 (rw,relatime)
 /dev/mapper/ubuntu--vg-iscsi--lv on /vol/iscsi-lv type ext4 (rw,relatime)
 ``` 
+
+- [ ] Reboot and check back 
+
+```
+$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
+sda                       273.4G disk                                  
+├─sda1                        1M part                                  
+├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+└─sda3                    272.4G part        LVM2_member               
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-iscsi--lv    100G lvm     98G ext4           60M     0% /vol/iscsi-lv
+  └─ubuntu--vg-docker--lv  36.2G lvm         ext4                      
+```
 
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
