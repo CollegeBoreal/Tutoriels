@@ -144,6 +144,18 @@ DEVICES                            ..  FS                                       
 /dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/b634fa33-51cd-4e9c-8f29-f596b05e7dba/volume-subpaths/chroot-iscsiadm/cstor-csi-plugin/4  type  ext4  (rw,relatime)
 ```
 
+
+## :b: Edit LVG
+
+```
+$ sudo lvcreate -n vol_backups -l 100%FREE ubuntu-vg
+  Logical volume "vol_backups" created.
+```
+
+# References
+
+https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
+
 https://serverfault.com/questions/262541/how-to-display-used-devices-free-space-when-using-lvm/648302
 
 https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
