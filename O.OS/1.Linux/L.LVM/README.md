@@ -52,6 +52,70 @@ sda                       273.4G disk
   └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.8G    12% /
 ```
 
+$ sudo pvs
+[sudo] password for ubuntu: 
+  PV         VG        Fmt  Attr PSize    PFree   
+  /dev/sda3  ubuntu-vg lvm2 a--  <272.40g <136.20g
+ubuntu@canis:~$ sudo vgs
+  VG        #PV #LV #SN Attr   VSize    VFree   
+  ubuntu-vg   1   1   0 wz--n- <272.40g <136.20g
+ubuntu@canis:~$ sudo lvs
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                                    
+ubuntu@canis:~$ sudo pvdisplay
+  --- Physical volume ---
+  PV Name               /dev/sda3
+  VG Name               ubuntu-vg
+  PV Size               <272.40 GiB / not usable 0   
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              69734
+  Free PE               34867
+  Allocated PE          34867
+  PV UUID               wMmt0Q-zccm-5bUc-Z2NQ-CLx1-pJ35-smZFTQ
+   
+ubuntu@canis:~$ sudo gvdisplay
+sudo: gvdisplay: command not found
+ubuntu@canis:~$ sudo vgdisplay
+  --- Volume group ---
+  VG Name               ubuntu-vg
+  System ID             
+  Format                lvm2
+  Metadata Areas        1
+  Metadata Sequence No  2
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                1
+  Open LV               1
+  Max PV                0
+  Cur PV                1
+  Act PV                1
+  VG Size               <272.40 GiB
+  PE Size               4.00 MiB
+  Total PE              69734
+  Alloc PE / Size       34867 / <136.20 GiB
+  Free  PE / Size       34867 / <136.20 GiB
+  VG UUID               3wU1Gs-K3RM-9v8m-InM2-B300-iKIJ-9GlQss
+   
+ubuntu@canis:~$ sudo lvdisplay
+  --- Logical volume ---
+  LV Path                /dev/ubuntu-vg/ubuntu-lv
+  LV Name                ubuntu-lv
+  VG Name                ubuntu-vg
+  LV UUID                M3aFew-MTKU-RilU-1s52-Gl8H-sE8f-3wg2Se
+  LV Write Access        read/write
+  LV Creation host, time ubuntu-server, 2020-04-01 17:26:26 +0000
+  LV Status              available
+  # open                 1
+  LV Size                <136.20 GiB
+  Current LE             34867
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+
 
 ```
 $ df --human --type ext4
