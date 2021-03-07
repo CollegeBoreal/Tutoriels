@@ -302,6 +302,34 @@ sda                       273.4G disk
   └─ubuntu--vg-docker--lv  36.2G lvm         ext4    
 ```
 
+```
+$ sudo mkfs.ext4 /dev/ubuntu-vg/iscsi-lv
+mke2fs 1.45.5 (07-Jan-2020)
+Creating filesystem with 26214400 4k blocks and 6553600 inodes
+Filesystem UUID: e69f6903-176b-4034-aaf8-40d5f09e577e
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information: done  
+```
+
+```
+$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
+sda                       273.4G disk                                  
+├─sda1                        1M part                                  
+├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+└─sda3                    272.4G part        LVM2_member               
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-iscsi--lv    100G lvm         ext4                      
+  └─ubuntu--vg-docker--lv  36.2G lvm         ext4   
+```
+
+
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
