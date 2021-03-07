@@ -332,6 +332,53 @@ sda                       273.4G disk
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
+```
+$ cat /etc/fstab 
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssM3aFewMTKURilU1s52Gl8HsE8f3wg2Se / ext4 defaults 0 0
+# /boot was on /dev/sda2 during curtin installation
+/dev/disk/by-uuid/e46c3253-aa81-452a-a71e-d5ab518f7393 /boot ext4 defaults 0 0
+#/swap.img	none	swap	sw	0	0
+```
+
+```
+$ sudo blkid /dev/ubuntu-vg/iscsi-lv
+[sudo] password for ubuntu: 
+/dev/ubuntu-vg/iscsi-lv: UUID="e69f6903-176b-4034-aaf8-40d5f09e577e" TYPE="ext4"
+```
+
+```
+$ sudo mkdir -p /vol/iscsi-lv
+```
+
+```
+/dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /vol/iscsi-lv ext4 defaults 0 0
+```
+
+- [ ] Read `/etc/fstab`
+
+```
+$ mount --all
+```
+
+- [ ] Check that `/vol/iscsi-lv` is mounted 
+
+
+```
+$ mount --type ext4
+/dev/mapper/ubuntu--vg-ubuntu--lv on / type ext4 (rw,relatime)
+/dev/sda2 on /boot type ext4 (rw,relatime)
+/dev/mapper/ubuntu--vg-iscsi--lv on /vol/iscsi-lv type ext4 (rw,relatime)
+``` 
+
+
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
 
 
