@@ -11,13 +11,14 @@ https://opensource.com/business/16/9/linux-users-guide-lvm
 
 ```
 $ sudo fdisk -l /dev/sd?
-Disk /dev/sda: 273.41 GiB, 293563949056 bytes, 573367088 sectors
+[sudo] password for ubuntu: 
+Disk /dev/sda: 273.41 GiB, 293564211200 bytes, 573367600 sectors
 Disk model: LOGICAL VOLUME  
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: gpt
-Disk identifier: 147F8706-F7D6-4323-BFF8-64FA5D7B9A32
+Disk identifier: B87275C8-AEC3-4195-95C3-7F796B5E7300
 
 Device       Start       End   Sectors   Size Type
 /dev/sda1     2048      4095      2048     1M BIOS boot
