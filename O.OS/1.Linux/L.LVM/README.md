@@ -468,6 +468,7 @@ TAGS=:systemd:
 
 
 ```
+$ kubectl apply -f - <<EOF 
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
@@ -495,6 +496,7 @@ TAGS=:systemd:
    nodeAttributes:
      nodeName: canis
    path: /dev/dm-1
+EOF
 ```
 
 
