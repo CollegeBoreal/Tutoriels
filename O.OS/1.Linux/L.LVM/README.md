@@ -52,23 +52,17 @@ sda                       273.4G disk
   └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.8G    12% /
 ```
 
+- [ ] List the physical volumes PV
+
+* the summary
+
 ```
 $ sudo pvs
   PV         VG          Fmt   Attr   PSize      PFree   
   /dev/sda3  ubuntu-vg   lvm2  a--    <272.40g   <136.20g
 ```
 
-```
-$ sudo vgs
-  VG         #PV  #LV  #SN  Attr    VSize     VFree   
-  ubuntu-vg    1    1    0  wz--n-  <272.40g  <136.20g
-```
-
-```
-$ sudo lvs
-  LV          VG          Attr         LSize      Pool   Origin   Data%    Meta%    Move   Log   Cpy%Sync Convert
-  ubuntu-lv   ubuntu-vg   -wi-ao----   <136.20g                                                    
-```
+* In detail
 
 ```
 $ sudo pvdisplay
@@ -83,6 +77,18 @@ $ sudo pvdisplay
   Allocated PE          34867
   PV UUID               wMmt0Q-zccm-5bUc-Z2NQ-CLx1-pJ35-smZFTQ
 ```   
+
+- [ ] List the volume groups VG
+
+* the summary
+
+```
+$ sudo vgs
+  VG         #PV  #LV  #SN  Attr    VSize     VFree   
+  ubuntu-vg    1    1    0  wz--n-  <272.40g  <136.20g
+```
+
+* In detail
 
 ```
 $ sudo vgdisplay
@@ -108,6 +114,18 @@ $ sudo vgdisplay
   VG UUID               3wU1Gs-K3RM-9v8m-InM2-B300-iKIJ-9GlQss
 ```
 
+- [ ] List the logical volumes LV
+
+* the summary
+
+```
+$ sudo lvs
+  LV          VG          Attr         LSize      Pool   Origin   Data%    Meta%    Move   Log   Cpy%Sync Convert
+  ubuntu-lv   ubuntu-vg   -wi-ao----   <136.20g                                                    
+```
+
+* In detail
+
 ```
 $ sudo lvdisplay
   --- Logical volume ---
@@ -128,6 +146,8 @@ $ sudo lvdisplay
   Block device           253:0
 ```
 
+- [ ] List the disk filesystems **df**
+
 ```
 $ df --human --type ext4
 Filesystem                         Size  Used Avail Use% Mounted on
@@ -135,13 +155,13 @@ Filesystem                         Size  Used Avail Use% Mounted on
 /dev/sda2                          976M  104M  806M  12% /boot
 ```
 
+- [ ] List where the **devices** are mounted on? **i.e. fs**
+
 ```
 $ ( printf "DEVICES .. FS .... TYPE ATTRIBUTES\n"; mount --types ext4) | column -t
-DEVICES                            ..  FS                                                                                                             ....  TYPE  ATTRIBUTES
-/dev/mapper/ubuntu--vg-ubuntu--lv  on  /                                                                                                              type  ext4  (rw,relatime)
-/dev/sda2                          on  /boot                                                                                                          type  ext4  (rw,relatime)
-/dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/d7b2db25-998b-4a12-b19b-4d2241213d01/volume-subpaths/config/node-disk-manager/0          type  ext4  (rw,relatime)
-/dev/mapper/ubuntu--vg-ubuntu--lv  on  /var/lib/kubelet/pods/b634fa33-51cd-4e9c-8f29-f596b05e7dba/volume-subpaths/chroot-iscsiadm/cstor-csi-plugin/4  type  ext4  (rw,relatime)
+DEVICES                            ..  FS    ....  TYPE  ATTRIBUTES
+/dev/mapper/ubuntu--vg-ubuntu--lv  on  /     type  ext4  (rw,relatime)
+/dev/sda2                          on  /boot type  ext4  (rw,relatime)
 ```
 
 
