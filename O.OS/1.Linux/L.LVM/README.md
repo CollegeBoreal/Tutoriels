@@ -18,7 +18,7 @@ Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: gpt
-Disk identifier: B87275C8-AEC3-4195-95C3-7F796B5E7300
+Disk identifier: ED4AACF5-4D43-4257-A30B-3155D94AFA0F
 
 Device       Start       End   Sectors   Size Type
 /dev/sda1     2048      4095      2048     1M BIOS boot
@@ -48,9 +48,9 @@ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
 sda                       273.4G disk                                  
 ├─sda1                        1M part                                  
-├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+├─sda2                        1G part 975.9M ext4        197.5M    20% /boot
 └─sda3                    272.4G part        LVM2_member               
-  └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.8G    12% /
+  └─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         19.9G    15% /
 ```
 
 - [ ] List the physical volumes PV
@@ -61,8 +61,8 @@ It only displays the volume that can be used (i.e no /boot which is not usable b
 
 ```
 $ sudo pvs
-  PV         VG          Fmt   Attr   PSize      PFree   
-  /dev/sda3  ubuntu-vg   lvm2  a--    <272.40g   <136.20g
+  PV         VG        Fmt  Attr PSize    PFree   
+  /dev/sda3  ubuntu-vg lvm2 a--  <272.40g <136.20g
 ```
 
 * In detail
@@ -78,7 +78,7 @@ $ sudo pvdisplay
   Total PE              69734
   Free PE               34867
   Allocated PE          34867
-  PV UUID               wMmt0Q-zccm-5bUc-Z2NQ-CLx1-pJ35-smZFTQ
+  PV UUID               xe2Kkf-22cm-OIIK-HXGB-nHGM-DcDc-0F5PWX
 ```   
 
 - [ ] List the volume groups VG
@@ -114,7 +114,7 @@ $ sudo vgdisplay
   Total PE              69734
   Alloc PE / Size       34867 / <136.20 GiB
   Free  PE / Size       34867 / <136.20 GiB
-  VG UUID               3wU1Gs-K3RM-9v8m-InM2-B300-iKIJ-9GlQss
+  VG UUID               sriYwj-haKn-73lS-vWNq-HEsr-aPHd-oVkHV9
 ```
 
 - [ ] List the logical volumes LV
@@ -135,9 +135,9 @@ $ sudo lvdisplay
   LV Path                /dev/ubuntu-vg/ubuntu-lv
   LV Name                ubuntu-lv
   VG Name                ubuntu-vg
-  LV UUID                M3aFew-MTKU-RilU-1s52-Gl8H-sE8f-3wg2Se
+  LV UUID                vTuF2C-B6kd-Ptcu-xQaR-h0it-HmdJ-YDKQum
   LV Write Access        read/write
-  LV Creation host, time ubuntu-server, 2020-04-01 17:26:26 +0000
+  LV Creation host, time ubuntu-server, 2021-02-12 22:33:11 +0000
   LV Status              available
   # open                 1
   LV Size                <136.20 GiB
@@ -152,10 +152,10 @@ $ sudo lvdisplay
 - [ ] List the disk filesystems **df**
 
 ```
-$ df --human --type ext4
+$  df --human --type ext4
 Filesystem                         Size  Used Avail Use% Mounted on
-/dev/mapper/ubuntu--vg-ubuntu--lv  134G   16G  111G  13% /
-/dev/sda2                          976M  104M  806M  12% /boot
+/dev/mapper/ubuntu--vg-ubuntu--lv  134G   20G  107G  16% /
+/dev/sda2                          976M  198M  712M  22% /boot
 ```
 
 - [ ] List where the **devices** are mounted on? **i.e. fs**
@@ -173,7 +173,7 @@ DEVICES                            ..  FS    ....  TYPE  ATTRIBUTES
 - [ ] Lets create the LV
 
 ```
-$ sudo lvcreate --name vol_backups --extends 100%FREE ubuntu-vg
+$ sudo lvcreate --name vol_backups --extents 100%FREE ubuntu-vg
   Logical volume "vol_backups" created.
 ```
 
@@ -212,7 +212,7 @@ lrwxrwxrwx 1 root root       7 Mar  7 03:56 ubuntu--vg-mysql--lv -> ../dm-1
 lrwxrwxrwx 1 root root       7 Mar  6 05:03 ubuntu--vg-ubuntu--lv -> ../dm-0
 ```
 
-* It has to be mounted
+* As expected, it has to be mounted (NO MOUNTPOINT)
 
 ```
 $ sudo lsblk /dev/sda
@@ -232,6 +232,18 @@ sda                         8:0    0 273.4G  0 disk
 $ sudo lvremove ubuntu-vg/mysql-lv
 Do you really want to remove and DISCARD active logical volume ubuntu-vg/mysql-lv? [y/n]: y
   Logical volume "mysql-lv" successfully removed
+```
+
+* let's check if it's gone
+
+```
+$ sudo lsblk /dev/sda
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                         8:0    0 273.4G  0 disk 
+├─sda1                      8:1    0     1M  0 part 
+├─sda2                      8:2    0     1G  0 part /boot
+└─sda3                      8:3    0 272.4G  0 part 
+  └─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
 ```
 
 ## :b: Multiple LVs
