@@ -256,11 +256,9 @@ DEVLINKS=/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /dev/ubuntu-vg/i
 TAGS=:systemd:
 ```
 
-
-
 :round_pushpin: Let's prepare the Custom Resource
 
-The block device name is by convention the `blockdevice`-UUID
+The block device name is by convention the string `blockdevice`-`UUID` that can be taken from the `DEVLINKS` field above
 
 ```
 $ kubectl apply -n openebs -f - <<EOF 
@@ -287,7 +285,7 @@ $ kubectl apply -n openebs -f - <<EOF
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
-     - /dev/mapper/ubuntu--vg-iscsi--lv
+     - /dev/ubuntu-vg/iscsi-lv
    nodeAttributes:
      nodeName: ursa
    path: /dev/dm-1
@@ -315,7 +313,7 @@ $ kubectl apply -n openebs -f - <<EOF
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
-     - /dev/mapper/ubuntu--vg-iscsi--lv
+     - /dev/ubuntu-vg/iscsi-lv
    nodeAttributes:
      nodeName: canis
    path: /dev/dm-1
@@ -323,9 +321,10 @@ EOF
 ```
 
 ```
-$ kubectl get blockdevice -n openebs                                                                           
+$ kubectl get blockdevice -n openebs   
 NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
-blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   9s
+blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Unclaimed    Active   37m
+blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   18h
 ```
 
 ```
