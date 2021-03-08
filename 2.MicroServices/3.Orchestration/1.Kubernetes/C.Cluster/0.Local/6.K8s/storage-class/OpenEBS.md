@@ -197,11 +197,101 @@ $ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.status.host
 10.13.15.201
 ```
 
-- [ ] Let's prepare the Custom Resource
+- [ ] connect to the node and determine the LV information on that node (we know that `iscsi-lv` is the given LV)
 
+```
+$ sudo lvs
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  docker-lv ubuntu-vg -wi-a-----  <36.20g                                                    
+  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                                    
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g  
+```
+
+* let's display the `LV PATH` through `lvdisplay`
+
+```
+$ sudo lvdisplay ubuntu-vg/iscsi-lv
+  --- Logical volume ---
+  LV Path                /dev/ubuntu-vg/iscsi-lv
+  LV Name                iscsi-lv
+  VG Name                ubuntu-vg
+  LV UUID                duyiFf-JKTq-n3yv-jskY-yMvc-qpLl-xbgdlJ
+  LV Write Access        read/write
+  LV Creation host, time ursa, 2021-03-08 19:15:05 +0000
+  LV Status              available
+  # open                 1
+  LV Size                100.00 GiB
+...
+```
+
+* finally, let's grab the `DEVLINKS` through `udevadm`
+
+```
+$ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
+DEVPATH=/devices/virtual/block/dm-1
+DEVNAME=/dev/dm-1
+DEVTYPE=disk
+MAJOR=253
+MINOR=1
+SUBSYSTEM=block
+USEC_INITIALIZED=9508058
+DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
+DM_UDEV_PRIMARY_SOURCE_FLAG=1
+DM_UDEV_RULES=1
+DM_UDEV_RULES_VSN=2
+DM_ACTIVATION=1
+DM_NAME=ubuntu--vg-iscsi--lv
+DM_UUID=LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
+DM_SUSPENDED=0
+DM_VG_NAME=ubuntu-vg
+DM_LV_NAME=iscsi-lv
+ID_FS_UUID=9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+ID_FS_UUID_ENC=9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+ID_FS_VERSION=1.0
+ID_FS_TYPE=ext4
+ID_FS_USAGE=filesystem
+DM_TABLE_STATE=LIVE
+DM_STATE=ACTIVE
+DEVLINKS=/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /dev/ubuntu-vg/iscsi-lv /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+TAGS=:systemd:
+```
+
+
+
+:round_pushpin: Let's prepare the Custom Resource
+
+The block device name is by convention the `blockdevice`-UUID
 
 ```
 $ kubectl apply -n openebs -f - <<EOF 
+ apiVersion: openebs.io/v1alpha1
+ kind: BlockDevice
+ metadata:
+   name: blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+   labels:
+     kubernetes.io/hostname: ursa
+     ndm.io/managed: "false"
+     ndm.io/blockdevice-type: blockdevice
+ status:
+   claimState: Unclaimed
+   state: Active
+ spec:
+   capacity:
+     logicalSectorSize: 1024
+     storage: 102687672
+   details:
+     deviceType: lvm
+   devlinks:
+   - kind: by-id
+     links:
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+   - kind: by-path
+     links:
+     - /dev/mapper/ubuntu--vg-iscsi--lv
+   nodeAttributes:
+     nodeName: ursa
+   path: /dev/dm-1
+---
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
