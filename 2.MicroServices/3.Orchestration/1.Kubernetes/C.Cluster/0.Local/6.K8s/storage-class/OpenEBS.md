@@ -193,8 +193,8 @@ openebs-ndm-sl7h7                                 1/1     Running   2          2
 - [ ] Let's pick a node
 
 ```
-$ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.status.hostIP}' && echo
-10.13.15.201
+$ % kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.spec.nodeName}@{.status.hostIP}' && echo
+canis@10.13.15.201
 ```
 
 - [ ] connect to the node and determine the LV information on that node (we know that `iscsi-lv` is the given LV)
