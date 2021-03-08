@@ -59,3 +59,6 @@ spec:
   type: disk
 EOF
 ```
+
+
+https://github.com/openebs/openebs-docs/issues/900
