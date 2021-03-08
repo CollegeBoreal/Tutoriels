@@ -343,6 +343,8 @@ sda                       273.4G disk
   └─ubuntu--vg-docker--lv  36.2G lvm      
 ```
 
+## :ab: Mounting Logical Volumes on Boot and on Demand
+
 - [ ] Getting the basic device information with [Udev](https://en.wikipedia.org/wiki/Udev) 
 
 :bulb: Udev (Userspace Device) is managed by [systemd-udevd](https://manpages.debian.org/unstable/udev/systemd-udevd.service.8.en.html)
@@ -377,12 +379,10 @@ DEVLINKS=/dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA
 TAGS=:systemd:
 ```
 
-## :ab: Mounting Logical Volumes on Boot and on Demand
-
 - [ ] Let's display the file system tab at boot process `/etc/fstab`
 
 ```
-$ cat /etc/fstab 
+$ $ cat /etc/fstab 
 # /etc/fstab: static file system information.
 #
 # Use 'blkid' to print the universally unique identifier for a
@@ -391,34 +391,49 @@ $ cat /etc/fstab
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
-/dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssM3aFewMTKURilU1s52Gl8HsE8f3wg2Se / ext4 defaults 0 0
+/dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9vTuF2CB6kdPtcuxQaRh0itHmdJYDKQum / ext4 defaults 0 0
 # /boot was on /dev/sda2 during curtin installation
-/dev/disk/by-uuid/e46c3253-aa81-452a-a71e-d5ab518f7393 /boot ext4 defaults 0 0
+/dev/disk/by-uuid/da420220-48cc-4a27-a53f-92e31bbac806 /boot ext4 defaults 0 0
 #/swap.img	none	swap	sw	0	0
 ```
 
-- [ ] `/etc/fstab` file structure
+We need to add the LV information into the `/etc/fstab`
 
-Let's use the mounting by uuid **/dev/disk/by-`uuid`**
+- [ ] Adding to the `/etc/fstab` file structure
+
+* Let's use the mounting by uuid **/dev/disk/by-`uuid`**
+
+`blkid` utility displays the LV info 
 
 ```
 $ sudo blkid /dev/ubuntu-vg/iscsi-lv
-[sudo] password for ubuntu: 
-/dev/ubuntu-vg/iscsi-lv: UUID="e69f6903-176b-4034-aaf8-40d5f09e577e" TYPE="ext4"
+/dev/ubuntu-vg/iscsi-lv: UUID="9214d585-1b63-4bd4-a500-0f1a2c5f7af4" TYPE="ext4"
 ```
+
+or with `awk` text parsing to only display the `udev` information we need
+
+```
+$ sudo blkid /dev/ubuntu-vg/iscsi-lv --output udev | awk 'BEGIN{FS="="} NR==1 || NR==3 {print $2}'
+9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+ext4
+```
+
+* Let's create the mounting folder, that we'll put in the `vol` like volumes folder
 
 ```
 $ sudo mkdir -p /vol/iscsi-lv
 ```
 
+* lets' add the entire line to the `/etc/fstab` file
+
 ```
-/dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /vol/iscsi-lv ext4 defaults 0 0
+/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /vol/iscsi-lv ext4 defaults 0 0
 ```
 
 - [ ] Read `/etc/fstab`
 
 ```
-$ mount --all
+$ sudo mount --all
 ```
 
 - [ ] Check that `/vol/iscsi-lv` is mounted 
@@ -437,11 +452,11 @@ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
 sda                       273.4G disk                                  
 ├─sda1                        1M part                                  
-├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+├─sda2                        1G part 975.9M ext4        197.5M    20% /boot
 └─sda3                    272.4G part        LVM2_member               
-  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         19.9G    15% /
   ├─ubuntu--vg-iscsi--lv    100G lvm     98G ext4           60M     0% /vol/iscsi-lv
-  └─ubuntu--vg-docker--lv  36.2G lvm         ext4                      
+  └─ubuntu--vg-docker--lv  36.2G lvm  
 ```
 
 
