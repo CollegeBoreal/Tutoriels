@@ -327,6 +327,10 @@ Creating journal (131072 blocks): done
 Writing superblocks and filesystem accounting information: done   
 ```
 
+* displaying the physical volumes along with the **FS** (File System) Information
+
+:bulb: Note the **ext4** FSTYPE attached to `ubuntu--vg-iscsi--lv` LV
+
 ```
 $ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
