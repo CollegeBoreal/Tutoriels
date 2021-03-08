@@ -432,7 +432,9 @@ data:
         exclude: "/dev/loop,/dev/fd0,/dev/sr0,/dev/ram,/dev/dm-,/dev/md,/dev/rbd,/dev/zd"
 ```
 
-% kubectl logs -f openebs-ndm-jx64c -n openebs 
+```
+$ kubectl logs -f openebs-ndm-jx64c -n openebs 
+```
 
 # References
 
