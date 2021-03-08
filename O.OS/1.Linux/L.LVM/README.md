@@ -466,6 +466,38 @@ DEVLINKS=/dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /d
 TAGS=:systemd:
 ```
 
+
+```
+ apiVersion: openebs.io/v1alpha1
+ kind: BlockDevice
+ metadata:
+   name: example-blockdevice-1
+   labels:
+     kubernetes.io/hostname: canis
+     ndm.io/managed: "false"
+     ndm.io/blockdevice-type: blockdevice
+ status:
+   claimState: Unclaimed
+   state: Active
+ spec:
+   capacity:
+     logicalSectorSize: 1024
+     storage: 102687672
+   details:
+     deviceType: lvm
+   devlinks:
+   - kind: by-id
+     links:
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+   - kind: by-path
+     links:
+     - /dev/mapper/ubuntu--vg-iscsi--lv
+   nodeAttributes:
+     nodeName: canis
+   path: /dev/dm-1
+```
+
+
 # References
 
 https://medium.com/@dunefro/part-3-4-using-block-devices-for-kubernetes-volume-understanding-openebs-cstor-80ff6307ea29
