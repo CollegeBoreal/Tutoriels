@@ -54,6 +54,8 @@ sda                       273.4G disk
 
 - [ ] List the physical volumes PV
 
+It only displays the volume that can be used (i.e no /boot which is not usable by users)
+
 * the summary
 
 ```
