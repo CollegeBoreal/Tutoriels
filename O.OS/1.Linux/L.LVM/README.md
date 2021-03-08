@@ -472,7 +472,7 @@ $ kubectl apply -n openebs -f - <<EOF
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
-   name: example-blockdevice-1
+   name: blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e
    labels:
      kubernetes.io/hostname: canis
      ndm.io/managed: "false"
