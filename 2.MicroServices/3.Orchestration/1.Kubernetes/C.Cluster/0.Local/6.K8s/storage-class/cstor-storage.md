@@ -74,6 +74,12 @@ provisioner: openebs.io/provisioner-iscsi
 EOF
 ```
 
+```
+$ kubectl get sc openebs-sc-statefulset
+NAME                     PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
+```
+
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
