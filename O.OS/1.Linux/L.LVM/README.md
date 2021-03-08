@@ -40,7 +40,7 @@ sda                         8:0    0 273.4G  0 disk
   └─ubuntu--vg-ubuntu--lv 253:0    0 136.2G  0 lvm  /
 ```
 
-* displaying the physical volumes with the **FS** (File System) Information
+* displaying the physical volumes along with the **FS** (File System) Information
 
 
 ```
@@ -273,7 +273,7 @@ $ sudo lvs
   ubuntu-lv ubuntu-vg -wi-ao---- <136.20g  
 ```
 
-* Check the result by summarizing the entries
+* displaying the physical volumes along with the **FS** (File System) Information
 
 
 ```
@@ -281,67 +281,42 @@ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
 sda                       273.4G disk                                  
 ├─sda1                        1M part                                  
-├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+├─sda2                        1G part 975.9M ext4        197.5M    20% /boot
 └─sda3                    272.4G part        LVM2_member               
-  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         19.9G    15% /
   ├─ubuntu--vg-iscsi--lv    100G lvm                                   
   └─ubuntu--vg-docker--lv  36.2G lvm                                   
 ```
 
-:round_pushpin: Let's focus on `docker-lv`
+:round_pushpin: Let's focus on `iscsi-lv`
 
 ```
-$ sudo lvdisplay ubuntu-vg/docker-lv
+$ sudo lvdisplay ubuntu-vg/iscsi-lv
   --- Logical volume ---
-  LV Path                /dev/ubuntu-vg/docker-lv
-  LV Name                docker-lv
+  LV Path                /dev/ubuntu-vg/iscsi-lv
+  LV Name                iscsi-lv
   VG Name                ubuntu-vg
-  LV UUID                VoP1ad-6sDQ-qNED-hYUa-I65a-QdmT-FGRr43
+  LV UUID                duyiFf-JKTq-n3yv-jskY-yMvc-qpLl-xbgdlJ
   LV Write Access        read/write
-  LV Creation host, time canis, 2021-03-07 12:15:54 +0000
+  LV Creation host, time ursa, 2021-03-08 19:15:05 +0000
   LV Status              available
   # open                 0
-  LV Size                <36.20 GiB
-  Current LE             9267
+  LV Size                100.00 GiB
+  Current LE             25600
   Segments               1
   Allocation             inherit
   Read ahead sectors     auto
   - currently set to     256
-  Block device           253:2
+  Block device           253:1
 ```
 
-```
-$ sudo mkfs.ext4 /dev/ubuntu-vg/docker-lv
-mke2fs 1.45.5 (07-Jan-2020)
-Creating filesystem with 9489408 4k blocks and 2375680 inodes
-Filesystem UUID: 2ee26b54-05a1-405f-a63a-0fb94f8c871a
-Superblock backups stored on blocks: 
-	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
-	4096000, 7962624
-
-Allocating group tables: done                            
-Writing inode tables: done                            
-Creating journal (65536 blocks): done
-Writing superblocks and filesystem accounting information: done  
-```
-
-```
-$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
-NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
-sda                       273.4G disk                                  
-├─sda1                        1M part                                  
-├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
-└─sda3                    272.4G part        LVM2_member               
-  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
-  ├─ubuntu--vg-iscsi--lv    100G lvm                                   
-  └─ubuntu--vg-docker--lv  36.2G lvm         ext4    
-```
+:bangbang: Let's format the LV to a filesystem with `mkfs` to an [`ext4`](https://en.wikipedia.org/wiki/Ext4) journalized filesystem
 
 ```
 $ sudo mkfs.ext4 /dev/ubuntu-vg/iscsi-lv
 mke2fs 1.45.5 (07-Jan-2020)
 Creating filesystem with 26214400 4k blocks and 6553600 inodes
-Filesystem UUID: e69f6903-176b-4034-aaf8-40d5f09e577e
+Filesystem UUID: 9214d585-1b63-4bd4-a500-0f1a2c5f7af4
 Superblock backups stored on blocks: 
 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
 	4096000, 7962624, 11239424, 20480000, 23887872
@@ -349,19 +324,19 @@ Superblock backups stored on blocks:
 Allocating group tables: done                            
 Writing inode tables: done                            
 Creating journal (131072 blocks): done
-Writing superblocks and filesystem accounting information: done  
+Writing superblocks and filesystem accounting information: done   
 ```
 
 ```
-$ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
+$ $ lsblk /dev/sda --output NAME,SIZE,TYPE,FSSIZE,FSTYPE,FSUSED,FSUSE%,MOUNTPOINT 
 NAME                        SIZE TYPE FSSIZE FSTYPE      FSUSED FSUSE% MOUNTPOINT
 sda                       273.4G disk                                  
 ├─sda1                        1M part                                  
-├─sda2                        1G part 975.9M ext4        103.5M    11% /boot
+├─sda2                        1G part 975.9M ext4        197.5M    20% /boot
 └─sda3                    272.4G part        LVM2_member               
-  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         15.9G    12% /
+  ├─ubuntu--vg-ubuntu--lv 136.2G lvm  133.1G ext4         19.9G    15% /
   ├─ubuntu--vg-iscsi--lv    100G lvm         ext4                      
-  └─ubuntu--vg-docker--lv  36.2G lvm         ext4   
+  └─ubuntu--vg-docker--lv  36.2G lvm      
 ```
 
 - [ ] Getting the basic device information with [Udev](https://en.wikipedia.org/wiki/Udev) 
