@@ -430,7 +430,27 @@ $ sudo mkdir -p /vol/iscsi-lv
 /dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /vol/iscsi-lv ext4 defaults 0 0
 ```
 
-- [ ] Read `/etc/fstab`
+- [ ] Let's display the **new** file system tab at boot process `/etc/fstab`
+
+```
+$ cat /etc/fstab 
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9vTuF2CB6kdPtcuxQaRh0itHmdJYDKQum / ext4 defaults 0 0
+# /boot was on /dev/sda2 during curtin installation
+/dev/disk/by-uuid/da420220-48cc-4a27-a53f-92e31bbac806 /boot ext4 defaults 0 0
+#/swap.img	none	swap	sw	0	0
+
+/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /vol/iscsi-lv ext4 defaults 0 0
+```
+
+- [ ] Reprocess `/etc/fstab` to mount all the filesystems
 
 ```
 $ sudo mount --all
@@ -458,8 +478,6 @@ sda                       273.4G disk
   ├─ubuntu--vg-iscsi--lv    100G lvm     98G ext4           60M     0% /vol/iscsi-lv
   └─ubuntu--vg-docker--lv  36.2G lvm  
 ```
-
-
 
 ## :o: OpenEBS
 
