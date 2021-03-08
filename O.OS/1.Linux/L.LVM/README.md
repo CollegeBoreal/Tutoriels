@@ -437,41 +437,33 @@ $ kubectl logs -f openebs-ndm-jx64c -n openebs
 ```
 
 ```
-$ udevadm info /dev/dm-1
-P: /devices/virtual/block/dm-1
-N: dm-1
-L: 0
-S: mapper/ubuntu--vg-iscsi--lv
-S: disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e
-S: disk/by-id/dm-name-ubuntu--vg-iscsi--lv
-S: ubuntu-vg/iscsi-lv
-S: disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
-E: DEVPATH=/devices/virtual/block/dm-1
-E: DEVNAME=/dev/dm-1
-E: DEVTYPE=disk
-E: MAJOR=253
-E: MINOR=1
-E: SUBSYSTEM=block
-E: USEC_INITIALIZED=10068927
-E: DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
-E: DM_UDEV_PRIMARY_SOURCE_FLAG=1
-E: DM_UDEV_RULES=1
-E: DM_UDEV_RULES_VSN=2
-E: DM_ACTIVATION=1
-E: DM_NAME=ubuntu--vg-iscsi--lv
-E: DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
-E: DM_SUSPENDED=0
-E: DM_VG_NAME=ubuntu-vg
-E: DM_LV_NAME=iscsi-lv
-E: ID_FS_UUID=e69f6903-176b-4034-aaf8-40d5f09e577e
-E: ID_FS_UUID_ENC=e69f6903-176b-4034-aaf8-40d5f09e577e
-E: ID_FS_VERSION=1.0
-E: ID_FS_TYPE=ext4
-E: ID_FS_USAGE=filesystem
-E: DM_TABLE_STATE=LIVE
-E: DM_STATE=ACTIVE
-E: DEVLINKS=/dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
-E: TAGS=:systemd:
+$ udevadm info --query property --name /dev/dm-1
+DEVPATH=/devices/virtual/block/dm-1
+DEVNAME=/dev/dm-1
+DEVTYPE=disk
+MAJOR=253
+MINOR=1
+SUBSYSTEM=block
+USEC_INITIALIZED=10068927
+DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
+DM_UDEV_PRIMARY_SOURCE_FLAG=1
+DM_UDEV_RULES=1
+DM_UDEV_RULES_VSN=2
+DM_ACTIVATION=1
+DM_NAME=ubuntu--vg-iscsi--lv
+DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+DM_SUSPENDED=0
+DM_VG_NAME=ubuntu-vg
+DM_LV_NAME=iscsi-lv
+ID_FS_UUID=e69f6903-176b-4034-aaf8-40d5f09e577e
+ID_FS_UUID_ENC=e69f6903-176b-4034-aaf8-40d5f09e577e
+ID_FS_VERSION=1.0
+ID_FS_TYPE=ext4
+ID_FS_USAGE=filesystem
+DM_TABLE_STATE=LIVE
+DM_STATE=ACTIVE
+DEVLINKS=/dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+TAGS=:systemd:
 ```
 
 # References
