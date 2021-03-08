@@ -436,6 +436,44 @@ data:
 $ kubectl logs -f openebs-ndm-jx64c -n openebs 
 ```
 
+```
+$ udevadm info /dev/dm-1
+P: /devices/virtual/block/dm-1
+N: dm-1
+L: 0
+S: mapper/ubuntu--vg-iscsi--lv
+S: disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e
+S: disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+S: ubuntu-vg/iscsi-lv
+S: disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+E: DEVPATH=/devices/virtual/block/dm-1
+E: DEVNAME=/dev/dm-1
+E: DEVTYPE=disk
+E: MAJOR=253
+E: MINOR=1
+E: SUBSYSTEM=block
+E: USEC_INITIALIZED=10068927
+E: DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
+E: DM_UDEV_PRIMARY_SOURCE_FLAG=1
+E: DM_UDEV_RULES=1
+E: DM_UDEV_RULES_VSN=2
+E: DM_ACTIVATION=1
+E: DM_NAME=ubuntu--vg-iscsi--lv
+E: DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+E: DM_SUSPENDED=0
+E: DM_VG_NAME=ubuntu-vg
+E: DM_LV_NAME=iscsi-lv
+E: ID_FS_UUID=e69f6903-176b-4034-aaf8-40d5f09e577e
+E: ID_FS_UUID_ENC=e69f6903-176b-4034-aaf8-40d5f09e577e
+E: ID_FS_VERSION=1.0
+E: ID_FS_TYPE=ext4
+E: ID_FS_USAGE=filesystem
+E: DM_TABLE_STATE=LIVE
+E: DM_STATE=ACTIVE
+E: DEVLINKS=/dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+E: TAGS=:systemd:
+```
+
 # References
 
 https://medium.com/@dunefro/part-3-4-using-block-devices-for-kubernetes-volume-understanding-openebs-cstor-80ff6307ea29
