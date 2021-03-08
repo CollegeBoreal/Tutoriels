@@ -436,6 +436,10 @@ data:
 $ kubectl logs -f openebs-ndm-jx64c -n openebs 
 ```
 
+- [ ] Getting the basic device information with [Udev](https://en.wikipedia.org/wiki/Udev) 
+
+:bulb: Udev (Userspace Device) is managed by [systemd-udevd](https://manpages.debian.org/unstable/udev/systemd-udevd.service.8.en.html)
+
 ```
 $ udevadm info --query property --name /dev/dm-1
 DEVPATH=/devices/virtual/block/dm-1
