@@ -40,7 +40,14 @@ EOF
 ```
 $ kubectl get spc
 NAME              AGE
-cstor-disk-pool   3m45s
+cstor-disk-pool   7s
+```
+
+```
+$ kubectl get csp
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-fny2   662K        99.5G   99.5G      Healthy   false      striped   51s
+cstor-disk-pool-m7sr   86K         99.5G   99.5G      Healthy   false      striped   51s
 ```
 
 ```yaml
