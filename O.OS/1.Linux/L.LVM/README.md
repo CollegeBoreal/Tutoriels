@@ -329,6 +329,39 @@ sda                       273.4G disk
   └─ubuntu--vg-docker--lv  36.2G lvm         ext4   
 ```
 
+- [ ] Getting the basic device information with [Udev](https://en.wikipedia.org/wiki/Udev) 
+
+:bulb: Udev (Userspace Device) is managed by [systemd-udevd](https://manpages.debian.org/unstable/udev/systemd-udevd.service.8.en.html)
+
+```
+$ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
+DEVPATH=/devices/virtual/block/dm-1
+DEVNAME=/dev/dm-1
+DEVTYPE=disk
+MAJOR=253
+MINOR=1
+SUBSYSTEM=block
+USEC_INITIALIZED=10068927
+DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
+DM_UDEV_PRIMARY_SOURCE_FLAG=1
+DM_UDEV_RULES=1
+DM_UDEV_RULES_VSN=2
+DM_ACTIVATION=1
+DM_NAME=ubuntu--vg-iscsi--lv
+DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+DM_SUSPENDED=0
+DM_VG_NAME=ubuntu-vg
+DM_LV_NAME=iscsi-lv
+ID_FS_UUID=e69f6903-176b-4034-aaf8-40d5f09e577e
+ID_FS_UUID_ENC=e69f6903-176b-4034-aaf8-40d5f09e577e
+ID_FS_VERSION=1.0
+ID_FS_TYPE=ext4
+ID_FS_USAGE=filesystem
+DM_TABLE_STATE=LIVE
+DM_STATE=ACTIVE
+DEVLINKS=/dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ /dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e
+TAGS=:systemd:
+```
 
 ## :ab: Mounting Logical Volumes on Boot and on Demand
 
@@ -397,6 +430,8 @@ sda                       273.4G disk
   └─ubuntu--vg-docker--lv  36.2G lvm         ext4                      
 ```
 
+
+
 ## :o: OpenEBS
 
 - [ ] Add `/dev/ubuntu-vg/iscsi-lv` to the `openebs-ndm-config` configmaps 
@@ -434,40 +469,6 @@ data:
 
 ```
 $ kubectl logs -f openebs-ndm-jx64c -n openebs 
-```
-
-- [ ] Getting the basic device information with [Udev](https://en.wikipedia.org/wiki/Udev) 
-
-:bulb: Udev (Userspace Device) is managed by [systemd-udevd](https://manpages.debian.org/unstable/udev/systemd-udevd.service.8.en.html)
-
-```
-$ udevadm info --query property --name /dev/dm-1
-DEVPATH=/devices/virtual/block/dm-1
-DEVNAME=/dev/dm-1
-DEVTYPE=disk
-MAJOR=253
-MINOR=1
-SUBSYSTEM=block
-USEC_INITIALIZED=10068927
-DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
-DM_UDEV_PRIMARY_SOURCE_FLAG=1
-DM_UDEV_RULES=1
-DM_UDEV_RULES_VSN=2
-DM_ACTIVATION=1
-DM_NAME=ubuntu--vg-iscsi--lv
-DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
-DM_SUSPENDED=0
-DM_VG_NAME=ubuntu-vg
-DM_LV_NAME=iscsi-lv
-ID_FS_UUID=e69f6903-176b-4034-aaf8-40d5f09e577e
-ID_FS_UUID_ENC=e69f6903-176b-4034-aaf8-40d5f09e577e
-ID_FS_VERSION=1.0
-ID_FS_TYPE=ext4
-ID_FS_USAGE=filesystem
-DM_TABLE_STATE=LIVE
-DM_STATE=ACTIVE
-DEVLINKS=/dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-uuid/e69f6903-176b-4034-aaf8-40d5f09e577e /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
-TAGS=:systemd:
 ```
 
 
