@@ -522,6 +522,8 @@ blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclai
 
 # References
 
+https://blog.mayadata.io/openebs/creating-manual-blockdevice
+
 https://medium.com/@dunefro/part-3-4-using-block-devices-for-kubernetes-volume-understanding-openebs-cstor-80ff6307ea29
 
 https://www.tecmint.com/manage-and-create-lvm-parition-using-vgcreate-lvcreate-and-lvextend/
