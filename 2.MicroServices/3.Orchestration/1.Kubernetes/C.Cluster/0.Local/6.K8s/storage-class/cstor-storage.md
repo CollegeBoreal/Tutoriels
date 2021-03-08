@@ -2,6 +2,13 @@
 
 https://docs.openebs.io/docs/next/ugcstor.html#creating-cStor-storage-pools
 
+```
+% kubectl get blockdevice -n openebs
+NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Unclaimed    Active   75m
+blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   19h
+```
+
 ```yaml
 $ kubectl apply -f - <<EOF
 #Use the following YAMLs to create a cStor Storage Pool.
@@ -24,9 +31,8 @@ spec:
     poolType: striped
   blockDevices:
     blockDeviceList:
-    - blockdevice-1c10eb1bb14c94f02a00373f2fa09b93
-    - blockdevice-77f834edba45b03318d9de5b79af0734
-    - blockdevice-936911c5c9b0218ed59e64009cc83c8f
+    - blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+    - blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e
 ---
 EOF
 ```
