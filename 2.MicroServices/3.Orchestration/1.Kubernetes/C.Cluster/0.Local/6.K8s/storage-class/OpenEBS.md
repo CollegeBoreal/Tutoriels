@@ -190,10 +190,10 @@ openebs-ndm-sl7h7                                 1/1     Running   2          2
 ...
 ```
 
-- [ ] Let's pick a node
+- [ ] Let's pick a node as a configuration example
 
 ```
-$ % kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.spec.nodeName}@{.status.hostIP}' && echo
+$ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.spec.nodeName}@{.status.hostIP}' && echo
 canis@10.13.15.201
 ```
 
@@ -256,9 +256,11 @@ DEVLINKS=/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /dev/ubuntu-vg/i
 TAGS=:systemd:
 ```
 
-:round_pushpin: Let's prepare the Custom Resource
+:round_pushpin: Let's prepare the Block Device Custom Resource `CR` for all the nodes
 
 The block device name is by convention the string `blockdevice`-`UUID` that can be taken from the `DEVLINKS` field above
+
+:stars: The below file contains 2 node configuration
 
 ```
 $ kubectl apply -n openebs -f - <<EOF 
