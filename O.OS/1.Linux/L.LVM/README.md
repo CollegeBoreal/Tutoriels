@@ -499,6 +499,11 @@ $ kubectl apply -n openebs -f - <<EOF
 EOF
 ```
 
+```
+$ kubectl get blockdevice -n openebs                                                                           
+NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   9s
+```
 
 # References
 
