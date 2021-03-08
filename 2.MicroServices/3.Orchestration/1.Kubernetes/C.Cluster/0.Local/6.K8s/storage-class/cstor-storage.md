@@ -57,5 +57,23 @@ blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Claime
 blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Claimed      Active   19h
 ```
 
+```
+$ kubectl apply -f - <<EOF
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: openebs-sc-statefulset
+  annotations:
+    openebs.io/cas-type: cstor
+    cas.openebs.io/config: |
+      - name: StoragePoolClaim
+        value: "cstor-disk-pool"
+      - name: ReplicaCount
+        value: "3"
+provisioner: openebs.io/provisioner-iscsi
+EOF
+```
+
+# References
 
 https://github.com/openebs/openebs-docs/issues/900
