@@ -260,7 +260,7 @@ TAGS=:systemd:
 
 The block device name is by convention the string `blockdevice`-`UUID` that can be taken from the `DEVLINKS` field above
 
-:stars: The below file contains 2 node configuration
+:building_construction: The below file contains 2 node configurations separated by `---` 
 
 ```
 $ kubectl apply -n openebs -f - <<EOF 
