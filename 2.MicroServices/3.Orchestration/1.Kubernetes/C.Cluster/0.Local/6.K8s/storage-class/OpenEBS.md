@@ -159,7 +159,7 @@ openebs-ndm-config           1      3d17h
 * edit `openebs-ndm-config` configmaps to check its content (:x: do not save the configmap if changed)
 
 ```
-$ kubectl get configmaps openebs-ndm-config -n openebs
+$ kubectl edit configmaps openebs-ndm-config -n openebs
 ...
 data:
   node-disk-manager.config: |
