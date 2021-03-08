@@ -142,7 +142,112 @@ openebs-jiva-default        openebs.io/provisioner-iscsi                        
 openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  15m
 ```
 
+## :ab: Create the BlockDevice CR (Custom Resource)
+
+- [ ] Check the `openebs-ndm-config` configmaps 
+
+* list the `openebs` configmaps, we are more interested in the `ndm` configmaps
+
+```
+$ kubectl get configmaps  -n openebs
+NAME                         DATA   AGE
+node-disk-manager-lock       0      27h
+openebs-cstor-csi-iscsiadm   1      3d17h
+openebs-ndm-config           1      3d17h
+```
+
+* edit `openebs-ndm-config` configmaps to check its content (:x: do not save the configmap if changed)
+
+```
+$ kubectl get configmaps openebs-ndm-config -n openebs
+...
+data:
+  node-disk-manager.config: |
+    ...
+    filterconfigs:
+      ...
+      - key: path-filter
+        name: path filter
+        state: true
+        include: ""
+        exclude: "/dev/loop,/dev/fd0,/dev/sr0,/dev/ram,/dev/dm-,/dev/md,/dev/rbd,/dev/zd"
+```
+
+As you can see Logical Volumes `/dev/dm-` (and others) are excluded by default. A CR (Custom Resource) will be created
+
+:round_pushpin: Let's creat a block device per `node`
+
+- [ ] Let's list the nodes
+
+```
+$ kubectl get pods --namespace openebs
+NAME                                              READY   STATUS    RESTARTS   AGE
+...
+openebs-ndm-jpm2x                                 1/1     Running   2          2d20h
+openebs-ndm-jx64c                                 1/1     Running   4          2d20h
+openebs-ndm-operator-575c46f9d8-cqlz2             1/1     Running   0          6h25m
+openebs-ndm-sl7h7                                 1/1     Running   2          2d20h
+...
+```
+
+- [ ] Let's pick a node
+
+```
+$ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.status.hostIP}' && echo
+10.13.15.201
+```
+
+- [ ] Let's prepare the Custom Resource
+
+
+```
+$ kubectl apply -n openebs -f - <<EOF 
+ apiVersion: openebs.io/v1alpha1
+ kind: BlockDevice
+ metadata:
+   name: blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e
+   labels:
+     kubernetes.io/hostname: canis
+     ndm.io/managed: "false"
+     ndm.io/blockdevice-type: blockdevice
+ status:
+   claimState: Unclaimed
+   state: Active
+ spec:
+   capacity:
+     logicalSectorSize: 1024
+     storage: 102687672
+   details:
+     deviceType: lvm
+   devlinks:
+   - kind: by-id
+     links:
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+   - kind: by-path
+     links:
+     - /dev/mapper/ubuntu--vg-iscsi--lv
+   nodeAttributes:
+     nodeName: canis
+   path: /dev/dm-1
+EOF
+```
+
+```
+$ kubectl get blockdevice -n openebs                                                                           
+NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   9s
+```
+
+```
+$ kubectl logs -f openebs-ndm-jx64c -n openebs 
+```
+
+
 # References
+
+https://blog.mayadata.io/openebs/creating-manual-blockdevice
+
+https://medium.com/@dunefro/part-3-4-using-block-devices-for-kubernetes-volume-understanding-openebs-cstor-80ff6307ea29
 
 https://thenewstack.io/how-openebs-brings-container-attached-storage-to-kubernetes/
 
