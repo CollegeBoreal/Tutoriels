@@ -5,9 +5,9 @@ https://opensource.com/business/16/9/linux-users-guide-lvm
 
 <img src="images/lvm-520x222.png" width="520" height="222"> </img>
 
-- [ ] List the physical disks
+- [ ] List the physical disks (Hard Drives) and devices (partitions)
 
-* For example listing all the **SD** (**S**CSI **D**isks)
+* For example listing all the **SD** ([**S**CSI](https://en.wikipedia.org/wiki/SCSI) **D**isks)
 
 ```
 $ sudo fdisk -l /dev/sd?
@@ -25,9 +25,9 @@ Device       Start       End   Sectors   Size Type
 /dev/sda3  2101248 573364223 571262976 272.4G Linux filesystem
 ```
 
-- [ ] List the block devices
+- [ ] List the block devices (Disk **HD** and **Part**itions)
 
-* Just displaying the physical volumes
+* Displaying the physical volumes
 
 ```
 $ sudo lsblk /dev/sda
