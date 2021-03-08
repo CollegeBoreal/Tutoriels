@@ -322,12 +322,16 @@ $ kubectl apply -n openebs -f - <<EOF
 EOF
 ```
 
+* Check the block device results
+
 ```
 $ kubectl get blockdevice -n openebs   
 NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
 blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Unclaimed    Active   37m
 blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   18h
 ```
+
+* and if looking at the logs can be a good start (i.e a pod per node)
 
 ```
 $ kubectl logs -f openebs-ndm-jx64c -n openebs 
