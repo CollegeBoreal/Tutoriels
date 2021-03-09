@@ -312,10 +312,10 @@ $ kubectl apply -n openebs -f - <<EOF
    devlinks:
    - kind: by-id
      links:
-     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+     - /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
    - kind: by-path
      links:
-     - /dev/ubuntu-vg/iscsi-lv
+     - /dev/disk/by-path/pci-0000:03:00.0-scsi-0:1:0:0-part3
    nodeAttributes:
      nodeName: canis
    path: /dev/dm-1
@@ -339,6 +339,8 @@ $ kubectl logs -f openebs-ndm-jx64c -n openebs
 
 
 # References
+
+https://devopstales.github.io/home/k8s-install-openebs/
 
 https://blog.mayadata.io/openebs/creating-manual-blockdevice
 
