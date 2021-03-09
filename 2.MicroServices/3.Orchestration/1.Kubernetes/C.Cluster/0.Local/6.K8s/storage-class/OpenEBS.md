@@ -227,7 +227,7 @@ $ sudo lvdisplay ubuntu-vg/iscsi-lv
 * finally, let's grab the `DEVLINKS` through `udevadm`
 
 ```
-$ $ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
+$ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
 DEVPATH=/devices/virtual/block/dm-1
 DEVNAME=/dev/dm-1
 DEVTYPE=disk
@@ -280,6 +280,7 @@ $ kubectl apply -n openebs -f - <<EOF
    - kind: by-id
      links:
      - /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
      - /dev/disk/by-path/pci-0000:05:00.0-scsi-0:1:0:0-part3
@@ -308,6 +309,7 @@ $ kubectl apply -n openebs -f - <<EOF
    - kind: by-id
      links:
      - /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
      - /dev/disk/by-path/pci-0000:03:00.0-scsi-0:1:0:0-part3
