@@ -5,6 +5,8 @@
 
 https://www.tecmint.com/linux-command-line-bash-shortcut-keys/
 
+https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
+
 ## Create your own custom Linux Distro
 
 https://www.maketecheasier.com/6-tools-to-easily-create-your-own-custom-linux-distro/
