@@ -83,7 +83,7 @@ openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediat
 
 ## :exclamation: Python Example
 
-```
+```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -100,7 +100,7 @@ provisioner: openebs.io/provisioner-iscsi
 EOF
 ```
 
-```
+```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -113,6 +113,7 @@ spec:
     requests:
       storage: 200Mi
   storageClassName: openebs-sc-example
+EOF
 ```
 
 
