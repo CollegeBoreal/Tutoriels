@@ -100,6 +100,21 @@ provisioner: openebs.io/provisioner-iscsi
 EOF
 ```
 
+```
+$ kubectl apply -f - <<EOF
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cstor-python-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 200Mi
+  storageClassName: openebs-sc-example
+```
+
 
 # References
 
