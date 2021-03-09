@@ -227,14 +227,14 @@ $ sudo lvdisplay ubuntu-vg/iscsi-lv
 * finally, let's grab the `DEVLINKS` through `udevadm`
 
 ```
-$ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
+$ $ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
 DEVPATH=/devices/virtual/block/dm-1
 DEVNAME=/dev/dm-1
 DEVTYPE=disk
 MAJOR=253
 MINOR=1
 SUBSYSTEM=block
-USEC_INITIALIZED=9508058
+USEC_INITIALIZED=9405899
 DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
 DM_UDEV_PRIMARY_SOURCE_FLAG=1
 DM_UDEV_RULES=1
@@ -245,14 +245,9 @@ DM_UUID=LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
 DM_SUSPENDED=0
 DM_VG_NAME=ubuntu-vg
 DM_LV_NAME=iscsi-lv
-ID_FS_UUID=9214d585-1b63-4bd4-a500-0f1a2c5f7af4
-ID_FS_UUID_ENC=9214d585-1b63-4bd4-a500-0f1a2c5f7af4
-ID_FS_VERSION=1.0
-ID_FS_TYPE=ext4
-ID_FS_USAGE=filesystem
 DM_TABLE_STATE=LIVE
 DM_STATE=ACTIVE
-DEVLINKS=/dev/disk/by-uuid/9214d585-1b63-4bd4-a500-0f1a2c5f7af4 /dev/ubuntu-vg/iscsi-lv /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+DEVLINKS=/dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
 TAGS=:systemd:
 ```
 
@@ -284,10 +279,10 @@ $ kubectl apply -n openebs -f - <<EOF
    devlinks:
    - kind: by-id
      links:
-     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+     - /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
    - kind: by-path
      links:
-     - /dev/ubuntu-vg/iscsi-lv
+     - /dev/disk/by-path/pci-0000:05:00.0-scsi-0:1:0:0-part3
    nodeAttributes:
      nodeName: ursa
    path: /dev/dm-1
