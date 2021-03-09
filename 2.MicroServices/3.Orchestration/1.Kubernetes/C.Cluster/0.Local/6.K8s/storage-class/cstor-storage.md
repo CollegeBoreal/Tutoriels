@@ -147,6 +147,31 @@ spec:
             claimName: cstor-python-pvc
 EOF
 ```
+
+
+```
+$ kubectl logs -f maya-apiserver-6999679866-m64wq -n openebs
++ MAYA_API_SERVER_NETWORK=eth0
++ ip -4 addr show scope global dev+  eth0
+grep inet
++ awk '{print $2}'
++ cut -d / -f 1
++ CONTAINER_IP_ADDR=172.16.108.29
++ exec /usr/local/bin/maya-apiserver start '--bind=172.16.108.29'
+I0309 03:44:44.577330       1 start.go:148] Initializing maya-apiserver...
+I0309 03:44:44.778403       1 start.go:279] Starting maya api server ...
+I0309 03:44:45.576273       1 start.go:288] resources applied successfully by installer
+I0309 03:44:45.603792       1 start.go:193] Maya api server configuration:
+I0309 03:44:45.603811       1 start.go:195]          Log Level: INFO
+I0309 03:44:45.603818       1 start.go:195]             Region: global (DC: dc1)
+I0309 03:44:45.603825       1 start.go:195]            Version: 2.6.0-released
+I0309 03:44:45.603831       1 start.go:201] 
+I0309 03:44:45.603837       1 start.go:204] Maya api server started! Log data will stream in below:
+...
+```
+
+
+
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
