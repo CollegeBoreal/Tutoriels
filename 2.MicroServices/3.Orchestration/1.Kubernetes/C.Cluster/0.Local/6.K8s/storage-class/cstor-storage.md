@@ -116,7 +116,37 @@ spec:
 EOF
 ```
 
-
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-myapp
+spec:
+  selector:
+    matchLabels:
+      app: python-myapp
+  template:
+    metadata:
+      labels:
+        app: python-myapp
+    spec:
+      containers:
+      - name: python-myapp-container
+        image: dunefro/hostpath:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        volumeMounts:
+          - mountPath: /workspace/apps/
+            name: cstor-volume
+      volumes:
+        - name: cstor-volume
+          persistentVolumeClaim:
+            claimName: cstor-python-pvc
+EOF
+```
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
