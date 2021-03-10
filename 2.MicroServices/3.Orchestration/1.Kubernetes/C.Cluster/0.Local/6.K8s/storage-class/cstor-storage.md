@@ -133,7 +133,7 @@ spec:
     spec:
       containers:
       - name: python-myapp-container
-        image: dunefro/hostpath:v1
+        image: collegeboreal/file1250:v1
         resources:
           limits:
             memory: "128Mi"
