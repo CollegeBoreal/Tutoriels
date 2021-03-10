@@ -312,7 +312,8 @@ $ kubectl apply -n openebs -f - <<EOF
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
-     - /dev/disk/by-path/pci-0000:03:00.0-scsi-0:1:0:0-part3
+     # - /dev/disk/by-path/pci-0000:03:00.0-scsi-0:1:0:0-part3
+     - /dev/mapper/ubuntu--vg-iscsi--lv
    nodeAttributes:
      nodeName: canis
    path: /dev/dm-1
