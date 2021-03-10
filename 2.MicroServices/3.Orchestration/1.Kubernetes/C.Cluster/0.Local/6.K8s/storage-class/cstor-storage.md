@@ -170,6 +170,20 @@ I0309 03:44:45.603837       1 start.go:204] Maya api server started! Log data wi
 ...
 ```
 
+:bangbang: From 
+
+```
+$ sudo blkid /dev/ubuntu-vg/iscsi-lv
+/dev/ubuntu-vg/iscsi-lv: UUID="9214d585-1b63-4bd4-a500-0f1a2c5f7af4" TYPE="ext4"
+```
+
+:star: to
+
+```
+$ sudo blkid /dev/ubuntu-vg/iscsi-lv
+/dev/ubuntu-vg/iscsi-lv: LABEL="cstor-6aa53c2d-8fad-418e-b5f3-7d38a9455849" UUID="5400056540718397328" UUID_SUB="11562005844770744908" TYPE="zfs_member"
+```
+
 
 
 # References
