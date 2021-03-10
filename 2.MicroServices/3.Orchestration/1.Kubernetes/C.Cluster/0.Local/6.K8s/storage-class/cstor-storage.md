@@ -191,7 +191,50 @@ NAME MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb    8:16   0  200M  0 disk /var/lib/kubelet/pods/b49186fb-545a-43aa-afe3-e82949228129/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
 ``` 
 
+```
+% kubectl get pods       
+NAME                           READY   STATUS              RESTARTS   AGE
+python-myapp-f968487f8-cx5xd   0/1     ContainerCreating   0          46s
+```
 
+```
+% kubectl get pods                           
+NAME                           READY   STATUS    RESTARTS   AGE
+python-myapp-f968487f8-cx5xd   1/1     Running   0          4m
+```
+
+```
+% kubectl logs -f python-myapp-f968487f8-cx5xd
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+INFO:root:Printing fake logs
+```
+
+
+```
+$ sudo lsblk /dev/sdb
+NAME MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb    8:16   0  200M  0 disk /var/lib/kubelet/pods/807179bc-ff8a-4ab9-9297-614a483d4de6/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
+```
+
+```
+$ sudo ls -l /var/lib/kubelet/pods/807179bc-ff8a-4ab9-9297-614a483d4de6/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
+total 216
+-rw-r--r-- 1 root root    29 Mar 10 04:01 file1
+-rw-r--r-- 1 root root    30 Mar 10 04:01 file10
+-rw-r--r-- 1 root root    30 Mar 10 04:01 file11
+-rw-r--r-- 1 root root    30 Mar 10 04:01 file12
+-rw-r--r-- 1 root root    30 Mar 10 04:01 file13
+...
+```
 
 # References
 
