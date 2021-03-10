@@ -236,6 +236,8 @@ total 216
 ...
 ```
 
+:bangbang: After deleteing the pod the `pvc` also disappears 
+
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
