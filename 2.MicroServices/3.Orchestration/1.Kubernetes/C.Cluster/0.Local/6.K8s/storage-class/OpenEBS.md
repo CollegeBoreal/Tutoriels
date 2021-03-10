@@ -262,7 +262,7 @@ $ kubectl apply -n openebs -f - <<EOF
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
-   name: blockdevice-duyiFf-JKTq-n3yv-jskY-yMvc-qpLl-xbgdlJ
+   name: blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4
    labels:
      kubernetes.io/hostname: ursa
      ndm.io/managed: "false"
@@ -292,7 +292,7 @@ $ kubectl apply -n openebs -f - <<EOF
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
-   name: blockdevice-a2JIzj-qrgN-A3da-Q8Vd-csDB-GCmK-JQIkbJ
+   name: blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e
    labels:
      kubernetes.io/hostname: canis
      ndm.io/managed: "false"
