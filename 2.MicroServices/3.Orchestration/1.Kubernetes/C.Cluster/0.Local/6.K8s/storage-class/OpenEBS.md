@@ -257,7 +257,7 @@ The block device name is by convention the string `blockdevice`-`UUID` that can 
 
 :building_construction: The below file contains 2 node configurations separated by `---` 
 
-```
+```yaml
 $ kubectl apply -n openebs -f - <<EOF 
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
