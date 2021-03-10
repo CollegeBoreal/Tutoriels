@@ -184,6 +184,12 @@ $ sudo blkid /dev/ubuntu-vg/iscsi-lv
 /dev/ubuntu-vg/iscsi-lv: LABEL="cstor-6aa53c2d-8fad-418e-b5f3-7d38a9455849" UUID="5400056540718397328" UUID_SUB="11562005844770744908" TYPE="zfs_member"
 ```
 
+```
+$ lsblk /dev/sdb
+NAME MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb    8:16   0  200M  0 disk /var/lib/kubelet/pods/b49186fb-545a-43aa-afe3-e82949228129/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
+``` 
+
 
 
 # References
