@@ -134,6 +134,7 @@ spec:
       containers:
       - name: python-myapp-container
         image: collegeboreal/file1250:v1
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
