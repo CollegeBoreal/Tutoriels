@@ -17,5 +17,7 @@ def pause():
         time.sleep(10)
 
 if __name__=='__main__':
+    from pathlib import Path
+    Path("./apps").mkdir(parents=True, exist_ok=True)
     main()
     pause()
