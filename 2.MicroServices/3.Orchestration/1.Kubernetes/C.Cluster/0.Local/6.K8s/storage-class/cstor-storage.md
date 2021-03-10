@@ -241,3 +241,5 @@ total 216
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
+
+https://blog.mayadata.io/encrypted-volumes-using-luks
