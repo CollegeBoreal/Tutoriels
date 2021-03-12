@@ -27,6 +27,10 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 
 https://codefresh.io/kubernetes-tutorial/local-kubernetes-mac-minikube-vs-docker-desktop/
 
+### Patterns
+
+https://stackoverflow.com/questions/59451056/differences-between-sidecar-and-ambassador-and-adapter-pattern
+
 
 ## :b: Deploying through Cloud Providers for production purposes on :
 
