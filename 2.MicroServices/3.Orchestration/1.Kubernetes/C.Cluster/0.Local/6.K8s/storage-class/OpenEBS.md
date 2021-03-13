@@ -253,7 +253,12 @@ TAGS=:systemd:
 
 :round_pushpin: Let's prepare the Block Device Custom Resource `CR` for all the nodes
 
-The block device name is by convention the string `blockdevice`-`UUID` that can be taken from the `DEVLINKS` field above
+The block device name is by convention the string `blockdevice`-`PARTUUID` that can be taken from the below command
+
+```
+$ echo "blockdevice-"`sudo blkid --match-tag PARTUUID --output value /dev/sda3`
+blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1
+```
 
 :building_construction: The below file contains 2 node configurations separated by `---` 
 
@@ -283,7 +288,6 @@ $ kubectl apply -n openebs -f - <<EOF
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
-     # - /dev/disk/by-path/pci-0000:05:00.0-scsi-0:1:0:0-part3
      - /dev/mapper/ubuntu--vg-iscsi--lv
    nodeAttributes:
      nodeName: ursa
@@ -313,7 +317,6 @@ $ kubectl apply -n openebs -f - <<EOF
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
-     # - /dev/disk/by-path/pci-0000:03:00.0-scsi-0:1:0:0-part3
      - /dev/mapper/ubuntu--vg-iscsi--lv
    nodeAttributes:
      nodeName: canis
