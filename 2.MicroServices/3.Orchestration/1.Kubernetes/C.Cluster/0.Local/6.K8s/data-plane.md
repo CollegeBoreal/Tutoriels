@@ -166,19 +166,15 @@ $ sudo sysctl --system
 :round_pushpin: Join a node 
 
 ```
-$ kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f \
->     --discovery-token-ca-cert-hash sha256:90d43a9c5fd2486f802bead7f91da3cbdd8680058f3b5a4c01569a965af2eccb 
-[preflight] Running pre-flight checks
-error execution phase preflight: [preflight] Some fatal errors occurred:
-	[ERROR IsPrivilegedUser]: user is not running as root
-[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
-To see the stack trace of this error execute with --v=5 or higher
-ubuntu@ursa:~$ sudo kubeadm join 10.13.15.200:6443 --token 4zadif.nyhdymc5jdpv3f9f     --discovery-token-ca-cert-hash sha256:90d43a9c5fd2486f802bead7f91da3cbdd8680058f3b5a4c01569a965af2eccb 
+$ $ sudo kubeadm join betelgeuse.boreal.codes:6443 --token 2pje0m.xl8voke0wisjymvp     --discovery-token-ca-cert-hash sha256:27c4b80df3d468bfe13517750a265bb3a3c560871e1bf177cafb323070b7b4a6
+[sudo] password for ubuntu: 
+W0314 04:13:11.417716   34743 join.go:346] [preflight] WARNING: JoinControlPane.controlPlane settings will be ignored when control-plane flag is not set.
 [preflight] Running pre-flight checks
 	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
-	[WARNING SystemVerification]: this Docker version is not on the list of validated versions: 20.10.3. Latest validated version: 19.03
+	[WARNING SystemVerification]: this Docker version is not on the list of validated versions: 20.10.4. Latest validated version: 19.03
 [preflight] Reading configuration from the cluster...
-[preflight] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -o yaml'
+[preflight] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
+[kubelet-start] Downloading configuration for the kubelet from the "kubelet-config-1.18" ConfigMap in the kube-system namespace
 [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
 [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
 [kubelet-start] Starting the kubelet
