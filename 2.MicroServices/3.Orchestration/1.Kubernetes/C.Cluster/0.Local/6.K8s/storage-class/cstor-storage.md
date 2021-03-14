@@ -119,8 +119,9 @@ NAME                     PROVISIONER                    RECLAIMPOLICY   VOLUMEBI
 openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
 ```
 
+## :b: User Operations
 
-## :exclamation: Python Example
+### :exclamation: Python Example
 
 ```yaml
 $ kubectl apply -f - <<EOF
