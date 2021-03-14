@@ -21,17 +21,28 @@ spec:
 EOF
 ```
 
+* Observe the PVC
+
 ```
 $ kubectl get persistentvolumeclaims 
 NAME               STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS             AGE
 cstor-python-pvc   Bound    pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            openebs-sc-statefulset   24s
 ```
 
+* Observe the PV
+
 ```
 $ kubectl get persistentvolumes     
 NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                      STORAGECLASS             REASON   AGE
 pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            Delete           Bound    default/cstor-python-pvc   openebs-sc-statefulset            86s
 ```
+
+* On which node is the PVC running
+
+``` 
+$ kubectl describe pods pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb -n openebs | grep Node:
+Node:         rigel/10.13.15.202
+``` 
 
 ```yaml
 $ kubectl apply -f - <<EOF
