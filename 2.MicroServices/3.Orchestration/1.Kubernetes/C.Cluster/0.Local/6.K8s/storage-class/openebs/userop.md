@@ -126,19 +126,19 @@ sdb    8:16   0  200M  0 disk /var/lib/kubelet/pods/b49186fb-545a-43aa-afe3-e829
 ``` 
 
 ```
-% kubectl get pods       
+$ kubectl get pods       
 NAME                           READY   STATUS              RESTARTS   AGE
-python-myapp-f968487f8-cx5xd   0/1     ContainerCreating   0          46s
+python-myapp-f968487f8-9cst4   0/1     ContainerCreating   0          46s
 ```
 
 ```
-% kubectl get pods                           
+$ kubectl get pods                           
 NAME                           READY   STATUS    RESTARTS   AGE
-python-myapp-f968487f8-cx5xd   1/1     Running   0          4m
+python-myapp-f968487f8-9cst4   1/1     Running   0          4m
 ```
 
 ```
-% kubectl logs -f python-myapp-f968487f8-cx5xd
+$ kubectl logs -f python-myapp-f968487f8-9cst4
 INFO:root:Printing fake logs
 INFO:root:Printing fake logs
 INFO:root:Printing fake logs
