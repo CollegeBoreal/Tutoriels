@@ -20,6 +20,50 @@ porter-manager-98cc6c799-t7twm      0/1     ContainerCreating   0          49s  
 porter-manager-98cc6c799-wztpd      0/1     Terminating         0          3d16h   10.13.15.202     ursa    <none>           <none>
 ```
 
+```
+$ kubectl taint nodes rigel key1=value1:NoExecute
+```
+
+```
+$  kubectl taint nodes rigel key1=value1:NoSchedule
+```
+
+
+```
+$ kubectl get nodes -o json | jq ".items[]|{name:.metadata.name, taints:.spec.taints}"
+{
+  "name": "bellatrix",
+  "taints": null
+}
+{
+  "name": "betelgeuse",
+  "taints": [
+    {
+      "effect": "NoSchedule",
+      "key": "node-role.kubernetes.io/master"
+    }
+  ]
+}
+{
+  "name": "rigel",
+  "taints": [
+    {
+      "effect": "NoExecute",
+      "key": "key1",
+      "value": "value1"
+    },
+    {
+      "effect": "NoSchedule",
+      "key": "key1",
+      "value": "value1"
+    }
+  ]
+}
+{
+  "name": "saiph",
+  "taints": null
+}
+```
 
 https://stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes
 
