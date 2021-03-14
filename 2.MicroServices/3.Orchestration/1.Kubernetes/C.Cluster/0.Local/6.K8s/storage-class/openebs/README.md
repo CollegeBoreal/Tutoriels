@@ -12,6 +12,7 @@ Used by `kubesphere`
 
 ## :a: Admin Operations
 
+Using the [cStor](https://docs.openebs.io/docs/next/cstor.html) as the CSI compliant Storage Engine 
 
 ## :b: User Operations
 
