@@ -288,13 +288,18 @@ $ sudo lvdisplay ubuntu-vg/iscsi-lv
   LV Path                /dev/ubuntu-vg/iscsi-lv
   LV Name                iscsi-lv
   VG Name                ubuntu-vg
-  LV UUID                duyiFf-JKTq-n3yv-jskY-yMvc-qpLl-xbgdlJ
+  LV UUID                rdOs38-ndKR-jGqB-4A4P-Kc89-3FS8-heIdc3
   LV Write Access        read/write
-  LV Creation host, time ursa, 2021-03-08 19:15:05 +0000
+  LV Creation host, time bellatrix, 2021-03-14 17:28:42 +0000
   LV Status              available
-  # open                 1
+  # open                 0
   LV Size                100.00 GiB
-...
+  Current LE             25600
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
 ```
 
 * finally, let's grab the `DEVLINKS` through `udevadm` using the found `LV Path`
@@ -307,19 +312,19 @@ DEVTYPE=disk
 MAJOR=253
 MINOR=1
 SUBSYSTEM=block
-USEC_INITIALIZED=10804211
+USEC_INITIALIZED=61132596734
 DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
 DM_UDEV_PRIMARY_SOURCE_FLAG=1
 DM_UDEV_RULES=1
 DM_UDEV_RULES_VSN=2
 DM_NAME=ubuntu--vg-iscsi--lv
-DM_UUID=LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1
+DM_UUID=LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3
 DM_SUSPENDED=0
 DM_VG_NAME=ubuntu-vg
 DM_LV_NAME=iscsi-lv
 DM_TABLE_STATE=LIVE
 DM_STATE=ACTIVE
-DEVLINKS=/dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/mapper/ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1
+DEVLINKS=/dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3 /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv
 TAGS=:systemd:
 ```
 
@@ -330,19 +335,27 @@ Since dealing with a LV which will be formatted by `openebs`, let's use the Part
 
 ```
 $ echo "blockdevice-"`sudo blkid --match-tag PARTUUID --output value /dev/sda3`
-blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1
+blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03
 ```
 
 :building_construction: The below file contains 3 node configurations separated by `---` 
+
+| TAG | VALUE |
+|-----|-------|
+| `metadata.labels.kubernetes.io/hostname:` | hostname |
+| `spec.devlinks.kind: by-id.links:`        | - DEVLINKS /dev/disk/**by-id** |
+| `spec.devlinks.kind: by-path.links:`      | - DEVLINKS /dev/**mapper** |
+| `spec.nodeAttributes.nodeName:`           | hostname |
+| `spec.path:`                              | - DEVNAME |
 
 ```yaml
 $ kubectl apply -n openebs -f - <<EOF 
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
-   name: blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4
+   name: blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03
    labels:
-     kubernetes.io/hostname: ursa
+     kubernetes.io/hostname: bellatrix
      ndm.io/managed: "false"
      ndm.io/blockdevice-type: blockdevice
  status:
@@ -357,13 +370,13 @@ $ kubectl apply -n openebs -f - <<EOF
    devlinks:
    - kind: by-id
      links:
-     - /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
+     - /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
      - /dev/mapper/ubuntu--vg-iscsi--lv
    nodeAttributes:
-     nodeName: ursa
+     nodeName: bellatrix
    path: /dev/dm-1
 ---
  apiVersion: openebs.io/v1alpha1
