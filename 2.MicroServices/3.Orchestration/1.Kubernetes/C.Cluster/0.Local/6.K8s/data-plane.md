@@ -193,9 +193,11 @@ Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
 
 ```
 $ kubectl get nodes
-NAME    STATUS   ROLES                  AGE     VERSION
-orion   Ready    control-plane,master   4h49m   v1.20.2
-ursa    Ready    <none>                 9m      v1.20.2
+NAME         STATUS   ROLES    AGE     VERSION
+bellatrix    Ready    <none>   3m15s   v1.18.6
+betelgeuse   Ready    master   25m     v1.18.6
+rigel        Ready    <none>   68s     v1.18.6
+saiph        Ready    <none>   22s     v1.18.6
 ```
 
 :tada: Ready
