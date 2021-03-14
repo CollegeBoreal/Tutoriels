@@ -280,7 +280,7 @@ $ sudo lvs --options +devices
   ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                          /dev/sda3(0)    
 ```
 
-* let's display a more detailled `LV PATH` through `lvdisplay`
+* let's determine the `LV PATH` using the more detailled `lvdisplay` command by passing the `VG/LV`
 
 ```
 $ sudo lvdisplay ubuntu-vg/iscsi-lv
@@ -297,7 +297,7 @@ $ sudo lvdisplay ubuntu-vg/iscsi-lv
 ...
 ```
 
-* finally, let's grab the `DEVLINKS` through `udevadm` using the `LV Path`
+* finally, let's grab the `DEVLINKS` through `udevadm` using the found `LV Path`
 
 ```
 $ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
@@ -307,34 +307,33 @@ DEVTYPE=disk
 MAJOR=253
 MINOR=1
 SUBSYSTEM=block
-USEC_INITIALIZED=9405899
+USEC_INITIALIZED=10804211
 DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG=1
 DM_UDEV_PRIMARY_SOURCE_FLAG=1
 DM_UDEV_RULES=1
 DM_UDEV_RULES_VSN=2
-DM_ACTIVATION=1
 DM_NAME=ubuntu--vg-iscsi--lv
-DM_UUID=LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
+DM_UUID=LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1
 DM_SUSPENDED=0
 DM_VG_NAME=ubuntu-vg
 DM_LV_NAME=iscsi-lv
 DM_TABLE_STATE=LIVE
 DM_STATE=ACTIVE
-DEVLINKS=/dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ /dev/mapper/ubuntu--vg-iscsi--lv /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+DEVLINKS=/dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv /dev/mapper/ubuntu--vg-iscsi--lv /dev/ubuntu-vg/iscsi-lv /dev/disk/by-id/dm-uuid-LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1
 TAGS=:systemd:
 ```
 
 :round_pushpin: Let's prepare the Block Device Custom Resource `CR` for all the nodes
 
-The block device name needs to be segregated by node, by convention the string `blockdevice`-`UUID` is used.
-Since dealing with a LV which will be formatted by `openebs` let's use the Partition UUID of the disk `/dev/sda3` instead. `PARTUUID` can be taken from the below command.
+The block device name needs to be segregated by node, by convention the string `blockdevice`-`UUID` should be used.
+Since dealing with a LV which will be formatted by `openebs`, let's use the Partition UUID of the disk `/dev/sda3` instead. `PARTUUID` can be taken from the below command.
 
 ```
 $ echo "blockdevice-"`sudo blkid --match-tag PARTUUID --output value /dev/sda3`
 blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1
 ```
 
-:building_construction: The below file contains 2 node configurations separated by `---` 
+:building_construction: The below file contains 3 node configurations separated by `---` 
 
 ```yaml
 $ kubectl apply -n openebs -f - <<EOF 
