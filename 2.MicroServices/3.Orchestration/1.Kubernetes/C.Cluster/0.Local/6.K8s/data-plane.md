@@ -2,14 +2,15 @@
 
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
-| Type Server   | Hostname                           | Specs                 |
-|---------------|------------------------------------|-----------------------|
-| control plane | orion `10.13.15.200/20`            | 64GB Ram,      16cpus |
-| data plane    | canis `10.13.15.201/20`            | 64GB Ram,      16cpus |
-| data plane    | ursa  `10.13.15.202/20`            | 32GB Ram,      16cpus |
-| data plane    | lepus `10.13.15.203/20`            | 64GB Ram,      16cpus |
- 
+:star: Cluster Name: Orion
 
+| Type Server   | Hostname                |  IP               | Specs                 |
+|---------------|-------------------------|-------------------|-----------------------|
+| control plane | betelgeuse.boreal.codes | `10.13.15.200/20` | 64GB Ram,      16cpus |
+| data plane    | bellatrix.boreal.codes  | `10.13.15.201/20` | 64GB Ram,      16cpus |
+| data plane    | rigel.boreal.codes      | `10.13.15.202/20` | 32GB Ram,      16cpus |
+| data plane    | saiph.boreal.codes      | `10.13.15.203/20` | 64GB Ram,      16cpus |
+ 
 ## :zero: Prepare the Servers
 
 Once the servers are ready, update, upgrade them.
