@@ -256,18 +256,18 @@ As you can see Logical Volumes `/dev/dm-` (and others) are excluded by default. 
 $ kubectl get pods --namespace openebs
 NAME                                              READY   STATUS    RESTARTS   AGE
 ...
-openebs-ndm-jpm2x                                 1/1     Running   2          2d20h
-openebs-ndm-jx64c                                 1/1     Running   4          2d20h
-openebs-ndm-operator-575c46f9d8-cqlz2             1/1     Running   0          6h25m
-openebs-ndm-sl7h7                                 1/1     Running   2          2d20h
+openebs-ndm-48k4j                              1/1     Running   0          31m
+openebs-ndm-kphxn                              1/1     Running   0          31m
+openebs-ndm-lzwj4                              1/1     Running   0          31m
+openebs-ndm-operator-785c656646-2hlfm          1/1     Running   0          31m
 ...
 ```
 
 - [ ] Let's pick a node as a configuration example
 
 ```
-$ kubectl get  pod openebs-ndm-jx64c -n openebs --output jsonpath='{.spec.nodeName}@{.status.hostIP}' && echo
-canis@10.13.15.201
+$ kubectl get  pod openebs-ndm-lzwj4 -n openebs --output jsonpath='{.spec.nodeName}@{.status.hostIP}' && echo
+rigel@10.13.15.202
 ```
 
 - [ ] connect to the node and determine the LV information on that node (we know that `iscsi-lv` is the given LV)
