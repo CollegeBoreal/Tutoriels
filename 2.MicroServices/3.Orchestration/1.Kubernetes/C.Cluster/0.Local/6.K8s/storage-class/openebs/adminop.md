@@ -298,7 +298,7 @@ cstor-disk-pool   7s
 
 * It may take some time to `Init`
 
--- cstorpools.openebs.io 
+-- cstorpools.openebs.io (object)
 
 ```
 $ kubectl get csp 
