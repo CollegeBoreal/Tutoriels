@@ -21,6 +21,13 @@ spec:
 EOF
 ```
 
+```
+$ kubectl get pvc
+NAME               STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS             AGE
+cstor-python-pvc   Bound    pvc-ab4b6617-a4e0-49ac-a7a8-34290b4533c9   200Mi      RWO            openebs-sc-statefulset   9s
+```
+
+
 ```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: apps/v1
