@@ -253,7 +253,7 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Uncla
 $ kubectl logs -f  openebs-ndm-48k4j -n openebs
 ```
 
-## :b: Storage Class
+## :b: Storage Pool
 
 - [ ] Create the `cStor Storage Pool` (csp)
 
@@ -336,6 +336,10 @@ blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Claim
 blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claimed      Active   16m
 ```
 
+## :ab: Storage Class
+
+- [ ] Create the `openebs-sc-statefulset` **Storage Class**
+
 ```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: storage.k8s.io/v1
@@ -353,11 +357,20 @@ provisioner: openebs.io/provisioner-iscsi
 EOF
 ```
 
+- [ ] Check 
+
 ```
 $ kubectl get sc openebs-sc-statefulset
 NAME                     PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
 ```
+
+- [ ] Set to be the default storage
+
+```
+$ kubectl patch storageclass openebs-sc-statefulset -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
+
 
 # References
 
