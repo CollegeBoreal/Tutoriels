@@ -1,5 +1,7 @@
 # Admin Operations
 
+https://docs.openebs.io/docs/next/ugcstor.html#admin-operations
+
 ## :ab: Create the BlockDevice CR (Custom Resource)
 
 - [ ] Check the `openebs-ndm-config` configmaps 
