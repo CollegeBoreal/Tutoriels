@@ -251,4 +251,111 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Uncla
 $ kubectl logs -f  openebs-ndm-48k4j -n openebs
 ```
 
+## :b: Storage Class
+
+- [ ] Create the `cStor Storage Pool` (csp)
+
+```yaml
+$ kubectl apply -f - <<EOF
+#Use the following YAMLs to create a cStor Storage Pool.
+apiVersion: openebs.io/v1alpha1
+kind: StoragePoolClaim
+metadata:
+  name: cstor-disk-pool
+  annotations:
+    cas.openebs.io/config: |
+      - name: PoolResourceRequests
+        value: |-
+            memory: 2Gi
+      - name: PoolResourceLimits
+        value: |-
+            memory: 4Gi
+spec:
+  name: cstor-disk-pool
+  type: disk
+  poolSpec:
+    poolType: striped
+  blockDevices:
+    blockDeviceList:
+    - blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03
+    - blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1
+    - blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5
+---
+EOF
+```
+
+:round_pushpin: Observe the `StoragePoolClaim`
+
+```
+$ kubectl get spc
+NAME              AGE
+cstor-disk-pool   7s
+```
+
+:round_pushpin: Observe the cStor Storage Pool 
+
+* It may take some time to `Init`
+
+```
+$ kubectl get csp
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-3oqs   83K         99.5G   99.5G      Healthy   false      striped   23s
+cstor-disk-pool-thk6                                  Init      false      striped   23s
+cstor-disk-pool-yit1   83K         99.5G   99.5G      Healthy   false      striped   23s
+```
+
+* It may take some time to `ALLOCATE` (i.e. 83K)
+
+```
+$ kubectl get csp                   
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   95s
+cstor-disk-pool-thk6   83K         99.5G   99.5G      Healthy   false      striped   95s
+cstor-disk-pool-yit1   662K        99.5G   99.5G      Healthy   false      striped   95s
+```
+
+* Finally
+
+```
+$ kubectl get csp
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   4m59s
+cstor-disk-pool-thk6   662K        99.5G   99.5G      Healthy   false      striped   4m59s
+cstor-disk-pool-yit1   662K        99.5G   99.5G      Healthy   false      striped   4m59s
+```
+
+:round_pushpin: Block Devices are now `claimed`
+
+```
+$ kubectl get blockdevices -nopenebs
+NAME                                               NODENAME    SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03   bellatrix   102687672   Claimed      Active   16m
+blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Claimed      Active   16m
+blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claimed      Active   16m
+```
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: openebs-sc-statefulset
+  annotations:
+    openebs.io/cas-type: cstor
+    cas.openebs.io/config: |
+      - name: StoragePoolClaim
+        value: "cstor-disk-pool"
+      - name: ReplicaCount
+        value: "3"
+provisioner: openebs.io/provisioner-iscsi
+EOF
+```
+
+```
+$ kubectl get sc openebs-sc-statefulset
+NAME                     PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
+```
+
+
 
