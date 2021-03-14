@@ -298,7 +298,7 @@ cstor-disk-pool   7s
 
 * It may take some time to `Init`
 
--- cstorpools.openebs.io (object)
+:bulb: Use the [cStor CLI](https://docs.openebs.io/docs/next/cstor.html#cstor-cli) to display the Storage Engine artifacts
 
 ```
 $ kubectl get csp --watch
