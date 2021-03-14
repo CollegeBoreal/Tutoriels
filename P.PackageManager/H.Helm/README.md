@@ -35,18 +35,18 @@ $ sudo apt-get update && sudo apt-get install helm
 #### :b: :apple: Mac OS
 
 ```
-$ brew install helm
+$ choco install kubernetes-helm
 ```
 
-``` 
-$ brew info helm
-helm: stable 3.5.3 (bottled), HEAD
-Kubernetes package manager
-...
-``` 
+#### :ab: :computer: Windows
 
 
 ## :star: Usage
+
+```
+$ helm version        
+version.BuildInfo{Version:"v3.5.3", GitCommit:"041ce5a2c17a58be0fcd5f5e16fb3e7e95fea622", GitTreeState:"dirty", GoVersion:"go1.16"}
+```
 
 https://helm.sh/docs/intro/using_helm/
 
