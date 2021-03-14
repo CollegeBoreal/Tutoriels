@@ -296,18 +296,16 @@ or just `watching` the kube-system namespace
 
 ```
 $ kubectl get pods --namespace kube-system --watch
-NAME                                      READY   STATUS    RESTARTS   AGE
-calico-kube-controllers-86bddfcff-fk2dr   1/1     Running   0          8h
-calico-node-8pzzz                         1/1     Running   0          8h
-calico-node-pfgbw                         1/1     Running   0          7h41m
-coredns-74ff55c5b-56k4w                   1/1     Running   0          12h
-coredns-74ff55c5b-lwbh6                   1/1     Running   0          12h
-etcd-orion                                1/1     Running   0          12h
-kube-apiserver-orion                      1/1     Running   0          12h
-kube-controller-manager-orion             1/1     Running   0          12h
-kube-proxy-7cfq9                          1/1     Running   0          12h
-kube-proxy-hqwr2                          1/1     Running   0          7h41m
-kube-scheduler-orion                      1/1     Running   0          12h
+NAME                                       READY   STATUS    RESTARTS   AGE
+calico-kube-controllers-65d7476764-bwwrb   1/1     Running   0          3m8s
+calico-node-dr7x4                          1/1     Running   0          3m8s
+coredns-66bff467f8-6qhnw                   1/1     Running   0          13m
+coredns-66bff467f8-ldp4p                   1/1     Running   0          13m
+etcd-betelgeuse                            1/1     Running   0          14m
+kube-apiserver-betelgeuse                  1/1     Running   0          14m
+kube-controller-manager-betelgeuse         1/1     Running   0          14m
+kube-proxy-fj79t                           1/1     Running   0          13m
+kube-scheduler-betelgeuse                  1/1     Running   0          14m
 ```
 
 
