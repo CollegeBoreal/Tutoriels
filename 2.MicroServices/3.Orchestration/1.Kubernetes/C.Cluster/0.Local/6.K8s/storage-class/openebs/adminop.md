@@ -298,8 +298,10 @@ cstor-disk-pool   7s
 
 * It may take some time to `Init`
 
+-- cstorpools.openebs.io 
+
 ```
-$ kubectl get csp
+$ kubectl get csp 
 NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
 cstor-disk-pool-3oqs   83K         99.5G   99.5G      Healthy   false      striped   23s
 cstor-disk-pool-thk6                                  Init      false      striped   23s
