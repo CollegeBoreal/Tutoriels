@@ -326,8 +326,8 @@ TAGS=:systemd:
 
 :round_pushpin: Let's prepare the Block Device Custom Resource `CR` for all the nodes
 
-The block device name needs to be segregated per node, by convention the string `blockdevice`-`UUID` is used.
-Since dealing with a LV and the LV will be formated by `openebs` let's use the Partition UUID of the disk `/dev/sda3` that can be taken from the below command
+The block device name needs to be segregated by node, by convention the string `blockdevice`-`UUID` is used.
+Since dealing with a LV which will be formatted by `openebs` let's use the Partition UUID of the disk `/dev/sda3` instead. `PARTUUID` can be taken from the below command.
 
 ```
 $ echo "blockdevice-"`sudo blkid --match-tag PARTUUID --output value /dev/sda3`
