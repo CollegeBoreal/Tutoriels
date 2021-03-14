@@ -273,14 +273,14 @@ rigel@10.13.15.202
 - [ ] connect to the node and determine the LV information on that node (we know that `iscsi-lv` is the given LV)
 
 ```
-$ sudo lvs
-  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
-  docker-lv ubuntu-vg -wi-a-----  <36.20g                                                    
-  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                                    
-  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g  
+$ sudo lvs --options +devices
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert Devices         
+  docker-lv ubuntu-vg -wi-a-----  <36.20g                                                     /dev/sda3(60467)
+  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                                     /dev/sda3(34867)
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                                     /dev/sda3(0)    
 ```
 
-* let's display the `LV PATH` through `lvdisplay`
+* let's display a more detailled `LV PATH` through `lvdisplay`
 
 ```
 $ sudo lvdisplay ubuntu-vg/iscsi-lv
@@ -297,7 +297,7 @@ $ sudo lvdisplay ubuntu-vg/iscsi-lv
 ...
 ```
 
-* finally, let's grab the `DEVLINKS` through `udevadm`
+* finally, let's grab the `DEVLINKS` through `udevadm` using the `LV Path`
 
 ```
 $ udevadm info --query property --name /dev/ubuntu-vg/iscsi-lv
@@ -326,7 +326,8 @@ TAGS=:systemd:
 
 :round_pushpin: Let's prepare the Block Device Custom Resource `CR` for all the nodes
 
-The block device name is by convention the string `blockdevice`-`PARTUUID` that can be taken from the below command
+The block device name needs to be segregated per node, by convention the string `blockdevice`-`UUID` is used.
+Since dealing with a LV and the LV will be formated by `openebs` let's use the Partition UUID of the disk `/dev/sda3` that can be taken from the below command
 
 ```
 $ echo "blockdevice-"`sudo blkid --match-tag PARTUUID --output value /dev/sda3`
