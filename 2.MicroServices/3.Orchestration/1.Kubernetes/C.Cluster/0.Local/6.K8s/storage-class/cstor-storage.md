@@ -1,6 +1,11 @@
+# openebs StorageClass
 
+
+## :a: Admin Operations
 
 https://docs.openebs.io/docs/next/ugcstor.html#creating-cStor-storage-pools
+
+- [ ] Retrieve the Block Devices
 
 ```
 kubectl get blockdevice -n openebs
@@ -9,6 +14,8 @@ blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03   bellatrix   102687672   Uncla
 blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Unclaimed    Active   12m
 blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Unclaimed    Active   12m
 ```
+
+- [ ] Create the `cStor Storage Pool` (csp)
 
 ```yaml
 $ kubectl apply -f - <<EOF
