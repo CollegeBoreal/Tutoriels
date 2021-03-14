@@ -274,10 +274,10 @@ rigel@10.13.15.202
 
 ```
 $ sudo lvs --options +devices
-  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert Devices         
-  docker-lv ubuntu-vg -wi-a-----  <36.20g                                                     /dev/sda3(60467)
-  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                                     /dev/sda3(34867)
-  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                                     /dev/sda3(0)    
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log (...) Devices         
+  docker-lv ubuntu-vg -wi-a-----  <36.20g                                          /dev/sda3(60467)
+  iscsi-lv  ubuntu-vg -wi-a-----  100.00g                                          /dev/sda3(34867)
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                          /dev/sda3(0)    
 ```
 
 * let's display a more detailled `LV PATH` through `lvdisplay`
