@@ -3,6 +3,7 @@
 ## Install Kubernetes Cluster on Ubuntu 20.04
 
 
+:star: Cluster Name: Orion
 
 | Type Server   | Hostname                |  IP               | Specs                 |
 |---------------|-------------------------|-------------------|-----------------------|
