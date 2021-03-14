@@ -383,9 +383,9 @@ $ kubectl apply -n openebs -f - <<EOF
  apiVersion: openebs.io/v1alpha1
  kind: BlockDevice
  metadata:
-   name: blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e
+   name: blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5
    labels:
-     kubernetes.io/hostname: canis
+     kubernetes.io/hostname: rigel
      ndm.io/managed: "false"
      ndm.io/blockdevice-type: blockdevice
  status:
@@ -400,13 +400,42 @@ $ kubectl apply -n openebs -f - <<EOF
    devlinks:
    - kind: by-id
      links:
-     - /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssa2JIzjqrgNA3daQ8VdcsDBGCmKJQIkbJ
+     - /dev/disk/by-id/dm-uuid-LVM-sriYwjhaKn73lSvWNqHEsraPHdoVkHV9duyiFfJKTqn3yvjskYyMvcqpLlxbgdlJ
      - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
    - kind: by-path
      links:
      - /dev/mapper/ubuntu--vg-iscsi--lv
    nodeAttributes:
-     nodeName: canis
+     nodeName: rigel
+   path: /dev/dm-1
+---
+ apiVersion: openebs.io/v1alpha1
+ kind: BlockDevice
+ metadata:
+   name: blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1
+   labels:
+     kubernetes.io/hostname: saiph
+     ndm.io/managed: "false"
+     ndm.io/blockdevice-type: blockdevice
+ status:
+   claimState: Unclaimed
+   state: Active
+ spec:
+   capacity:
+     logicalSectorSize: 1024
+     storage: 102687672
+   details:
+     deviceType: lvm
+   devlinks:
+   - kind: by-id
+     links:
+     - /dev/disk/by-id/dm-uuid-LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1
+     - /dev/disk/by-id/dm-name-ubuntu--vg-iscsi--lv
+   - kind: by-path
+     links:
+     - /dev/mapper/ubuntu--vg-iscsi--lv
+   nodeAttributes:
+     nodeName: saiph
    path: /dev/dm-1
 EOF
 ```
