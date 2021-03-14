@@ -99,19 +99,81 @@ deployment.apps/openebs-admission-server created
 deployment.apps/openebs-localpv-provisioner created
 ```
 
+:round_pushpin: [Install using helm](https://docs.openebs.io/docs/next/installation.html#installation-through-helm)
+
+```
+$ helm repo add openebs https://openebs.github.io/charts
+```
+
+```
+$ helm repo update
+```
+
+```
+$ helm install --namespace openebs openebs openebs/openebs
+"openebs" has been added to your repositories
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "openebs" chart repository
+Update Complete. ⎈Happy Helming!⎈
+NAME: openebs
+LAST DEPLOYED: Sun Mar 14 07:45:49 2021
+NAMESPACE: openebs
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+The OpenEBS has been installed. Check its status by running:
+$ kubectl get pods -n openebs
+
+For dynamically creating OpenEBS Volumes, you can either create a new StorageClass or
+use one of the default storage classes provided by OpenEBS.
+
+Use `kubectl get sc` to see the list of installed OpenEBS StorageClasses. A sample
+PVC spec using `openebs-jiva-default` StorageClass is given below:"
+
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: demo-vol-claim
+spec:
+  storageClassName: openebs-jiva-default
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5G
+---
+
+Please note that, OpenEBS uses iSCSI for connecting applications with the
+OpenEBS Volumes and your nodes should have the iSCSI initiator installed.
+
+For more information, visit our Slack at https://openebs.io/community or view the documentation online at http://docs.openebs.io/.
+```
+
+- [ ] Test
+
+``` 
+$ helm ls --namespace openebs
+NAME   	NAMESPACE	REVISION	UPDATED                             	STATUS  	CHART        APP VERSION
+openebs	openebs  	1       	2021-03-14 07:45:49.558546 -0400 EDT	deployed	openebs-2.6.02.6.0      
+``` 
+
+
 ## :ab: [Verifying OpenEBS Installation](https://docs.openebs.io/docs/next/installation.html#verifying-openebs-installation)
 
 ```
 $ kubectl get pods --namespace openebs
-NAME                                           READY   STATUS             RESTARTS   AGE
-maya-apiserver-6999679866-t5xxz                0/1     CrashLoopBackOff   2          92s
-openebs-admission-server-68cf7797d7-jhhm4      1/1     Running            0          92s
-openebs-localpv-provisioner-7bc9cbbc9c-hlsxb   1/1     Running            0          92s
-openebs-ndm-operator-575c46f9d8-m7rkb          1/1     Running            0          92s
-openebs-ndm-x275n                              1/1     Running            0          92s
-openebs-ndm-xkl58                              1/1     Running            0          92s
-openebs-provisioner-7ff7958d7f-k27hz           1/1     Running            0          92s
-openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running            0          92s
+NAME                                           READY   STATUS    RESTARTS   AGE
+openebs-admission-server-577f797f64-cwr4w      1/1     Running   0          4m
+openebs-apiserver-5579d8877f-cvsdt             1/1     Running   2          4m
+openebs-localpv-provisioner-676fd8ccff-pdwfg   1/1     Running   0          4m
+openebs-ndm-48k4j                              1/1     Running   0          4m
+openebs-ndm-kphxn                              1/1     Running   0          4m
+openebs-ndm-lzwj4                              1/1     Running   0          4m
+openebs-ndm-operator-785c656646-2hlfm          1/1     Running   0          4m
+openebs-provisioner-6d879c54bb-2684z           1/1     Running   0          4m
+openebs-snapshot-operator-5b8df5fffc-rbr2x     2/2     Running   0          4m
 ```
 
 `openebs-ndm` is a daemon set, it should be running on all nodes or on the nodes that are selected through nodeSelector configuration.
@@ -120,15 +182,16 @@ The control plane pods `openebs-provisioner`, `maya-apiserver` and `openebs-snap
 
 ```
 $ kubectl get pods --namespace openebs --output wide
-NAME                                           READY   STATUS    RESTARTS   AGE     IP               NODE    NOMINATED NODE   READINESS GATES
-maya-apiserver-6999679866-t5xxz                1/1     Running   3          6m22s   172.16.183.133   ursa    <none>           <none>
-openebs-admission-server-68cf7797d7-jhhm4      1/1     Running   0          6m22s   172.16.183.132   ursa    <none>           <none>
-openebs-localpv-provisioner-7bc9cbbc9c-hlsxb   1/1     Running   0          6m22s   172.16.183.135   ursa    <none>           <none>
-openebs-ndm-operator-575c46f9d8-m7rkb          1/1     Running   0          6m22s   172.16.183.136   ursa    <none>           <none>
-openebs-ndm-x275n                              1/1     Running   0          6m22s   10.13.15.201     canis   <none>           <none>
-openebs-ndm-xkl58                              1/1     Running   0          6m22s   10.13.15.202     ursa    <none>           <none>
-openebs-provisioner-7ff7958d7f-k27hz           1/1     Running   0          6m22s   172.16.183.134   ursa    <none>           <none>
-openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running   0          6m22s   172.16.108.6     canis   <none>           <none>
+NAME                                           READY   STATUS    RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES
+openebs-admission-server-577f797f64-cwr4w      1/1     Running   0          4m37s   172.16.224.65   bellatrix   <none>           <none>
+openebs-apiserver-5579d8877f-cvsdt             1/1     Running   2          4m37s   172.16.185.67   rigel       <none>           <none>
+openebs-localpv-provisioner-676fd8ccff-pdwfg   1/1     Running   0          4m37s   172.16.214.1    saiph       <none>           <none>
+openebs-ndm-48k4j                              1/1     Running   0          4m37s   10.13.15.203    saiph       <none>           <none>
+openebs-ndm-kphxn                              1/1     Running   0          4m37s   10.13.15.201    bellatrix   <none>           <none>
+openebs-ndm-lzwj4                              1/1     Running   0          4m37s   10.13.15.202    rigel       <none>           <none>
+openebs-ndm-operator-785c656646-2hlfm          1/1     Running   0          4m37s   172.16.185.66   rigel       <none>           <none>
+openebs-provisioner-6d879c54bb-2684z           1/1     Running   0          4m37s   172.16.185.68   rigel       <none>           <none>
+openebs-snapshot-operator-5b8df5fffc-rbr2x     2/2     Running   0          4m37s   172.16.185.65   rigel       <none>           <none>
 ```
 
 :star: Verify `StorageClasses` 
@@ -136,10 +199,10 @@ openebs-snapshot-operator-5dbc4f69dc-4z427     2/2     Running   0          6m22
 ```
 $ kubectl get storageclass
 NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  15m
-openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  15m
-openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  15m
-openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  15m
+openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  4m28s
+openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  4m28s
+openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  4m28s
+openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  4m28s
 ```
 
 ## :ab: Create the BlockDevice CR (Custom Resource)
@@ -155,6 +218,16 @@ node-disk-manager-lock       0      27h
 openebs-cstor-csi-iscsiadm   1      3d17h
 openebs-ndm-config           1      3d17h
 ```
+
+:warning: `openebs-cstor-csi-iscsiadm` config map is missing when using helm
+
+```
+$ kubectl get configmaps  --namespace openebs
+NAME                     DATA   AGE
+node-disk-manager-lock   0      6m27s
+openebs-ndm-config       1      6m38s
+```
+
 
 * edit `openebs-ndm-config` configmaps to check its content (:x: do not save the configmap if changed)
 
