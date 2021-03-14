@@ -3,10 +3,11 @@
 https://docs.openebs.io/docs/next/ugcstor.html#creating-cStor-storage-pools
 
 ```
-% kubectl get blockdevice -n openebs
-NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
-blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Unclaimed    Active   75m
-blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Unclaimed    Active   19h
+kubectl get blockdevice -n openebs
+NAME                                               NODENAME    SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03   bellatrix   102687672   Unclaimed    Active   12m
+blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Unclaimed    Active   12m
+blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Unclaimed    Active   12m
 ```
 
 ```yaml
