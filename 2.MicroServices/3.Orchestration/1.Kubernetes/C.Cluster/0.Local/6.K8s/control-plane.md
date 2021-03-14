@@ -14,6 +14,12 @@
 
 ## :gear: Kubernetes Version
 
+- [ ] Make sure you have the right hostname (based on your cluster)
+
+```
+$ hostnamectl --static set-hostname betelgeuse
+```
+
 - [ ] Check all available Versions
 
 ```
