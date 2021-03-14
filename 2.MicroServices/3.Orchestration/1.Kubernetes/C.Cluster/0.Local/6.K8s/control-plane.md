@@ -245,13 +245,23 @@ CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPAC
 *         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   
 ```
 
+:o: On your PC, you can manage your cluster remotely
+
+```
+$ mkdir -p $HOME/.kube/config
+$ scp -i ~/.ssh/b300098957@ramena.pk ubuntu@betelgeuse.boreal.codes:.kube/config .kube/config/orion
+$ export KUBECONFIG=~/.kube/config/orion
+```
+
 :round_pushpin: Check the current nodes (with `kubectl`)
 
 ```
 $ kubectl get nodes
-NAME    STATUS     ROLES                  AGE    VERSION
-orion   NotReady   control-plane,master   3h9m   v1.20.2
+NAME         STATUS     ROLES    AGE     VERSION
+betelgeuse   NotReady   master   4m23s   v1.18.6
 ```
+
+
 
 :warning: Not yet ready 
 
