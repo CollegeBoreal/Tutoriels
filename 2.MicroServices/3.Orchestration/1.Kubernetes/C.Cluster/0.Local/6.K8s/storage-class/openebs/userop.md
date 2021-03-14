@@ -22,11 +22,16 @@ EOF
 ```
 
 ```
-$ kubectl get pvc
+$ kubectl get persistentvolumeclaims 
 NAME               STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS             AGE
-cstor-python-pvc   Bound    pvc-ab4b6617-a4e0-49ac-a7a8-34290b4533c9   200Mi      RWO            openebs-sc-statefulset   9s
+cstor-python-pvc   Bound    pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            openebs-sc-statefulset   24s
 ```
 
+```
+$ kubectl get persistentvolumes     
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                      STORAGECLASS             REASON   AGE
+pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            Delete           Bound    default/cstor-python-pvc   openebs-sc-statefulset            86s
+```
 
 ```yaml
 $ kubectl apply -f - <<EOF
