@@ -37,6 +37,28 @@ NAME                                       CAPACITY   ACCESS MODES   RECLAIM POL
 pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            Delete           Bound    default/cstor-python-pvc   openebs-sc-statefulset            86s
 ```
 
+* cStor specific objects
+
+- Volumes
+
+```
+$ kubectl get cstorvolumes -n openebs
+NAME                                       STATUS    AGE    CAPACITY
+pvc-793b127d-6809-400e-9128-6407fe13372d   Healthy   139m   200Mi
+```
+
+- Volume Replicas
+
+```
+$ kubectl get cstorvolumereplicas -n openebs
+NAME                                                            USED    ALLOCATED   STATUS    AGE
+pvc-793b127d-6809-400e-9128-6407fe13372d-cstor-disk-pool-3oqs   1.01M   27.5K       Healthy   137m
+pvc-793b127d-6809-400e-9128-6407fe13372d-cstor-disk-pool-thk6   1.21M   30K         Healthy   137m
+pvc-793b127d-6809-400e-9128-6407fe13372d-cstor-disk-pool-yit1   1.21M   30K         Healthy   137m
+```
+
+
+
 ```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: apps/v1
