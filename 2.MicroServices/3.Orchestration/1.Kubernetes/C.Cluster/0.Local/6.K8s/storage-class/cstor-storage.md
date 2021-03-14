@@ -39,24 +39,54 @@ spec:
 EOF
 ```
 
+:round_pushpin: Observe the `StoragePoolClaim`
+
 ```
 $ kubectl get spc
 NAME              AGE
 cstor-disk-pool   7s
 ```
 
+:round_pushpin: Observe the cStor Storage Pool 
+
+* It may take some time to `Init`
+
 ```
 $ kubectl get csp
 NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
-cstor-disk-pool-fny2   662K        99.5G   99.5G      Healthy   false      striped   51s
-cstor-disk-pool-m7sr   86K         99.5G   99.5G      Healthy   false      striped   51s
+cstor-disk-pool-3oqs   83K         99.5G   99.5G      Healthy   false      striped   23s
+cstor-disk-pool-thk6                                  Init      false      striped   23s
+cstor-disk-pool-yit1   83K         99.5G   99.5G      Healthy   false      striped   23s
 ```
+
+* It may take some time to `ALLOCATE` (i.e. 83K)
+
+```
+$ kubectl get csp                   
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   95s
+cstor-disk-pool-thk6   83K         99.5G   99.5G      Healthy   false      striped   95s
+cstor-disk-pool-yit1   662K        99.5G   99.5G      Healthy   false      striped   95s
+```
+
+* Finally
+
+```
+$ kubectl get csp
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
+cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   4m59s
+cstor-disk-pool-thk6   662K        99.5G   99.5G      Healthy   false      striped   4m59s
+cstor-disk-pool-yit1   662K        99.5G   99.5G      Healthy   false      striped   4m59s
+```
+
+:round_pushpin: Block Devices are now `claimed`
 
 ```
 $ kubectl get blockdevices -nopenebs
-NAME                                               NODENAME   SIZE        CLAIMSTATE   STATUS   AGE
-blockdevice-9214d585-1b63-4bd4-a500-0f1a2c5f7af4   ursa       102687672   Claimed      Active   91m
-blockdevice-e69f6903-176b-4034-aaf8-40d5f09e577e   canis      102687672   Claimed      Active   19h
+NAME                                               NODENAME    SIZE        CLAIMSTATE   STATUS   AGE
+blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03   bellatrix   102687672   Claimed      Active   16m
+blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Claimed      Active   16m
+blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claimed      Active   16m
 ```
 
 ```yaml
@@ -71,7 +101,7 @@ metadata:
       - name: StoragePoolClaim
         value: "cstor-disk-pool"
       - name: ReplicaCount
-        value: "2"
+        value: "3"
 provisioner: openebs.io/provisioner-iscsi
 EOF
 ```
