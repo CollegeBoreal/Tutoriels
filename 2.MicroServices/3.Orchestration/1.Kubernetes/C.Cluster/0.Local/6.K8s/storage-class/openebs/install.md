@@ -1,13 +1,6 @@
-# Open EBS Installation
+# Install
 
-
-https://openebs.io
-
-Used by `kubesphere`
-
-<img src="images/1-config-sequence.svg" width="657" height="145"> </img>
-
-## :a: Verify iSCSI services are configured
+## :gear: Verify iSCSI services are configured
 
 https://docs.openebs.io/docs/next/prerequisites.html#ubuntu
 
@@ -71,7 +64,7 @@ Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 ```
 
 
-## :b: Install OpenEBS
+## :a: Install OpenEBS
 
 :round_pushpin: [Set Cluster Admin User Context](https://docs.openebs.io/docs/next/installation.html#set-cluster-admin-user-context)
 
@@ -160,7 +153,7 @@ openebs	openebs  	1       	2021-03-14 07:45:49.558546 -0400 EDT	deployed	openebs
 ``` 
 
 
-## :ab: [Verifying OpenEBS Installation](https://docs.openebs.io/docs/next/installation.html#verifying-openebs-installation)
+## :b: [Verifying OpenEBS Installation](https://docs.openebs.io/docs/next/installation.html#verifying-openebs-installation)
 
 ```
 $ kubectl get pods --namespace openebs
