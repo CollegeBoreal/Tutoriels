@@ -245,14 +245,6 @@ CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPAC
 *         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   
 ```
 
-:o: On your PC, you can manage your cluster remotely
-
-```
-$ mkdir -p $HOME/.kube/config
-$ scp -i ~/.ssh/b300098957@ramena.pk ubuntu@betelgeuse.boreal.codes:.kube/config .kube/config/orion
-$ export KUBECONFIG=~/.kube/config/orion
-```
-
 :round_pushpin: Check the current nodes (with `kubectl`)
 
 ```
@@ -260,8 +252,6 @@ $ kubectl get nodes
 NAME         STATUS     ROLES    AGE     VERSION
 betelgeuse   NotReady   master   4m23s   v1.18.6
 ```
-
-
 
 :warning: Not yet ready 
 
@@ -315,8 +305,8 @@ kube-scheduler-betelgeuse                  1/1     Running   0          14m
 
 ```
 $ kubectl get nodes --output=wide
-NAME    STATUS   ROLES                  AGE    VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
-orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>        Ubuntu 20.04.2 LTS   5.4.0-65-generic   docker://20.10.3
+NAME         STATUS   ROLES    AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
+betelgeuse   Ready    master   15m   v1.18.6   10.13.15.200   <none>        Ubuntu 20.04.2 LTS   5.4.0-66-generic   docker://20.10.3
 ```
 
 :tada: Ready
@@ -327,7 +317,7 @@ orion   Ready    control-plane,master   4h5m   v1.20.2   10.13.15.200   <none>  
 
 ```
 $ mkdir -p $HOME/.kube/config
-$ scp -i ~/.ssh/myprivate-key.pk ubuntu@10.13.15.200:.kube/config/orion ~/.kube/config/orion
+$ scp -i ~/.ssh/myprivate-key.pk ubuntu@betelgeuse.boreal.codes:.kube/config/orion ~/.kube/config/orion
 $ export KUBECONFIG=$HOME/.kube/config/orion
 ```
 
