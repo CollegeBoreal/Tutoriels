@@ -1,4 +1,4 @@
-# Install
+# Install openEBS
 
 ## :gear: Verify iSCSI services are configured
 
