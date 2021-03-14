@@ -37,13 +37,6 @@ NAME                                       CAPACITY   ACCESS MODES   RECLAIM POL
 pvc-793b127d-6809-400e-9128-6407fe13372d   200Mi      RWO            Delete           Bound    default/cstor-python-pvc   openebs-sc-statefulset            86s
 ```
 
-* On which node is the PVC running
-
-``` 
-$ kubectl describe pods pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb -n openebs | grep Node:
-Node:         rigel/10.13.15.202
-``` 
-
 ```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: apps/v1
@@ -77,40 +70,53 @@ spec:
 EOF
 ```
 
+## :o: Analysis
+
+:round_pushpin: On which node is the PVC running?
+
+* pull the PVC pod
 
 ```
-$ kubectl logs -f maya-apiserver-6999679866-m64wq -n openebs
+% kubectl get pods -n openebs | grep pvc
+pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb   3/3     Running   0          26m
+``` 
+
+* Describe the pod's node information
+
+``` 
+$ kubectl describe pods pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb -n openebs | grep Node:
+Node:         rigel/10.13.15.202
+``` 
+
+
+
+```
+$ kubectl logs -f  maya-apiserver-6999679866-v45vb -n openebs        
 + MAYA_API_SERVER_NETWORK=eth0
-+ ip -4 addr show scope global dev+  eth0
-grep inet
++ ip -4 addr show scope global dev eth0
++ grep inet
 + awk '{print $2}'
 + cut -d / -f 1
-+ CONTAINER_IP_ADDR=172.16.108.29
-+ exec /usr/local/bin/maya-apiserver start '--bind=172.16.108.29'
-I0309 03:44:44.577330       1 start.go:148] Initializing maya-apiserver...
-I0309 03:44:44.778403       1 start.go:279] Starting maya api server ...
-I0309 03:44:45.576273       1 start.go:288] resources applied successfully by installer
-I0309 03:44:45.603792       1 start.go:193] Maya api server configuration:
-I0309 03:44:45.603811       1 start.go:195]          Log Level: INFO
-I0309 03:44:45.603818       1 start.go:195]             Region: global (DC: dc1)
-I0309 03:44:45.603825       1 start.go:195]            Version: 2.6.0-released
-I0309 03:44:45.603831       1 start.go:201] 
-I0309 03:44:45.603837       1 start.go:204] Maya api server started! Log data will stream in below:
++ CONTAINER_IP_ADDR=172.16.224.66
++ exec /usr/local/bin/maya-apiserver start '--bind=172.16.224.66'
+I0314 12:14:32.698256       1 start.go:148] Initializing maya-apiserver...
+I0314 12:14:32.807009       1 start.go:279] Starting maya api server ...
+I0314 12:14:33.576952       1 start.go:288] resources applied successfully by installer
+I0314 12:14:33.607835       1 start.go:193] Maya api server configuration:
+I0314 12:14:33.607856       1 start.go:195]          Log Level: INFO
+I0314 12:14:33.607864       1 start.go:195]             Region: global (DC: dc1)
+I0314 12:14:33.607871       1 start.go:195]            Version: 2.6.0-released
+I0314 12:14:33.607877       1 start.go:201] 
+I0314 12:14:33.607883       1 start.go:204] Maya api server started! Log data will stream in below:
+I0314 12:14:33.614466       1 runner.go:37] Starting SPC controller
 ...
-```
-
-:bangbang: From 
-
-```
-$ sudo blkid /dev/ubuntu-vg/iscsi-lv
-/dev/ubuntu-vg/iscsi-lv: UUID="9214d585-1b63-4bd4-a500-0f1a2c5f7af4" TYPE="ext4"
 ```
 
 :star: to
 
 ```
 $ sudo blkid /dev/ubuntu-vg/iscsi-lv
-/dev/ubuntu-vg/iscsi-lv: LABEL="cstor-6aa53c2d-8fad-418e-b5f3-7d38a9455849" UUID="5400056540718397328" UUID_SUB="11562005844770744908" TYPE="zfs_member"
+/dev/ubuntu-vg/iscsi-lv: LABEL="cstor-1bd817bc-bbde-4d84-8c1c-c4f55ad9cf25" UUID="15252276871413574648" UUID_SUB="15180849639404787565" TYPE="zfs_member"
 ```
 
 ```
@@ -148,13 +154,13 @@ INFO:root:Printing fake logs
 
 
 ```
-$ sudo lsblk /dev/sdb
-NAME MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sdb    8:16   0  200M  0 disk /var/lib/kubelet/pods/807179bc-ff8a-4ab9-9297-614a483d4de6/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
+$ sudo lsblk /dev/sdb -o MOUNTPOINT
+MOUNTPOINT
+/var/lib/kubelet/pods/5e73b799-0ffa-4156-92ba-73340803cdc3/volumes/kubernetes.io~iscsi/pvc-793b127d-6809-400e-9128-6407fe13372d
 ```
 
 ```
-$ sudo ls -l /var/lib/kubelet/pods/807179bc-ff8a-4ab9-9297-614a483d4de6/volumes/kubernetes.io~iscsi/pvc-540d8067-33a2-4f2d-bc3b-d1712175db7b
+$ sudo ls -l `sudo lsblk /dev/sdb -o MOUNTPOINT`
 total 216
 -rw-r--r-- 1 root root    29 Mar 10 04:01 file1
 -rw-r--r-- 1 root root    30 Mar 10 04:01 file10
@@ -164,7 +170,7 @@ total 216
 ...
 ```
 
-:bangbang: After deleteing the pod the `pvc` also disappears 
+:bangbang: After deleting the pod the `pvc` also disappears 
 
 # References
 
