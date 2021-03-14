@@ -453,7 +453,7 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Uncla
 * and if looking at the logs can be a good start (i.e a pod per node)
 
 ```
-$ kubectl logs -f openebs-ndm-jx64c -n openebs 
+$ kubectl logs -f  openebs-ndm-48k4j -n openebs
 ```
 
 
