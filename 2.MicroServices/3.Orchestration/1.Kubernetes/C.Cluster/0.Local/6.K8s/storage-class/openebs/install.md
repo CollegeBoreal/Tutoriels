@@ -94,54 +94,22 @@ deployment.apps/openebs-localpv-provisioner created
 
 :round_pushpin: [Install using helm](https://docs.openebs.io/docs/next/installation.html#installation-through-helm)
 
+* Add the charts to the local repo
+
 ```
 $ helm repo add openebs https://openebs.github.io/charts
 ```
+
+* Update the repo
 
 ```
 $ helm repo update
 ```
 
+* Install openEBS
+
 ```
 $ helm install --namespace openebs openebs openebs/openebs
-"openebs" has been added to your repositories
-Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the "openebs" chart repository
-Update Complete. ⎈Happy Helming!⎈
-NAME: openebs
-LAST DEPLOYED: Sun Mar 14 07:45:49 2021
-NAMESPACE: openebs
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-NOTES:
-The OpenEBS has been installed. Check its status by running:
-$ kubectl get pods -n openebs
-
-For dynamically creating OpenEBS Volumes, you can either create a new StorageClass or
-use one of the default storage classes provided by OpenEBS.
-
-Use `kubectl get sc` to see the list of installed OpenEBS StorageClasses. A sample
-PVC spec using `openebs-jiva-default` StorageClass is given below:"
-
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: demo-vol-claim
-spec:
-  storageClassName: openebs-jiva-default
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5G
----
-
-Please note that, OpenEBS uses iSCSI for connecting applications with the
-OpenEBS Volumes and your nodes should have the iSCSI initiator installed.
-
-For more information, visit our Slack at https://openebs.io/community or view the documentation online at http://docs.openebs.io/.
 ```
 
 - [ ] Test
