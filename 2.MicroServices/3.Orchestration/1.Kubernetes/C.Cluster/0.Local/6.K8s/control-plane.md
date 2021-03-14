@@ -200,7 +200,7 @@ W0228 02:50:23.598562 3985225 configset.go:202] WARNING: kubeadm cannot validate
 $ ## sudo kubeadm init
 $ sudo kubeadm init \
   --pod-network-cidr=172.16.0.0/16 \
-  --control-plane-endpoint=orion.boreal.codes
+  --control-plane-endpoint=betelgeuse.boreal.codes
 ```
 
 [see the generated log => ](kubeadm-init.md)
