@@ -73,7 +73,7 @@ Feb 28 18:13:57 orion iscsid[727345]: iSCSI daemon with pid=727346 started!
 <img src="../images/kube-context.png" width="658" height="48"> </img>
 
 
-:round_pushpin: [Install using kubectl](https://docs.openebs.io/docs/next/installation.html#installation-through-kubectl)
+:round_pushpin: [Install using kubectl](https://docs.openebs.io/docs/next/installation.html#installation-through-kubectl) :warning: (Helm Recommended)
 
 ```
 $ kubectl apply -f https://openebs.github.io/charts/openebs-operator.yaml
