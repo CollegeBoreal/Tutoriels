@@ -2,9 +2,9 @@
 
 https://helm.sh/docs/intro/install/
 
-## :o: Install
+## :gear: Install
 
-#### :one: :penguin: Debian
+#### :a: :penguin: Debian
 
 https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 
@@ -32,7 +32,21 @@ $ echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/a
 $ sudo apt-get update && sudo apt-get install helm
 ```
 
-## :a: Usage
+#### :b: :apple: Mac OS
+
+```
+$ brew install helm
+```
+
+``` 
+$ brew info helm
+helm: stable 3.5.3 (bottled), HEAD
+Kubernetes package manager
+...
+``` 
+
+
+## :star: Usage
 
 https://helm.sh/docs/intro/using_helm/
 
