@@ -65,6 +65,35 @@ $ kubectl get nodes -o json | jq ".items[]|{name:.metadata.name, taints:.spec.ta
 }
 ```
 
+```
+$ kubectl taint nodes rigel key1-  
+```
+
+```
+$ kubectl get nodes -o json | jq ".items[]|{name:.metadata.name, taints:.spec.taints}"
+{
+  "name": "bellatrix",
+  "taints": null
+}
+{
+  "name": "betelgeuse",
+  "taints": [
+    {
+      "effect": "NoSchedule",
+      "key": "node-role.kubernetes.io/master"
+    }
+  ]
+}
+{
+  "name": "rigel",
+  "taints": null
+}
+{
+  "name": "saiph",
+  "taints": null
+}
+```
+
 https://stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes
 
 https://docs.mirantis.com/mcp/q4-18/mcp-operations-guide/kubernetes-operations/k8s-node-ops/k8s-node-remove.html
