@@ -83,12 +83,12 @@ $ sudo pvdisplay
 
 - [ ] List the volume groups VG
 
-* the summary
+* the summary (with the devices attached)
 
 ```
-$ sudo vgs
-  VG         #PV  #LV  #SN  Attr    VSize     VFree   
-  ubuntu-vg    1    1    0  wz--n-  <272.40g  <136.20g
+$ sudo vgs --options +devices | column -t
+VG         #PV  #LV  #SN  Attr    VSize     VFree     Devices
+ubuntu-vg  1    1    0    wz--n-  <272.40g  <136.20g  /dev/sda3(0)
 ```
 
 * In detail
@@ -122,9 +122,9 @@ $ sudo vgdisplay
 * the summary
 
 ```
-$ sudo lvs
-  LV          VG          Attr         LSize      Pool   Origin   Data%    Meta%    Move   Log   Cpy%Sync Convert
-  ubuntu-lv   ubuntu-vg   -wi-ao----   <136.20g                                                    
+$ sudo lvs --options +devices 
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert Devices     
+  ubuntu-lv ubuntu-vg -wi-ao---- <136.20g                                                     /dev/sda3(0)
 ```
 
 * In detail
