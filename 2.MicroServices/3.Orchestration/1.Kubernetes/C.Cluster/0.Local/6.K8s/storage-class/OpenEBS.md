@@ -342,6 +342,7 @@ blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03
 
 | TAG | VALUE |
 |-----|-------|
+| `metadata.name:` | blockdevice-**PARTUUID** |
 | `metadata.labels.kubernetes.io/hostname:` | hostname |
 | `spec.devlinks.kind: by-id.links:`        | - DEVLINKS /dev/disk/**by-id** |
 | `spec.devlinks.kind: by-path.links:`      | - DEVLINKS /dev/**mapper** |
