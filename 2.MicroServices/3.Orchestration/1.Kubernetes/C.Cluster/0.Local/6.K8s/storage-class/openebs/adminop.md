@@ -301,7 +301,7 @@ cstor-disk-pool   7s
 -- cstorpools.openebs.io (object)
 
 ```
-$ kubectl get csp 
+$ kubectl get csp --watch
 NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
 cstor-disk-pool-3oqs   83K         99.5G   99.5G      Healthy   false      striped   23s
 cstor-disk-pool-thk6                                  Init      false      striped   23s
@@ -311,7 +311,7 @@ cstor-disk-pool-yit1   83K         99.5G   99.5G      Healthy   false      strip
 * It may take some time to `ALLOCATE` (i.e. 83K)
 
 ```
-$ kubectl get csp                   
+$ kubectl get csp --watch           
 NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
 cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   95s
 cstor-disk-pool-thk6   83K         99.5G   99.5G      Healthy   false      striped   95s
@@ -321,7 +321,7 @@ cstor-disk-pool-yit1   662K        99.5G   99.5G      Healthy   false      strip
 * Finally
 
 ```
-$ kubectl get csp
+$ kubectl get csp --watch
 NAME                   ALLOCATED   FREE    CAPACITY   STATUS    READONLY   TYPE      AGE
 cstor-disk-pool-3oqs   665K        99.5G   99.5G      Healthy   false      striped   4m59s
 cstor-disk-pool-thk6   662K        99.5G   99.5G      Healthy   false      striped   4m59s
