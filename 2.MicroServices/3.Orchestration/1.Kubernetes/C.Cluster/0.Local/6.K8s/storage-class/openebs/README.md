@@ -8,6 +8,7 @@ Used by `kubesphere`
 
 ## :gear: Prerequisites
 
+[Install](install.md) the [openEBS](https://openebs.io) [CSI](https://kubernetes-csi.github.io/docs/) [Driver](https://kubernetes-csi.github.io/docs/drivers.html)
 
 ## :a: Admin Operations
 
