@@ -278,18 +278,18 @@ $ watch kubectl get pods --all-namespaces
 CTRL+C to exit
 
 ```
-Every 2.0s: kubectl get pods --all-namespaces                orion: Thu Feb 18 02:55:26 2021
+Every 2.0s: kubectl get pods --all-namespaces                             betelgeuse: Sun Mar 14 04:04:34 2021
 
-NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
-kube-system   calico-kube-controllers-86bddfcff-fk2dr   1/1     Running   0          19m
-kube-system   calico-node-8pzzz                         1/1     Running   0          19m
-kube-system   coredns-74ff55c5b-56k4w                   1/1     Running   0          4h3m
-kube-system   coredns-74ff55c5b-lwbh6                   1/1     Running   0          4h3m
-kube-system   etcd-orion                                1/1     Running   0          4h3m
-kube-system   kube-apiserver-orion                      1/1     Running   0          4h3m
-kube-system   kube-controller-manager-orion             1/1     Running   0          4h3m
-kube-system   kube-proxy-7cfq9                          1/1     Running   0          4h3m
-kube-system   kube-scheduler-orion                      1/1     Running   0          4h3m
+NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE
+kube-system   calico-kube-controllers-65d7476764-bwwrb   1/1     Running   0          2m19s
+kube-system   calico-node-dr7x4                          1/1     Running   0          2m19s
+kube-system   coredns-66bff467f8-6qhnw                   1/1     Running   0          13m
+kube-system   coredns-66bff467f8-ldp4p                   1/1     Running   0          13m
+kube-system   etcd-betelgeuse                            1/1     Running   0          13m
+kube-system   kube-apiserver-betelgeuse                  1/1     Running   0          13m
+kube-system   kube-controller-manager-betelgeuse         1/1     Running   0          13m
+kube-system   kube-proxy-fj79t                           1/1     Running   0          13m
+kube-system   kube-scheduler-betelgeuse                  1/1     Running   0          13m
 ```
 
 or just `watching` the kube-system namespace
