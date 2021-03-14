@@ -373,6 +373,17 @@ openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediat
 $ kubectl patch storageclass openebs-sc-statefulset -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
+- [ ] check default storage
+
+```
+$ kubectl get sc                        
+NAME                               PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+openebs-device                     openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
+openebs-hostpath                   openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
+openebs-jiva-default               openebs.io/provisioner-iscsi                               Delete          Immediate              false                  8h
+openebs-sc-statefulset (default)   openebs.io/provisioner-iscsi                               Delete          Immediate              false                  31s
+openebs-snapshot-promoter          volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  8h
+```
 
 # References
 
