@@ -7,23 +7,6 @@
 
 ```yaml
 $ kubectl apply -f - <<EOF
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: openebs-sc-example
-  annotations:
-    openebs.io/cas-type: cstor
-    cas.openebs.io/config: |
-      - name: StoragePoolClaim
-        value: "cstor-disk-pool"
-      - name: ReplicaCount
-        value: "2"
-provisioner: openebs.io/provisioner-iscsi
-EOF
-```
-
-```yaml
-$ kubectl apply -f - <<EOF
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -34,7 +17,7 @@ spec:
   resources:
     requests:
       storage: 200Mi
-  storageClassName: openebs-sc-example
+  storageClassName: openebs-sc-statefulset
 EOF
 ```
 
