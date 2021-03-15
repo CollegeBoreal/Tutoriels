@@ -45,3 +45,7 @@ To upgrade this helm chart:
       ROOT_PASSWORD=$(kubectl get secret --namespace default kube-mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode)
       helm upgrade kube-mysql bitnami/mysql --set auth.rootPassword=$ROOT_PASSWORD
 ```
+
+# References
+
+https://github.com/bitnami/charts/issues/1126
