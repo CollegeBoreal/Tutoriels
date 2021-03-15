@@ -200,6 +200,16 @@ $ kubectl delete deployments python-myapp
 
 :bangbang: After deleting the pod the `pvc` also disappears 
 
+```
+% kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c -n openebs
+error: a container name must be specified for pod pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c, choose one of: [cstor-istgt maya-volume-exporter cstor-volume-mgmt]
+```
+
+```
+$ kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c -n openebs -c cstor-volume-mgmt
+```
+
+
 # References
 
 https://github.com/openebs/openebs-docs/issues/900
