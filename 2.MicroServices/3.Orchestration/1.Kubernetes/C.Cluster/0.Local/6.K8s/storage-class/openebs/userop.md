@@ -17,7 +17,8 @@ spec:
   resources:
     requests:
       storage: 200Mi
-  storageClassName: openebs-sc-statefulset
+  # Storage Class can be omitted when default storage is set
+  # storageClassName: openebs-sc-statefulset
 EOF
 ```
 
