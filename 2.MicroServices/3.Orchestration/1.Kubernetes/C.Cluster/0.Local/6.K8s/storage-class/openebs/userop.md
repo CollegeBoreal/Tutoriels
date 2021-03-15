@@ -219,12 +219,22 @@ deployment.apps/python-myapp restarted
 $ kubectl delete deployments python-myapp
 ```
 
-* Release the PVC
+* Release the PVC (:warning: this can take time)
 
 ```
 $ kubectl delete pvc cstor-python-pvc
 persistentvolumeclaim "cstor-python-pvc" deleted
 ```
+
+``` 
+$ kubectl get pods -n openebs --watch                                                               
+NAME                                                              READY   STATUS        RESTARTS   AGE
+cstor-disk-pool-3oqs-5dc9878cb4-xf6zs                             3/3     Running       0          4h34m
+...
+openebs-snapshot-operator-5b8df5fffc-mw725                        2/2     Running       0          4h34m
+pvc-5ea17dd0-1f3b-4b3e-be23-4b569851945d-target-56f6d65fc97bks2   3/3     Terminating   0          20m
+``` 
+
 
 :bangbang: After deleting the pod the `pvc` also disappears 
 
