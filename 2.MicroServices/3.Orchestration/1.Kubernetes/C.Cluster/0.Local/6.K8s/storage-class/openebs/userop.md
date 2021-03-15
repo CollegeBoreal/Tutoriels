@@ -110,7 +110,20 @@ $ kubectl describe pods pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78
 Node:         rigel/10.13.15.202
 ``` 
 
+* Get the PVC log
 
+- needs a container
+
+```
+% kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb -n openebs
+error: a container name must be specified for pod pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb, choose one of: [cstor-istgt maya-volume-exporter cstor-volume-mgmt]
+```
+
+- use the container
+
+```
+$ kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5cl6tb -n openebs -c cstor-volume-mgmt
+```
 
 ```
 $ kubectl logs -f  maya-apiserver-6999679866-v45vb -n openebs        
@@ -206,16 +219,6 @@ persistentvolumeclaim "cstor-python-pvc" deleted
 ```
 
 :bangbang: After deleting the pod the `pvc` also disappears 
-
-```
-% kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c -n openebs
-error: a container name must be specified for pod pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c, choose one of: [cstor-istgt maya-volume-exporter cstor-volume-mgmt]
-```
-
-```
-$ kubectl logs -f pvc-793b127d-6809-400e-9128-6407fe13372d-target-77f46b78f5khf4c -n openebs -c cstor-volume-mgmt
-```
-
 
 # References
 
