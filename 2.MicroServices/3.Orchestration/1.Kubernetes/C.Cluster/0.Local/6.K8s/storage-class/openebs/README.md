@@ -21,3 +21,5 @@ For testing the Storage with [cStor](https://docs.openebs.io/docs/next/cstor.htm
 # References
 
 https://openebs.io/blog/openebs-dynamic-volume-provisioning-on-zfs/
+
+https://forums.freebsd.org/threads/how-to-mount-a-zfs-partition.61112/
