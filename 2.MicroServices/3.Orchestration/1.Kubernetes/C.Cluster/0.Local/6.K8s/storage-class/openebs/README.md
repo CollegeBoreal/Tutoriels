@@ -12,11 +12,11 @@ Used by `kubesphere`
 
 ## :a: Admin Operations
 
-Using [cStor](https://docs.openebs.io/docs/next/cstor.html) as the CSI compliant Storage Engine [adminop](adminop.md):pinching_hand:
+For using [cStor](https://docs.openebs.io/docs/next/cstor.html) as the CSI compliant Storage Engine, provide with some [admin operations](adminop.md):pinching_hand:
 
 ## :b: User Operations
 
-Testing the Storage with [cStor](https://docs.openebs.io/docs/next/cstor.html)
+For testing the Storage with [cStor](https://docs.openebs.io/docs/next/cstor.html), provide with some [user operations](userop.md):pinching_hand:
 
 # References
 
