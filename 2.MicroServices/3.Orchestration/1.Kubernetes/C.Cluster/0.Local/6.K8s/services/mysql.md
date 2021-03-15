@@ -1,4 +1,6 @@
 
+https://bitnami.com/stack/mysql/helm
+
 ```
 $ helm repo add bitnami https://charts.bitnami.com/bitnami
 ``` 
