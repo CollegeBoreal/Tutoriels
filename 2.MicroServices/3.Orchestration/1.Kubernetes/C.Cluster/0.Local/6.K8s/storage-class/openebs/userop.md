@@ -205,6 +205,13 @@ total 216
 ...
 ```
 
+## :recycle: Replay the app
+
+```
+$ kubectl rollout restart deployment python-myapp                
+deployment.apps/python-myapp restarted
+```
+
 ## :x: Undeploy
 
 ```
