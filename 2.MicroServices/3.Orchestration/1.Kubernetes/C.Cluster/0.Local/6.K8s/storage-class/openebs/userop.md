@@ -192,6 +192,12 @@ total 216
 ...
 ```
 
+## :x: Undeploy
+
+```
+$ kubectl delete deployments python-myapp
+```
+
 :bangbang: After deleting the pod the `pvc` also disappears 
 
 # References
