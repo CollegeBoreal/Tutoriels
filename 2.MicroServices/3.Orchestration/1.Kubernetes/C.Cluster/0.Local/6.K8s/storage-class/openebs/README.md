@@ -46,6 +46,13 @@ sda3                    LVM2_member                                            x
 `-ubuntu--vg-docker--lv                  
 ```
 
+```
+root@cstor-disk-pool-3oqs-5dc9878cb4-xf6zs:/# zfs list
+NAME                                         USED  AVAIL  REFER  MOUNTPOINT
+cstor-1bd817bc-bbde-4d84-8c1c-c4f55ad9cf25   950K  96.4G   512B  /cstor-1bd817bc-bbde-4d84-8c1c-c4f55ad9cf25
+```
+
+
 # References
 
 https://openebs.io/blog/openebs-dynamic-volume-provisioning-on-zfs/
