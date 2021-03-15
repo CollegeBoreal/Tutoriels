@@ -198,6 +198,13 @@ total 216
 $ kubectl delete deployments python-myapp
 ```
 
+* Release the PVC
+
+```
+$ kubectl delete pvc cstor-python-pvc
+persistentvolumeclaim "cstor-python-pvc" deleted
+```
+
 :bangbang: After deleting the pod the `pvc` also disappears 
 
 ```
