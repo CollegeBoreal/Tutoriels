@@ -122,6 +122,14 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 $ kubectl cluster-info dump
 ```
 
+## IDE
+
+:apple: Mac OS
+
+```
+$ brew install --cask lens
+```
+
 # Références
 
 [Google To The World](https://cloud.google.com/blog/products/gcp/from-google-to-the-world-the-kubernetes-origin-story)
