@@ -1,0 +1,309 @@
+kind: StatefulSet
+apiVersion: apps/v1
+metadata:
+  name: kube-mysql
+  namespace: default
+  selfLink: /apis/apps/v1/namespaces/default/statefulsets/kube-mysql
+  uid: 5dbd9b50-418c-4fcd-a055-ead433d6acd4
+  resourceVersion: '879862'
+  generation: 1
+  creationTimestamp: '2021-03-15T16:43:22Z'
+  labels:
+    app.kubernetes.io/component: primary
+    app.kubernetes.io/instance: kube-mysql
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: mysql
+    helm.sh/chart: mysql-8.4.4
+  annotations:
+    meta.helm.sh/release-name: kube-mysql
+    meta.helm.sh/release-namespace: default
+  managedFields:
+    - manager: Go-http-client
+      operation: Update
+      apiVersion: apps/v1
+      time: '2021-03-15T16:43:22Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:meta.helm.sh/release-name': {}
+            'f:meta.helm.sh/release-namespace': {}
+          'f:labels':
+            .: {}
+            'f:app.kubernetes.io/component': {}
+            'f:app.kubernetes.io/instance': {}
+            'f:app.kubernetes.io/managed-by': {}
+            'f:app.kubernetes.io/name': {}
+            'f:helm.sh/chart': {}
+        'f:spec':
+          'f:podManagementPolicy': {}
+          'f:replicas': {}
+          'f:revisionHistoryLimit': {}
+          'f:selector':
+            'f:matchLabels':
+              .: {}
+              'f:app.kubernetes.io/component': {}
+              'f:app.kubernetes.io/instance': {}
+              'f:app.kubernetes.io/name': {}
+          'f:serviceName': {}
+          'f:template':
+            'f:metadata':
+              'f:annotations':
+                .: {}
+                'f:checksum/configuration': {}
+              'f:labels':
+                .: {}
+                'f:app.kubernetes.io/component': {}
+                'f:app.kubernetes.io/instance': {}
+                'f:app.kubernetes.io/managed-by': {}
+                'f:app.kubernetes.io/name': {}
+                'f:helm.sh/chart': {}
+            'f:spec':
+              'f:affinity':
+                .: {}
+                'f:podAntiAffinity':
+                  .: {}
+                  'f:preferredDuringSchedulingIgnoredDuringExecution': {}
+              'f:containers':
+                'k:{"name":"mysql"}':
+                  .: {}
+                  'f:env':
+                    .: {}
+                    'k:{"name":"BITNAMI_DEBUG"}':
+                      .: {}
+                      'f:name': {}
+                      'f:value': {}
+                    'k:{"name":"MYSQL_DATABASE"}':
+                      .: {}
+                      'f:name': {}
+                      'f:value': {}
+                    'k:{"name":"MYSQL_ROOT_PASSWORD"}':
+                      .: {}
+                      'f:name': {}
+                      'f:valueFrom':
+                        .: {}
+                        'f:secretKeyRef':
+                          .: {}
+                          'f:key': {}
+                          'f:name': {}
+                  'f:image': {}
+                  'f:imagePullPolicy': {}
+                  'f:livenessProbe':
+                    .: {}
+                    'f:exec':
+                      .: {}
+                      'f:command': {}
+                    'f:failureThreshold': {}
+                    'f:initialDelaySeconds': {}
+                    'f:periodSeconds': {}
+                    'f:successThreshold': {}
+                    'f:timeoutSeconds': {}
+                  'f:name': {}
+                  'f:ports':
+                    .: {}
+                    'k:{"containerPort":3306,"protocol":"TCP"}':
+                      .: {}
+                      'f:containerPort': {}
+                      'f:name': {}
+                      'f:protocol': {}
+                  'f:readinessProbe':
+                    .: {}
+                    'f:exec':
+                      .: {}
+                      'f:command': {}
+                    'f:failureThreshold': {}
+                    'f:initialDelaySeconds': {}
+                    'f:periodSeconds': {}
+                    'f:successThreshold': {}
+                    'f:timeoutSeconds': {}
+                  'f:resources': {}
+                  'f:securityContext':
+                    .: {}
+                    'f:runAsUser': {}
+                  'f:terminationMessagePath': {}
+                  'f:terminationMessagePolicy': {}
+                  'f:volumeMounts':
+                    .: {}
+                    'k:{"mountPath":"/bitnami/mysql"}':
+                      .: {}
+                      'f:mountPath': {}
+                      'f:name': {}
+                    'k:{"mountPath":"/opt/bitnami/mysql/conf/my.cnf"}':
+                      .: {}
+                      'f:mountPath': {}
+                      'f:name': {}
+                      'f:subPath': {}
+              'f:dnsPolicy': {}
+              'f:restartPolicy': {}
+              'f:schedulerName': {}
+              'f:securityContext':
+                .: {}
+                'f:fsGroup': {}
+              'f:serviceAccount': {}
+              'f:serviceAccountName': {}
+              'f:terminationGracePeriodSeconds': {}
+              'f:volumes':
+                .: {}
+                'k:{"name":"config"}':
+                  .: {}
+                  'f:configMap':
+                    .: {}
+                    'f:defaultMode': {}
+                    'f:name': {}
+                  'f:name': {}
+          'f:updateStrategy':
+            'f:type': {}
+          'f:volumeClaimTemplates': {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: apps/v1
+      time: '2021-03-16T17:28:43Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:collisionCount': {}
+          'f:currentReplicas': {}
+          'f:currentRevision': {}
+          'f:observedGeneration': {}
+          'f:replicas': {}
+          'f:updateRevision': {}
+          'f:updatedReplicas': {}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: primary
+      app.kubernetes.io/instance: kube-mysql
+      app.kubernetes.io/name: mysql
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/component: primary
+        app.kubernetes.io/instance: kube-mysql
+        app.kubernetes.io/managed-by: Helm
+        app.kubernetes.io/name: mysql
+        helm.sh/chart: mysql-8.4.4
+      annotations:
+        checksum/configuration: c1cdd7199cecb490cc3c76739172c12b5ebcfad6ed213fe006b09bb259f8d6d7
+    spec:
+      volumes:
+        - name: config
+          configMap:
+            name: kube-mysql
+            defaultMode: 420
+      containers:
+        - name: mysql
+          image: 'docker.io/bitnami/mysql:8.0.23-debian-10-r28'
+          ports:
+            - name: mysql
+              containerPort: 3306
+              protocol: TCP
+          env:
+            - name: BITNAMI_DEBUG
+              value: 'false'
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: kube-mysql
+                  key: mysql-root-password
+            - name: MYSQL_DATABASE
+              value: my_database
+          resources: {}
+          volumeMounts:
+            - name: data
+              mountPath: /bitnami/mysql
+            - name: config
+              mountPath: /opt/bitnami/mysql/conf/my.cnf
+              subPath: my.cnf
+          livenessProbe:
+            exec:
+              command:
+                - /bin/bash
+                - '-ec'
+                - |
+                  password_aux="${MYSQL_ROOT_PASSWORD:-}"
+                  if [[ -f "${MYSQL_ROOT_PASSWORD_FILE:-}" ]]; then
+                      password_aux=$(cat "$MYSQL_ROOT_PASSWORD_FILE")
+                  fi
+                  mysqladmin status -uroot -p"${password_aux}"
+            initialDelaySeconds: 120
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+          readinessProbe:
+            exec:
+              command:
+                - /bin/bash
+                - '-ec'
+                - |
+                  password_aux="${MYSQL_ROOT_PASSWORD:-}"
+                  if [[ -f "${MYSQL_ROOT_PASSWORD_FILE:-}" ]]; then
+                      password_aux=$(cat "$MYSQL_ROOT_PASSWORD_FILE")
+                  fi
+                  mysqladmin status -uroot -p"${password_aux}"
+            initialDelaySeconds: 30
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            runAsUser: 1001
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      serviceAccountName: kube-mysql
+      serviceAccount: kube-mysql
+      securityContext:
+        fsGroup: 1001
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 1
+              podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app.kubernetes.io/component: primary
+                    app.kubernetes.io/instance: kube-mysql
+                    app.kubernetes.io/name: mysql
+                namespaces:
+                  - default
+                topologyKey: kubernetes.io/hostname
+      schedulerName: default-scheduler
+  volumeClaimTemplates:
+    - kind: PersistentVolumeClaim
+      apiVersion: v1
+      metadata:
+        name: data
+        creationTimestamp: null
+        labels:
+          app.kubernetes.io/component: primary
+          app.kubernetes.io/instance: kube-mysql
+          app.kubernetes.io/name: mysql
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 8Gi
+        volumeMode: Filesystem
+      status:
+        phase: Pending
+  serviceName: kube-mysql
+  podManagementPolicy: OrderedReady
+  updateStrategy:
+    type: RollingUpdate
+  revisionHistoryLimit: 10
+status:
+  observedGeneration: 1
+  replicas: 1
+  currentReplicas: 1
+  updatedReplicas: 1
+  currentRevision: kube-mysql-6f99595f46
+  updateRevision: kube-mysql-6f99595f46
+  collisionCount: 0
