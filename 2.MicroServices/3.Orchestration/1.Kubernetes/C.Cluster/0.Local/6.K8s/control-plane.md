@@ -145,7 +145,7 @@ $ cat /etc/fstab
 #/swap.img	none	swap	sw	0	0
 ```
 
-## :four: kernel runtime parameters
+## :four: [Letting iptables see bridged traffic](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#letting-iptables-see-bridged-traffic)
 
 [sysctl](https://wiki.archlinux.org/index.php/sysctl) is a tool for examining and changing kernel parameters at runtime . sysctl is implemented in `procfs`, the virtual process file system at `/proc/`.
 
