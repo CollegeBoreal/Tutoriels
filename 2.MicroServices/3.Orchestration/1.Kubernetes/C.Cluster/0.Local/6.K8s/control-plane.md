@@ -215,6 +215,7 @@ $ ## sudo kubeadm init
 $ sudo kubeadm init \
   --pod-network-cidr=172.16.0.0/16 \
   --control-plane-endpoint=betelgeuse.boreal.codes
+  --cluster-name=orion
 ```
 
 [see the generated log => ](kubeadm-init.md)
