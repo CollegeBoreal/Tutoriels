@@ -1,174 +1,7 @@
-kind: StatefulSet
 apiVersion: apps/v1
+kind: StatefulSet
 metadata:
   name: kube-mysql
-  namespace: default
-  selfLink: /apis/apps/v1/namespaces/default/statefulsets/kube-mysql
-  uid: 5dbd9b50-418c-4fcd-a055-ead433d6acd4
-  resourceVersion: '879862'
-  generation: 1
-  creationTimestamp: '2021-03-15T16:43:22Z'
-  labels:
-    app.kubernetes.io/component: primary
-    app.kubernetes.io/instance: kube-mysql
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/name: mysql
-    helm.sh/chart: mysql-8.4.4
-  annotations:
-    meta.helm.sh/release-name: kube-mysql
-    meta.helm.sh/release-namespace: default
-  managedFields:
-    - manager: Go-http-client
-      operation: Update
-      apiVersion: apps/v1
-      time: '2021-03-15T16:43:22Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:metadata':
-          'f:annotations':
-            .: {}
-            'f:meta.helm.sh/release-name': {}
-            'f:meta.helm.sh/release-namespace': {}
-          'f:labels':
-            .: {}
-            'f:app.kubernetes.io/component': {}
-            'f:app.kubernetes.io/instance': {}
-            'f:app.kubernetes.io/managed-by': {}
-            'f:app.kubernetes.io/name': {}
-            'f:helm.sh/chart': {}
-        'f:spec':
-          'f:podManagementPolicy': {}
-          'f:replicas': {}
-          'f:revisionHistoryLimit': {}
-          'f:selector':
-            'f:matchLabels':
-              .: {}
-              'f:app.kubernetes.io/component': {}
-              'f:app.kubernetes.io/instance': {}
-              'f:app.kubernetes.io/name': {}
-          'f:serviceName': {}
-          'f:template':
-            'f:metadata':
-              'f:annotations':
-                .: {}
-                'f:checksum/configuration': {}
-              'f:labels':
-                .: {}
-                'f:app.kubernetes.io/component': {}
-                'f:app.kubernetes.io/instance': {}
-                'f:app.kubernetes.io/managed-by': {}
-                'f:app.kubernetes.io/name': {}
-                'f:helm.sh/chart': {}
-            'f:spec':
-              'f:affinity':
-                .: {}
-                'f:podAntiAffinity':
-                  .: {}
-                  'f:preferredDuringSchedulingIgnoredDuringExecution': {}
-              'f:containers':
-                'k:{"name":"mysql"}':
-                  .: {}
-                  'f:env':
-                    .: {}
-                    'k:{"name":"BITNAMI_DEBUG"}':
-                      .: {}
-                      'f:name': {}
-                      'f:value': {}
-                    'k:{"name":"MYSQL_DATABASE"}':
-                      .: {}
-                      'f:name': {}
-                      'f:value': {}
-                    'k:{"name":"MYSQL_ROOT_PASSWORD"}':
-                      .: {}
-                      'f:name': {}
-                      'f:valueFrom':
-                        .: {}
-                        'f:secretKeyRef':
-                          .: {}
-                          'f:key': {}
-                          'f:name': {}
-                  'f:image': {}
-                  'f:imagePullPolicy': {}
-                  'f:livenessProbe':
-                    .: {}
-                    'f:exec':
-                      .: {}
-                      'f:command': {}
-                    'f:failureThreshold': {}
-                    'f:initialDelaySeconds': {}
-                    'f:periodSeconds': {}
-                    'f:successThreshold': {}
-                    'f:timeoutSeconds': {}
-                  'f:name': {}
-                  'f:ports':
-                    .: {}
-                    'k:{"containerPort":3306,"protocol":"TCP"}':
-                      .: {}
-                      'f:containerPort': {}
-                      'f:name': {}
-                      'f:protocol': {}
-                  'f:readinessProbe':
-                    .: {}
-                    'f:exec':
-                      .: {}
-                      'f:command': {}
-                    'f:failureThreshold': {}
-                    'f:initialDelaySeconds': {}
-                    'f:periodSeconds': {}
-                    'f:successThreshold': {}
-                    'f:timeoutSeconds': {}
-                  'f:resources': {}
-                  'f:securityContext':
-                    .: {}
-                    'f:runAsUser': {}
-                  'f:terminationMessagePath': {}
-                  'f:terminationMessagePolicy': {}
-                  'f:volumeMounts':
-                    .: {}
-                    'k:{"mountPath":"/bitnami/mysql"}':
-                      .: {}
-                      'f:mountPath': {}
-                      'f:name': {}
-                    'k:{"mountPath":"/opt/bitnami/mysql/conf/my.cnf"}':
-                      .: {}
-                      'f:mountPath': {}
-                      'f:name': {}
-                      'f:subPath': {}
-              'f:dnsPolicy': {}
-              'f:restartPolicy': {}
-              'f:schedulerName': {}
-              'f:securityContext':
-                .: {}
-                'f:fsGroup': {}
-              'f:serviceAccount': {}
-              'f:serviceAccountName': {}
-              'f:terminationGracePeriodSeconds': {}
-              'f:volumes':
-                .: {}
-                'k:{"name":"config"}':
-                  .: {}
-                  'f:configMap':
-                    .: {}
-                    'f:defaultMode': {}
-                    'f:name': {}
-                  'f:name': {}
-          'f:updateStrategy':
-            'f:type': {}
-          'f:volumeClaimTemplates': {}
-    - manager: kube-controller-manager
-      operation: Update
-      apiVersion: apps/v1
-      time: '2021-03-16T17:28:43Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:status':
-          'f:collisionCount': {}
-          'f:currentReplicas': {}
-          'f:currentRevision': {}
-          'f:observedGeneration': {}
-          'f:replicas': {}
-          'f:updateRevision': {}
-          'f:updatedReplicas': {}
 spec:
   replicas: 1
   selector:
@@ -178,15 +11,12 @@ spec:
       app.kubernetes.io/name: mysql
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app.kubernetes.io/component: primary
         app.kubernetes.io/instance: kube-mysql
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: mysql
         helm.sh/chart: mysql-8.4.4
-      annotations:
-        checksum/configuration: c1cdd7199cecb490cc3c76739172c12b5ebcfad6ed213fe006b09bb259f8d6d7
     spec:
       volumes:
         - name: config
@@ -299,11 +129,3 @@ spec:
   updateStrategy:
     type: RollingUpdate
   revisionHistoryLimit: 10
-status:
-  observedGeneration: 1
-  replicas: 1
-  currentReplicas: 1
-  updatedReplicas: 1
-  currentRevision: kube-mysql-6f99595f46
-  updateRevision: kube-mysql-6f99595f46
-  collisionCount: 0
