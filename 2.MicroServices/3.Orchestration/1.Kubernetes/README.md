@@ -124,6 +124,8 @@ $ kubectl cluster-info dump
 
 ## IDE
 
+https://k8slens.dev/
+
 :apple: Mac OS
 
 ```
