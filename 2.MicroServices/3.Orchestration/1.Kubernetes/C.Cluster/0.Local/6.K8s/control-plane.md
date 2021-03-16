@@ -214,7 +214,7 @@ k8s.gcr.io/coredns:1.6.7
 $ ## sudo kubeadm init
 $ sudo kubeadm init \
   --pod-network-cidr=172.16.0.0/16 \
-  --control-plane-endpoint=betelgeuse.boreal.codes
+  --control-plane-endpoint=betelgeuse.boreal.codes \
   --cluster-name=orion
 ```
 
