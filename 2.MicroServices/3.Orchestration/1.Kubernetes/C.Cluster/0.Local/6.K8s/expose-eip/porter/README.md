@@ -77,10 +77,10 @@ Note that the `enp3s0f0` NIC (link/ether) has an `UP` state and has its own MAC 
 
 In this example, the `orion` node, which is used as the `control plane`, where `Porter` is installed has two NICs (`enp3s0f0 10.13.15.200` and `others <not defined>`), and `enpf0s0 10.13.15.200` will be used for Porter.
 
-Run the following command on `orion` (control plane) to annotate the `NIC` at a specific IP address:
+Run the following command on `betelgeuse` (control plane) to annotate the `NIC` at a specific IP address:
 
 ```
-$ kubectl annotate nodes orion \
+$ kubectl annotate nodes betelgeuse \
           layer2.porter.kubesphere.io/v1alpha1="10.13.15.200"
 ```
 
@@ -99,7 +99,7 @@ kind: Eip
 metadata:
   name: porter-layer2-eip
 spec:
-  address: 10.13.15.200-10.13.15.202
+  address: 10.13.15.200-10.13.15.203
   interface: enp3s0f0
   protocol: layer2
 EOF
