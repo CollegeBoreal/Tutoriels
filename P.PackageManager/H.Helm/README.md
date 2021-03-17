@@ -35,11 +35,14 @@ $ sudo apt-get update && sudo apt-get install helm
 #### :b: :apple: Mac OS
 
 ```
-$ choco install kubernetes-helm
+$ brew install helm
 ```
 
 #### :ab: :computer: Windows
 
+```
+PS > choco install kubernetes-helm
+```
 
 ## :star: Usage
 
