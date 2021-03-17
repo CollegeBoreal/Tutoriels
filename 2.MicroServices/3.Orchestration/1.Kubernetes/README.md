@@ -132,6 +132,12 @@ https://k8slens.dev/
 $ brew install --cask lens
 ```
 
+:computer: Windows
+
+```
+PS > choco install lens
+```
+
 # Références
 
 [Google To The World](https://cloud.google.com/blog/products/gcp/from-google-to-the-world-the-kubernetes-origin-story)
