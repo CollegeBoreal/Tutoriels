@@ -3,7 +3,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kuron-deployment-service
-  namespace: default
   annotations:
     eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-rigel
     layer2.porter.kubesphere.io/v1alpha1: rigel
