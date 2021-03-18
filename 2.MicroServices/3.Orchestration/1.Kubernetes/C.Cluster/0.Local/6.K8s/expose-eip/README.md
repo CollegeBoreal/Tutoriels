@@ -78,6 +78,8 @@ $ kubectl describe replicasets
 
 :round_pushpin: Create a Service object that exposes the deployment:
 
+:one:
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: v1
@@ -99,6 +101,31 @@ spec:
   externalTrafficPolicy: Cluster
 EOF
 ```
+
+:two:
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  name: kuron-deployment-service
+  annotations:
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-rigel
+spec:
+  type: LoadBalancer
+  selector:
+    app: kuron
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  externalTrafficPolicy: Cluster
+EOF
+```
+
 
 :bulb: NOTE
 
