@@ -109,7 +109,7 @@ $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
-  name: kuron-deployment-service
+  name: kuron-deployment-service-rigel
   annotations:
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
