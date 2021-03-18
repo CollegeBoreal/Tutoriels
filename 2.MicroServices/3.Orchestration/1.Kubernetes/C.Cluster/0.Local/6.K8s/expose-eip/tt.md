@@ -14,7 +14,6 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 8080
-      nodePort: 32494
   selector:
     app: kuron
   type: LoadBalancer
