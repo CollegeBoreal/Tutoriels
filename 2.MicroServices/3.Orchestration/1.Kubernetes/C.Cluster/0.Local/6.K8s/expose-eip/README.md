@@ -87,7 +87,7 @@ metadata:
   annotations:
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-bellatrix
 spec:
   type: LoadBalancer
   selector:
