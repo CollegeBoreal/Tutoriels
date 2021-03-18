@@ -92,6 +92,8 @@ Run the following command to create a YAML file for the `Eip object`:
 
 - [ ] change the `IP pool` information in `spec.address` field an run the following command to create the `Eip object` and : 
 
+:one:
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: network.kubesphere.io/v1alpha2
@@ -100,6 +102,20 @@ metadata:
   name: porter-layer2-eip-bellatrix
 spec:
   address: 10.13.15.201-10.13.15.201
+  interface: enp3s0f0
+  protocol: layer2
+EOF
+```
+:two:
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: network.kubesphere.io/v1alpha2
+kind: Eip
+metadata:
+  name: porter-layer2-eip-rigel
+spec:
+  address: 10.13.15.202
   interface: enp3s0f0
   protocol: layer2
 EOF
