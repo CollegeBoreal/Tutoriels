@@ -78,7 +78,7 @@ $ kubectl describe replicasets
 
 :round_pushpin: Create a Service object that exposes the deployment:
 
-:one:
+From node :one: (bellatrix)
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -102,7 +102,7 @@ spec:
 EOF
 ```
 
-:two:
+To node :two: (Rigel)
 
 ```yaml
 $ kubectl apply --filename - <<EOF
