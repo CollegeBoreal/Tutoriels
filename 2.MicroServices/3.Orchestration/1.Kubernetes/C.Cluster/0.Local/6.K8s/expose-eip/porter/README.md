@@ -97,9 +97,9 @@ $ kubectl apply --filename - <<EOF
 apiVersion: network.kubesphere.io/v1alpha2
 kind: Eip
 metadata:
-  name: porter-layer2-eip
+  name: porter-layer2-eip-bellatrix
 spec:
-  address: 10.13.15.201-10.13.15.203
+  address: 10.13.15.201-10.13.15.201
   interface: enp3s0f0
   protocol: layer2
 EOF
