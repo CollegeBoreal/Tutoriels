@@ -1,6 +1,6 @@
-````
-kind: Service
+```yaml
 apiVersion: v1
+kind: Service
 metadata:
   name: kuron-deployment-service
   namespace: default
