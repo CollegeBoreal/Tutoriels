@@ -18,3 +18,34 @@ $ helm install my-release bitnami/moodle \
        --set metadata.annotations.eip\.porter\.kubesphere\.io/v1alpha2=porter-layer2-eip-bellatrix
 ```
 
+```yaml
+$ kubectl apply -f -- <EOF
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-release-moodle
+  labels:
+    app.kubernetes.io/instance: my-release
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: moodle
+    helm.sh/chart: moodle-11.0.6
+  annotations:
+  annotations:
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-bellatrix
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+    - name: https
+      port: 443
+      targetPort: https
+  selector:
+    app.kubernetes.io/instance: my-release
+    app.kubernetes.io/name: moodle
+  type: LoadBalancer
+  externalTrafficPolicy: Cluster
+EOF
+```
