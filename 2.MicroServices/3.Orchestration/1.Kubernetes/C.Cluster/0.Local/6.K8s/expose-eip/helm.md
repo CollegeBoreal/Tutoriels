@@ -19,7 +19,7 @@ $ helm install my-release bitnami/moodle \
 ```
 
 ```yaml
-$ kubectl apply -f -- <EOF
+$ kubectl apply --filename - <<EOF
 kind: Service
 apiVersion: v1
 metadata:
