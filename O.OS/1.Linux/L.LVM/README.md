@@ -464,7 +464,6 @@ $ sudo mount --all
 $ mount --type ext4
 /dev/mapper/ubuntu--vg-ubuntu--lv on / type ext4 (rw,relatime)
 /dev/sda2 on /boot type ext4 (rw,relatime)
-/dev/mapper/ubuntu--vg-ubuntu--lv on /var/lib/kubelet/pods/1833e7d1-eb2d-4eae-8d3e-dbc852f1a3ec/volume-subpaths/config/openebs-ndm/0 type ext4 (rw,relatime)
 /dev/mapper/ubuntu--vg-docker--lv on /vol/docker-lv type ext4 (rw,relatime)
 ``` 
 
