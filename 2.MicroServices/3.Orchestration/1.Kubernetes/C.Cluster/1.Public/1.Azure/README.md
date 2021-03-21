@@ -2,9 +2,9 @@
 
 :o: Prérequis
 
-* Assurez vous que vous avez votre compte initialisé auprès de [Azure](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/2.Azure)
+* Assurez vous que vous avez votre compte initialisé auprès de [Azure](https://github.com/CollegeBoreal/Tutoriels/tree/main/2.MicroServices/4.Cloud/2.Public/2.Azure)
 
-* Assurez vous d'avoir installé [Azure CLI](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/2.Azure/cli)
+* Assurez vous d'avoir installé [Azure CLI](https://github.com/CollegeBoreal/Tutoriels/tree/main/2.MicroServices/4.Cloud/2.Public/2.Azure/cli)
 
 :a: Créer sa première grappe (cluster)
 
