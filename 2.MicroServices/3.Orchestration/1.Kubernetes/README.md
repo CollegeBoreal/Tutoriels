@@ -123,7 +123,7 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 $ kubectl cluster-info dump
 ```
 
-## IDE
+## :star: IDE
 
 https://k8slens.dev/
 
