@@ -14,6 +14,7 @@
 $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 
+si vide sélectionner dans la liste
 
 ```
 $ az group list | jq '.[] | .name '  
