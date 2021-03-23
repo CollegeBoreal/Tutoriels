@@ -11,7 +11,15 @@
 * Mettre son groupe dans une variable d'environnement
 
 ```
-AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
+$ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
+```
+
+
+```
+$ az group list | jq '.[] | .name '  
+"DefaultResourceGroup-EUS"
+"college-boreal"
+"NetworkWatcherRG"
 ```
 
 * Mettre le nombre de noeuds dans une variable d'environnement
