@@ -10,7 +10,9 @@
 Kubernetes (communément appelé « K8s2 ») est un système open source qui vise à fournir une « plate-forme permettant d'automatiser le déploiement, la montée en charge et la mise en œuvre de conteneurs d'application sur des grappes de serveurs. Il fonctionne avec toute une série de technologies de conteneurisation, et est souvent utilisé avec Docker. Il a été conçu à l'origine par Google, puis offert à la [CNCF](https://www.cncf.io/) (Cloud Native Computing Foundation) .
 
 
-:o: Installer l'utilitaire client `kubectl` permetant de controller la grappe
+## :a: `kubectl` Client
+
+:gear: Installer l'utilitaire client `kubectl` permetant de controller la grappe
 
 :computer: Sous Windows avec choco
 
@@ -27,7 +29,6 @@ brew install kubernetes-cli
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
-## :a: `kubectl` Client
 
 - [x] La version
 
