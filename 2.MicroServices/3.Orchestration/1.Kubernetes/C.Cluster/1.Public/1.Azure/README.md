@@ -25,8 +25,13 @@ AZ_NODE_COUNT=2
 * Créer sa grappe
 
 ```
+AZ_CLUSTER_NAME="le_nom_de_ma_grappe_est_sympa" 
+```
+
+
+```
 $ az aks create --resource-group $AZ_GROUP_ID \
-                --name kubia \
+                --name $AZ_CLUSTER_NAME \
               --node-count $AZ_NODE_COUT \
               --generate-ssh-keys \
               --enable-addons monitoring 
@@ -42,10 +47,10 @@ $ az aks create --resource-group $AZ_GROUP_ID \
 :b: Ajouter votre grappe `kubia` à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/3.Orchestration/1.Kubernetes)
 
 ```
-% az aks get-credentials --resource-group $AZ_GROUP_ID --name kubia       
+% az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME       
 ```
 Réponse du AZ CLI
-`Merged "kubia" as current context in /Users/b300098957/.kube/config`
+`Merged "kubia" as current context in /Users/b000000000/.kube/config`
 
 
 
