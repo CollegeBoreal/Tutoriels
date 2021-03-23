@@ -14,6 +14,11 @@
 $ AZ_GROUP_ID=`az group list | jq 'limit(1;.[] | .name )' | sed 's/"//g'`
 ```
 
+Vérifier que le groupe existe
+
+```
+$ echo $AZ_GROUP_ID
+```
 si vide sélectionner dans la liste
 
 ```
@@ -28,13 +33,13 @@ $ az group list | jq '.[] | .name '
 :warning: Malheureusement Azure Education ne nous permet que deux VMs par cluster
 
 ```
-AZ_NODE_COUNT=2 
+$ AZ_NODE_COUNT=2 
 ```
 
 * Créer sa grappe
 
 ```
-AZ_CLUSTER_NAME="le_nom_de_ma_grappe_est_sympa" 
+$ AZ_CLUSTER_NAME="le_nom_de_ma_grappe_est_sympa" 
 ```
 
 
