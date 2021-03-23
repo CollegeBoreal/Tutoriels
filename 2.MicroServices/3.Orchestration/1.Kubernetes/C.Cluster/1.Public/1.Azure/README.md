@@ -46,7 +46,7 @@ $ AZ_CLUSTER_NAME="le_nom_de_ma_grappe_est_sympa"
 ```
 $ az aks create --resource-group $AZ_GROUP_ID \
                 --name $AZ_CLUSTER_NAME \
-              --node-count $AZ_NODE_COUT \
+              --node-count $AZ_NODE_COUNT \
               --generate-ssh-keys \
               --enable-addons monitoring 
 ```
