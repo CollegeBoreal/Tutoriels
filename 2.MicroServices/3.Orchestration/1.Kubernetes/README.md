@@ -123,6 +123,18 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 $ kubectl cluster-info dump
 ```
 
+## :interrobang:  Merge Config
+
+```
+$ export KUBECONFIG=~/.kube/config:~/someotherconfig 
+```
+
+``` 
+$ kubectl config view --flatten
+``` 
+
+https://stackoverflow.com/questions/46184125/how-to-merge-kubectl-config-file-with-kube-config
+
 ## :star: IDE
 
 https://k8slens.dev/
