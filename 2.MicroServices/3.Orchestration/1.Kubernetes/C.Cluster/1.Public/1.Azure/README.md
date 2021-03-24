@@ -42,6 +42,7 @@ $ AZ_NODE_COUNT=2
 $ AZ_CLUSTER_NAME="le_nom_de_ma_grappe_est_sympa" 
 ```
 
+* Lancer la création
 
 ```
 $ az aks create --resource-group $AZ_GROUP_ID \
@@ -49,34 +50,35 @@ $ az aks create --resource-group $AZ_GROUP_ID \
               --node-count $AZ_NODE_COUNT \
               --generate-ssh-keys \
               --enable-addons monitoring 
+Finished service principal creation[##################################]  100.0000%
 ```
 
-* Liste les grappes actives
+:warning: La création de la grappe force la génération de clé SSH, faites attention à vos clés qu'elles ne soient pas écrasées par la génération
+
+```
+SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa.pub' have been generated under ~/.ssh to allow SSH access to the VM. If using machines without permanent storage like Azure Cloud Shell without an attached file share, back up your keys to a safe location
+```
+
+### :b: Test
+
+- [ ] Liste les grappes actives
 
 ```
 % az aks list
 ```
 
-
-:b: Ajouter votre grappe `kubia` à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/3.Orchestration/1.Kubernetes)
+-[ ] Ajouter votre grappe **AZ_CLUSTER_NAME** à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/edit/main/2.MicroServices/3.Orchestration/1.Kubernetes)
 
 ```
 % az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME       
 ```
+
 Réponse du AZ CLI
-`Merged "kubia" as current context in /Users/b000000000/.kube/config`
-
-
+`Merged "MA_GRAPPE" as current context in /Users/b000000000/.kube/config`
 
 
 #### :x: Known Issues
 
-* La création de la grappe force la génération de clé SSH, faites attention à vos clés qu'elles ne soient pas écrasées par la génération
-
-```
-SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa.pub' have been generated under ~/.ssh to allow SSH access to the VM. If using machines without permanent storage like Azure Cloud Shell without an attached file share, back up your keys to a safe location
-Finished service principal creation[##################################]  100.0000%
-```
 
 * Alerte signalant que le quota de plus de 3 est interdit pour un contrat étudiant
 
