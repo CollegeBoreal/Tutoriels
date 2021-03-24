@@ -61,7 +61,7 @@ SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa
 
 ### :b: Test
 
--[ ] Ajouter votre grappe **AZ_CLUSTER_NAME** à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/edit/main/2.MicroServices/3.Orchestration/1.Kubernetes)
+- [ ] Ajouter votre grappe **AZ_CLUSTER_NAME** à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/edit/main/2.MicroServices/3.Orchestration/1.Kubernetes)
 
 ```
 $ az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME       
