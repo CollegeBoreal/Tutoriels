@@ -125,12 +125,8 @@ $ kubectl cluster-info dump
 
 ## :interrobang:  Merge Config
 
-```
-$ export KUBECONFIG=~/.kube/config:~/someotherconfig 
-```
-
 ``` 
-$ kubectl config view --flatten
+$ KUBECONFIG=~/.kube/orion:~/.kube/config kubectl config view --flatten > ~/.kube/config
 ``` 
 
 https://stackoverflow.com/questions/46184125/how-to-merge-kubectl-config-file-with-kube-config
