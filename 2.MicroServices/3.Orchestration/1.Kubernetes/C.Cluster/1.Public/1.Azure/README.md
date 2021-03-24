@@ -61,20 +61,29 @@ SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa
 
 ### :b: Test
 
-- [ ] Liste les grappes actives
+- [ ] Liste les grappes actives sur AKS
 
 ```
-% az aks list
+$ az aks list
 ```
 
 -[ ] Ajouter votre grappe **AZ_CLUSTER_NAME** à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/edit/main/2.MicroServices/3.Orchestration/1.Kubernetes)
 
 ```
-% az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME       
+$ az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME       
 ```
 
 Réponse du AZ CLI
 `Merged "MA_GRAPPE" as current context in /Users/b000000000/.kube/config`
+
+
+### :ab: Gérer sa grappe
+
+[Azure CLI](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest)
+
+```
+$ az aks $AZ_CLUSTER_NAME
+```
 
 
 #### :x: Known Issues
