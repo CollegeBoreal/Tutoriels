@@ -68,7 +68,11 @@ $ az aks get-credentials --resource-group $AZ_GROUP_ID --name $AZ_CLUSTER_NAME
 ```
 
 Réponse du AZ CLI
-`Merged "MA_GRAPPE" as current context in /Users/b000000000/.kube/config`
+```
+Merged "MA_GRAPPE" as current context in /Users/b000000000/.kube/config
+``` 
+
+- [ ] Découvrez la grappe dans LENS
 
 
 ### :ab: Gérer sa grappe
