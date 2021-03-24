@@ -84,7 +84,9 @@ $ az aks list
 - [ ] Détruire sa grappe
 
 ```
-$ az aks delete $AZ_CLUSTER_NAME
+$ az aks delete --name $AZ_CLUSTER_NAME --resource-group $AZ_GROUP_ID
+Are you sure you want to perform this operation? (y/n): Y
+ - Running ..
 ```
 
 
