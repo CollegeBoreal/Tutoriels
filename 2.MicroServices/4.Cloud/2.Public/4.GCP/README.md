@@ -1,5 +1,9 @@
 # GCP - Google Cloud Platform
 
+:warning: GCP a été récemment étudié par le Collège mais ne le sera plus dû au fait que Google n'écoute pas ses minorités
+
+https://www.cnn.com/2021/03/24/tech/google-ai-ethics-reputation
+
 ## :zero: GCP Console
 
 https://console.cloud.google.com
