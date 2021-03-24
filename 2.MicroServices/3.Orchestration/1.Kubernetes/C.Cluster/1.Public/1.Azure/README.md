@@ -61,12 +61,6 @@ SSH key files '/Users/b300098957/.ssh/id_rsa' and '/Users/b300098957/.ssh/id_rsa
 
 ### :b: Test
 
-- [ ] Liste les grappes actives sur AKS
-
-```
-$ az aks list
-```
-
 -[ ] Ajouter votre grappe **AZ_CLUSTER_NAME** à votre [contexte Kubernetes](https://github.com/CollegeBoreal/Tutoriels/edit/main/2.MicroServices/3.Orchestration/1.Kubernetes)
 
 ```
@@ -81,8 +75,16 @@ Réponse du AZ CLI
 
 [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest)
 
+- [ ] Liste les grappes actives sur AKS
+
 ```
-$ az aks $AZ_CLUSTER_NAME
+$ az aks list
+```
+
+- [ ] Détruire sa grappe
+
+```
+$ az aks delete $AZ_CLUSTER_NAME
 ```
 
 
