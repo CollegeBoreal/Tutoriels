@@ -94,12 +94,12 @@ PS > kubectl config use-context docker-for-desktop
 
 
 
-| cheatsheet                                                                                            | Comments | 
-|-------------------------------------------------------------------------------------------------------|----------|
-| [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete) |          |
-| [bash](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash)                                 |          |
-| [zsh](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#zsh)
-| Kubectl context and configuration
+| cheatsheet                                                                                                                      | Comments | 
+|---------------------------------------------------------------------------------------------------------------------------------|----------|
+| [Kubectl Autocomplete](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete)                           |          |
+| [bash](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash)                                                           |          |
+| [zsh](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#zsh)                                                             |          |
+| [Kubectl context and configuration](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-context-and-configuration) |          |
 | Kubectl apply
 | Creating objects
 | Viewing, finding resources
