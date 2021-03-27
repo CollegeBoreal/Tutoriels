@@ -1,0 +1,36 @@
+```
+$ kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  name: moodle-1616880624
+  labels:
+    app.kubernetes.io/instance: moodle-1616880624
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: moodle
+    helm.sh/chart: moodle-11.0.7
+  annotations:
+    meta.helm.sh/release-name: moodle-1616880624
+    meta.helm.sh/release-namespace: default
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http
+      nodePort: 32570
+    - name: https
+      protocol: TCP
+      port: 443
+      targetPort: https
+      nodePort: 32248
+  selector:
+    app.kubernetes.io/instance: moodle-1616880624
+    app.kubernetes.io/name: moodle
+  # clusterIP: 10.109.252.76
+  type: LoadBalancer
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+---
+EOF
+```
