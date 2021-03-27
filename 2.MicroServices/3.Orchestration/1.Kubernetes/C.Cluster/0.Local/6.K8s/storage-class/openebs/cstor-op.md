@@ -12,6 +12,8 @@ cstorpoolinstances.openebs.io     cstorvolumeclaims.openebs.io      cstorvolumes
 
 - [ ] `cstor` pool `cstorpools.openebs.io ` or `csp` 
 
+:x: `PoolCreationFailed` Error occurs
+
 ```
 $ kubectl get csp
 NAME                   ALLOCATED   FREE   CAPACITY   STATUS               READONLY   TYPE      AGE
@@ -19,6 +21,8 @@ cstor-disk-pool-2gpl                                 PoolCreationFailed   false 
 cstor-disk-pool-4mwz                                 PoolCreationFailed   false      striped   15h
 cstor-disk-pool-fv5a                                 PoolCreationFailed   false      striped   15h
 ```
+
+- [ ] Get the `cstor` pods 
 
 ```
 $ kubectl get pods --namespace openebs
@@ -38,12 +42,7 @@ openebs-snapshot-operator-56bb984746-vfnl4   2/2     Running     0          18h
 openebs-webhook-cleanup-rszlz                0/1     Completed   0          18h
 ```
 
-```
-$ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \
-  kubectl exec --stdin --tty  \
-               --namespace openebs $POD --container  $CONTAINER \
-               -- bash
-```
+- [ ] Examine one of the `cstor-disk-pool`
 
 ```
 $ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \ 
@@ -56,3 +55,20 @@ use '-f' to override the following errors:
 I0327 18:44:57.414319       7 handler.go:148] cStorPool:cstor-disk-pool-2gpl, 69d2777f-ecb1-4ee8-b0b4-e413bd2f8925; Status: PoolCreationFailed
 ...
 ```
+
+- [ ] Get onto the container
+
+```
+$ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \
+  kubectl exec --stdin --tty  \
+               --namespace openebs $POD --container  $CONTAINER \
+               -- bash
+root@cstor-disk-pool-2gpl-765fff776c-bcwpz:/# zpool import cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97
+2021-03-27/18:48:24.594 Iterating over all the devices to find zfs devices using blkid
+2021-03-27/18:48:24.604 Iterated over cache devices to find zfs devices
+2021-03-27/18:48:24.606 Verifying pool existence on the device /dev/mapper/ubuntu--vg-iscsi--lv
+2021-03-27/18:48:24.614 Verified the device /dev/mapper/ubuntu--vg-iscsi--lv for pool existence
+2021-03-27/18:48:24.666 Verifying pool existence on the device /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3
+2021-03-27/18:48:24.668 Verified the device /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3 for pool existence
+```
+
