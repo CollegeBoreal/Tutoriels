@@ -22,5 +22,7 @@ cstor-disk-pool-fv5a                                 PoolCreationFailed   false 
 
 
 ```
-$ kubectl exec --stdin --tty  cstor-disk-pool-2gpl-765fff776c-bcwpz --namespace openebs -c cstor-pool-mgmt -- bash
+$ kubectl exec --stdin --tty  cstor-disk-pool-2gpl-765fff776c-bcwpz --namespace openebs \
+                              --container cstor-pool-mgmt -- \
+                              bash
 ```
