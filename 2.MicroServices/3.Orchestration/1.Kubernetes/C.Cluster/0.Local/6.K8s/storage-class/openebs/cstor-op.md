@@ -48,4 +48,11 @@ $ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \
 ```
 $ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \ 
   kubectl logs --namespace openebs $POD --container $CONTAINER 
+...
+I0327 18:44:57.408071       7 event.go:282] Event(v1.ObjectReference{Kind:"CStorPool", Namespace:"", Name:"cstor-disk-pool-2gpl", UID:"69d2777f-ecb1-4ee8-b0b4-e413bd2f8925", APIVersion:"openebs.io/v1alpha1", ResourceVersion:"925405", FieldPath:""}): type: 'Warning' reason: 'FailCreate' Pool creation failed zpool create command failed error: invalid vdev specification
+use '-f' to override the following errors:
+/dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3 is part of potentially active pool 'cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97'
+: exit status 1
+I0327 18:44:57.414319       7 handler.go:148] cStorPool:cstor-disk-pool-2gpl, 69d2777f-ecb1-4ee8-b0b4-e413bd2f8925; Status: PoolCreationFailed
+...
 ```
