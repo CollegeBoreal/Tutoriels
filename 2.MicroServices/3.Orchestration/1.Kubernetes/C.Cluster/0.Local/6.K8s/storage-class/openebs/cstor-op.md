@@ -40,7 +40,9 @@ openebs-webhook-cleanup-rszlz                0/1     Completed   0          18h
 
 ```
 $ POD=cstor-disk-pool-2gpl-765fff776c-bcwpz; CONTAINER=cstor-pool-mgmt; \
-  kubectl exec --stdin --tty  --namespace openebs $POD --container  $CONTAINER -- bash
+  kubectl exec --stdin --tty  \
+               --namespace openebs $POD --container  $CONTAINER \
+               -- bash
 ```
 
 ```
