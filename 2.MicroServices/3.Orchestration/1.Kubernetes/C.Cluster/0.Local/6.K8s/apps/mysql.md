@@ -1,4 +1,5 @@
-% helm install some-mysql \
+````
+$ helm install some-mysql \
   --set auth.rootPassword=password,auth.database=some-mysql \
     bitnami/mysql
 NAME: some-mysql
@@ -39,3 +40,4 @@ To upgrade this helm chart:
 
       ROOT_PASSWORD=$(kubectl get secret --namespace default some-mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode)
       helm upgrade some-mysql bitnami/mysql --set auth.rootPassword=$ROOT_PASSWORD
+```
