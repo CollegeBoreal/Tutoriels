@@ -106,10 +106,16 @@ $ helm repo add openebs https://openebs.github.io/charts
 $ helm repo update
 ```
 
+* Create NameSpace openEBS
+
+```
+$ kubectl create namespace openebs
+```
+
 * Install openEBS
 
 ```
-$ helm install --namespace openebs openebs openebs/openebs
+$ % helm install openebs openebs/openebs --namespace openebs
 ```
 
 - [ ] Test
