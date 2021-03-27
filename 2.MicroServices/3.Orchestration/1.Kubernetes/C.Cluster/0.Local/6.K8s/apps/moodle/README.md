@@ -12,6 +12,9 @@ metadata:
   annotations:
     meta.helm.sh/release-name: moodle-1616880624
     meta.helm.sh/release-namespace: default
+    lb.kubesphere.io/v1alpha1: porter
+    protocol.porter.kubesphere.io/v1alpha1: layer2
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-bellatrix
 spec:
   ports:
     - name: http
