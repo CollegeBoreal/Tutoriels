@@ -129,3 +129,13 @@ config:
 
 errors: No known data errors
 ```
+
+`cstor-disk-pool-4mwz` back to `Healthy` 
+
+```
+$ kubectl get csp
+NAME                   ALLOCATED   FREE    CAPACITY   STATUS               READONLY   TYPE      AGE
+cstor-disk-pool-2gpl                                  PoolCreationFailed   false      striped   17h
+cstor-disk-pool-4mwz   101K        99.5G   99.5G      Healthy              false      striped   17h
+cstor-disk-pool-fv5a                                  PoolCreationFailed   false      striped   17h
+```
