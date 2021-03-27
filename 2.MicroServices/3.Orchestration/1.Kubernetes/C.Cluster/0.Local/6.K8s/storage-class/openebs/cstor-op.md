@@ -2,7 +2,11 @@
 
 ## :o: Context
 
-The cluster control plane was lost and all the data plane were destroyed. The data plane were lost without disconnecting the PD (Persistent Disk) used by the SC (Storage Class). The SC using `iSCSI`, therefore `zpool`and `zfs`, the 
+The cluster control plane was lost and all the data plane were destroyed. The data plane were lost without disconnecting the PD (Persistent Disk) used by the SC (Storage Class). The SC uses `iSCSI` as provider, ZFS is used to manage the PD volumes 
+
+All iSCSI target configuration information is stored within the dataset. Like an NFS shared file system, an iSCSI target that is imported on a different system is shared appropriately.
+
+The Common Multiprotocol SCSI Target (COMSTAR) software framework enables you to convert any Oracle Solaris stem into a SCSI target device that can be accessed over a storage network by initiator hosts. You can create and configure a ZFS volume to be shared as an iSCSI logical unit (LUN).
 
 - [ ] Get all `cstor` operations 
 
@@ -146,3 +150,5 @@ cstor-disk-pool-fv5a                                  PoolCreationFailed   false
 # References
 
 http://nex7.blogspot.com/2013/03/readme1st.html
+
+https://docs.oracle.com/cd/E53394_01/html/E54801/gechv.html
