@@ -97,3 +97,17 @@ cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-da301965-a89e-4898-a3d8-031fdba5e
 cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-e06ba33f-12d0-459a-b22b-430a8e87d86a  20.5M  95.7G  20.5M  -
 cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-e1d0c8ab-139e-40cf-a449-ae5508f1d65b   160K  95.7G   160K  -
 ```
+
+```
+$ root@cstor-disk-pool-4mwz-6ff7454d76-hllml:/# zpool status cstor-7be3c0d1-4ad2-4a81-a2f3-ed09c0bdc02c
+  pool: cstor-7be3c0d1-4ad2-4a81-a2f3-ed09c0bdc02c
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                                                                            STATE     READ WRITE CKSUM
+	cstor-7be3c0d1-4ad2-4a81-a2f3-ed09c0bdc02c                                      ONLINE       0     0     0
+	  dm-uuid-LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1  ONLINE       0     0     0
+
+errors: No known data errors
+```
