@@ -352,14 +352,14 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claim
 
 ## :ab: [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
-- [ ] Create the `openebs-sc-statefulset` **Storage Class**
+- [ ] Create the `standard` **Storage Class**
 
 ```yaml
 $ kubectl apply -f - <<EOF
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: openebs-sc-statefulset
+  name: standard
   annotations:
     openebs.io/cas-type: cstor
     cas.openebs.io/config: |
@@ -374,15 +374,15 @@ EOF
 - [ ] Check 
 
 ```
-$ kubectl get sc openebs-sc-statefulset
-NAME                     PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
-openebs-sc-statefulset   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
+$ kubectl get storageclass standard
+NAME       PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard   openebs.io/provisioner-iscsi   Delete          Immediate           false                  74s
 ```
 
 - [ ] Set to be the default storage
 
 ```
-$ kubectl patch storageclass openebs-sc-statefulset -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+$ kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
 - [ ] check default storage
@@ -393,7 +393,7 @@ NAME                               PROVISIONER                                  
 openebs-device                     openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
 openebs-hostpath                   openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
 openebs-jiva-default               openebs.io/provisioner-iscsi                               Delete          Immediate              false                  8h
-openebs-sc-statefulset (default)   openebs.io/provisioner-iscsi                               Delete          Immediate              false                  31s
+standard (default)                 openebs.io/provisioner-iscsi                               Delete          Immediate              false                  31s
 openebs-snapshot-promoter          volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  8h
 ```
 
