@@ -388,13 +388,13 @@ $ kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storagec
 - [ ] check default storage
 
 ```
-$ kubectl get sc                        
-NAME                               PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-openebs-device                     openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
-openebs-hostpath                   openebs.io/local                                           Delete          WaitForFirstConsumer   false                  8h
-openebs-jiva-default               openebs.io/provisioner-iscsi                               Delete          Immediate              false                  8h
-standard (default)                 openebs.io/provisioner-iscsi                               Delete          Immediate              false                  31s
-openebs-snapshot-promoter          volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  8h
+$ kubectl get sc          
+NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  20h
+openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  20h
+openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  20h
+openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  20h
+standard (default)          openebs.io/provisioner-iscsi                               Delete          Immediate              false                  48s
 ```
 
 # References
