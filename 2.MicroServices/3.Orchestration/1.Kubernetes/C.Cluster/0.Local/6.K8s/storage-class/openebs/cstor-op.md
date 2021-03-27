@@ -1,5 +1,8 @@
 # cstor operations
 
+## :o: Context
+
+The cluster control plane was lost and all the data plane were destroyed. The data plane were lost without disconnecting the PD (Persistent Disk) used by the SC (Storage Class). The SC using `iSCSI`, therefore `zpool`and `zfs`, the 
 
 - [ ] Get all `cstor` operations 
 
@@ -139,3 +142,7 @@ cstor-disk-pool-2gpl                                  PoolCreationFailed   false
 cstor-disk-pool-4mwz   101K        99.5G   99.5G      Healthy              false      striped   17h
 cstor-disk-pool-fv5a                                  PoolCreationFailed   false      striped   17h
 ```
+
+# References
+
+http://nex7.blogspot.com/2013/03/readme1st.html
