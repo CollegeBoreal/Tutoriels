@@ -21,10 +21,12 @@ spec:
       protocol: TCP
       port: 80
       targetPort: http
+      NodePort: 32570
     - name: https
       protocol: TCP
       port: 443
       targetPort: https
+      NodePort: 32248
   selector:
     app.kubernetes.io/instance: moodle-1616880624
     app.kubernetes.io/name: moodle
