@@ -72,3 +72,28 @@ root@cstor-disk-pool-2gpl-765fff776c-bcwpz:/# zpool import cstor-7ad627fb-2433-4
 2021-03-27/18:48:24.668 Verified the device /dev/disk/by-id/dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3 for pool existence
 ```
 
+```
+root@cstor-disk-pool-2gpl-765fff776c-bcwpz:/# zpool status
+  pool: cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                                                                            STATE     READ WRITE CKSUM
+	cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97                                      ONLINE       0     0     0
+	  dm-uuid-LVM-3wU1GsK3RM9v8mInM2B300iKIJ9GlQssrdOs38ndKRjGqB4A4PKc893FS8heIdc3  ONLINE       0     0     0
+
+errors: No known data errors
+```
+
+```
+root@cstor-disk-pool-2gpl-765fff776c-bcwpz:/# zfs list
+NAME                                                                                  USED  AVAIL  REFER  MOUNTPOINT
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97                                            757M  95.7G   512B  /cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-1909ab66-bb25-48f1-b9dc-da64f471fb09   347M  95.7G   347M  -
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-65b267b2-b137-4658-a290-578fd0450ebc   248K  95.7G   248K  -
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-9e01f4f8-df23-4e6a-bc7c-b4722edc4a08   376M  95.7G   376M  -
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-da301965-a89e-4898-a3d8-031fdba5e412   151K  95.7G   151K  -
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-e06ba33f-12d0-459a-b22b-430a8e87d86a  20.5M  95.7G  20.5M  -
+cstor-7ad627fb-2433-4eb9-9b62-1c1c2a580f97/pvc-e1d0c8ab-139e-40cf-a449-ae5508f1d65b   160K  95.7G   160K  -
+```
