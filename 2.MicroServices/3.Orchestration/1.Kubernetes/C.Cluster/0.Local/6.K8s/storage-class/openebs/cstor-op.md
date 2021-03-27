@@ -19,3 +19,8 @@ cstor-disk-pool-2gpl                                 PoolCreationFailed   false 
 cstor-disk-pool-4mwz                                 PoolCreationFailed   false      striped   15h
 cstor-disk-pool-fv5a                                 PoolCreationFailed   false      striped   15h
 ```
+
+
+```
+$ kubectl exec --stdin --tty  cstor-disk-pool-2gpl-765fff776c-bcwpz --namespace openebs -c cstor-pool-mgmt -- bash
+```
