@@ -350,7 +350,7 @@ blockdevice-3fa7d473-d0f1-4532-bcd4-a402241eeff1   saiph       102687672   Claim
 blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claimed      Active   16m
 ```
 
-## :ab: Storage Class
+## :ab: [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
 - [ ] Create the `openebs-sc-statefulset` **Storage Class**
 
