@@ -111,3 +111,21 @@ config:
 
 errors: No known data errors
 ```
+
+```
+$ root@cstor-disk-pool-4mwz-6ff7454d76-hllml:/# zpool destroy cstor-7be3c0d1-4ad2-4a81-a2f3-ed09c0bdc02c
+```
+
+```
+$ root@cstor-disk-pool-4mwz-6ff7454d76-hllml:/# zpool status
+  pool: cstor-81a8133b-0850-496f-a088-351bc9093fc9
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                                                                            STATE     READ WRITE CKSUM
+	cstor-81a8133b-0850-496f-a088-351bc9093fc9                                      ONLINE       0     0     0
+	  dm-uuid-LVM-rezWQCWaDuFq4QzhcU4F3POBUQUJvJDMCYBBEPap5KcvpALZzh1BF1oXQ1QddcG1  ONLINE       0     0     0
+
+errors: No known data errors
+```
