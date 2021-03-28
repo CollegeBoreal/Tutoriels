@@ -33,7 +33,7 @@ To connect to your database:
   1. Run a pod that you can use as a client:
 
 ```
-$ kubectl run moodle-1616890389-client \
+$ kubectl run moodle-1616890389-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
