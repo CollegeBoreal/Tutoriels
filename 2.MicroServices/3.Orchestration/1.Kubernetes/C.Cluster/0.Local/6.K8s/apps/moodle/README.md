@@ -3,7 +3,7 @@ $ kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
-  name: moodle-1616880624
+  name: moodle-1616890389
   labels:
     app.kubernetes.io/instance: moodle-1616890389
     app.kubernetes.io/managed-by: Helm
