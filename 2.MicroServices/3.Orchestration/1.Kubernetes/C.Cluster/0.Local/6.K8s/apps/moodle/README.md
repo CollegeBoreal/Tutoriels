@@ -48,3 +48,13 @@ $ mysql --host moodle-1616890389-mariadb.default.svc.cluster.local --user root -
 
 password example `5fKw8fJTaL`
 
+```
+$ kubectl run moodle-1616890389-mariadb-client \
+          --rm --tty --stdin --restart='Never' \
+          --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
+          --namespace default \
+          --command -- mysqldump \
+           --host moodle-1616890389-mariadb.default.svc.cluster.local \
+           --user root --password=5fKw8fJTaL \
+           bitnami_moodle > ~/Developer/moodle/moodle-1616890389-mariadb.sql
+```
