@@ -8,10 +8,10 @@ metadata:
     app.kubernetes.io/instance: moodle-1616880624
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: moodle
-    # helm.sh/chart: moodle-11.0.7
+    helm.sh/chart: moodle-11.0.7
   annotations:
-    # meta.helm.sh/release-name: moodle-1616880624
-    # meta.helm.sh/release-namespace: default
+    meta.helm.sh/release-name: moodle-1616880624
+    meta.helm.sh/release-namespace: default
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
     eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-bellatrix
