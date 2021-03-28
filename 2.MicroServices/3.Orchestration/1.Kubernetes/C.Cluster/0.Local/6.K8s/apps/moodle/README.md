@@ -55,6 +55,7 @@ spec:
       protocol: TCP
       port: 443
       targetPort: https
+  type: LoadBalancer
 ---
 EOF
 ```
