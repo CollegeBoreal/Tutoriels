@@ -14,7 +14,7 @@ metadata:
     meta.helm.sh/release-namespace: default
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip-bellatrix
+    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
 spec:
   ports:
     - name: http
