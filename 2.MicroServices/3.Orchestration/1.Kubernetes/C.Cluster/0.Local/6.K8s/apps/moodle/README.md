@@ -27,3 +27,16 @@ spec:
   type: LoadBalancer
 EOF
 ```
+
+To connect to your database:
+
+  1. Run a pod that you can use as a client:
+
+      kubectl run moodle-1616890389-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 --namespace default --command -- bash
+
+  2. To connect to primary service (read/write):
+
+      mysql -h moodle-1616890389.default.svc.cluster.local -uroot -p bitnami_moodle
+
+`5fKw8fJTaL`
+
