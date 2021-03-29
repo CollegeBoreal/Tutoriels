@@ -65,7 +65,7 @@ roleRef:
   kind: ClusterRole
   name: snapshot-controller-role
 subjects:
-  apiGroup: rbac.authorization.k8s.io
+- apiGroup: rbac.authorization.k8s.io
   kind: ServiceAccount
   name: snapshot-controller-runner
 ---
