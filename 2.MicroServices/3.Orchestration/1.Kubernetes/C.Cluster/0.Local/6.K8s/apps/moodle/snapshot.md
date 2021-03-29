@@ -108,7 +108,9 @@ EOF
  Snapshot-controller is running, you will be able to see the created CustomResourceDefinitions(CRD).
 
 ```
-$ kubectl get crd
+$ kubectl get crd | grep snapshot
+volumesnapshotdatas.volumesnapshot.external-storage.k8s.io   2021-03-27T00:40:04Z
+volumesnapshots.volumesnapshot.external-storage.k8s.io       2021-03-27T00:40:04Z
 ```
 
 - [ ] Create the PVC that will be used by sample pod 
