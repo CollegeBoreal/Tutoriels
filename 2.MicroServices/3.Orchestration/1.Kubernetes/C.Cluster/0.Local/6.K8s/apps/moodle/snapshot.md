@@ -17,6 +17,24 @@ $ kubectl apply --filename - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
+  # "namespace" omitted since ClusterRoles are not namespaced
+  name: snapshot-controller-role
+rules:
+- apiGroups: [""]
+  #
+  # at the HTTP level, the name of the resource for accessing Secret
+  # objects is "secrets"
+  resources: ["pods"]
+  verbs: ["get", "list", "delete"]
+---
+EOF
+```
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
   name: snapshot-controller-role
 rules:
 - apiGroups: [""]
