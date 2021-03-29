@@ -329,6 +329,25 @@ grafana-1616897123                  Bound    pvc-3418f3de-7879-43be-bf63-79db0ea
 moodle-1616890389-moodle            Bound    pvc-66bfc9e2-48f0-4be7-bb3d-5fc2821154f0   8Gi        RWO            standard            38h
 ```
 
+- [ ] Let's look at the claim if bound or not through the `snapshot-controller` pod through the `snapshot-provisioner` container
+
+* get the pod :id: 
+
+```
+$ kubectl get pods | grep snapshot                                      
+snapshot-controller-68c7497f5f-jt5s9                             2/2     Running   0          10h
+```
+
+* get the log
+
+```
+$ kubectl logs snapshot-controller-68c7497f5f-jt5s9 snapshot-provisioner
+...
+E0329 14:21:11.661765       1 leaderelection.go:252] error retrieving resource lock default/volumesnapshot.external-storage.k8s.io-snapshot-promoter: endpoints "volumesnapshot.external-storage.k8s.io-snapshot-promoter" is forbidden: User "system:serviceaccount:default:snapshot-controller-runner" cannot get resource "endpoints" in API group "" in the namespace "default"
+```
+
+
+
 # References
 
 https://blog.mayadata.io/openebs/openebs-snapshots-using-kubectl
