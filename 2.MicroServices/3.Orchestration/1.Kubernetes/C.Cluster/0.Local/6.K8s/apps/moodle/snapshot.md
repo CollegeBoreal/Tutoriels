@@ -317,6 +317,18 @@ spec:
 EOF
 ```
 
+```
+$ kubectl get pvc
+NAME                                STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS        AGE
+data-kafka-1616893476-0             Bound    pvc-b0aacc12-11fd-48ca-8086-36c5c7805b8c   8Gi        RWO            standard            37h
+data-kafka-1616893476-zookeeper-0   Bound    pvc-4af48280-dce2-45a1-a515-7c8378a7193a   8Gi        RWO            standard            37h
+data-moodle-1616890389-mariadb-0    Bound    pvc-7acbfcd8-6c5f-46ad-9532-a11230acaa08   8Gi        RWO            standard            38h
+demo-snap-vol-claim                 Bound    pvc-f2af399b-3360-4ebc-9707-420403cec6fb   5Gi        RWO            snapshot-promoter   8s
+demo-vol1-claim                     Bound    pvc-f6d542a8-da7d-4c2b-9696-0660b4990820   5G         RWO            standard            10h
+grafana-1616897123                  Bound    pvc-3418f3de-7879-43be-bf63-79db0ea91d14   10Gi       RWO            standard            36h
+moodle-1616890389-moodle            Bound    pvc-66bfc9e2-48f0-4be7-bb3d-5fc2821154f0   8Gi        RWO            standard            38h
+```
+
 # References
 
 https://blog.mayadata.io/openebs/openebs-snapshots-using-kubectl
