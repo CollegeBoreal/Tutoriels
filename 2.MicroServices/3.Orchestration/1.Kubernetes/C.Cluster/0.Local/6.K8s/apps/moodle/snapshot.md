@@ -147,12 +147,12 @@ spec:
     command: ['sh', '-c', ‘date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;’]
     imagePullPolicy: Always
     volumeMounts:
-    — mountPath: /mnt/store1
-      name: demo-vol1
+    — name: demo-vol1
+      mountPath: /mnt/store1
   volumes:
   — name: demo-vol1
-      persistentVolumeClaim:
-        claimName: demo-vol1-claim
+    persistentVolumeClaim:
+      claimName: demo-vol1-claim
 ---
 EOF
 ```
