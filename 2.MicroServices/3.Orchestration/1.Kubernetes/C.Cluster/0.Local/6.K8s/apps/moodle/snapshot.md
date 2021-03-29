@@ -1,5 +1,7 @@
 # Snaphot
 
+- [ ] Create the `snapshot-controller-runner` service account and associated roles
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: v1
@@ -55,6 +57,8 @@ subjects:
 EOF
 ```
 
+- [ ] Create a deployment using the `snapshot-controller-runner` service account and deploying the OpenEBS `snapshot-controller`
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: extensions/v1
@@ -82,6 +86,14 @@ spec:
 EOF
 ```
 
+ Snapshot-controller is running, you will be able to see the created CustomResourceDefinitions(CRD).
+
+```
+$ kubectl get crd
+```
+
+- [ ] Create the PVC that will be used by sample pod 
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: v1
@@ -99,6 +111,7 @@ spec:
 EOF
 ```
 
+- [ ] Create the pod that wille store a date and hostname on the PVC
 
 ```yaml
 $ kubectl apply --filename - <<EOF
