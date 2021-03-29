@@ -220,37 +220,7 @@ metadata:
   labels:
     SnapshotMetadata-PVName: pvc-f6d542a8-da7d-4c2b-9696-0660b4990820
     SnapshotMetadata-Timestamp: "1616989447500832330"
-  managedFields:
-  - apiVersion: volumesnapshot.external-storage.k8s.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:labels:
-          .: {}
-          f:SnapshotMetadata-PVName: {}
-          f:SnapshotMetadata-Timestamp: {}
-      f:spec:
-        f:snapshotDataName: {}
-      f:status:
-        .: {}
-        f:conditions: {}
-        f:creationTimestamp: {}
-    manager: Go-http-client
-    operation: Update
-    time: "2021-03-29T03:44:06Z"
-  - apiVersion: volumesnapshot.external-storage.k8s.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-      f:spec:
-        .: {}
-        f:persistentVolumeClaimName: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2021-03-29T03:44:06Z"
+  managedFields: (Toot long - not displayed)
   name: snapshot-demo
   namespace: default
   resourceVersion: "1536394"
@@ -278,31 +248,7 @@ kind: VolumeSnapshotData
 metadata:
   creationTimestamp: "2021-03-29T03:44:07Z"
   generation: 1
-  managedFields:
-  - apiVersion: volumesnapshot.external-storage.k8s.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:spec:
-        .: {}
-        f:openebsVolume:
-          .: {}
-          f:capacity: {}
-          f:snapshotId: {}
-        f:persistentVolumeRef:
-          .: {}
-          f:kind: {}
-          f:name: {}
-        f:volumeSnapshotRef:
-          .: {}
-          f:kind: {}
-          f:name: {}
-      f:status:
-        .: {}
-        f:conditions: {}
-        f:creationTimestamp: {}
-    manager: Go-http-client
-    operation: Update
-    time: "2021-03-29T03:44:07Z"
+  managedFields: (Toot long - not displayed)
   name: k8s-volume-snapshot-0400570a-9041-11eb-b3c7-5a703c17820c
   resourceVersion: "1536393"
   selfLink: /apis/volumesnapshot.external-storage.k8s.io/v1/volumesnapshotdatas/k8s-volume-snapshot-0400570a-9041-11eb-b3c7-5a703c17820c
