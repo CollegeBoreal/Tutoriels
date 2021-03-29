@@ -174,7 +174,136 @@ spec:
 EOF
 ```
 
+```
+$ kubectl get volumesnapshot --output yaml
+apiVersion: v1
+items:
+- apiVersion: volumesnapshot.external-storage.k8s.io/v1
+  kind: VolumeSnapshot
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"volumesnapshot.external-storage.k8s.io/v1","kind":"VolumeSnapshot","metadata":{"annotations":{},"name":"snapshot-demo","namespace":"default"},"spec":{"persistentVolumeClaimName":"demo-vol1-claim"}}
+    creationTimestamp: "2021-03-29T03:44:06Z"
+    generation: 3
+    labels:
+      SnapshotMetadata-PVName: pvc-f6d542a8-da7d-4c2b-9696-0660b4990820
+      SnapshotMetadata-Timestamp: "1616989447500832330"
+    managedFields:
+    - apiVersion: volumesnapshot.external-storage.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:SnapshotMetadata-PVName: {}
+            f:SnapshotMetadata-Timestamp: {}
+        f:spec:
+          f:snapshotDataName: {}
+        f:status:
+          .: {}
+          f:conditions: {}
+          f:creationTimestamp: {}
+      manager: Go-http-client
+      operation: Update
+      time: "2021-03-29T03:44:06Z"
+    - apiVersion: volumesnapshot.external-storage.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:spec:
+          .: {}
+          f:persistentVolumeClaimName: {}
+      manager: kubectl-client-side-apply
+      operation: Update
+      time: "2021-03-29T03:44:06Z"
+    name: snapshot-demo
+    namespace: default
+    resourceVersion: "1536394"
+    selfLink: /apis/volumesnapshot.external-storage.k8s.io/v1/namespaces/default/volumesnapshots/snapshot-demo
+    uid: eb84391c-f04f-41a8-bd26-9feb050c5852
+  spec:
+    persistentVolumeClaimName: demo-vol1-claim
+    snapshotDataName: k8s-volume-snapshot-0400570a-9041-11eb-b3c7-5a703c17820c
+  status:
+    conditions:
+    - lastTransitionTime: "2021-03-29T03:44:07Z"
+      message: Snapshot created successfully
+      reason: ""
+      status: "True"
+      type: Ready
+    creationTimestamp: null
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
+```
 
+``` kubectl get volumesnapshotdata --output yaml
+apiVersion: v1
+items:
+- apiVersion: volumesnapshot.external-storage.k8s.io/v1
+  kind: VolumeSnapshotData
+  metadata:
+    creationTimestamp: "2021-03-29T03:44:07Z"
+    generation: 1
+    managedFields:
+    - apiVersion: volumesnapshot.external-storage.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:openebsVolume:
+            .: {}
+            f:capacity: {}
+            f:snapshotId: {}
+          f:persistentVolumeRef:
+            .: {}
+            f:kind: {}
+            f:name: {}
+          f:volumeSnapshotRef:
+            .: {}
+            f:kind: {}
+            f:name: {}
+        f:status:
+          .: {}
+          f:conditions: {}
+          f:creationTimestamp: {}
+      manager: Go-http-client
+      operation: Update
+      time: "2021-03-29T03:44:07Z"
+    name: k8s-volume-snapshot-0400570a-9041-11eb-b3c7-5a703c17820c
+    resourceVersion: "1536393"
+    selfLink: /apis/volumesnapshot.external-storage.k8s.io/v1/volumesnapshotdatas/k8s-volume-snapshot-0400570a-9041-11eb-b3c7-5a703c17820c
+    uid: 63346265-363c-495e-904e-31869e665a2b
+  spec:
+    openebsVolume:
+      capacity: 5G
+      snapshotId: pvc-f6d542a8-da7d-4c2b-9696-0660b4990820_snapshot-demo_1616989446899630784
+    persistentVolumeRef:
+      kind: PersistentVolume
+      name: pvc-f6d542a8-da7d-4c2b-9696-0660b4990820
+    volumeSnapshotRef:
+      kind: VolumeSnapshot
+      name: default/snapshot-demo-eb84391c-f04f-41a8-bd26-9feb050c5852
+  status:
+    conditions:
+    - lastTransitionTime: "2021-03-29T03:44:07Z"
+      message: Snapshot created successfully
+      reason: ""
+      status: "True"
+      type: Ready
+    creationTimestamp: null
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
+```
+
+apiVersion: volumesnapshot.external-storage.k8s.io/v1
 
 # References
 
