@@ -273,6 +273,21 @@ status:
   creationTimestamp: null
 ```
 
+## :b: Restoring the Volume Snapshot
+
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: snapshot-promoter
+provisioner: volumesnapshot.external-storage.k8s.io/snapshot-promoter
+---
+EOF
+```
+
+
 
 # References
 
