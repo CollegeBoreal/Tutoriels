@@ -175,6 +175,7 @@ $ kubectl exec --stdin --tty busybox -- cat /mnt/store1/date.txt
 Mon Mar 29 03:43:45 UTC 2021
 ```
 
+## :a: Creating the Volume Snapshot
 
 - [ ] Let's create the volume snapshot of the `demo-vol1-claim` PVC
 
