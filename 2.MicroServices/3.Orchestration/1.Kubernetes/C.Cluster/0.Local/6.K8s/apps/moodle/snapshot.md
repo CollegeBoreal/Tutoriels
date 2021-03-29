@@ -26,32 +26,18 @@ rules:
   # objects is "secrets"
   resources: ["pods"]
   verbs: ["get", "list", "delete"]
----
-EOF
-```
-
-```yaml
-$ kubectl apply --filename - <<EOF
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
-metadata:
-  name: snapshot-controller-role
-rules:
 - apiGroups: [""]
-   resources: ["pods"]
-   verbs: ["get", "list", "delete"]
+  resources: ["persistentvolumes"]
+  verbs: ["get", "list", "watch", "create", "delete"]
 - apiGroups: [""]
-   resources: ["persistentvolumes"]
-   verbs: ["get", "list", "watch", "create", "delete"]
-- apiGroups: [""]
-   resources: ["persistentvolumeclaims"]
-   verbs: ["get", "list", "watch", "update"]
+  resources: ["persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "update"]
 - apiGroups: ["storage.k8s.io"]
-   resources: ["storageclasses"]
-   verbs: ["get", "list", "watch"]
+  resources: ["storageclasses"]
+  verbs: ["get", "list", "watch"]
 - apiGroups: [""]
-   resources: ["events"]
-   verbs: ["list", "watch", "create", "update", "patch"]
+  resources: ["events"]
+  verbs: ["list", "watch", "create", "update", "patch"]
 - apiGroups: ["apiextensions.k8s.io"]
   resources: ["customresourcedefinitions"]
   verbs: ["create", "list", "watch", "delete"]
