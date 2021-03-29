@@ -1,5 +1,7 @@
 # k8s :wheel_of_dharma: 
 
+≤img src="images/kube-cluster-component-topology.png" width="" height=""></img> 
+
 | Plane Type                        | Comments |
 |-----------------------------------|----------|
 | [ :control_knobs: Control Plane](control-plane.md) |          | 
