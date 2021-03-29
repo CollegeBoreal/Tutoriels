@@ -168,7 +168,21 @@ spec:
 EOF
 ```
 
-- [ ] Let's display the content on the `demo-vol1-claim` PVC
+- [ ] Let's see the mounted devices on the `busybox` pod
+
+```
+$ kubectl exec --stdin --tty busybox -- cat /proc/mounts | grep "/dev/"
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+/dev/mapper/ubuntu--vg-ubuntu--lv /dev/termination-log ext4 rw,relatime 0 0
+/dev/sdd /mnt/store1 ext4 rw,relatime,stripe=256 0 0
+/dev/mapper/ubuntu--vg-ubuntu--lv /etc/resolv.conf ext4 rw,relatime 0 0
+/dev/mapper/ubuntu--vg-ubuntu--lv /etc/hostname ext4 rw,relatime 0 0
+/dev/mapper/ubuntu--vg-ubuntu--lv /etc/hosts ext4 rw,relatime 0 0
+shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime,size=65536k 0 0
+```
+
+- [ ] Finally, let's display the content on the `demo-vol1-claim` PVC
 
 ```
 $ kubectl exec --stdin --tty busybox -- cat /mnt/store1/date.txt    
