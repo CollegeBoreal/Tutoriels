@@ -1,5 +1,7 @@
 # Snaphot
 
+## :o: Create the service account and cluster roles
+
 - [ ] Create the `snapshot-controller-runner` service account and associated roles
 
 ```yaml
@@ -11,6 +13,9 @@ metadata:
 ---
 EOF
 ```
+
+- [ ] Create the `snapshot-controller` role
+
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -54,6 +59,9 @@ rules:
 EOF
 ```
 
+- [ ] Create the `snapshot-controller` binding, associate `snapshot-controller-role` role to `snapshot-controller-runner` service account
+
+
 ```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
@@ -73,7 +81,7 @@ subjects:
 EOF
 ```
 
-- [ ] Create a deployment using the `snapshot-controller-runner` service account and deploying the OpenEBS `snapshot-controller`
+- [ ] Create a deployment using the `snapshot-controller-runner` service account and deploying the OpenEBS `snapshot-controller` containers
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -105,7 +113,7 @@ spec:
 EOF
 ```
 
- Snapshot-controller is running, you will be able to see the created CustomResourceDefinitions(CRD).
+* Snapshot-controller is running, you will be able to see the created CustomResourceDefinitions(CRD).
 
 ```
 $ kubectl get crd | grep snapshot
@@ -132,7 +140,7 @@ spec:
 EOF
 ```
 
-- [ ] Create the pod that wille store a date and hostname on the PVC
+- [ ] Create the pod that will store a date and hostname on the PVC
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -160,7 +168,7 @@ spec:
 EOF
 ```
 
-- [ ] Create the snapshot
+- [ ] Create the volume snapshot
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -173,6 +181,8 @@ spec:
 ---
 EOF
 ```
+
+- [ ] Observe the Volume Snapshot
 
 ```
 $ kubectl get volumesnapshot --output yaml
@@ -242,7 +252,10 @@ metadata:
   selfLink: ""
 ```
 
-``` kubectl get volumesnapshotdata --output yaml
+- [ ] Observe the Volume Snapshot Data
+
+```
+$ kubectl get volumesnapshotdata --output yaml
 apiVersion: v1
 items:
 - apiVersion: volumesnapshot.external-storage.k8s.io/v1
@@ -303,7 +316,6 @@ metadata:
   selfLink: ""
 ```
 
-apiVersion: volumesnapshot.external-storage.k8s.io/v1
 
 # References
 
