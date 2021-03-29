@@ -82,6 +82,25 @@ spec:
 EOF
 ```
 
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: demo-vol1-claim
+  namespace: default
+spec:
+  storageClassName: standard
+  resources:
+    requests:
+       storage: 5G
+  accessModes:
+    - ReadWriteOnce
+---
+EOF
+```
+
+
 # References
 
 https://blog.mayadata.io/openebs/openebs-snapshots-using-kubectl
