@@ -144,7 +144,7 @@ spec:
   containers:
   - image: busybox
     name: busybox
-    command: ['sh', '-c', ‘date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;’]
+    command: ['sh', '-c', 'date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;']
     imagePullPolicy: Always
     volumeMounts:
     — name: demo-vol1
