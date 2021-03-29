@@ -142,7 +142,7 @@ metadata:
   name: busybox
 spec:
   containers:
-  - image: busybox
+    image: busybox
     name: busybox
     imagePullPolicy: Always
     command: 
