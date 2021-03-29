@@ -57,7 +57,7 @@ rules:
   verbs: ["get"]
 - apiGroups: [""]
   resources: ["endpoints"]
-  verbs: ["get"]
+  verbs: ["get", "list", "watch", "create", "update", "patch"]
 ---
 EOF
 ```
