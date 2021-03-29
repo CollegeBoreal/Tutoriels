@@ -56,18 +56,19 @@ EOF
 
 ```yaml
 $ kubectl apply --filename - <<EOF
-apiVersion: rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
   name: snapshot-controller
+  namespace: default
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: snapshot-controller-role
 subjects:
-- apiGroup: rbac.authorization.k8s.io
-  kind: ServiceAccount
+- kind: ServiceAccount
   name: snapshot-controller-runner
+  namespace: default
 ---
 EOF
 ```
