@@ -1,6 +1,6 @@
 # Snaphot
 
-## :o: Create the service account and cluster roles
+## :gear: Create the service account and cluster roles
 
 - [ ] Create the `snapshot-controller-runner` service account and associated roles
 
