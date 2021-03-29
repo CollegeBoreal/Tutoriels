@@ -5,7 +5,7 @@ Edit the `Service` to allow the use of a local `LoadBalancer`  `porter` ELB
 :warning: `{metadata.name}` must match the helm moodle service name
 
 ```
-$ kubectl apply -f - <<EOF
+$ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
@@ -25,6 +25,7 @@ spec:
       port: 443
       targetPort: https
   type: LoadBalancer
+---
 EOF
 ```
 
