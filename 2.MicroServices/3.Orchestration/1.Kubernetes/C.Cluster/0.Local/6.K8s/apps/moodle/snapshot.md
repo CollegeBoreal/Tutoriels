@@ -153,7 +153,7 @@ spec:
       mountPath: /mnt/store1
       name: demo-vol1
   volumes:
-  — name: demo-vol1
+    name: demo-vol1
     persistentVolumeClaim:
       claimName: demo-vol1-claim
 ---
