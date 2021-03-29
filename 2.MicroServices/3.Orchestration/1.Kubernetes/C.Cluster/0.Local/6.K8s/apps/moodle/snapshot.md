@@ -118,6 +118,22 @@ spec:
 EOF
 ```
 
+- [ ] Create the snapshot
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: volumesnapshot.external-storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+   name: snapshot-demo
+spec:
+   persistentVolumeClaimName: demo-vol1-claim
+---
+EOF
+```
+
+
+
 # References
 
 https://blog.mayadata.io/openebs/openebs-snapshots-using-kubectl
