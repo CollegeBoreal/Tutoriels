@@ -307,12 +307,12 @@ metadata:
   annotations:
     snapshot.alpha.kubernetes.io/snapshot: snapshot-demo
 spec:
-  storageClassName: snapshot-promoter
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
+  storageClassName: snapshot-promoter
 ---
 EOF
 ```
