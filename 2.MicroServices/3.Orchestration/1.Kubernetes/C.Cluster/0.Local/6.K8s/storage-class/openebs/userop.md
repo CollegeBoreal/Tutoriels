@@ -76,20 +76,20 @@ spec:
         app: python-myapp
     spec:
       containers:
-      - name: python-myapp-container
-        image: collegeboreal/file1250:v1
+      - image: collegeboreal/file1250:v1
+        name: python-myapp-container
         imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         volumeMounts:
-          - mountPath: /workspace/apps/
-            name: cstor-volume
+        - mountPath: /workspace/apps/
+          name: cstor-volume
       volumes:
-        - name: cstor-volume
-          persistentVolumeClaim:
-            claimName: cstor-python-pvc
+      - name: cstor-volume
+        persistentVolumeClaim:
+          claimName: cstor-python-pvc
 EOF
 ```
 
