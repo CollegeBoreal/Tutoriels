@@ -5,48 +5,48 @@ $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-name: snapshot-controller-runner
-namespace: default
+   name: snapshot-controller-runner
+   namespace: default
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRole
 metadata:
-name: snapshot-controller-role
-namespace: default
+   name: snapshot-controller-role
+   namespace: default
 rules:
-- apiGroups: [""]
-resources: ["pods"]
-verbs: ["get", "list", "delete"]
-- apiGroups: [""]
-resources: ["persistentvolumes"]
-verbs: ["get", "list", "watch", "create", "delete"]
-- apiGroups: [""]
-resources: ["persistentvolumeclaims"]
-verbs: ["get", "list", "watch", "update"]
-- apiGroups: ["storage.k8s.io"]
-resources: ["storageclasses"]
-verbs: ["get", "list", "watch"]
-- apiGroups: [""]
-resources: ["events"]
-verbs: ["list", "watch", "create", "update", "patch"]
-- apiGroups: ["apiextensions.k8s.io"]
-resources: ["customresourcedefinitions"]
-verbs: ["create", "list", "watch", "delete"]
-- apiGroups: ["volumesnapshot.external-storage.k8s.io"]
-resources: ["volumesnapshots"]
-verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
-- apiGroups: ["volumesnapshot.external-storage.k8s.io"]
-resources: ["volumesnapshotdatas"]
-verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
-- apiGroups: [""]
-resources: ["services"]
-verbs: ["get"]
+   - apiGroups: [""]
+   resources: ["pods"]
+   verbs: ["get", "list", "delete"]
+   - apiGroups: [""]
+   resources: ["persistentvolumes"]
+   verbs: ["get", "list", "watch", "create", "delete"]
+   - apiGroups: [""]
+   resources: ["persistentvolumeclaims"]
+   verbs: ["get", "list", "watch", "update"]
+   - apiGroups: ["storage.k8s.io"]
+   resources: ["storageclasses"]
+   verbs: ["get", "list", "watch"]
+   - apiGroups: [""]
+   resources: ["events"]
+   verbs: ["list", "watch", "create", "update", "patch"]
+   - apiGroups: ["apiextensions.k8s.io"]
+  resources: ["customresourcedefinitions"]
+  verbs: ["create", "list", "watch", "delete"]
+  - apiGroups: ["volumesnapshot.external-storage.k8s.io"]
+  resources: ["volumesnapshots"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  - apiGroups: ["volumesnapshot.external-storage.k8s.io"]
+  resources: ["volumesnapshotdatas"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  - apiGroups: [""]
+  resources: ["services"]
+  verbs: ["get"]
 ---
-kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
 metadata:
-name: snapshot-controller
-namespace: default
+   name: snapshot-controller
+   namespace: default
 roleRef:
 apiGroup: rbac.authorization.k8s.io
 kind: ClusterRole
