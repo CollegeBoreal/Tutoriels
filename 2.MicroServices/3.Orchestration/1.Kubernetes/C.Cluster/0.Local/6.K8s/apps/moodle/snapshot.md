@@ -6,13 +6,11 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
    name: snapshot-controller-runner
-   namespace: default
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: snapshot-controller-role
-  namespace: default
 rules:
 - apiGroups: [""]
    resources: ["pods"]
@@ -46,7 +44,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: snapshot-controller
-  namespace: default
 roleRef:
 - apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -54,13 +51,11 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: snapshot-controller-runner
-  namespace: default
 ---
 apiVersion: extensions/v1
 kind: Deployment
 metadata:
   name: snapshot-controller
-  namespace: default
 spec:
   replicas: 1
   strategy:
@@ -88,7 +83,6 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: demo-vol1-claim
-  namespace: default
 spec:
   storageClassName: standard
   resources:
@@ -100,6 +94,29 @@ spec:
 EOF
 ```
 
+
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+spec:
+  containers:
+    - image: busybox
+      name: busybox
+      command: ['sh', '-c', ‘date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;’]
+      imagePullPolicy: Always
+      volumeMounts:
+      — name: demo-vol1
+        mountPath: /mnt/store1
+      volumes:
+      — name: demo-vol1
+        persistentVolumeClaim:
+          claimName: demo-vol1-claim
+---
+EOF
+```
 
 # References
 
