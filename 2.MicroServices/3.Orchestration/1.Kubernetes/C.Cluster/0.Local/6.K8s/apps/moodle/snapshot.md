@@ -8,76 +8,76 @@ metadata:
    name: snapshot-controller-runner
    namespace: default
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-   name: snapshot-controller-role
-   namespace: default
+  name: snapshot-controller-role
+  namespace: default
 rules:
-   - apiGroups: [""]
+- apiGroups: [""]
    resources: ["pods"]
    verbs: ["get", "list", "delete"]
-   - apiGroups: [""]
+- apiGroups: [""]
    resources: ["persistentvolumes"]
    verbs: ["get", "list", "watch", "create", "delete"]
-   - apiGroups: [""]
+- apiGroups: [""]
    resources: ["persistentvolumeclaims"]
    verbs: ["get", "list", "watch", "update"]
-   - apiGroups: ["storage.k8s.io"]
+- apiGroups: ["storage.k8s.io"]
    resources: ["storageclasses"]
    verbs: ["get", "list", "watch"]
-   - apiGroups: [""]
+- apiGroups: [""]
    resources: ["events"]
    verbs: ["list", "watch", "create", "update", "patch"]
-   - apiGroups: ["apiextensions.k8s.io"]
+- apiGroups: ["apiextensions.k8s.io"]
   resources: ["customresourcedefinitions"]
   verbs: ["create", "list", "watch", "delete"]
-  - apiGroups: ["volumesnapshot.external-storage.k8s.io"]
+- apiGroups: ["volumesnapshot.external-storage.k8s.io"]
   resources: ["volumesnapshots"]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
-  - apiGroups: ["volumesnapshot.external-storage.k8s.io"]
+- apiGroups: ["volumesnapshot.external-storage.k8s.io"]
   resources: ["volumesnapshotdatas"]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
-  - apiGroups: [""]
+- apiGroups: [""]
   resources: ["services"]
   verbs: ["get"]
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-   name: snapshot-controller
-   namespace: default
+  name: snapshot-controller
+  namespace: default
 roleRef:
-apiGroup: rbac.authorization.k8s.io
-kind: ClusterRole
-name: snapshot-controller-role
+- apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: snapshot-controller-role
 subjects:
 - kind: ServiceAccount
-name: snapshot-controller-runner
-namespace: default
+  name: snapshot-controller-runner
+  namespace: default
 ---
+apiVersion: extensions/v1
 kind: Deployment
-apiVersion: extensions/v1beta1
 metadata:
-name: snapshot-controller
-namespace: default
+  name: snapshot-controller
+  namespace: default
 spec:
-replicas: 1
-strategy:
-type: Recreate
-template:
-metadata:
-labels:
-app: snapshot-controller
-spec:
-serviceAccountName: snapshot-controller-runner
-containers:
-- name: snapshot-controller
-image: openebs/snapshot-controller:ci
-imagePullPolicy: Always
-- name: snapshot-provisioner
-image: openebs/snapshot-provisioner:ci
-imagePullPolicy: Always
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: snapshot-controller
+    spec:
+      serviceAccountName: snapshot-controller-runner
+      containers:
+      - image: openebs/snapshot-controller:ci
+        name: snapshot-controller
+        imagePullPolicy: Always
+      - image: openebs/snapshot-provisioner:ci
+        name: snapshot-provisioner
+        imagePullPolicy: Always
 ---
 EOF
 ```
