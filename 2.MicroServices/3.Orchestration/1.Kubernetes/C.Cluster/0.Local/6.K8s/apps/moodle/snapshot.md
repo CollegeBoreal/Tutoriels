@@ -1,6 +1,6 @@
 # Snaphot
 
-```
+```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: ServiceAccount
