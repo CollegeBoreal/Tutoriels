@@ -150,7 +150,7 @@ spec:
     - -c
     - 'date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;'
     volumeMounts:
-    — mountPath: /mnt/store1
+      mountPath: /mnt/store1
       name: demo-vol1
   volumes:
   — name: demo-vol1
