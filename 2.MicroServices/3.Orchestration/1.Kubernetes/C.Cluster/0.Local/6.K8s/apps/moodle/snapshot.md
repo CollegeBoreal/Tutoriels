@@ -77,7 +77,7 @@ EOF
 
 ```yaml
 $ kubectl apply --filename - <<EOF
-apiVersion: extensions/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: snapshot-controller
