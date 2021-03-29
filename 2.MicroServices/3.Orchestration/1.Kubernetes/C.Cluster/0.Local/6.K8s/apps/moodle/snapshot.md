@@ -52,6 +52,11 @@ subjects:
 - kind: ServiceAccount
   name: snapshot-controller-runner
 ---
+EOF
+```
+
+```yaml
+$ kubectl apply --filename - <<EOF
 apiVersion: extensions/v1
 kind: Deployment
 metadata:
