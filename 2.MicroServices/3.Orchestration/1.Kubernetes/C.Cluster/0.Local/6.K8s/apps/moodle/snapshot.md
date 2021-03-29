@@ -168,6 +168,14 @@ spec:
 EOF
 ```
 
+- [ ] Let's display the content on the `demo-vol1-claim` PVC
+
+```
+$ kubectl exec --stdin --tty busybox -- cat /mnt/store1/date.txt    
+Mon Mar 29 03:43:45 UTC 2021
+```
+
+
 - [ ] Create the volume snapshot
 
 ```yaml
