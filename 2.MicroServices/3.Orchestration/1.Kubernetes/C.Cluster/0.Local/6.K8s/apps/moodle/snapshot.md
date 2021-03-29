@@ -287,7 +287,35 @@ provisioner: volumesnapshot.external-storage.k8s.io/snapshot-promoter
 EOF
 ```
 
+```
+$ kubectl get sc
+NAME                        PROVISIONER                                                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+openebs-device              openebs.io/local                                           Delete          WaitForFirstConsumer   false                  2d13h
+openebs-hostpath            openebs.io/local                                           Delete          WaitForFirstConsumer   false                  2d13h
+openebs-jiva-default        openebs.io/provisioner-iscsi                               Delete          Immediate              false                  2d13h
+openebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  2d13h
+snapshot-promoter           volumesnapshot.external-storage.k8s.io/snapshot-promoter   Delete          Immediate              false                  99s
+standard (default)          openebs.io/provisioner-iscsi                               Delete          Immediate              false                  41h
+```
 
+```yaml
+$ kubectl apply --filename - <<EOF
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: demo-snap-vol-claim
+  annotations:
+    snapshot.alpha.kubernetes.io/snapshot: snapshot-demo
+spec:
+  storageClassName: snapshot-promoter
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+---
+EOF
+```
 
 # References
 
