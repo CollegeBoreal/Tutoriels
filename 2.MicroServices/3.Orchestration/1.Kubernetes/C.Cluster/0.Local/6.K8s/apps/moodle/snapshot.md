@@ -55,6 +55,9 @@ rules:
 - apiGroups: [""]
   resources: ["services"]
   verbs: ["get"]
+- apiGroups: [""]
+  resources: ["endpoints"]
+  verbs: ["get"]
 ---
 EOF
 ```
