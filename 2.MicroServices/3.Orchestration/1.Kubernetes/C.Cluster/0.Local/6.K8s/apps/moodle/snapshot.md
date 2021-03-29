@@ -9,6 +9,11 @@ kind: ServiceAccount
 metadata:
    name: snapshot-controller-runner
 ---
+EOF
+```
+
+```yaml
+$ kubectl apply --filename - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -42,6 +47,11 @@ rules:
   resources: ["services"]
   verbs: ["get"]
 ---
+EOF
+```
+
+```yaml
+$ kubectl apply --filename - <<EOF
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
