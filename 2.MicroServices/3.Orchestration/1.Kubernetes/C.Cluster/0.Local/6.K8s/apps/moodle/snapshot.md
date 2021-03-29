@@ -87,3 +87,5 @@ EOF
 https://blog.mayadata.io/openebs/openebs-snapshots-using-kubectl
 
 https://docs.openshift.com/container-platform/3.3/dev_guide/deployments/deployment_strategies.html
+
+https://github.com/kubernetes-retired/external-storage/blob/master/snapshot/doc/user-guide.md#lifecycle-of-a-volume-snapshot-and-volume-snapshot-data
