@@ -85,6 +85,9 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      app: snapshot-controller
   template:
     metadata:
       labels:
