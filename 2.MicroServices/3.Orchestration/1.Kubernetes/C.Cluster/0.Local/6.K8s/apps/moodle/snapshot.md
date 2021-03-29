@@ -103,13 +103,13 @@ metadata:
   name: busybox
 spec:
   containers:
-    - image: busybox
-      name: busybox
-      command: ['sh', '-c', ‘date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;’]
-      imagePullPolicy: Always
-      volumeMounts:
-      — mountPath: /mnt/store1
-        name: demo-vol1
+  - image: busybox
+    name: busybox
+    command: ['sh', '-c', ‘date > /mnt/store1/date.txt; hostname >> /mnt/store1/hostname.txt; tail -f /dev/null;’]
+    imagePullPolicy: Always
+    volumeMounts:
+    — mountPath: /mnt/store1
+      name: demo-vol1
   volumes:
   — name: demo-vol1
       persistentVolumeClaim:
