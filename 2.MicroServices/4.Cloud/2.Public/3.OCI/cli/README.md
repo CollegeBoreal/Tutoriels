@@ -1,5 +1,21 @@
 # OCI CLI
 
+https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart
+
+
+## :computer: Windows
+
+```
+PS> Set-ExecutionPolicy RemoteSigned
+```
+
+```
+PS> Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1 -OutFile install.ps1
+```
+
+```
+PS> install.ps1 -AcceptAllDefaults  
+```
 
 ## :apple: MacOS
 
