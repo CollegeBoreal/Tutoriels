@@ -35,21 +35,29 @@ To connect to your database:
 
   1. Run a pod that you can use as a client:
 
+
+* get the password
+
+```
+$ PASSWD=`kubectl get secrets orangehrm-1617227462-mariadb -o jsonpath='{.data.mariadb-root-password}' | base64 --decode && echo ""`
+```
+
+* run a sidecar container with the $PASSWD environment variable
+
 ```
 $ kubectl run orangehrm-1617227462-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
+          --env PASSWD=$PASSWD \
           --command -- bash
 ```
 
   2. To connect to primary service (read/write):
 
 ```
-$ mysql --host orangehrm-1617227462-mariadb.default.svc.cluster.local --user root --password bitnami_moodle
+$ mysql --host orangehrm-1617227462-mariadb.default.svc.cluster.local --user root --password=$PASSWD
 ```
-
-password example `5fKw8fJTaL`
 
 ```
 $ kubectl run orangehrm-1617227462-mariadb-client \
@@ -57,8 +65,8 @@ $ kubectl run orangehrm-1617227462-mariadb-client \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
           --command -- mysqldump \
-           --host moodle-1616890389-mariadb.default.svc.cluster.local \
-           --user root --password=5fKw8fJTaL \
-           bitnami_moodle > ~/Developer/moodle/moodle-1616890389-mariadb.sql
+           --host orangehrm-1617227462-mariadb.default.svc.cluster.local \
+           --user root --password=$PASSWD \
+           bitnami_orangehrm > ~/Developer/orangehrm-1617227462-mariadb.sql
 ```
 
