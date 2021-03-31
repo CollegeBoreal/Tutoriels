@@ -1,9 +1,12 @@
 # OCI CLI
 
+
+
+## :a: Install
+
 https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart
 
-
-## :computer: Windows
+### :computer: Windows
 
 ```
 PS> Set-ExecutionPolicy RemoteSigned
@@ -17,14 +20,14 @@ PS> Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/sc
 PS> install.ps1 -AcceptAllDefaults  
 ```
 
-## :apple: MacOS
+### :apple: MacOS
 
 ```
 brew install oci-cli
 ```
 
 
-## :o: Scripts
+### :page_with_curl: Scripts
 
 Mac / Linux
 
@@ -71,6 +74,8 @@ export OCI_HOME=~/.oci
 export PATH="$OCI_HOME/bin":$PATH
 [[ -e "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "$OCI_HOME/lib/oracle-cli/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
 ```
+
+## :b: Setup
 
 https://console.ca-toronto-1.oraclecloud.com/
 
