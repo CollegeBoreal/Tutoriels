@@ -1,5 +1,15 @@
 # OCI CLI
 
+
+## :apple: MacOS
+
+```
+brew install oci-cli
+```
+
+
+## :o: Scripts
+
 Mac / Linux
 
 ```
