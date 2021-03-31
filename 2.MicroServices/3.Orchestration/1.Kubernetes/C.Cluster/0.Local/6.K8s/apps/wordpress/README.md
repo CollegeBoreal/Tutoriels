@@ -11,7 +11,7 @@ $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
-  name: wordpress-1617228926
+  name: wordpress-1617229377
   annotations:
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
@@ -39,13 +39,13 @@ To connect to your database:
 * get the password
 
 ```
-$ PASSWD=`kubectl get secrets wordpress-1617228926-mariadb -o jsonpath='{.data.mariadb-root-password}' | base64 --decode && echo ""`
+$ PASSWD=`kubectl get secrets wordpress-1617229377-mariadb -o jsonpath='{.data.mariadb-root-password}' | base64 --decode && echo ""`
 ```
 
 * run a sidecar container with the $PASSWD environment variable
 
 ```
-$ kubectl run wordpress-1617228926-mariadb-client \
+$ kubectl run wordpress-1617229377-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
@@ -56,16 +56,16 @@ $ kubectl run wordpress-1617228926-mariadb-client \
   2. To connect to primary service (read/write):
 
 ```
-$ mysql --host wordpress-1617228926-mariadb.default.svc.cluster.local --user root --password=$PASSWD
+$ mysql --host wordpress-1617229377-mariadb.default.svc.cluster.local --user root --password=$PASSWD
 ```
 
 ```
-$ kubectl run wordpress-1617228926-mariadb-client \
+$ kubectl run wordpress-1617229377-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
           --command -- mysqldump \
-           --host wordpress-1617228926-mariadb.default.svc.cluster.local \
+           --host wordpress-1617229377-mariadb.default.svc.cluster.local \
            --user root --password=$PASSWD \
-           bitnami_wordpress > ~/Developer/wordpress-1617228926-mariadb.sql
+           bitnami_wordpress > ~/Developer/wordpress-1617229377-mariadb.sql
 ```
