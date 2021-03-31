@@ -59,6 +59,8 @@ $ kubectl run wordpress-1617229377-mariadb-client \
 $ mysql --host wordpress-1617229377-mariadb.default.svc.cluster.local --user root --password=$PASSWD
 ```
 
+Dump
+
 ```
 $ kubectl run wordpress-1617229377-mariadb-client \
           --rm --tty --stdin --restart='Never' \
@@ -68,4 +70,17 @@ $ kubectl run wordpress-1617229377-mariadb-client \
            --host wordpress-1617229377-mariadb.default.svc.cluster.local \
            --user root --password=$PASSWD \
            bitnami_wordpress > ~/Developer/wordpress-1617229377-mariadb.sql
+```
+
+Restore
+
+```
+$ kubectl run wordpress-1617229377-mariadb-client \
+          --rm --tty --stdin --restart='Never' \
+          --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
+          --namespace default \
+          --command -- mysq \
+           --host wordpress-1617229377-mariadb.default.svc.cluster.local \
+           --user root --password=$PASSWD \
+           bitnami_wordpress < ~/Developer/wordpress-1617229377-mariadb.sql
 ```
