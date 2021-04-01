@@ -6,7 +6,7 @@
 
 
 ```
-$ for node in saiph rigel bellatrix; do kubectl drain $node --delete-local-data --force --ignore-daemonsets; done
+$ for node in saiph rigel bellatrix; do kubectl drain $node --delete-local-data --force --ignore-daemonsets; kubectl delete node $node; done
 kubeadm reset
 ```
 
