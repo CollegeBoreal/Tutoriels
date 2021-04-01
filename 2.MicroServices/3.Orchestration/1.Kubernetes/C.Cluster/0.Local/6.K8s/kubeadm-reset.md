@@ -79,3 +79,5 @@ $ kubectl config delete-context kubernetes-admin@kubernetes
 
 
 https://stackoverflow.com/questions/44698283/how-to-completely-uninstall-kubernetes
+
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#tear-down
