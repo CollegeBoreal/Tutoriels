@@ -14,7 +14,7 @@ spec:
       - pathType: Prefix
         path: "/admin"
         backend:
-          serviceName: moodle-1616890389.default.svc.cluster.local
+          serviceName: moodle-1616890389
           servicePort: 80
   - host: "bellatrix.boreal.codes"
     http:
@@ -22,7 +22,7 @@ spec:
       - pathType: Prefix
         path: "/"
         backend:
-          serviceName: moodle-1616890389.default.svc.cluster.local
+          serviceName: moodle-1616890389
           servicePort: 80
 ---
 EOF
