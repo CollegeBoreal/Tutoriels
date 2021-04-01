@@ -2,7 +2,7 @@
 
 ```yaml
 $ kubectl apply --filename - <<EOF
-apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: ingress-wildcard-host
