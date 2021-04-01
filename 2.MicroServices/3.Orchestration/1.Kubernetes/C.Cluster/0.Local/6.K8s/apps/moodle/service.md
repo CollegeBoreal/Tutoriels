@@ -10,13 +10,13 @@ spec:
       protocol: TCP
       port: 80
       targetPort: http
-  #    nodePort: 32580
+      nodePort: 32580
     - name: https
       protocol: TCP
       port: 443
       targetPort: https
-  #    nodePort: 32713
-  clusterIP: 10.101.107.252
+      nodePort: 32713
+  # clusterIP: 10.101.107.252
   type: LoadBalancer
   sessionAffinity: None
   externalTrafficPolicy: Cluster
