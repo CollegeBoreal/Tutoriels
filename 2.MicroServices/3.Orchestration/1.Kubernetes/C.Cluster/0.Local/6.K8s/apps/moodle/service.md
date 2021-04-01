@@ -16,7 +16,7 @@ spec:
       port: 443
       targetPort: https
   #    nodePort: 32713
-  # clusterIP: 10.101.107.252
+  clusterIP: 10.101.107.252
   type: LoadBalancer
   sessionAffinity: None
   externalTrafficPolicy: Cluster
