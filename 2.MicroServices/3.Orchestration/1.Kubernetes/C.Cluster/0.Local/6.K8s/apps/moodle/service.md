@@ -1,4 +1,4 @@
-```
+```yaml
 $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
