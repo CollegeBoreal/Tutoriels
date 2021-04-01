@@ -8,26 +8,22 @@ metadata:
   name: ingress-wildcard-host
 spec:
   rules:
-  - host: "bellatrix.boreal.codes"
+  - host: bellatrix.boreal.codes
     http:
       paths:
       - pathType: Prefix
         path: "/admin"
         backend:
-          service:
-            name: moodle-1616890389.default.svc.cluster.local
-            port:
-              number: 80
+          serviceName: moodle-1616890389.default.svc.cluster.local
+          servicePort: 80
   - host: "bellatrix.boreal.codes"
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
-          service:
-            name: moodle-1616890389.default.svc.cluster.local
-            port:
-              number: 80
+          serviceName: moodle-1616890389.default.svc.cluster.local
+          servicePort: 80
 ---
 EOF
 ```
