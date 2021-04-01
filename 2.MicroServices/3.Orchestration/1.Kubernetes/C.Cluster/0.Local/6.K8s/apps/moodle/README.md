@@ -9,7 +9,7 @@ $ kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
-  name: moodle-1616890389
+  name: moodle-1617243557
   annotations:
     lb.kubesphere.io/v1alpha1: porter
     protocol.porter.kubesphere.io/v1alpha1: layer2
@@ -34,7 +34,7 @@ To connect to your database:
   1. Run a pod that you can use as a client:
 
 ```
-$ kubectl run moodle-1616890389-mariadb-client \
+$ kubectl run moodle-1617243557-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
@@ -44,18 +44,18 @@ $ kubectl run moodle-1616890389-mariadb-client \
   2. To connect to primary service (read/write):
 
 ```
-$ mysql --host moodle-1616890389-mariadb.default.svc.cluster.local --user root --password bitnami_moodle
+$ mysql --host moodle-1617243557-mariadb.default.svc.cluster.local --user root --password bitnami_moodle
 ```
 
 password example `5fKw8fJTaL`
 
 ```
-$ kubectl run moodle-1616890389-mariadb-client \
+$ kubectl run moodle-1617243557-mariadb-client \
           --rm --tty --stdin --restart='Never' \
           --image  docker.io/bitnami/mariadb:10.5.9-debian-10-r28 \
           --namespace default \
           --command -- mysqldump \
-           --host moodle-1616890389-mariadb.default.svc.cluster.local \
+           --host moodle-1617243557-mariadb.default.svc.cluster.local \
            --user root --password=5fKw8fJTaL \
-           bitnami_moodle > ~/Developer/moodle/moodle-1616890389-mariadb.sql
+           bitnami_moodle > ~/Developer/moodle/moodle-1617243557-mariadb.sql
 ```
