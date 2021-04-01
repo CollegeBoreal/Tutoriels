@@ -4,6 +4,12 @@
 :a: Automated
 
 
+
+```
+$ for node in saiph rigel bellatrix; do kubectl drain $node --delete-local-data --force --ignore-daemonsets; done
+kubeadm reset
+```
+
 :b: Manual
 
 - [ ] Reset the nodes
