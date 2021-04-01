@@ -39,7 +39,9 @@ To connect to your database:
 * get the password
 
 ```
-$ PASSWD=`kubectl get secrets wordpress-1617229377-mariadb -o jsonpath='{.data.mariadb-root-password}' | base64 --decode && echo ""`
+$ PASSWD=`kubectl get secrets wordpress-1617229377-mariadb \
+           --output jsonpath='{.data.mariadb-root-password}' | \
+             base64 --decode && echo ""`
 ```
 
 * run a sidecar container with the $PASSWD environment variable
