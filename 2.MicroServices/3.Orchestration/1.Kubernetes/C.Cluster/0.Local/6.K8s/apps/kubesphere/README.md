@@ -1,6 +1,34 @@
+# KubeSphere
 
 
-* Load Balancer
+## :o: Install
+
+https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/
+
+
+Execute the following commands:
+
+- [ ] Installation
+
+```
+$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/kubesphere-installer.yaml
+```
+
+- [ ] Configuration
+   
+```
+$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/cluster-configuration.yaml
+```
+
+Inspect the logs of installation:
+
+```
+$ kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l app=ks-install -o jsonpath='{.items[0].metadata.name}') -f
+```
+
+Make sure port 30880 is opened in your security group and access the web console through the NodePort (IP:30880) with the default account and password (admin/P@88w0rd).
+
+## :a: Load Balancer
 
 ```yaml
 $ kubectl apply --filename - <<EOF
@@ -24,6 +52,13 @@ spec:
   externalTrafficPolicy: Cluster
 ---
 EOF
+```
+
+```
+% kubectl get svc/ks-console -n kubesphere-system
+
+NAME         TYPE           CLUSTER-IP      EXTERNAL-IP    PORT(S)        AGE
+ks-console   LoadBalancer   10.98.200.148   10.13.15.201   80:30007/TCP   6h37m
 ```
 
 * NodePort
