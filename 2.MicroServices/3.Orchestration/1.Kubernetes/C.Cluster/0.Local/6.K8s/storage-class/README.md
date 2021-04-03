@@ -76,5 +76,4 @@ Depending on the type of storage attached to your Kubernetes worker nodes and ap
 
 https://medium.com/volterra-io/kubernetes-storage-performance-comparison-v2-2020-updated-1c0b69f0dcf4
 
-
-
+https://blocksandfiles.com/2021/03/08/intel-says-mayastor-is-fastest-open-source-storage/
