@@ -70,3 +70,5 @@ $ kubectl describe pods
 https://learnk8s.io/how-many-clusters#2-many-small-single-use-clusters
 
 https://betterprogramming.pub/a-closer-look-at-etcd-the-brain-of-a-kubernetes-cluster-788c8ea759a5
+
+https://www.reddit.com/r/kubernetes/comments/kwyqhu/who_is_running_kubernetes_on_bare_metal/
