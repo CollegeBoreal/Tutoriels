@@ -8,9 +8,20 @@
 
 ### :one: pour Linux et MacOS
 
+:round_pushpin: Sur Intel
+
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
+
+:round_pushpin: Sur Mac Silicon
+
+```
+$ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | arch -x86_64 /bin/bash
+```
+
+- [ ] Résultat
+
 
 ```
   Welcome to Haskell!
