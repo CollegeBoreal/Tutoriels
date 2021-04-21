@@ -146,6 +146,10 @@ blockdevice-23e1292d-32f5-4528-8f7f-3abaee070a03
 | `spec.nodeAttributes.nodeName:`           | hostname |
 | `spec.path:`                              | - DEVNAME |
 
+```
+$ kubectl apply --filename=https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/main/2.MicroServices/3.Orchestration/1.Kubernetes/C.Cluster/0.Local/6.K8s/storage-class/openebs/manifests/blockdevices.yaml
+```
+
 ```yaml
 $ kubectl apply -n openebs -f - <<EOF 
  apiVersion: openebs.io/v1alpha1
