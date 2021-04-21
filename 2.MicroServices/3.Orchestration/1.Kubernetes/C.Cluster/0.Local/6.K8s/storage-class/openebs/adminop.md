@@ -258,7 +258,7 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Uncla
 - [ ] Create the `cStor Storage Pool` (csp)
 
 ```
-kubectl apply --filename=https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/main/2.MicroServices/3.Orchestration/1.Kubernetes/C.Cluster/0.Local/6.K8s/storage-class/openebs/manifests/StoragePoolClaim.yaml
+$ kubectl apply --filename=https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/main/2.MicroServices/3.Orchestration/1.Kubernetes/C.Cluster/0.Local/6.K8s/storage-class/openebs/manifests/StoragePoolClaim.yaml
 ```
 
 ```yaml
@@ -360,6 +360,10 @@ blockdevice-7e848c90-cca2-4ef4-9fdc-90cff05d5bb5   rigel       102687672   Claim
 ## :ab: [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
 - [ ] Create the `standard` **Storage Class**
+
+```
+$ kubectl apply --filename=https://raw.githubusercontent.com/CollegeBoreal/Tutoriels/main/2.MicroServices/3.Orchestration/1.Kubernetes/C.Cluster/0.Local/6.K8s/storage-class/openebs/manifests/StorageClass.yaml
+```
 
 ```yaml
 $ kubectl apply -f - <<EOF
