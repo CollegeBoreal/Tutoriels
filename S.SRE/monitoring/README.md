@@ -1,0 +1,3 @@
+# Monitoring Telemetry
+
+https://www.devops-certification.org/How_Do_You_Create_Monitoring_Telemetry_To_Manage_Your_DevOps_Software_Life_Cycle.php
