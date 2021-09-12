@@ -13,6 +13,8 @@ wsl --set-default-version 2
 
 ![wsl2](images/wsl2.png)
 
+<img src="images/wsl2-install.png" width=698 height=258></img>
+
 
 ## :two: Install Linux Distro from Microsoft Store
 
