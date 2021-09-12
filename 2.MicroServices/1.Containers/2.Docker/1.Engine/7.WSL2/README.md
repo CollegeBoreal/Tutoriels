@@ -1,4 +1,4 @@
-
+# WSL2
 
 
 ```powershell
@@ -12,6 +12,12 @@ wsl --set-default-version 2
 
 
 ![wsl2](images/wsl2.png)
+
+
+## :two: Install Linux Distro from Microsoft Store
+
+Ubuntu default sudo password `ubuntu`
+
 
 
 # References
