@@ -9,7 +9,7 @@
    
     - Télécharger ISO sur Azure Education
     
-    Logicel de boot de clé USB ? ([Rufus](https://github.com/CollegeBoreal/Tutoriels/tree/master/7.Microsoft/servers/ISO), UnetBooting)
+    Logicel de boot de clé USB ? ([Rufus](https://github.com/CollegeBoreal/Tutoriels/tree/main/O.OS/2.Windows/servers/ISO), UnetBooting)
     
     Option pour booter la clé : 
     
@@ -23,7 +23,7 @@
 
    * Trouble Shoot quand boot unsuccessful
 
-     [RedScreenOfDeath](https://github.com/CollegeBoreal/Laboratoires/blob/master/3202/proliant/TroubleShoot.md#pushpin-red-screen-of-death) 
+     [RedScreenOfDeath](https://github.com/CollegeBoreal/Laboratoires/blob/main/3202/proliant/TroubleShoot.md#pushpin-red-screen-of-death) 
      
   :pushpin: Boot
   
@@ -43,7 +43,7 @@
     
     - Windows `Hyper-V` Server 2019
     
-   :pushpin: Disques [RAID](https://github.com/CollegeBoreal/Laboratoires/tree/master/3202/proliant/RAID)
+   :pushpin: Disques [RAID](https://github.com/CollegeBoreal/Laboratoires/tree/main/3202/proliant/RAID)
    
     - Booter sur RAID Setup Utility `F8`
     
@@ -75,13 +75,13 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 #### :electric_plug: Réseau Interne
 
-- [x] `10.13.237.0/25` : Réseau
+- [x] `10.13.237.0/24` : Réseau
 
 - [x] `10.13.237.1`: Passerelle
 
 - [x] `borealc.on.ca`: DNS Search Domain
 
-- [x] `10.10.99.2, 10.10.99.3, 8.8.8.8`: DNS Servers
+- [x] `1.1.1.1, 8.8.8.8`: DNS Servers
 
 :bulb: Prenez une adresse dans la plage du réseau, assurez vous qu'elle est au dessus de `10.13.237.10`
 
@@ -96,23 +96,11 @@ network:
   ethernets:
     enp2s0f0:
       addresses:
-      - 10.13.237.x/25
+      - 10.13.237.x/24
       gateway4: 10.13.237.1
       nameservers:
         addresses:
-        - 10.10.99.2
-        - 10.10.99.3
-        - 8.8.8.8
-        search:
-        - borealc.on.ca
-    enp2s0f1:
-      addresses:
-      - 10.13.x.x/20
-      gateway4: 10.13.0.1
-      nameservers:
-        addresses:
-        - 10.10.99.2
-        - 10.10.99.3
+        - 1.1.1.1
         - 8.8.8.8
         search:
         - borealc.on.ca
@@ -150,16 +138,3 @@ $ sudo lshw -c memory
 # References
 
 [MBR Boot Process](https://neosmart.net/wiki/mbr-boot-process)
-      
-      
-      
-      
-      
-      
-      
-   
-     
-    
-    
-   
-
