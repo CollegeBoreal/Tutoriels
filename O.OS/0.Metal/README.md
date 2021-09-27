@@ -96,7 +96,7 @@ network:
   ethernets:
     enp2s0f0:
       addresses:
-      - 10.13.237.x/24
+         - 10.13.237.x/24
       gateway4: 10.13.237.1
       nameservers:
         addresses:
