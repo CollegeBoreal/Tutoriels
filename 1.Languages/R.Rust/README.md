@@ -15,7 +15,20 @@ PS > choco install rustup.install
 ```
 $ brew install rustup
 ```
-  
+ 
+### Initialiser
+
+```
+$ rustup-init
+...
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+>
+```
+
+Choisir 1)
+ 
 ### :bookmark: Verifier 
 
 
