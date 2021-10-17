@@ -28,6 +28,10 @@ $ rustup-init
 ```
 
 Choisir :one:
+
+```
+$ source $HOME/.cargo/env
+```
  
 ### :bookmark: Verifier 
 
