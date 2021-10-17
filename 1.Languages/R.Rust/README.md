@@ -16,7 +16,7 @@ PS > choco install rustup.install
 $ brew install rustup
 ```
  
-### Initialiser
+### :o: Initialiser
 
 ```
 $ rustup-init
@@ -27,7 +27,7 @@ $ rustup-init
 >
 ```
 
-Choisir 1)
+Choisir :one:
  
 ### :bookmark: Verifier 
 
