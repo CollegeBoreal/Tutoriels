@@ -53,7 +53,7 @@ Renommer la clé `id_rsa` par votre addresse IP par exemple si votre adresse IP 
 * Clé privée
 
 ```
-$ mv ~/.ssh/id_rsa ~/.ssh/10.13.237.16.pk
+$ mv ~/.ssh/id_rsa ~/.ssh/10.13.237.16
 ```
 
 * Clé publique
@@ -80,7 +80,7 @@ https://docs.docker.com/v17.09/machine/drivers/generic
 $ docker-machine create --driver generic \
                         --generic-ip-address=10.13.237.16 \
                         --generic-ssh-user=ubuntu \
-                        --generic-ssh-key ~/.ssh/10.13.237.16.pk \
+                        --generic-ssh-key ~/.ssh/10.13.237.16 \
                         nom_de_ma_machine
 ```
 
