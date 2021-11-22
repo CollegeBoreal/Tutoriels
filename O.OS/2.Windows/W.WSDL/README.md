@@ -22,3 +22,6 @@ PS> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsyst
 
 <img src="images/ubuntu-windows-location.png" width="" height="" >    </img>
 
+# References
+
+https://ubuntu.com/wsl
