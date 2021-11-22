@@ -5,12 +5,18 @@
 - [ ] Sous PowerShell
 
 ```powershell
-PS> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
+- [ ] Ouvrir le Magasin Microsoft
+
+```powershell
+start https://aka.ms/wslstore
 ```
 
 - [ ] A travers le menu, 
 
-* si `WSL` n'est pas installe, l'installtion sera demandee  
+* si `WSL` n'est pas installe, l'installation sera demandee  
 
 <img src="images/wsl2-install.png" width="" height="" >    </img>
 
