@@ -27,11 +27,16 @@ PS > brew install docker-machine
 
 :pushpin: :penguin: Linux
 
+- [ ] Telecharger
+
 ```
-$ base=https://github.com/docker/machine/releases/download/v0.16.0 &&
-  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
-  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&
-  chmod +x /usr/local/bin/docker-machine
+curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` -o ~/docker-machine
+```
+
+- [ ] Installer
+
+```
+chmod +x ~/docker-machine && sudo cp ~/docker-machine /usr/local/bin/
 ```
 
 
@@ -59,6 +64,8 @@ $ base=https://github.com/docker/machine/releases/download/v0.16.0 &&
 ** Docker Machine Examples
 
 http://www.macadamian.com/2017/01/24/docker-machine-basic-examples/
+
+https://upcloud.com/community/tutorials/get-started-docker-machine/
 
 
 ## :whale: Cheat Sheets
