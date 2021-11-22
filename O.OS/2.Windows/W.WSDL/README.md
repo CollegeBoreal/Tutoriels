@@ -2,21 +2,25 @@
 
 ## :gear: Installation
 
-Sous PowerShell
+- [ ] Sous PowerShell
 
 ```powershell
 PS> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
+
+- [ ] A travers le menu, 
+
+* si `WSL` n'est pas installe, l'installtion sera demandee  
+
+<img src="images/wsl2-install.png" width="" height="" >    </img>
+
 ## :a: Utilisation de `WSL`
 
 <img src="images/wsl2-distro.png" width="" height="" >    </img>
 
-<img src="images/wsl2-install.png" width="" height="" >    </img>
-
 <img src="images/wsl2-sys32-location.png" width="" height="" >    </img>
 
-
-## :a: Utilisation `Ubuntu` sous `WSL`
+## :a: Utilisation d'`Ubuntu`
 
 <img src="images/ubuntu-distro.png" width="" height="" >   </img>
 
