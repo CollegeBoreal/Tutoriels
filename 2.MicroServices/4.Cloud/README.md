@@ -27,6 +27,8 @@ https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-ene
 
 <img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
 
+https://www.cnn.com/2021/11/11/tech/tidal-energy-climate-change-renewable
+
 
 ##### :pushpin: Fuel Cell Energy
 
