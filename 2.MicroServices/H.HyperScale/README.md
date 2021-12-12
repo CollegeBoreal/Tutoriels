@@ -79,6 +79,15 @@ CBS Installs PureCell® Model 400 Systems -- Timelapse Video
 
 https://youtu.be/1LkGda8TQ3g?t=90
 
+
+#### :accept: Capacity
+
+| PowerPlant | Type | Capacity |
+|------------|------|----------|
+| [Beauharnois](https://en.wikipedia.org/wiki/Beauharnois_generating_station) | | 1.9 GW | 
+
+
+
 ## :b: Data Center
 
 ##### :pushpin: Modular 
