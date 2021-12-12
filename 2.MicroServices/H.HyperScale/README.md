@@ -85,6 +85,7 @@ https://youtu.be/1LkGda8TQ3g?t=90
 | PowerPlant | Type | Capacity |
 |------------|------|----------|
 | [Beauharnois](https://en.wikipedia.org/wiki/Beauharnois_generating_station) | | 1.9 GW | 
+| [Hoover Dam](https://en.wikipedia.org/wiki/Hoover_Dam) | | 2.08 GW |
 
 
 
