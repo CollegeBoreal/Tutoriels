@@ -35,6 +35,8 @@ https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-ene
 
 :star: Pempa’q Project
 
+[Nearly 300 megawatts of tidal energy potential in the Minas Passage](https://www.naturalresourcesmagazine.net/article/down-under)
+
 https://www.sustainablemarine.com/pempa-q
 
 https://atlantic.ctvnews.ca/harnessing-the-bay-of-fundy-new-platform-has-turbines-like-a-boat-s-outboard-motor-1.5291064
