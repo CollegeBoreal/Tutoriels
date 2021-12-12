@@ -47,7 +47,7 @@ https://www.cnn.com/2021/11/11/tech/tidal-energy-climate-change-renewable
 https://www.sustainablemarine.com/plat-i-6-40
 
 
-<img src="images/plat-i-6-40.png" width="" heigth=""></img>  
+<img src="images/plat-i-6-40.png" width="434" heigth="203"></img>  
 
 
 ##### :pushpin: Fuel Cell Energy
