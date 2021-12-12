@@ -59,7 +59,7 @@ https://www.sustainablemarine.com/plat-i-6-40
 <img src="images/plat-i-6-40.png" width="434" heigth="203"></img>  
 
 
-## :stars: Kite Energy
+##### :stars: Kite Energy
 
 https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-energy-future-power-plants/
 
