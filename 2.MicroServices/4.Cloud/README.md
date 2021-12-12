@@ -39,6 +39,8 @@ https://atlantic.ctvnews.ca/harnessing-the-bay-of-fundy-new-platform-has-turbine
 
 https://www.cnn.com/2021/11/11/tech/tidal-energy-climate-change-renewable
 
+https://www.sustainablemarine.com/plat-i-6-40
+
 
 ##### :pushpin: Fuel Cell Energy
 
