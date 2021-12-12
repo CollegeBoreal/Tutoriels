@@ -39,8 +39,6 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 :star: https://orbitalmarine.com/o2/
 
-https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-energy-future-power-plants/
-
 <img src="images/orbital-o2-2mw.ong.png" width="593" heigth="329"></img>  
 
 
@@ -59,6 +57,14 @@ https://www.sustainablemarine.com/plat-i-6-40
 
 
 <img src="images/plat-i-6-40.png" width="434" heigth="203"></img>  
+
+
+## :stars: Kite Energy
+
+https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-energy-future-power-plants/
+
+https://www.nsenergybusiness.com/features/makani-kite-wind-power/
+
 
 
 ##### :pushpin: Fuel Cell Energy
