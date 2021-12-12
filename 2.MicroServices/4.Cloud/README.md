@@ -8,6 +8,10 @@
 
 ### :pushpin: Hydrokinetic Power
 
+- [ ] HYCOM Hydro Energetic Flux
+
+<img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
+
 [In-Stream Hydrokinetic Power: Review and Appraisal](images/28asce29ey2E1943-78972E0000197.pdf)
 
 ### :ocean: Tidal Turbine
@@ -35,7 +39,6 @@ https://www.sustainablemarine.com/pempa-q
 
 https://atlantic.ctvnews.ca/harnessing-the-bay-of-fundy-new-platform-has-turbines-like-a-boat-s-outboard-motor-1.5291064
 
-<img src="images/HYCOM-Hydroenergetic-flux.png" width="1269" heigth="399"></img>  
 
 https://www.cnn.com/2021/11/11/tech/tidal-energy-climate-change-renewable
 
