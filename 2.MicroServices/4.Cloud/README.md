@@ -32,6 +32,8 @@ Systems can be deployed in `units` ranging from 100kW - 600kW for village power 
 
 https://www.popsci.com/science/article/2010-05/sea-kites-could-harness-tidal-energy-future-power-plants/
 
+<img src="images/orbital-o2-2mw.ong" width="593" heigth="329"></img>  
+
 
 :star: Pempa’q Project
 
