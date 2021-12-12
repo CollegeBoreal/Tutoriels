@@ -4,11 +4,9 @@
 
 <img src="images/modular_cloud_data_center.png" width="1104" heigth="750"></img>
 
-<img src="https://ml.globenewswire.com/Resource/Download/e4e12ab6-f1f5-421e-aa6c-164feac7e80d" width="1104" heigth="750"></img>
-
 - [ ] [passed 500 Q32019](https://www.srgresearch.com/articles/hyperscale-data-center-count-passed-500-milestone-q3)
 
-<img src="images/hyperscale-dc-q319.jpeg" width="1263" heigth="586"></img>
+<img src="images/hyperscale-dc-q319.jpeg" width="315" heigth="146"></img>
 
 
 ## :a: Power
