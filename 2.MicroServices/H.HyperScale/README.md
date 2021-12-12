@@ -86,6 +86,7 @@ https://youtu.be/1LkGda8TQ3g?t=90
 |------------|------|----------|
 | [Beauharnois](https://en.wikipedia.org/wiki/Beauharnois_generating_station) | | 1.9 GW | 
 | [Hoover Dam](https://en.wikipedia.org/wiki/Hoover_Dam) | | 2.08 GW |
+| [James Bay Dam](https://en.wikipedia.org/wiki/James_Bay_Project) | | 16.5 GW |
 
 
 
