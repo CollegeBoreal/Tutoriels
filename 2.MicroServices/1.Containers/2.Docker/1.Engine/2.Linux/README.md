@@ -56,6 +56,6 @@ $ sudo usermod --append --groups docker $USER
 
 ```
 $ groups
-ubuntu adm cdrom sudo dip plugdev lpadmin lxd sambashare docker
+ubuntu adm cdrom sudo dip plugdev lxd docker
 ```
 
