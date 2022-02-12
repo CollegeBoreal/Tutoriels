@@ -46,6 +46,39 @@ $ az login
               }
             }
           ]
+          
+          WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FYB92V8A6 to authenticate.
+          [
+            {
+              "cloudName": "AzureCloud",
+              "homeTenantId": "0000c33-3145-431b-9afb-8ac5b000000",
+              "id": "0000-3bca-4529-ace9-fa37000000",
+              "isDefault": true,
+              "managedByTenants": [],
+              "name": "Azure for Students",
+              "state": "Enabled",
+              "tenantId": "000000-3145-431b-9afb-0000000000000000000",
+              "user": {
+                "name": "00000000@monboreal.ca",
+                "type": "user"
+              }
+            },
+            {
+              "cloudName": "AzureCloud",
+              "homeTenantId": "0000c33-3145-431b-9afb-8ac5b000000",
+              "id": "00x00x-3bca-4529-ace9-fa37000000",
+              "isDefault": false,
+              "managedByTenants": [],
+              "name": "Azure for Students Starter",
+              "state": "Enabled",
+              "tenantId": "000000-3145-431b-9afb-0000000000000000000",
+              "user": {
+                "name": "000000000@monboreal.ca",
+                "type": "user"
+              }
+            }
+          ]
+
 
 * Par le CLI
 
