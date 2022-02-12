@@ -47,7 +47,7 @@ $ az login
             }
           ]
 
-
+>
           WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FYB92V8A6 to authenticate.
           [
             {
