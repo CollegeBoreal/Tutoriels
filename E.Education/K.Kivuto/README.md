@@ -10,10 +10,10 @@ On The Hub
 https://boreal.onthehub.com
 
 
-https://portal.office.com/account/?ref=MeControl#subscriptions
 
 
-### Office 365 A1 Plus for faculty
+
+### [Office 365 A1 Plus for faculty](https://portal.office.com/account/?ref=MeControl#subscriptions)
 ```
 Information Barriers
 Viva Learning Seeded
