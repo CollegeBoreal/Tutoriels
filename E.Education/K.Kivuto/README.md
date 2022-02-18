@@ -3,10 +3,36 @@
 
 # ![alt tag](images/IMAGINE.png)
 
-http://e5.onthehub.com/d.ashx?s=sdsn4fhp2s
-
 # Microsoft Rebates
 
 On The Hub
 
 https://boreal.onthehub.com
+
+```
+Office 365 A1 Plus for faculty
+Information Barriers
+Viva Learning Seeded
+Common Data Service
+Project for Office (Plan E1)
+Education Analytics
+Microsoft Kaizala Pro
+Whiteboard (Plan 1)
+To-Do (Plan 2)
+Azure Active Directory Basic for Education
+School Data Sync (Plan 1)
+Microsoft Stream for Office 365 E3
+Microsoft Teams
+Microsoft StaffHub
+Power Automate for Office 365
+Power Apps for Office 365
+Azure Rights Management
+Microsoft Forms (Plan 2)
+Microsoft Planner
+Sway
+Yammer for Academic
+The latest desktop version of Office
+Office for the Web for Education
+SharePoint (Plan 1) for Education
+Exchange Online (Plan 1)
+```
