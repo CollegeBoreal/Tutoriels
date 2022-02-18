@@ -9,8 +9,9 @@ On The Hub
 
 https://boreal.onthehub.com
 
+
+### Office 365 A1 Plus for faculty
 ```
-Office 365 A1 Plus for faculty
 Information Barriers
 Viva Learning Seeded
 Common Data Service
