@@ -1,7 +1,7 @@
 # Creating Virtual Machines
 
 
-:one: [Docker-Machine](1.Docker-Machine)
+:one: [Docker-Machine](1.Docker-Machine) :warning: Deprecated
 
 :two: [Multipass](2.Multipass)
 
