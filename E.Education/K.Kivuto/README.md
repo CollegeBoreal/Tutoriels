@@ -16,6 +16,8 @@ https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platfo
 
 https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/verify-academic-eligibility?view=o365-worldwide#check-the-status-of-your-schools-academic-eligibility
 
+https://techcommunity.microsoft.com/t5/office-365/office-365-a1-plus-for-faculty-licenses/m-p/1071650
+
 ### [Office 365 A1 Plus for faculty](https://portal.office.com/account/?ref=MeControl#subscriptions)
 ```
 Information Barriers
