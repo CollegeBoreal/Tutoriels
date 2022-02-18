@@ -10,8 +10,11 @@ On The Hub
 https://boreal.onthehub.com
 
 
+--
 
+https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-education
 
+https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/verify-academic-eligibility?view=o365-worldwide#check-the-status-of-your-schools-academic-eligibility
 
 ### [Office 365 A1 Plus for faculty](https://portal.office.com/account/?ref=MeControl#subscriptions)
 ```
