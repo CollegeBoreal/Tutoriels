@@ -1,4 +1,4 @@
-# :ice_kube: Krew
+# :ice_cube: Krew
 
 Avec [Krew](https://krew.sigs.k8s.io/)
 
