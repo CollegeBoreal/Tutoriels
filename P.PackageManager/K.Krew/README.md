@@ -54,3 +54,4 @@ krew    v0.4.3
 
 # References:
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+https://www.freshbrewed.science/kubernetes-ssl-and-cert-manager
