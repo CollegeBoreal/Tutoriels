@@ -41,7 +41,7 @@ brew install krew
 choco install krew
 ```
 
-## :ab: Chercher des packages [cask](https://formulae.brew.sh/cask/)
+## :ab: Chercher des [`plugins`](https://krew.sigs.k8s.io/plugins/)
 
 ```
 kubectl krew list 
