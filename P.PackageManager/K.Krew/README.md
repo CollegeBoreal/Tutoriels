@@ -46,7 +46,11 @@ choco install krew
 ```
 kubectl krew list 
 ```
-
+> Return
+```
+PLUGIN  VERSION
+krew    v0.4.3
+```
 
 # References:
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
