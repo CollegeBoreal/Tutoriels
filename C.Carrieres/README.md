@@ -11,9 +11,6 @@ https://roadmap.sh/devops
 
 # Remote Jobs
 
-
-
-
 | Site                               | Commentaires                              | Qualité               |
 |------------------------------------|-------------------------------------------|-----------------------|
 | [Remotive.io](https://remotive.io) | Emplois seulement                         | :question:            |
