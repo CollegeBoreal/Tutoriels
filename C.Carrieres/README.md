@@ -30,6 +30,8 @@ https://www.codementor.io/freelance-rates
 
 https://hackernoon.com/heres-my-advice-as-a-ex-tech-recruiter-to-a-self-taught-programmers-0c4t3azq
 
+- [ ] [Who is DevOps? Is it Worth it to Become a DevOps Engineer?](https://spacelift.io/blog/who-is-devops-engineer)
+
 
 
 
