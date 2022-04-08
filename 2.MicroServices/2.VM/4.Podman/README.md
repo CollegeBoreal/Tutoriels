@@ -25,7 +25,7 @@ podman info
 podman machine ls
 ```
 
-:bulb: alias
+:bulb: alias is needed
 
 * add the below alias to `.zshrc`
 
@@ -46,6 +46,18 @@ podman machine stop
 ```
 podman machine rm
 ```
+
+## :cl: Examples
+
+```
+podman container run --name activemq --publish 61616:61616 --publish 8161:8161 --detach rmohr/activemq
+```
+
+```
+open http://localhost:8161/
+```
+
+![image](images/admin-active-mq.png)
 
 # References
 
