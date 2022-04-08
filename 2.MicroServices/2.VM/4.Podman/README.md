@@ -20,6 +20,16 @@ You can then verify the installation information using:
 ```
 podman info
 ```
+
+:bulb: alias
+
+* add the below alias to `.zshrc`
+
+```
+alias docker=podman
+```
+
+
 # References
 
 - [ ] [Podman can't run command on M1 with container built on X86](https://github.com/containers/podman/issues/12144)
