@@ -11,7 +11,7 @@ brew install podman
 To start the Podman-managed VM:
 
 ```
-podman machine init
+podman machine init; \
 podman machine start
 ```
 
