@@ -21,6 +21,10 @@ You can then verify the installation information using:
 podman info
 ```
 
+```
+podman machine ls
+```
+
 :bulb: alias
 
 * add the below alias to `.zshrc`
@@ -29,6 +33,19 @@ podman info
 alias docker=podman
 ```
 
+## :x: Delete
+
+* stop machine
+
+```
+podman machine stop
+```
+
+* remove machine
+
+```
+podman machine rm
+```
 
 # References
 
