@@ -7,16 +7,24 @@ https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c
 
 ### Installation avec [chocolatey](https://chocolatey.org) - Pour [Windows](../P.Plateformes/P.PackageManager/Windows.md) Seulement
 
+:warning: Utiliser `Powershell`
 
 ```
-PS > choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf"
+choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf"
 ```
 
 ### Installation avec [brew](https://brew.sh) - pour [MacOS](../P.Plateformes/P.PackageManager/MacOS.md) Seulement
 
+```
+brew install git
+```
+
+### Installation avec [pacman](https://packages.msys2.org/queue) - pour [msys2](msys2.org) Seulement
+
+[pacman git](https://packages.msys2.org/package/git)
 
 ```
-$ brew install git
+pacman -S git
 ```
 
 ## :two: Autre Installation manuelle des binaires
