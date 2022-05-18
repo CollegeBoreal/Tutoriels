@@ -18,7 +18,7 @@ PS > choco install docker-desktop -y
 >   at CommunityInstaller.FileSystem.<Delete>d__2.MoveNext()
   
 ```
- choco install docker-desktop --upgrade --force 
+PS> choco install docker-desktop --upgrade --force 
 ```
 
 :pushpin: MacOS
