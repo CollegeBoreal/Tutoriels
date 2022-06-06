@@ -105,7 +105,13 @@ https://www.ecmwf.int/sites/default/files/elibrary/2012/14029-sgi-update.pdf
 ##### :pushpin: Underwatwer 
 
 
-https://news.microsoft.com/innovation-stories/project-natick-underwater-datacenter/
+- [ ] [Microsoft finds underwater datacenters are reliable, practical and use energy sustainably](https://news.microsoft.com/innovation-stories/project-natick-underwater-datacenter)
+
+
+## :ab: Generator
+
+- [ ] [How To Build A DIY Generator Part 1 : 050](https://www.youtube.com/watch?v=CYIEQTsiI3c)
+
 
 
 # References
