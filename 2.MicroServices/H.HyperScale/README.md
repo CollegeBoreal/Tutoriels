@@ -102,7 +102,7 @@ https://youtube.com/watch?v=DLjBecEbNMA
 
 https://www.ecmwf.int/sites/default/files/elibrary/2012/14029-sgi-update.pdf
 
-##### :pushpin: Underwatwer 
+##### :pushpin: Underwater 
 
 
 - [ ] [Microsoft finds underwater datacenters are reliable, practical and use energy sustainably](https://news.microsoft.com/innovation-stories/project-natick-underwater-datacenter)
