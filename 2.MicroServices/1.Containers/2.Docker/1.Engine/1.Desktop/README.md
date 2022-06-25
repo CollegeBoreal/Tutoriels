@@ -72,6 +72,8 @@ Finally unmount the image: sudo hdiutil detach /Volumes/<image>.
 
 :bulb: Test 
 
+- [ ] List context
+  
 ```
 docker context ls
 ```
@@ -80,6 +82,8 @@ docker context ls
 NAME                         DESCRIPTION                               DOCKER ENDPOINT                                     KUBERNETES ENDPOINT                                    ORCHESTRATOR
 desktop-linux                                                          unix:///Users/Myself/.docker/run/docker.sock               ```                                                
 
+- [ ] use context
+  
 ```
 docker context use desktop-linux
 ```
