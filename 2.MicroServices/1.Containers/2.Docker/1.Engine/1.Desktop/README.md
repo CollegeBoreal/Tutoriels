@@ -80,7 +80,8 @@ docker context ls
 > Returns  
 ```
 NAME                         DESCRIPTION                               DOCKER ENDPOINT                                     KUBERNETES ENDPOINT                                    ORCHESTRATOR
-desktop-linux                                                          unix:///Users/Myself/.docker/run/docker.sock               ```                                                
+desktop-linux                                                          unix:///Users/Myself/.docker/run/docker.sock
+```                                                
 
 - [ ] use context
   
