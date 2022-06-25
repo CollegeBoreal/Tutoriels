@@ -68,7 +68,14 @@ cp -r /Volumes/Docker/Docker.app /Applications
 
 - [ ] Unmount
 
-Finally unmount the image: sudo hdiutil detach /Volumes/<image>.
+```
+sudo hdiutil detach /Volumes/Docker 
+```
+> Returns
+```
+Password:
+"disk5" ejected.
+```
 
 :bulb: Test 
 
