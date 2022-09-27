@@ -97,13 +97,16 @@ network:
     enp2s0f0:
       addresses:
          - 10.13.237.x/24
-      gateway4: 10.13.237.1
+      routes:
+         - to: default
+           via: 10.13.237.1
       nameservers:
         addresses:
         - 1.1.1.1
         - 8.8.8.8
-        search:
-        - borealc.on.ca
+      dhcp4: false
+    enp2s0f1:
+      dhcp4: false
   version: 2
 ```
 
