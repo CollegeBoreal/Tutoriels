@@ -59,29 +59,29 @@ context-300098957    *                                          ssh://ubuntu@10.
 - [ ] Liste des conteneurs existants
 
 ```
-$ docker container ls
+docker container ls
 ```
 
 - [ ] Liste de tous les conteneurs existants, et zombies
 
 ```
-$ docker container ls --all
+docker container ls --all
 ```
 
-:m: Gestion des volumes
+:m: Gestion des volumes (disques)
 
 ```
-$ docker volume ls
+docker volume ls
 ```
 
-:m: Gestion des images
+:m: Gestion des images (image ISO)
 
 ```
-$ docker image ls
+docker image ls
 ```
 
 :m: Gestion du réseau
 
 ```
-$ docker network ls
+docker network ls
 ```
