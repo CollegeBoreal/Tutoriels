@@ -6,12 +6,13 @@ Docker Client ( `docker` ) est une application qui permet d'interagir avec le mo
 
 Le `docker` CLI (Command Level Interface) permet de lancer les instructions permettnt de gérer les conteneurs, les volumes, le réseau et les images. 
 
-## :o: Installation de docker CLI avec [choco](https://chocolatey.org/)
+## :o: Installation de docker CLI 
 
-:computer: Windows (PowerShell)
+
+:computer: Windows (PowerShell) avec [choco](https://chocolatey.org/)
 
 ```
-choco install docker-cli
+choco install docker-cli avec avec [HomeBrew](https://formulae.brew.sh)
 ```
 
 :apple: MacOS :m::one: (HomeBrew)
