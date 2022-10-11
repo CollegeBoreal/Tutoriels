@@ -27,9 +27,8 @@ brew install docker
 
    :bulb: :id: est votre numéro d'étudiant
 
-```
-docker context create context-:id: --docker "host=ssh://ubuntu@10.13.237.X"
-```
+`docker context create context-`:id:` --docker "host=ssh://ubuntu@10.13.237.X"`
+
 
 :warning: S'assurer que la clé privée `SSH` est visible par l'agent `ssh-agent` avec la commande `ssh-add ~/.ssh/<ma cle privee>`
 
