@@ -11,8 +11,10 @@ Le `docker` CLI (Command Level Interface) permet de lancer les instructions perm
 
 :computer: Windows (PowerShell) avec [choco](https://chocolatey.org/)
 
+:bulb:  avec [HomeBrew](https://formulae.brew.sh)
+
 ```
-choco install docker-cli avec avec [HomeBrew](https://formulae.brew.sh)
+choco install docker-cli
 ```
 
 :apple: MacOS :m::one: (HomeBrew)
