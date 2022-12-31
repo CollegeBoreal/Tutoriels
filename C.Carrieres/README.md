@@ -8,6 +8,9 @@ https://roadmap.sh/devops
 
 ![image](https://roadmap.sh/roadmaps/devops.png)
 
+:point_right: [http://bit.ly/cloud-arch-patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+
+
 
 # Remote Jobs
 
