@@ -125,3 +125,7 @@ CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
 ```
 % docker rm -f `docker container ls -q`
 ```
+
+# References
+
+- [ ] [Launching Remote KIND (Kubernetes in Docker) Clusters](https://www.mendrugory.com/post/remote-kind)
