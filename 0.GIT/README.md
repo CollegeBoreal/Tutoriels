@@ -10,9 +10,8 @@
 
 ## Decouvrir git
 
-https://www.lynda.com/fr/Git-tutorials/Decouverte-Git/546576-2.html?org=collegeboreal.ca
-
-https://www.linkedin.com/learning/gitops-foundations
+- [ ] [LinkedIn Learning: Découvrir Git With Jérôme Megel](https://fr.linkedin.com/learning/decouvrir-git)
+- [ ] [LinkedIn Learning: GitOps Foundations](https://www.linkedin.com/learning/gitops-foundations)
 
 10 git commands you should know
 
