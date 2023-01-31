@@ -125,7 +125,7 @@ $ git rm -rf monrepertoire
 
 # Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
-### .ssh/config
+### ~/.ssh/config
 
 :pushpin: Utilisation du port ssh par défaut :two::two:
 
