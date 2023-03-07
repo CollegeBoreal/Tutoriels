@@ -50,7 +50,7 @@ dial unix /var/run/docker.sock: connect: permission denied
 * Permettre l'accès au `socket file` en rajoutant votre utilisateur au groupe `docker`
 
 ```
-$ sudo usermod --append --groups docker $USER
+sudo usermod --append --groups docker $USER
 ```
 
 * Pour verifier, sortir du terminal et lancer la commande `groups`, `docker` doit apparaitre
@@ -58,7 +58,7 @@ $ sudo usermod --append --groups docker $USER
 :warning: pour forcer le group il faut sortir de la session avec `exit` et revenir dans le serveur
 
 ```
-$ groups
-ubuntu adm cdrom sudo dip plugdev lxd docker
+groups
 ```
+> ubuntu adm cdrom sudo dip plugdev lxd docker
 
