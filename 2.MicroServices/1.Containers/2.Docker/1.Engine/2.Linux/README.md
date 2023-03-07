@@ -6,7 +6,7 @@
   Le 'Driver' Docker à utilser est le generique `generic`
 ```
 
-## :banbang: Sur le serveur `Linux`
+## :bangbang: Sur le serveur `Linux`
 
 ### :one: Installer Docker Engine sur la machine physique (i.e. Ubuntu)
 
