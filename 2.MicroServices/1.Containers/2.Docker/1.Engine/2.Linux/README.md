@@ -38,11 +38,14 @@ $ sudo systemctl enable docker
 Les [socket-files](https://askubuntu.com/questions/372725/what-are-socket-files) sont utilisé pour communiquer entre applications gràce aux [IPC](https://en.wikipedia.org/wiki/Inter-process_communication)
 
 ```
-$ docker container ls
+docker container ls
+```
+> Outputs :
+<pre>
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: 
 Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: 
 dial unix /var/run/docker.sock: connect: permission denied
-```
+</pre>
 
 * Permettre l'accès au `socket file` en rajoutant votre utilisateur au groupe `docker`
 
