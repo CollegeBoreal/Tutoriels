@@ -11,7 +11,7 @@
 
 ## :o: Install
 
-:desktop: Windows
+:desktop_computer: Windows
 
 ```
 choco install kind
