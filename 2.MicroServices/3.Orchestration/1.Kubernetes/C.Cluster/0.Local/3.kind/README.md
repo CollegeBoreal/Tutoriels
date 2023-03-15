@@ -34,11 +34,13 @@ kind create cluster --name k8s
 <img src="images/kind-k8s.png" width="1580" heigth="708"></img>
 
 ```
-% kubectl config get-contexts   
+kubectl config get-contexts   
+```
+> Outputs :
+<pre>
 CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
 *         kind-k8s   kind-k8s   kind-k8s   
-          minikube   minikube   minikube  
-```
+</pre>
 
 ```
 $ kubectl config use-context kind-k8s
