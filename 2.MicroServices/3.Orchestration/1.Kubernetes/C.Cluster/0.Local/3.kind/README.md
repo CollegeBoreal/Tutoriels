@@ -51,7 +51,7 @@ $ kubectl config use-context kind-k8s
 ```yaml
 # HA-config.yaml
 kind: Cluster
-apiVersion: kind.sigs.k8s.io/v1alpha3
+apiVersion: kind.sigs.k8s.io/v1alpha4
 nodes:
 - role: control-plane
 - role: control-plane
