@@ -14,13 +14,13 @@
 :star: Windows
 
 ```
-$ choco install kind
+choco install kind
 ```
 
 :star: MacOS
 
 ```
-$ brew install kind
+brew install kind
 ```
 
 ## :one: Run single node
