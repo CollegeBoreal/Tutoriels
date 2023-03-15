@@ -1,4 +1,4 @@
-# kind - Kubernetes In Docker
+# KIND - Kubernetes In Docker
 
 
 # :warning: Tries to install Docker-Desktop (on Windows Server)
@@ -9,7 +9,9 @@
 
 
 
-## :o: Install
+## :o: Install 
+
+- [ ] KIND
 
 :desktop_computer: Windows
 
@@ -21,6 +23,28 @@ choco install kind
 
 ```
 brew install kind
+```
+
+:penguin: Ubuntu
+
+```
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.17.0/kind-linux-amd64
+chmod +x ./kind
+sudo mv ./kind /usr/local/bin/kind
+```
+
+- [ ] kubectl (kube control)
+
+:desktop_computer: Windows
+
+```
+choco install kubectl
+```
+
+:apple: MacOS
+
+```
+brew install kubectl
 ```
 
 :penguin: Ubuntu
