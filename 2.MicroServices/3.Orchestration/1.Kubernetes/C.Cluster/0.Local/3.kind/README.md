@@ -11,17 +11,24 @@
 
 ## :o: Install
 
-:star: Windows
+:desktop: Windows
 
 ```
 choco install kind
 ```
 
-:star: MacOS
+:apple: MacOS
 
 ```
 brew install kind
 ```
+
+:penguin: Ubuntu
+
+```
+snap install kubectl
+```
+
 
 ## :one: Run single node
 
