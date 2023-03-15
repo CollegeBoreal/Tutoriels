@@ -33,6 +33,8 @@ kind create cluster --name k8s
 
 <img src="images/kind-k8s.png" width="1580" heigth="708"></img>
 
+- [ ] Get contexts
+
 ```
 kubectl config get-contexts   
 ```
@@ -41,6 +43,8 @@ kubectl config get-contexts
 CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
 *         kind-k8s   kind-k8s   kind-k8s   
 </pre>
+
+- [ ] Use contexts
 
 ```
 $ kubectl config use-context kind-k8s
@@ -130,4 +134,5 @@ CURRENT   NAME          CLUSTER       AUTHINFO      NAMESPACE
 
 # References
 
+- [ ] [Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start/)
 - [ ] [Launching Remote KIND (Kubernetes in Docker) Clusters](https://www.mendrugory.com/post/remote-kind)
