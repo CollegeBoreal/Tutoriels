@@ -64,7 +64,7 @@ nodes:
 :pushpin: Run the cluster
 
 ```
-kind create cluster --name k8s-HA --config HA-config.yaml 
+kind create cluster --name k8s-ha --config HA-config.yaml 
 ```
 
 <img src="images/kind-multiple-nodes.png" width="1480" heigth="618"></img>
