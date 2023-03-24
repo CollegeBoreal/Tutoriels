@@ -12,10 +12,11 @@
 
 - [ ] [LinkedIn Learning: Découvrir Git With Jérôme Megel](https://fr.linkedin.com/learning/decouvrir-git)
 - [ ] [LinkedIn Learning: GitOps Foundations](https://www.linkedin.com/learning/gitops-foundations)
+- [ ] [10 git commands you should know](https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c)
 
-10 git commands you should know
+## :zero: Installation
 
-## :zero: [Installation](Installation.md)
+=> Suivre l'[Installation](Installation.md) suivante
 
 ## :one: Les premiers pas avec git
 
