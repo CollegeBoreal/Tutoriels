@@ -1,5 +1,7 @@
 # GIT 
 
+## :warning: [We updated our RSA SSH host key](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key)
+
 ## :octocat: [Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ## :tada: [Le pack etudiant](https://education.github.com/pack)
