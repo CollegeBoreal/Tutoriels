@@ -8,7 +8,7 @@
 - [ ] [:bulb: github-flow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
 - [ ] [:+1: Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
-## Decouvrir git
+## :1st_place_medal: Decouvrir git
 
 - [ ] [LinkedIn Learning: Découvrir Git With Jérôme Megel](https://fr.linkedin.com/learning/decouvrir-git)
 - [ ] [LinkedIn Learning: GitOps Foundations](https://www.linkedin.com/learning/gitops-foundations)
