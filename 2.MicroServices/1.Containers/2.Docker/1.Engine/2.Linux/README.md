@@ -143,6 +143,49 @@ EOF
 ```
 
 ```
+sudo sh -eux <<EOF
+# Install newuidmap & newgidmap binaries
+apt-get install -y uidmap
+EOF
+```
+```yaml
++ apt-get install -y uidmap
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  uidmap
+0 upgraded, 1 newly installed, 0 to remove and 56 not upgraded.
+Need to get 21.4 kB of archives.
+After this operation, 139 kB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 uidmap arm64 1:4.8.1-2ubuntu2.1 [21.4 kB]
+Fetched 21.4 kB in 0s (61.6 kB/s)
+Selecting previously unselected package uidmap.
+(Reading database ... 69726 files and directories currently installed.)
+Preparing to unpack .../uidmap_1%3a4.8.1-2ubuntu2.1_arm64.deb ...
+Unpacking uidmap (1:4.8.1-2ubuntu2.1) ...
+Setting up uidmap (1:4.8.1-2ubuntu2.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Scanning processes...                                                                                                                                                                         
+Scanning processor microcode...                                                                                                                                                               
+Scanning linux images...                                                                                                                                                                      
+
+Running kernel seems to be up-to-date.
+
+Failed to check for processor microcode upgrades.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+```
+
+
+
+```
 dockerd-rootless-setuptool.sh install
 ```
 > Retourne :
