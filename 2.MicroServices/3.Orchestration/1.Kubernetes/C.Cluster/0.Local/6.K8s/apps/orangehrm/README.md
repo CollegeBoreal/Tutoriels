@@ -2,7 +2,7 @@
 
 # orangehrm
 
-Edit the `Service` to allow the use of a local `LoadBalancer`  `porter` ELB
+Edit the `Service` to allow the use of a local `LoadBalancer`  `openelb` ELB
 
 :warning: `{metadata.name}` must match the helm orangehrm service name
 
@@ -13,7 +13,7 @@ kind: Service
 metadata:
   name: orangehrm-1617227462
   annotations:
-    lb.kubesphere.io/v1alpha1: porter
+    lb.kubesphere.io/v1alpha1: openelb
     protocol.porter.kubesphere.io/v1alpha1: layer2
     eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
 spec:
