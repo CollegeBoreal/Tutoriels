@@ -8,13 +8,13 @@ https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/
 
 Execute the following commands:
 
-- [ ] Installation
+- [ ] Installation
 
 ```
 kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
 ```
 
-- [ ] Configuration
+- [ ] Configuration
    
 ```
 kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
