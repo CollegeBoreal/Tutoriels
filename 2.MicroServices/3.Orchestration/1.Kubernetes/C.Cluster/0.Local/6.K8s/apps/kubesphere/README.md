@@ -32,7 +32,7 @@ Make sure port 30880 is opened in your security group and access the web console
 ## :a: Load Balancer
 
 ```yaml
-$ kubectl apply --filename - <<EOF
+kubectl apply --filename - <<EOF
 apiVersion: v1
 kind: Service
 metadata:
