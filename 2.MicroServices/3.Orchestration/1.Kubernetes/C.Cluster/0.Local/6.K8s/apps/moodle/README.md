@@ -12,8 +12,8 @@ metadata:
   name: moodle-1617245072
   annotations:
     lb.kubesphere.io/v1alpha1: openelb
-    protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+    protocol.openelb.kubesphere.io/v1alpha1: layer2
+    eip.openelb.kubesphere.io/v1alpha2: layer2-eip
 spec:
   ports:
     - name: http
