@@ -13,7 +13,7 @@ metadata:
   annotations:
     lb.kubesphere.io/v1alpha1: openelb
     protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
+    eip.porter.kubesphere.io/v1alpha2: layer2-eip
 spec:
   ports:
     - name: http
