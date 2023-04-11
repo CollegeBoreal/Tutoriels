@@ -1,6 +1,6 @@
 # Graphana
 
-Edit the `Service` to allow the use of a local `LoadBalancer`  `porter` ELB
+Edit the `Service` to allow the use of a local `LoadBalancer`  `openelb`
 
 :warning: `metadata.name` must match the helm moodle service name
 
