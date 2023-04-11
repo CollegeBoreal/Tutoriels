@@ -11,13 +11,13 @@ Execute the following commands:
 - [ ] Installation
 
 ```
-$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/kubesphere-installer.yaml
+kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
 ```
 
 - [ ] Configuration
    
 ```
-$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/cluster-configuration.yaml
+kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
 ```
 
 Inspect the logs of installation:
@@ -38,7 +38,7 @@ metadata:
   name: ks-console
   namespace: kubesphere-system
   annotations:
-    lb.kubesphere.io/v1alpha1: porter
+    lb.kubesphere.io/v1alpha1: openelb
     protocol.porter.kubesphere.io/v1alpha1: layer2
     eip.porter.kubesphere.io/v1alpha2: porter-layer2-eip
 spec:
