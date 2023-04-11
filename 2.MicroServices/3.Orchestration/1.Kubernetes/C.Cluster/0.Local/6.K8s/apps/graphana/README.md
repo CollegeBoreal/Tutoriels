@@ -12,8 +12,8 @@ metadata:
   name: grafana-1616897123
   annotations:
     lb.kubesphere.io/v1alpha1: openelb
-    protocol.porter.kubesphere.io/v1alpha1: layer2
-    eip.porter.kubesphere.io/v1alpha2: layer2-eip
+    protocol.openelb.kubesphere.io/v1alpha1: layer2
+    eip.openelb.kubesphere.io/v1alpha2: layer2-eip
 spec:
   ports:
     - name: http
