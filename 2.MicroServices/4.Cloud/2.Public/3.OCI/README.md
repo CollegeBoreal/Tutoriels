@@ -36,7 +36,11 @@ Response
 ```
 
 
+# References
 
-https://technology.amis.nl/2020/02/06/run-always-free-docker-container-on-oracle-cloud-infrastructure/
+- [ ] [Run Always Free Docker Container on Oracle Cloud Infrastructure](https://technology.amis.nl/2020/02/06/run-always-free-docker-container-on-oracle-cloud-infrastructure)
+- [ ] [Oracle LiveLabs](https://github.com/oracle-livelabs)
 
-https://oracle.github.io/learning-library/oci-library/DevOps/OCI_CLI/OCI_CLI_HOL.html
+https://myservices-collegeboreal.console.oraclecloud.com/
+
+- [ ] [OCI collegeboreal](https://cloud.oracle.com?tenant=collegeboreal&provider=OracleIdentityCloudService&region=ca-toronto-1)
