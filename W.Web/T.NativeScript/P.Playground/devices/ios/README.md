@@ -60,7 +60,9 @@ Vérifier que l'équipement `iOS` aie une connection `Wifi`
 ```
 brew info ios-deploy
 ```
-> Outputs :
+
+
+> Outputs : (Not installed)
 ```yaml
 ==> ios-deploy: stable 1.12.2 (bottled), HEAD
 Install and debug iPhone apps from the command-line
@@ -74,6 +76,33 @@ Required: macOS ✔
 ==> Options
 --HEAD
         Install HEAD version
+==> Analytics
+install: 126 (30 days), 2,945 (90 days), 56,316 (365 days)
+install-on-request: 124 (30 days), 2,941 (90 days), 56,233 (365 days)
+build-error: 3 (30 days)
+```
+
+> Outputs : (Installed) adds 2 lines
+```yaml
+/usr/local/Cellar/ios-deploy/1.12.2 (5 files, 261.4KB) *
+  Poured from bottle using the formulae.brew.sh API on 2023-05-08 at 15:35:07
+```
+
+> Outputs : (Installed)
+```yaml
+==> ios-deploy: stable 1.12.2 (bottled), HEAD
+Install and debug iPhone apps from the command-line
+https://github.com/ios-control/ios-deploy
+/usr/local/Cellar/ios-deploy/1.12.2 (5 files, 261.4KB) *
+  Poured from bottle using the formulae.brew.sh API on 2023-05-08 at 15:35:07
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/ios-deploy.rb
+License: GPL-3.0-or-later and BSD-3-Clause
+==> Requirements
+Build: Xcode (on macOS) ✔
+Required: macOS ✔
+==> Options
+--HEAD
+	Install HEAD version
 ==> Analytics
 install: 126 (30 days), 2,945 (90 days), 56,316 (365 days)
 install-on-request: 124 (30 days), 2,941 (90 days), 56,233 (365 days)
