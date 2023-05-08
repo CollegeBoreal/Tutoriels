@@ -102,7 +102,7 @@ Build: Xcode (on macOS) ✔
 Required: macOS ✔
 ==> Options
 --HEAD
-	Install HEAD version
+       Install HEAD version
 ==> Analytics
 install: 126 (30 days), 2,945 (90 days), 56,316 (365 days)
 install-on-request: 124 (30 days), 2,941 (90 days), 56,233 (365 days)
