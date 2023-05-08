@@ -53,6 +53,8 @@ $ ns devices
 
 Vérifier que l'équipement `iOS` aie une connection `Wifi`
 
+- [ ] [Enabling Developer Mode on a device](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)
+
 ![image](../images/ns-devices-wifi.png)
 
 ## :cl: Tools
