@@ -35,9 +35,14 @@ Step 7: Now you can disconnect USB.
 
 
 ```
-$ xcrun xctrace list devices
+xcrun xctrace list devices
+```
+> Outputs :
+```yaml
 == Devices ==
 iPad (14.2) (c087b75f0d4cc3ce7716ba095f0d4cc3ce7a87c)
+ramena (3DE769BD-B8B6-58BE-B8B6-5AEB8B696FFE)
+antarandolo (16.2) (00008110-001E2B8B6AB8B6801E)
 ```
 
 Taper la commande: 
