@@ -54,3 +54,28 @@ $ ns devices
 Vérifier que l'équipement `iOS` aie une connection `Wifi`
 
 ![image](../images/ns-devices-wifi.png)
+
+## :cl: Tools
+
+```
+brew info ios-deploy
+```
+> Outputs :
+```yaml
+==> ios-deploy: stable 1.12.2 (bottled), HEAD
+Install and debug iPhone apps from the command-line
+https://github.com/ios-control/ios-deploy
+Not installed
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/ios-deploy.rb
+License: GPL-3.0-or-later and BSD-3-Clause
+==> Requirements
+Build: Xcode (on macOS) ✔
+Required: macOS ✔
+==> Options
+--HEAD
+	Install HEAD version
+==> Analytics
+install: 126 (30 days), 2,945 (90 days), 56,316 (365 days)
+install-on-request: 124 (30 days), 2,941 (90 days), 56,233 (365 days)
+build-error: 3 (30 days)
+```
