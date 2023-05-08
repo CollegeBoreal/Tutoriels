@@ -28,6 +28,8 @@ Step 7: Now you can disconnect USB.
 
 ![image](../images/xcode-ios-wifi.png)
 
+- [ ] [Enabling Developer Mode on a device](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)
+
 ![image](../images/code-ios-privacy.png)
 
 
