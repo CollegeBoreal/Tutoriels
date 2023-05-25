@@ -1,6 +1,6 @@
 # Github Learning Lab
 
-
+:x: [Deprecating Learning Lab](https://github.blog/changelog/2022-09-01-deprecating-learning-lab)
 
 # Références
 
