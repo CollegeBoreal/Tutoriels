@@ -43,6 +43,14 @@ Ouvrir Powershell en tant qu'Administrateur
 PS > Install-WindowsFeature Remote-Desktop-Services
 ```
 
+Vérifier
+
+```
+PS > Get-WindowsFeature Remote-Desktop-Services
+```
+
+
+Brice@10.13.237.27
 
 ## Reference:
 
