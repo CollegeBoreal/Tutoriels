@@ -46,9 +46,14 @@ PS > Install-WindowsFeature Remote-Desktop-Services
 Vérifier
 
 ```
-PS > Get-WindowsFeature Remote-Desktop-Services
+PS > Get-WindowsFeature Remote-Desktop-Services  
 ```
-
+> Retourne :
+```yaml
+Display Name                                            Name                       Install State
+------------                                            ----                       -------------
+[ ] Remote Desktop Services                             Remote-Desktop-Services        Available
+```
 
 Brice@10.13.237.27
 
