@@ -45,6 +45,14 @@ Ouvrir Powershell en tant qu'Administrateur
 PS > Install-WindowsFeature Remote-Desktop-Services
 ```
 
+ou
+
+```
+PS > Add-WindowsFeature Remote-Desktop-Services
+```
+
+
+
 Vérifier
 
 ```
@@ -57,7 +65,7 @@ Display Name                                            Name                    
 [ ] Remote Desktop Services                             Remote-Desktop-Services        Available
 ```
 
-Brice@10.13.237.27
+Si ça ne marche pas utiliser `sconfig.md`, l'option `Remote Desktop` existe
 
 ## Reference:
 
