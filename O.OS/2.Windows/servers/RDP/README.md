@@ -65,7 +65,7 @@ Display Name                                            Name                    
 [ ] Remote Desktop Services                             Remote-Desktop-Services        Available
 ```
 
-Si ça ne marche pas utiliser `sconfig.md`, l'option `Remote Desktop` existe
+:bulb: Si ça ne marche pas utiliser `sconfig.md`, l'option `Remote Desktop` existe
 
 ## Reference:
 
