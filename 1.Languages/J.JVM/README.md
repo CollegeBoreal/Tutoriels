@@ -21,10 +21,10 @@ curl -s "https://get.sdkman.io" | zsh
 :round_pushpin: ouvrir un autre terminal et verifier l'installation
 
 ```
-$ sdk version  
-
-SDKMAN 5.7.3+337
+sdk version  
 ```
+> SDKMAN 5.7.3+337
+
 
 
 ## :a: Installation de la machine virtuelle java
