@@ -12,11 +12,9 @@
 
 ## :bulb: Certifications
 
-https://medium.com/@sathishvj/writing-and-passing-the-google-cloud-associate-engineer-certification-a60c2f6d99c2
-
-https://github.com/sathishvj/awesome-gcp-certifications
-
-https://gcpfellow.com/2020/03/14/getting-all-the-10-10-gcp-certificates-how-do-i-start-part-1-x/
+- [ ] [Writing and Passing the Google Cloud Associate Engineer Certification](https://medium.com/@sathishvj/writing-and-passing-the-google-cloud-associate-engineer-certification-a60c2f6d99c2)
+- [ ] [Awesome GCP Certifications](https://github.com/sathishvj/awesome-gcp-certifications)
+- [ ] [Google Cloud Certified Fellow #5](https://gcpfellow.com/2020/03/14/getting-all-the-10-10-gcp-certificates-how-do-i-start-part-1-x)
 
 
 
