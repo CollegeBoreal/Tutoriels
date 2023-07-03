@@ -7,6 +7,7 @@ Des licences éducations sont fournies pour ton enseignement aux liens ci-dessou
 | :one:   | [AWS](1.AWS)              |
 | :two:   | [GCP](2.GCP)              |
 | :three: | [Azure](3.Azure)          |
+| :four:  | [Digital Ocean](https://education.github.com/pack?sort=popularity&tag=Cloud)
 
 # References
 
