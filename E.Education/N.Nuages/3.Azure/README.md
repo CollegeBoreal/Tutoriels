@@ -16,7 +16,7 @@ Les serveurs de courriel du Collège `@collegeboreal.ca` et `@monboreal.ca` sont
 
 
 ### :b: differences between Windows 10 (Editions)
-https://liliputing.com/2015/07/differences-between-windows-10-home-pro-enterprise-and-education.html
+- [ ] [Differences between Windows 10 Home, Pro, Enterprise, and Education](https://liliputing.com/2015/07/differences-between-windows-10-home-pro-enterprise-and-education.html)
 
 ## WSL
 
