@@ -5,15 +5,15 @@ Follow the instructions in [Setting Up Cloud Shell Access to Clusters](https://d
 
 1. Set up an OKE kubeconfig file for use with Cloud Shell:
 
-a. Select a cluster.
-
-b. Click the `Access Cluster` button.
-
-c. Click `Cloud Shell Access`.
-
-d. Click `Launch Cloud Shell` to display the Cloud Shell window.
-
-e. In the Cloud Shell window, run the Oracle Cloud Infrastructure CLI command to set up the kubeconfig file and save it in a location accessible to kubectl. For example:
+  a. Select a cluster.
+  
+  b. Click the `Access Cluster` button.
+  
+  c. Click `Cloud Shell Access`.
+  
+  d. Click `Launch Cloud Shell` to display the Cloud Shell window.
+  
+  e. In the Cloud Shell window, run the Oracle Cloud Infrastructure CLI command to set up the kubeconfig file and save it in a location accessible to kubectl. For example:
 
 ```
 oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.phx.aaaaaaaaae... \
