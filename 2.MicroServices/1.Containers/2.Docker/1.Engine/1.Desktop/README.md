@@ -78,7 +78,7 @@ sudo hdiutil detach /Volumes/Docker
 > Returns
 ```
 Password:
-"disk5" ejected.
+"disk4" ejected.
 ```
 
 :bulb: Test 
