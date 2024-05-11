@@ -34,3 +34,4 @@ Pkg.add("IJulia")
 
 - [ ] [How to Add Julia to Jupyter Notebook](https://datatofish.com/add-julia-to-jupyter)
 - [ ] [How to install Jupyter Notebook on Mac using Homebrew](https://medium.com/@iamclement/how-to-install-jupyter-notebook-on-mac-using-homebrew-528c39fd530f)
+- [ ] [Collection of Snippets for Julia](https://wiki.geany.org/snippets/julia/start)
