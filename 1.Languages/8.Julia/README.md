@@ -28,6 +28,28 @@ Pkg.add("IJulia")
 ```
 
 
+### Update kernel path
+
+```
+/opt/homebrew/bin/jupyter --paths
+```
+> Returns
+```powershell
+config:
+    /Users/user/.jupyter
+    /Users/user/Library/Python/3.10/etc/jupyter
+    /opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/etc/jupyter
+    /usr/local/etc/jupyter
+    /etc/jupyter
+data:
+    /Users/user/Library/Jupyter
+    /Users/user/Library/Python/3.10/share/jupyter
+    /opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/share/jupyter
+    /usr/local/share/jupyter
+    /usr/share/jupyter
+runtime:
+    /Users/user/Library/Jupyter/runtime
+```
 
 
 # References
