@@ -30,6 +30,8 @@ Pkg.add("IJulia")
 
 ### Update kernel path
 
+- [ ] Check `Jupyter` config paths
+
 ```
 /opt/homebrew/bin/jupyter --paths
 ```
@@ -51,6 +53,41 @@ runtime:
     /Users/user/Library/Jupyter/runtime
 ```
 
+- [ ] Find 'kernels` data folder
+
+```
+find ${HOME}/Library/Jupyter -name "kernels"
+```
+> Returns
+```powershell
+/Users/user/Library/Jupyter/kernels
+```
+
+- [ ] Find 'kernels` data files
+
+```
+find ${HOME}/Library/Jupyter/kernels -name "kernel.json"
+```
+> Returns
+```powershell
+/Users/user/Library/Jupyter/kernels/julia-1.10/kernel.json
+/Users/user/Library/Jupyter/kernels/julia-1.9/kernel.json
+```
+
+- [ ] Check if configured kernels matches `juliaup` configuration
+
+```
+find ${HOME}/Library/Jupyter/kernels -name "kernel.json" -exec grep julia {} \;
+```
+> Returns
+```powershell
+    "/Users/user/.julia/juliaup/julia-1.10.5+0.aarch64.apple.darwin14/bin/julia",
+    "/Users/user/.julia/packages/IJulia/bHdNn/src/kernel.jl",
+  "language": "julia",
+    "/Users/user/.juliaup/bin/julia",
+    "/Users/user/.julia/packages/IJulia/Vo51o/src/kernel.jl",
+  "language": "julia",
+```
 
 # References
 
