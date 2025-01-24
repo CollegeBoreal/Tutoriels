@@ -105,7 +105,13 @@ To update Julia and move all your existing packages along, follow these steps:
 ```
 juliaup update
 ```
-
+> Returns
+```powershell
+Checking for new Julia versions
+Updating channel release
+Installing Julia 1.11.3+0.aarch64.apple.darwin14
+Checking standard library notarization............................................................done.
+```
 
 This updates Julia to the latest version in the release channel.
 
