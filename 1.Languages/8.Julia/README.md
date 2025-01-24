@@ -119,7 +119,6 @@ println(DEPOT_PATH)
 ```
 > Returns
 ```powershell
-```
 julia> println(DEPOT_PATH)
 ["/Users/me/.julia", "/Users/me/.julia/juliaup/julia-1.11.1+0.aarch64.apple.darwin14/local/share/julia", "/Users/me/.julia/juliaup/julia-1.11.1+0.aarch64.apple.darwin14/share/julia"]
 ```
