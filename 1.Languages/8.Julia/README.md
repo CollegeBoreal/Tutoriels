@@ -100,7 +100,7 @@ find ${HOME}/Library/Jupyter/kernels -name "kernel.json" -exec grep julia {} \;
 To update Julia and move all your existing packages along, follow these steps:
 
 1. Update Julia using juliaup
-	•	Open your terminal and run the following command:
+	- Open your terminal and run the following command:
 
 ```
 juliaup update
@@ -112,7 +112,7 @@ This updates Julia to the latest version in the release channel.
 2. Backup your existing packages (Optional)
 
 Although package environments should carry over automatically, it’s always a good idea to back them up:
-	•	Locate your Julia package directory. You can find it by running this command in Julia:
+	- Locate your Julia package directory. You can find it by running this command in Julia:
 
 ```
 println(DEPOT_PATH)
@@ -124,31 +124,31 @@ julia> println(DEPOT_PATH)
 ```
 
 
-	•	The .julia directory in your home folder typically contains your packages. Back up this directory if needed.
+	- The .julia directory in your home folder typically contains your packages. Back up this directory if needed.
 
 3. Run Julia after the update
-	•	Start the new version of Julia by typing julia in the terminal.
-	•	Julia uses environments to manage packages. Your existing packages are associated with your project or global environment (~/.julia/environments).
-	•	Run this command to ensure that your previous global environment is intact:
+	- Start the new version of Julia by typing julia in the terminal.
+	- Julia uses environments to manage packages. Your existing packages are associated with your project or global environment (~/.julia/environments).
+	- Run this command to ensure that your previous global environment is intact:
 
 ```julia
 using Pkg
 Pkg.status()
 ```
 
-	•	If all packages are listed as before, you’re good to go.
+	- If all packages are listed as before, you’re good to go.
 
 4. Resolve Missing or Incompatible Packages
 
 If you encounter any issues with missing or incompatible packages after the update:
-	•	Activate your environment and resolve issues:
+	- Activate your environment and resolve issues:
 
 ```julia
 using Pkg
 Pkg.instantiate()  # Ensures dependencies are installed
 ```
 
-	•	Update your packages to ensure compatibility with the new Julia version:
+	- Update your packages to ensure compatibility with the new Julia version:
 
 ```julia
 Pkg.update()
