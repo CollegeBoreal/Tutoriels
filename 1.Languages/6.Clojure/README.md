@@ -37,6 +37,7 @@ lein --version
 $ lein repl
 ```
 <details>
+<summary>:one: Output</summary>
 
 ```powershell
   nREPL server started on port 62081 on host 127.0.0.1 - nrepl://127.0.0.1:62081
