@@ -44,8 +44,9 @@ cd Developer
    
    - * example
 
+   ```sh
+   git clone https://github.com/CollegeBoreal/INF1039-202-20A-01.git
    ```
-   $ git clone https://github.com/CollegeBoreal/INF1039-202-20A-01.git
    
 * allez dans le répertoire du cours
 
@@ -55,28 +56,28 @@ cd INF1039-202-20A-01
 
 ## :two: Créer son premier fichier sous git (utiliser vi)
 * Creer un fichier et l'editer 
-```
-$ nano 300098957.md
+```sh
+nano 300098957.md
 ```
 * mettre le fichier en scene (add to stage)
-```
-$ git add .
+```sh
+git add .
 ```
 > Vérifier son status avec (doit etre vert)  
-    ```
-    $ git status
+    ```sh
+    git status
     ```
 
 * donner un commentaire aux fichiers a enregistrer (commit)
-```
-$ git commit -m "Mon commentaire"
+```sh
+git commit -m "Mon commentaire"
 ```
 
 :warning: Se referer à la section `Configuration d'informations personnelles` pour le premier `commit`
 
 * envoyer les modifications locales au serveur github
-```
-$ git push
+```sh
+git push
 ```
 
 ## :three: Configurer GIT `~/.gitconfig`
@@ -85,14 +86,14 @@ $ git push
 
 * Changer l'éditeur par défaut de `vi` à `nano`
 
-```
-$ git config --global core.editor "nano"
+```sh
+git config --global core.editor "nano"
 ```
 
 * Editer son nom utilisateur `github` et son courriel
 
-```
-$ git config --global --edit
+```sh
+git config --global --edit
 ```
 
 * Rajouter la section `[user]` et remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
@@ -108,20 +109,20 @@ $ git config --global --edit
 ```
 
 ## Metter à jour mon rèpertoire local (pull)
-```
-$ git pull 
+```sh
+git pull 
 ```
 
 # Suppressions
 
 ## Supprimer un fichier appellé `monfichier.md`
-```
-$ git rm monfichier.md 
+```sh
+git rm monfichier.md 
 ```
 
 ## Supprimer (réccursivement) un répertoire appellé `monrepertoire`
-```
-$ git rm -rf monrepertoire 
+```sh
+git rm -rf monrepertoire 
 ```
 
 # Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
