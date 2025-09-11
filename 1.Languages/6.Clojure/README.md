@@ -1,23 +1,31 @@
 # :six: Clojure
 
 
-## :o: Installer la JVM
+## :o: Installation 
+
+- [ ] Installer la JVM
 
 [J.JVM](../J.JVM)
+
+- [ ] Créer le répertoire `~/.lein`
+
+```sh
+mkdir ~/.lein
+```
 
 ## :a: Installation de l'environnement de projet [leiningen](https://leiningen.org)
 
 * Installer dans le terminal
 
-```
-$ sdk install leiningen
+```sh
+sdk install leiningen
 ```
 
 
 * Pour tester l'installation
 
 ```
-$ % lein --version 
+lein --version 
 Leiningen 2.9.3-1 on Java 11.0.7 OpenJDK 64-Bit Server VM
 ```
 
