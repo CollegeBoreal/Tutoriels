@@ -16,7 +16,7 @@
 
 ## :zero: Installation
 
-:point_right: Suivre l'[Installation](Installation.md)
+:point_right: Suivre l'[Installation](Installation)
 
 ## :one: Les premiers pas avec git
 
