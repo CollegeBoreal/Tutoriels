@@ -25,7 +25,7 @@ Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage
 ### The Dynamic & Scripting Gang
 
 - **[:two: Python](2.Python) :** Le langage amical et lisible qui te permet de tout faire, à condition de respecter l'indentation.
-- **[P.PHP](P.PHP) :** Le langage tenu ensemble par du ruban adhésif qui a fait tourner le web ancien et refuse de mourir, à la stupéfaction générale.
+- **[:parking: PHP](P.PHP) :** Le langage tenu ensemble par du ruban adhésif qui a fait tourner le web ancien et refuse de mourir, à la stupéfaction générale.
 - **[:seven: TypeScript](7.TypeScript) :** JavaScript qui porte un costume et tient un clipboard pour garder son frère chaotique sous contrôle.
 
 ### The High-Performance Newcomers
