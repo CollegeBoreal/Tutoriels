@@ -9,10 +9,10 @@ Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage
 ### The Compiled Crew & Systems Squad
 
 - **[R.Rust](R.Rust)  :** Le langage qui passe plus de temps à empêcher les erreurs mémoire qu'à exécuter ton code.
-- **Go (4) :** Un langage simple et ennuyeux qui fait avancer les choses car il n'a pas le temps pour tes abstractions fantaisistes.
-- **ADA (D) :** Le langage où écrire "Hello World" donne l'impression de remplir une demande de permis au Ministère de la Paperasse.
-- **LLVM (L) :** Le traducteur universel qui transforme ton code sophistiqué en murmures machines pour que tu n'aies pas à le faire.
-- **ASM (A) :** Tu dis à l'ordinateur exactement quoi faire, et il trouve encore le moyen de se tromper.
+- **[:four: Go](4.Go) :** Un langage simple et ennuyeux qui fait avancer les choses car il n'a pas le temps pour tes abstractions fantaisistes.
+- **[D.ADA](D.ADA) :** Le langage où écrire "Hello World" donne l'impression de remplir une demande de permis au Ministère de la Paperasse.
+- **[L.LLVM](L.LLVM) :** Le traducteur universel qui transforme ton code sophistiqué en murmures machines pour que tu n'aies pas à le faire.
+- **[A.ASM](A.ASM) :** Tu dis à l'ordinateur exactement quoi faire, et il trouve encore le moyen de se tromper.
 
 ### The Functional Family
 
