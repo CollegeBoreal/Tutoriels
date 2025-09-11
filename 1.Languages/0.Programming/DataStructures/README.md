@@ -6,13 +6,13 @@ https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures
 There is no perfect data structure design;
 ```
 
-<img src="images/Data_Compromise.png" alt="image" width="442" height="443"/>
+<img src="../images/Data_Compromise.png" alt="image" width="442" height="443"/>
 
-<img src="images/Design_Space.png" alt="image" width="424" height="542"/>
+<img src="../images/Design_Space.png" alt="image" width="424" height="542"/>
 
-![image](images/First_Principles.png)
+![image](../images/First_Principles.png)
 
-![image](images/Periodic_Tables.png)
+![image](../images/Periodic_Tables.png)
 
 
 # References:
