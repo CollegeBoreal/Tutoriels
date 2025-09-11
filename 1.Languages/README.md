@@ -2,27 +2,27 @@
 
 ## :a: [Programming Paradigm](0.Programming)
 
-## 
-
 ## :b: Descriptions
 
-**Rust (R):** The language that spends more time ensuring you can't cause a memory error than it does actually running your code.
-**Go (4):** A simple, boring language that gets stuff done because it has no time for your fancy abstractions.
-**ADA (D):** The language where writing "Hello World" feels like filing a permit request with the Department of Bureaucracy.
-**LLVM (L):** The universal translator that turns your fancy code into machine mumbles so you don't have to.
-**ASM (A):** You tell the computer exactly what to do, and it still finds a way to do it wrong.
+Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage.
 
-**Haskell (3):** Where your code is so mathematically pure it has a PhD, but it can't print "Hello World" without a monadic incantation.
-**Clojure (6):** A Lisp that decided to wear the JVM's clothes and become incredibly practical and cool.
-**Elm (5):** The friendly functional language that holds your hand so tightly you can't ever make a runtime error.
-**:one: [Scala](1.Scala):** The language that gives you so many powerful tools you'll inevitably build an incomprehensible abstract nightmare.
+- **Rust (R) :** Le langage qui passe plus de temps à empêcher les erreurs mémoire qu'à exécuter ton code.
+- **Go (4) :** Un langage simple et ennuyeux qui fait avancer les choses car il n'a pas le temps pour tes abstractions fantaisistes.
+- **ADA (D) :** Le langage où écrire "Hello World" donne l'impression de remplir une demande de permis au Ministère de la Paperasse.
+- **LLVM (L) :** Le traducteur universel qui transforme ton code sophistiqué en murmures machines pour que tu n'aies pas à le faire.
+- **ASM (A) :** Tu dis à l'ordinateur exactement quoi faire, et il trouve encore le moyen de se tromper.
 
-**:two: [Python](2.Python):** The friendly, readable language that lets you do anything, as long you do it with the proper indentation.
-**PHP (P):** The duct-taped-together language that powered the old web and refuses to die, much to everyone's amazement.
-**TypeScript (7):** JavaScript wearing a business suit and carrying a clipboard to keep its chaotic sibling in check.
+- **Haskell (3) :** Où ton code est si mathématiquement pur qu'il a un doctorat, mais ne peut pas imprimer "Hello World" sans une incantation monadique.
+- **Clojure (6) :** Un Lisp qui a décidé de porter les habits de la JVM pour devenir incroyablement pratique et cool.
+- **Elm (5) :** Le langage fonctionnel amical qui te tient la main si fort que tu ne peux jamais faire d'erreur à l'exécution.
+- **:one: [Scala](1.Scala) :** Le langage qui te donne tellement d'outils puissants que tu finiras inévitablement par construire un cauchemar abstrait incompréhensible.
 
-**Julia (8):** The speed demon of scientific computing that's tired of you asking if it's just for data science.
-**JVM (J):** The rock-solid party mansion where languages like Scala and Clojure come to hang out and take out their own garbage.
+- **:two: [Python](2.Python) :** Le langage amical et lisible qui te permet de tout faire, à condition de respecter l'indentation.
+- **PHP (P) :** Le langage tenu ensemble par du ruban adhésif qui a fait tourner le web ancien et refuse de mourir, à la stupéfaction générale.
+- **TypeScript (7) :** JavaScript qui porte un costume et tient un clipboard pour garder son frère chaotique sous contrôle.
+
+- **Julia (8) :** Le bolide du calcul scientifique qui en a marre qu'on lui demande si ce n'est que pour la data science.
+- **JVM (J) :** Le manoir solide où des langages comme Scala et Clojure viennent traîner et sortir leurs propres poubelles.
 
 ***
-*Disclaimer: This is all in good fun. Every language is brilliant and has its rightful place.*
+*Disclaimer: C'est fait pour rire. Chaque langage est brillant et a sa place.*
