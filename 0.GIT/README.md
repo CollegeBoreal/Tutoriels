@@ -22,12 +22,12 @@
 
 * Ouvrir la fenetre Git bash
 * Creer un repertoire pour faire du développement (en anglais et avec `D` en majuscule)
-```
-$ mkdir Developer
+```sh
+mkdir Developer
 ```
 * changer de repertoire pour faire du développement
-```
-$ cd Developer
+```sh
+cd Developer
 ```
 
 * Cloner votre premier repertoire git
@@ -49,8 +49,8 @@ $ cd Developer
    
 * allez dans le répertoire du cours
 
-```
-$ cd INF1039-202-20A-01
+```sh
+cd INF1039-202-20A-01
 ```
 
 ## :two: Créer son premier fichier sous git (utiliser vi)
