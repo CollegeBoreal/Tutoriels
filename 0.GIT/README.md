@@ -20,7 +20,7 @@
 
 ## :one: Les premiers pas avec git
 
-* Ouvrir la fenetre Git bash
+* Ouvrir une fenêtre de ligne de commande
 * Creer un repertoire pour faire du développement (en anglais et avec `D` en majuscule)
 ```sh
 mkdir Developer
