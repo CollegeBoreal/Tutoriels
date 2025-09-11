@@ -24,13 +24,13 @@ Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage
 
 ### The Dynamic & Scripting Gang
 
-- **:two: [Python](2.Python) :** Le langage amical et lisible qui te permet de tout faire, à condition de respecter l'indentation.
-- **PHP (P) :** Le langage tenu ensemble par du ruban adhésif qui a fait tourner le web ancien et refuse de mourir, à la stupéfaction générale.
-- **TypeScript (7) :** JavaScript qui porte un costume et tient un clipboard pour garder son frère chaotique sous contrôle.
+- **[:two: Python](2.Python) :** Le langage amical et lisible qui te permet de tout faire, à condition de respecter l'indentation.
+- **[P.PHP](P.PHP) :** Le langage tenu ensemble par du ruban adhésif qui a fait tourner le web ancien et refuse de mourir, à la stupéfaction générale.
+- **[:seven: TypeScript](7.TypeScript) :** JavaScript qui porte un costume et tient un clipboard pour garder son frère chaotique sous contrôle.
 
 ### The High-Performance Newcomers
 
-- **Julia (8) :** Le bolide du calcul scientifique qui en a marre qu'on lui demande si ce n'est que pour la data science.
+- **[8.Julia](8.Julia) :** Le bolide du calcul scientifique qui en a marre qu'on lui demande si ce n'est que pour la data science.
 - **JVM (J) :** Le manoir solide où des langages comme Scala et Clojure viennent traîner et sortir leurs propres poubelles.
 
 ***
