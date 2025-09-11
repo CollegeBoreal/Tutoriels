@@ -98,7 +98,7 @@ git config --global --edit
 
 * Rajouter la section `[user]` et remplacer `MonNom` et `MonCourriel@me_remplacer.com` par le votre
 
-```
+```ini
 [core]
         editor = nano
 
