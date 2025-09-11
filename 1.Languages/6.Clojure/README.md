@@ -33,8 +33,8 @@ lein --version
 
 * Dans le terminal
 
-```
-$ lein repl
+```sh
+lein repl
 ```
 <details>
 <summary>:receipt: Sortie</summary>
