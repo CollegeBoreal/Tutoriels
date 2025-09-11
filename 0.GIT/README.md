@@ -55,13 +55,13 @@ cd INF1039-202-20A-01
 ```
 
 ## :two: Créer son premier fichier sous git (utiliser vi)
-* Creer un fichier et l'editer 
+* Creer un fichier et l'éditer, par example un fichier ayant votre :id: Boréal avec l'extension `MarkDown` $\textbf{.md}$
 ```sh
 nano 300098957.md
 ```
 * mettre le fichier en scene (add to stage)
 ```sh
-git add .
+git add 300098957.md
 ```
 > Vérifier son status avec (doit etre vert)  
 ```sh
