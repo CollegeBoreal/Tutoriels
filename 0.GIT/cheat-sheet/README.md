@@ -1,3 +1,3 @@
-<iframe src="git-cheat-sheet-education.pdf" width="100%" height="500px"> </iframe>
+[git-cheat-sheet-education](git-cheat-sheet-education.pdf)
 
 <img src=git-cheat-sheet-education.png width='' height='' > </img>
