@@ -24,10 +24,10 @@ sdk install leiningen
 
 * Pour tester l'installation
 
+```sh
+lein --version
 ```
-lein --version 
-Leiningen 2.9.3-1 on Java 11.0.7 OpenJDK 64-Bit Server VM
-```
+> Leiningen 2.11.2 on Java 11.0.19 OpenJDK 64-Bit Server VM
 
 ## :b: Lancer la Ligne de Commandes (CLI) Clojure 
 
