@@ -17,7 +17,7 @@ Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage
 ### The Functional Family
 
 
-- **Haskell (3) :** Où ton code est si mathématiquement pur qu'il a un doctorat, mais ne peut pas imprimer "Hello World" sans une incantation monadique.
+- **[:three: Haskell](3.Haskell) :** Où ton code est si mathématiquement pur qu'il a un doctorat, mais ne peut pas imprimer "Hello World" sans une incantation monadique.
 - **[:six: Clojure](6.Clojure) :** Un Lisp qui a décidé de porter les habits de la JVM pour devenir incroyablement pratique et cool.
 - **[:five: Elm](5.elm) :** Le langage fonctionnel amical qui te tient la main si fort que tu ne peux jamais faire d'erreur à l'exécution.
 - **[:one: Scala](1.Scala) :** Le langage qui te donne tellement d'outils puissants que tu finiras inévitablement par construire un cauchemar abstrait incompréhensible.
