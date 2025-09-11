@@ -1,6 +1,6 @@
 # Programming
 
-:pushpin: [Paradigme](Paradigm.md)
+:pushpin: [Paradigme](Paradigm)
 
 :pushpin: [Structures de donnees](DataStructures.md)
 
