@@ -64,9 +64,9 @@ nano 300098957.md
 git add .
 ```
 > Vérifier son status avec (doit etre vert)  
-    ```sh
-    git status
-    ```
+```sh
+git status
+```
 
 * donner un commentaire aux fichiers a enregistrer (commit)
 ```sh
