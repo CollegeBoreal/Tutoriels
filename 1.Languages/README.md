@@ -30,8 +30,8 @@ Bien sûr. Voici des descriptions humoristiques en une ligne pour chaque langage
 
 ### The High-Performance Newcomers
 
-- **[8.Julia](8.Julia) :** Le bolide du calcul scientifique qui en a marre qu'on lui demande si ce n'est que pour la data science.
-- **JVM (J) :** Le manoir solide où des langages comme Scala et Clojure viennent traîner et sortir leurs propres poubelles.
+- **[:eight: Julia](8.Julia) :** Le bolide du calcul scientifique qui en a marre qu'on lui demande si ce n'est que pour la data science.
+- **[J.JVM](J.JVM) :** Le manoir solide où des langages comme Scala et Clojure viennent traîner et sortir leurs propres poubelles.
 
 ***
 *Disclaimer: C'est fait pour rire. Chaque langage est brillant et a sa place.*
