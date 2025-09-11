@@ -70,7 +70,7 @@ git status
 
 * donner un commentaire aux fichiers a enregistrer (commit)
 ```sh
-git commit -m "Mon commentaire"
+git commit --message "Mon commentaire"
 ```
 
 :warning: Se referer à la section `Configuration d'informations personnelles` pour le premier `commit`
