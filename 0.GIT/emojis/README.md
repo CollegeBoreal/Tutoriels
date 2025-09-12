@@ -32,7 +32,7 @@
 | [top](#symbols) | :koko: | `:koko:` | :sa: | `:sa:` | [top](#table-of-contents) |
 
 
-## [Flags](flags.md)
+## [Flags](flags)
 
 ## [Geek Cheat Sheet](https://github.com/buildkite/emojis)
 
