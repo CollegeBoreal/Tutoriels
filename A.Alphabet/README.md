@@ -1,5 +1,7 @@
 # :a: Alphabet
 
+**Note on Terminology:** In many French IT environments, the English terms (like "pipe", "background", "tab completion", "shell") are very commonly used and often preferred over their French translations, especially in spoken, technical discussion. The translations provided here are the correct formal equivalents.
+
 ### 1. Special Shell Characters (Métacaractères)
 
 Ces caractères sont interprétés par le `shell` lui-même pour exécuter des opérations spécifiques.
@@ -66,4 +68,3 @@ Ces combinaisons de touches envoient des signaux de contrôle à l'émulateur de
 | **Alt+B** / **Alt+F** | Déplace le curseur d'un mot vers l'arrière/l'avant. |
 | **Delete / Backspace** (Suppr / Retour arrière) | Supprime les caractères. |
 
-**Note on Terminology:** In many French IT environments, the English terms (like "pipe", "background", "tab completion", "shell") are very commonly used and often preferred over their French translations, especially in spoken, technical discussion. The translations provided here are the correct formal equivalents.
