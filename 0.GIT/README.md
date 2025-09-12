@@ -72,13 +72,21 @@ git status
 ```sh
 git commit --message "Mon commentaire"
 ```
-
 :warning: Se referer à la section `Configuration d'informations personnelles` pour le premier `commit`
 
 * envoyer les modifications locales au serveur github
+  
 ```sh
 git push
 ```
+
+:secret: Remonter les informations vers le serveur requiert votre `utilisateur` et `mot de passe`
+
+```powershell
+Username for 'https://github.com': b300098957
+Password for 'https://b300098957@github.com':
+```
+
 
 ## :three: Configurer GIT `~/.gitconfig`
 
