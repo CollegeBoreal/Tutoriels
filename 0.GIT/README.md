@@ -121,18 +121,6 @@ git config --global --edit
 git pull 
 ```
 
-# Suppressions
-
-## Supprimer un fichier appellé `monfichier.md`
-```sh
-git rm monfichier.md 
-```
-
-## Supprimer (réccursivement) un répertoire appellé `monrepertoire`
-```sh
-git rm -rf monrepertoire 
-```
-
 # :secret: Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 ### ~/.ssh/config
