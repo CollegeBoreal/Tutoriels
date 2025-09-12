@@ -1,19 +1,23 @@
 # Tag a project
 
-```
-% git tag --annotate v1.0.1 --message "Devoir 4.SQL-NoSQL"
-```
-
-```
-% git tag --list
+```sh
+git tag --annotate v1.0.1 --message "Devoir 4.SQL-NoSQL"
 ```
 
-```
- % git show v1.0.1 
+```sh
+git tag --list
 ```
 
+```sh
+ git show v1.0.1 
 ```
-% git checkout v1.0.1
+
+```sh
+git checkout v1.0.1
+```
+<details>
+ <summary>Imprime</summary>
+```powershell
 Note: checking out 'v1.0.1'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
@@ -27,6 +31,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at 53934f6 .
 ```
+</details>
 
 
 
