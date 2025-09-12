@@ -9,7 +9,7 @@
 | [top](#symbols) | :u6708: | `:u6708:` $\textit{- Yuè}$ | :u6709: | `:u6709:` $\textit{- Yǒu}$ | [top](#table-of-contents) |
 | [top](#symbols) | :u6307: | `:u6307:` $\textit{- Zhǐ}$ | :ideograph_advantage: | `:ideograph_advantage:` | [top](#table-of-contents) |
 | [top](#symbols) | :u5272: | `:u5272:` | :u7121: | `:u7121:` $\textit{- Wú}$ (Without) | [top](#table-of-contents) |
-| [top](#symbols) | :u7981: | `:u7981:` | :accept: | `:accept:` $\textit{- Kě[yǐ]}$ | [top](#table-of-contents) |
+| [top](#symbols) | :u7981: | `:u7981:` $\textit{- Jìn}$ (ban) | :accept: | `:accept:` $\textit{- Kě[yǐ]}$ | [top](#table-of-contents) |
 | [top](#symbols) | :u7533: | `:u7533:` $\textit{- Shēn}$ (3-5 pm)| :u5408: | `:u5408:` $\textit{- Hé - [Gè]}$| [top](#table-of-contents) |
 | [top](#symbols) | :u7a7a: | `:u7a7a:` | :congratulations: | `:congratulations:` $\textit{- Zhù}$  | [top](#table-of-contents) |
 | [top](#symbols) | :secret: | `:secret:` $\textit{- Mi}$ | :u55b6: | `:u55b6:` | [top](#table-of-contents) |
