@@ -16,6 +16,8 @@
 | [top](#symbols) | :u6e80: | `:u6e80:` | | | [top](#table-of-contents) |
 
 
+| | ico | shortcode | ico | shortcode | |
+| - | :-: | - | :-: | - | - |
 | [top](#symbols) | :capital_abcd: | `:capital_abcd:` | :abcd: | `:abcd:` | [top](#table-of-contents) |
 | [top](#symbols) | :1234: | `:1234:` | :symbols: | `:symbols:` | [top](#table-of-contents) |
 | [top](#symbols) | :abc: | `:abc:` | :a: | `:a:` | [top](#table-of-contents) |
