@@ -17,6 +17,7 @@ git checkout v1.0.1
 ```
 <details>
  <summary>Imprime</summary>
+ 
 ```powershell
 Note: checking out 'v1.0.1'.
 
@@ -31,6 +32,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at 53934f6 .
 ```
+
 </details>
 
 
