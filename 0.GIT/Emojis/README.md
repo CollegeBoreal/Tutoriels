@@ -18,7 +18,7 @@
 | [top](#symbols) | :parking: | `:parking:` | :sos: | `:sos:` | [top](#table-of-contents) |
 | [top](#symbols) | :up: | `:up:` | :vs: | `:vs:` | [top](#table-of-contents) |
 | [top](#symbols) | :koko: | `:koko:` | :sa: | `:sa:` | [top](#table-of-contents) |
-| [top](#symbols) | :u6708: | `:u6708:` | :u6709: | `:u6709:` | [top](#table-of-contents) |
+| [top](#symbols) | :u6708: | `:u6708:` (yue) | :u6709: | `:u6709:` | [top](#table-of-contents) |
 | [top](#symbols) | :u6307: | `:u6307:` | :ideograph_advantage: | `:ideograph_advantage:` | [top](#table-of-contents) |
 | [top](#symbols) | :u5272: | `:u5272:` | :u7121: | `:u7121:` | [top](#table-of-contents) |
 | [top](#symbols) | :u7981: | `:u7981:` | :accept: | `:accept:` | [top](#table-of-contents) |
