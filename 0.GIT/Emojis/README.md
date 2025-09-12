@@ -24,7 +24,7 @@
 | [top](#symbols) | :u7981: | `:u7981:` | :accept: | `:accept:` | [top](#table-of-contents) |
 | [top](#symbols) | :u7533: | `:u7533:` | :u5408: | `:u5408:` | [top](#table-of-contents) |
 | [top](#symbols) | :u7a7a: | `:u7a7a:` | :congratulations: | `:congratulations:` | [top](#table-of-contents) |
-| [top](#symbols) | :secret: | `:secret:` $\textbf{mi}$ | :u55b6: | `:u55b6:` | [top](#table-of-contents) |
+| [top](#symbols) | :secret: | `:secret:` $\textit{mi}$ | :u55b6: | `:u55b6:` | [top](#table-of-contents) |
 | [top](#symbols) | :u6e80: | `:u6e80:` | | | [top](#table-of-contents) |
 
 ## [Flags](flags.md)
