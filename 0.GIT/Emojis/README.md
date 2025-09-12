@@ -13,7 +13,7 @@
 | [top](#symbols) | :u7533: | `:u7533:` $\textit{- Shēn}$ (3-5 pm)| :u5408: | `:u5408:` $\textit{- Hé - [Gè]}$| [top](#table-of-contents) |
 | [top](#symbols) | :u7a7a: | `:u7a7a:` | :congratulations: | `:congratulations:` $\textit{- Zhù}$  | [top](#table-of-contents) |
 | [top](#symbols) | :secret: | `:secret:` $\textit{- Mi}$ | :u55b6: | `:u55b6:` | [top](#table-of-contents) |
-| [top](#symbols) | :u6e80: | `:u6e80:` | | | [top](#table-of-contents) |
+| [top](#symbols) | :u6e80: | `:u6e80:` $\textit{- Mǎn}$ (Full) | | | [top](#table-of-contents) |
 
 
 | | ico | shortcode | ico | shortcode | |
