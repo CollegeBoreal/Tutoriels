@@ -14,11 +14,11 @@
 - [ ] [LinkedIn Learning: GitOps Foundations](https://www.linkedin.com/learning/gitops-foundations)
 - [ ] [10 git commands you should know](https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c)
 
-## :zero: Installation
+### :zero: Installation
 
 :point_right: Suivre l'[Installation](Installation)
 
-## :one: Les premiers pas avec git
+### :one: Les premiers pas avec git
 
 * Ouvrir une fenêtre de ligne de commande
 * Creer un repertoire pour faire du développement (en anglais et avec `D` en majuscule)
@@ -54,7 +54,7 @@ cd Developer
 cd INF1039-202-20A-01
 ```
 
-## :two: Créer son premier fichier sous git (utiliser vi)
+### :two: Créer son premier fichier sous git (utiliser vi)
 * Creer un fichier et l'éditer, par example un fichier ayant votre :id: Boréal avec l'extension `MarkDown` $\textbf{.md}$
 ```sh
 nano 300098957.md
@@ -87,8 +87,7 @@ Username for 'https://github.com': b300098957
 Password for 'https://b300098957@github.com':
 ```
 
-
-## :three: Configurer GIT `~/.gitconfig`
+### :three: Configurer GIT `~/.gitconfig`
 
 :bulb: pour soumettre son travail vers `github.com`
 
@@ -116,12 +115,12 @@ git config --global --edit
         email = MonCourriel@me_remplacer.com
 ```
 
-## Metter à jour mon rèpertoire local (pull)
+### :u6307: Metter à jour mon rèpertoire local (pull)
 ```sh
 git pull 
 ```
 
-# :secret: Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+## :secret: Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 ### ~/.ssh/config
 
@@ -144,7 +143,9 @@ Host github.com
  Port 443
 ```
 
-# [http buffer](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)
+---
+
+## [http buffer](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)
 
 ```
 error: RPC failed; curl 18 transfer closed with outstanding read data remaining
@@ -169,7 +170,7 @@ La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
 ```
 
 
-# Gestion des fichiers volumineux
+## Gestion des fichiers volumineux
 
 * Utiliser LFS (Large File System)
 
@@ -189,13 +190,13 @@ La suite du fichier de configuration `~/.gitconfig` devrait ressembler à ceci
         required = true
 ```
 
-# Git & zsh
+## Git & zsh
 
 https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/
 
 
 
-# Tutoriel sur Vim (Éditeur utilisé par Unix)
+## Tutoriel sur Vim (Éditeur utilisé par Unix)
 
 https://www.filesilo.co.uk/video-tutorials/introduction-to-vim/
 
