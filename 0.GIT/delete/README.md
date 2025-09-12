@@ -1,6 +1,21 @@
-# Deleted file to be recovered
+# Suppressions
 
-https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git
+## :a: Supprimer
+
+### Supprimer un fichier appellé `monfichier.md`
+```sh
+git rm monfichier.md 
+```
+
+### Supprimer (réccursivement) un répertoire appellé `monrepertoire`
+```sh
+git rm -rf monrepertoire 
+```
+
+
+## :b: Récupérer
+
+[Deleted file to be recovered](https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git)
 
 * If the deletion has not been committed, the command below will restore the deleted file in the working tree.
 
