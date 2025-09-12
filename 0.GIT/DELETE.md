@@ -1,4 +1,4 @@
-# Delete file to be recovered
+# Deleted file to be recovered
 
 https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git
 
