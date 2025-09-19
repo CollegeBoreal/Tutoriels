@@ -16,7 +16,7 @@ https://www.cbtnuggets.com/it-training/cisco-ccna-icnd1-100-105
 
 ## Packet Tracer
 
-   https://www.netacad.com/fr/courses/packet-tracer-download/
+   https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
 ---
 
