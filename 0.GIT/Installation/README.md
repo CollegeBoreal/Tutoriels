@@ -4,7 +4,7 @@
 
 ### Installation avec [chocolatey](https://chocolatey.org/install) - Pour [Windows](../../O.OS/2.Windows/servers) Seulement
 
-:warning: Utiliser `Powershell`
+:warning: Utiliser `Powershell` (Administrateur)
 
 ```
 choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf"
