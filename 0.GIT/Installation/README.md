@@ -2,7 +2,7 @@
 
 ## :one: Installation avec un [Package Manager](../P.Plateformes/P.PackageManager) (Recommandé)
 
-### Installation avec [chocolatey](https://chocolatey.org) - Pour [Windows](../../O.OS/2.Windows/servers) Seulement
+### Installation avec [chocolatey](https://chocolatey.org/install) - Pour [Windows](../../O.OS/2.Windows/servers) Seulement
 
 :warning: Utiliser `Powershell`
 
