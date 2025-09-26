@@ -46,7 +46,7 @@ Un **tableau récapitulatif (cheat sheet)** des références Markdown dans **Git
 ### 2. Images
 
 ```html
-<img src="URL" alt="texte alternatif" width="100" height="auto">
+<img src="URL" alt="texte alternatif" width="50%" height="50%">
 ```
 
 * Permet de **contrôler la taille** (`width` et `height`).
