@@ -25,8 +25,8 @@ Un **tableau récapitulatif (cheat sheet)** des références Markdown dans **Git
 
 # :books: Références
 
-[Basic formatting syntax][Basic formatting syntax]
-[Learning Markdown: Formatting Text without the Complexity][Learning Markdown: Formatting Text without the Complexity]
+* [Basic formatting syntax][Basic formatting syntax]
+* [Learning Markdown: Formatting Text without the Complexity][Learning Markdown: Formatting Text without the Complexity]
 
 ---
 
