@@ -6,7 +6,7 @@ Pour accéder au VPN du collège, on peut utiliser [Cisco AnyConnect](https://ww
 
 ## :o: Lire les articles suivant pour installer le Client VPN en fonction de votre plateforme
 
-- [x] L'article suivant utilise [Open Connect GUI](openconnect-gui.md)
+- [x] L'article suivant utilise [Open Connect GUI](openconnect-gui)
 
 - [x] L'article suivant utilise [CISCO AnyConnect](Microsoft%20vpn)
 
