@@ -42,8 +42,14 @@ La liste d'images ci-dessous (non exhaustive) montre les différentes étapes de
 
 avec la touche `command` :heavy_plus_sign: `espace`, sélectionner l'application `CISCO` 
 
-<img src=images/MacOS-select-AnyConnect.png	width='30%' height='30%' > </img>
+<img src=images/MacOS-select-AnyConnect.png	width='40%' height='40%' > </img>
 
-- [ ] Entrer `vpn.collegeboreal.ca` et taper votre nom d'utilisateur Boréal quand demandé
+- [ ] Entrer `vpn.collegeboreal.ca` et cliquer sur `connect`
 
-<img src=images/MacOS-CISCO-Secure-Client.png	width='50%' height='50%' > </img>
+<img src=images/MacOS-CISCO-Secure-Client.png	width='40%' height='40%' > </img>
+
+- [ ] Taper votre nom d'utilisateur Boréal quand demandé
+
+* l'authentification par l'utilisateur et la double authentification `duo` s'en suivra
+
+<img src=images/images/MacOs-AnyConnectSignIn.png	width='40%' height='40%' > </img>
