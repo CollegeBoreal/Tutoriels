@@ -52,4 +52,4 @@ avec la touche `command` :heavy_plus_sign: `espace`, sélectionner l'application
 
 * l'authentification par l'utilisateur et la double authentification `duo` s'en suivra
 
-<img src=images/images/MacOs-AnyConnectSignIn.png	width='40%' height='40%' > </img>
+<img src=images/MacOs-AnyConnectSignIn.png	width='40%' height='40%' > </img>
