@@ -120,6 +120,16 @@ git config --global --edit
 git pull --no-edit
 git merge --no-edit origin/main
 ```
+:bulb: `git pull` normally does two steps:
+
+1. `git fetch` (get the latest changes from the remote).
+2. `git merge` (merge those changes into your current branch).
+
+- [ ] With `--no-edit`
+
+The flag tells Git:
+➡️ *"Do the merge, but don’t ask me to edit the commit message — just use the default message automatically."*
+
 
 ## :secret: Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
