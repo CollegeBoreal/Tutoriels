@@ -22,19 +22,19 @@ Durant l'installation, l'application devra accéder et configurer les paramètre
 
 La liste d'images ci-dessous (non exhaustive) montre les différentes étapes de configuration pouvant être rencontrées
 
-- [ ] Extension Réseau
+- [ ] Extension Réseau (activer les boutons nécessaires)
 
 <img src=images/MacOS-ActionRequiredDocNetworkExtensions.png	width='30%' height='30%' > </img>
 <img src=images/MacOS-LoginItemsAndExtensions-SocketFilter.png width='30%' height='30%' > </img>
 
-- [ ] Service VPN
+- [ ] Service VPN (activer les boutons nécessaires)
 
-<img src=images/MacOS-LoginItemsAndExtensions-VPNService.png	width='30%' height='30%' > </img>
 <img src=images/MacOS-ActionRequiredDocVPNService.png	width='30%' height='30%' > </img>
+<img src=images/MacOS-LoginItemsAndExtensions-VPNService.png	width='30%' height='30%' > </img>
 
 * Des confirmations de succés d'installation des différents composants devraient suivre
 
-<img src=images/MacOS-SuccessExtensions.png	width='50%' height='50%' > </img>
+<img src=images/MacOS-SuccessExtensions.png	width='30%' height='30%' > </img>
 
 ## :rocket: Lancer CISCO AnyConnect
 
