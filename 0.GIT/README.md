@@ -117,7 +117,8 @@ git config --global --edit
 
 ### :u6307: Metter à jour mon rèpertoire local (pull)
 ```sh
-git pull 
+git pull --no-edit
+git merge --no-edit origin/main
 ```
 
 ## :secret: Configurer git (Clé personnelle) [Documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
