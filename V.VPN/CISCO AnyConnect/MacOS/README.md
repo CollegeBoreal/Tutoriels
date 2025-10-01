@@ -38,4 +38,12 @@ La liste d'images ci-dessous (non exhaustive) montre les différentes étapes de
 
 ## :rocket: Lancer CISCO AnyConnect
 
+- [ ] Chercher l'application
+
+avec la touche `command` :heavy_plus_sign: `espace`, sélectionner l'application `CISCO` 
+
+<img src=images/MacOS-select-AnyConnect.png	width='30%' height='30%' > </img>
+
+- [ ] Entrer `vpn.collegeboreal.ca` et taper votre nom d'utilisateur Boréal quand demandé
+
 <img src=images/MacOS-CISCO-Secure-Client.png	width='50%' height='50%' > </img>
