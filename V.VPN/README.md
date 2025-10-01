@@ -13,9 +13,8 @@ Pour accéder au VPN du collège, on peut utiliser [Cisco AnyConnect](https://ww
 
 # References
 
-https://www.ovpn.com/en/guides/raspberry-pi-raspbian
-
-http://www.socsci.uci.edu/~jstern/uci_vpn_ubuntu/
+- https://www.ovpn.com/en/guides/raspberry-pi-raspbian
+- http://www.socsci.uci.edu/~jstern/uci_vpn_ubuntu/
 
 
 ## :x: [Point to Site](P2S-S2S) VPN
