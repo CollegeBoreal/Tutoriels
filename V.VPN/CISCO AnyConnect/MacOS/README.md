@@ -10,16 +10,32 @@ https://vpn.collegeboreal.ca
 
 - [ ] Après t'être connecté avec ton identifiant et ton mot de passe Boréal, tu trouveras cette page
 
-
 <img src=images/MacOS-DownloadWebPage.png	width='50%' height='50%' > </img>
 
 * Télecharge l'application `CISCO AnyConnect` et installe la sur ton ordinateur 
 
-
-<img src=images/MacOS-ActionRequiredDocNetworkExtensions.png	width='50%' height='50%' > </img>
 <img src=images/MacOS-InstallSuccessFull.png	width='50%' height='50%' > </img>
-<img src=images/MacOS-ActionRequiredDocVPNService.png	width='50%' height='50%' > </img>
-<img src=images/MacOS-LoginItemsAndExtensions-SocketFilter.png width='50%' height='50%' > </img>
-<img src=images/MacOS-CISCO-Secure-Client.png	width='50%' height='50%' > </img>
-<img src=images/MacOS-LoginItemsAndExtensions-VPNService.png	width='50%' height='50%' > </img>
+
+### :accept: Configurer `CISCO AnyConnect`
+
+Durant l'installation, l'application devra accéder et configurer les paramètres du Système:
+
+La liste d'images ci-dessous (non exhaustive) montre les différentes étapes de configuration pouvant être rencontrées
+
+- [ ] Extension Réseau
+
+<img src=images/MacOS-ActionRequiredDocNetworkExtensions.png	width='30%' height='30%' > </img>
+<img src=images/MacOS-LoginItemsAndExtensions-SocketFilter.png width='30%' height='30%' > </img>
+
+- [ ] Service VPN
+
+<img src=images/MacOS-LoginItemsAndExtensions-VPNService.png	width='30%' height='30%' > </img>
+<img src=images/MacOS-ActionRequiredDocVPNService.png	width='30%' height='30%' > </img>
+
+* Des confirmations de succés d'installation des différents composants devraient suivre
+
 <img src=images/MacOS-SuccessExtensions.png	width='50%' height='50%' > </img>
+
+## :rocket: Lancer CISCO AnyConnect
+
+<img src=images/MacOS-CISCO-Secure-Client.png	width='50%' height='50%' > </img>
