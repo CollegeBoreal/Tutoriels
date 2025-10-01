@@ -10,9 +10,10 @@ https://vpn.collegeboreal.ca
 
 - [ ] Après t'être connecté avec ton identifiant et ton mot de passe Boréal, tu trouveras cette page
 
-* Télecharge l'application `CISCO AnyConnect` et installe la sur ton ordinateur 
 
 <img src=images/MacOS-DownloadWebPage.png	width='50%' height='50%' > </img>
+
+* Télecharge l'application `CISCO AnyConnect` et installe la sur ton ordinateur 
 
 
 <img src=images/MacOS-ActionRequiredDocNetworkExtensions.png	width='50%' height='50%' > </img>
