@@ -23,10 +23,10 @@ git status
 ```
 <details>
 <div style="user-select: none;">
-<pre>
+```
 On branch 300098957
 nothing to commit, working tree clean
-</pre>
+```
 </div>
 </details>
 
