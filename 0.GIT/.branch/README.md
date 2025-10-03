@@ -61,7 +61,7 @@ https://www.jquery-az.com/list-branches-git/
 
 ```
 $ git branch
-* master
+* main
 ```
 
 
