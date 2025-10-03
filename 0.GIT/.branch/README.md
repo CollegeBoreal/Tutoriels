@@ -24,12 +24,13 @@ git status
 <details>
 <div style="user-select: none;">
 
-```powershell
+<pre>
 On branch 300098957
 nothing to commit, working tree clean
-```
+</pre>
 
 </div>
+
 </details>
 
 :round_pushpin: Soumettre les modifications de la branche
