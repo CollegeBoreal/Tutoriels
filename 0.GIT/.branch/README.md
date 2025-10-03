@@ -23,10 +23,10 @@ git status
 ```
 <details>
 
-<p>
+```
 On branch 300098957
 nothing to commit, working tree clean
-</p>
+```
 
 </details>
 :round_pushpin: Soumettre les modifications de la branche
