@@ -22,17 +22,7 @@ git checkout 300098957
 git status
 ```
 <details>
-<!-- div style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; background: #1e40af;" -->
-  <div style="
-    user-select: none;
-    background: #1e40af;
-    border: 1px solid #1e3a8a;
-    border-radius: 6px;
-    padding: 16px;
-    font-family: monospace;
-    white-space: pre;
-    color: white;
-">
+<div style="user-select: none;">
 <pre>
 On branch 300098957
 nothing to commit, working tree clean
