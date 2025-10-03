@@ -38,13 +38,13 @@ nothing to commit, working tree clean
 * avant de soumettre, rajouter le code à la branche `git add .`, mettre en scene `git commit -m "mon message"`
 
 ```
-$ git push origin premiere-action
+$ git push origin 300098957
 ```
 
-:round_pushpin: Revenir à la branche principale `master`
+:round_pushpin: Revenir à la branche principale `main`
 
 ```
-$ git checkout master
+$ git checkout main
 ```
 
 <hr>
