@@ -73,23 +73,26 @@ git branch --all
   remotes/origin/master
 </pre></div></details>
 
+```sh
+git branch --remote
 ```
-$ git branch --remote
-  origin/HEAD -> origin/master
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/fstream-1.0.12
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/handlebars-4.5.3
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/js-yaml-3.13.1
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/lodash-4.17.15
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/lodash.mergewith-4.6.2
-  origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/mixin-deep-1.3.2
+<details><div style="user-select: none;"><pre>
+  origin/300098957
+  origin/HEAD -> origin/main
+  origin/main
   origin/master
-```
-
+</pre></div></details>
 
 ```
 $ git show-branch    
 [master] Update README.md
 ```
+<details><div style="user-select: none;"><pre>
+! [main] 📚 GUIDE COMPLET - Tous les scripts PowerShell avec arborescence
+ * [300098957] 📚 GUIDE COMPLET - Tous les scripts PowerShell avec arborescence
+--
++* [main] 📚 GUIDE COMPLET - Tous les scripts PowerShell avec arborescence
+</pre></div></details>
 
 ```
 % git show-branch --all   
@@ -134,6 +137,46 @@ $ git show-branch --remote
 -------- [origin/HEAD^] Merge branch 'master' of github.com:setrar/players
 ```
 
+
+## suppression
+
+### 🔹 Supprimer une branche locale
+
+```bash
+git branch -d nom_branche
+```
+
+* `-d` = suppression “sûre” (ne supprime pas si la branche contient des commits non fusionnés).
+* `-D` = suppression forcée (supprime même si non fusionnée).
+
+Exemple :
+
+```bash
+git branch -D feature/test
+```
+
+---
+
+### 🔹 Supprimer une branche distante
+
+```bash
+git push origin --delete nom_branche
+```
+
+Exemple :
+
+```bash
+git push origin --delete feature/test
+```
+
+---
+
+⚠️ Attention : il faut **se placer sur une autre branche** avant de supprimer celle que vous voulez enlever.
+Exemple :
+
+```bash
+git checkout main
+```
 
 :m: Create a branch from a tag
 
