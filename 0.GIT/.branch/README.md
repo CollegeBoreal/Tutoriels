@@ -6,14 +6,25 @@ Si on veut appeller notre branche `300098957` avec ton :id: Boreal par exemple `
 
 :round_pushpin: Créer une branche 
 
-```
-$ git branch 300098957
+```sh
+git branch 300098957
 ```
 
 :round_pushpin: Accéder à la branche
 
+```sh
+git checkout 300098957
 ```
-$ git checkout premiere-action
+
+:round_pushpin: Vérifier l'accès à la branche
+
+```sh
+git status
+```
+>
+```powershell
+On branch 300098957
+nothing to commit, working tree clean
 ```
 
 :round_pushpin: Soumettre les modifications de la branche
