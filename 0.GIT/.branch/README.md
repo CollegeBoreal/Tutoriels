@@ -21,17 +21,12 @@ git checkout 300098957
 ```sh
 git status
 ```
-<details>
-<div style="user-select: none;">
+<details><div style="user-select: none;"><pre>
 
-<pre>
 On branch 300098957
 nothing to commit, working tree clean
-</pre>
 
-</div>
-
-</details>
+</pre></div></details>
 
 :round_pushpin: Soumettre les modifications de la branche
 
@@ -59,9 +54,10 @@ Utiliser les [branches](https://www.atlassian.com/git/tutorials/using-branches)
 https://www.jquery-az.com/list-branches-git/
 
 
-```
-$ git branch
-* main
+```sh
+git branch
+* 300098957
+  main
 ```
 
 
