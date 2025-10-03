@@ -21,12 +21,12 @@ git checkout 300098957
 ```sh
 git status
 ```
->
+<details>
 ```powershell
 On branch 300098957
 nothing to commit, working tree clean
 ```
-
+</details>
 :round_pushpin: Soumettre les modifications de la branche
 
 * avant de soumettre, rajouter le code à la branche `git add .`, mettre en scene `git commit -m "mon message"`
