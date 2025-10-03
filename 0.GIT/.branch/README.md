@@ -2,12 +2,12 @@
 
 Un branche sert à créer une section à part dans l'arbre du référentiel github.
 
-Si on veut appeller notre branche `premiere-action`
+Si on veut appeller notre branche `300098957` avec ton :id: Boreal par exemple `300098957`
 
-:round_pushpin: Créer une branche
+:round_pushpin: Créer une branche 
 
 ```
-$ git branch premiere-action
+$ git branch 300098957
 ```
 
 :round_pushpin: Accéder à la branche
