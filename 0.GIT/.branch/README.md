@@ -23,10 +23,12 @@ git status
 ```
 <details>
 <div style="user-select: none;">
-```
+
+```powershell
 On branch 300098957
 nothing to commit, working tree clean
 ```
+
 </div>
 </details>
 
