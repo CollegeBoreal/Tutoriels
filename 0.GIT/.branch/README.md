@@ -22,8 +22,12 @@ git checkout 300098957
 git status
 ```
 <details>
+
+```red
 On branch 300098957
 nothing to commit, working tree clean
+```
+
 </details>
 :round_pushpin: Soumettre les modifications de la branche
 
