@@ -62,19 +62,16 @@ git branch
 ```
 
 
+```sh
+git branch --all
 ```
-$ git branch --all
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/fstream-1.0.12
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/handlebars-4.5.3
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/js-yaml-3.13.1
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/lodash-4.17.15
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/lodash.mergewith-4.6.2
-  remotes/origin/dependabot/npm_and_yarn/angular-cli-shaka-player/frontend/mixin-deep-1.3.2
+<details><div style="user-select: none;"><pre>
+* 300098957
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
   remotes/origin/master
-```
-
+</pre></div></details>
 
 ```
 $ git branch --remote
