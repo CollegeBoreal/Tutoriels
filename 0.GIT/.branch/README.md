@@ -54,8 +54,11 @@ https://www.jquery-az.com/list-branches-git/
 
 ```sh
 git branch
+```
+<details><div style="user-select: none;"><pre>
 * 300098957
-  main
+  main  
+</pre></div></details>
 ```
 
 
