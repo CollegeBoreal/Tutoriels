@@ -60,6 +60,40 @@ Vérifie l’installation :
 ```bash
 conda info
 ```
+<details>
+
+```lua
+
+     active environment : 
+            shell level : 0
+       user config file : /Users/me/.condarc
+ populated config files : /opt/homebrew/Caskroom/miniforge/base/.condarc
+                          /Users/me/.condarc
+          conda version : 25.9.1
+    conda-build version : not installed
+         python version : 3.12.11.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=m2
+                          __conda=25.9.1=0
+                          __osx=15.6.1=0
+                          __unix=0=0
+       base environment : /opt/homebrew/Caskroom/miniforge/base  (writable)
+      conda av data dir : /opt/homebrew/Caskroom/miniforge/base/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/osx-arm64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /opt/homebrew/Caskroom/miniforge/base/pkgs
+                          /Users/me/.conda/pkgs
+       envs directories : /opt/homebrew/Caskroom/miniforge/base/envs
+                          /Users/me/.conda/envs
+               platform : osx-arm64
+             user-agent : conda/25.9.1 requests/2.32.4 CPython/3.12.11 Darwin/24.6.0 OSX/15.6.1 solver/libmamba conda-libmamba-solver/25.4.0 libmambapy/2.1.1
+                UID:GID : 502:20
+             netrc file : None
+           offline mode : False
+```
+   
+</details>
 
 > 💡 Pour les Macs récents (M1/M2/M3), Homebrew installe automatiquement la bonne architecture (ARM64).
 
