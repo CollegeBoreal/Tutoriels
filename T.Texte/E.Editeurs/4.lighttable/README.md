@@ -3,12 +3,12 @@
 
 :computer: Sous Windows PowerShell
 
-```
-PS > choco install lighttable
+```powershell
+choco install lighttable
 ```
 
 :apple: Sous Mac
 
-```
-$ brew cask install lighttable
+```sh
+brew cask install lighttable
 ```
