@@ -3,8 +3,8 @@
 
 :computer: Sous Windows PowerShell
 
-```
-PS > choco install vim
+```powershell
+choco install vim
 ```
 
 :apple: Sous Mac
