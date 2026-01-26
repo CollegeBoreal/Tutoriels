@@ -3,7 +3,7 @@
 **schéma et l’explication de l’architecture de Proxmox VE**, pour que ce soit plus clair :
 
 ```mermaid
-graph TD
+graph LR
     A[Matériel] --> B[Base Debian Linux]
     B --> C[KVM / QEMU]
     B --> D[LXC]
