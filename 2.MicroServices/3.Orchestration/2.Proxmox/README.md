@@ -47,6 +47,3 @@ graph LR
 
 C’est cette combinaison qui rend Proxmox **léger et performant**, même si Perl est un langage ancien — il est parfait pour orchestrer et intégrer tous les composants du système.
 
----
-
-Si tu veux, je peux aussi faire un **schéma expliquant pourquoi Proxmox fonctionne bien sur des petits matériels** comme un Intel N100 ou même un RPi5 (avec quelques ajustements). Veux‑tu que je fasse ça ?
