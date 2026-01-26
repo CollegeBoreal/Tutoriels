@@ -10,8 +10,8 @@ graph TD
     B --> E[ZFS / Ceph / Stockage]
     B --> F[Couche de gestion Proxmox VE]
     F --> G[API REST & Outils de cluster]
-    F --> H[Outils CLI \(pve-*\)]
-    G --> I[Interface Web \(JavaScript / ExtJS\)]
+    F --> H[Outils CLI pve]
+    G --> I[Interface Web JavaScript / ExtJS]
     H --> J[Scripts Perl pour réseau, sauvegarde, HA]
     
     style C fill:#f9f,stroke:#333,stroke-width:1px
