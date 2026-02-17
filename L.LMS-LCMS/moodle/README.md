@@ -11,5 +11,5 @@ Pour accéder à une instance moodle par `oAuth2` de github
 
 - Accepter l'autentification par `oAuth2`
   
-<img src=images/auth-moodle.png width='50%' height='50%' > </img>
+<img src=images/auth-moodle.png width='30%' height='30%' > </img>
 
