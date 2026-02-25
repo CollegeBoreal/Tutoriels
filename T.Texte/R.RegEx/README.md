@@ -1,3 +1,3 @@
 # Regular Expressions
 
-- [ ] [regular expressions](https://regex101.com)$_101$
+- [ ] [regular expressions](https://regex101.com)$_{101}$
