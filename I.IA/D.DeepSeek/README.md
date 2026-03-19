@@ -20,7 +20,7 @@ success
 
 
 >>> generate a LDPC code in VHDL
-```ollama
+
 
 Creating an LDPC (Low Density Parity Code) can be complex due to the specifics of how it works under the hood and why we might want not 
 just any type of error correction, but also low density. However here is some basic example on a 2x16 code using VHDL simulation in 
