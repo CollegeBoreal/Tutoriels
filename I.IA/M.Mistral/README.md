@@ -225,6 +225,51 @@ Name      Status  User   File
 ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 ```
 
+## 3️⃣ Démarrer Mistral :wind_face: 
+
+- [ ] À la première utilisation le modèle mistral est installé (pull)
+- [ ] le prompt AI apparait `>>>`
+
+```bash
+ollama run mistral          
+```
+```
+pulling manifest 
+pulling f5074b1221da: 100% ▕████████████████████████████████████████████████████████████████████████████████▏ 4.4 GB                     
+pulling 43070e2d4e53: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  11 KB                      
+pulling 1ff5b64b61b9: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  799 B                      
+pulling ed11eda7790d: 100% ▕████████████████████████████████████████████████████████████████████████████████▏   30 B                      
+pulling 1064e17101bd: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  487 B                         
+verifying sha256 digest 
+writing manifest 
+success 
+>>> Send a message (/? for help)
+```
+
+```
+>>> Est-ce que Mistral est une compagnie de IA subventionné par le gouvernement Français? 
+```
+> Oui, Mistral est une entreprise française de recherche en intelligence artificielle créée en février 2019 par Xavier Amatriain, 
+Frédéric Chazal et Yoshua Bengio. L'entreprise bénéficie d'un financement du gouvernement français via le "Plan AI", un projet visant à 
+faire de la France une puissance mondiale majeure en technologie de l'IA. Cependant, il faut noter que alors que l'entreprise reçoit des 
+fonds du gouvernement français, elle opère en tant qu'entreprise privée.
+
+
+### Un résumé en français des commandes disponibles pour Mistral AI :
+
+* `/set` : Permet de définir des variables de session, qui peuvent être utilisées dans votre conversation avec Mistral.
+* `/show` : Affiche des informations sur le modèle actuellement chargé, y compris son nom et ses capacités.
+* `/load <model>` : Charge un modèle spécifique pour l'utilisation dans votre conversation avec Mistral.
+* `/save <model>` : Sauvegarde votre session actuelle en tant que nouveau modèle qui peut être chargé plus tard.
+* `/clear` : Efface le contexte de la session, ce qui termine effectivement la conversation avec Mistral.
+* `/bye` : Quitte la conversation avec Mistral.
+* `/?` ou `/help` : Fournit une aide pour un commande spécifique.
+* `/? shortcuts` : Affiche une liste de raccourcis clavier qui peuvent être utilisés dans votre conversation avec Mistral.
+* `"""` : Permet de commencer un message multiligne, ce qui peut être utile lorsque vous entrez des commandes longues ou complexes.
+
+⚠️ Pour l'historique des conversations, `Mistral` utilise le fichier `history` dans le répertoire par défaut `~/.ollama`. Cependant, il est important de noter que les contenus de ce fichier sont stockés localement sur votre appareil et ne sont partagés avec personne d'autre par défaut.
+
+---
 
 ## :three: **Ollama**:
 
@@ -269,55 +314,20 @@ Ce modèle mental te sera très utile - le workflow de type Docker rend Ollama t
 
 # :books: References
 
-## Démarrer Mistral :wind_face: 
+## Démarrer `ollama` manuellement
 
-- [ ] À la première utilisation le modèle mistral est installé (pull)
-- [ ] le prompt AI apparait `>>>`
+- [ ] Arrêter les services:
 
 ```bash
-ollama run mistral          
+brew services stop ollama
 ```
+>>>
 ```
-pulling manifest 
-pulling f5074b1221da: 100% ▕████████████████████████████████████████████████████████████████████████████████▏ 4.4 GB                     
-pulling 43070e2d4e53: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  11 KB                      
-pulling 1ff5b64b61b9: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  799 B                      
-pulling ed11eda7790d: 100% ▕████████████████████████████████████████████████████████████████████████████████▏   30 B                      
-pulling 1064e17101bd: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  487 B                         
-verifying sha256 digest 
-writing manifest 
-success 
->>> Send a message (/? for help)
+Stopping `ollama`... (might take a while)
+==> Successfully stopped `ollama` (label: homebrew.mxcl.ollama)
 ```
 
-```
->>> Est-ce que Mistral est une compagnie de IA subventionné par le gouvernement Français? 
-```
-> Oui, Mistral est une entreprise française de recherche en intelligence artificielle créée en février 2019 par Xavier Amatriain, 
-Frédéric Chazal et Yoshua Bengio. L'entreprise bénéficie d'un financement du gouvernement français via le "Plan AI", un projet visant à 
-faire de la France une puissance mondiale majeure en technologie de l'IA. Cependant, il faut noter que alors que l'entreprise reçoit des 
-fonds du gouvernement français, elle opère en tant qu'entreprise privée.
-
-
-## Un résumé en français des commandes disponibles pour Mistral AI :
-
-* `/set` : Permet de définir des variables de session, qui peuvent être utilisées dans votre conversation avec Mistral.
-* `/show` : Affiche des informations sur le modèle actuellement chargé, y compris son nom et ses capacités.
-* `/load <model>` : Charge un modèle spécifique pour l'utilisation dans votre conversation avec Mistral.
-* `/save <model>` : Sauvegarde votre session actuelle en tant que nouveau modèle qui peut être chargé plus tard.
-* `/clear` : Efface le contexte de la session, ce qui termine effectivement la conversation avec Mistral.
-* `/bye` : Quitte la conversation avec Mistral.
-* `/?` ou `/help` : Fournit une aide pour un commande spécifique.
-* `/? shortcuts` : Affiche une liste de raccourcis clavier qui peuvent être utilisés dans votre conversation avec Mistral.
-* `"""` : Permet de commencer un message multiligne, ce qui peut être utile lorsque vous entrez des commandes longues ou complexes.
-
-Pour l'historique des conversations, Mistral utilise le fichier `history` dans le répertoire par défaut `~/.ollama`. Cependant, il est 
-important de noter que les contenus de ce fichier sont stockés localement sur votre appareil et ne sont partagés avec personne d'autre 
-par défaut.
-
----
-
-## Démarrer `ollama` manuellement
+- [ ] Démarrer manuellement
 
 ```bash
 ollama serve
