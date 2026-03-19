@@ -106,6 +106,6 @@ Les modèles locaux permettent :
 
 # 🧩 Résumé final
 
-. 👉 LLM = cerveau IA
-. 👉 Ollama = moteur pour les exécuter localement
-. 👉 Modèles locaux = alternative privée et flexible au cloud
+- 👉 LLM = cerveau IA
+- 👉 Ollama = moteur pour les exécuter localement
+- 👉 Modèles locaux = alternative privée et flexible au cloud
