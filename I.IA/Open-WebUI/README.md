@@ -144,7 +144,7 @@ INFO:     Waiting for application startup.
 
 </details>
 
-<image src=images/open-WebUI.png width='50%' height='50%' > </image>
+<image src=images/open-WebUI.png width='80%' height='80%' > </image>
 
 
 # :books: References
