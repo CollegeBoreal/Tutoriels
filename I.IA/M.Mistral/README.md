@@ -226,7 +226,9 @@ ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 ```
 
 
-## :three: **Ollama fonctionne vraiment comme Docker**, mais pour les modèles IA au lieu des conteneurs. Voici la comparaison :
+## :three: **Ollama**:
+
+**Ollama fonctionne vraiment comme Docker**, mais pour les modèles IA au lieu des conteneurs. Voici la comparaison :
 
 ### 🪗 Ollama ↔ Docker (Parallèle)
 
@@ -239,7 +241,7 @@ ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 | `ollama stop mistral` | `docker stop conteneur` | Arrêter une instance active |
 | `ollama rm mistral` | `docker rmi ubuntu` | Supprimer l'image/modèle téléchargé |
 
-## Différences clés
+### Différences clés
 
 Bien que le workflow soit similaire, il y a quelques distinctions importantes :
 
@@ -248,7 +250,7 @@ Bien que le workflow soit similaire, il y a quelques distinctions importantes :
 3. **Isolation** : Moins isolés que les conteneurs - les modèles partagent les ressources système
 4. **Objectif** : Exécute de l'inférence vs exécute des applications
 
-## Ce que tu viens de faire
+### Ce que tu viens de faire
 
 ```bash
 ollama stop mistral:latest  # Comme 'docker stop' - arrête l'instance en cours
