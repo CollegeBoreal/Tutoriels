@@ -144,6 +144,9 @@ INFO:     Waiting for application startup.
 
 </details>
 
+<image src=images/open-WebUI.png width='50%' height='50%' > </image>
+
+
 # :books: References
 
 ```bash
