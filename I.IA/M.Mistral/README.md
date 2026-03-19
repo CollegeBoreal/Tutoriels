@@ -510,3 +510,53 @@ time=2026-03-19T13:07:21.424-04:00 level=INFO source=server.go:1388 msg="llama r
 ```
 
 </details>
+
+### 🔍 Ce que montrent les logs
+
+#### 1. **Démarrage du serveur** (13:05:35)
+- Ollama écoute sur `127.0.0.1:11434`
+- Version 0.18.2
+- Détecte ton **Apple M2** avec 17.8 Go de mémoire GPU
+
+#### 2. **Requêtes API** (13:06-13:08)
+```
+GET  "/api/tags"     → Liste les modèles disponibles
+POST "/api/show"     → Affiche les infos d'un modèle
+GET  "/api/ps"       → Montre les modèles chargés
+POST "/api/generate" → Génération de texte (a pris 11.24 secondes)
+```
+
+#### 3. **Chargement de Mistral** (13:07:18)
+```
+Modèle: Mistral-7B-Instruct-v0.3
+Taille: 4.07 GiB (quantization Q4_K)
+Paramètres: 7.25 milliards
+Contexte max: 32768 tokens (mais utilisé à 4096)
+```
+
+#### 4. **Utilisation GPU Metal** (Apple M2)
+```
+33 couches déchargées sur GPU
+Mémoire GPU utilisée: 4.8 Go (poids 4.0 Go + cache 512 Mo)
+Temps de chargement: 2.6 secondes
+```
+
+### 📊 Ce que ça signifie 
+
+#### Performance
+- **Chargement rapide** : 2.6 secondes pour charger 4 Go sur GPU
+- **Inférence** : La requête POST `/api/generate` a pris 11.24 secondes
+- **Mémoire** : 4.8 Go utilisés sur les 17.8 Go disponibles (parfait)
+
+#### État actuel
+Le modèle Mistral est maintenant **chargé en mémoire GPU** et prêt à répondre. On peux :
+- L'utiliser via `ollama run mistral:latest`
+- Faire des appels API directement
+- Voir qu'il tourne avec `ollama ps`
+
+#### Note intéressante
+```
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+```
+C'est normal - certaines optimisations Metal sont désactivées car ton M2 est antérieur aux M5/A19, mais ça n'affecte pas les performances.
+
