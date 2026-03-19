@@ -203,13 +203,24 @@ Or, if you don't want/need a background service you can just run:
 </details>
 
 
-## :two: Démarrer `ollama` :llama:
+## :two: Démarrer `ollama` en service
+
+- [ ] Démarrer
 
 ```bash
 brew services start ollama
 ```
 > ==> Successfully started `ollama` (label: homebrew.mxcl.ollama)
 
+- [ ] Vérifier
+
+```
+brew services list
+```
+```
+Name      Status  User   File
+ollama    started valiha ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
+```
 
 
 ## :three: **Ollama fonctionne vraiment comme Docker**, mais pour les modèles IA au lieu des conteneurs. Voici la comparaison :
