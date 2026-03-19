@@ -1,6 +1,88 @@
 # ollama 🦙
 
-**Ollama peut être considéré comme un gestionnaire de modèles** (model manager).
+**Ollama** est un outil qui permet d’exécuter des modèles d’intelligence artificielle (LLM) **localement sur ton ordinateur**, sans passer par des serveurs distants.
+
+---
+
+## 🧠 À quoi sert Ollama ?
+
+Normalement :
+
+* Tu utilises ChatGPT → le modèle tourne sur des serveurs dans le cloud
+
+Avec Ollama :
+
+* Tu télécharges un modèle → il tourne **directement sur ton PC ou ton Mac**
+
+👉 C’est donc un **gestionnaire + moteur d’exécution de modèles IA locaux**
+
+---
+
+## ⚙️ Ce que tu peux faire avec
+
+Avec Ollama, tu peux :
+
+* Utiliser des modèles comme :
+
+  * **LLaMA**
+  * **Mistral**
+  * **Code Llama**
+* Discuter avec eux (comme ChatGPT)
+* Les intégrer dans tes propres applications (API locale)
+* Travailler **hors ligne**
+
+---
+
+## 💻 Exemple simple
+
+Après installation :
+
+```bash
+ollama run llama3
+```
+
+Et tu peux directement discuter avec le modèle en local.
+
+---
+
+## ✅ Avantages
+
+* 🔒 Confidentialité (rien n’est envoyé sur Internet)
+* ⚡ Rapide (pas de latence réseau)
+* 💰 Gratuit après installation
+* 🧪 Idéal pour expérimenter
+
+---
+
+## ❌ Inconvénients
+
+* Besoin d’un ordinateur assez puissant (RAM/GPU)
+* Modèles souvent moins performants que ceux du cloud
+* Configuration parfois technique
+
+---
+
+## 🧠 L’idée générale
+
+Tu peux voir Ollama comme :
+
+* un **“Linux des modèles IA”**
+* ou un **runtime** pour exécuter des modèles localement
+
+---
+
+## 🔥 Pourquoi c’est intéressant
+
+Ollama s’inscrit dans une tendance vers :
+
+* une IA **décentralisée**
+* des modèles qui tournent sur :
+
+  * ordinateurs personnels
+  * systèmes embarqués
+  * (et plus tard) des **puces spécialisées** 👀
+
+---
 
 ## ✅ **Ollama comme Gestionnaire de Modèles**
 
@@ -37,7 +119,7 @@ ollama run codellama      # Bascule vers un autre modèle
 - Nettoyage automatique après inactivité
 - Isolation des instances
 
-## 📊 **Comparaison avec d'autres gestionnaires**
+### 📊 **Comparaison avec d'autres gestionnaires**
 
 | Gestionnaire | Gère                  | Analogie                       |
 |--------------|-----------------------|--------------------------------|
@@ -47,16 +129,16 @@ ollama run codellama      # Bascule vers un autre modèle
 | Conda        | Environnements Python | Gestionnaire d'environnements  |
 | NPM          | Paquets Node.js       | Gestionnaire de paquets        |
 
-## 🎯 **Fonctionnalités clés d'un gestionnaire**
+### 🎯 **Fonctionnalités clés d'un gestionnaire**
 
-### Ce qu'Ollama fait bien :
+#### Ce qu'Ollama fait bien :
 - **Abstraction** : Cache la complexité des fichiers GGUF, blobs, etc.
 - **Standardisation** : Interface unifiée pour tous les modèles
 - **Portabilité** : Mêmes commandes pour Mistral, Llama, Gemma, etc.
 - **Cycle de vie** : Pull → List → Run → Stop → Remove
 - **Isolation** : Chaque modèle dans son propre environnement d'exécution
 
-### Exemple de workflow complet :
+#### Exemple de workflow complet :
 ```bash
 # Comme un vrai gestionnaire
 ollama pull llama3:8b           # Install
@@ -68,7 +150,7 @@ ollama stop llama3:8b           # Stop
 ollama rm mistral:7b             # Uninstall
 ```
 
-## 🔄 **Architecture de gestionnaire**
+### 🔄 **Architecture de gestionnaire**
 
 ```
 Ollama (Model Manager)
@@ -79,7 +161,7 @@ Ollama (Model Manager)
 └── CLI (pull, run, list, rm, etc.)
 ```
 
-## 💡 **Terminologie appropriée**
+### 💡 **Terminologie appropriée**
 
 On pourrait qualifier Ollama de :
 - **Gestionnaire de modèles IA** (Model Manager)
