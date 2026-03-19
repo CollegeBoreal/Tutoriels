@@ -226,9 +226,24 @@ success
 ```
 >>> Est-ce que Mistral est une compagnie de IA subventionné par le gouvernement Français? 
 ```
-```
- Oui, Mistral est une entreprise française de recherche en intelligence artificielle créée en février 2019 par Xavier Amatriain, 
+> Oui, Mistral est une entreprise française de recherche en intelligence artificielle créée en février 2019 par Xavier Amatriain, 
 Frédéric Chazal et Yoshua Bengio. L'entreprise bénéficie d'un financement du gouvernement français via le "Plan AI", un projet visant à 
 faire de la France une puissance mondiale majeure en technologie de l'IA. Cependant, il faut noter que alors que l'entreprise reçoit des 
 fonds du gouvernement français, elle opère en tant qu'entreprise privée.
-```
+
+
+## Un résumé en français des commandes disponibles pour Mistral AI :
+
+* `/set` : Permet de définir des variables de session, qui peuvent être utilisées dans votre conversation avec Mistral.
+* `/show` : Affiche des informations sur le modèle actuellement chargé, y compris son nom et ses capacités.
+* `/load <model>` : Charge un modèle spécifique pour l'utilisation dans votre conversation avec Mistral.
+* `/save <model>` : Sauvegarde votre session actuelle en tant que nouveau modèle qui peut être chargé plus tard.
+* `/clear` : Efface le contexte de la session, ce qui termine effectivement la conversation avec Mistral.
+* `/bye` : Quitte la conversation avec Mistral.
+* `/?` ou `/help` : Fournit une aide pour un commande spécifique.
+* `/? shortcuts` : Affiche une liste de raccourcis clavier qui peuvent être utilisés dans votre conversation avec Mistral.
+* `"""` : Permet de commencer un message multiligne, ce qui peut être utile lorsque vous entrez des commandes longues ou complexes.
+
+Pour l'historique des conversations, Mistral utilise le fichier `history` dans le répertoire par défaut `~/.ollama`. Cependant, il est 
+important de noter que les contenus de ce fichier sont stockés localement sur votre appareil et ne sont partagés avec personne d'autre 
+par défaut.
