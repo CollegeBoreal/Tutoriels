@@ -222,7 +222,7 @@ brew services list
 ```
 ```
 Name      Status  User   File
-ollama    started valiha ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
+ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 ```
 
 
