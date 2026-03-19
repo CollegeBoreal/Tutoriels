@@ -247,3 +247,260 @@ fonds du gouvernement français, elle opère en tant qu'entreprise privée.
 Pour l'historique des conversations, Mistral utilise le fichier `history` dans le répertoire par défaut `~/.ollama`. Cependant, il est 
 important de noter que les contenus de ce fichier sont stockés localement sur votre appareil et ne sont partagés avec personne d'autre 
 par défaut.
+
+---
+
+## Démarrer `ollama` manuellement
+
+```bash
+ollama serve
+```
+<details>
+
+```lua  
+time=2026-03-19T13:05:35.442-04:00 level=INFO source=routes.go:1727 msg="server config" env="map[HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_CONTEXT_LENGTH:0 OLLAMA_DEBUG:INFO OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/Users/boreal/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NEW_ENGINE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false http_proxy: https_proxy: no_proxy:]"
+time=2026-03-19T13:05:35.442-04:00 level=INFO source=routes.go:1729 msg="Ollama cloud disabled: false"
+time=2026-03-19T13:05:35.443-04:00 level=INFO source=images.go:477 msg="total blobs: 5"
+time=2026-03-19T13:05:35.443-04:00 level=INFO source=images.go:484 msg="total unused blobs removed: 0"
+time=2026-03-19T13:05:35.443-04:00 level=INFO source=routes.go:1782 msg="Listening on 127.0.0.1:11434 (version 0.18.2)"
+time=2026-03-19T13:05:35.443-04:00 level=INFO source=runner.go:67 msg="discovering available GPUs..."
+time=2026-03-19T13:05:35.444-04:00 level=INFO source=server.go:430 msg="starting runner" cmd="/opt/homebrew/Cellar/ollama/0.18.2/bin/ollama runner --ollama-engine --port 55791"
+time=2026-03-19T13:05:35.503-04:00 level=INFO source=types.go:42 msg="inference compute" id=0 filter_id=0 library=Metal compute=0.0 name=Metal description="Apple M2" libdirs="" driver=0.0 pci_id="" type=discrete total="17.8 GiB" available="17.8 GiB"
+time=2026-03-19T13:05:35.503-04:00 level=INFO source=routes.go:1832 msg="vram-based default context" total_vram="17.8 GiB" default_num_ctx=4096
+[GIN] 2026/03/19 - 13:06:58 | 200 |      49.292µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/03/19 - 13:06:58 | 200 |     542.458µs |       127.0.0.1 | GET      "/api/tags"
+[GIN] 2026/03/19 - 13:07:10 | 200 |      21.167µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/03/19 - 13:07:10 | 200 |   20.465709ms |       127.0.0.1 | POST     "/api/show"
+[GIN] 2026/03/19 - 13:07:10 | 200 |   13.924375ms |       127.0.0.1 | POST     "/api/show"
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_init: loaded in 8.573 sec
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   Apple M2
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple8  (1008)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 19069.67 MB
+llama_model_load_from_file_impl: using device Metal (Apple M2) (unknown id) - 18185 MiB free
+llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /Users/boreal/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Mistral-7B-Instruct-v0.3
+llama_model_loader: - kv   2:                          llama.block_count u32              = 32
+llama_model_loader: - kv   3:                       llama.context_length u32              = 32768
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 15
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 32768
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  14:                         tokenizer.ggml.pre str              = default
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32768]   = ["<unk>", "<s>", "</s>", "[INST]", "[...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32768]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32768]   = [2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ...
+llama_model_loader: - kv  18:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  19:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  20:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_K:  193 tensors
+llama_model_loader: - type q6_K:   33 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.07 GiB (4.83 BPW) 
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 771
+load: token to piece cache size = 0.1731 MB
+print_info: arch             = llama
+print_info: vocab_only       = 1
+print_info: no_alloc         = 0
+print_info: model type       = ?B
+print_info: model params     = 7.25 B
+print_info: general.name     = Mistral-7B-Instruct-v0.3
+print_info: vocab type       = SPM
+print_info: n_vocab          = 32768
+print_info: n_merges         = 0
+print_info: BOS token        = 1 '<s>'
+print_info: EOS token        = 2 '</s>'
+print_info: UNK token        = 0 '<unk>'
+print_info: LF token         = 781 '<0x0A>'
+print_info: EOG token        = 2 '</s>'
+print_info: max token length = 48
+llama_model_load: vocab only - skipping tensors
+time=2026-03-19T13:07:18.826-04:00 level=INFO source=server.go:430 msg="starting runner" cmd="/opt/homebrew/Cellar/ollama/0.18.2/bin/ollama runner --model /Users/boreal/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f --port 55812"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=sched.go:484 msg="system memory" total="24.0 GiB" free="7.6 GiB" free_swap="0 B"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=sched.go:491 msg="gpu memory" id=0 library=Metal available="17.3 GiB" free="17.8 GiB" minimum="512.0 MiB" overhead="0 B"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=server.go:497 msg="loading model" "model layers"=33 requested=-1
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=device.go:240 msg="model weights" device=Metal size="4.0 GiB"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=device.go:251 msg="kv cache" device=Metal size="512.0 MiB"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=device.go:262 msg="compute graph" device=Metal size="296.0 MiB"
+time=2026-03-19T13:07:18.828-04:00 level=INFO source=device.go:272 msg="total memory" size="4.8 GiB"
+time=2026-03-19T13:07:18.855-04:00 level=INFO source=runner.go:965 msg="starting go runner"
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_init: loaded in 0.027 sec
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   Apple M2
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple8  (1008)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 19069.67 MB
+time=2026-03-19T13:07:18.855-04:00 level=INFO source=ggml.go:104 msg=system Metal.0.EMBED_LIBRARY=1 CPU.0.NEON=1 CPU.0.ARM_FMA=1 CPU.0.FP16_VA=1 CPU.0.DOTPROD=1 CPU.0.LLAMAFILE=1 CPU.0.ACCELERATE=1 compiler=cgo(clang)
+time=2026-03-19T13:07:18.904-04:00 level=INFO source=runner.go:1001 msg="Server listening on 127.0.0.1:55812"
+time=2026-03-19T13:07:18.907-04:00 level=INFO source=runner.go:895 msg=load request="{Operation:commit LoraPath:[] Parallel:1 BatchSize:512 FlashAttention:Auto KvSize:4096 KvCacheType: NumThreads:4 GPULayers:33[ID:0 Layers:33(0..32)] MultiUserCache:false ProjectorPath: MainGPU:0 UseMmap:true}"
+llama_model_load_from_file_impl: using device Metal (Apple M2) (unknown id) - 18185 MiB free
+time=2026-03-19T13:07:18.908-04:00 level=INFO source=server.go:1350 msg="waiting for llama runner to start responding"
+time=2026-03-19T13:07:18.908-04:00 level=INFO source=server.go:1384 msg="waiting for server to become available" status="llm server loading model"
+llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /Users/boreal/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Mistral-7B-Instruct-v0.3
+llama_model_loader: - kv   2:                          llama.block_count u32              = 32
+llama_model_loader: - kv   3:                       llama.context_length u32              = 32768
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 15
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 32768
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  14:                         tokenizer.ggml.pre str              = default
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32768]   = ["<unk>", "<s>", "</s>", "[INST]", "[...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32768]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32768]   = [2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ...
+llama_model_loader: - kv  18:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  19:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  20:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_K:  193 tensors
+llama_model_loader: - type q6_K:   33 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.07 GiB (4.83 BPW) 
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 771
+load: token to piece cache size = 0.1731 MB
+print_info: arch             = llama
+print_info: vocab_only       = 0
+print_info: no_alloc         = 0
+print_info: n_ctx_train      = 32768
+print_info: n_embd           = 4096
+print_info: n_embd_inp       = 4096
+print_info: n_layer          = 32
+print_info: n_head           = 32
+print_info: n_head_kv        = 8
+print_info: n_rot            = 128
+print_info: n_swa            = 0
+print_info: is_swa_any       = 0
+print_info: n_embd_head_k    = 128
+print_info: n_embd_head_v    = 128
+print_info: n_gqa            = 4
+print_info: n_embd_k_gqa     = 1024
+print_info: n_embd_v_gqa     = 1024
+print_info: f_norm_eps       = 0.0e+00
+print_info: f_norm_rms_eps   = 1.0e-05
+print_info: f_clamp_kqv      = 0.0e+00
+print_info: f_max_alibi_bias = 0.0e+00
+print_info: f_logit_scale    = 0.0e+00
+print_info: f_attn_scale     = 0.0e+00
+print_info: n_ff             = 14336
+print_info: n_expert         = 0
+print_info: n_expert_used    = 0
+print_info: n_expert_groups  = 0
+print_info: n_group_used     = 0
+print_info: causal attn      = 1
+print_info: pooling type     = 0
+print_info: rope type        = 0
+print_info: rope scaling     = linear
+print_info: freq_base_train  = 1000000.0
+print_info: freq_scale_train = 1
+print_info: n_ctx_orig_yarn  = 32768
+print_info: rope_yarn_log_mul= 0.0000
+print_info: rope_finetuned   = unknown
+print_info: model type       = 7B
+print_info: model params     = 7.25 B
+print_info: general.name     = Mistral-7B-Instruct-v0.3
+print_info: vocab type       = SPM
+print_info: n_vocab          = 32768
+print_info: n_merges         = 0
+print_info: BOS token        = 1 '<s>'
+print_info: EOS token        = 2 '</s>'
+print_info: UNK token        = 0 '<unk>'
+print_info: LF token         = 781 '<0x0A>'
+print_info: EOG token        = 2 '</s>'
+print_info: max token length = 48
+load_tensors: loading model tensors, this can take a while... (mmap = true)
+load_tensors: offloading 32 repeating layers to GPU
+load_tensors: offloading output layer to GPU
+load_tensors: offloaded 33/33 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    72.00 MiB
+load_tensors: Metal_Mapped model buffer size =  4097.52 MiB
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 4096
+llama_context: n_ctx_seq     = 4096
+llama_context: n_batch       = 512
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+ggml_metal_init: allocating
+ggml_metal_init: picking default device: Apple M2
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+llama_context:        CPU  output buffer size =     0.14 MiB
+llama_kv_cache:      Metal KV buffer size =   512.00 MiB
+llama_kv_cache: size =  512.00 MiB (  4096 cells,  32 layers,  1/1 seqs), K (f16):  256.00 MiB, V (f16):  256.00 MiB
+llama_context: Flash Attention was auto, set to enabled
+llama_context:      Metal compute buffer size =   112.01 MiB
+llama_context:        CPU compute buffer size =    16.01 MiB
+llama_context: graph nodes  = 999
+llama_context: graph splits = 2
+time=2026-03-19T13:07:21.423-04:00 level=INFO source=server.go:1388 msg="llama runner started in 2.59 seconds"
+time=2026-03-19T13:07:21.423-04:00 level=INFO source=sched.go:561 msg="loaded runners" count=1
+time=2026-03-19T13:07:21.423-04:00 level=INFO source=server.go:1350 msg="waiting for llama runner to start responding"
+time=2026-03-19T13:07:21.424-04:00 level=INFO source=server.go:1388 msg="llama runner started in 2.60 seconds"
+[GIN] 2026/03/19 - 13:07:21 | 200 | 11.241481084s |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/03/19 - 13:08:07 | 200 |      31.541µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/03/19 - 13:08:07 | 200 |     819.125µs |       127.0.0.1 | GET      "/api/tags"
+[GIN] 2026/03/19 - 13:08:10 | 200 |      20.375µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/03/19 - 13:08:10 | 200 |          63µs |       127.0.0.1 | GET      "/api/ps"
+```
+
+</details>
