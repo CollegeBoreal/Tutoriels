@@ -225,7 +225,7 @@ Name      Status  User   File
 ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 ```
 
-## 3️⃣ Démarrer Mistral :wind_face: 
+## 3️⃣ Utiliser le modèle Mistral :wind_face: 
 
 - [ ] À la première utilisation le modèle mistral est installé (pull)
 - [ ] le prompt AI apparait `>>>`
