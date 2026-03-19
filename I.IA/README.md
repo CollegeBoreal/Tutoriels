@@ -65,7 +65,7 @@ Ollama est :
 
 ### 🧠 Général
 
-* **[Mistral**](M.Mistral)**
+* **[Mistral](M.Mistral)**
 * **LLaMA**
 
 ---
