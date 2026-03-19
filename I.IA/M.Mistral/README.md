@@ -1,4 +1,7 @@
 
+
+## Installer `ollama` :llama:
+
 ```bash
 brew install ollama
 ```
