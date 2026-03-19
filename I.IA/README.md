@@ -38,7 +38,7 @@ Un **LLM (Large Language Model)** est un modèle d’IA capable de :
 ## 💻 B. Modèles locaux
 
 * tournent directement sur ton ordinateur
-* via des outils comme **Ollama**
+* via des outils comme [**Ollama**](O.Ollama)
 
 ---
 
@@ -65,7 +65,7 @@ Ollama est :
 
 ### 🧠 Général
 
-* **Mistral**
+* [**Mistral**](M.Mistral)
 * **LLaMA**
 
 ---
