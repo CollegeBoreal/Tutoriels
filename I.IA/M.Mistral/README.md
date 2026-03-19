@@ -22,8 +22,8 @@ verifying sha256 digest
 writing manifest 
 success
 ```
-
 </details>
+
 ```
 >>> Send a message (/? for help)
 ```
