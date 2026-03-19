@@ -1,6 +1,6 @@
 
 
-## Installer `ollama` :llama:
+## :one: Installer `ollama` :llama:
 
 ```bash
 brew install ollama
@@ -203,10 +203,55 @@ Or, if you don't want/need a background service you can just run:
 </details>
 
 
+## :two: Démarrer `ollama` :llama:
+
 ```bash
 brew services start ollama
 ```
 > ==> Successfully started `ollama` (label: homebrew.mxcl.ollama)
+
+
+
+## :three: **Ollama fonctionne vraiment comme Docker**, mais pour les modèles IA au lieu des conteneurs. Voici la comparaison :
+
+### 🪗 Ollama ↔ Docker (Parallèle)
+
+| Ollama | Docker | Rôle |
+|--------|--------|------|
+| `ollama pull mistral` | `docker pull ubuntu` | Télécharger l'image/modèle |
+| `ollama list` | `docker images` | Lister les images/modèles téléchargés |
+| `ollama run mistral` | `docker run ubuntu` | Démarrer un conteneur/instance |
+| `ollama ps` | `docker ps` | Voir les conteneurs/instances en cours |
+| `ollama stop mistral` | `docker stop conteneur` | Arrêter une instance active |
+| `ollama rm mistral` | `docker rmi ubuntu` | Supprimer l'image/modèle téléchargé |
+
+## Différences clés
+
+Bien que le workflow soit similaire, il y a quelques distinctions importantes :
+
+1. **Taille** : Les modèles sont beaucoup plus gros (4,4 Go pour Mistral contre quelques Mo pour les conteneurs)
+2. **Persistance** : Les modèles restent en mémoire GPU après utilisation (comme le comportement de `--rm` de Docker)
+3. **Isolation** : Moins isolés que les conteneurs - les modèles partagent les ressources système
+4. **Objectif** : Exécute de l'inférence vs exécute des applications
+
+## Ce que tu viens de faire
+
+```bash
+ollama stop mistral:latest  # Comme 'docker stop' - arrête l'instance en cours
+ollama list                 # Comme 'docker images' - montre les modèles téléchargés (toujours là)
+ollama ps                   # Comme 'docker ps' - confirme que rien ne tourne
+```
+
+Le modèle est toujours téléchargé et prêt à être utilisé (4,4 Go sur le disque), mais il ne consomme plus ta mémoire GPU ou ton calcul. Pour l'utiliser à nouveau :
+
+```bash
+ollama run mistral:latest  # Démarre une nouvelle instance (comme docker run)
+```
+
+Ce modèle mental te sera très utile - le workflow de type Docker rend Ollama très intuitif une fois que tu reconnais le motif !
+
+
+# :books: References
 
 ## Démarrer Mistral :wind_face: 
 
