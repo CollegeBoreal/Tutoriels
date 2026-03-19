@@ -19,45 +19,121 @@ success
 </details>
 
 
->>> generate a LDPC code in VHDL
+**DeepSeek Coder** est un modèle d’intelligence artificielle spécialisé dans la **programmation**.
 
+---
 
-Creating an LDPC (Low Density Parity Code) can be complex due to the specifics of how it works under the hood and why we might want not 
-just any type of error correction, but also low density. However here is some basic example on a 2x16 code using VHDL simulation in 
-Quartus Prime:
+## 🧠 Définition simple
 
-```vhdl
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use ieee.numeric_std.all;   -- needed for conversion functions and types 
-entity LDPC is    		   	-- entity name can be anything you want         
- Port ( clk : in STD_LOGIC;     	   			      									          	 	     
-         start:in std_logic ;                          	       						                     reset:out std_logic);   -- inputs and outputs 								        
-                     -                                                          /    10.2/                     75/-   849-63 (c)  
-Created by VHDL's QuaTus Primer
-end LDPC;	      		     					       				               Port map( clk => Clock, start=>start , reset   ->Reset );     --port mapping is necessary in 
-vhdl design    To connect the ports to your component use port name  and then specify what should happen when this signal changes
-begin                                           							         	      		              process (Clck) begin                      if Reset = '1' 
-Then              					  0        Untitled.vhd(48): At line    2 of                             -   65/                            -- 97-3: 
-in                                                   The design is for the VHDL simulator, not a physical device
-end process;                                     			        		      	          end LDPC_architecture : architecture decode   begin          					   
-            if Clk'event and clk = '1 then              --check of clock event 				            Decoding Logic here:                     case 
-State is                                                       when "00" => NextState <=                     
-endcase;                                               			begin                                      Temp(n)  <= to_integer (unsigned ('b & 
-DataIn)) *  32 + Weight ;                             --calculation of parity and update                    next state logic here:      
-case          Sequential Logic Here  when "01" => NextState <=                     
-endcase;                                                 			--data in= 'x', error, xor gate etc., you should add your codes                 
-  end if ;                                             -- End of cases                     else                                          
-                          -  25 (c) andy.jesse@gmail.com  Created by VHDL's QuaTus Prime     
-end LDPC_architecture;    		      	        			       				               Port map( Clk => clock, DataIn=>Data , Weight => 16#039EA2FA`              
-           -- port mapping is necessary in vhdl design To connect the ports to your component use  -port name and then specify what 
-should happen when this signal changes
-end LDPC;  	-- end of entity definition		       									      		         reset <= (not Clock);     -----reset logic for simulation, make sure you 
-have a correct clock input. It is not inverted to mimic actual implementation  --simulation done with QuaTus Prime VHDL simulator
+C’est un **LLM (Large Language Model)** entraîné principalement sur :
+
+* du code (Python, C/C++, Verilog, etc.)
+* de la documentation technique
+* des projets open-source
+
+👉 Son but :
+
+> **écrire, comprendre et corriger du code**
+
+---
+
+## ⚙️ Ce qu’il sait faire
+
+### 💻 Génération de code
+
+* écrire du code à partir d’une description
+* ex:
+
+  * Python
+  * C++
+  * VHDL / Verilog (très utile pour toi 👀)
+
+---
+
+### 🧪 Debug
+
+* trouver des bugs
+* expliquer des erreurs
+* proposer des corrections
+
+---
+
+### 📚 Explication
+
+* expliquer du code complexe
+* décomposer des architectures (FPGA, SoC, etc.)
+
+---
+
+### 🔁 Complétion
+
+* compléter automatiquement des fonctions
+* suggérer des améliorations
+
+---
+
+## 🔥 Pourquoi il est intéressant
+
+Comparé à des modèles généraux (comme **LLaMA** ou **Mistral**) :
+
+👉 DeepSeek Coder est :
+
+* **beaucoup meilleur en code**
+* plus précis sur :
+
+  * syntaxe
+  * structures complexes
+  * logique
+
+---
+
+## 💡 Exemple concret (dans le domaine FPGA)
+
+Tu peux lui demander :
+
+> “Write a pipelined FIR filter in Verilog optimized for DSP slices”
+
+👉 Il peut générer :
+
+* architecture pipeline
+* gestion des registres
+* optimisation pour FPGA
+
+---
+
+## ⚙️ Avec Ollama
+
+Tu peux l’utiliser en local :
+
+```bash id="f8q2fr"
+ollama run deepseek-coder
 ```
 
--- This code will generate the decoding process of an LDPC parity check scheme (like PAPR) using two bits as state and data 
-inputs/outputs. Please note that this is a very basic example, you would need to fill in more details for your actual use case like 
-setting up correct weights or error correction methods etc., depending on the specific requirements of an LDPC parity check scheme
+👉 Et tu as un assistant code **offline**.
 
+---
+
+## ⚠️ Limites
+
+* Moins puissant que les meilleurs modèles cloud
+* Peut faire des erreurs (surtout sur designs complexes)
+* Nécessite de bons prompts (très important)
+
+---
+
+## 🧠 Résumé
+
+👉 DeepSeek Coder =
+**un “ingénieur logiciel IA” spécialisé dans le code**
+
+---
+
+## 🚀 Important
+
+C’est particulièrement utile pour :
+
+* VHDL / Verilog
+* scripts Vivado (TCL)
+* architecture FPGA
+* préparation ASIC
 
