@@ -1,6 +1,6 @@
 # ollama 🦙
 
-**Ollama** est un outil qui permet d’exécuter des modèles d’intelligence artificielle (LLM) **localement sur ton ordinateur**, sans passer par des serveurs distants.
+**Ollama** est un outil qui permet d’exécuter (runtime) des modèles d’intelligence artificielle (LLM) **localement sur ton ordinateur**, sans passer par des serveurs distants.
 
 ---
 
