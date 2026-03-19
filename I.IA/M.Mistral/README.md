@@ -212,6 +212,9 @@ brew services start ollama
 ```
 > ==> Successfully started `ollama` (label: homebrew.mxcl.ollama)
 
+<image src=images/ollama-brew-services.png width='50%' height='50%' > </image>
+
+
 - [ ] Vérifier
 
 ```
