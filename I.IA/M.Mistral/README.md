@@ -208,12 +208,15 @@ brew services start ollama
 ```
 > ==> Successfully started `ollama` (label: homebrew.mxcl.ollama)
 
+## Démarrer Mistral :wind_face: 
+
+- [ ] À la première utilisation le modèle mistral est installé (pull)
+- [ ] le prompt AI apparait `>>>`
+
 ```bash
 ollama run mistral          
 ```
 ```
-ollama run mistral          
-
 pulling manifest 
 pulling f5074b1221da: 100% ▕████████████████████████████████████████████████████████████████████████████████▏ 4.4 GB                     
 pulling 43070e2d4e53: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  11 KB                      
