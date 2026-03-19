@@ -60,7 +60,7 @@ Ollama est :
 
 ### 💻 Code
 
-* **DeepSeek Coder**
+* **[DeepSeek](D.DeepSeek) Coder**
 * **Code Llama**
 
 ### 🧠 Général
