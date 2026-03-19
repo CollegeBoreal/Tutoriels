@@ -209,6 +209,26 @@ brew services start ollama
 ollama run mistral          
 ```
 ```
+ollama run mistral          
+
 pulling manifest 
-pulling f5074b1221da:  78% ▕██████████████████████████████████████████████████████████████                  ▏ 3.4 GB/4.4 GB   95 MB/s      9s
+pulling f5074b1221da: 100% ▕████████████████████████████████████████████████████████████████████████████████▏ 4.4 GB                     
+pulling 43070e2d4e53: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  11 KB                      
+pulling 1ff5b64b61b9: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  799 B                      
+pulling ed11eda7790d: 100% ▕████████████████████████████████████████████████████████████████████████████████▏   30 B                      
+pulling 1064e17101bd: 100% ▕████████████████████████████████████████████████████████████████████████████████▏  487 B                         
+verifying sha256 digest 
+writing manifest 
+success 
+>>> Send a message (/? for help)
+```
+
+```
+>>> Est-ce que Mistral est une compagnie de IA subventionné par le gouvernement Français? 
+```
+```
+ Oui, Mistral est une entreprise française de recherche en intelligence artificielle créée en février 2019 par Xavier Amatriain, 
+Frédéric Chazal et Yoshua Bengio. L'entreprise bénéficie d'un financement du gouvernement français via le "Plan AI", un projet visant à 
+faire de la France une puissance mondiale majeure en technologie de l'IA. Cependant, il faut noter que alors que l'entreprise reçoit des 
+fonds du gouvernement français, elle opère en tant qu'entreprise privée.
 ```
