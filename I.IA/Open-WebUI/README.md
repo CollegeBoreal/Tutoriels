@@ -143,3 +143,70 @@ INFO:     Waiting for application startup.
 ```
 
 </details>
+
+# :books: References
+
+```bash
+pip install open-webui
+```
+<details>
+
+```lua
+Collecting open-webui
+  Downloading open_webui-0.8.10-py3-none-any.whl.metadata (24 kB)
+Collecting accelerate (from open-webui)
+  Downloading accelerate-1.13.0-py3-none-any.whl.metadata (19 kB)
+Collecting aiocache (from open-webui)
+  Downloading aiocache-0.12.3-py2.py3-none-any.whl.metadata (8.3 kB)
+Collecting aiofiles (from open-webui)
+  Downloading aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting aiohttp==3.13.2 (from open-webui)
+  Downloading aiohttp-3.13.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+Collecting alembic==1.18.4 (from open-webui)
+  Downloading alembic-1.18.4-py3-none-any.whl.metadata (7.2 kB)
+Collecting anthropic (from open-webui)
+  Downloading anthropic-0.86.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting apscheduler==3.11.2 (from open-webui)
+  Downloading apscheduler-3.11.2-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: argon2-cffi==25.1.0 in /opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages (from open-webui) (25.1.0)
+Collecting asgiref==3.11.1 (from open-webui)
+  Downloading asgiref-3.11.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting async-timeout (from open-webui)
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting authlib==1.6.9 (from open-webui)
+  Downloading authlib-1.6.9-py2.py3-none-any.whl.metadata (9.8 kB)
+Collecting azure-ai-documentintelligence==1.0.2 (from open-webui)
+  Downloading azure_ai_documentintelligence-1.0.2-py3-none-any.whl.metadata (53 kB)
+Collecting azure-identity==1.25.2 (from open-webui)
+  Downloading azure_identity-1.25.2-py3-none-any.whl.metadata (90 kB)
+Collecting azure-storage-blob==12.28.0 (from open-webui)
+  Downloading azure_storage_blob-12.28.0-py3-none-any.whl.metadata (26 kB)
+Collecting bcrypt==5.0.0 (from open-webui)
+  Downloading bcrypt-5.0.0-cp39-abi3-macosx_10_12_universal2.whl.metadata (10 kB)
+Collecting black==26.1.0 (from open-webui)
+  Downloading black-26.1.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (88 kB)
+Collecting boto3==1.42.62 (from open-webui)
+  Downloading boto3-1.42.62-py3-none-any.whl.metadata (6.7 kB)
+Requirement already satisfied: brotli==1.1.0 in /opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages (from open-webui) (1.1.0)
+Collecting chardet==5.2.0 (from open-webui)
+  Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting chromadb==1.5.2 (from open-webui)
+  Downloading chromadb-1.5.2-cp39-abi3-macosx_11_0_arm64.whl.metadata (7.2 kB)
+Collecting cryptography (from open-webui)
+  Downloading cryptography-46.0.5-cp311-abi3-macosx_10_9_universal2.whl.metadata (5.7 kB)
+INFO: pip is looking at multiple versions of open-webui to determine which version is compatible with other requirements. This could take a while.
+Collecting open-webui
+  Downloading open_webui-0.8.9-py3-none-any.whl.metadata (24 kB)
+  Downloading open_webui-0.8.8-py3-none-any.whl.metadata (24 kB)
+Collecting alembic==1.18.3 (from open-webui)
+  Downloading alembic-1.18.3-py3-none-any.whl.metadata (7.2 kB)
+Collecting authlib==1.6.7 (from open-webui)
+  Downloading authlib-1.6.7-py2.py3-none-any.whl.metadata (9.8 kB)
+Collecting azure-identity==1.25.1 (from open-webui)
+  Downloading azure_identity-1.25.1-py3-none-any.whl.metadata (88 kB)
+Collecting boto3==1.42.44 (from open-webui)
+  Downloading boto3-1.42.44-py3-none-any.whl.metadata (6.8 kB)
+...
+```
+
+</details>
