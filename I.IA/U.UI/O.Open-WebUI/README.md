@@ -163,7 +163,7 @@ Here is the breakdown of the best methods, from the simplest to the most advance
 ### 1. The Manual Way (Standard Method)
 This is the default way to enable web search. In any chat, simply click the **`+` button** next to the message input and toggle the **"Web Search" switch** on . However, this setting only lasts for that specific conversation and needs to be re-enabled for new chats.
 
-### 2. Make it the Default for a Specific Model (Recommended)
+### 2. Make it the Default for a Specific Model (Recommended ✅ )
 The cleanest way to have web search "always on" is to configure it directly in the settings for the `mistral` model you're using. According to the official Open WebUI documentation, you can set default features that apply to every new conversation with that model .
 
 1.  Go to **Admin Panel** → **Settings** → **Models**.
