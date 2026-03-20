@@ -147,6 +147,64 @@ INFO:     Waiting for application startup.
 <image src=images/open-WebUI.png width='80%' height='80%' > </image>
 
 
+## 🧮 Web Search Enabled
+
+Persistent `web search enabled` by default has been a highly requested feature in Open WebUI , and there are actually several ways to achieve this depending on how "always-on" you want it to be.
+
+Here is the breakdown of the best methods, from the simplest to the most advanced:
+
+| Method | Complexity | Persistence | Best For |
+| :--- | :--- | :--- | :--- |
+| **Chat Toggle (Manual)** | Very Easy | Single Chat | Testing or occasional use. |
+| **Model Default Settings** | Easy | Per Model | Making web search the default for a specific AI model. |
+| **URL Bookmarklet** | Easy | Per Session (via click) | Quick access from your browser bookmarks. |
+| **Custom Filter (Advanced)** | Hard | System-Wide | Enabling it automatically for all users and chats without clicking. |
+
+### 1. The Manual Way (Standard Method)
+This is the default way to enable web search. In any chat, simply click the **`+` button** next to the message input and toggle the **"Web Search" switch** on . However, this setting only lasts for that specific conversation and needs to be re-enabled for new chats.
+
+### 2. Make it the Default for a Specific Model (Recommended)
+The cleanest way to have web search "always on" is to configure it directly in the settings for the `mistral` model you're using. According to the official Open WebUI documentation, you can set default features that apply to every new conversation with that model .
+
+1.  Go to **Admin Panel** → **Settings** → **Models**.
+2.  Select your `mistral` model.
+3.  Under **Default Features**, check the box for **Web Search** .
+
+Now, any new chat you start with the Mistral model will have web search enabled by default. You can still toggle it off manually if needed.
+
+### 3. Use a Special URL (Best for Browser Search)
+You can create a custom search engine in your browser that automatically activates web search. This is perfect for using Open WebUI directly from your browser's address bar .
+
+1.  In your browser's search engine settings (e.g., Chrome's "Manage search engines"), add a new one with the following details:
+    *   **Search Engine:** `Open WebUI (Web Search)`
+    *   **Keyword:** `ow` (or any shortcut you prefer)
+    *   **URL:** `http://localhost:3000/?web-search=true&q=%s` 
+        *   *Note: Replace `localhost:3000` with your Open WebUI URL if it's different.*
+2.  Now, typing `ow what is the weather` in your address bar will open a new chat in Open WebUI with web search already enabled for that query.
+
+### 4. The Developer Approach (Filters)
+For a truly "always-on" experience that requires no user interaction, you can use a custom **Filter**. This involves writing a small piece of Python code that runs in the background. The community has shared examples of filters that force web search to be enabled on every message .
+
+```python
+# Simplified example from community discussion 
+# This is an advanced method requiring technical knowledge.
+from open_webui.utils.middleware import chat_web_search_handler
+
+class Filter:
+    async def inlet(self, body, __user__, __request__, __event_emitter__):
+        # This forces web search to be considered enabled
+        await chat_web_search_handler(__request__, body, {"__event_emitter__": __event_emitter__}, __user__)
+        return body
+```
+
+### 5. Upcoming Native Feature
+It's worth noting that the community has been actively discussing this. There is a merged pull request (#9370) that aims to add an **"Always-On Web Search" option in User Settings** . This feature will likely be available in an upcoming release, making this process even simpler.
+
+### Next Steps
+For your use case, I would strongly recommend starting with **Method 2 (Model Default Settings)** . It's the most straightforward and aligns perfectly with how you described the Ollama app's behavior. Once you set it there, you won't have to think about it again.
+
+
+
 # :books: References
 
 ```bash
