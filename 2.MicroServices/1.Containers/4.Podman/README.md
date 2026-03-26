@@ -199,9 +199,20 @@ Machine "podman-machine-default" started successfully
 ```
 # Stopper
 podman machine stop
+```
 
+```
 # SSH
 podman machine ssh
+```
+```
+Connecting to vm podman-machine-default. To close connection, use `~.` or `exit`
+Fedora CoreOS 40.20240701.2.0
+Tracker: https://github.com/coreos/fedora-coreos-tracker
+Discuss: https://discussion.fedoraproject.org/tag/coreos
+
+Last login: Thu Mar 26 20:11:31 2026 from 192.168.127.1
+core@localhost:~$
 ```
 
 ---
