@@ -205,7 +205,7 @@ podman machine stop
 # SSH
 podman machine ssh
 ```
-```
+```powershell
 Connecting to vm podman-machine-default. To close connection, use `~.` or `exit`
 Fedora CoreOS 40.20240701.2.0
 Tracker: https://github.com/coreos/fedora-coreos-tracker
