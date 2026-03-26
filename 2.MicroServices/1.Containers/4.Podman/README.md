@@ -200,6 +200,7 @@ Machine "podman-machine-default" started successfully
 # Stopper
 podman machine stop
 ```
+> Machine "podman-machine-default" stopped successfully
 
 ```
 # SSH
