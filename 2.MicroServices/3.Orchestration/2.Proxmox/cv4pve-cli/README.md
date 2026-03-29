@@ -528,6 +528,12 @@ pve get nodes
 ## 📸 14. Examples
 
 ```bash
+pve get nodes -ojson | jq '.[] | .node'
+```
+> "labinfo"
+
+
+```bash
 pve get node services labinfo | grep pve
 ```
 ```
