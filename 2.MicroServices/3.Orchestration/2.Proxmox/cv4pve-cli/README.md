@@ -313,20 +313,41 @@ cv4pve-cli config list
 ## :two: VMs
 
 ```bash
-cv4pve-cli get vms -ojson | jq '.[] | select(.status=="running") | .name'
+cv4pve-cli get vms -ojson | jq -r '.[] | select(.status=="running") | "\(.id) \(.name)"'
 ```
 ```
-"vm300150485"
-"vm300150433"
-"vm300150385"
-"vm300151970"
-"vm300150558"
-"vm300150195"
-"vm300150416"
-"vm300151042"
-"vm300151607"
+qemu/100 vm300150485
+qemu/101 vm300150433
+qemu/102 vm300150385
+qemu/103 vm300151970
+qemu/104 vm300150558
+qemu/105 vm300150195
+qemu/106 vm300150416
+qemu/107 vm300151042
+qemu/108 vm300151607
 ```
 
+```bash
+pve get vm status labinfo 100
+```
+```lua
++-----------------+--------------------+
+| key             | value              |
++-----------------+--------------------+
+| cpus            | 2                  |
+| ha              | {"managed":0}      |
+| maxdisk         | 10737418240        |
+| maxmem          | 2147483648         |
+| name            | vm300150485        |
+| pid             | 662273             |
+| qmpstatus       | running            |
+| running-machine | pc-i440fx-7.2+pve0 |
+| running-qemu    | 7.2.10             |
+| status          | running            |
+| uptime          | 3285422            |
+| vmid            | 100                |
++-----------------+--------------------+
+```
 
 # :books: References
 
