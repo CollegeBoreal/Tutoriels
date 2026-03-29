@@ -292,9 +292,9 @@ cv4pve-cli get vms -o=json | jq .
 
 ## 🧠 Conclusion
 
-👉 Ton Mac devient un **poste de contrôle central**
-👉 `cv4pve-cli` = équivalent de `kubectl` pour Proxmox
-👉 Gestion simple de plusieurs clusters (contexts)
+- 👉 Ton Mac devient un **poste de contrôle central**
+- 👉 `cv4pve-cli` = équivalent de `kubectl` pour Proxmox
+- 👉 Gestion simple de plusieurs clusters (contexts)
 
 # :books: References
 
