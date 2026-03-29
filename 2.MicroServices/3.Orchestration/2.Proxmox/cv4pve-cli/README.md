@@ -373,7 +373,7 @@ cv4pve-cli --version
 
 ```bash
 cv4pve-cli config add lab \
-  --host 10.7.237.13:8006 \
+  --host 10.7.237.13 \
   --api-token 'user@pve!tokenid=uuid' \
   --validate-certificate false
 ```
