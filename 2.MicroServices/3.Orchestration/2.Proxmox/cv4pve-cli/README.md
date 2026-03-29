@@ -4,7 +4,7 @@
 
 ## 🍏 Installation sur macOS
 
-### ✅ Méthode recommandée (Homebrew)
+### ✅ Méthode recommandée (Homebrew) :x:
 
 Avec Homebrew :
 
@@ -26,9 +26,12 @@ curl -L  -o /tmp/cv4pve-cli.zip \
             /usr/local/bin/cv4pve-cli
 ```
 
+Tester:
+
  ```bash
 cv4pve-cli --version
 ```
+> 2.1.0
 
 ---
 
