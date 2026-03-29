@@ -568,11 +568,10 @@ pve get node disk lvm labinfo -ojson | jq .
 
 ## 🚀 TL;DR
 
-👉 CV4PVE-CLI = kubectl pour Proxmox
-👉 API token = kube token
-👉 context = kubeconfig
-👉 VMs/CT = pods analogy
-
+- 👉 CV4PVE-CLI = kubectl pour Proxmox
+- 👉 API token = kube token
+- 👉 context = kubeconfig
+- 👉 VMs/CT = pods analogy
 
 
 # :books: References
