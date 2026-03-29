@@ -20,9 +20,14 @@ brew install cv4pve-cli
 Télécharger depuis GitHub et installer manuellement :
 
 ```bash
-curl -L https://github.com/Corsinvest/cv4pve-cli/releases/latest/download/cv4pve-cli-osx-x64 -o cv4pve-cli
-chmod +x cv4pve-cli
-sudo mv cv4pve-cli /usr/local/bin/
+curl -L  -o /tmp/cv4pve-cli.zip \
+            https://github.com/Corsinvest/cv4pve-cli/releases/download/v2.1.0/cv4pve-cli-osx-arm64.zip \
+&& unzip -o /tmp/cv4pve-cli.zip -d /tmp && chmod +x /tmp/cv4pve-cli && sudo mv /tmp/cv4pve-cli \
+            /usr/local/bin/cv4pve-cli
+```
+
+ ```bash
+cv4pve-cli --version
 ```
 
 ---
