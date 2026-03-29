@@ -525,6 +525,39 @@ pve get vms
 pve get nodes
 ```
 
+## 📸 14. Examples
+
+```bash
+pve get node services labinfo | grep pve
+```
+```
+| active       | The Proxmox VE cluster filesystem            | pve-cluster       | pve-cluster       | running | enabled         |
+| active       | Proxmox VE firewall                          | pve-firewall      | pve-firewall      | running | enabled         |
+| active       | PVE Cluster HA Resource Manager Daemon       | pve-ha-crm        | pve-ha-crm        | running | enabled         |
+| active       | PVE Local HA Resource Manager Daemon         | pve-ha-lrm        | pve-ha-lrm        | running | enabled         |
+| active       | PVE API Daemon                               | pvedaemon         | pvedaemon         | running | enabled         |
+| active       | Proxmox VE firewall logger                   | pvefw-logger      | pvefw-logger      | running | enabled         |
+| active       | PVE API Proxy Server                         | pveproxy          | pveproxy          | running | enabled         |
+| active       | Proxmox VE scheduler                         | pvescheduler      | pvescheduler      | running | enabled         |
+| active       | PVE Status Daemon                            | pvestatd          | pvestatd          | running | enabled         |
+```
+
+```bash
+pve get node disk lvm labinfo -ojson | jq .
+```
+```json
+[
+  {
+    "key": "children",
+    "value": "[{\"leaf\":0,\"name\":\"pve\",\"children\":[{\"free\":17171480576,\"name\":\"/dev/sda3\",\"size\":293022466048,\"leaf\":1}],\"free\":17171480576,\"lvcount\":23,\"size\":293022466048}]"
+  },
+  {
+    "key": "leaf",
+    "value": 0
+  }
+]
+```
+
 ---
 
 ## 🚀 TL;DR
