@@ -38,11 +38,11 @@ cv4pve-cli --version
 ## 🔗 Utilisation à distance (comme kubectl)
 
 ```bash
-cv4pve-cli config add lab \
+cv4pve-cli config add INF1102-201-26H-03:GROUP_3 \
   --host IP-PROXMOX:8006 \
   --api-token root@pam!token=XXXX
 
-cv4pve-cli config use lab
+cv4pve-cli config use INF1102-201-26H-03:GROUP_3
 
 cv4pve-cli get vms
 ```
@@ -50,7 +50,7 @@ cv4pve-cli get vms
 <details>
 
 ```bash
-cv4pve-cli config add lab \
+cv4pve-cli config add INF1102-201-26H-03:GROUP_3 \
   --host 10.7.237.13:8006 \
   --api-token 'tofu@pve!opentofu=55dccf39-a3db-4bad-8a28-954addb13739' \
   --validate-certificate false
@@ -64,9 +64,9 @@ Connected to 10.7.237.13:8006 — PVE version: 7.4-20
 
 
 ```bash
-cv4pve-cli config use lab
+cv4pve-cli config use INF1102-201-26H-03:GROUP_3
 ```
-> Switched to context 'lab'.
+> Switched to context 'cv4pve-cli config use INF1102-201-26H-03:GROUP_3'.
 
 ```bash
 cv4pve-cli get nodes
