@@ -1,40 +1,5 @@
 # 🖥️ cv4pve-cli
 
----
-
-## 🍏 Installation sur macOS
-
-### ✅ Méthode recommandée (Homebrew) :x:
-
-Avec Homebrew :
-
-```bash
-brew tap corsinvest/cv4pve
-brew install cv4pve-cli
-```
-
----
-
-### ✅ Alternative (binaire)
-
-Télécharger depuis GitHub et installer manuellement :
-
-```bash
-curl -L  -o /tmp/cv4pve-cli.zip \
-            https://github.com/Corsinvest/cv4pve-cli/releases/download/v2.1.0/cv4pve-cli-osx-arm64.zip \
-&& unzip -o /tmp/cv4pve-cli.zip -d /tmp && chmod +x /tmp/cv4pve-cli && sudo mv /tmp/cv4pve-cli \
-            /usr/local/bin/cv4pve-cli
-```
-
-Tester:
-
- ```bash
-cv4pve-cli --version
-```
-> 2.1.0
-
----
-
 ## 🔗 Utilisation à distance (comme kubectl)
 
 ```bash
@@ -330,3 +295,42 @@ cv4pve-cli get vms -o=json | jq .
 👉 Ton Mac devient un **poste de contrôle central**
 👉 `cv4pve-cli` = équivalent de `kubectl` pour Proxmox
 👉 Gestion simple de plusieurs clusters (contexts)
+
+# :books: References
+
+---
+
+## 🍏 Installation sur macOS
+
+### ✅ Alternative (binaire)
+
+Télécharger depuis GitHub et installer manuellement :
+
+```bash
+curl -L  -o /tmp/cv4pve-cli.zip \
+            https://github.com/Corsinvest/cv4pve-cli/releases/download/v2.1.0/cv4pve-cli-osx-arm64.zip \
+&& unzip -o /tmp/cv4pve-cli.zip -d /tmp && chmod +x /tmp/cv4pve-cli && sudo mv /tmp/cv4pve-cli \
+            /usr/local/bin/cv4pve-cli
+```
+
+Tester:
+
+ ```bash
+cv4pve-cli --version
+```
+> 2.1.0
+
+---
+
+### :x: Méthode non recommandée (Homebrew)
+
+Avec Homebrew :
+
+```bash
+brew tap corsinvest/cv4pve
+brew install cv4pve-cli
+```
+
+---
+
+
