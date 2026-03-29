@@ -39,7 +39,7 @@ cv4pve-cli --version
 
 ```bash
 cv4pve-cli config add lab \
-  --host https://IP-PROXMOX:8006 \
+  --host IP-PROXMOX:8006 \
   --api-token root@pam!token=XXXX
 
 cv4pve-cli config use lab
@@ -49,14 +49,35 @@ cv4pve-cli get vms
 
 <details>
 
-```
+```bash
 cv4pve-cli config add lab \
-  --host https://10.7.237.16:8006 \
-  --api-token tofu@pve!opentofu=4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00
+  --host 10.7.237.13:8006 \
+  --api-token 'tofu@pve!opentofu=55dccf39-a3db-4bad-8a28-954addb13739' \
+  --validate-certificate false
+```
+```
+Context 'lab' saved.
+Connected to 10.7.237.13:8006 — PVE version: 7.4-20
 ```
 
 </details>
 
+
+```bash
+cv4pve-cli config use lab
+```
+> Switched to context 'lab'.
+
+```bash
+cv4pve-cli get nodes
+``
+```lua
++---------+--------+---------------------+-------+--------+-------------+-------------+-------------------------------------------------------------------------------------------------+---------+
+| node    | status | cpu                 | level | maxcpu | maxmem      | mem         | ssl_fingerprint                                                                                 | uptime  |
++---------+--------+---------------------+-------+--------+-------------+-------------+-------------------------------------------------------------------------------------------------+---------+
+| labinfo | online | 0.00378094889620685 |       | 16     | 67508559872 | 21202927616 | 94:63:49:B7:ED:77:C7:AD:33:DA:DC:B6:C4:E6:43:63:F7:C0:AC:38:5F:C3:9C:01:02:80:E5:D4:24:5E:B9:C2 | 5263188 |
++---------+--------+---------------------+-------+--------+-------------+-------------+-------------------------------------------------------------------------------------------------+---------+
+```
 
 👉 Tu travailles depuis ton Mac, sans te connecter en SSH au serveur.
 
