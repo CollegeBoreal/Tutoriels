@@ -47,6 +47,17 @@ cv4pve-cli config use lab
 cv4pve-cli get vms
 ```
 
+<details>
+
+```
+cv4pve-cli config add lab \
+  --host https://10.7.237.16:8006 \
+  --api-token tofu@pve!opentofu=4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00
+```
+
+</details>
+
+
 👉 Tu travailles depuis ton Mac, sans te connecter en SSH au serveur.
 
 ---
