@@ -17,6 +17,6 @@ https://www.coursera.org/professional-certificates/google-it-automation
 
 # Reference
 
-https://www.coursera.org/o/c4c-college-boral/admin/home
+https://www.coursera.org/o/c4c-college-boreal/admin/home
 
 https://rhyme.com/c/how-to-use-rhyme/10213
