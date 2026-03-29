@@ -330,6 +330,8 @@ cv4pve-cli get vms -ojson | jq '.[] | select(.status=="running") | .name'
 
 # :books: References
 
+- [ ] [Manage Proxmox Like Kubernetes? This CLI Tool Makes It Possible](https://www.virtualizationhowto.com/2026/03/manage-proxmox-like-kubernetes-this-cli-tool-makes-it-possible/  )
+
 ---
 
 ## 🍏 Installation sur macOS
