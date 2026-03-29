@@ -284,7 +284,7 @@ cv4pve-cli get vms -o=json | jq .
 * ⚠️ Certificat auto-signé :
 
   ```bash
-  --insecure
+  --validate-certificate false
   ```
 * 🔒 Accès via VPN recommandé (WireGuard, Tailscale…)
 
