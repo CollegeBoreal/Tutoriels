@@ -349,6 +349,193 @@ pve get vm status labinfo 100
 +-----------------+--------------------+
 ```
 
+Voici un **cheat sheet pratique pour cv4pve-cli sur macOS/Linux (style kubectl pour Proxmox)**
+
+---
+
+# 🧠 CV4PVE-CLI CHEATSHEET (Proxmox like kubectl)
+
+---
+
+## 🚀 1. Installation (Mac M1/M2/M3)
+
+```bash
+curl -L -o /tmp/cv4pve.zip https://github.com/Corsinvest/cv4pve-cli/releases/latest/download/cv4pve-cli-osx-arm64.zip
+unzip -o /tmp/cv4pve.zip -d /tmp
+chmod +x /tmp/cv4pve-cli
+sudo mv /tmp/cv4pve-cli /usr/local/bin/
+cv4pve-cli --version
+```
+
+---
+
+## 🔗 2. Connexion (Context = kubeconfig)
+
+```bash
+cv4pve-cli config add lab \
+  --host 10.7.237.13:8006 \
+  --api-token 'user@pve!tokenid=uuid' \
+  --validate-certificate false
+```
+
+👉 switch context :
+
+```bash
+cv4pve-cli config use lab
+```
+
+---
+
+## 📡 3. Test connexion
+
+```bash
+cv4pve-cli get nodes
+cv4pve-cli get vms
+cv4pve-cli get ct
+```
+
+---
+
+## 🖥️ 4. VM / Container management
+
+```bash
+cv4pve-cli get vms
+cv4pve-cli get vm <id>
+
+cv4pve-cli start vm <id>
+cv4pve-cli stop vm <id>
+cv4pve-cli restart vm <id>
+```
+
+---
+
+## 📦 5. Containers (LXC)
+
+```bash
+cv4pve-cli get ct
+cv4pve-cli start ct <id>
+cv4pve-cli stop ct <id>
+```
+
+---
+
+## 🧠 6. Nodes
+
+```bash
+cv4pve-cli get nodes
+cv4pve-cli get node <name>
+```
+
+---
+
+## 🌐 7. API raw (ultra puissant)
+
+```bash
+cv4pve-cli api get /nodes
+cv4pve-cli api get /cluster/resources
+cv4pve-cli api get /nodes/pve/qemu
+```
+
+---
+
+## 📊 8. JSON mode (automation)
+
+```bash
+cv4pve-cli get vms --output json
+```
+
+Pipe avec jq :
+
+```bash
+cv4pve-cli get vms --output json | jq
+```
+
+---
+
+## 🔐 9. API Token format
+
+```
+user@realm!tokenid=secret-uuid
+```
+
+Exemple :
+
+```
+tofu@pve!opentofu=xxxxxxxx-xxxx-xxxx
+```
+
+---
+
+## ⚠️ 10. IMPORTANT (erreurs fréquentes)
+
+#### ❌ Host avec https
+
+```bash
+--host https://10.7.x.x:8006 ❌
+```
+
+#### ✅ Correct
+
+```bash
+--host 10.7.x.x:8006
+```
+
+---
+
+#### ❌ erreur "No reachable hosts"
+
+👉 presque toujours :
+
+* host mal formaté
+* TLS parsing
+* API handshake cassé
+
+---
+
+## 🧪 11. Debug rapide
+
+```bash
+nc -vz <ip> 8006
+curl -k https://<ip>:8006/api2/json/version
+```
+
+---
+
+## 🧰 12. Workflow style kubectl
+
+```bash
+cv4pve-cli config add lab ...
+cv4pve-cli config use lab
+cv4pve-cli get nodes
+cv4pve-cli get vms
+```
+
+---
+
+## 🔥 13. Alias utiles
+
+```bash
+alias pve='cv4pve-cli'
+```
+
+Puis :
+
+```bash
+pve get vms
+pve get nodes
+```
+
+---
+
+## 🚀 TL;DR
+
+👉 CV4PVE-CLI = kubectl pour Proxmox
+👉 API token = kube token
+👉 context = kubeconfig
+👉 VMs/CT = pods analogy
+
+
+
 # :books: References
 
 - [ ] [Manage Proxmox Like Kubernetes? This CLI Tool Makes It Possible](https://www.virtualizationhowto.com/2026/03/manage-proxmox-like-kubernetes-this-cli-tool-makes-it-possible/  )
