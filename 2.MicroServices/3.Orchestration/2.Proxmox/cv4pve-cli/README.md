@@ -4,7 +4,7 @@
 
 ```bash
 cv4pve-cli config add INF1102-201-26H-03:GROUP_3 \
-  --host IP-PROXMOX:8006 \
+  --host IP-PROXMOX \
   --api-token root@pam!token=XXXX
 
 cv4pve-cli config use INF1102-201-26H-03:GROUP_3
@@ -16,13 +16,13 @@ cv4pve-cli get vms
 
 ```bash
 cv4pve-cli config add INF1102-201-26H-03:GROUP_3 \
-  --host 10.7.237.13:8006 \
+  --host 10.7.237.13 \
   --api-token 'tofu@pve!opentofu=55dccf39-a3db-4bad-8a28-954addb13739' \
   --validate-certificate false
 ```
 ```
-Context 'lab' saved.
-Connected to 10.7.237.13:8006 — PVE version: 7.4-20
+Context 'INF1102-201-26H-03:GROUP_3' saved.
+Connected to 10.7.237.13 — PVE version: 7.4-20
 ```
 
 </details>
@@ -31,7 +31,7 @@ Connected to 10.7.237.13:8006 — PVE version: 7.4-20
 ```bash
 cv4pve-cli config use INF1102-201-26H-03:GROUP_3
 ```
-> Switched to context 'cv4pve-cli config use INF1102-201-26H-03:GROUP_3'.
+> Switched to context 'INF1102-201-26H-03:GROUP_3'.
 
 ```bash
 cv4pve-cli get nodes
