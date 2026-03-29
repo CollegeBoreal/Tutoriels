@@ -296,7 +296,10 @@ cv4pve-cli get vms -o=json | jq .
 - 👉 `cv4pve-cli` = équivalent de `kubectl` pour Proxmox
 - 👉 Gestion simple de plusieurs clusters (contexts)
 
-# 🥇 List
+# 🥇 Utilisations
+
+## :one: Config
+
 
 ```bash
 cv4pve-cli config list
@@ -306,6 +309,24 @@ cv4pve-cli config list
   INF1102-201-26H-03:GROUP_2 10.7.237.13:8006   (api-token)
 * INF1102-201-26H-03:GROUP_3 10.7.237.33:8006   (api-token)
 ```
+
+## :two: VMs
+
+```bash
+cv4pve-cli get vms -ojson | jq '.[] | select(.status=="running") | .name'
+```
+```
+"vm300150485"
+"vm300150433"
+"vm300150385"
+"vm300151970"
+"vm300150558"
+"vm300150195"
+"vm300150416"
+"vm300151042"
+"vm300151607"
+```
+
 
 # :books: References
 
