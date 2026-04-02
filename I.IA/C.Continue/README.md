@@ -1,4 +1,4 @@
-# local AI coding assistant
+# [Continue](https://docs.continue.dev) local AI coding assistant
 
 Voici un **résumé clair en français** de l’article :
 
