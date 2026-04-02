@@ -2,6 +2,8 @@
 
 Voici un **résumé clair en français** de l’article :
 
+<image src=images/continue-local-LLM.png width='80%' height='80%' />
+
 ---
 
 ## 🧠 Objectif de l’article
