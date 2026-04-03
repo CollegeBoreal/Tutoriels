@@ -137,3 +137,8 @@ C’est particulièrement utile pour :
 * architecture FPGA
 * préparation ASIC
 
+---
+
+# :books: References
+
+- [ ] [ollama run deepseek-coder](https://ollama.com/library/deepseek-coder)
