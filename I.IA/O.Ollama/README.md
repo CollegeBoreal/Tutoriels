@@ -758,3 +758,6 @@ ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
 ```
 C'est normal - certaines optimisations Metal sont désactivées car ton M2 est antérieur aux M5/A19, mais ça n'affecte pas les performances.
 
+## 🧻 Library
+
+- [ ] https://ollama.com/library
