@@ -396,6 +396,49 @@ Name      Status  User   File
 ollama    started boreal ~/Library/LaunchAgents/homebrew.mxcl.ollama.plist
 ```
 
+## 🥖 Modèle en cours d'exécution sur 🦙 Ollama
+
+Voici les trois manières principales pour vérifier quel modèle est en cours d'exécution sur Ollama, selon que vous voulez voir ce qui est actuellement chargé dans la mémoire ou ceux qui sont téléchargés et disponibles.
+
+### 1. Vérifier ce qui est en cours d'exécution (Modèle actif)
+Si vous voulez savoir quel modèle Ollama sert actuellement des requêtes ou conserve dans la mémoire, utilisez le **Statut de processus** :
+```bash
+ollama ps
+```
+**Exemple d'affichage :**
+```text
+NOM           ID          TAILLE      MODIFIÉ
+llama3:8b     4e899...     4,9GB       2 minutes ago
+```
+*Si aucun modèle n'est montré ici, Ollama n'est pas actuellement chargé d'un modèle dans la mémoire, ou peut avoir été évincé.*
+
+### 2. Vérifier ceux qui sont téléchargés/installés
+Si vous voulez savoir quels modèles vous avez téléchargés (installés), mais n'avez pas nécessairement envie de voir le statut mémoire :
+```bash
+ollama list
+```
+**Exemple d'affichage :**
+```text
+NOM                ID          TAILLE
+llama3:latest      ...          4,9GB
+mistral:7b         ...          4,1GB
+```
+*Prenez garde : juste parce que un modèle est mentionné ici ne veut pas nécessairement dire qu'il est en cours d'exécution dans la mémoire de GPU/VRAM encore.*
+
+### 3. Vérifier via l'API (Scripting)
+Si vous intégrez Ollama dans le code et voulez savoir ce qui est disponible via l'API locale :
+```bash
+curl http://localhost:11434/api/tags
+```
+Ceci renvoie un fichier JSON contenant la liste complète de tous les modèles disponibles. Si vous envoyez une requête à `/api/generate` en utilisant le nom d'un modèle spécifique, Ollama chargera automatiquement le modèle si il n'est pas déjà dans la mémoire.
+
+---
+
+### Résumé : "Chargé" vs. "Téléchargé"
+*   **"Téléchargé" (`ollama list`)**: Les fichiers existent sur votre disque. Vous pouvez les utiliser, mais ils peuvent ne pas être chargés dans la mémoire de GPU/VRAM encore.
+*   **"En cours d'exécution" (`ollama ps`)**: Le modèle est actuellement chargé dans la mémoire de processus Ollama. Il est prêt pour des inférences immédiates sans avoir à télécharger les poids une nouvelle fois.
+
+
 # :books: References
 
 ## Démarrer `ollama` manuellement
@@ -715,44 +758,3 @@ ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
 ```
 C'est normal - certaines optimisations Metal sont désactivées car ton M2 est antérieur aux M5/A19, mais ça n'affecte pas les performances.
 
-## 🥖 Modèle en cours d'exécution sur 🦙 Ollama
-
-Voici les trois manières principales pour vérifier quel modèle est en cours d'exécution sur Ollama, selon que vous voulez voir ce qui est actuellement chargé dans la mémoire ou ceux qui sont téléchargés et disponibles.
-
-### 1. Vérifier ce qui est en cours d'exécution (Modèle actif)
-Si vous voulez savoir quel modèle Ollama sert actuellement des requêtes ou conserve dans la mémoire, utilisez le **Statut de processus** :
-```bash
-ollama ps
-```
-**Exemple d'affichage :**
-```text
-NOM           ID          TAILLE      MODIFIÉ
-llama3:8b     4e899...     4,9GB       2 minutes ago
-```
-*Si aucun modèle n'est montré ici, Ollama n'est pas actuellement chargé d'un modèle dans la mémoire, ou peut avoir été évincé.*
-
-### 2. Vérifier ceux qui sont téléchargés/installés
-Si vous voulez savoir quels modèles vous avez téléchargés (installés), mais n'avez pas nécessairement envie de voir le statut mémoire :
-```bash
-ollama list
-```
-**Exemple d'affichage :**
-```text
-NOM                ID          TAILLE
-llama3:latest      ...          4,9GB
-mistral:7b         ...          4,1GB
-```
-*Prenez garde : juste parce que un modèle est mentionné ici ne veut pas nécessairement dire qu'il est en cours d'exécution dans la mémoire de GPU/VRAM encore.*
-
-### 3. Vérifier via l'API (Scripting)
-Si vous intégrez Ollama dans le code et voulez savoir ce qui est disponible via l'API locale :
-```bash
-curl http://localhost:11434/api/tags
-```
-Ceci renvoie un fichier JSON contenant la liste complète de tous les modèles disponibles. Si vous envoyez une requête à `/api/generate` en utilisant le nom d'un modèle spécifique, Ollama chargera automatiquement le modèle si il n'est pas déjà dans la mémoire.
-
----
-
-### Résumé : "Chargé" vs. "Téléchargé"
-*   **"Téléchargé" (`ollama list`)**: Les fichiers existent sur votre disque. Vous pouvez les utiliser, mais ils peuvent ne pas être chargés dans la mémoire de GPU/VRAM encore.
-*   **"En cours d'exécution" (`ollama ps`)**: Le modèle est actuellement chargé dans la mémoire de processus Ollama. Il est prêt pour des inférences immédiates sans avoir à télécharger les poids une nouvelle fois.
