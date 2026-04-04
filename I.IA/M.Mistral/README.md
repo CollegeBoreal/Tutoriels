@@ -94,3 +94,6 @@ ollama run mistral:latest  # Démarre une nouvelle instance (comme docker run)
 Ce modèle mental te sera très utile - le workflow de type Docker rend Ollama très intuitif une fois que tu reconnais le motif !
 
 
+# :books: References
+
+- [ ] [Mistral Library](https://ollama.com/library/mistral)
