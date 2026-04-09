@@ -213,9 +213,6 @@ Opened in your browser. Keep that tab to control OpenClaw.
 
 👉 Pour le détail exhaustif (toutes les sous‑commandes et options), consulte la **référence officielle de la CLI**. [\[docs.openclaw.ai\]](https://docs.openclaw.ai/cli), [\[clawdocs.org\]](https://clawdocs.org/reference/cli/)
 
-Souhaites-tu un **mémo ultra‑court (cheat sheet)** ou un **exemple pas à pas** (ex. ajouter Telegram + lancer un agent) ?
-
-
 # 📚 References
 
 - [ ] [CLI Reference](https://docs.openclaw.ai/cli)
