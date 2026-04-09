@@ -12,10 +12,39 @@ Voici un **résumé clair et pratique des principales commandes CLI d’OpenClaw
     openclaw --version
     ```
 *   **Interface utilisateur**
+
+    - [ ] Interface terminal
+
     ```bash
-    openclaw tui        # Interface terminal
-    openclaw dashboard  # Interface web
+    openclaw tui
     ```
+
+    - [ ]  Interface web
+
+    ```bash
+    openclaw dashboard  
+    ```
+<details>
+
+```
+🦞 OpenClaw 2026.3.13 (61d171a)
+   I don't just autocomplete—I auto-commit (emotionally), then ask you to review (logically).
+
+│
+◇  Doctor warnings ────────────────────────────────────────────────────────────────────╮
+│                                                                                      │
+│  - channels.signal.groupPolicy is "allowlist" but groupAllowFrom (and allowFrom) is  │
+│    empty — all group messages will be silently dropped. Add sender IDs to            │
+│    channels.signal.groupAllowFrom or channels.signal.allowFrom, or set groupPolicy   │
+│    to "open".                                                                        │
+│                                                                                      │
+├──────────────────────────────────────────────────────────────────────────────────────╯
+Dashboard URL: http://127.0.0.1:18789/#token=045dba00a4e2c64xxxxxxxxxxxxxx8e6215219dd6e7a35c9
+Copied to clipboard.
+Opened in your browser. Keep that tab to control OpenClaw.
+```
+
+</details>
 
 ***
 
