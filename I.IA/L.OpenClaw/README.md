@@ -93,43 +93,43 @@ Opened in your browser. Keep that tab to control OpenClaw.
     ```
     <details>
 
-```
-🦞 OpenClaw 2026.3.13 (61d171a)
-   I autocomplete your thoughts—just slower and with more API calls.
-
-│
-◇  Doctor warnings ────────────────────────────────────────────────────────────────────╮
-│                                                                                      │
-│  - channels.signal.groupPolicy is "allowlist" but groupAllowFrom (and allowFrom) is  │
-│    empty — all group messages will be silently dropped. Add sender IDs to            │
-│    channels.signal.groupAllowFrom or channels.signal.allowFrom, or set groupPolicy   │
-│    to "open".                                                                        │
-│                                                                                      │
-├──────────────────────────────────────────────────────────────────────────────────────╯
-│
-◇  
-Service: LaunchAgent (loaded)
-File logs: /tmp/openclaw/openclaw-2026-04-09.log
-Command: /opt/homebrew/opt/node/bin/node /opt/homebrew/Cellar/openclaw-cli/2026.3.13/libexec/lib/node_modules/openclaw/dist/index.js gateway --port 18789
-Service file: ~/Library/LaunchAgents/ai.openclaw.gateway.plist
-Service env: OPENCLAW_GATEWAY_PORT=18789
-
-Config (cli): ~/.openclaw/openclaw.json
-Config (service): ~/.openclaw/openclaw.json
-
-Gateway: bind=loopback (127.0.0.1), port=18789 (service args)
-Probe target: ws://127.0.0.1:18789
-Dashboard: http://127.0.0.1:18789/
-Probe note: Loopback-only gateway; only local clients can connect.
-
-Runtime: running (pid 1105, state active)
-RPC probe: ok
-
-Listening: 127.0.0.1:18789
-Troubles: run openclaw status
-Troubleshooting: https://docs.openclaw.ai/troubleshooting
-```
-        
+    ```
+    🦞 OpenClaw 2026.3.13 (61d171a)
+       I autocomplete your thoughts—just slower and with more API calls.
+    
+    │
+    ◇  Doctor warnings ────────────────────────────────────────────────────────────────────╮
+    │                                                                                      │
+    │  - channels.signal.groupPolicy is "allowlist" but groupAllowFrom (and allowFrom) is  │
+    │    empty — all group messages will be silently dropped. Add sender IDs to            │
+    │    channels.signal.groupAllowFrom or channels.signal.allowFrom, or set groupPolicy   │
+    │    to "open".                                                                        │
+    │                                                                                      │
+    ├──────────────────────────────────────────────────────────────────────────────────────╯
+    │
+    ◇  
+    Service: LaunchAgent (loaded)
+    File logs: /tmp/openclaw/openclaw-2026-04-09.log
+    Command: /opt/homebrew/opt/node/bin/node /opt/homebrew/Cellar/openclaw-cli/2026.3.13/libexec/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+    Service file: ~/Library/LaunchAgents/ai.openclaw.gateway.plist
+    Service env: OPENCLAW_GATEWAY_PORT=18789
+    
+    Config (cli): ~/.openclaw/openclaw.json
+    Config (service): ~/.openclaw/openclaw.json
+    
+    Gateway: bind=loopback (127.0.0.1), port=18789 (service args)
+    Probe target: ws://127.0.0.1:18789
+    Dashboard: http://127.0.0.1:18789/
+    Probe note: Loopback-only gateway; only local clients can connect.
+    
+    Runtime: running (pid 1105, state active)
+    RPC probe: ok
+    
+    Listening: 127.0.0.1:18789
+    Troubles: run openclaw status
+    Troubleshooting: https://docs.openclaw.ai/troubleshooting
+    ```
+            
     </details>
 
 ***
