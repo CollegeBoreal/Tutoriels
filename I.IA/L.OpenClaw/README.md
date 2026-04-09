@@ -54,7 +54,7 @@ Opened in your browser. Keep that tab to control OpenClaw.
 
 *   **Onboarding (assistant interactif)**
     ```bash
-    openclaw onboard --wizard
+    openclaw onboard
     ```
 *   **Initialiser / configurer un espace de travail**
     ```bash
