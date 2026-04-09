@@ -18,14 +18,10 @@ knows where its "home" position is.
 
 | Command Type | Purpose | Example Command (Conceptual) | Notes |
 | :--- | :--- | :--- | :--- |
-| **Connection** | Verifies the connection to the physical claw hardware. | `openclaw 
-connect --port /dev/ttyUSB0` | Checks if the computer can talk to the claw. |
-| **Reset** | Clears any stored memory or previous state. | `openclaw reset` | Use 
-this if the claw is behaving erratically. |
-| **Calibration** | Tells the claw its physical endpoints (zeros). | `openclaw 
-calibrate --joints all` | Crucial step. The claw needs to know its physical limits. |
-| **Status Check** | Gets the current readings from all joints/sensors. | `openclaw 
-status` | Outputs joint angles, gripper open/closed status, etc. |
+| **Connection** | Verifies the connection to the physical claw hardware. | `openclaw connect --port /dev/ttyUSB0` | Checks if the computer can talk to the claw. |
+| **Reset** | Clears any stored memory or previous state. | `openclaw reset` | Use this if the claw is behaving erratically. |
+| **Calibration** | Tells the claw its physical endpoints (zeros). | `openclaw calibrate --joints all` | Crucial step. The claw needs to know its physical limits. |
+| **Status Check** | Gets the current readings from all joints/sensors. | `openclaw status` | Outputs joint angles, gripper open/closed status, etc. |
 
 ## 📏 II. Movement & Action Commands (The Basic Operations)
 
