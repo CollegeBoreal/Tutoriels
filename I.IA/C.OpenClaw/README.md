@@ -29,16 +29,10 @@ These are the core commands used to physically manipulate the claw.
 
 | Command Type | Purpose | Example Command (Conceptual) | Notes |
 | :--- | :--- | :--- | :--- |
-| **Open** | Opens the gripper to its maximum safe distance. | `openclaw gripper open` 
-| The simplest action. |
-| **Close** | Closes the gripper to its maximum grip distance. | `openclaw gripper 
-close` | Requires sufficient force/power. |
-| **Joint Movement** | Moves specific joints to a set angle (advanced). | `openclaw 
-joint_move --joint R_knuckle --angle 45` | Useful for precise, partial movements 
-(e.g., bending one finger). |
-| **Move To (Coordinates)** | Moves the end effector to specific 3D coordinates (X, Y, 
-Z). | `openclaw move_to --x 100 --y 50 --z 20` | Treats the claw as a single rigid 
-object moving through space. |
+| **Open** | Opens the gripper to its maximum safe distance. | `openclaw gripper open` | The simplest action. |
+| **Close** | Closes the gripper to its maximum grip distance. | `openclaw gripper close` | Requires sufficient force/power. |
+| **Joint Movement** | Moves specific joints to a set angle (advanced). | `openclaw joint_move --joint R_knuckle --angle 45` | Useful for precise, partial movements (e.g., bending one finger). |
+| **Move To (Coordinates)** | Moves the end effector to specific 3D coordinates (X, Y, Z). | `openclaw move_to --x 100 --y 50 --z 20` | Treats the claw as a single rigid object moving through space. |
 
 ## ⚡ III. Parameter & Safety Commands (Configuration)
 
