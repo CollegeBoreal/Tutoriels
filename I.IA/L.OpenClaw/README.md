@@ -46,6 +46,8 @@ Opened in your browser. Keep that tab to control OpenClaw.
 
 </details>
 
+<image src=images/OpenClaw-dashboard.png width='70%' height='70%' />
+
 ***
 
 ## 2) Installation & initialisation
