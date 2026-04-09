@@ -53,15 +53,10 @@ After configuring, you need to make sure the settings stick and that everything 
 
 | Command Type | Purpose | Example Command (Conceptual) | Notes |
 | :--- | :--- | :--- | :--- |
-| **Save Configuration** | Writes all current parameters to persistent storage. | 
-`openclaw save_config "Default_Grip"` | This allows you to restart the system and load 
-the settings immediately. |
-| **Load Configuration** | Loads a previously saved set of parameters. | `openclaw 
-load_config "Default_Grip"` | Use this when switching tasks or operational modes. |
-| **Test Routine** | Runs a pre-programmed or safe sequence of movements. | `openclaw 
-run_test` | Great for verifying motor function without complex code. |
-| **Exit** | Gracefully shuts down the control interface. | `openclaw exit` or `quit` 
-| Releases the hardware connection safely. |
+| **Save Configuration** | Writes all current parameters to persistent storage. | `openclaw save_config "Default_Grip"` | This allows you to restart the system and load the settings immediately. |
+| **Load Configuration** | Loads a previously saved set of parameters. | `openclaw load_config "Default_Grip"` | Use this when switching tasks or operational modes. |
+| **Test Routine** | Runs a pre-programmed or safe sequence of movements. | `openclaw run_test` | Great for verifying motor function without complex code. |
+| **Exit** | Gracefully shuts down the control interface. | `openclaw exit` or `quit` | Releases the hardware connection safely. |
 
 ---
 
