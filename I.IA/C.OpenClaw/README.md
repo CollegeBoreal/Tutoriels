@@ -41,17 +41,11 @@ These commands adjust how the claw operates, focusing on speed, force, and limit
 
 | Command Type | Purpose | Example Command (Conceptual) | Notes |
 | :--- | :--- | :--- | :--- |
-| **Speed/Velocity** | Sets the maximum speed for all movements. | `openclaw set_speed 
-0.5` | Value often between 0.1 (slow) and 1.0 (fast). |
-| **Max Force** | Sets the maximum gripping force allowed (safety). | `openclaw 
-set_max_force 15` | Use Newtons (N) or similar units. *Crucial for safety.* |
-| **Payload Limit** | Defines the weight the claw is rated to handle. | `openclaw 
-set_payload 5` | Ensures you don't exceed the physical rating. |
-| **Movement Delay** | Adds a pause between sequential actions. | `openclaw set_delay 
-0.2` | Useful for programmed routines to allow time for physics/motors to settle. |
-| **Limit Setting** | Overrides soft limits, setting hard boundaries. | `openclaw 
-set_joint_limit --joint index_finger --max 90` | Used if the physical stops need to be 
-redefined. |
+| **Speed/Velocity** | Sets the maximum speed for all movements. | `openclaw set_speed 0.5` | Value often between 0.1 (slow) and 1.0 (fast). |
+| **Max Force** | Sets the maximum gripping force allowed (safety). | `openclaw set_max_force 15` | Use Newtons (N) or similar units. *Crucial for safety.* |
+| **Payload Limit** | Defines the weight the claw is rated to handle. | `openclaw set_payload 5` | Ensures you don't exceed the physical rating. |
+| **Movement Delay** | Adds a pause between sequential actions. | `openclaw set_delay 0.2` | Useful for programmed routines to allow time for physics/motors to settle. |
+| **Limit Setting** | Overrides soft limits, setting hard boundaries. | `openclaw set_joint_limit --joint index_finger --max 90` | Used if the physical stops need to be redefined. |
 
 ## ✅ IV. Saving & Testing Commands
 
