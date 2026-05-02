@@ -84,8 +84,3 @@ Parce que le modèle *as a Service* s’est généralisé :
 
 ***
 
-## ✅ Définition courte (idéale pour un examen)
-
-> **XaaS (Everything as a Service) désigne un modèle infonuagique où toute ressource informatique est fournie à la demande comme un service plutôt que comme un produit à posséder.**
-
-
