@@ -1,4 +1,25 @@
+# Logseq
 
+***
+
+## ✅ Prérequis
+
+*   macOS
+*   Homebrew installé
+
+Si Homebrew n’est pas encore installé :
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+(commande officielle Homebrew)
+
+***
+
+## ✅ Installation de Logseq via Homebrew (méthode simple)
+
+Logseq est distribué via **Homebrew Cask**.
 
 ```bash
 brew install --cask logseq
@@ -42,3 +63,57 @@ You have 222 outdated formulae and 28 outdated casks installed.
 ```
 
 </details>
+
+Cette commande :
+
+*   télécharge la version officielle de Logseq
+*   installe l’application dans `/Applications`
+*   gère les mises à jour via Homebrew [\[formulae.brew.sh\]](https://formulae.brew.sh/cask/logseq), [\[macvault.vercel.app\]](https://macvault.vercel.app/tools/logseq)
+
+***
+
+## ✅ Lancer Logseq
+
+Après l’installation, vous pouvez :
+
+*   l’ouvrir normalement depuis **Applications**
+*   ou depuis le terminal :
+
+```bash
+open -a Logseq
+```
+
+***
+
+## ✅ Vérifier l’installation
+
+```bash
+brew list --cask | grep logseq
+```
+
+***
+
+## ✅ Mettre Logseq à jour
+
+```bash
+brew update
+brew upgrade --cask logseq
+```
+
+***
+
+## ✅ Désinstaller Logseq
+
+```bash
+brew uninstall --cask logseq
+```
+
+***
+
+## ℹ️ Notes utiles
+
+*   Logseq est **open‑source**, **local‑first** et **privacy‑first**
+*   Compatible Apple Silicon et Intel
+*   La cask Homebrew pointe vers les releases officielles Logseq [\[formulae.brew.sh\]](https://formulae.brew.sh/cask/logseq)
+
+***
