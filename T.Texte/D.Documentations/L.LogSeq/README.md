@@ -1,4 +1,4 @@
-# Logseq
+# :card_file_box: Logseq
 
 ***
 
