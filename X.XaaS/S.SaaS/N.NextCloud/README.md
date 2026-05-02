@@ -63,7 +63,7 @@ This client handles:
 
 ## ✅ Use with Logseq (recommended layout)
 
-    ~/Nextcloud/
+    ~/Documents/Nextcloud/
     └── Logseq/
         └── my-graph/
             ├── pages/
