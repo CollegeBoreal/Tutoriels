@@ -11,7 +11,7 @@ http://biblio.collegeboreal.ca/Informatique
 ## [:one: Languages](1.Languages)  
   * Languages et de leur environnement de développement  
   
-## [:two: Virtualisation](2.Virtualisation)  
+## [:information_source: IaaS](I.IaaS)  
   * Installation d'une machine virtuelle avec Docker et  Orchestration avec Kubernetes
 
 
