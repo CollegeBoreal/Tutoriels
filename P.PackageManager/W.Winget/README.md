@@ -221,9 +221,9 @@ winget install -e --id Google.Chrome
 
 ***
 
-# ⚠️ Important (souvent oublié en lab)
+#### ⚠️ Important (souvent oublié en lab)
 
-## 👉 1. Logoff / reopen shell
+#### 👉 1. Logoff / reopen shell
 
 Parfois nécessaire :
 
