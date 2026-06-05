@@ -161,6 +161,77 @@ Winget = exécuteur
 
 👉 Les apps viennent du repo winget (Microsoft), pas du site winstall directement [\[winstall.app\]](https://winstall.app/eli5)
 
+---
+
+## ⚙️ Installer winget
+
+```
+winget : The term 'winget' is not recognized
+```
+
+***
+
+### 🧠 Pourquoi ça arrive
+
+👉 **winget n’est pas installé** (ou pas disponible)
+
+Contrairement à Windows 11 :
+
+```
+Windows Server 2022 ❌  → winget PAS installé par défaut
+```
+
+➡️ winget = composant appelé **App Installer**
+
+***
+
+### ✅ Solution rapide (copy-paste ready)
+
+#### 👉 1. Installer winget
+
+PowerShell (admin) :
+
+##### 🔥 méthode officielle
+
+```powershell
+Invoke-WebRequest https://aka.ms/getwinget -OutFile winget.msixbundle
+Add-AppxPackage .\winget.msixbundle
+```
+
+***
+
+#### 👉 2. Vérifier
+
+```powershell
+winget --version
+```
+
+✅ si ça répond → OK
+
+***
+
+## 👉 3. Relancer ton install
+
+```powershell
+winget install -e --id okibcn.nano
+winget install -e --id Git.Git
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Google.Chrome
+```
+
+***
+
+# ⚠️ Important (souvent oublié en lab)
+
+## 👉 1. Logoff / reopen shell
+
+Parfois nécessaire :
+
+```
+Fermer PowerShell → rouvrir
+```
+
+
 # 📚 References
 
 [https://winstall.app](https://winstall.app)
