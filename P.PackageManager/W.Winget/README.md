@@ -64,7 +64,6 @@ nano
 ✅ winget install -e --id okibcn.nano (meilleur)
 ```
 
-***
+# 📚 References
 
-💬 Si tu veux (vu ton contexte lab étudiants) :
-👉 je peux te faire un **script winget pour installer nano + git + vscode en 1 shot** 👍
+[https://winstall.app](https://winstall.app)
