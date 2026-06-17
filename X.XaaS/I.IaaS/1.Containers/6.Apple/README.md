@@ -35,6 +35,7 @@ Installing kernel...
   
 </details>
 
+```
 # Verify the CLI tool works and check for active environments
 container list --all
 
