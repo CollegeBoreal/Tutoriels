@@ -21,6 +21,19 @@ Open your macOS Terminal app and execute the following commands to initialize th
 ```bash
 # Initialize and start the container subsystem backend
 container system start
+```
+<details><summary>🪵 Log</summary>
+  
+```
+Launching container-apiserver...
+Testing access to container-apiserver...
+Verifying machine API server is running...
+No default kernel configured.
+Install the recommended default kernel from [https://github.com/kata-containers/kata-containers/releases/download/3.28.0/kata-static-3.28.0-arm64.tar.zst]? [Y/n]: y
+Installing kernel...
+```
+  
+</details>
 
 # Verify the CLI tool works and check for active environments
 container list --all
