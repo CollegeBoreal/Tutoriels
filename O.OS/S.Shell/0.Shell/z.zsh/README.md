@@ -8,17 +8,8 @@
 
 # ZSh
 
-```zsh
-# ----------------------------------------
-export ZSH="$HOME/.oh-my-zsh" 
-ZSH_THEME="robbyrussell"
-plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-#  ---------------------------------------- 
-```
-
-## compare
+## 🔄 compare
 
 Think of Zsh (Z Shell) as an upgraded, highly customizable version of Bash, which is the default shell most people start with. While a standard shell simply executes your text commands, Zsh adds "quality-of-life" features that dramatically speed up your workflow and reduce typos.
 
@@ -50,6 +41,27 @@ To see where Zsh fits, it helps to look at it alongside **Bash** (the old indust
 * **Choose Bash** if you are writing foundational system scripts that need to run seamlessly on every server in the world without installing extra software.
 * **Choose Fish** if you want a beautiful, ultra-modern terminal experience instantly and do not care about strict Bash script compatibility.
 * **Choose Zsh** if you want the absolute best of both worlds: a highly intelligent, interactive terminal environment that still retains full compatibility with standard industry Bash scripts.
+
+
+## [ohmyz.sh](https://ohmyz.sh/)
+
+### Install
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Configure
+
+```zsh
+# ----------------------------------------
+export ZSH="$HOME/.oh-my-zsh" 
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+#  ---------------------------------------- 
+```
 
 
 # 📚 References
