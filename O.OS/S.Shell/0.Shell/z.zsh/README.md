@@ -4,6 +4,20 @@
 % chmod 755 /usr/local/bin/zsh /usr/local/share/zsh/site-functions 
 ```
 
+---
+
+# ZSh
+
+```zsh
+# ----------------------------------------
+export ZSH="$HOME/.oh-my-zsh" 
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+#  ---------------------------------------- 
+```
+
 ## compare
 
 Think of Zsh (Z Shell) as an upgraded, highly customizable version of Bash, which is the default shell most people start with. While a standard shell simply executes your text commands, Zsh adds "quality-of-life" features that dramatically speed up your workflow and reduce typos.
