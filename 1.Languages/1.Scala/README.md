@@ -61,6 +61,7 @@ Setting scala 3.8.4 as default.
 
 ```bash
 scala --version
+```
 ```text
 Scala code runner version: 1.14.0
 Scala version (default): 3.8.4
