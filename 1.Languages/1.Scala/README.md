@@ -34,10 +34,28 @@ sbt runner version: 2.0.2
 
 * Installer dans le terminal
 
+```bash
+sdk install scala
 ```
-$ sdk install scala
+<details><summary> 🪵 Log</summary>
+
+```text
+sdk install scala
+
+Downloading: scala 3.8.4
+
+In progress...
+
+######################################################################################################################################## 100.0%
+
+Installing: scala 3.8.4
+Done installing!
+
+
+Setting scala 3.8.4 as default.
 ```
 
+</details>
 
 * Pour tester l'installation
 
