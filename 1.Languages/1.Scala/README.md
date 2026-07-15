@@ -59,9 +59,11 @@ Setting scala 3.8.4 as default.
 
 * Pour tester l'installation
 
-```
-$ scala --version
-Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
+```bash
+scala --version
+```text
+Scala code runner version: 1.14.0
+Scala version (default): 3.8.4
 ```
 
 ## Play
