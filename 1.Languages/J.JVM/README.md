@@ -23,8 +23,11 @@ curl -s "https://get.sdkman.io" | zsh
 ```
 sdk version  
 ```
-> SDKMAN 5.7.3+337
-
+```text
+SDKMAN!
+script: 5.18.2
+native: 0.4.2
+```
 
 
 ## :a: Installation de la machine virtuelle java
