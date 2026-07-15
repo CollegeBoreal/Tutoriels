@@ -44,20 +44,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 - [ ] Lister les binaires installés.
 
-```
-$ ghcup list
+```bash
+ghcup list
 ```
 
 - [ ] Installer une version spécifique
 
-```
-$ ghcup install 8.6.5
+```bash
+ghcup install 9.12.4
 ```
 
 - [ ] Assigner un version spécifique
 
-```
-$ ghcup set 8.6.5
+```bash
+ghcup set 9.12.4
 ```
 
 ### :two: pour `[Windows PowerShell]`
