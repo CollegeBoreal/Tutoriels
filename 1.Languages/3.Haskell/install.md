@@ -13,9 +13,7 @@
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
-
-- [ ] Résultat
-
+<details><summary>🪵 Log</summary>
 
 ```
   Welcome to Haskell!
@@ -34,6 +32,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
   Note that this script can be re-run at any given time.
 ```
 
+</details>
 
 ##### :m: Env Variable (~/.bashrc or ~/.zshrc)
 
