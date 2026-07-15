@@ -44,10 +44,11 @@ sdk install java
 java --version
 ```
 > Retourne :
-```python
-openjdk 11.0.5 2019-10-15
-OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.5+10)
-OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.5+10, mixed mode)
+```lua
+
+openjdk 25.0.2 2026-01-20 LTS
+OpenJDK Runtime Environment Temurin-25.0.2+10 (build 25.0.2+10-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.2+10 (build 25.0.2+10-LTS, mixed mode, sharing)
 ```
 
 ## :b: Lister les version
