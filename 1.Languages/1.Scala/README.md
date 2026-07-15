@@ -10,17 +10,21 @@
 
 * Installer dans le terminal
 
-```
-$ sdk install sbt
+```bash
+sdk install sbt
 ```
 
 
 * Pour tester l'installation
 
+```bash
+sbt --version
 ```
-$ sbt --version
-[info] 1.2.8
-sbt script version: 1.3.3
+```text
+sbt runner version: 2.0.2
+
+[info] sbt runner (sbt-the-shell-script) is a runner to run any declared version of sbt.
+[info] Actual version of the sbt is declared using project/build.properties for each build.
 ```
 
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
