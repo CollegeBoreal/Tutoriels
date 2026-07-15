@@ -83,9 +83,4 @@ Scala version (default): 3.8.4
 
 # References:
 
-:bulb: https://dzone.com/articles/sdkman-managing-sdks-were-never-so-smart
-
 :bangbang: https://www.toptal.com/scala/scala-bytecode-and-the-jvm
-
-
-:bangbang: [Scala Developer Suvey Results 2018]( https://typesafe.co1.qualtrics.com/results/public/dHlwZXNhZmUtVVJfNlB4cWNSMXdub0liVExmLTVhZjMwZDc4MjAzMGVkMDAxNDhkOTc4OA)
