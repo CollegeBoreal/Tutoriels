@@ -1735,7 +1735,7 @@ After a damn while!!!
 My recommendation: leave it alone and let it finish.
 The real question now is:
 
-*** How long has nix-shell been running? ***
+**How long has nix-shell been running?**
 
 - 5-20 minutes → totally normal.
 - 20-60 minutes → still believable.
