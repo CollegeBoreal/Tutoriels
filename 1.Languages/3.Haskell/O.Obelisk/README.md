@@ -1732,6 +1732,17 @@ After a damn while!!!
   
 </details>
 
+My recommendation: leave it alone and let it finish.
+The real question now is:
+
+*** How long has nix-shell been running? ***
+
+- 5-20 minutes → totally normal.
+- 20-60 minutes → still believable.
+- 2+ hours → I'd start investigating cache issues.
+
+But from the process list you've shown, you're currently in the middle of a genuine compilation workload, not a freeze. 🚀
+
 The Obelisk command-line tool `ob` will become available. [\[deepwiki.com\]](https://deepwiki.com/obsidiansystems/obelisk/5-static-assets), [\[developer....ndroid.com\]](https://developer.android.com/samples/)
 
 ***
