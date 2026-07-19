@@ -1676,6 +1676,7 @@ Verify:
 ```bash
 nix --version
 ```
+> nix (Nix) 2.35.1
 
 Obelisk uses Nix for reproducible builds and dependency management. [\[deepwiki.com\]](https://deepwiki.com/obsidiansystems/obelisk/5-static-assets), [\[developer....ndroid.com\]](https://developer.android.com/samples/)
 
