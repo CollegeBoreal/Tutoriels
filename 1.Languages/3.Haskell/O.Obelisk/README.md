@@ -1678,6 +1678,8 @@ nix --version
 ```
 > nix (Nix) 2.35.1
 
+<image src=images/disk-utility-nix.png width=50% height=50% > </image>
+
 Obelisk uses Nix for reproducible builds and dependency management. [\[deepwiki.com\]](https://deepwiki.com/obsidiansystems/obelisk/5-static-assets), [\[developer....ndroid.com\]](https://developer.android.com/samples/)
 
 ***
