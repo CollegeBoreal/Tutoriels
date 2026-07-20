@@ -2511,7 +2511,7 @@ Save and refresh the browser. The page updates automatically. [\[developer....nd
 
 ***
 
-## 6. Build for Android
+## 6. Build for Android :x:
 
 Install Android SDK and required tooling.
 
@@ -2531,7 +2531,7 @@ adb install app.apk
 
 ***
 
-## 7. Build for iOS
+## 7. Build for iOS :x:
 
 On macOS:
 
