@@ -14,11 +14,15 @@ Loaded package environment from /Users/valiha/.ghc/aarch64-darwin-9.12.4/environ
 GHCi, version 9.12.4: https://www.haskell.org/ghc/  :? for help
 ```
 
-* Changer de prompt
+* écrire son premier programme `hello_world.hs`
 
+```haskell
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
 ```
-Prelude> :set prompt "ghci> "
-```
+
 
 * charger son premier programme
 
