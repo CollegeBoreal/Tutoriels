@@ -1818,9 +1818,31 @@ copying path '/nix/store/s4kx452x9dms6qz41fd9yf8q53k7bkv9-bash-interactive-5.3p9
 From any directory:
 
 ```bash
-ob init my-app
-cd my-app
+mkdir -p ~/Developer/myapp
+cd ~/Developer/my-app
+ob init
 ```
+<details>
+
+```text
+Cloning into '/private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl'...
+HEAD is now at d1250974 Update LICENSE
+⇾ Setting up obelisk ✔ Built on /private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl [command]
+/private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl: command not cached, building ...
+⇾ Setting up obelisk ✔ Built on /private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl [command]
+/private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl: skeleton not cached, building ...
+Tip: Press Ctrl+E to display full output
+⇾ Setting up obelisk ✔ Built on /private/tmp/nix-shell-85042-2090977474/ob-init-78f913144daa9044/.obelisk/impl [skeleton]
+✔ Setting up obelisk
+✔ Copying project skeleton
+An obelisk project has been successfully initialized. Next steps:
+  'ob run': Start a development server
+  'ob watch': Watch for changes without starting a server
+  'ob repl': Load your project into GHCi
+
+```
+  
+</details>
 
 This generates the standard project structure:
 
