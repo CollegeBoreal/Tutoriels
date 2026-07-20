@@ -1864,10 +1864,566 @@ The `common` package is where you place code shared by client and server. [\[dee
 Start the development server:
 
 ```bash
+OBELISK_VERBOSE=1 ob run
+```
+<details><summary>🪵 Log</summary>
+
+```lua
+./.obelisk/impl: command not cached, building ...
+✔ Built on ./.obelisk/impl [command]
+
+error: evaluation aborted with the following error message: '
+       This version of Nixpkgs requires an implementation of Nix with the following features:
+       - `builtins.nixVersion` reports at least 2.18
+
+       You are evaluating with Nix 2.11.0, please upgrade:
+
+       - If you are running NixOS, `nixos-rebuild' can be used to upgrade your system.
+
+       - Alternatively, with Nix > 2.0 `nix upgrade-nix' can be used to imperatively
+         upgrade Nix. You may use `nix-env --version' to check which version you have.
+
+       - If you installed Nix using the install script (https://nixos.org/nix/install),
+         it is safe to upgrade by running it again:
+
+             curl -L https://nixos.org/nix/install | sh
+
+       For more information, please see the NixOS release notes at
+       https://nixos.org/nixos/manual or locally at
+       /nix/store/c68jza2s5pvrrfzz7sm4z1qcg20bmzp1-nixpkgs/nixpkgs/nixos/doc/manual/release-notes.
+
+       If you need further help, see https://nixos.org/nixos/support.html
+       '
+will use bash from your environment
+this derivation will be built:
+  /nix/store/58d0wyy3379c1q7ff50jch9pia0vijl5-ghc-8.10.7-with-packages.drv
+building '/nix/store/58d0wyy3379c1q7ff50jch9pia0vijl5-ghc-8.10.7-with-packages.drv'...
+/nix/store/r01vspy216cyzw7klcxw4p5b4wa39mn6-reflex-dom-0.6.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/rc6dhw68v6gic06b7hbf9qb3ks3cln64-obelisk-asset-manifest-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7gn3i81y35w2l5swyqrf672pzci8d2id-obelisk-generated-static-0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/yjxv0r6zpxcia4p82q8vsd43c7y9np2j-tls-session-manager-0.0.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0fr02rnb25v1bw4ffw0ldk5lskzfba7h-x509-validation-1.6.12/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/arcyaw3kjb91b2hvlf2jbcwxvh7fjspg-x509-store-1.6.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/d48nq04zb3aaczyacvr33fqfy71wsyzg-tls-1.5.8/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/k8ls1xcwykp32ic0wb82pd87zm9id315-warp-tls-3.3.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/faclqkas1gr3jvqi3wsazpgyyj6baci4-utf8-string-1.0.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/jvblc1dhrl4jgqbqy56nkb07rs61qz35-universe-some-1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/h0izyi9f2qm8bvzk3m4hfww6rp73fbak-universe-reverse-instances-1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/n20cgnfwljl8p3c5cyxwimwyl9lqd2ax-universe-instances-extended-1.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r8rf2d64mc4ash64vxmyqsksl5jwf0xi-universe-base-1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/88zx6z5hcic4s21lyiq6dzy5bdqv6qjk-universe-1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sbca5wir8lkv3fq5g1zrafdyy4wdg3f0-th-extras-0.0.0.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/cqmrcags1ni5akqyq96hxrbw1p4jzjq4-tabulation-0.1.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/kh9by86p07mzl5pzv97b3k4a83gn6i7m-either-5.0.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/f13brjkpgqxph8fxwrlgb85j2av0rngd-obelisk-route-0.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/gwvdzvnn7x90cjzpqs4d7m394ynwnsf9-obelisk-frontend-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/h6f3l46kp308hr5qh3ympf2vzs9wn7yd-obelisk-executable-config-lookup-0.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8lngybw8mv9yn62cjygx8glmawf74fyb-prim-uniq-0.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sg5nircbr6jcfcrkrgb1sln405lmkmhh-patch-0.0.8.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/f9g84p62s1dayxnq0j8vhmwq13js0wij-monoidal-containers-0.6.3.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/9xmqcnrwlfy5wvdv9dnvmcl0m5pcvkpc-mmorph-1.1.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7fhjkx999w1sqrapqfsnrrw73sk3f82l-MemoTrie-0.6.10/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/s71qyls41p8zjmfv4z0w7c7yzj0zk10j-th-expand-syns-0.4.10.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/fgpyi9pxkcazcpd681fdamhki0vy6x0x-th-reify-many-0.1.10/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/83xzn28xjrljrjyf9hbq35hg070bzr7c-th-lift-instances-0.1.19/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sx93j9rw9v1cj1w8m6yfs9hha1jl6ajn-th-lift-0.8.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/l72x5fddq1pwb6cby6zjanxbyy2q11hi-th-orphans-0.13.13/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/dqigw6g4g73mh5vmv9ynw4jgx6lk4pvr-haskell-src-meta-0.8.10/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/663jvnrjsh2b7sbsvsdcxl70q9gdy9vd-haskell-src-exts-1.23.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/vc7p8sc6z9zyvd0jcqhpbdnqjdl7k938-reflex-0.9.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/rv8j38d2ycg881kficak6i11ja29dly7-keycode-0.2.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qrrq96wxzrzh4sc1rqkw60ic9mkkjqz5-exception-transformers-0.4.0.11/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/g5g0xzh21c52k87w6wsfd0lg7kc4g0lh-dependent-map-0.4.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qxxm2g8pimmvg5blgyzwfkv152h075da-commutative-semigroups-0.1.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/3plwhabj4kncrk5qy13zjc7cblyc5j9l-bimap-0.4.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wm3hqcq6qzs0h9s4yznxpgn1bpc0f5hk-reflex-dom-core-0.8.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/1fb4mw8361ziwiyjq61h4i286wn7iqlp-obelisk-executable-config-inject-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/kwbfvq7r65hrnwbddsic4yixjzl004pv-data-default-instances-old-locale-0.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4rccbmb7mcvc979439vghpvgn4cqr80m-data-default-instances-dlist-0.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/2nz2fylk9jmp7p6yzyhprs9fqn8c4sv9-data-default-instances-containers-0.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/h5asvm6cv2fpdmimw03s1fadvqbm56bi-data-default-0.7.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/akbsxd2gsbyld556qpv1ii7n1j2rgani-categories-1.0.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qw5zm7k6c9ik4kzvsnlbmkrmgrwb5l4q-obelisk-backend-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/6w3p6jvrgvmvqh9yc1pkf38xmp26ja0q-openssl-streams-1.2.3.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sv7kqfmaiacp6g8nqx4w2a9a2v9gg0mm-io-streams-haproxy-1.0.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/91ycdjvxxcrdnyz7z3dwqlwx54nvhs42-snap-server-1.1.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4diiw34s4blb28mksg0jihlfd7i3x7am-cryptohash-0.11.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/swf8338f75s6y8xpmcr44vnv88d5kwd2-pwstore-fast-2.4.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/f220rfj7c1n08ns1s72mh5p3w0xwvg27-math-functions-0.3.4.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/yd0y6yvzbgkkingpnfyl221lh9mk14x6-mwc-random-0.15.0.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/92l3q3d17hkq0ppbxsr4nli817lgjjm7-xmlhtml-0.2.5.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7d27d2df50l8a6g3g6dsg7kn4wkkh1jz-map-syntax-0.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/nkqaszpxmvcpgdfhw7x9fbwiv5nd0h0b-heist-1.1.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/hy0k4a4hjnxaxz2iw92cdhr151n8kl9i-directory-tree-0.12.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/9wx0p2pvb67il06r18fqlv75zks56hs5-configurator-0.3.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8kykg3gzyc7k38par4drjkx61z042f67-skein-1.0.9.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/5dsgfw2g67i6gl6r8mlcbq6zfm0l8jcz-setenv-0.1.1.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/469bxn385gf7vvvcqhx3jijlcg3wnabl-crypto-api-0.13.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xck2fnn6y927aiqckk9mh1njbagswsyp-crypto-random-0.0.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/df9jfwr5i6ls90gq8syr500j4j0k3ffd-cprng-aes-0.6.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ha83l3l44j777q23yr1n2jjnhj5a7ynw-securemem-0.1.10/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/a4gc08kjihn18h513rmg7i9h4fzlwzam-crypto-cipher-types-0.0.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/jyix687vnlxpz05kbkmrlyb3v3zhcii5-byteable-0.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7bipaf204wcwqq5vwravklbscb2zygim-cipher-aes-0.2.11/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/91kmmyl4288z4vzajf50q3n16i8aq9r8-clientsession-0.9.1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/v4gdw1kkq8c8bw1pk70g742z6dcwx8sp-cereal-0.5.8.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/c0pwh1zzw7ycwh0psjlmx7y84dksdg4h-snap-1.1.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wf46j7q3aqnf0zm9029aixfgvya38q2v-regex-base-0.94.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/a9nl9rhbj1ng656plkcbacwnsykk4cji-regex-posix-0.96.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/6b76n4pi9w8hin8pijydr5vfxpfmj218-readable-0.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ifxqp1wr8a1iyk3f1b7ddfa0h95hmiw7-monad-control-1.0.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/gp8lbi4h1ka6b6ajjya2wpqsc6mp160i-lifted-base-0.2.3.12/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/vx26byimxi8q3daif5ph3k4z12g46p5x-zlib-bindings-0.1.1.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/l1a6zc3i2b04jzwjsyp8hbx1i6c6n7jv-io-streams-1.5.2.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/g27m2p35x204krf0sz5q75hwff8clhg6-snap-core-1.0.5.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/vwdlaq6lfd8sjcb458w2z0dp24dby3qm-obelisk-snap-extras-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ksvpf0gawi93sy9g9liq3lpszsyb3j8v-obelisk-asset-serve-snap-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4z507kw7r0p70wj230mpqkiwbqcis2z2-megaparsec-9.2.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/1z76bw6wpfny8fxr3ihlpk32dnvsjlwz-modern-uri-0.3.4.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/d7i01cp4p1wgs205y8sp85skvz00dfmr-pem-0.2.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/952dgr1nhx92rw298l3x88yywy9p8ha9-asn1-parse-0.9.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/krr2l586pgxny6p0xxsbrznq9pbdfxr6-hourglass-0.2.12/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0ppwafn44qgqbx7lrp77cv24sy4i6n0w-asn1-types-0.3.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7xlhz0vkk77b8jh29dl81rghscm8lb5r-asn1-encoding-0.9.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/d2ihqfmcbnqrj9fm6c93q2qi831vibi5-x509-1.7.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0mnsl85f7gdq5zc4jcv71jbcw8r6c1gb-simple-sendfile-0.2.30/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/vj26n0vdccwfcrxaci0jpwinqk6ihymc-bsb-http-chunked-0.0.0.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/389jd4irmjm0nf2xv5zi1gcn0rrlcg1z-warp-3.3.21/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/c2m8vcnn5hp0ns5f2v15cs0klbmsnbnk-HUnit-1.6.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/428b1w4bv29r5dgzxqmdcc8dmfnkgnh2-time-manager-0.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/60nbiqhs49sdzfsgf120mgjqhmh98jyl-psqueues-0.2.7.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/mrh94azn9a444zhjhrhpnkx5jxf0gzha-network-byte-order-0.1.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8mggwiifqvff78h7gwwb146m4m8wzbj9-http2-3.0.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/07nm9jxgz9q1yzyamhpzghqgy3i7jxfk-wai-extra-3.1.12.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xsq3q372dw1qii2hw3rfrmc3zb7fkfk8-ansi-terminal-0.11.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/5bipl8031x7lv9zggjmda28bx3k3hs33-ansi-wl-pprint-0.6.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/p3z4j0dp5dq3jh51qs40pdlswn6zx5j6-optparse-applicative-0.16.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sldr5prj867lp8bg9yq5wkv5j5pwfklg-http-date-0.0.11/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/aqirv73rkbx1k6nwsz7bwif670gfckpa-memory-0.16.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0a00fkckwaysg6wnd1sqas7m5brh4p4z-basement-0.0.15/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/f2sv2m7il7p1wclmb9wwz3d44l28wyyf-cryptonite-0.29/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/78mgq0sbki9gcbrm4hm80zp6myk738l6-blaze-markup-0.8.2.8/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7d2k2bvi9plr6gmpbb9dbngp52n7wanr-blaze-html-0.9.1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xpqfjqdv0g81yw31qp41x617i9x51awg-wai-app-static-3.1.7.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/s9y8z7k50zirzvzw93nicy8db275rmda-file-embed-0.0.15.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4fkh5q0593wfszc75sz8h1lznwkmbxv3-SHA-1.6.4.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xmgymfzjak35r9jw5rh2p4y0p5k5dk76-entropy-0.4.1.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xm4fzpnvm3m6qmjynyslvc297jlnx1vm-bytestring-builder-0.10.8.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/a2kshmhfwn37jzc97inzdkld39qvfks7-websockets-0.12.7.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qi6gq9p9d5fzcqc4b1zbf1wihvia0298-wai-websockets-3.0.1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r65d08gizjmzz1w3r3hmcgx43lyzykj3-jsaddle-warp-0.9.8.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/npk0xbych19kvq4kd1xlaksypan9glyv-old-time-1.1.0.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r21hl24bmlvbrqb6fr0jyv99cw0qw4wb-unix-time-0.4.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/flf7ml09pqkbn1if77806hfcj5k9bfpw-unix-compat-0.5.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/gya18lpvinsr6c3fy817dndwznvndqw8-easy-file-0.2.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sf71921dqq119pbk963jwb40f8kf862r-fast-logger-3.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/gyhijc06bnzgm4ywkv7id4zx1dggvlx4-wai-logger-2.4.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/j24342pd4rp19an9x1pdafdn5ll9qv4m-vault-0.3.1.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/zhpfa8x7997iyaalr7p4qwj97jcws7j9-wai-3.2.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/2yvpy0hq3zcjn9j1m33jy8apvr3k05yf-safe-exceptions-0.1.7.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/c8s7hsdlsxbnsmrq8a0ak1x33rgrcbad-unliftio-0.2.24.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/as33mvpvdbw9f6xhy05jgs5ar1gl8dp2-typed-process-0.2.10.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ykzw0ijqlzjbl09xf5cfw0g4s5py2r8i-conduit-extra-1.3.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sd1l68nkkwyh7xa5m0752zs93sjmw3yw-resourcet-1.2.4.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/khb4lmig0sd5a39fqpgf06rfykfvpdlv-vector-algorithms-0.8.0.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/3dp5baampmfm8cpnsgc9n14l1qhzhxir-mono-traversable-1.0.15.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/y9602ngkfxzakr88r6zvmq1rwvyvyrz2-conduit-1.3.4.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xp0d6llr0d2pfwwvjj50hc48r2b73mg6-http-reverse-proxy-0.6.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wja1khxvwzwl2zjzh21s7c09gpjapwsi-zlib-0.6.3.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/dh7qmas5bpk6mdm92fi4jz068qjbwg1g-streaming-commons-0.2.2.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/i1ndbq0v7x2dgd7ym78njij64slgqnmc-th-compat-0.1.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/hlhbpkkiwsic815wkjhxlbczi5ild8r7-network-uri-2.6.4.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ik1mrpng7lza1m3zd8b2x875shvpnlh6-mime-types-0.1.0.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/52xl09p96y28wlpakawmlf3kc1cynich-appar-0.1.8/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4s6kmdc19nq4qsipiym6wxiz4qpwacg7-iproute-1.7.12/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/3pnlrdlfj4yg6rcwjjs2zxzj2bxi7skp-blaze-builder-0.4.2.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/1r74jqxyx7xw92mbf2374wq65azandcb-async-2.2.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/iw7zlkp6nccm5qbf06dsrg4n18grm18h-http-client-0.7.13.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ys3xrhxk4x0djb0psjm9sznry6iq3yy7-network-3.1.2.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/82dlinjixxcpq1x65brh21bxkmb628zj-HsOpenSSL-0.11.7.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/kfl14iyv9s38qqicxf68yv38qh0lni0x-unliftio-core-0.2.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/k2bvg175m78p7y1yw6npajrgdzdmw3yi-ref-tf-0.5.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/yrgpbggscw70rcwrrclfry2l5ii6y3q3-reflection-2.1.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r36lri94acd8j7vlbb6cv3am7cfhg6z8-parallel-3.2.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/pib80ndcn0f3rgnlgi91aqm6839ny212-invariant-0.5.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xb1md53s1zvxq51b9s46vlsjv9j2wn4r-adjunctions-4.4.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/d7sn60cab7jf53nix0zi2rv0fqyywrb7-kan-extensions-5.2.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wriz04nggrrvx9vmrjr4r9056zk5n2ix-transformers-base-0.4.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/g3naa6fvqg6lj19zbw13djiq878b82ym-profunctors-5.6.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/pl6rycbgq3whmcwdp81lg6z09nn0bz8r-free-5.1.9/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8n5qhibvggby7kdk76y6v84fnj3vf77p-lens-5.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/jlx3rn44gpzwrlggabbz9mgrfqrjzcrf-case-insensitive-1.2.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/bbw8pqcg0i8nhl8hfqpaq83m4jmps6bx-http-types-0.12.3/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qi6zrzvxfrm7rf9nq9pninppd2zl1vyz-base64-bytestring-1.2.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/h08ydw872ddmyw6r6c10h1k664h5wm43-jsaddle-0.9.8.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/j1gsbvfimmspfi21q3mfw2hak795flrv-jsaddle-dom-0.9.4.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r421iv2l8xac72yf4z2y7gg60y0pylcg-ghcjs-dom-jsaddle-0.9.4.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/j24wfc480qpf49fi37vm8l9an57glmmd-ghcjs-dom-0.9.4.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/2wgrydp5kpxlnwswb1g6324gq72c5bhm-dependent-sum-template-0.1.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sc21173m78ijilbir1l83lmbhgk5d7jf-some-1.0.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wb7qk09ash7bj982rpnv7wc1ksnz5fhx-witherable-0.4.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7ay9a5ar6y07c95bgmm98lnvpik1bv7r-uuid-types-1.0.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ahf7q0pg10vpk56fzd4bizi4739k0wqj-time-compat-1.9.6.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sr2y70c9c4wx50sm08qwcx0lgbqm54i5-text-short-0.1.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/giqd0qvyp1flkgc964cpp2z7clmj6p0i-strict-0.4.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/mb9k74csxgs0x5vn8n624y0i7sffrfsf-assoc-1.0.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8h43gziaxr9w4bx9i6h34x6mshbfz85y-these-1.1.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/8k64sgr2i7zdiirr5framxxm94vfk2dc-StateVar-1.2.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/zjgp2mr4faqcsp3z9l1zd2mbg08yfs37-contravariant-1.5.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/r8mxjhgn1s1vfab8ijsimsmch3vs6qfi-th-abstraction-0.4.3.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sylr3ffn93j55j9fva6cmarflhv01n26-distributive-0.6.2.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/apwrjsdrlf5mj5vysrl8a0079cpprlbb-comonad-5.0.8/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/nclj5r1vp782fyng2mf27d4yrmgby99b-bifunctors-5.5.12/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/9xhmf00y6ylfq2cpdsb875rhs5aahgik-semigroupoids-5.3.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/yxfn2xxnzzb99qx4kjc9dvc1b0w78y4q-vector-0.12.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/czfsgq9k5wngiv6654jgkhx1lv8c7q79-unordered-containers-0.2.17.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/snaymy84l8261janmml7djd5sxyhnhgm-tagged-0.8.6.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/w97qpvrbikvdz0syicnsd2fzx51d7ipy-indexed-traversable-instances-0.1.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/wyynkg06ykivrvg4niv3mz9h74adddlm-semialign-1.2.0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/6nq9plymijdmipd12bdl8rj66f8qvq3h-splitmix-0.1.0.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/sn0zsm3yqzwl39ypxhj0xfrs2idkki64-random-1.2.1.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/zl4dqq0pv6vvm8aid8yqjflh2pzh9vq3-QuickCheck-2.14.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/5indjz3vy6f4bhgv1bxksd489d55v78w-base-orphans-0.8.7/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/7295fmc70bl8bc56x9hcj06m6irczzk4-OneTuple-0.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/l8w36wnmcfdzg9hp43hx38183aafg0hh-indexed-traversable-0.1.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/73a8l0rj2c2025bzp89ll0ssmvlyfhhb-dlist-1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/b2q2szqy4jjrdpmci7kizw3xqkpz3pgg-data-fix-0.3.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/n3szr8r8w0bdi59f85yv5nrkfkb9b7ir-base-compat-0.11.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/qlvnr36689avspnng6s4ns5zj226rk20-base-compat-batteries-0.11.2/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0229gcri8m3f0ddnfj0rbxm0wrd9mkh4-aeson-2.1.1.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4zmqk7s802angsqj25k0nbc8f828dgaw-transformers-compat-0.6.6/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/4aiq6kwrwkwy5rr9dbcxk78kzdwpw6ap-constraints-0.13.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ll10d8g4jhza4zz3amb42a4748xmw4ps-constraints-extras-0.4.0.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/krzs8yrj5rw1g2sjh565l24r1331szp7-dependent-sum-0.7.2.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/zw7hvkxwii12i95pqwiikymns513g1i8-cookie-0.4.5/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/xnpr70xwv7vsavyxkjiby2b08jk3fij3-primitive-0.7.3.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/ijzpw87wgv83bjag2vn1rm6m0mvvsjf5-integer-logarithms-1.0.3.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/31n61k1lm4dqag55a8p1j7w4ahzywnpv-hashable-1.3.5.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/89c291hq5wdz9ar0kn2r84gnp98ra6zg-scientific-0.3.7.0/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/q6k3dnfz2fkzlvc6ba8c71rc6587vqj5-attoparsec-0.14.4/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+/nix/store/0wh1ysvm10x95n08g26i6x1gyds7rqyp-obelisk-run-0.1/nix-support:
+propagated-build-inputs: /nix/store/xlaz1zdjqkhkr7afxrpjzllivfl67w5x-jsaddle-wkwebview-0.9.8.2/nix-support/propagated-build-inputs
+Warning: haddock-interfaces: /nix/store/xm4fzpnvm3m6qmjynyslvc297jlnx1vm-bytestring-builder-0.10.8.2.0/share/doc/aarch64-osx-ghc-8.10.7/bytestring-builder-0.10.8.2.0/html/bytestring-builder.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/xm4fzpnvm3m6qmjynyslvc297jlnx1vm-bytestring-builder-0.10.8.2.0/share/doc/aarch64-osx-ghc-8.10.7/bytestring-builder-0.10.8.2.0/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/q6k3dnfz2fkzlvc6ba8c71rc6587vqj5-attoparsec-0.14.4/share/doc/aarch64-osx-ghc-8.10.7/attoparsec-0.14.4/html/attoparsec.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/q6k3dnfz2fkzlvc6ba8c71rc6587vqj5-attoparsec-0.14.4/share/doc/aarch64-osx-ghc-8.10.7/attoparsec-0.14.4/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/wssd4hvhv0r43r8vl7nqkza4rv1a4bh7-fail-4.9.0.0/share/doc/aarch64-osx-ghc-8.10.7/fail-4.9.0.0/html/fail.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/wssd4hvhv0r43r8vl7nqkza4rv1a4bh7-fail-4.9.0.0/share/doc/aarch64-osx-ghc-8.10.7/fail-4.9.0.0/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/q6k3dnfz2fkzlvc6ba8c71rc6587vqj5-attoparsec-0.14.4/share/doc/aarch64-osx-ghc-8.10.7/attoparsec-0.14.4/html/attoparsec.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/q6k3dnfz2fkzlvc6ba8c71rc6587vqj5-attoparsec-0.14.4/share/doc/aarch64-osx-ghc-8.10.7/attoparsec-0.14.4/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/r421iv2l8xac72yf4z2y7gg60y0pylcg-ghcjs-dom-jsaddle-0.9.4.0/share/doc/aarch64-osx-ghc-8.10.7/ghcjs-dom-jsaddle-0.9.4.0/html/ghcjs-dom-jsaddle.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/r421iv2l8xac72yf4z2y7gg60y0pylcg-ghcjs-dom-jsaddle-0.9.4.0/share/doc/aarch64-osx-ghc-8.10.7/ghcjs-dom-jsaddle-0.9.4.0/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/7gn3i81y35w2l5swyqrf672pzci8d2id-obelisk-generated-static-0/share/doc/aarch64-osx-ghc-8.10.7/obelisk-generated-static-0/html/obelisk-generated-static.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/7gn3i81y35w2l5swyqrf672pzci8d2id-obelisk-generated-static-0/share/doc/aarch64-osx-ghc-8.10.7/obelisk-generated-static-0/html doesn't exist or isn't a directory
+Warning: haddock-interfaces: /nix/store/jvblc1dhrl4jgqbqy56nkb07rs61qz35-universe-some-1.2/share/doc/aarch64-osx-ghc-8.10.7/universe-some-1.2/html/universe-some.haddock doesn't exist or isn't a file
+Warning: haddock-html: /nix/store/jvblc1dhrl4jgqbqy56nkb07rs61qz35-universe-some-1.2/share/doc/aarch64-osx-ghc-8.10.7/universe-some-1.2/html doesn't exist or isn't a directory
+Loading ghci -ignore-dot-ghci -no-user-package-db -hide-all-packages -package-env - -DOBELISK_ASSET_PASSTHRU -F -pgmF /nix/store/q7dazghyvyk3qwbgs253w4r297dirzyj-obelisk-command-0.9.0.1/bin/.ob-wrapped -optF __preprocessor-apply-packages -optF /Users/valiha/Developer/obelisk/my-app/backend/backend.cabal -optF /Users/valiha/Developer/obelisk/my-app/common/common.cabal -optF /Users/valiha/Developer/obelisk/my-app/frontend/frontend.cabal -optF /nix/store/pyn57knhd98vbk4gjxph0a264r7d8rn4-asset-manifest-haskellManifest/obelisk-generated-static.cabal -i/Users/valiha/Developer/obelisk/my-app/backend/src':/Users/valiha/Developer/obelisk/my-app/common/src:/Users/valiha/Developer/obelisk/my-app/frontend/src:/nix/store/pyn57knhd98vbk4gjxph0a264r7d8rn4-asset-manifest-haskellManifest/src' -package-id base-4.14.3.0 -package-id jsaddle-0.9.8.2-6A4fe7QPSTbD0xStKNutFO -package-id lens-5.0.1-3RpbhDeZn3QLRwBj1CjP46 -package-id obelisk-asset-manifest-0.1-BgCoblmajvbDOlbB7AJXj9 -package-id obelisk-backend-0.1-7CqUq8VHIHDG5SKyoqLcF9 -package-id obelisk-executable-config-lookup-0.1.1-94gL2P32DeD7L4S96I20pX -package-id obelisk-frontend-0.1-iZ7UYWJPRxAJI6tamNIQp -package-id obelisk-route-0.2-ITymGlCiQ95DN25bTAaB6g -package-id obelisk-run-0.1-6AysYd7kUFq5ubpFuoGNjh -package-id reflex-dom-core-0.8.0.0-1MiVef1BDPPLefYcFAvTds -package-id template-haskell-2.16.0.0 -package-id text-1.2.4.1 -XNoImplicitPrelude -ghci-script /private/tmp/nix-shell-85042-2090977474/ob-ghci-1a0753177108097c/.ghci ...
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Module Prelude not found
+Ok, no modules loaded.
+[1 of 5] Compiling Common.Api       ( /Users/valiha/Developer/obelisk/my-app/common/src/Common/Api.hs, interpreted )
+[2 of 5] Compiling Common.Route     ( /Users/valiha/Developer/obelisk/my-app/common/src/Common/Route.hs, interpreted )
+[3 of 5] Compiling Backend          ( /Users/valiha/Developer/obelisk/my-app/backend/src/Backend.hs, interpreted )
+[4 of 5] Compiling Obelisk.Generated.Static ( /nix/store/pyn57knhd98vbk4gjxph0a264r7d8rn4-asset-manifest-haskellManifest/src/Obelisk/Generated/Static.hs, interpreted )
+[5 of 5] Compiling Frontend         ( /Users/valiha/Developer/obelisk/my-app/frontend/src/Frontend.hs, interpreted )
+Ok, five modules loaded.
+Loaded GHCi configuration from /private/tmp/nix-shell-85042-2090977474/ob-ghci-1a0753177108097c/.ghci
+
+All good (5 modules, at 08:51:24)
+Running test...
+
+Frontend running on http://localhost:8000/
+Publicly accessible route: http://localhost:8000
+```
+
+</details>
+
+🎉 **You got it working.**
+
+The key lines are:
+
+```text
+Frontend running on http://localhost:8000/
+Publicly accessible route: http://localhost:8000
+```
+
+and later:
+
+```text
+GET /static/main.css HTTP/1.1 200
+GET /static/lib.js HTTP/1.1 200
+GET /static/obelisk.jpg HTTP/1.1 200
+```
+
+Those `200` responses mean the browser successfully connected to the Obelisk development server and downloaded the assets.
+
+### What happened?
+
+You had **two separate issues**:
+
+1. **Nix config**
+
+```text
+experimental Nix feature 'nix-command' is disabled
+```
+
+Fixed by adding:
+
+```text
+experimental-features = nix-command flakes
+```
+
+to:
+
+```text
+/etc/nix/nix.conf
+```
+
+2. **Long first build**
+
+Obelisk had to build:
+
+* GHC 8.10.7
+* cabal2nix
+* obelisk-command
+* your project dependencies
+
+which took quite a while on a fresh setup.
+
+### Why localhost appeared empty earlier
+
+At that time the project was still compiling.
+
+Now we can see:
+
+```text
+All good (5 modules)
+```
+
+and
+
+```text
+Frontend running on http://localhost:8000/
+```
+
+which means GHCi, the backend, and the frontend all loaded successfully.
+
+### For future projects
+
+Your workflow is now:
+
+```bash
+cd my-app
+
+nix-shell default.nix -A shell
+
 ob run
 ```
 
-Open:
+Then open:
 
 ```text
 http://localhost:8000
