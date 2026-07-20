@@ -1788,6 +1788,29 @@ Available commands:
 
 </details>
 
+- [ ] in Obelisk directory, get onto the shell
+
+```bash
+nix-shell default.nix -A shell
+```
+```text
+these 4 paths will be fetched (3.4 MiB download, 55.9 MiB unpacked):
+  /nix/store/s4kx452x9dms6qz41fd9yf8q53k7bkv9-bash-interactive-5.3p9
+  /nix/store/wl602np9yz9kw3a9ydpn68nqd63g0xda-libiconv-115.100.1
+  /nix/store/99qhf0b1ry7sgfnvz4f071llnz2wgc05-ncurses-6.6
+  /nix/store/c144rwm03qgbhwxixhlqpzxgmm2m5q29-readline-8.3p3
+copying path '/nix/store/99qhf0b1ry7sgfnvz4f071llnz2wgc05-ncurses-6.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/wl602np9yz9kw3a9ydpn68nqd63g0xda-libiconv-115.100.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/c144rwm03qgbhwxixhlqpzxgmm2m5q29-readline-8.3p3' from 'https://cache.nixos.org'...
+copying path '/nix/store/s4kx452x9dms6qz41fd9yf8q53k7bkv9-bash-interactive-5.3p9' from 'https://cache.nixos.org'...
+```
+
+```
+[nix-shell:~/Developer/obelisk]$ which ob
+```
+> /nix/store/q7dazghyvyk3qwbgs253w4r297dirzyj-obelisk-command-0.9.0.1/bin/ob
+
+
 ***
 
 ## 3. Create a New Project
