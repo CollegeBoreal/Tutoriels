@@ -31,6 +31,13 @@ main = putStrLn "Hello, World!"
 ghci> :load hello_world.hs
 ```
 
+* Éxécuter le programme
+
+```
+ghci> main
+```
+> Hello, World!
+
 # References
 
 http://dev.stephendiehl.com/hask/
