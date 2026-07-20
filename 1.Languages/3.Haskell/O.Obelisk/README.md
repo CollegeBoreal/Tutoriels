@@ -2429,6 +2429,9 @@ Then open:
 http://localhost:8000
 ```
 
+<image src=images/Obelisk-running.png width=50% height=50% > </image>
+
+
 Obelisk provides live reload while editing your code. [\[developer....ndroid.com\]](https://developer.android.com/samples/), [\[deepwiki.com\]](https://deepwiki.com/obsidiansystems/obelisk/5-static-assets)
 
 ***
