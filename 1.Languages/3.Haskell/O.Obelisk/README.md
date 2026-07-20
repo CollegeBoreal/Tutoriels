@@ -1745,6 +1745,49 @@ But from the process list you've shown, you're currently in the middle of a genu
 
 The Obelisk command-line tool `ob` will become available. [\[deepwiki.com\]](https://deepwiki.com/obsidiansystems/obelisk/5-static-assets), [\[developer....ndroid.com\]](https://developer.android.com/samples/)
 
+### :x: If compilation fails rerun:
+
+```bash
+nix-build
+```
+
+- [ ] Test
+
+```bash
+./result/bin/ob --help
+```
+<details><summary>🪵 Log</summary>
+
+```text
+Usage: ob [-v|--verbose] COMMAND
+  Manage Obelisk projects
+
+Available options:
+  --no-handoff             Do not hand off execution to project-specific
+                           implementation of this command
+  -v,--verbose             Be more verbose
+  -h,--help                Show this help text
+
+Available commands:
+  init                     Initialize an Obelisk project
+  deploy                   Prepare a deployment for an Obelisk project
+  run                      Run current project in development mode
+  profile                  Run current project with profiling enabled
+  thunk                    Manipulate thunk directories
+  repl                     Open an interactive interpreter
+  watch                    Watch current project for errors and warnings
+  shell                    Enter a shell with project dependencies or run a
+                           command in such a shell. E.g. ob shell -- ghc-pkg
+                           list
+  doc                      List paths to haddock documentation for specified
+                           packages
+  hoogle                   Run a hoogle server locally for your project's
+                           dependency tree
+  internal                 Internal Obelisk commands with unstable APIs
+```
+
+</details>
+
 ***
 
 ## 3. Create a New Project
