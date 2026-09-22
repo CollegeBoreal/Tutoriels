@@ -1,5 +1,7 @@
 # 🧠 **IA (Intelligence Artificielle)**
 
+<image src=images/AI-buble.jpeg width=50% height=50% > </image>
+
 ## 🧠 1. Définition simple
 
 **IA (Intelligence Artificielle)** = ensemble de techniques permettant à une machine ou un programme informatique de **simuler l’intelligence humaine**.
