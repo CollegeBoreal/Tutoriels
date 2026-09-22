@@ -1,6 +1,6 @@
 # 🧠 **IA (Intelligence Artificielle)**
 
-<image src=images/AI-buble.jpeg width=50% height=50% > </image>
+<image src=images/AI-buble.jpeg width=25% height=25% > </image>
 
 ## 🧠 1. Définition simple
 
