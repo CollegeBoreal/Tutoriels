@@ -10,17 +10,21 @@
 
 * Installer dans le terminal
 
-```
-$ sdk install sbt
+```bash
+sdk install sbt
 ```
 
 
 * Pour tester l'installation
 
+```bash
+sbt --version
 ```
-$ sbt --version
-[info] 1.2.8
-sbt script version: 1.3.3
+```text
+sbt runner version: 2.0.2
+
+[info] sbt runner (sbt-the-shell-script) is a runner to run any declared version of sbt.
+[info] Actual version of the sbt is declared using project/build.properties for each build.
 ```
 
 ![alt tag](https://github.com/CollegeBoreal/INF1042-16E/blob/master/C.Installation/sbt.png)
@@ -30,16 +34,37 @@ sbt script version: 1.3.3
 
 * Installer dans le terminal
 
+```bash
+sdk install scala
 ```
-$ sdk install scala
+<details><summary> 🪵 Log</summary>
+
+```text
+sdk install scala
+
+Downloading: scala 3.8.4
+
+In progress...
+
+######################################################################################################################################## 100.0%
+
+Installing: scala 3.8.4
+Done installing!
+
+
+Setting scala 3.8.4 as default.
 ```
 
+</details>
 
 * Pour tester l'installation
 
+```bash
+scala --version
 ```
-$ scala --version
-Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
+```text
+Scala code runner version: 1.14.0
+Scala version (default): 3.8.4
 ```
 
 ## Play
@@ -58,9 +83,4 @@ Scala code runner version 2.13.1 -- Copyright 2002-2019, LAMP/EPFL and Lightbend
 
 # References:
 
-:bulb: https://dzone.com/articles/sdkman-managing-sdks-were-never-so-smart
-
 :bangbang: https://www.toptal.com/scala/scala-bytecode-and-the-jvm
-
-
-:bangbang: [Scala Developer Suvey Results 2018]( https://typesafe.co1.qualtrics.com/results/public/dHlwZXNhZmUtVVJfNlB4cWNSMXdub0liVExmLTVhZjMwZDc4MjAzMGVkMDAxNDhkOTc4OA)

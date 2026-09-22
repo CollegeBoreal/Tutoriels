@@ -8,20 +8,12 @@
 
 ### :one: pour Linux et MacOS
 
-:round_pushpin: Sur Intel
+:round_pushpin: Sur Intel et Mac
 
 ```
-$ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
-
-:round_pushpin: Sur Mac Silicon
-
-```
-$ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | arch -x86_64 /bin/bash
-```
-
-- [ ] Résultat
-
+<details><summary>🪵 Log</summary>
 
 ```
   Welcome to Haskell!
@@ -40,6 +32,7 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | arch -x86
   Note that this script can be re-run at any given time.
 ```
 
+</details>
 
 ##### :m: Env Variable (~/.bashrc or ~/.zshrc)
 
@@ -51,20 +44,20 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | arch -x86
 
 - [ ] Lister les binaires installés.
 
-```
-$ ghcup list
+```bash
+ghcup list
 ```
 
 - [ ] Installer une version spécifique
 
-```
-$ ghcup install 8.6.5
+```bash
+ghcup install 9.12.4
 ```
 
 - [ ] Assigner un version spécifique
 
-```
-$ ghcup set 8.6.5
+```bash
+ghcup set 9.12.4
 ```
 
 ### :two: pour `[Windows PowerShell]`

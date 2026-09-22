@@ -6,17 +6,23 @@
 
 ## :a: Utilisation
 
+```bash
+ghci
 ```
-$ ghci
-GHCi, version 8.4.4: http://www.haskell.org/ghc/  :? for help
-Prelude> 
+```text
+Loaded package environment from /Users/valiha/.ghc/aarch64-darwin-9.12.4/environments/default
+GHCi, version 9.12.4: https://www.haskell.org/ghc/  :? for help
 ```
 
-* Changer de prompt
+* écrire son premier programme `hello_world.hs`
 
+```haskell
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
 ```
-Prelude> :set prompt "ghci> "
-```
+
 
 * charger son premier programme
 
@@ -24,6 +30,13 @@ Prelude> :set prompt "ghci> "
 ```
 ghci> :load hello_world.hs
 ```
+
+* Éxécuter le programme
+
+```
+ghci> main
+```
+> Hello, World!
 
 # References
 
