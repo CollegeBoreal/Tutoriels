@@ -114,8 +114,10 @@ Un **tableau récapitulatif (cheat sheet)** des références Markdown dans **Git
 
 * [Basic formatting syntax][Basic formatting syntax]
 * [Learning Markdown: Formatting Text without the Complexity][Learning Markdown: Formatting Text without the Complexity]
+* [Why markdown is becoming the default language between search data and AI models](Why markdown is becoming the default language between search data and AI models)
 
 ---
 
 [Basic formatting syntax]: https://guides.github.com/features/mastering-markdown/
 [Learning Markdown: Formatting Text without the Complexity]: https://www.linkedin.com/learning/learning-markdown/what-is-markdown
+[Why markdown is becoming the default language between search data and AI models]: https://thenextweb.com/news/markdown-default-language-search-data-ai-models
