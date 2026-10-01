@@ -75,7 +75,7 @@ Actually, Your External USB keys were set to disable, its very simple to fix: re
 
 #### :electric_plug: Réseau Interne
 
-- [x] `10.13.237.0/24` : Réseau
+- [x] `10.13.236.0/23` : Réseau
 
 - [x] `10.13.237.1`: Passerelle
 
@@ -96,7 +96,7 @@ network:
   ethernets:
     enp2s0f0:
       addresses:
-         - 10.13.237.x/24
+         - 10.13.237.x/23
       routes:
          - to: default
            via: 10.13.237.1
