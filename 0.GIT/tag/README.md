@@ -36,6 +36,28 @@ HEAD is now at 53934f6 .
 </details>
 
 
+---
+
+### :x: fatal: refusing to merge unrelated histories
+
+```bash
+git pull
+```
+
+<details><summary>🪵 Log </summary>
+
+```lua
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 317 bytes | 52.00 KiB/s, done.
+From github-boreal.com:CollegeBoreal/INF1083-200-26A-06
+ + 9a1253b...27ddf06 main       -> origin/main  (forced update)
+fatal: refusing to merge unrelated histories
+```
+
+</details>
 
 # References
 
