@@ -34,16 +34,16 @@ git fetch --all --tags
 
 ---
 
-# 2️⃣ Vérifier l'étiquette `v1.2`
+# 2️⃣ Vérifier l'étiquette `v1.1`
 
 ```bash
-git show v1.2
+git show v1.1
 ```
 
 On peut également afficher son commit :
 
 ```bash
-git rev-parse v1.2
+git rev-parse v1.1
 ```
 
 ---
@@ -56,16 +56,16 @@ git switch main
 
 ---
 
-# 4️⃣ Restaurer `main` à partir de `v1.2`
+# 4️⃣ Restaurer `main` à partir de `v1.1`
 
 ```bash
-git reset --hard v1.2
+git reset --hard v1.1
 ```
 
-La branche locale `main` pointe maintenant vers le même commit que `v1.2`.
+La branche locale `main` pointe maintenant vers le même commit que `v1.1`.
 
 ```text
-                 v1.2
+                 v1.1
                    │
                    ▼
 A ─── B ─── C ─── D
@@ -85,13 +85,13 @@ git log --oneline --decorate -10
 On devrait obtenir quelque chose de semblable à :
 
 ```text
-abc1234 (HEAD -> main, tag: v1.2)
+abc1234 (HEAD -> main, tag: v1.1)
 ```
 
 On peut également vérifier les différences avec la branche distante :
 
 ```bash
-git diff origin/main v1.2
+git diff origin/main v1.1
 ```
 
 ---
@@ -121,7 +121,7 @@ git fetch --all --tags
 
 git switch main
 
-git reset --hard v1.2
+git reset --hard v1.1
 
 git log --oneline --decorate -10
 
@@ -135,7 +135,7 @@ git push --force-with-lease origin main
 Conserver :
 
 ```text
-v1.2
+v1.1
 ```
 
 comme point de sauvegarde.
@@ -143,7 +143,7 @@ comme point de sauvegarde.
 Après la restauration :
 
 ```text
-                 v1.2
+                 v1.1
                    │
                    ▼
 A ─── B ─── C ─── D
@@ -152,7 +152,7 @@ A ─── B ─── C ─── D
                   main
 ```
 
-L'étiquette `v1.2` demeure donc disponible en cas de nouveau problème.
+L'étiquette `v1.1` demeure donc disponible en cas de nouveau problème.
 
 ---
 
