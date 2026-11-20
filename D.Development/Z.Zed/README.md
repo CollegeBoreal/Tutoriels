@@ -1,68 +1,79 @@
-# ⌨️ Raccourcis clavier Zed Editor
+# ⌨️ Légende des touches
 
-| Action | Windows / Linux | macOS |
-|----------|----------|----------|
-| Palette de commandes | `Ctrl + Shift + P` | `Cmd + Shift + P` |
-| Ouvrir rapidement un fichier | `Ctrl + P` | `Cmd + P` |
-| Rechercher dans le projet | `Ctrl + Shift + F` | `Cmd + Shift + F` |
-| Rechercher dans le fichier | `Ctrl + F` | `Cmd + F` |
-| Aller à la définition | `F12` | `F12` |
-| Aperçu de la définition | `Alt + F12` | `Option + F12` |
-| Renommer un symbole | `F2` | `F2` |
-| Ouvrir/Fermer le terminal | ``Ctrl + ` `` | ``Cmd + ` `` |
-| Nouveau fichier | `Ctrl + N` | `Cmd + N` |
-| Enregistrer | `Ctrl + S` | `Cmd + S` |
-| Fermer l’onglet | `Ctrl + W` | `Cmd + W` |
-| Diviser l’éditeur | `Ctrl + \` | `Cmd + \` |
-| Formater le document | `Shift + Alt + F` | `Shift + Option + F` |
-| Commenter/Décommenter une ligne | `Ctrl + /` | `Cmd + /` |
+| Symbole | Touche |
+|----------|----------|
+| ⌃ | Ctrl |
+| ⌘ | Cmd |
+| ⇧ | Shift |
+| ⌥ | Option / Alt |
+| ⏎ | Entrée |
+| ⎋ | Esc |
+| ↑ ↓ ← → | Flèches |
+| ⌫ | Retour arrière |
+| ⌦ | Supprimer |
 
-## Édition avancée
-
-| Action | Windows / Linux | macOS |
-|----------|----------|----------|
-| Curseurs multiples | `Ctrl + Alt + ↑/↓` | `Cmd + Option + ↑/↓` |
-| Dupliquer la ligne | `Shift + Alt + ↓` | `Shift + Option + ↓` |
-| Déplacer la ligne | `Alt + ↑/↓` | `Option + ↑/↓` |
-| Aller à une ligne | `Ctrl + G` | `Cmd + G` |
-| Recherche de symbole | `Ctrl + R` | `Cmd + R` |
-
-## Afficher tous les raccourcis
-
-1. Ouvrir la palette de commandes :
-   - `Ctrl + Shift + P`
-   - `Cmd + Shift + P`
-
-2. Rechercher :
-
-```text
-Open Default Keymap
-```
-
-ou
-
-```text
-Open Key Bindings
-```
 ---
 
-# 📝 Utiliser Vim Mode dans Zed
+# 🚀 Raccourcis Zed Editor
+
+| Action | Windows / Linux | macOS |
+|----------|----------|----------|
+| Palette de commandes | ⌃ + ⇧ + P | ⌘ + ⇧ + P |
+| Ouvrir un fichier | ⌃ + P | ⌘ + P |
+| Rechercher dans le projet | ⌃ + ⇧ + F | ⌘ + ⇧ + F |
+| Rechercher dans le fichier | ⌃ + F | ⌘ + F |
+| Aller à la définition | F12 | F12 |
+| Aperçu de la définition | Alt + F12 | ⌥ + F12 |
+| Renommer un symbole | F2 | F2 |
+| Terminal intégré | ⌃ + ` | ⌘ + ` |
+| Nouveau fichier | ⌃ + N | ⌘ + N |
+| Enregistrer | ⌃ + S | ⌘ + S |
+| Fermer l'onglet | ⌃ + W | ⌘ + W |
+| Diviser l'éditeur | ⌃ + \ | ⌘ + \ |
+| Formater le document | ⇧ + Alt + F | ⇧ + ⌥ + F |
+| Commenter une ligne | ⌃ + / | ⌘ + / |
+
+---
+
+# 🎯 Édition avancée
+
+| Action | Windows / Linux | macOS |
+|----------|----------|----------|
+| Curseurs multiples | ⌃ + Alt + ↑/↓ | ⌘ + ⌥ + ↑/↓ |
+| Dupliquer la ligne | ⇧ + Alt + ↓ | ⇧ + ⌥ + ↓ |
+| Déplacer la ligne | Alt + ↑/↓ | ⌥ + ↑/↓ |
+| Aller à une ligne | ⌃ + G | ⌘ + G |
+| Recherche de symbole | ⌃ + R | ⌘ + R |
+
+---
+
+# 📝 Vim Mode dans Zed
 
 ## Activation
 
 ### Palette de commandes
 
+**Windows/Linux**
+
 ```text
-Ctrl + Shift + P
+⌃ + ⇧ + P
 ```
 
-Rechercher :
+**macOS**
+
+```text
+⌘ + ⇧ + P
+```
+
+Puis :
 
 ```text
 Vim: Toggle Vim Mode
 ```
 
-### Fichier settings.json
+---
+
+## Ou via settings.json
 
 ```json
 {
@@ -72,69 +83,60 @@ Vim: Toggle Vim Mode
 
 ---
 
-# Modes Vim
-
-## Mode normal
-
-Navigation et commandes.
+# 🚶 Navigation
 
 | Action | Touche |
-|----------|---------|
-| Gauche | `h` |
-| Bas | `j` |
-| Haut | `k` |
-| Droite | `l` |
-| Début de ligne | `0` |
-| Fin de ligne | `$` |
-| Mot suivant | `w` |
-| Mot précédent | `b` |
-| Début du fichier | `gg` |
-| Fin du fichier | `G` |
+|----------|----------|
+| Gauche | `h` ⬅️ |
+| Bas | `j` ⬇️ |
+| Haut | `k` ⬆️ |
+| Droite | `l` ➡️ |
+| Mot suivant | `w` 🚶 |
+| Mot précédent | `b` 🔙 |
+| Début de ligne | `0` 🏁 |
+| Fin de ligne | `$` 🏁 |
+| Début du fichier | `gg` ⬆️ |
+| Fin du fichier | `G` ⬇️ |
 
 ---
 
-## Mode insertion
+# ✍️ Mode insertion
 
-| Action | Touche |
-|----------|---------|
+| Action | Commande |
+|----------|----------|
 | Insérer avant le curseur | `i` |
 | Insérer après le curseur | `a` |
 | Nouvelle ligne dessous | `o` |
 | Nouvelle ligne dessus | `O` |
-
-Retour au mode normal :
-
-```text
-Esc
-```
+| Retour au mode normal | ⎋ |
 
 ---
 
-# Édition
+# 🛠️ Édition
 
 | Action | Commande |
-|----------|---------|
-| Supprimer caractère | `x` |
-| Supprimer mot | `dw` |
-| Supprimer ligne | `dd` |
-| Copier ligne | `yy` |
-| Coller | `p` |
-| Annuler | `u` |
-| Refaire | `Ctrl+r` |
+|----------|----------|
+| Supprimer caractère | `x` ❌ |
+| Supprimer mot | `dw` 🗑️ |
+| Supprimer ligne | `dd` 🗑️ |
+| Copier ligne | `yy` 📋 |
+| Coller | `p` 📥 |
+| Annuler | `u` ↩️ |
+| Refaire | ⌃ + r ↪️ |
 
 ---
 
-# Sélection
+# 🎨 Sélection
 
 | Action | Commande |
-|----------|---------|
+|----------|----------|
 | Sélection caractère | `v` |
 | Sélection ligne | `V` |
-| Sélection bloc | `Ctrl+v` |
+| Sélection bloc | ⌃ + v |
 
 ---
 
-# Recherche
+# 🔍 Recherche
 
 Rechercher :
 
@@ -156,7 +158,7 @@ N
 
 ---
 
-# Commandes très utiles
+# ⚡ Commandes Vim les plus puissantes
 
 ## Modifier un mot
 
@@ -164,21 +166,11 @@ N
 ciw
 ```
 
-Avant :
-
-```ts
-const studentName = "Bob";
-```
-
-Après :
-
-```ts
-const userName = "Bob";
-```
+✅ Supprime le mot sous le curseur et passe en mode insertion.
 
 ---
 
-## Supprimer l'intérieur des parenthèses
+## Supprimer le contenu entre parenthèses
 
 ```vim
 di(
@@ -186,7 +178,7 @@ di(
 
 ---
 
-## Modifier l'intérieur des guillemets
+## Modifier le contenu entre guillemets
 
 ```vim
 ci"
@@ -194,7 +186,7 @@ ci"
 
 ---
 
-## Effacer jusqu'à la fin de ligne
+## Supprimer jusqu'à la fin de ligne
 
 ```vim
 D
@@ -210,34 +202,38 @@ J
 
 ---
 
-# Les 10 commandes à mémoriser
+# 🧠 Le minimum à retenir
 
 ```vim
-i      insertion
-Esc    mode normal
-dd     supprimer ligne
-yy     copier ligne
-p      coller
-u      annuler
-w      mot suivant
-gg     début fichier
-G      fin fichier
-ciw    modifier un mot
+i      ✍️ Insérer
+⎋      🚪 Quitter l'insertion
+dd     🗑️ Supprimer ligne
+yy     📋 Copier ligne
+p      📥 Coller
+u      ↩️ Annuler
+w      🚶 Mot suivant
+gg     ⬆️ Début fichier
+G      ⬇️ Fin fichier
+ciw    ✏️ Modifier mot
+/      🔍 Rechercher
 ```
 
-## Le « minimum efficace » pour un développeur
+## 💡 Astuce
+
+Si vous débutez avec Vim dans Zed, apprenez seulement :
 
 ```vim
 i
-Esc
+⎋
 dd
 yy
 p
 u
 /
+w
 gg
 G
 ciw
 ```
 
-Ces quelques commandes suffisent pour obtenir environ 80 % des gains de productivité de Vim dans Zed.
+Ces 10 commandes vous donneront déjà environ **80 % de la productivité de Vim** pour coder en Angular, TypeScript, JavaScript, C#, Python ou Bash.
