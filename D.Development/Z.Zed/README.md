@@ -237,3 +237,176 @@ ciw
 ```
 
 Ces 10 commandes vous donneront déjà environ **80 % de la productivité de Vim** pour coder en Angular, TypeScript, JavaScript, C#, Python ou Bash.
+
+---
+
+# 🚀 Installer Zed Editor
+
+## 🪟 Windows
+
+### Option 1 : Installation via Winget (recommandé)
+
+Ouvrir PowerShell :
+
+```powershell
+winget install --id ZedIndustries.Zed
+```
+
+Vérifier l'installation :
+
+```powershell
+zed --version
+```
+
+---
+
+### Option 2 : Téléchargement manuel
+
+1. Aller sur :
+   - https://zed.dev/download
+
+2. Télécharger :
+   - **Windows Installer (.exe)**
+
+3. Exécuter l'installateur.
+
+---
+
+## 🍎 macOS
+
+### Téléchargement manuel
+
+```text
+https://zed.dev/download
+```
+
+Télécharger :
+
+```text
+Zed.dmg
+```
+
+Puis :
+
+1. Ouvrir le fichier `.dmg`
+2. Glisser **Zed** dans **Applications**
+3. Lancer Zed
+
+---
+
+### Via Homebrew
+
+```bash
+brew install --cask zed
+```
+
+---
+
+## 🐧 Linux
+
+### Téléchargement direct
+
+```bash
+curl -f https://zed.dev/install.sh | sh
+```
+
+Redémarrer le terminal puis vérifier :
+
+```bash
+zed --version
+```
+
+---
+
+## 🔧 Installer comme éditeur Git par défaut
+
+```bash
+git config --global core.editor "zed --wait"
+```
+
+Vérifier :
+
+```bash
+git config --global core.editor
+```
+
+Résultat :
+
+```text
+zed --wait
+```
+
+---
+
+## 🧠 Extensions et langages
+
+Contrairement à VS Code, Zed inclut déjà plusieurs fonctionnalités :
+
+✅ TypeScript  
+✅ JavaScript  
+✅ JSON  
+✅ Markdown  
+✅ HTML  
+✅ CSS  
+✅ Git  
+✅ LSP (Language Server Protocol)  
+✅ Copilot intégré  
+✅ Vim Mode  
+
+---
+
+## ⚡ Installation recommandée pour INF1084 / INF1085
+
+Après l'installation :
+
+1. Activer Vim Mode :
+
+```json
+{
+  "vim_mode": true
+}
+```
+
+2. Installer Node.js :
+
+```bash
+node --version
+npm --version
+```
+
+3. Ouvrir votre projet :
+
+```bash
+zed .
+```
+
+ou
+
+```bash
+zed mon-projet-angular
+```
+
+---
+
+## ⌨️ Commandes utiles
+
+| Action | Windows/Linux | macOS |
+|----------|----------|----------|
+| Palette de commandes | ⌃ + ⇧ + P | ⌘ + ⇧ + P |
+| Ouvrir un fichier | ⌃ + P | ⌘ + P |
+| Explorateur de fichiers | ⌃ + B | ⌘ + B |
+| Terminal intégré | ⌃ + ` | ⌘ + ` |
+| Rechercher | ⌃ + F | ⌘ + F |
+| Enregistrer | ⌃ + S | ⌘ + S |
+
+---
+
+## ✅ Vérification
+
+Dans un terminal :
+
+```bash
+zed .
+```
+
+Si votre projet s'ouvre dans Zed, l'installation est réussie.
