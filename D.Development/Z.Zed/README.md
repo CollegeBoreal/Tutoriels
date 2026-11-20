@@ -44,3 +44,200 @@ ou
 ```text
 Open Key Bindings
 ```
+---
+
+# 📝 Utiliser Vim Mode dans Zed
+
+## Activation
+
+### Palette de commandes
+
+```text
+Ctrl + Shift + P
+```
+
+Rechercher :
+
+```text
+Vim: Toggle Vim Mode
+```
+
+### Fichier settings.json
+
+```json
+{
+  "vim_mode": true
+}
+```
+
+---
+
+# Modes Vim
+
+## Mode normal
+
+Navigation et commandes.
+
+| Action | Touche |
+|----------|---------|
+| Gauche | `h` |
+| Bas | `j` |
+| Haut | `k` |
+| Droite | `l` |
+| Début de ligne | `0` |
+| Fin de ligne | `$` |
+| Mot suivant | `w` |
+| Mot précédent | `b` |
+| Début du fichier | `gg` |
+| Fin du fichier | `G` |
+
+---
+
+## Mode insertion
+
+| Action | Touche |
+|----------|---------|
+| Insérer avant le curseur | `i` |
+| Insérer après le curseur | `a` |
+| Nouvelle ligne dessous | `o` |
+| Nouvelle ligne dessus | `O` |
+
+Retour au mode normal :
+
+```text
+Esc
+```
+
+---
+
+# Édition
+
+| Action | Commande |
+|----------|---------|
+| Supprimer caractère | `x` |
+| Supprimer mot | `dw` |
+| Supprimer ligne | `dd` |
+| Copier ligne | `yy` |
+| Coller | `p` |
+| Annuler | `u` |
+| Refaire | `Ctrl+r` |
+
+---
+
+# Sélection
+
+| Action | Commande |
+|----------|---------|
+| Sélection caractère | `v` |
+| Sélection ligne | `V` |
+| Sélection bloc | `Ctrl+v` |
+
+---
+
+# Recherche
+
+Rechercher :
+
+```vim
+/angular
+```
+
+Résultat suivant :
+
+```vim
+n
+```
+
+Résultat précédent :
+
+```vim
+N
+```
+
+---
+
+# Commandes très utiles
+
+## Modifier un mot
+
+```vim
+ciw
+```
+
+Avant :
+
+```ts
+const studentName = "Bob";
+```
+
+Après :
+
+```ts
+const userName = "Bob";
+```
+
+---
+
+## Supprimer l'intérieur des parenthèses
+
+```vim
+di(
+```
+
+---
+
+## Modifier l'intérieur des guillemets
+
+```vim
+ci"
+```
+
+---
+
+## Effacer jusqu'à la fin de ligne
+
+```vim
+D
+```
+
+---
+
+## Joindre deux lignes
+
+```vim
+J
+```
+
+---
+
+# Les 10 commandes à mémoriser
+
+```vim
+i      insertion
+Esc    mode normal
+dd     supprimer ligne
+yy     copier ligne
+p      coller
+u      annuler
+w      mot suivant
+gg     début fichier
+G      fin fichier
+ciw    modifier un mot
+```
+
+## Le « minimum efficace » pour un développeur
+
+```vim
+i
+Esc
+dd
+yy
+p
+u
+/
+gg
+G
+ciw
+```
+
+Ces quelques commandes suffisent pour obtenir environ 80 % des gains de productivité de Vim dans Zed.
