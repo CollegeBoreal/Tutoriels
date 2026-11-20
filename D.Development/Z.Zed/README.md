@@ -68,7 +68,7 @@
 Puis :
 
 ```text
-Vim: Toggle Vim Mode
+workspace: toggle vim Mode
 ```
 
 ---
